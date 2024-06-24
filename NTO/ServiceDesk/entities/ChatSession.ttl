@@ -1,0 +1,36 @@
+@prefix ogit.ServiceDesk: <http://www.purl.org/ogit/ServiceDesk/> .
+@prefix ogit.ServiceManagement: <http://www.purl.org/ogit/ServiceManagement/> .
+@prefix ogit:                 <http://www.purl.org/ogit/> .
+@prefix dcterms:              <http://purl.org/dc/terms/> .
+@prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
+
+# https://developer.zendesk.com/rest_api/docs/support/ticket_comments
+
+ogit.ServiceDesk:ChatSession
+    a                         rdfs:Class ;
+    rdfs:subClassOf           ogit:Entity ;
+    rdfs:label                "ChatSession" ;
+    dcterms:description       """Represents a servicedesk chat session""";
+    dcterms:valid             "start=2024-04-30;" ;
+    dcterms:creator           "Leonie Glanzer" ;
+    ogit:scope                "NTO" ;
+    ogit:parent               ogit:Node ;
+    ogit:mandatory-attributes (
+		ogit:id    # external entity based unique id
+	) ;
+    ogit:optional-attributes  (
+		ogit:status     # status of the session (AI-Chat or Agent-Chat)
+		ogit:tenantId   # tenant id of the customer user
+		ogit:sourceId   # ID of the source system
+		ogit:externalId # ID of the session in the source system
+		ogit:createdAt  # timestamp of the chat creation
+    ) ;
+    ogit:indexed-attributes   ( ) ;
+    ogit:allowed              (
+		[ ogit:belongs ogit.ServiceManagement:Ticket ]
+		[ ogit:belongs ogit.ServiceManagement:Problem ]
+		[ ogit:belongs ogit.ServiceManagement:Incident ]
+		[ ogit:belongs ogit.ServiceManagement:ChangeRequest ]
+		[ ogit:belongs ogit:Organization ]
+    ) ;
+.
