@@ -34,6 +34,10 @@ ogit:Comment
 		ogit:id
 		ogit:content
 		ogit:creator
+		ogit:cleanContent
+		ogit:positionNumber
+		ogit:parentId
+		ogit:type
 	);
 	ogit:indexed-attributes (
 		
