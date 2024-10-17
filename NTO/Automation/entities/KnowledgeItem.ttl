@@ -53,6 +53,10 @@ In that case, the KnowledgeItem executes operations, which serves the exploitati
 		ogit.Automation:deployToEngine
 		ogit.Automation:isDeployed
 		ogit.Automation:deployStatus
+		ogit.Automation:subject
+		ogit.Automation:openedFor
+		ogit.Automation:cleanSubject
+		ogit.Automation:cleanDescription
 	);
 	ogit:indexed-attributes (
 		ogit:_tags
