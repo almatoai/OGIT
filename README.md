@@ -28,18 +28,17 @@ Find out more about OGIT using the following links.
 * [High level use cases](https://github.com/arago/OGIT/wiki/High-level-use-cases)
 * [Contributing to the ontology](https://github.com/arago/OGIT/wiki/Contributing)
 
-## GraphIT Documentation
+## Bardioc Documentation
 
-There is an application called [GraphIT](https://graphit.co) that allows you to
+There is an application called [Bardioc](https://www.almato.com/de/loesungen/almato-bardioc) that allows you to
 manage IT data through a RESTful API ensuring compliance to the OGIT ontology.
 
-The following links provide more information on OGIT and GraphIT.
+The following links provide more information on OGIT and Bardioc.
 
 (Pages updated on daily basis)
 
 * [OGIT documentation](https://arago.github.io/OGIT/) for all elements of the OGIT ontology
 * [OGIT namespace documentation](https://arago.github.io/OGIT/downloads)- documentation as PDF and Diagram for each namespace of the OGIT ontology
-* [GraphIT developer resources](https://docs.hiro.arago.co) (free registration required)
 
 ### namespace specific Documentation
 * Requirements
@@ -55,25 +54,12 @@ sh namespace.sh namespacename
 * For Example, **sh namespace.sh mrp** will generate the documentation for MRP namepsace under **MRP folder**.
 ## Updating the Local GraphIT Ontology
 
-Once OGIT master branch is updated, the changes are automatically built and pushed every hour to
-https://graphit.co/schemas/graphit-ontology.ttl
-
-To update ogit ontology on local GraphIT installation, please run:
-
-```
-cd ~
-wget https://graphit.co/schemas/graphit-ontology.ttl
-/opt/autopilot/setup/helpers/load_ontology ~/graphit-ontology.ttl
-```
-
-To ensure that all changes are correctly loaded you may restart GraphIT:
-```
-/opt/autopilot/admin/start-autopilot.sh -r graphit
-```
+Once OGIT master branch is updated, the changes are automatically built and pushed to
+https://github.com/arago/OGIT/releases
 
 ## Getting Support
 
-If you have general questions or need support please contact us at <ogit@arago.de>.
+If you have general questions or need support please contact us at <info@almato.com>.
 
 ## License
 
