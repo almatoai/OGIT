@@ -1,0 +1,15 @@
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix ogit.Politics:        <http://www.purl.org/ogit/Politics/> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+
+ogit.Politics:is
+    a owl:ObjectProperty;
+    rdfs:subPropertyOf ogit:Verb;
+    rdfs:label "is";
+    dcterms:description "A MdB can be represented by Persons, which have different attributes due to their past";
+    dcterms:valid       "start=2024-12-17;";
+    dcterms:creator     "Semih Can Sancar";
+    ogit:cardinality "oen2many";
+.

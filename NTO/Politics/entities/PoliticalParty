@@ -1,0 +1,29 @@
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix ogit.Politics:        <http://www.purl.org/ogit/Politics/> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+ogit.Politics:PoliticalParty
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "political party";
+    dcterms:description "The political party is represented.";
+    dcterms:valid       "start=2024-12-17;";
+    dcterms:creator     "Semih Can Sancar";
+    ogit:scope                "NTO" ;
+    ogit:parent               ogit:Node ;
+    ogit:mandatory-attributes (
+        ogit:name;
+    );
+    ogit:optional-attributes (
+        ogit:longname;
+    );
+    ogit:allowed (
+        [
+            ogit:partOf ogit:PoliticalInstitution;
+            ogit:representedBy ogit:Person
+        ]
+    );
+.
