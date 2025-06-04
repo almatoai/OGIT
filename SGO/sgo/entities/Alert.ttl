@@ -29,11 +29,15 @@ ogit:Alert
 	ogit:mandatory-attributes (
 		ogit:type
 		ogit:creator
-    ogit:category
+		ogit:category
 	);
 	ogit:optional-attributes (
-    ogit:function
+		ogit:id
+		ogit:function
 		ogit:value
+		ogit:status
+		ogit:startedAt
+		ogit:endedAt
 	);
 	ogit:indexed-attributes (
 
@@ -43,5 +47,7 @@ ogit:Alert
 			[ ogit:contains  ogit:License ]
 			[ ogit:alerts  ogit:Person ]
 			[ ogit:triggers  ogit:Event ]
+			[ ogit:affects  ogit.MARS:Machine ]
+			[ ogit:affects  ogit.MARS:Software ]
 	);
 .
