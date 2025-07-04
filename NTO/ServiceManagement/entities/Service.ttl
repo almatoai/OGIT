@@ -38,6 +38,7 @@ ogit.ServiceManagement:Service
 		ogit:type 		# Type of the service (e.g. OnlineService)
 		ogit:version 	
 		ogit:content
+		ogit:status
 		ogit:email 	
 	);
 	ogit:indexed-attributes (

@@ -2,6 +2,7 @@
 @prefix ogit:                 <http://www.purl.org/ogit/> .
 @prefix dcterms:              <http://purl.org/dc/terms/> .
 @prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ogit.ServiceManagement: <http://www.purl.org/ogit/ServiceManagement/> .
 
 # https://developer.zendesk.com/rest_api/docs/support/groups
 
@@ -16,17 +17,24 @@ ogit.CustomerSupport:Group
     ogit:parent               ogit:Node ;
     ogit:mandatory-attributes ( ) ;
     ogit:optional-attributes  (
-                                  ogit:id  # external entity based unique id
-                                  ogit.CustomerSupport:remoteUrl
-                                  ogit.CustomerSupport:remoteType
-                                  ogit.CustomerSupport:remoteId
-                                  ogit:name
-                                  ogit.CustomerSupport:deleted
-                                  ogit:createdAt
-                                  ogit:lastUpdatedAt
-                              ) ;
+                                ogit:id  # external entity based unique id
+                                ogit:name
+                                ogit:createdAt
+                                ogit:lastUpdatedAt
+                                ogit:description
+                                ogit:summary
+                                ogit:email
+                                ogit:validFrom
+                                ogit:validTo
+                                ogit.CustomerSupport:remoteUrl
+                                ogit.CustomerSupport:remoteType
+                                ogit.CustomerSupport:remoteId
+                                ogit.CustomerSupport:deleted
+                            ) ;
     ogit:indexed-attributes   ( ) ;
     ogit:allowed              (
-                                  [ ogit:uses ogit:Product ]
+                                [ ogit:uses ogit:Product ]
+                                [ ogit:provides ogit:Comment ]
+                                [ ogit:isResponsibleFor ogit.ServiceManagement:Ticket ]                                
                               ) ;
 .

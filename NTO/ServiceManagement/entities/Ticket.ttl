@@ -31,6 +31,9 @@ ogit.ServiceManagement:Ticket
 		ogit:id
 	);
 	ogit:optional-attributes (
+		ogit:name
+		ogit:class
+		ogit:type
 		ogit:summary
 		ogit:description
 		ogit:project
@@ -42,11 +45,11 @@ ogit.ServiceManagement:Ticket
 		ogit:closedAt
 		ogit:lastUpdatedAt
 		ogit:sourceId
+		ogit:subject
 		ogit.ServiceManagement:sourceStatus
 		ogit.ServiceManagement:externalTicketId
 		ogit.ServiceManagement:reportedSource
 		ogit.ServiceManagement:ticketId
-		ogit:subject
 		ogit.ServiceManagement:openedFor
 		ogit.ServiceManagement:cleanSubject
 		ogit.ServiceManagement:cleanDescription
@@ -66,6 +69,7 @@ ogit.ServiceManagement:Ticket
 			[ ogit:reportedOn  ogit.MARS:Application ]
 			[ ogit:reportedOn  ogit.Automation:MARSNode ]
 			[ ogit:corresponds  ogit.Automation:AutomationIssue ]
+			[ ogit:corresponds  ogit:CatalogItem ]
 			[ ogit:affects  ogit:Person ]
 			[ ogit:affects  ogit.MARS:Application ]
 			[ ogit:affects  ogit.MARS:Resource ]

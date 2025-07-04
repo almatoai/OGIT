@@ -14,6 +14,7 @@
 @prefix ogit.Project:           <http://www.purl.org/ogit/Project/> .
 @prefix ogit.Factory:   <http://www.purl.org/ogit/Factory/> .
 @prefix ogit.ServiceManagement: <http://www.purl.org/ogit/ServiceManagement/> .
+@prefix ogit.CustomerSupport: <http://www.purl.org/ogit/CustomerSupport/> .
 @prefix ogit.Mobile: <http://www.purl.org/ogit/Mobile/> .
 @prefix ogit.Health.Diagnostics: <http://www.purl.org/ogit/Health/Diagnostics/> .
 @prefix ogit.Location: 			<http://www.purl.org/ogit/Location/> .
@@ -92,11 +93,13 @@ ogit:Person
 			[ ogit:manages  ogit:Organization ]
 			[ ogit:relates  ogit.Survey:Iteration ]
 			[ ogit:ignores  ogit:Comment ]
+			[ ogit:provides  ogit:Comment ]
 			[ ogit:invites  ogit:Person ]
 			[ ogit:creates  ogit:Certificate ]
 			[ ogit:creates  ogit:Alert ]
 			[ ogit:creates  ogit:ConfigurationItem ]
 			[ ogit:leads  ogit:Organization ]
+			[ ogit:leads  ogit.CustomerSupport:Group ]
 			[ ogit:accepts  ogit:TermsAndConditions ]
 			[ ogit:worksOn  ogit:Status ]
 			[ ogit:belongs  ogit:Organization ]
@@ -186,6 +189,7 @@ ogit:Person
 			[ ogit:contributes ogit.Politics:Discussion ]
 			[ ogit:moderates ogit.Politics:Discussion ]
 			[ ogit:isMemberOf  ogit:Organization ]
+			[ ogit:isPartOf  ogit.CustomerSupport:Group ]
 			[ ogit:issues ogit.Politics:DisciplinaryMeasure ]
 			[ ogit:has ogit.Politics:Reaction ]
 			[ ogit:has ogit.Politics:Mandate ]

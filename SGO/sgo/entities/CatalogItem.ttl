@@ -23,6 +23,7 @@ ogit:CatalogItem
 	ogit:optional-attributes (
 		ogit:description
 		ogit:id
+		ogit:validTo
 	);
 	ogit:indexed-attributes (
 		

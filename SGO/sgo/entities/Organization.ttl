@@ -58,6 +58,7 @@ The ogit/function attribute should be used to tell what kind of grouping an enti
 		ogit:tenantId
 		ogit:sourceId
 		ogit:phone
+		ogit:alias
 	);
 	ogit:indexed-attributes (
 		ogit:name
@@ -126,6 +127,7 @@ The ogit/function attribute should be used to tell what kind of grouping an enti
 			[ ogit.MRO.Aviation:orders  ogit.MRO.Aviation:Layover ]
 			[ ogit:manages  ogit.Health.Diagnostics:Equipment ]
 			[ ogit:manages ogit.ServiceManagement:Service]
+			[ ogit:utilizes ogit.ServiceManagement:Service]
 			[ ogit:organizes  ogit.Schedule:Event ]
 			[ogit:isPresent ogit:Organization]
 			[ogit:isMemberOf ogit:Organization]

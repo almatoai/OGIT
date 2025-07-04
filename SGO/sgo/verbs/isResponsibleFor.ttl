@@ -1,0 +1,16 @@
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+@prefix ogit.Forum:             <http://www.purl.org/ogit/Forum/> .
+@prefix ogit.Auth:             <http://www.purl.org/ogit/Auth/> .
+
+ogit:isResponsibleFor
+	a owl:ObjectProperty;
+	rdfs:subPropertyOf ogit:Verb;
+	rdfs:label "isResponsibleFor";
+	dcterms:description "Indicates that an entity is responsible for another entity.";
+	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	dcterms:valid "start=2025-07-04;";
+	dcterms:creator "Calvin Spolwind";
+.
