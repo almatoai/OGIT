@@ -46,6 +46,7 @@ ogit.ServiceManagement:Ticket
 		ogit:lastUpdatedAt
 		ogit:sourceId
 		ogit:subject
+		ogit:reviewedAt
 		ogit.ServiceManagement:sourceStatus
 		ogit.ServiceManagement:externalTicketId
 		ogit.ServiceManagement:reportedSource

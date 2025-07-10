@@ -16,6 +16,10 @@ ogit:Product
 	);
 	ogit:optional-attributes (
 		ogit:name
+		ogit:id
+		ogit:description
+		ogit:class
+		ogit:manufacturer
 	);
 	ogit:indexed-attributes (
 		

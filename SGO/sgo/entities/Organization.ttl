@@ -59,6 +59,7 @@ The ogit/function attribute should be used to tell what kind of grouping an enti
 		ogit:sourceId
 		ogit:phone
 		ogit:alias
+		ogit:externalId
 	);
 	ogit:indexed-attributes (
 		ogit:name

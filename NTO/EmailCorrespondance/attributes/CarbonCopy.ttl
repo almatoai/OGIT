@@ -1,0 +1,15 @@
+@prefix ogit.EmailCorrespondance:        <http://www.purl.org/ogit/EmailCorrespondance/> .
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+
+ogit.EmailCorrespondance:CarbonCopy
+	a owl:DatatypeProperty;
+	rdfs:subPropertyOf ogit:Attribute;
+	rdfs:label "CarbonCopy";
+	dcterms:description """Holds the list of email addresses that were included as visible recipients in the email’s carbon copy (CC) field. 
+    These recipients received a copy of the email and are visible to all other recipients, including to, cc, and possibly bcc.""";
+	dcterms:valid "start=2025-07-10;";
+	dcterms:creator "Calvin Spolwind";
+.

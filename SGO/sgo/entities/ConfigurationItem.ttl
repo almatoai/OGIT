@@ -69,6 +69,7 @@ ogit:ConfigurationItem
 		ogit:purchasedAt
 		ogit:lastScannedAt
 		ogit:endOfWarranty
+		ogit:startOfWarranty
 		ogit:description
 		ogit:vendor
 		ogit:shortDescription
@@ -90,6 +91,8 @@ ogit:ConfigurationItem
 		ogit:content
 		ogit:model
 		ogit:modelNumber
+		ogit:serialNumber
+		ogit:macAddress
 	);
 	ogit:indexed-attributes (
 		
@@ -118,5 +121,6 @@ ogit:ConfigurationItem
 			[ ogit:corresponds  ogit.MARS:Machine ]
 			[ ogit:corresponds  ogit.Automation:MARSNode ]
 			[ ogit:runsOn  ogit:ConfigurationItem ]
+			[ ogit:belongs  ogit:Product ]
 	);
 .

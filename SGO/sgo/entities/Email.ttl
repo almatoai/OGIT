@@ -1,9 +1,4 @@
-@prefix ogit.Automation:        <http://www.purl.org/ogit/Automation/> .
-@prefix ogit.Datacenter:        <http://www.purl.org/ogit/Datacenter/> .
-@prefix ogit.Forum:             <http://www.purl.org/ogit/Forum/> .
-@prefix ogit.Network:           <http://www.purl.org/ogit/Network/> .
-@prefix ogit.Software:          <http://www.purl.org/ogit/Software/> .
-@prefix ogit.Knowledge:         <http://www.purl.org/ogit/Knowledge/> .
+@prefix ogit.EmailCorrespondance:        <http://www.purl.org/ogit/EmailCorrespondance/> .
 @prefix owl:                    <http://www.w3.org/2002/07/owl#> .
 @prefix ogit:                   <http://www.purl.org/ogit/> .
 @prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
@@ -13,7 +8,7 @@ ogit:Email
 	a rdfs:Class;
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "Email";
-	dcterms:description "Any type of email adress.";
+	dcterms:description "A Email message";
 	# For ranges, see http://dublincore.org/documents/dcmi-period/
 	dcterms:valid "start=2016-01-22;";
 	dcterms:creator "Peter Larem";
@@ -21,14 +16,20 @@ ogit:Email
 	ogit:parent ogit:Node;
 	ogit:mandatory-attributes (
 		ogit:status
+		ogit:author
+		ogit:recipients
 	);
 	ogit:optional-attributes (
-		
+		ogit:subject
+		ogit:content
+		ogit.EmailCorrespondance:CarbonCopy
+		ogit.EmailCorrespondance:BlindCarbonCopy
 	);
 	ogit:indexed-attributes (
 		
 	);
 	ogit:allowed (
-			[ ogit:connects  ogit:Person ]
+		[ ogit:responds  ogit:Person ]
+		[ ogit:has  ogit:Attachment ]
 	);
 .
