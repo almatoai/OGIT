@@ -181,6 +181,8 @@ ogit:Person
 			[ ogit:has  ogit.Mobile:Encounter]
             [ ogit:manages  ogit.Health.Diagnostics:Equipment ]
             [ ogit:manages  ogit.Health.Diagnostics:Test ]
+            [ ogit:manages  ogit:ConfigurationItem ]
+            [ ogit:registeredAt  ogit:ConfigurationItem ]
             [ ogit:registeredAt  ogit.Location:Address ]
 			[ ogit:creates 	ogit:Annotation]
 			[ ogit:creates  ogit.SalesDistribution:SalesOrder ]
