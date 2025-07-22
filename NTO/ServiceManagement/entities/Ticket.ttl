@@ -72,6 +72,7 @@ ogit.ServiceManagement:Ticket
 			[ ogit:corresponds  ogit.Automation:AutomationIssue ]
 			[ ogit:corresponds  ogit:CatalogItem ]
 			[ ogit:affects  ogit:Person ]
+			[ ogit:contains  ogit:Email ]
 			[ ogit:affects  ogit.MARS:Application ]
 			[ ogit:affects  ogit.MARS:Resource ]
 			[ ogit:affects  ogit.MARS:Software ]
