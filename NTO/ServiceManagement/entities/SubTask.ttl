@@ -19,6 +19,7 @@
 @prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms:                <http://purl.org/dc/terms/> .
 @prefix ogit.ServiceManagement: <http://www.purl.org/ogit/ServiceManagement/> .
+@prefix ogit.CustomerSupport: <http://www.purl.org/ogit/CustomerSupport/> .
 
 ogit.ServiceManagement:SubTask
 	a rdfs:Class;
@@ -62,6 +63,8 @@ Comman alternative names with same meaning are: task, activity, work order.""";
 			[ ogit:belongs  ogit.ServiceManagement:Incident ]
 			[ ogit:belongs  ogit.ServiceManagement:ChangeRequest ]
 			[ ogit:belongs  ogit.ServiceManagement:Order ]
+			[ ogit:belongs  ogit.ServiceManagement:SubTask ]
+			[ ogit:assignedTo  ogit.CustomerSupport:Group ]
 			[ ogit:assignedTo  ogit:Person ]
 			[ ogit:assignedTo  ogit:Organization ]
 			[ ogit:precedes  ogit.ServiceManagement:SubTask ]
