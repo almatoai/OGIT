@@ -60,6 +60,7 @@ The ogit/function attribute should be used to tell what kind of grouping an enti
 		ogit:phone
 		ogit:alias
 		ogit:externalId
+		ogit:sharedWith
 	);
 	ogit:indexed-attributes (
 		ogit:name

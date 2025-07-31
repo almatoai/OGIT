@@ -18,6 +18,7 @@ ogit:Region
 	ogit:optional-attributes (
 		ogit:name
 		ogit:description
+		ogit:sharedWith
 	);
 	ogit:indexed-attributes (
 		

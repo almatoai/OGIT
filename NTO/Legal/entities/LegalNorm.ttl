@@ -30,6 +30,7 @@ ogit.Legal:LegalNorm
 		ogit:lastUpdatedAt
 		ogit:url
 		ogit:endedAt
+		ogit:sharedWith
 	);
 	ogit:indexed-attributes (
 	);
