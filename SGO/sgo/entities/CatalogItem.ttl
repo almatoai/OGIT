@@ -2,6 +2,7 @@
 @prefix owl:                    <http://www.w3.org/2002/07/owl#> .
 @prefix ogit.Forum:             <http://www.purl.org/ogit/Forum/> .
 @prefix ogit.ServiceManagement: <http://www.purl.org/ogit/ServiceManagement/> .
+@prefix ogit.CustomerSupport: <http://www.purl.org/ogit/CustomerSupport/> .
 @prefix ogit.MRO.Aviation:      <http://www.purl.org/ogit/MRO/Aviation/> .
 @prefix ogit:                   <http://www.purl.org/ogit/> .
 @prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
@@ -32,5 +33,6 @@ ogit:CatalogItem
 			[ ogit:requires  ogit.ServiceManagement:Service ]
 			[ ogit:requires  ogit.ServiceManagement:Action ]
 			[ ogit:requires  ogit:CatalogItem ]
+			[ ogit:assignedTo  ogit.CustomerSupport:Group ]
 	);
 .

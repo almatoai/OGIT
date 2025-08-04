@@ -54,6 +54,7 @@ ogit.ServiceManagement:Service
 			[ ogit:opens  ogit.ServiceManagement:Incident ]
 			[ ogit:implements  ogit.Software:Application ]
 			[ ogit:corresponds  ogit:CatalogItem ]
+			[ ogit:manages  ogit:ConfigurationItem ]
 			[ ogit:calls  ogit.ServiceManagement:Service ]
 			[ ogit:complies  ogit.ServiceManagement:SLA ]
 			[ ogit:affects  ogit:Person ]
