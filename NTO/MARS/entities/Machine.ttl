@@ -52,6 +52,7 @@ ogit.MARS:Machine
             ogit.MARS.Machine:ram
             ogit.MARS.Machine:cpuCores
 
+            ogit:type
             ogit:source
             ogit:sourceId
             ogit:tenantId
