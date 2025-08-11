@@ -1,0 +1,37 @@
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix ogit.Automation:        <http://www.purl.org/ogit/Automation/> .
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+
+ogit.Automation:GraphRule
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "GraphRule";
+	dcterms:description """Automated graph response rule to act directly on graph operations.
+        """;
+	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	dcterms:valid "start=2025-08-11;";
+	dcterms:creator "Jens Bartsch";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:any-attributes "true";
+	ogit:mandatory-attributes (
+
+	);
+	ogit:optional-attributes (
+		ogit:name
+		ogit:description
+		ogit.Automation:knowledgeItemFormalRepresentation
+		ogit.Automation:deployToEngine
+		ogit.Automation:deployStatus
+	);
+	ogit:indexed-attributes (
+		ogit:name
+		ogit:description
+	);
+	ogit:allowed (
+			[ ogit:generates  ogit:Timeseries ]
+			[ ogit:uses ogit.Automation:Variable]
+	);
+.
