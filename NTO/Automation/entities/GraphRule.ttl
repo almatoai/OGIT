@@ -1,0 +1,40 @@
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix ogit.Automation:        <http://www.purl.org/ogit/Automation/> .
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+
+ogit.Automation:KnowledgeItem
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "KnowledgeItem";
+	dcterms:description """Formalized Knowledge stored in XML format. Serves as the building block for automation solutions.
+
+A KnowledgeItem is a knowledge module, which is applied for execution of an issue.
+A KnowledgeItem checks therefor the information and decides if it will be executed.
+In that case, the KnowledgeItem executes operations, which serves the exploitation of information.""";
+	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	dcterms:valid "start=2015-05-21;";
+	dcterms:creator "Peter Larem";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:any-attributes "true";
+	ogit:mandatory-attributes (
+
+	);
+	ogit:optional-attributes (
+		ogit:name
+		ogit:description
+		ogit.Automation:knowledgeItemFormalRepresentation
+		ogit.Automation:deployToEngine
+		ogit.Automation:deployStatus
+	);
+	ogit:indexed-attributes (
+		ogit:name
+		ogit:description
+	);
+	ogit:allowed (
+			[ ogit:generates  ogit:Timeseries ]
+			[ ogit:uses ogit.Automation:Variable]
+	);
+.
