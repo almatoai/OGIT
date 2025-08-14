@@ -55,6 +55,7 @@ ogit.MARS:Machine
             ogit:source
             ogit:sourceId
             ogit:tenantId
+            ogit:type
 	);
         ogit:indexed-attributes (
             ogit:name
