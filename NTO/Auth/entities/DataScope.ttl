@@ -33,5 +33,6 @@ ogit.Auth:DataScope
 	);
 	ogit:allowed (
             [ ogit.Auth:belongs  ogit.Auth:Organization ]
+			[ ogit:generates  ogit:Timeseries ]
 	);
 .
