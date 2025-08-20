@@ -1,7 +1,8 @@
-@prefix ogit.Documents:        <http://www.purl.org/ogit/Documents/> .
+@prefix ogit.Documents:        	<http://www.purl.org/ogit/Documents/> .
 @prefix ogit:                   <http://www.purl.org/ogit/> .
 @prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms:                <http://purl.org/dc/terms/> .
+@prefix ogit.Forms: 			<http://www.purl.org/ogit/Forms/> .
 
 ogit.Documents:Document
 	a rdfs:Class;
@@ -26,5 +27,6 @@ ogit.Documents:Document
     );
     ogit:allowed (
 			[ ogit:consistsOf  ogit:Attachment ]
+			[ ogit:represents  ogit.Forms:Form ]
 	);
 .
