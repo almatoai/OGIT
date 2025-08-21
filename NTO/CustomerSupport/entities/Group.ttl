@@ -40,6 +40,7 @@ ogit.CustomerSupport:Group
 		[ ogit:uses ogit:Product ]
 		[ ogit:provides ogit:Comment ]
 		[ ogit:isResponsibleFor ogit.ServiceManagement:Ticket ]
+		[ ogit:isResponsibleFor ogit:ConfigurationItem ]
 		[ ogit:isResponsibleFor ogit:Comment ]
 	);
 .

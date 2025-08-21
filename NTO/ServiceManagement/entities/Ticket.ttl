@@ -16,6 +16,7 @@
 @prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms:                <http://purl.org/dc/terms/> .
 @prefix ogit.ServiceManagement: <http://www.purl.org/ogit/ServiceManagement/> .
+@prefix ogit.CustomerSupport: <http://www.purl.org/ogit/CustomerSupport/> .
 
 ogit.ServiceManagement:Ticket
 	a rdfs:Class;
@@ -71,6 +72,7 @@ ogit.ServiceManagement:Ticket
 			[ ogit:reportedOn  ogit.MARS:Resource ]
 			[ ogit:reportedOn  ogit.MARS:Application ]
 			[ ogit:reportedOn  ogit.Automation:MARSNode ]
+			[ ogit:assignedTo  ogit.CustomerSupport:Group ]
 			[ ogit:corresponds  ogit.Automation:AutomationIssue ]
 			[ ogit:corresponds  ogit:CatalogItem ]
 			[ ogit:affects  ogit:Person ]

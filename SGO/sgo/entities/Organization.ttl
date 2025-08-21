@@ -14,6 +14,7 @@
 @prefix ogit.Software:          <http://www.purl.org/ogit/Software/> .
 @prefix ogit.Network:           <http://www.purl.org/ogit/Network/> .
 @prefix ogit.ServiceManagement: <http://www.purl.org/ogit/ServiceManagement/> .
+@prefix ogit.CustomerSupport: <http://www.purl.org/ogit/CustomerSupport/> .
 @prefix ogit.Survey:            <http://www.purl.org/ogit/Survey/> .
 @prefix ogit.Project:           <http://www.purl.org/ogit/Project/> .
 @prefix ogit.Factory:   <http://www.purl.org/ogit/Factory/> .
@@ -87,6 +88,7 @@ The ogit/function attribute should be used to tell what kind of grouping an enti
 			[ ogit:creates  ogit:Organization ]
 			[ ogit:creates  ogit:ConfigurationItem ]
 			[ ogit:leads  ogit:Organization ]
+			[ ogit:leads  ogit.CustomerSupport:Group ]
 			[ ogit:generates  ogit:Timeseries ]
 			[ ogit:generates  ogit:Catalog ]
 			[ ogit:belongs  ogit:Alert ]
