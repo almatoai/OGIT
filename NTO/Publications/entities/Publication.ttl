@@ -1,0 +1,41 @@
+
+@prefix ogit.Publications:      <http://www.purl.org/ogit/Publications/> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+
+ogit.Publications:Publication
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "Publication";
+	dcterms:description "A public or private publication. Could be a newspaper article, book, or other.";
+	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	dcterms:valid "start=2015-04-27;";
+	dcterms:creator "esteban.moreno@almato.de";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:mandatory-attributes (
+		ogit:externalId
+		ogit:content
+	);
+	ogit:optional-attributes (
+		ogit.createdAt
+		ogit:type
+		ogit:source
+		ogit:sourceId
+		ogit.Publications:sourceDocumentIdentifier
+	);
+	ogit:indexed-attributes (
+		
+	);
+	ogit:allowed (
+			[ ogit:connects  ogit.Publications:Topic ]
+			[ ogit.Publications:mentions ogit:Count ]
+			[ ogit.Publications:mentions ogit:Region ]
+			[ ogit.Publications:mentions ogit:Person ]
+			[ ogit.Publications:mentions ogit:Organization ]
+			[ ogit:has ogit:Tone ]
+			[ ogit:contains  ogit.Publications:Mention ]
+	);
+.

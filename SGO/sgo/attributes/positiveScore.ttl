@@ -1,0 +1,13 @@
+@prefix ogit.Publications:     <http://www.purl.org/ogit/Publications/> .
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+
+ogit:positiveScore
+        a owl:DatatypeProperty;
+        rdfs:subPropertyOf ogit:Attribute;
+        rdfs:label "positiveScore";
+        dcterms:description "Percentage of all words in the articlethat were found to have a positive emotional connotation.";
+        dcterms:valid "start=2019-08-02;";
+        dcterms:creator "esteban.moreno@almato.com";

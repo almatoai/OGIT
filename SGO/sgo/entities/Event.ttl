@@ -8,6 +8,7 @@
 @prefix ogit.BusinessProcess:   <http://www.purl.org/ogit/BusinessProcess/> .
 @prefix ogit.Automation:        <http://www.purl.org/ogit/Automation/> .
 @prefix ogit.MARS:              <http://www.purl.org/ogit/MARS/> .
+@prefix ogit.Publication:       <http://www.purl.org/ogit/Publication/> .
 @prefix ogit.MRO.Aviation:      <http://www.purl.org/ogit/MRO/Aviation/> .
 @prefix owl:                    <http://www.w3.org/2002/07/owl#> .
 @prefix ogit.Auth:              <http://www.purl.org/ogit/Auth/> .
@@ -84,5 +85,7 @@ ogit:Event
 			[ ogit:alerts  ogit.Auth:Account ]
 			[ ogit:has ogit.Politics:Discussion ]
 			[ ogit:registers ogit:Organization ]
+			[ ogit:occurs ogit:Location ]
+			[ ogit:affects ogit.Publication:Actor ]
 	);
 .

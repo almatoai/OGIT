@@ -1,0 +1,13 @@
+@prefix ogit.Publications:     <http://www.purl.org/ogit/Publications/> .
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+
+ogit.Publications:sourceDocumentIdentifier
+        a owl:DatatypeProperty;
+        rdfs:subPropertyOf ogit:Attribute;
+        rdfs:label "sourceDocumentIdentifier";
+        dcterms:description "Unique external identifier for the source document in the original publication. It can be used to uniquely identify the document and access it if you have the necessary subscriptions or authorizations and/or the document is public access.";
+        dcterms:valid "start=2019-08-02;";
+        dcterms:creator "esteban.moreno@almato.com";

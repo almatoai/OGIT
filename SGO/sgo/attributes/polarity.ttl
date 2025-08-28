@@ -1,0 +1,13 @@
+@prefix ogit.Publications:     <http://www.purl.org/ogit/Publications/> .
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+
+ogit:polarity
+        a owl:DatatypeProperty;
+        rdfs:subPropertyOf ogit:Attribute;
+        rdfs:label "polarity";
+        dcterms:description "Percentage of words that had matches in the tonal dictionary as an indicator of how emotionally polarized or charged the text is.If Polarity is high, but Tone is neutral, this suggests the text was highly emotionally charged, but had roughly equivalent numbers of positively and negatively charged emotional words.";
+        dcterms:valid "start=2019-08-02;";
+        dcterms:creator "esteban.moreno@almato.com";

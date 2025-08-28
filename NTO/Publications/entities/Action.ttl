@@ -1,0 +1,31 @@
+@prefix ogit.Publications:      <http://www.purl.org/ogit/Publications/> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+@prefix ogit.Forum:             <http://www.purl.org/ogit/Forum/> .
+
+ogit.Publications:Action
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "Action";
+	dcterms:description "Describes an Action performed by an Actor.";
+	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	dcterms:valid "start=2015-04-27;";
+	dcterms:creator "esteban.moreno@almato.de";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:mandatory-attributes (
+		ogit:createdAt #action date
+	);
+	ogit:optional-attributes (
+		ogit:type #event code
+	);
+	ogit:indexed-attributes (
+		
+	);
+	ogit:allowed (
+		[ ogit:affects ogit.Publication:Actor ]
+		[ ogit:assignedTo ogit:Event ]
+	);
+.
