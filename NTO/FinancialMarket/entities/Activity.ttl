@@ -1,0 +1,27 @@
+@prefix ogit.FinancialMarket:     <http://www.purl.org/ogit/FinancialMarket/> .
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+
+ogit.FinancialMarket:Activity
+  a rdfs:Class;
+  rdfs:subClassOf ogit:Entity;
+  rdfs:label "Activity";
+  dcterms:description "A financial or economic activity performed by an entity.";
+  dcterms:valid "start=20125-09-05;";
+  dcterms:creator "Calvin Spolwind";
+  ogit:scope "NTO";
+  ogit:parent ogit:Node;
+  ogit:mandatory-attributes (
+    ogit:type
+    ogit:code
+  );
+  ogit:optional-attributes (
+    ogit:source
+    ogit:description
+  );
+  ogit:indexed-attributes (
+  );
+  ogit:allowed (
+  );
+.

@@ -19,6 +19,7 @@
 @prefix ogit.Project:           <http://www.purl.org/ogit/Project/> .
 @prefix ogit.Factory:   <http://www.purl.org/ogit/Factory/> .
 @prefix ogit.MRO.Aviation:              <http://www.purl.org/ogit/MRO/Aviation/> .
+@prefix ogit.FinancialMarket:              <http://www.purl.org/ogit/FinancialMarket/> .
 @prefix ogit.Health.Diagnostics:        <http://www.purl.org/ogit/Health/Diagnostics/> .
 @prefix ogit.Schedule:              <http://www.purl.org/ogit/Schedule/> .
 @prefix ogit:					<http://www.purl.org/ogit/> .
@@ -62,6 +63,10 @@ The ogit/function attribute should be used to tell what kind of grouping an enti
 		ogit:alias
 		ogit:externalId
 		ogit:sharedWith
+		ogit.FinancialMarket:legalForm
+		ogit:source
+		ogit.FinancialMarket:value
+		ogit.FinancialMarket:currency
 	);
 	ogit:indexed-attributes (
 		ogit:name
@@ -134,10 +139,11 @@ The ogit/function attribute should be used to tell what kind of grouping an enti
 			[ ogit:manages ogit.ServiceManagement:Service]
 			[ ogit:utilizes ogit.ServiceManagement:Service]
 			[ ogit:organizes  ogit.Schedule:Event ]
-			[ogit:isPresent ogit:Organization]
-			[ogit:isMemberOf ogit:Organization]
-			[ogit:organizes ogit:Event]
-			[ogit:has ogit.Politics:Reaction]
-			[ogit:issues ogit.Legal:LegalNorm]
+			[ ogit:isPresent ogit:Organization ]
+			[ ogit:isMemberOf ogit:Organization ]
+			[ ogit:organizes ogit:Event ]
+			[ ogit:has ogit.Politics:Reaction ]
+			[ ogit:issues ogit.Legal:LegalNorm ]
+			[ ogit:conducts ogit.FinancialMarket:Activity ]
 	);
 .
