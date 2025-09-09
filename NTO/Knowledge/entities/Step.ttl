@@ -28,5 +28,6 @@ ogit.Knowledge:Step
     ogit:allowed (
         [ ogit:defines   ogit.Automation:KnowledgeItem ]
         [ ogit:contains  ogit.Knowledge:Step ]
+        [ ogit:contains  ogit.Knowledge:StepReference ]
     );
 .

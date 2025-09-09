@@ -33,5 +33,6 @@ ogit.Knowledge:AcquisitionSession
         [ ogit:contains  ogit.Knowledge:AcquisitionRoom ]
         [ ogit:defines  ogit.Automation:KnowledgeItem ]
         [ ogit:defines  ogit.Knowledge:Step ]
+        [ ogit:defines  ogit.Knowledge:StepReference ]
     );
 .
