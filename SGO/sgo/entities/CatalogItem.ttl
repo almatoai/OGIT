@@ -35,5 +35,6 @@ ogit:CatalogItem
 			[ ogit:requires  ogit.ServiceManagement:Action ]
 			[ ogit:requires  ogit:CatalogItem ]
 			[ ogit:assignedTo  ogit.CustomerSupport:Group ]
+			[ ogit:uses  ogit:Mapping ]
 	);
 .

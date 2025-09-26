@@ -1,0 +1,33 @@
+@prefix ogit.MARS.Software:              <http://www.purl.org/ogit/MARS/Software/> .
+@prefix ogit.Automation:        <http://www.purl.org/ogit/Automation/> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+
+ogit:Mapping
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "Mapping";
+	dcterms:description """A Mapping node represents the configurable association between cataloged events or alarms and the target context required for further processing, such as service categories, responsible users, or operating environments. It enables flexible, customer-specific routing and responsibility assignment independent of the original event source.""";
+	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	dcterms:valid "start=2025-09-25;";
+	dcterms:creator "Calvin Spolwind";
+	ogit:scope "SGO";
+	ogit:parent ogit:Node;
+	ogit:mandatory-attributes (
+
+	);
+	ogit:optional-attributes (
+		ogit:id
+        ogit:source
+        ogit:category
+        ogit.Automation:osName
+        ogit.MARS.Software:serviceName
+	);
+	ogit:indexed-attributes (
+	);
+	ogit:allowed (
+
+	);
+.
