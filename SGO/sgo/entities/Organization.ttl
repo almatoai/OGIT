@@ -150,5 +150,6 @@ The ogit/function attribute should be used to tell what kind of grouping an enti
 			[ ogit:issues ogit.Legal:LegalNorm ]
 			[ ogit:conducts ogit.FinancialMarket:Activity ]
 			[ ogit:publishes ogit.Publications:Publication ]
+			[ ogit:has ogit:Attachment ]
 	);
 .

@@ -36,5 +36,6 @@ ogit:Region
 		[ ogit:capitalOf  ogit:Region ]
 		[ ogit:locatedIn  ogit:Region ]
 		[ ogit:generates  ogit:Timeseries ]
+		[ ogit:has  ogit:Attachment]
 	);
 .
