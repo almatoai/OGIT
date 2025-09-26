@@ -35,6 +35,7 @@ ogit:Region
 	ogit:allowed (
 		[ ogit:capitalOf  ogit:Region ]
 		[ ogit:locatedIn  ogit:Region ]
+		[ ogit:equals  ogit:Equivalence ]
 		[ ogit:generates  ogit:Timeseries ]
 	);
 .

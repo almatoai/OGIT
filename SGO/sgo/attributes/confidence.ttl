@@ -1,0 +1,14 @@
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+
+ogit:confidence
+        a owl:DatatypeProperty;
+        rdfs:subPropertyOf ogit:Attribute;
+        rdfs:label "confidence";
+        dcterms:description """A numeric score expressing the degree of certainty associated with a statement, link, or equivalence. 
+        The confidence value is typically represented as a normalized number between 0 and 1, where higher values indicate greater certainty.""";
+        dcterms:valid "start=2025-09-23;";
+        dcterms:creator "Calvin Spolwind";
+.
