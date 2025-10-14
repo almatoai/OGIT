@@ -24,5 +24,6 @@ ogit.GeoProfile:Ethnicity
 	ogit:indexed-attributes (
 	);
 	ogit:allowed (
+		[ ogit:belongs ogit:Region ]
 	);
 .
