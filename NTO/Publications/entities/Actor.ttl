@@ -22,7 +22,6 @@ ogit.Publications:Actor
 		ogit.Publication:actorCode
 		ogit:isoCode #country code
 		ogit.Publication:groupCode #groupCode
-		ogit.Publication:ethnicCode #ethnicCode
 		ogit:religion # list of religions
 		ogit.Publication:roleCode #roleCodes -> list
 	);
@@ -37,5 +36,6 @@ ogit.Publications:Actor
 		[ ogit:belongs ogit:City ]
 		[ ogit:belongs ogit:Person ]
 		[ ogit:belongs ogit:Location ]
+		[ ogit:has ogit.GeoProfile:Ethnicity ]
 	);
 .
