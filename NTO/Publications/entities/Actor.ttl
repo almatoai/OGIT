@@ -23,7 +23,6 @@ ogit.Publications:Actor
 		ogit:isoCode #country code
 		ogit.Publication:groupCode #groupCode
 		ogit:religion # list of religions
-		ogit.Publication:roleCode #roleCodes -> list
 	);
 	ogit:indexed-attributes (
 		
