@@ -4,13 +4,12 @@
 @prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms:                <http://purl.org/dc/terms/> .
 @prefix ogit.Forum:             <http://www.purl.org/ogit/Forum/> .
-@prefix ogit.Religion:          <http://www.purl.org/ogit/Religion/> .
 
-ogit.Publications:Actor
+ogit.Publications:ActorType
 	a rdfs:Class;
 	rdfs:subClassOf ogit:Entity;
-	rdfs:label "Actor";
-	dcterms:description "Describes an Actor receiving or performing an Action to other Actor in an Event.";
+	rdfs:label "ActorType";
+	dcterms:description "Describes an ActorType that classifies an Actor.";
 	# For ranges, see http://dublincore.org/documents/dcmi-period/
 	dcterms:valid "start=2015-04-27;";
 	dcterms:creator "esteban.moreno@almato.de";
@@ -20,21 +19,13 @@ ogit.Publications:Actor
 		ogit:name
 	);
 	ogit:optional-attributes (
-		ogit.Publication:actorCode
-		ogit:isoCode #country code
-		ogit.Publication:groupCode #groupCode
-		ogit:religion # list of religions
+		ogit:identifierCode
+		ogit:codeType
 	);
 	ogit:indexed-attributes (
 		
 	);
 	ogit:allowed (
-		[ ogit:locatedIn ogit:Location ]
-		[ ogit:performs ogit.Publication:Action ]
-		[ ogit:belongs ogit:Region ]
-		[ ogit:belongs ogit.GeoProfile:Ethnicity ]
-		[ ogit:has ogit:Role ]
-		[ ogit:belongs ogit.Publications:ActorType ]
-		[ ogit:follows ogit.Religion:BeliefSystem ]
+		[ ogit:belongs ogit:Organization ]
 	);
 .
