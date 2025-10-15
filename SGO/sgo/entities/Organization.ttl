@@ -26,6 +26,7 @@
 @prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms:                <http://purl.org/dc/terms/> .
 @prefix ogit.Legal:        <http://www.purl.org/ogit/Legal/> .
+@prefix ogit.Religion:      	<http://www.purl.org/ogit/Religion/> .
 
 ogit:Organization
 	a rdfs:Class;
@@ -139,5 +140,7 @@ The ogit/function attribute should be used to tell what kind of grouping an enti
 			[ogit:organizes ogit:Event]
 			[ogit:has ogit.Politics:Reaction]
 			[ogit:issues ogit.Legal:LegalNorm]
+			[ogit:leads ogit.Religion:BeliefSystem]
+			[ogit:follows ogit.Religion:BeliefSystem]
 	);
 .

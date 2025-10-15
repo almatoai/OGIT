@@ -24,6 +24,7 @@
 @prefix ogit:                   <http://www.purl.org/ogit/> .
 @prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms:                <http://purl.org/dc/terms/> .
+@prefix ogit.Religion:      	<http://www.purl.org/ogit/Religion/> .
 
 ogit:Person
 	a rdfs:Class;
@@ -198,5 +199,8 @@ ogit:Person
 			[ ogit:issues ogit.Politics:DisciplinaryMeasure ]
 			[ ogit:has ogit.Politics:Reaction ]
 			[ ogit:has ogit.Politics:Mandate ]
+			[ ogit:creates ogit.Religion:BeliefSystem ]
+			[ ogit:follows ogit.Religion:BeliefSystem ]
+			[ ogit:belongs ogit.GeoProfile:Ethnicity ]
 	);
 .

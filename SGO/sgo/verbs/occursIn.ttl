@@ -16,5 +16,5 @@ ogit:occursIn
 	dcterms:description "indicate that a particular event, entity, or phenomenon happens or is located within a specific place, time, or context";
 	# For ranges, see http://dublincore.org/documents/dcmi-period/
 	dcterms:valid "start=2015-05-21;";
-	dcterms:creator "Peter Larem";
+	dcterms:creator "Esteban Moreno";
 .
