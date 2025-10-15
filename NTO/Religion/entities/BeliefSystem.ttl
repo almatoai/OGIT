@@ -22,6 +22,7 @@ ogit.Religion:BeliefSystem
 		ogit:identifierCode
 		ogit:name
 		ogit:description
+		ogit:codeType
 	);
 	ogit:indexed-attributes (
 		
