@@ -16,10 +16,11 @@ ogit.GeoProfile:Ethnicity
 	ogit:parent ogit:Node;
 	ogit:any-attributes "true";
 	ogit:mandatory-attributes (
-		ogit:code
+		ogit:identifierCode
 		ogit:name
 	);
 	ogit:optional-attributes (
+		ogit:codeType
 	);
 	ogit:indexed-attributes (
 	);
