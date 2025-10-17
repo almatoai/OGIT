@@ -9,7 +9,7 @@ ogit.Publications:ActionType
 	a rdfs:Class;
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "ActionType";
-	dcterms:description "Describes an ActionType describing type of Action done by an Actor.";
+	dcterms:description "Describes a type of Action done by an Actor.";
 	# For ranges, see http://dublincore.org/documents/dcmi-period/
 	dcterms:valid "start=2015-04-27;";
 	dcterms:creator "esteban.moreno@almato.de";
