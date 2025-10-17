@@ -1,0 +1,29 @@
+@prefix ogit:			<http://www.purl.org/ogit/> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+@prefix ogit.GeoProfile: <http://www.purl.org/ogit/GeoProfile/> .
+
+ogit.GeoProfile:Ethnicity
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "Ethnicity";
+	dcterms:description "Category of people who identify with each other based on shared cultural, linguistic, ancestral, religious, or social traits. It often involves a sense of common heritage, history, and sometimes language or religion.";
+	dcterms:valid "start=2020-08-14;";
+	dcterms:creator "Esteban Moreno";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:any-attributes "true";
+	ogit:mandatory-attributes (
+		ogit:identifierCode
+		ogit:name
+	);
+	ogit:optional-attributes (
+		ogit:codeType
+	);
+	ogit:indexed-attributes (
+	);
+	ogit:allowed (
+		[ ogit:belongs ogit:Region ]
+	);
+.

@@ -3,6 +3,7 @@
 @prefix dcterms:                <http://purl.org/dc/terms/> .
 @prefix ogit.GeoProfile: <http://www.purl.org/ogit/GeoProfile/> .
 @prefix ogit.FinancialMarket: <http://www.purl.org/ogit/FinancialMarket/> .
+@prefix ogit.Religion:      	<http://www.purl.org/ogit/Religion/> .
 
 ogit:Region
 	a rdfs:Class;
@@ -35,6 +36,8 @@ ogit:Region
 	ogit:allowed (
 		[ ogit:capitalOf  ogit:Region ]
 		[ ogit:locatedIn  ogit:Region ]
+		[ ogit:has ogit.Religion:BeliefSystem ]
+		[ ogit:centerOf ogit.Religion:BeliefSystem ]
 		[ ogit:generates  ogit:Timeseries ]
 		[ ogit:has ogit:Attachment ]
 	);

@@ -20,6 +20,7 @@
 @prefix ogit.Location: 			<http://www.purl.org/ogit/Location/> .
 @prefix ogit.SalesDistribution: <http://www.purl.org/ogit/SalesDistribution/> .
 @prefix ogit.Publications: <http://www.purl.org/ogit/Publications/> .
+@prefix ogit.Religion:      	<http://www.purl.org/ogit/Religion/> .
 @prefix owl:                    <http://www.w3.org/2002/07/owl#> .
 @prefix ogit.UserMeta:          <http://www.purl.org/ogit/UserMeta/> .
 @prefix ogit:                   <http://www.purl.org/ogit/> .
@@ -206,5 +207,8 @@ ogit:Person
 			[ ogit:has ogit.Politics:Reaction ]
 			[ ogit:has ogit.Politics:Mandate ]
 			[ ogit:creates ogit.Publications:Publication ]
+			[ ogit:creates ogit.Religion:BeliefSystem ]
+			[ ogit:leads ogit.Religion:BeliefSystem ]
+			[ ogit:follows ogit.Religion:BeliefSystem ]
 	);
 .

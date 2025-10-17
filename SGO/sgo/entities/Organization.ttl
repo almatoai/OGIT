@@ -27,6 +27,7 @@
 @prefix ogit.Legal:             <http://www.purl.org/ogit/Legal/> .
 @prefix ogit.Documents:         <http://www.purl.org/ogit/Documents/> .
 @prefix ogit.Location:          <http://www.purl.org/ogit/Location/> .
+@prefix ogit.Religion:      	<http://www.purl.org/ogit/Religion/> .
 @prefix ogit:					<http://www.purl.org/ogit/> .
 @prefix owl:                    <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
@@ -159,5 +160,7 @@ The ogit/function attribute should be used to tell what kind of grouping an enti
 			[ ogit:publishes ogit.Publications:Publication ]
 			[ ogit:has ogit:Attachment ]
 			[ ogit:locatedIn ogit.Location:Address ]
+			[ ogit:leads ogit.Religion:BeliefSystem ]
+			[ ogit:follows ogit.Religion:BeliefSystem ]
 	);
 .

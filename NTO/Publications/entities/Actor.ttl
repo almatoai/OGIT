@@ -4,7 +4,7 @@
 @prefix ogit:                   <http://www.purl.org/ogit/> .
 @prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms:                <http://purl.org/dc/terms/> .
-@prefix ogit.Forum:             <http://www.purl.org/ogit/Forum/> .
+@prefix ogit.Religion:      	<http://www.purl.org/ogit/Religion/> .
 
 ogit.Publications:Actor
 	a rdfs:Class;
@@ -32,11 +32,11 @@ ogit.Publications:Actor
 	);
 	ogit:allowed (
 		[ ogit:locatedIn ogit:Location ]
-		[ ogit:locatedIn ogit:Region ]
 		[ ogit:performs ogit.Publications:Action ]
 		[ ogit:belongs ogit:Region ]
-		[ ogit:belongs ogit:Role ]
-		[ ogit:belongs ogit:Person ]
-		[ ogit:belongs ogit:Location ]
+		[ ogit:belongs ogit.GeoProfile:Ethnicity ]
+		[ ogit:has ogit:Role ]
+		[ ogit:belongs ogit.Publications:ActorType ]
+		[ ogit:follows ogit.Religion:BeliefSystem ]
 	);
 .

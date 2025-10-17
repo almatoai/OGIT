@@ -5,29 +5,27 @@
 @prefix dcterms:                <http://purl.org/dc/terms/> .
 @prefix ogit.Forum:             <http://www.purl.org/ogit/Forum/> .
 
-ogit.Publications:Action
+ogit.Publications:ActorType
 	a rdfs:Class;
 	rdfs:subClassOf ogit:Entity;
-	rdfs:label "Action";
-	dcterms:description "Describes an Action performed by an Actor.";
+	rdfs:label "ActorType";
+	dcterms:description "Describes the Type a Actor belongs to.";
 	# For ranges, see http://dublincore.org/documents/dcmi-period/
-	dcterms:valid "start=2025-09-04;";
+	dcterms:valid "start=2025-10-17;";
 	dcterms:creator "esteban.moreno@almato.de";
 	ogit:scope "NTO";
 	ogit:parent ogit:Node;
 	ogit:mandatory-attributes (
-		ogit:createdAt #action date
+		ogit:name
 	);
 	ogit:optional-attributes (
-		ogit:type #event code
+		ogit:identifierCode
+		ogit:codeType
 	);
 	ogit:indexed-attributes (
-		
+
 	);
 	ogit:allowed (
-		[ ogit:affects ogit.Publications:Actor ]
-		[ ogit:assignedTo ogit:Event ]
-		[ ogit:locatedAt ogit:Location ]
-		[ ogit:has ogit.Publications:ActionType ]
+		[ ogit:belongs ogit:Organization ]
 	);
 .

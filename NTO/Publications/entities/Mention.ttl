@@ -21,6 +21,7 @@ ogit.Publications:Mention
 	ogit:optional-attributes (
 		ogit.Publications:confidence
 		ogit:tone
+		ogit:createdAt
 	);
 	ogit:indexed-attributes (
 		

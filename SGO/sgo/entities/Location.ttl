@@ -10,6 +10,7 @@
 @prefix ogit.MRO.Aviation:      <http://www.purl.org/ogit/MRO/Aviation/> .
 @prefix ogit.MRP:               <http://www.purl.org/ogit/MRP/> .
 @prefix ogit.Factory:   <http://www.purl.org/ogit/Factory/> .
+@prefix ogit.Religion:      	<http://www.purl.org/ogit/Religion/> .
 @prefix ogit:                   <http://www.purl.org/ogit/> .
 @prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms:                <http://purl.org/dc/terms/> .
@@ -38,7 +39,10 @@ Organization. Similar to http://purl.org/goodrelations/v1#Location""";
 		
 	);
 	ogit:allowed (
-			[ ogit:generates  ogit:Timeseries ]
-			[ ogit:locatedIn  ogit:Region ]
+		[ ogit:has ogit.Religion:BeliefSystem ]
+		[ ogit:hosts ogit.Religion:BeliefSystem ]
+		[ ogit:centerOf ogit.Religion:BeliefSystem ]
+		[ ogit:generates  ogit:Timeseries ]
+		[ ogit:locatedIn  ogit:Region ]
 	);
 .
