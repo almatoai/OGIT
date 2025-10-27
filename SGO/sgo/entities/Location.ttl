@@ -36,6 +36,8 @@ Organization. Similar to http://purl.org/goodrelations/v1#Location""";
 		ogit:altitude
 		ogit:postalCode
 		ogit:type
+		ogit:lastUpdatedAt
+		ogit:externalId
 	);
 	ogit:indexed-attributes (
 		
@@ -46,5 +48,6 @@ Organization. Similar to http://purl.org/goodrelations/v1#Location""";
 		[ ogit:centerOf ogit.Religion:BeliefSystem ]
 		[ ogit:generates  ogit:Timeseries ]
 		[ ogit:locatedIn  ogit:Region ]
+		[ ogit:centerOf  ogit:Region ]
 	);
 .

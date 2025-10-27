@@ -7,7 +7,7 @@ ogit:alternativeName
 	a owl:DatatypeProperty;
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "alternativeName";
-	dcterms:description "Alternative name of something. In context of a Person this can be the full name or an alias/nick name.";
+	dcterms:description "Alternative name of something. In context of a Person this can be the full name or an alias/nick name. This attribute may also hold a list of alternative names." ;
 	# For ranges, see http://dublincore.org/documents/dcmi-period/
 	dcterms:valid "start=2015-05-21;";
 	dcterms:creator "Peter Larem";
