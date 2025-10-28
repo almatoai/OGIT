@@ -25,5 +25,6 @@ ogit:Equivalence
 		[ ogit:connects  ogit:Location ]
 		[ ogit:connects ogit:Organization ]
 		[ ogit:connects ogit:Person ]
+		[ ogit:connects ogit.Security:Threat ]
 	);
 .
