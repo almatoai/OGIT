@@ -64,5 +64,7 @@ ogit.MARS:Software
 			[ ogit:generates  ogit.Data:Log ]
 			[ ogit:generates  ogit:Timeseries ]
 			[ ogit:dependsOn  ogit.MARS:Machine ]
+			[ ogit:provides  ogit.ServiceManagement:Service ]
+			[ ogit:implements  ogit:Product ]
 	);
 .
