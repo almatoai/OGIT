@@ -34,5 +34,6 @@ ogit.Security:Incident
 	ogit:allowed (
 			[ ogit:causes  ogit.ServiceManagement:Incident ]
 			[ ogit:affects ogit.Network:NetworkInterface ]
+			[ ogit:originatesIn ogit:Region]
 	);
 .
