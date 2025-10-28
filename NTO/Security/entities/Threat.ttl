@@ -36,6 +36,6 @@ ogit.Security:Threat
 		[ ogit:derivesFrom ogit.Security:Threat ]
 		[ ogit:belongs ogit:Category ]
 		[ ogit:causes ogit.Security:Incident ]
-		[ ogit:follows ogit:Intent ]
+		[ ogit:has ogit:Intent ]
 	);
 .
