@@ -34,6 +34,7 @@ ogit:Region
 		ogit.GeoProfile.Codes:m49
 		ogit.GeoProfile.Codes:gns
 		ogit.GeoProfile.Codes:gnis
+		ogit.GeoProfile.Codes:geonamesAdmin
 		ogit.GeoProfile:politicalSystem
 		ogit.GeoProfile:spokenLanguages
 		ogit:sharedWith
