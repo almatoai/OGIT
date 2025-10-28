@@ -27,7 +27,8 @@ ogit.Security:Incident
 		ogit:reportedAt
 		ogit:source
 		ogit:severity
-		ogit:occurredAt
+		ogit:firstOccuredAt
+		ogit:lastOccurredAt
 	);
 	ogit:indexed-attributes (
 		
