@@ -5,10 +5,10 @@
 @prefix dcterms:                <http://purl.org/dc/terms/> .
 
 ogit.GeoProfile.Codes:iso2
-    a owl:DatatypeProperty ;
-    rdfs:subPropertyOf ogit:Attribute ;
-    rdfs:label "iso2" ;
-    dcterms:description ""ISO 3166-1 alpha-2 (two-letter) country code, e.g. 'DE' for Germany." ;
-    dcterms:valid "start=2025-10-27;" ;
-    dcterms:creator "Calvin Spolwind" ;
+    a owl:DatatypeProperty;
+    rdfs:subPropertyOf ogit:Attribute;
+    rdfs:label "iso2";
+    dcterms:description ""ISO 3166-1 alpha-2 (two-letter) country code, e.g. 'DE' for Germany.";
+    dcterms:valid "start=2025-10-27;";
+    dcterms:creator "Calvin Spolwind";
 .

@@ -5,10 +5,10 @@
 @prefix dcterms:                <http://purl.org/dc/terms/> .
 
 ogit.GeoProfile.Codes:m49
-    a owl:DatatypeProperty ;
-    rdfs:subPropertyOf ogit:Attribute ;
-    rdfs:label "m49" ;
-    dcterms:description "UN M49 numeric code for countries, areas, and regions defined by the United Nations Statistics Division." ;
-    dcterms:valid "start=2025-10-27;" ;
-    dcterms:creator "Calvin Spolwind" ;
+    a owl:DatatypeProperty;
+    rdfs:subPropertyOf ogit:Attribute;
+    rdfs:label "m49";
+    dcterms:description "UN M49 numeric code for countries, areas, and regions defined by the United Nations Statistics Division.";
+    dcterms:valid "start=2025-10-27;";
+    dcterms:creator "Calvin Spolwind";
 .
