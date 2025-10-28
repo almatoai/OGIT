@@ -26,6 +26,6 @@ ogit:Category
 		ogit:type
 	);
 	ogit:allowed (
-		[ ogit:belongs ogit:Category ] # Category hierarchy (e.g., "Malware" subCategoryOf "Threat Type")
+		[ ogit:subCategory ogit:Category ] # Category hierarchy (e.g., "Trojan" belongs to "Malware")
 	);
 .
