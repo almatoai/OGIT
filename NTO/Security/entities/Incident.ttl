@@ -27,12 +27,15 @@ ogit.Security:Incident
 		ogit:reportedAt
 		ogit:source
 		ogit:severity
+		ogit:firstOccurredAt
+		ogit:lastOccurredAt
 	);
 	ogit:indexed-attributes (
 		
 	);
 	ogit:allowed (
-			[ ogit:causes  ogit.ServiceManagement:Incident ]
-			[ ogit:affects ogit.Network:NetworkInterface ]
+			[ ogit:causes  		ogit.ServiceManagement:Incident ]
+			[ ogit:affects 		ogit.Network:NetworkInterface ]
+			[ ogit:originatesIn ogit:Region]
 	);
 .
