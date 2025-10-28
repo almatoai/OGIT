@@ -4,11 +4,11 @@
 @prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms:                <http://purl.org/dc/terms/> .
 
-ogit.GeoProfile:isoCode
+ogit.GeoProfile:isoCode #deprecated
         a owl:DatatypeProperty;
         rdfs:subPropertyOf ogit:Attribute;
         rdfs:label "isoCode";
-        dcterms:description "ISO 3166-1 is a standard defining codes for the names of countries, dependent territories, and special areas of geographical interest. ";
+        dcterms:description "ISO 3166-1 numeric (three-digit) country code as defined in the ISO 3166 standard for country and territory identification." ;
         dcterms:valid "start=2025-07-28;";
         dcterms:creator "Calvin Spolwind";
 .
