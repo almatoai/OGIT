@@ -2,30 +2,26 @@
 @prefix owl:                    <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms:                <http://purl.org/dc/terms/> .
-@prefix ogit.Security:    <http://www.purl.org/ogit/Security/> .
 
-ogit:Equivalence
+ogit:Intent
 	a rdfs:Class;
 	rdfs:subClassOf ogit:Entity;
-	rdfs:label "Equivalence";
-	dcterms:description "An Equivalence node represents a possible identity match between two entities.";
+	rdfs:label "Intent";
+	dcterms:description "Describes the underlying objective, motivation, or purpose behind a entity (e.g. security threat or malicious activity).";
 	# For ranges, see http://dublincore.org/documents/dcmi-period/
-	dcterms:valid "start=2025-09-23;";
+	dcterms:valid "start=2025-10-28;";
 	dcterms:creator "Calvin Spolwind";
 	ogit:scope "SGO";
 	ogit:parent ogit:Node;
 	ogit:mandatory-attributes (
+		ogit:id
 	);
 	ogit:optional-attributes (
-        ogit:confidence
+        ogit:description
+        ogit:name
 	);
 	ogit:indexed-attributes (
 	);
 	ogit:allowed (
-		[ ogit:connects  ogit:Region ]
-		[ ogit:connects  ogit:Location ]
-		[ ogit:connects ogit:Organization ]
-		[ ogit:connects ogit:Person ]
-		[ ogit:connects ogit.Security:Threat ]
 	);
 .

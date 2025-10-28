@@ -1,0 +1,31 @@
+@prefix ogit:        <http://www.purl.org/ogit/> .
+@prefix owl:         <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:        <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:     <http://purl.org/dc/terms/> .
+
+ogit:Category
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "Category";
+	dcterms:description "A generic grouping or classification entity used to categorize other entities across domains. For example, Threat Categories (Trojan, Worm), Service Categories, Asset Types, or Severity Levels.";
+	dcterms:valid "start=2025-10-28;";
+	dcterms:creator "Calvin Spolwind";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:mandatory-attributes (
+		ogit:name
+	);
+	ogit:optional-attributes (
+        ogit:id
+		ogit:description
+		ogit:type         # Optional type of category (e.g., "ThreatCategory", "ServiceCategory")
+		ogit:source       # Origin or taxonomy source (e.g., MITRE ATT&CK, internal)
+	);
+	ogit:indexed-attributes (
+		ogit:name
+		ogit:type
+	);
+	ogit:allowed (
+		[ ogit:belongs ogit:Category ] # Category hierarchy (e.g., "Trojan" belongs to "Malware")
+	);
+.
