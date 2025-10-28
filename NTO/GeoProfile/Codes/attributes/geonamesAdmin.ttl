@@ -8,7 +8,7 @@ ogit.GeoProfile.Codes:geonamesAdmin
     a owl:DatatypeProperty;
     rdfs:subPropertyOf ogit:Attribute;
     rdfs:label "geonamesAdmin";
-    dcterms:description: "GeoNames code for the administrative division, e.g. DE.01 for Baden-Wuerttemberg or DE.01.081 for administrative region (Regierungsbezirk) Stuttgart";
+    dcterms:description: "GeoNames code for the administrative division, formed by concatenating the ISO 3166-1 alpha-2 country code with the GeoNames administrative level identifiers (admin1–admin4). E.g. DE.01 for Baden-Wuerttemberg or DE.01.081 for administrative region (Regierungsbezirk) Stuttgart";
     dcterms:valid "start=2025-10-27;";
     dcterms:creator "Calvin Spolwind";
 .
