@@ -1,0 +1,14 @@
+@prefix ogit.GeoProfile.Codes:     <http://www.purl.org/ogit/GeoProfile/Codes/> .
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+
+ogit.GeoProfile.Codes:fips
+    a owl:DatatypeProperty;
+    rdfs:subPropertyOf ogit:Attribute;
+    rdfs:label "fips";
+    dcterms:description "FIPS 10-4 (Federal Information Processing Standard) country code. Two-letter alphanumeric code historically used by the U.S. government.";
+    dcterms:valid "start=2025-10-27;";
+    dcterms:creator "Calvin Spolwind";
+.

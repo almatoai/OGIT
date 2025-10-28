@@ -1,0 +1,14 @@
+@prefix ogit.GeoProfile.Codes:     <http://www.purl.org/ogit/GeoProfile/Codes/> .
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+
+ogit.GeoProfile.Codes:m49
+    a owl:DatatypeProperty;
+    rdfs:subPropertyOf ogit:Attribute;
+    rdfs:label "m49";
+    dcterms:description "UN M49 numeric code for countries, areas, and regions defined by the United Nations Statistics Division.";
+    dcterms:valid "start=2025-10-27;";
+    dcterms:creator "Calvin Spolwind";
+.

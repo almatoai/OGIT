@@ -4,7 +4,7 @@
 @prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms:                <http://purl.org/dc/terms/> .
 
-ogit.GeoProfile:isoCode
+ogit.GeoProfile:isoCode #deprecated
         a owl:DatatypeProperty;
         rdfs:subPropertyOf ogit:Attribute;
         rdfs:label "isoCode";
