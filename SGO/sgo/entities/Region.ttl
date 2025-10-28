@@ -2,7 +2,7 @@
 @prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms:                <http://purl.org/dc/terms/> .
 @prefix ogit.GeoProfile: <http://www.purl.org/ogit/GeoProfile/> .
-@prefix ogit.GeoProfile.Codes:     <http://www.purl.org/ogit/GeoProfile/Codes> .
+@prefix ogit.GeoProfile.Codes:     <http://www.purl.org/ogit/GeoProfile/Codes/> .
 @prefix ogit.FinancialMarket: <http://www.purl.org/ogit/FinancialMarket/> .
 @prefix ogit.Religion:      	<http://www.purl.org/ogit/Religion/> .
 
