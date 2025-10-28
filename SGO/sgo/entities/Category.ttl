@@ -13,10 +13,10 @@ ogit:Category
 	ogit:scope "NTO";
 	ogit:parent ogit:Node;
 	ogit:mandatory-attributes (
-		ogit:id
 		ogit:name
 	);
 	ogit:optional-attributes (
+        ogit:id
 		ogit:description
 		ogit:type         # Optional type of category (e.g., "ThreatCategory", "ServiceCategory")
 		ogit:source       # Origin or taxonomy source (e.g., MITRE ATT&CK, internal)
