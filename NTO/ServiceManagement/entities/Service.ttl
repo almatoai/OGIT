@@ -41,7 +41,6 @@ ogit.ServiceManagement:Service
 		ogit:status
 		ogit:email 	
 		ogit:tenantId
-		ogit:versionEOL
 	);
 	ogit:indexed-attributes (
 		
