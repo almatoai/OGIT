@@ -3,7 +3,7 @@
 @prefix rdfs:             <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms:          <http://purl.org/dc/terms/> .
 @prefix ogit.Security:    <http://www.purl.org/ogit/Security/> .
-@prefix ogit.Asset:       <http://www.purl.org/ogit/Asset/> .
+@prefix ogit.Automation:       <http://www.purl.org/ogit/Automation/> .
 
 ogit.Security:CPE
 	a rdfs:Class ;
@@ -22,7 +22,7 @@ ogit.Security:CPE
 		ogit:version
         ogit:vendor
 		ogit:language
-		ogit:osName
+		ogit.Automation:osName
 		ogit:source           # e.g., NVD, internal repository
 	) ;
 	ogit:indexed-attributes (
