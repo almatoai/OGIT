@@ -48,6 +48,5 @@ ogit.MARS:Application
 			[ ogit:generates  ogit.Data:Log ]
 			[ ogit:generates  ogit:Timeseries ]
 			[ ogit:dependsOn  ogit.MARS:Resource ]
-			[ ogit:provides  ogit.ServiceManagement:Service ]
 	);
 .

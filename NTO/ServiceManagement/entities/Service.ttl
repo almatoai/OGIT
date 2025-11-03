@@ -62,5 +62,9 @@ ogit.ServiceManagement:Service
 			[ ogit:affects  ogit:Person ]
 			[ ogit:availableIn ogit:Region]
 			[ ogit:uses ogit.Forms:Form ]
+			[ ogit:uses ogit.MARS:Application ]
+			[ ogit:uses ogit.MARS:Resource ]
+			[ ogit:uses ogit.MARS:Software ]
+
 	);
 .
