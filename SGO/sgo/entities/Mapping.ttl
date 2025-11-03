@@ -1,0 +1,44 @@
+@prefix ogit:             <http://www.purl.org/ogit/> .
+@prefix owl:              <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:             <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:          <http://purl.org/dc/terms/> .
+@prefix ogit.Security:    <http://www.purl.org/ogit/Security/> .
+
+ogit:Mapping
+    a rdfs:Class ;
+    rdfs:subClassOf ogit:Entity ;
+    rdfs:label "Mapping" ;
+    dcterms:description "A generic mapping node that represents a link between OGIT entities (such as Products, Vulnerabilities) and external data providers or systems. It allows tracking and correlation of entities across heterogeneous data sources." ;
+    dcterms:valid "start=2025-10-27;" ;
+    dcterms:creator "" ;
+    ogit:scope "NTO" ;
+    ogit:parent ogit:Node ;
+    
+    ogit:mandatory-attributes (
+        ogit:id                    # Unique identifier for this mapping
+        ogit:name                  # Human-readable name or reference
+        ogit:source                # The provider name (e.g., Raynet, NVD, internal)
+    ) ;
+    
+    ogit:optional-attributes (
+        ogit:externalId            # ID used by the external system
+        ogit:type
+        ogit:version
+        ogit:vendor
+        ogit:version
+        ogit:osName
+        ogit:lastUpdatedAt
+    ) ;
+    
+    ogit:indexed-attributes (
+        ogit:id
+        ogit:source
+        ogit:externalId
+    ) ;
+    
+    ogit:allowed (
+        [ ogit:relates ogit.Security:CPE ]
+        [ ogit:references ogit.Security:Vulnerability ]
+        [ ogit:describes ogit:Product ]       # Allow linking to products/assets
+    ) ;
+.
