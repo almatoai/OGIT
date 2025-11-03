@@ -11,7 +11,7 @@ ogit.Security:CPE
 	rdfs:label "Common Platform Enumeration (CPE)" ;
 	dcterms:description "A standardized identifier defined by the National Institute of Standards and Technology (NIST) to describe software, hardware, and operating system platforms (e.g., cpe:2.3:a:vendor:product:version:*:*:*:*:*:*:*). Used to correlate assets or products with known vulnerabilities (CVEs) in the NVD." ;
 	dcterms:valid "start=2025-10-27;" ;
-	dcterms:creator "" ;
+	dcterms:creator "Calvin Spolwind" ;
 	ogit:scope "NTO" ;
 	ogit:parent ogit:Node ;
 	ogit:mandatory-attributes (

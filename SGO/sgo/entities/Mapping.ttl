@@ -10,7 +10,7 @@ ogit:Mapping
     rdfs:label "Mapping" ;
     dcterms:description "A generic mapping node that represents a link between OGIT entities (such as Products, Vulnerabilities) and external data providers or systems. It allows tracking and correlation of entities across heterogeneous data sources." ;
     dcterms:valid "start=2025-10-27;" ;
-    dcterms:creator "" ;
+    dcterms:creator "Calvin Spolwind" ;
     ogit:scope "NTO" ;
     ogit:parent ogit:Node ;
     
