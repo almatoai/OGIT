@@ -138,7 +138,7 @@ The ogit/function attribute should be used to tell what kind of grouping an enti
 			[ ogit:uses  ogit:Product ]
 			[ ogit:uses  ogit:License ]
 			[ ogit:locatedIn  ogit:Location ]
-			[ ogit:locatedIn  ogit:Location ]
+			[ ogit:locatedIn  ogit:Region ]
 			[ ogit:complies  ogit:Policy ]
 			[ ogit:deliversTo  ogit:Organization ]
 			[ ogit:sellsTo  ogit:Organization ]
