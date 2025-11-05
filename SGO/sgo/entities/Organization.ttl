@@ -76,6 +76,10 @@ The ogit/function attribute should be used to tell what kind of grouping an enti
 		ogit:codeType
 		ogit:identifierCode
 		ogit:foundingDate
+		ogit:id
+		ogit:type
+		ogit:subType
+		ogit:sharedWith
 	);
 	ogit:indexed-attributes (
 		ogit:name
