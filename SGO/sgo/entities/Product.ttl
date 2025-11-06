@@ -17,6 +17,7 @@ ogit:Product
 	ogit:optional-attributes (
 		ogit:name
 		ogit:id
+		ogit:version
 		ogit:description
 		ogit:class
 		ogit:manufacturer
