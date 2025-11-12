@@ -44,5 +44,6 @@ ogit:Catalog
 			[ ogit:contains  ogit.MRP:Part ]
 			[ ogit:validFor  ogit:Region ]
 			[ ogit:contains  ogit.Factory:Plant ]
+			[ ogit:contains	 ogit.ServiceMangagement:Service ]
 	);
 .
