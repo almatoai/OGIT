@@ -41,6 +41,10 @@ ogit.ServiceManagement:Service
 		ogit:status
 		ogit:email 	
 		ogit:tenantId
+		ogit:subType
+		ogit:createdAt
+		ogit:reviewedBy
+		ogit:reviewedAt
 	);
 	ogit:indexed-attributes (
 		
@@ -61,5 +65,6 @@ ogit.ServiceManagement:Service
 			[ ogit:affects  ogit:Person ]
 			[ ogit:availableIn ogit:Region]
 			[ ogit:uses ogit.Forms:Form ]
+			[ ogit:has  ogit:Requirements ]
 	);
 .
