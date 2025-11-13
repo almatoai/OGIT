@@ -24,5 +24,6 @@ ogit.FinancialMarket:Activity
   ogit:indexed-attributes (
   );
   ogit:allowed (
+			[ ogit.ClassificationStandard:classifiedUnder  ogit.ClassificationStandard:ClassificationStandardTreeBranch ]
   );
 .

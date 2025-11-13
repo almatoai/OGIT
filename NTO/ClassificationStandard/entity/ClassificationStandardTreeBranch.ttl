@@ -26,6 +26,7 @@ ogit.ClassificationStandard:ClassificationStandardTreeBranch
 		
 	);
 	ogit:allowed (
-        ogit:
+			[ ogit.ClassificationStandard:childNodeOf  ogit.ClassificationStandard:ClassificationStandardTreeRoot ]
+			[ ogit.ClassificationStandard:childNodeOf  ogit.ClassificationStandard:ClassificationStandardTreeBranch ]
 	);
 .
