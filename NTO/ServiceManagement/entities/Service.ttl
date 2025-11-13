@@ -43,7 +43,6 @@ ogit.ServiceManagement:Service
 		ogit:tenantId
 		ogit:subType
 		ogit:createdAt
-		ogit:requirements
 		ogit:reviewedBy
 		ogit:reviewedAt
 	);
