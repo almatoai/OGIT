@@ -14,12 +14,12 @@ ogit.ClassificationStandard:ClassificationStandardTreeRoot
 	ogit:scope "SGO";
 	ogit:parent ogit:Node;
 	ogit:mandatory-attributes (
-		ogit:fullName
+		ogit.ClassificationStandard:fullName
         ogit:version
 	);
 	ogit:optional-attributes (
 		ogit:name
-		ogit:issueDate
+		ogit.ClassificationStandard:issueDate
 		ogit:description
         ogit:source
         ogit:author
