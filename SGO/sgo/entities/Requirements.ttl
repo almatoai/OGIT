@@ -1,0 +1,28 @@
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+
+ogit:Requirements
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "Requirements";
+	dcterms:description "Any kind of description for one or more requirements of an item or service";
+	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	dcterms:valid "start=2025-11-13;";
+	dcterms:creator "Daniel Brommer";
+	ogit:scope "SGO";
+	ogit:parent ogit:Node;
+	ogit:mandatory-attributes (
+	);
+	ogit:optional-attributes (
+    ogit:id
+    ogit:name
+		ogit:description
+	);
+	ogit:indexed-attributes (
+		
+	);
+	ogit:allowed (
+	);
+.
