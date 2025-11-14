@@ -66,5 +66,6 @@ ogit.ServiceManagement:Service
 			[ ogit:availableIn ogit:Region]
 			[ ogit:uses ogit.Forms:Form ]
 			[ ogit:has  ogit:Requirements ]
+			[ ogit:describes  ogit.ServiceManagement:Service ]
 	);
 .
