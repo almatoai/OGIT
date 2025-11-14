@@ -1,0 +1,32 @@
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+@prefix ogit.ClassificationStandard:              <http://www.purl.org/ogit/ClassificationStandard/> .
+
+ogit.ClassificationStandard:ClassificationStandardTreeRoot
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "classificationStandardTreeRoot";
+	dcterms:description """The root node of a tree-based classification standard, holding metadata about the standard""";
+	dcterms:valid "start=2025-11-12;";
+	dcterms:creator "Moritz Vannahme";
+	ogit:scope "SGO";
+	ogit:parent ogit:Node;
+	ogit:mandatory-attributes (
+		ogit.ClassificationStandard:fullName
+        ogit:version
+	);
+	ogit:optional-attributes (
+		ogit:name
+		ogit.ClassificationStandard:issueDate
+		ogit:description
+        ogit:source
+        ogit:author
+	);
+	ogit:indexed-attributes (
+		
+	);
+	ogit:allowed (
+	);
+.
