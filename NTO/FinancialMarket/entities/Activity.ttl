@@ -2,6 +2,7 @@
 @prefix ogit:                   <http://www.purl.org/ogit/> .
 @prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms:                <http://purl.org/dc/terms/> .
+@prefix ogit.ClassificationStandard:              <http://www.purl.org/ogit/ClassificationStandard/> .
 
 ogit.FinancialMarket:Activity
   a rdfs:Class;
@@ -24,5 +25,6 @@ ogit.FinancialMarket:Activity
   ogit:indexed-attributes (
   );
   ogit:allowed (
+			[ ogit.ClassificationStandard:classifiedUnder  ogit.ClassificationStandard:ClassificationStandardTreeBranch ]
   );
 .
