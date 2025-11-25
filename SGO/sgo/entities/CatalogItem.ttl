@@ -26,6 +26,10 @@ ogit:CatalogItem
 		ogit:id
 		ogit:validTo
 		ogit:validFrom
+		ogit:category
+		ogit:tags
+		ogit:source
+		ogit:information
 	);
 	ogit:indexed-attributes (
 		
@@ -35,5 +39,6 @@ ogit:CatalogItem
 			[ ogit:requires  ogit.ServiceManagement:Action ]
 			[ ogit:requires  ogit:CatalogItem ]
 			[ ogit:assignedTo  ogit.CustomerSupport:Group ]
+			[ ogit:contains  ogit:CatalogItem ]
 	);
 .

@@ -41,5 +41,6 @@ ogit.Legal:LegalNorm
 		[ ogit:causes  ogit.ServiceManagement:Service ]
 		[ ogit.Legal:empowers  ogit:Organization ]
 		[ ogit:governs  ogit:Region ]
+		[ ogit:causes  ogit:Catalog ]
 	);
 .

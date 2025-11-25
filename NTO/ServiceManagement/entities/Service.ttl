@@ -67,5 +67,6 @@ ogit.ServiceManagement:Service
 			[ ogit:uses ogit.Forms:Form ]
 			[ ogit:has  ogit:Requirements ]
 			[ ogit:describes  ogit.ServiceManagement:Service ]
+			[ ogit:references  ogit:Catalog ]
 	);
 .

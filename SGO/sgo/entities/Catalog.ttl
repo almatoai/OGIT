@@ -33,6 +33,12 @@ ogit:Catalog
 		ogit:id
 		ogit:version
 		ogit:type
+		ogit:tags
+		ogit:source
+		ogit:availability
+		ogit:type
+		ogit:category
+		ogit:lastUpdatedAt
 	);
 	ogit:indexed-attributes (
 		
