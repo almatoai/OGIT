@@ -28,5 +28,7 @@ ogit.ClassificationStandard:ClassificationStandardTreeBranch
 	ogit:allowed (
 			[ ogit.ClassificationStandard:childNodeOf  ogit.ClassificationStandard:ClassificationStandardTreeRoot ]
 			[ ogit.ClassificationStandard:childNodeOf  ogit.ClassificationStandard:ClassificationStandardTreeBranch ]
+			[ ogit:Relates ogit.ClassificationStandard:ClassificationStandardTreeBranch ]
+			[ ogit:Contains  ogit:Timeseries ]
 	);
 .
