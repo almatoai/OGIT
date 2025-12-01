@@ -48,6 +48,7 @@ ogit.ServiceManagement:Service
 		ogit:requirements
 		ogit:locatedIn
 		ogit.ServiceManagement:areaOfResponsibility
+		ogit.ServiceManagement:procedureDescription
 	);
 	ogit:indexed-attributes (
 		
