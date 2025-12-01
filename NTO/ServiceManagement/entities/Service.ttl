@@ -50,6 +50,7 @@ ogit.ServiceManagement:Service
 		ogit:timeLimit
 		ogit.ServiceManagement:areaOfResponsibility
 		ogit.ServiceManagement:procedureDescription
+		ogit.ServiceManagement:requiredDocuments
 	);
 	ogit:indexed-attributes (
 		
