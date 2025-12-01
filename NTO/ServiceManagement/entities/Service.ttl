@@ -46,6 +46,7 @@ ogit.ServiceManagement:Service
 		ogit:reviewedBy
 		ogit:reviewedAt
 		ogit:requirements
+		ogit.ServiceManagement:areaOfResponsibility
 	);
 	ogit:indexed-attributes (
 		
