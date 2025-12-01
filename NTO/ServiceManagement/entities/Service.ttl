@@ -46,7 +46,7 @@ ogit.ServiceManagement:Service
 		ogit:reviewedBy
 		ogit:reviewedAt
 		ogit:requirements
-		ogit:locatedIn
+		ogit:location
 		ogit:timeLimit
 		ogit:duration
 		ogit.ServiceManagement:areaOfResponsibility
