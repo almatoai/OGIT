@@ -1,0 +1,13 @@
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+
+ogit:location
+	a owl:DatatypeProperty;
+	rdfs:subPropertyOf ogit:Attribute;
+	rdfs:label "location";
+	dcterms:description "A textual description of a location, such as an address or place name where a entity is situated or can be found.";
+	dcterms:valid "start=2025-12-01;";
+	dcterms:creator "Erik Wilfling";
+.

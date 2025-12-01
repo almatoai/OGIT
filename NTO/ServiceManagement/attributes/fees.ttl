@@ -1,0 +1,15 @@
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+@prefix ogit.ServiceManagement: <http://www.purl.org/ogit/ServiceManagement/> .
+
+ogit.ServiceManagement:fees
+	a owl:DatatypeProperty;
+	rdfs:subPropertyOf ogit:Attribute;
+	rdfs:label "fees";
+	dcterms:description """Lists the fees associated with a specific process or service. This can include costs, charges, or any financial obligations required to complete the procedure or obtain the service.""";
+	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	dcterms:valid "start=2025-12-01;";
+	dcterms:creator "Erik Wilfling";
+.
