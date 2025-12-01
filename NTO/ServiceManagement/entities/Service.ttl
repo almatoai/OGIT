@@ -45,6 +45,7 @@ ogit.ServiceManagement:Service
 		ogit:createdAt
 		ogit:reviewedBy
 		ogit:reviewedAt
+		ogit:requirements
 	);
 	ogit:indexed-attributes (
 		
