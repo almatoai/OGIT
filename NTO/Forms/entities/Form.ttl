@@ -26,6 +26,7 @@ ogit.Forms:Form
 		ogit:description
 		ogit:subType
 		ogit:type
+		ogit:tenantId
 	);
 	ogit:indexed-attributes (
 	);
