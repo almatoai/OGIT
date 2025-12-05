@@ -162,7 +162,6 @@ The ogit/function attribute should be used to tell what kind of grouping an enti
 			[ ogit:has ogit.Politics:Reaction ]
 			[ ogit:issues ogit.Legal:LegalNorm ]
 			[ ogit:conducts ogit.FinancialMarket:Activity ]
-			[ ogit:conducts ogit.ClassificationStandard:ClassificationStandardTreeBranch ]
 			[ ogit:supports  ogit.ServiceManagement:ServiceMapping ]
 			[ ogit:publishes ogit.Publications:Publication ]
 			[ ogit:publishes ogit.ClassificationStandard:ClassificationStandardTreeRoot ]

@@ -30,5 +30,6 @@ ogit.ClassificationStandard:ClassificationStandardTreeBranch
 			[ ogit.ClassificationStandard:childNodeOf  ogit.ClassificationStandard:ClassificationStandardTreeBranch ]
 			[ ogit:relates ogit.ClassificationStandard:ClassificationStandardTreeBranch ]
 			[ ogit:contains  ogit:Timeseries ]
+			[ ogit:relates  ogit:Organization ]
 	);
 .
