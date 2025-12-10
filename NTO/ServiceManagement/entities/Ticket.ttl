@@ -35,6 +35,7 @@ ogit.ServiceManagement:Ticket
 		ogit:name
 		ogit:class
 		ogit:type
+		ogit:subType
 		ogit:summary
 		ogit:description
 		ogit:project
@@ -56,6 +57,7 @@ ogit.ServiceManagement:Ticket
 		ogit.ServiceManagement:openedFor
 		ogit.ServiceManagement:cleanSubject
 		ogit.ServiceManagement:cleanDescription
+		ogit.ServiceManagement:resolvedAt
 	);
 	ogit:indexed-attributes (
 		
