@@ -49,5 +49,6 @@ Organization. Similar to http://purl.org/goodrelations/v1#Location""";
 		[ ogit:generates  ogit:Timeseries ]
 		[ ogit:locatedIn  ogit:Region ]
 		[ ogit:centerOf  ogit:Region ]
+		[ ogit:closest  ogit:Location ]
 	);
 .
