@@ -123,5 +123,6 @@ ogit:ConfigurationItem
 			[ ogit:corresponds  ogit.Automation:MARSNode ]
 			[ ogit:runsOn  ogit:ConfigurationItem ]
 			[ ogit:belongs  ogit:Product ]
+			[ ogit:locatedIn  ogit:Location ]
 	);
 .
