@@ -38,6 +38,6 @@ ogit.Legal:LegalClause
 			[ ogit:references  ogit:Attachment ]
 			[ ogit:causes  ogit.ServiceManagement:Service ]
 			[ ogit:causes  ogit:Catalog ]
-			[ ogit:ClassificationStandard:classifiedUnder  ogit.ClassificationStandard:ClassificationStandardTreeBranch ]
+			[ ogit.ClassificationStandard:classifiedUnder  ogit.ClassificationStandard:ClassificationStandardTreeBranch ]
 	);
 .
