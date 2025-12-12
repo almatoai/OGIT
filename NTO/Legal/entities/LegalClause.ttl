@@ -4,6 +4,7 @@
 @prefix ogit:    	<http://www.purl.org/ogit/> .
 @prefix ogit.Legal: <http://www.purl.org/ogit/Legal/> .
 @prefix ogit.ServiceManagement: <http://www.purl.org/ogit/ServiceManagement/> .
+@prefix ogit.ClassificationStandard: <http://www.purl.org/ogit/ClassificationStandard/> .
 
 ogit.Legal:LegalClause
 	a rdfs:Class;
@@ -38,5 +39,6 @@ ogit.Legal:LegalClause
 			[ ogit:references  ogit:Attachment ]
 			[ ogit:causes  ogit.ServiceManagement:Service ]
 			[ ogit:causes  ogit:Catalog ]
+			[ ogit.ClassificationStandard:classifiedUnder  ogit.ClassificationStandard:ClassificationStandardTreeBranch ]
 	);
 .
