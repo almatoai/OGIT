@@ -4,6 +4,7 @@
 @prefix ogit:    	<http://www.purl.org/ogit/> .
 @prefix ogit.Legal: <http://www.purl.org/ogit/Legal/> .
 @prefix ogit.ServiceManagement: <http://www.purl.org/ogit/ServiceManagement/> .
+@prefix ogit.ClassificationStandard: <http://www.purl.org/ogit/ClassificationStandard/> .
 
 ogit.Legal:LegalClause
 	a rdfs:Class;
