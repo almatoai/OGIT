@@ -15,6 +15,7 @@ ogit.Forms:Form
 	dcterms:creator "Semih Can Sancar";
 	ogit:scope "NTO";
 	ogit:parent ogit:Node;
+	ogit:blob "true";
 	ogit:mandatory-attributes (
 		ogit:id
 	);
