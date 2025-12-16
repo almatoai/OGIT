@@ -29,25 +29,25 @@ ogit.MARS:Resource
 	ogit:parent ogit:Node;
 	ogit:mandatory-attributes (
 	    ogit:name				
-            ogit.MARS.Resource:class
+		ogit.MARS.Resource:class
 	);
 	ogit:optional-attributes (
-            ogit:url
+		ogit:url
 
-            ogit.Automation:automationState
-            ogit.Automation:lifecycle
-            ogit.Automation:serviceStatus
-            ogit.Automation:marsNodeType
+		ogit.Automation:automationState
+		ogit.Automation:lifecycle
+		ogit.Automation:serviceStatus
+		ogit.Automation:marsNodeType
 
-            ogit:tenantId
+		ogit:tenantId
 	);
-        ogit:indexed-attributes (
-            ogit:name
+	ogit:indexed-attributes (
+		ogit:name
         );
 	ogit:allowed (
-			[ ogit:generates  ogit.Data:Log ]
-			[ ogit:generates  ogit:Timeseries ]
-			[ ogit:dependsOn  ogit.MARS:Software ]
-			[ ogit:uses  ogit.Automation:Configuration ]
+		[ ogit:generates  ogit.Data:Log ]
+		[ ogit:generates  ogit:Timeseries ]
+		[ ogit:dependsOn  ogit.MARS:Software ]
+		[ ogit:uses  ogit.Automation:Configuration ]
 	);
 .
