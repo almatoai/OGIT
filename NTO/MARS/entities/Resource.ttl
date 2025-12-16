@@ -40,6 +40,8 @@ ogit.MARS:Resource
 		ogit.Automation:marsNodeType
 
 		ogit:tenantId
+		ogit:lowerLimit
+		ogit:type
 	);
 	ogit:indexed-attributes (
 		ogit:name
