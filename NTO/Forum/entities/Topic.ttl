@@ -43,5 +43,6 @@ a given subject.""";
 			[ ogit:contains  ogit.Forum:Post ]
 			[ ogit:requires  ogit.Forum:Permission ]
 			[ ogit:contains  ogit.Publications:Publication ]
+			[ ogit.ClassificationStandard:classifiedUnder  ogit.ClassificationStandard:ClassificationStandardTreeBranch ]
 	);
 .
