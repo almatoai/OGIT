@@ -16,6 +16,7 @@
 @prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms:                <http://purl.org/dc/terms/> .
 @prefix ogit.Forum:             <http://www.purl.org/ogit/Forum/> .
+@prefix ogit.ClassificationStandard: <http://www.purl.org/ogit/ClassificationStandard/> .
 
 ogit.Forum:Topic
 	a rdfs:Class;
@@ -43,5 +44,6 @@ a given subject.""";
 			[ ogit:contains  ogit.Forum:Post ]
 			[ ogit:requires  ogit.Forum:Permission ]
 			[ ogit:contains  ogit.Publications:Publication ]
+			[ ogit.ClassificationStandard:classifiedUnder  ogit.ClassificationStandard:ClassificationStandardTreeBranch ]
 	);
 .
