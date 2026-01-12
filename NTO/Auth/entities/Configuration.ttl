@@ -18,11 +18,16 @@ ogit.Auth:Configuration
 	ogit:admin-contact "arago GmbH";
 	ogit:tech-contact "arago GmbH";
 	ogit:scope "NTO";
+	ogit:blob "true";
 	ogit:parent ogit:Node;
 	ogit:mandatory-attributes (
 
 	);
 	ogit:optional-attributes (
+        ogit.Auth:ownerId
+        ogit.Auth:ownerType
+        ogit.Auth:applicationId
+        ogit:mimeType
 	);
 	ogit:indexed-attributes (
 	);
@@ -30,5 +35,8 @@ ogit.Auth:Configuration
 	);
 	ogit:allowed (
             [ ogit.Auth:belongs  ogit.Auth:Organization ]
+            [ ogit.Auth:belongs  ogit.Auth:Application ]
+            [ ogit.Auth:belongs  ogit.Auth:Account ]
+            [ ogit.Auth:belongs  ogit.Auth:DataScope ]
 	);
 .
