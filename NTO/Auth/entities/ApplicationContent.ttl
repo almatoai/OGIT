@@ -18,11 +18,11 @@ ogit.Auth:ApplicationContent
     ogit:blob "true";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
+	    ogit:mimeType
 	);
 	ogit:optional-attributes (
 	    ogit:name
 	    ogit:description
-	    ogit:mimeType
 	);
 	ogit:indexed-attributes (
 	);

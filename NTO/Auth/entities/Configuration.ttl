@@ -28,5 +28,6 @@ ogit.Auth:Configuration
 	ogit:history (
 	);
 	ogit:allowed (
-	);
+        [ ogit.Auth:belongs  ogit.Auth:Organization ]
+    );
 .
