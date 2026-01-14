@@ -29,5 +29,6 @@ ogit.Auth:ApplicationContent
 	ogit:history (
 	);
 	ogit:allowed (
+	    [ ogit.Auth:belongs ogit:Auth:Application ]
 	);
 .

@@ -43,5 +43,6 @@ ogit.Auth:Application
 	ogit:allowed (
 			[ ogit:includes  ogit:Notification ]
 			[ ogit:versions  ogit.Auth:Application ]
+			[ ogit:has ogit.Auth:Configuration ]
 	);
 .
