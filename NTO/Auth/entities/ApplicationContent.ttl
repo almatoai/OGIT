@@ -10,7 +10,7 @@ ogit.Auth:ApplicationContent
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "ApplicationContent";
 	dcterms:description "An entity representing content within an application, such as documents, media files, or other digital assets." .
-	dcterms:valid "start=2026-01-14;";
+	dcterms:valid "start=2026-01-01;";
 	dcterms:creator "Pablo Perez";
 	dcterms:created "2026-01-14";
     dcterms:modified "2026-01-14";
