@@ -26,7 +26,7 @@ ogit.Auth:Configuration
 	    ogit.Auth:applicationId
 	    ogit.Auth:organizationId
 	    ogit.Auth:scopeId
-	    ogit.Auth:ConfigurationData
+	    ogit.Auth:configurationData
 	);
 	ogit:indexed-attributes (
 	);
