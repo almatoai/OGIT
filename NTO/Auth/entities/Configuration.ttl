@@ -22,6 +22,10 @@ ogit.Auth:Configuration
 	ogit:mandatory-attributes (
 	);
 	ogit:optional-attributes (
+	    ogit.Auth:accountId
+	    ogit.Auth:applicationId
+	    ogit.Auth:organizationId
+	    ogit.Auth:scopeId
 	);
 	ogit:indexed-attributes (
 	);
