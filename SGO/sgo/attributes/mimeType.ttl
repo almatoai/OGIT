@@ -1,0 +1,13 @@
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+
+ogit:mimeType
+	a owl:DatatypeProperty;
+	rdfs:subPropertyOf ogit:Attribute;
+	rdfs:label "mimeType";
+	dcterms:description "The media type that identifies the format of the associated content, as defined by RFC 6838 (e.g., application/json)";
+	dcterms:valid "start=2026-01-12;";
+    dcterms:creator "Pablo Perez";
+.

@@ -9,7 +9,7 @@ ogit.Auth:Configuration
 	a rdfs:Class;
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "Configuration";
-	dcterms:description "An ogit/Auth/Configuration reflects individual configuration for an organization registered in hiro knowledge core";
+	dcterms:description "An ogit/Auth/Configuration reflects individual configuration for an organization, user, application or scope registered in hiro knowledge core";
 	# For ranges, see http://dublincore.org/documents/dcmi-period/
 	dcterms:valid "start=2018-01-01;";
 	dcterms:creator "arago GmbH";
@@ -20,15 +20,19 @@ ogit.Auth:Configuration
 	ogit:scope "NTO";
 	ogit:parent ogit:Node;
 	ogit:mandatory-attributes (
-
 	);
 	ogit:optional-attributes (
+	    ogit.Auth:accountId
+	    ogit.Auth:applicationId
+	    ogit.Auth:organizationId
+	    ogit.Auth:scopeId
+	    ogit.Auth:configurationData
 	);
 	ogit:indexed-attributes (
 	);
 	ogit:history (
 	);
 	ogit:allowed (
-            [ ogit.Auth:belongs  ogit.Auth:Organization ]
-	);
+        [ ogit.Auth:belongs  ogit.Auth:Organization ]
+    );
 .

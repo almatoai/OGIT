@@ -1,0 +1,33 @@
+@prefix ogit:					<http://www.purl.org/ogit/> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix ogit.Auth:              <http://www.purl.org/ogit/Auth/> .
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+
+ogit.Auth:ApplicationContent
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "ApplicationContent";
+	dcterms:description "An entity representing content within an application, such as documents, media files, or other digital assets." ;
+	dcterms:valid "start=2026-01-14;";
+	dcterms:creator "Pablo Perez";
+	dcterms:created "2026-01-14";
+    dcterms:modified "2026-01-14";
+    ogit:scope "NTO";
+    ogit:blob "true";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+    	ogit:name
+	    ogit:mimeType
+	);
+	ogit:optional-attributes (
+	    ogit:description
+	);
+	ogit:indexed-attributes (
+	);
+	ogit:history (
+	);
+	ogit:allowed (
+	);
+.
