@@ -4,6 +4,7 @@
 @prefix dcterms:                <http://purl.org/dc/terms/> .
 @prefix ogit.ServiceManagement: <http://www.purl.org/ogit/ServiceManagement/> .
 @prefix ogit.MARS:              <http://www.purl.org/ogit/MARS/> .
+@prefix ogit.Auth:              <http://www.purl.org/ogit/Auth/> .
 
 ogit.ServiceManagement:MaintenanceWindow
 	a rdfs:Class;
@@ -19,12 +20,14 @@ ogit.ServiceManagement:MaintenanceWindow
 
 	);
 	ogit:optional-attributes (
+	    ogit:title
 		ogit:type
 		ogit:description
 		ogit:startedAt
 		ogit:finishedAt
 		ogit.ServiceManagement:scheduledStartAt
 		ogit.ServiceManagement:scheduledFinishAt
+		ogit:severity
 	);
 	ogit:indexed-attributes (
 
@@ -33,5 +36,6 @@ ogit.ServiceManagement:MaintenanceWindow
 			[ ogit:affects  ogit.ServiceManagement:Service ]
 			[ ogit:affects  ogit.MARS:Machine ]
 			[ ogit:affects  ogit.MARS:Software ]
+			[ ogit:affects  ogit.Auth:Application ]
 	);
 .
