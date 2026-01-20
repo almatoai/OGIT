@@ -4,6 +4,7 @@
 @prefix dcterms:                <http://purl.org/dc/terms/> .
 @prefix ogit.ServiceManagement: <http://www.purl.org/ogit/ServiceManagement/> .
 @prefix ogit.MARS:              <http://www.purl.org/ogit/MARS/> .
+@prefix ogit.Auth:              <http://www.purl.org/ogit/Auth/> .
 
 ogit.ServiceManagement:MaintenanceWindow
 	a rdfs:Class;
