@@ -43,6 +43,7 @@ ogit.ServiceManagement:ChangeRequest
 		ogit:effort
 		ogit:reportedAt
 		ogit:reviewedAt
+		ogit:reportedBy
 		ogit:assignedGroup
 		ogit.ServiceManagement:changeStatus
 		ogit.ServiceManagement:targetStartAt
