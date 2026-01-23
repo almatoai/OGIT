@@ -27,6 +27,5 @@ ogit:Category
 	);
 	ogit:allowed (
 		[ ogit:belongs ogit:Category ] # Category hierarchy (e.g., "Trojan" belongs to "Malware")
-		[ ogit:contains  ogit:Catalog ]
 	);
 .
