@@ -52,5 +52,6 @@ ogit:Catalog
 			[ ogit:validFor  ogit:Region ]
 			[ ogit:contains  ogit.Factory:Plant ]
 			[ ogit:contains	 ogit.ServiceManagement:Service ]
+			[ ogit:belongs   ogit:Category ]
 	);
 .
