@@ -39,6 +39,7 @@ ogit:Catalog
 		ogit:type
 		ogit:category
 		ogit:lastUpdatedAt
+		ogit:priority
 	);
 	ogit:indexed-attributes (
 		
