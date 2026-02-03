@@ -29,15 +29,20 @@ ogit:Account
 		ogit:name
 		ogit:description
 		ogit:email
+		ogit:phone
 	);
 	ogit:indexed-attributes (
 		
 	);
 	ogit:allowed (
 			[ ogit:reports  ogit.ServiceManagement:Ticket ]
+			[ ogit:opens  ogit.ServiceManagement:Ticket ]
+			[ ogit:closes  ogit.ServiceManagement:Ticket ]
 			[ ogit:creates  ogit.ServiceManagement:Ticket ]
 			[ ogit:creates  ogit:Comment ]
+			[ ogit:creates  ogit:Attachment ]
 			[ ogit:follows  ogit:Account ]
 			[ ogit:connects  ogit:Person ]
+			[ ogit:belongs  ogit:Organization ]
 	);
 .
