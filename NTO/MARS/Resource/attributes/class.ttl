@@ -13,6 +13,6 @@ ogit.MARS.Resource:class
 	dcterms:valid "start=2018-06-01;";
 	dcterms:creator "fotto@arago.de";
 	ogit:validation-type "fixed";
-	ogit:validation-parameter "Backend,Computation,ContentDelivery,CoreApplication,Database,Environment,Frontend,Infrastructure,Interface,Logistics,Middleware,Monitoring,PhysicalObject,Place,Process,Provider,Security,Service,Storage";
+	ogit:validation-parameter "Backend,Computation,ContentDelivery,CoreApplication,Database,Environment,Frontend,Infrastructure,Interface,Logistics,Middleware,Monitoring,PhysicalObject,Place,Process,Provider,Security,Service,Storage,Cluster";
 .
 
