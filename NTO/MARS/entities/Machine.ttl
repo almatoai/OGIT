@@ -65,6 +65,7 @@ ogit.MARS:Machine
 			[ ogit:generates  ogit.Data:Log ]
 			[ ogit:generates  ogit:Timeseries ]
 			[ ogit:contains  ogit.Network:NetworkInterface ]
+			[ ogit:has     ogit:Tag ]
 			[ ogit:runsOn  ogit.Datacenter.Virtual:Cluster ]
 			[ ogit:runsOn  ogit.Datacenter.Virtual:ResourcePool ]
 			[ ogit:locatedAt  ogit:Location ]
