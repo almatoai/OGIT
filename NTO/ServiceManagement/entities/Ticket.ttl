@@ -46,6 +46,7 @@ ogit.ServiceManagement:Ticket
 		ogit:openedAt
 		ogit:closedAt
 		ogit:lastUpdatedAt
+		ogit:status
 		ogit:source
 		ogit:sourceId
 		ogit:subject
