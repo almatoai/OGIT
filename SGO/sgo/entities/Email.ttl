@@ -31,5 +31,6 @@ ogit:Email
 	ogit:allowed (
 		[ ogit:responds  ogit:Person ]
 		[ ogit:has  ogit:Attachment ]
+		[ ogit:receives  ogit:Comment ]
 	);
 .
