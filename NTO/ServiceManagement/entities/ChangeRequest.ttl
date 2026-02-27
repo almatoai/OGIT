@@ -45,6 +45,7 @@ ogit.ServiceManagement:ChangeRequest
 		ogit:reviewedAt
 		ogit:reportedBy
 		ogit:assignedGroup
+		ogit:status
 		ogit.ServiceManagement:changeStatus
 		ogit.ServiceManagement:targetStartAt
 		ogit.ServiceManagement:targetFinishAt
