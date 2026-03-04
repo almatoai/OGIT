@@ -19,11 +19,15 @@ ogit:Rating
 	);
 	ogit:optional-attributes (
 		ogit:comment
+		ogit:id
+		ogit:name
 	);
 	ogit:indexed-attributes (
 		
 	);
 	ogit:allowed (
 			[ ogit:rates  ogit.Auth:Application ]
+			[ ogit:rates  ogit.ServiceManagement:Service ]
+			[ ogit:references  ogit:Organization ]
 	);
 .
