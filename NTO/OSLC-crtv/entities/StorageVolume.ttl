@@ -12,7 +12,7 @@ ogit.OSLC-crtv:StorageVolume
 	rdfs:label "StorageVolume";
 	ogit:original <http://open-services.net/ns/crtv#StorageVolume>;
 	dcterms:description "Represents an identifiable unit of data storage. A StorageVolume can be a physical device ( e.g. a removable hard drive ) or a logical unit created by combining one or more other storage volumes.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:scope "NTO";

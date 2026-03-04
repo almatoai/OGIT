@@ -9,7 +9,7 @@ ogit.ClassificationStandard:fullName
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "fullName";
 	dcterms:description "The full name of a standard.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2025-11-12;";
 	dcterms:creator "Moritz Vannahme";
 .

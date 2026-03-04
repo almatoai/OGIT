@@ -39,7 +39,7 @@ for a given combination of dimension values (e.g. activity and month).</p>
 provide a link to the source of the actual measurements,
 or contain both a link to the source and a copy of the actual measurements obtained from the source
 (i.e. a cached copy of the source).</p>""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:scope "NTO";

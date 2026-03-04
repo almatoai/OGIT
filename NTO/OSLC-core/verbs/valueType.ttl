@@ -12,7 +12,7 @@ ogit.OSLC-core:valueType
 	rdfs:label "valueType";
 	ogit:original <http://open-services.net/ns/core#valueType>;
 	dcterms:description "A URI that indicates the value type, for example XML Schema or RDF URIs for literal value types, and OSLC-specified for others.  If this property is omitted, then the value type is unconstrained.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:hide "false";

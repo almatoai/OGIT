@@ -12,7 +12,7 @@ ogit.OSLC-crtv:name
 	rdfs:label "name";
 	ogit:original <http://open-services.net/ns/crtv#name>;
 	dcterms:description "Typically used as an identity field, this property is used to represent a known name of a resource instance.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:hide "false";

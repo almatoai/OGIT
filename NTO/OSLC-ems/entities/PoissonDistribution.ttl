@@ -17,7 +17,7 @@ that a given number of events will occur in a fixed time period.
 This distribution is completely specified by a single parameter often denoted by the
 Greek letter <em>lambda</em>.
 Lambda is given by <a href=\"#lambda\"><code>ems:lambda</code>.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:scope "NTO";

@@ -9,7 +9,7 @@ ogit:installStatus
 	rdfs:label "installStatus";
 	dcterms:description """An installation status for an entity.
 At this level of specification no list of values is specified. However, applications using this attribute are expected to allow only a fixed list of values that seems usefual in the application's semantic context.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-07-27;";
 	dcterms:creator "Aymen Ayoub";
 .

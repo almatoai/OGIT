@@ -9,7 +9,7 @@ ogit.ClassificationStandard:childNodeOf
 	rdfs:subPropertyOf ogit:Verb;
 	rdfs:label "childNodeOf";
 	dcterms:description "Indicates that a node is a child node of another in a tree based standard";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2025-11-12;";
 	dcterms:creator "Moritz Vannahme";
 .

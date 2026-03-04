@@ -8,7 +8,7 @@ ogit.Network:Slot
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "Slot";
 	dcterms:description "Slot is a physical entity inside a shelf allowing to plug in extension moduls, e. g. network interface moduls oder CPU modules.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-05-21;";
 	dcterms:creator "Peter Larem";
 	ogit:scope "NTO";

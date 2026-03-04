@@ -17,7 +17,7 @@ ogit.Automation:Configuration
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "Configuration";
 	dcterms:description """Configuration node to dynamically connect Knowledge Pools or Rankings to a HIRO installation.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2018-04-25;";
 	dcterms:creator "cy@arago.de";
 	ogit:scope "NTO";

@@ -24,7 +24,7 @@ ogit.Forum:WorkflowTemplate
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "WorkflowTemplate";
 	dcterms:description """A WorkflowTemplate defines a series of steps that must be completed in order.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2017-09-18;";
 	dcterms:creator "bneal@arago.de";
 	ogit:scope "NTO";

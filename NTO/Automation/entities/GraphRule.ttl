@@ -10,7 +10,7 @@ ogit.Automation:GraphRule
 	rdfs:label "GraphRule";
 	dcterms:description """Automated graph response rule to act directly on graph operations.
         """;
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2025-08-11;";
 	dcterms:creator "Jens Bartsch";
 	ogit:scope "NTO";

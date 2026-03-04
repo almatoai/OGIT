@@ -9,7 +9,7 @@ ogit.Automation:resultParameters
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "resultParameters";
 	dcterms:description "Contains optional result parameters as key/value mapping";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2021-02-01;";
 	dcterms:creator "cy@arago.de";
 .

@@ -12,7 +12,7 @@ ogit.OSLC-core:QueryCapability
 	rdfs:label "QueryCapability";
 	ogit:original <http://open-services.net/ns/core#QueryCapability>;
 	dcterms:description "The QueryCapability definition included in a ServiceProvider.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:scope "NTO";

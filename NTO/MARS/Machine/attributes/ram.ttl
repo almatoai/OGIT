@@ -9,7 +9,7 @@ ogit.MARS.Machine:ram
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "ram";
 	dcterms:description "The available system memory in a machine. It starts with a number following by an optional unit character ('M' or 'G'). If unit character is omitted then 'M' shall be assumed. This is . Replaces 'HWRAM' from MARS-Schema";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2018-06-01;";
 	dcterms:creator "fotto@arago.de";
 	ogit:validation-type "regex";

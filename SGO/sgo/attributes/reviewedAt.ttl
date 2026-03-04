@@ -10,7 +10,7 @@ ogit:reviewedAt
 	dcterms:description """Defines the time when something was actually reviewed.
 The values can combin date and time with time zone designator according to ISO 8601.
 Reviewed time is used in incident management.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-07-01;";
 	dcterms:creator "Aymen Ayoub";
 .

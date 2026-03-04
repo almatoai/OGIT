@@ -18,7 +18,7 @@ ogit:OntologyEntity
 	rdfs:label "OntologyEntity";
 	dcterms:description """represents any Entity definition from OGIT
 whenever there is a Schema describing/restricting the entity's content there will be \"isUsedBy\" link from Schema to OntologyEntity""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-05-21;";
 	dcterms:creator "Peter Larem";
 	ogit:scope "SGO";

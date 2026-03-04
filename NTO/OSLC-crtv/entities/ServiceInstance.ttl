@@ -34,7 +34,7 @@ ogit.OSLC-crtv:ServiceInstance
 	rdfs:label "ServiceInstance";
 	ogit:original <http://open-services.net/ns/crtv#ServiceInstance>;
 	dcterms:description "A Service Instance is the representation of a service offering that was selected by the customer and then instantiated for that specific customer. Service Instances are supported by definite and measurable warranties or guarantees that the expected level of service/value will be met. Instances of the resource carry exposure from the group that is responsible for supporting the offering externally to the group that is utilizing the offering. It is common to group or nest instances together to form a service instance hierarchy. This resource definition does not represent the individual processes and/or activities that comprise an overall service except in the case where such processes are viewed as an independent service. In this condition, an instance of ServiceInstance would be created to represent the ServiceInstance of the process, then creating a hierarchy of ServiceInstances (to the containing ServiceInstance).";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:scope "NTO";

@@ -9,7 +9,7 @@ ogit.Automation:environmentFilter
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "environmentFilter";
 	dcterms:description "Contains the specification/filtering of an environment.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2019-04-01;";
 	dcterms:creator "Oday Jubran";
 .

@@ -9,7 +9,7 @@ ogit:closedAt
 	rdfs:label "closedAt";
 	dcterms:description """Will defined the time when a ticket was closed.
 The values must be combined date and time with time zone designator according to ISO 8601""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-05-21;";
 	dcterms:creator "Peter Larem";
 .

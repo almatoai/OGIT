@@ -9,7 +9,7 @@ ogit.Statistics:AutomationFamily
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "AutomationFamily";
 	dcterms:description "AutomationFamily defines the group of cases for automation of IT environment and its functionality.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-03-07;";
 	dcterms:creator "Liudmyla Nechepurenko";
 	ogit:scope "NTO";

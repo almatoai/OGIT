@@ -9,7 +9,7 @@ ogit.MARS.Software:subClass
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "subClass";
 	dcterms:description "Give each type of Software a unique name, e.g 'OpenLDAP' or 'MSSharePointServer'. This should be the primary matching variable for software specific automation (using KnowledgeItems). Replaces 'SoftwareSubClass' from MARS-Schema";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2018-06-01;";
 	dcterms:creator "fotto@arago.de";
 .

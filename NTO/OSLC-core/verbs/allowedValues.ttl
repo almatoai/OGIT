@@ -12,7 +12,7 @@ ogit.OSLC-core:allowedValues
 	rdfs:label "allowedValues";
 	ogit:original <http://open-services.net/ns/core#allowedValues>;
 	dcterms:description "Resource with allowed values for the property being defined. Range of oslc:AllowedValues";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:hide "false";

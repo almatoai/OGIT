@@ -8,7 +8,7 @@ ogit:zipCode
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "zipCode";
 	dcterms:description """zip code or postal code of area.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2020-03-16;";
 	dcterms:creator "Kaushik Gondaliya";
 .

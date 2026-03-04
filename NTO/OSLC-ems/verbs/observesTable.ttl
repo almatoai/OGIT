@@ -14,7 +14,7 @@ ogit.OSLC-ems:observesTable
 	dcterms:description """
 This property links a measurement to the observed fact table.
 The fact table analyzes the measurement along one or more dimensions.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:hide "false";

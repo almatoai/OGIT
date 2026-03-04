@@ -12,7 +12,7 @@ ogit.OSLC-core:valueShape
 	rdfs:label "valueShape";
 	ogit:original <http://open-services.net/ns/core#valueShape>;
 	dcterms:description "if the value-type is a resource type, then Property MAY provide a shape value to indicate the Resource Shape that applies to the resource.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:hide "false";

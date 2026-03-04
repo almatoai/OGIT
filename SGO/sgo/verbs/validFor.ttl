@@ -8,7 +8,7 @@ ogit:validFor
 	rdfs:subPropertyOf ogit:Verb;
 	rdfs:label "validFor";
 	dcterms:description "This relationship indicates the something specifies validity for something else.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-05-21;";
 	dcterms:creator "Peter Larem";
 .

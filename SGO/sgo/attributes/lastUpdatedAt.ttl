@@ -8,7 +8,7 @@ ogit:lastUpdatedAt
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "lastUpdatedAt";
 	dcterms:description "Defines latest date and time when a ticket or it's comment was updated. The format of this value could be according to ISO 8601.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-05-21;";
 	dcterms:creator "Peter Larem";
 .

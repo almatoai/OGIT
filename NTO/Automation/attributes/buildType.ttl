@@ -9,7 +9,7 @@ ogit.Automation:buildType
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "buildType";
 	dcterms:description "Contains the build type of a component.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-08-19;";
 	dcterms:creator "Aymen Ayoub";
 .

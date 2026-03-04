@@ -9,7 +9,7 @@ ogit:reviews
 	rdfs:subPropertyOf ogit:Verb;
 	rdfs:label "reviews";
 	dcterms:description "One entity reviews another";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2018-07-13;";
 	dcterms:creator "Mikhail Osher";
 .

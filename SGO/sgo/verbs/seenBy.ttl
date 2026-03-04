@@ -8,7 +8,7 @@ ogit:seenBy
 	rdfs:subPropertyOf ogit:Verb;
 	rdfs:label "seenBy";
 	dcterms:description "An entity has been seen by another Entity.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2017-07-04;";
 	dcterms:creator "Kristjan Liiva";
 .

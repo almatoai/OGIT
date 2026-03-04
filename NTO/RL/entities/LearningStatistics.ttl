@@ -13,7 +13,7 @@ ogit.RL:LearningStatistics
 	rdfs:label "LearningStatistics";
 	ogit:original <http://www.rddl.org/LearningStatistics>;
 	dcterms:description "RDF Schema for learning service statistics.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2022-04-07;";
 	dcterms:creator "Liudmyla Nechepurenko";
 	ogit:scope "NTO";

@@ -28,7 +28,7 @@ ogit:ConfigurationItem
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "ConfigurationItem";
 	dcterms:description "A configuration item.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-06-11;";
 	dcterms:creator "Aymen Ayoub";
 	ogit:scope "SGO";

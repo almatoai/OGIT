@@ -11,7 +11,7 @@ ogit.ServiceManagement:ServiceRequest
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "ServiceRequest";
 	dcterms:description "This entity type defines a service request ticket. It represents a user’s request for the provision of a service, access, or information.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2025-09-08;";
 	dcterms:creator "Sebastion Seigfried";
 	ogit:scope "NTO";

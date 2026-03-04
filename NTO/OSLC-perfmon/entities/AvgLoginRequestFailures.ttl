@@ -12,7 +12,7 @@ ogit.OSLC-perfmon:AvgLoginRequestFailures
 	rdfs:label "AvgLoginRequestFailures";
 	ogit:original <http://open-services.net/ns/perfmon#AvgLoginRequestFailures>;
 	dcterms:description "Average login request failures";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:scope "NTO";

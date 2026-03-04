@@ -20,7 +20,7 @@ ogit:LicenseToken
 	rdfs:label "LicenseToken";
 	dcterms:description """This serves as a placeholder for pre-approved license request it will be subsituted by a real license throughout the licence request process.
 This will created by a license admin and communicated to potential licence requesters.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-05-21;";
 	dcterms:creator "Peter Larem";
 	ogit:scope "SGO";

@@ -9,7 +9,7 @@ ogit.ServiceManagement:AccountingRule
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "AccountingRule";
 	dcterms:description """Contains rules on how services are to be categorized for billing.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2025-03-18;";
 	dcterms:creator "Jens Bartsch";
 	ogit:scope "NTO";

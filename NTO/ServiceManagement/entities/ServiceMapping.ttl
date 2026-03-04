@@ -12,7 +12,7 @@ ogit.ServiceManagement:ServiceMapping
 	rdfs:label "ServiceMapping";
 	dcterms:description """A Mapping node represents the configurable association between cataloged events or alarms and the target context required for further processing, such as service categories, responsible users, or operating environments. 
 	It enables flexible, customer-specific routing and responsibility assignment independent of the original event source.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2025-09-25;";
 	dcterms:creator "Calvin Spolwind";
 	ogit:scope "SGO";

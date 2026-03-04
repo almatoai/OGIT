@@ -14,7 +14,7 @@ ogit.OSLC-ems:assumesTable
 	dcterms:description """
 This property links a scenario to the assumed value for some fact table of measures, e.g. staffing by week.
 The assumed fact table contains probability distributions.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:hide "false";

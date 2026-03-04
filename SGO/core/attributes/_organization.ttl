@@ -8,7 +8,7 @@ ogit:_organization
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "_organization";
 	dcterms:description "[internally generated] The id of the Auth/Organization that owns the data";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2018-01-01;";
 	dcterms:creator "arago GmbH";
 .

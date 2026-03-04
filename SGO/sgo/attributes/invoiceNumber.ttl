@@ -8,7 +8,7 @@ ogit:invoiceNumber
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "invoiceNumber";
 	dcterms:description "Contains an invoice number. This number is used as identifier for security purposes.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-07-27;";
 	dcterms:creator "Aymen Ayoub";
 .

@@ -9,7 +9,7 @@ ogit:closes
 	rdfs:subPropertyOf ogit:Verb;
 	rdfs:label "closes";
 	dcterms:description "Indicates if one entity closes another one, e.g. a Person might close a Ticket";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-05-21;";
 	dcterms:creator "Peter Larem";
 .

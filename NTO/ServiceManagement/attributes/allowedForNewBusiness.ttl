@@ -9,7 +9,7 @@ ogit.ServiceManagement:allowedForNewBusiness
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "allowedForNewBusiness";
 	dcterms:description "If the value of this flag is true, the service could be offered in a store to new users for order. If flag is false, the service will only be available to users with already existing instances/entities of a specific service.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-05-21;";
 	dcterms:creator "Peter Larem";
 .

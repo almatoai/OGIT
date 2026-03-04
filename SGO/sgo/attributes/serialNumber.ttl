@@ -8,7 +8,7 @@ ogit:serialNumber
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "serialNumber";
 	dcterms:description "A string representing a any kind of serial number. see http://purl.org/goodrelations/v1#serialNumber";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-05-21;";
 	dcterms:creator "Peter Larem";
 .

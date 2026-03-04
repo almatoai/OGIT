@@ -9,7 +9,7 @@ ogit:taskLog
 	rdfs:label "taskLog";
 	dcterms:description """In cases where the log for a Task is maintained as a single string it will be stored in taskLog.
 In all other case consider using ogit/Timeseries.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-05-21;";
 	dcterms:creator "Peter Larem";
 .

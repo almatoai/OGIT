@@ -23,7 +23,7 @@ one or more custom dimension values may be mapped to the same standard dimension
 A map may contain one or more of these mappings
 (see <a href=\"#mapping\"><code>ems:mapping</code></a>), but each custom dimension value must map to
 exactly one standard dimension value.</p>""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:scope "NTO";

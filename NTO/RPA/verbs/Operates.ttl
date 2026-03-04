@@ -9,7 +9,7 @@ ogit.RPA:Operates
 	rdfs:subPropertyOf ogit:Verb;
 	rdfs:label "Operates";
 	dcterms:description "entity operates on in aonther entity. Robot operates in Robotic environment.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2019-03-21;";
 	dcterms:creator "Kaushik Gondaliya";
 .

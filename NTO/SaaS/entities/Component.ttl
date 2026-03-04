@@ -10,7 +10,7 @@ ogit.SaaS:Component
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "Component";
 	dcterms:description "Entities of this kind form the catalogue of components a SaaS Deployment can consist of";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2020-01-14;";
 	dcterms:creator "FCO";
 	ogit:scope "NTO";

@@ -12,7 +12,7 @@ ogit.Auth:Application
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "Application";
 	dcterms:description "An Application is used for authorization.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2018-01-01;";
 	dcterms:creator "arago GmbH";
 	dcterms:created "2018-01-01";

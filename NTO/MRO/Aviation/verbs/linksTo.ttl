@@ -9,7 +9,7 @@ ogit.MRO.Aviation:linksTo
 	rdfs:subPropertyOf ogit:Verb;
 	rdfs:label "linksTo";
 	dcterms:description "TODO.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-02-25;";
 	dcterms:creator "bneal@arago.de";
 .

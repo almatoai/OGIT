@@ -9,7 +9,7 @@ ogit.ServiceManagement:recommendedActions
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "recommendedActions";
 	dcterms:description "Describes one or more suggested steps to address, investigate, or resolve the entity based on its context or analysis.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2025-05-02;";
 	dcterms:creator "Erik Wilfling";
 .

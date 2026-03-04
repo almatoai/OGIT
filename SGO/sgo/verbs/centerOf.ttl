@@ -8,7 +8,7 @@ ogit:centerOf
 	rdfs:subPropertyOf ogit:Verb;
 	rdfs:label "centerOf";
 	dcterms:description "Indicates that the node represents a central or focal location for the specified entity (e.g., the central region of a religion, culture, or administration).";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2025-10-17;";
 	dcterms:creator "Calvin Spolwind";
 .

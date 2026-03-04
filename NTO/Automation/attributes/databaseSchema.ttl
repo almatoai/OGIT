@@ -9,7 +9,7 @@ ogit.Automation:databaseSchema
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "databaseSchema";
 	dcterms:description "Contains information about the database schema. The schema is the skeleton structure that represents the logical view of the entire database";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-07-27;";
 	dcterms:creator "Aymen Ayoub";
 .

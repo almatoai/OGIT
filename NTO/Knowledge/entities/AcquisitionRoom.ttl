@@ -9,7 +9,7 @@ ogit.Knowledge:AcquisitionRoom
     rdfs:subClassOf ogit:Entity;
     rdfs:label "AcquisitionRoom";
     dcterms:description "Entity to describe a part of Knowledge Acquisition Session, linking to Conversation";
-    # For ranges, see http://dublincore.org/documents/dcmi-period/
+    # For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
     dcterms:valid "start=2019-01-03;";
     dcterms:creator "arabtsau@klika-tech.com";
     ogit:scope "NTO";

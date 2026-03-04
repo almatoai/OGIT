@@ -9,7 +9,7 @@ ogit.MARS.Network:interfaceIP
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "interfaceIP";
 	dcterms:description "Specifies the configured IP address of all defined interfaces. It's a key'ed list with the key to be defined in attribute ogit/MARS/Network/interfaceName of the same Machine node. In case of IPv4 addresses dot-decimal notation shall be used. Replaces 'NetworkInterfaceIP' from MARS-Schema";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2018-06-01;";
 	dcterms:creator "fotto@arago.de";
 .

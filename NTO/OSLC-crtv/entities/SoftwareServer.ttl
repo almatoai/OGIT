@@ -12,7 +12,7 @@ ogit.OSLC-crtv:SoftwareServer
 	rdfs:label "SoftwareServer";
 	ogit:original <http://open-services.net/ns/crtv#SoftwareServer>;
 	dcterms:description "Represents an instance of software that participates in hosting a particular application.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:scope "NTO";

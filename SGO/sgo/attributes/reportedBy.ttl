@@ -8,7 +8,7 @@ ogit:reportedBy
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "reportedBy";
 	dcterms:description "Defines who has reported something";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2026-01-22;";
 	dcterms:creator "Federico Gutt";
 .

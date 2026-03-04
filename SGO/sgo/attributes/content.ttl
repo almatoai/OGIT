@@ -8,7 +8,7 @@ ogit:content
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "content";
 	dcterms:description "A string holding any type of content: plain string, XML fragments, RDF documents, ...";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-05-21;";
 	dcterms:creator "Peter Larem";
 .

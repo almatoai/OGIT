@@ -12,7 +12,7 @@ ogit.OSLC-core:isMemberProperty
 	rdfs:label "isMemberProperty";
 	ogit:original <http://open-services.net/ns/core#isMemberProperty>;
 	dcterms:description "Used to define when a property is a member of a container, useful for query.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:hide "false";

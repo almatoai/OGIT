@@ -12,7 +12,7 @@ ogit.OSLC-asset:categorization
 	rdfs:label "categorization";
 	ogit:original <http://open-services.net/ns/asset#categorization>;
 	dcterms:description "A categorization to classify an asset. The category schema values are defined by the service provider. This specification does not define the resource for this property, however it should contain a dcterms:title property.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:hide "false";

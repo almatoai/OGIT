@@ -20,7 +20,7 @@ ogit.Forum:FeedEntry
 	rdfs:label "FeedEntry";
 	dcterms:description """A single entry in a newsfeed or other stream of items. Unlikely to contain many attributes of
 its own, more likely to link users with items describing the event.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-04-27;";
 	dcterms:creator "cwalker@arago.de";
 	ogit:scope "NTO";

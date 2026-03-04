@@ -9,7 +9,7 @@ ogit:listedAt
 	rdfs:subPropertyOf ogit:Verb;
 	rdfs:label "listedAt";
 	dcterms:description "Verb showing that one entity is listed at another entity.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2019-07-10;";
 	dcterms:creator "Marek Meyer";
 

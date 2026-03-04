@@ -12,7 +12,7 @@ ogit:produces
 	rdfs:subPropertyOf ogit:Verb;
 	rdfs:label "produces";
 	dcterms:description "This relationship indicates that one produces some work for another.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-08-08;";
 	dcterms:creator "Alexander Ryabtsev";
 .

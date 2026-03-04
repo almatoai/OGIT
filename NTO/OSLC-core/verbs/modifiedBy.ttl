@@ -12,7 +12,7 @@ ogit.OSLC-core:modifiedBy
 	rdfs:label "modifiedBy";
 	ogit:original <http://open-services.net/ns/core#modifiedBy>;
 	dcterms:description "The URI of a resource describing the entity that most recently modified this resource.  The link target is usually a foaf:Person or foaf:Agent, but could be any type.  This is modeled after dcterms:creator, but Dublin Core currently has no equivalent property.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:hide "false";

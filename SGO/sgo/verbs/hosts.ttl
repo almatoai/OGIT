@@ -9,7 +9,7 @@ ogit:hosts
 	rdfs:subPropertyOf ogit:Verb;
 	rdfs:label "hosts";
 	dcterms:description "verb which shows that an entity is hosted in another entity.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-10-15;";
 	dcterms:creator "Aymen Ayoub";
 .

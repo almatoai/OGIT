@@ -9,7 +9,7 @@ ogit.Automation:deployToEngine
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "deployToEngine";
 	dcterms:description "Obsolete attribute. Not used for HIRO >=6. Boolean value, true if an automation Knowledge Item can deploy into an Automation Engine.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-05-21;";
 	dcterms:creator "Peter Larem";
 .

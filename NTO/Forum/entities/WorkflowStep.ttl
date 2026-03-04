@@ -19,7 +19,7 @@ ogit.Forum:WorkflowStep
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "WorkflowStep";
 	dcterms:description """A Workflow Step defines part of a workflow""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2017-09-18;";
 	dcterms:creator "cwalker@arago.de";
 	ogit:scope "NTO";

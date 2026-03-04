@@ -12,7 +12,7 @@ ogit.OSLC-arch:LinkType
 	rdfs:label "Link Type";
 	ogit:original <http://open-services.net/ns/am#LinkType>;
 	dcterms:description "A locally managed resource that describes a link type predicate that might otherwise not be directly resolvable.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:scope "NTO";

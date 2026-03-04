@@ -10,7 +10,7 @@ ogit:deployedTo
 	rdfs:subPropertyOf ogit:Verb;
 	rdfs:label "deployedTo";
 	dcterms:description "Verb associates if something was deployed to another entity/component.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-07-27;";
 	dcterms:creator "Aymen Ayoub";
 .

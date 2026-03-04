@@ -9,7 +9,7 @@ ogit.PTF:hiroVsn
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "hiroVsn";
 	dcterms:description "Version of HIRO installation.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2019-02-19;";
 	dcterms:creator "Thomas Gotwig";
 .

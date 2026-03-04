@@ -9,7 +9,7 @@ ogit.Knowledge:StepReference
     rdfs:subClassOf ogit:Entity;
     rdfs:label "Step";
     dcterms:description "this is a reference to an already existing step";
-    # For ranges, see http://dublincore.org/documents/dcmi-period/
+    # For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
     dcterms:valid "start=2017-03-14;";
     dcterms:creator "cwalker@arago.de";
     ogit:scope "NTO";

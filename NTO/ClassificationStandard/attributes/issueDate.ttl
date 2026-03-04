@@ -9,7 +9,7 @@ ogit.ClassificationStandard:issueDate
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "issueDate";
 	dcterms:description "The issuing date of a standard.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2025-11-12;";
 	dcterms:creator "Moritz Vannahme";
 .

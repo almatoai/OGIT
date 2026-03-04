@@ -7,7 +7,7 @@ ogit:Hyperlink
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "Hyperlink";
 	dcterms:description "A representation of an (optionally) titled Hyperlink to some media. No protocol restrictions imposed.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-06-09;";
 	dcterms:creator "cwalker@arago.de";
 	ogit:scope "SGO";

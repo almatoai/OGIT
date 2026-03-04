@@ -9,7 +9,7 @@ ogit:mode
 	rdfs:label "mode";
 	dcterms:description """Contains the type of filter for the value contained in the entity \"Attribute\" and corresponding to one of the following strings: 
 eq, ne, lt, le, gt, ge, exists, notexists, string, notstring, regex, notregex""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-05-21;";
 	dcterms:creator "Peter Larem";
 .

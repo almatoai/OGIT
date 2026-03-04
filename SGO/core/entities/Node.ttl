@@ -8,7 +8,7 @@ ogit:Node
 	rdfs:label "Node";
 	dcterms:description """The root node, the 'Big Bang'. The nodes Global, Factual, Actionable and Situational build with this Node the
 top level of the SGO.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2013-11-01;";
 	dcterms:creator "Peter Larem";
 	ogit:scope "SGO";

@@ -13,7 +13,7 @@ ogit.Cost:PlanningParameter
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "PlanningParameter";
 	dcterms:description "A Planning Parameter describes a Planning Template. It will contain a concrete value of a Parameter and the statistics derived from the expected distribution as attributes. For a general overview: see the NTO description on github.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-05-21;";
 	dcterms:creator "Peter Larem";
 	ogit:scope "NTO";

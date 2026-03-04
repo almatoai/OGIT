@@ -13,7 +13,7 @@ ogit.OSLC-ems:numberOfQuantiles
 	ogit:original <http://open-services.net/ns/ems#numberOfQuantiles>;
 	dcterms:description """
 This property gives the <em>number of quantiles</em> parameter value of a probability distribution.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:hide "false";

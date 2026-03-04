@@ -10,7 +10,7 @@ ogit.MARS.Machine:cpuArch
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "cpuArch";
 	dcterms:description "CPU architecture. On UNIX like systems it will be the output onf 'uname -m'. Replaces 'MachineArchitecture' from MARS-Schema";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2018-06-01;";
 	dcterms:creator "fotto@arago.de";
 	ogit:validation-type "fixed";

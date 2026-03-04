@@ -8,7 +8,7 @@ ogit:reviewedBy
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "reviewedBy";
 	dcterms:description "Indicates who has reviewed or validated the entity";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2025-11-12;";
 	dcterms:creator "Daniel Brommer";
 .

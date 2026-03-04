@@ -9,7 +9,7 @@ ogit.MARS.Network:bindAddress
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "bindAddress";
 	dcterms:description "Usually an IP address. Defines the listening address for a software (server). Replaces 'NetworkIP' from MARS-Schema";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2018-06-01;";
 	dcterms:creator "fotto@arago.de";
 .

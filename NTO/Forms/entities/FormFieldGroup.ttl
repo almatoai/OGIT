@@ -11,7 +11,7 @@ ogit.Forms:FormFieldGroup
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "FormFieldGroup";
 	dcterms:description """A group of form fields that contains different form fields which need to be filled out.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2025-05-30;";
 	dcterms:creator "Semih Can Sancar";
 	ogit:scope "NTO";

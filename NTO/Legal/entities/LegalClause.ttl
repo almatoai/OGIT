@@ -12,7 +12,7 @@ ogit.Legal:LegalClause
 	rdfs:label "LegalClause";
 	dcterms:description """A distinct element within a legal code or document. Can take the form of articles, 
 	sections, paragraphs, or other structural units depending on the drafting style and jurisdiction.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2025-04-09;";
 	dcterms:creator "Daniel Maier";
 	ogit:scope "NTO";

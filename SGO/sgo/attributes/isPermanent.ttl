@@ -11,7 +11,7 @@ ogit:isPermanent
 		If value equals \"true\" vertex can not be updated or deleted.
 		E.g. after a service is provisioned.
 		""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2021-03-5;";
 	dcterms:creator "Vitaly Teremasov";
 .

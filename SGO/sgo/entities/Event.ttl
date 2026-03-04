@@ -23,7 +23,7 @@ ogit:Event
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "Event";
 	dcterms:description "This entity defines any type of event records, e.g. ITSM/produced by event management systems, Business Process etc.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-05-21;";
 	dcterms:creator "Peter Larem";
 	ogit:scope "SGO";

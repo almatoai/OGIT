@@ -17,7 +17,7 @@ A <em>fact distribution</em> is a row of a fact distribution table
 It contains one or more dimension cells
 (see <a href=\"#dimensionCell\"><code>ems:dimensionCell</code></a>) and one or more measure distribution cells
 (see <a href=\"#measureDistributionCell\"><code>ems:measureDistributionCell</code></a>).""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:scope "NTO";

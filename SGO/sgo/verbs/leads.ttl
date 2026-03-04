@@ -8,7 +8,7 @@ ogit:leads
 	rdfs:subPropertyOf ogit:Verb;
 	rdfs:label "leads";
 	dcterms:description "This relationship defines that one entity leads another entity.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-10-22;";
 	dcterms:creator "Peter Larem";
 .

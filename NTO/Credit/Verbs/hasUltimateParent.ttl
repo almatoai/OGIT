@@ -9,7 +9,7 @@ ogit.Credit:hasUltimateParent
 	rdfs:subPropertyOf ogit:Verb;
 	rdfs:label "hasUltimateParent";
 	dcterms:description """This relationship indicates that an entity has the following ultimate parent, i.e. it is fully, directly or indirectly controlled by.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2019-11-27;";
 	dcterms:creator "Ola Irgens Kylling";
 .

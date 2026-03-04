@@ -12,7 +12,7 @@ ogit.OSLC-perfmon:CpuMetrics
 	rdfs:label "CpuMetrics";
 	ogit:original <http://open-services.net/ns/perfmon#CpuMetrics>;
 	dcterms:description "Metric category for CPU-related metrics.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:scope "NTO";

@@ -12,7 +12,7 @@ ogit.OSLC-core:resourceShape
 	rdfs:label "resourceShape";
 	ogit:original <http://open-services.net/ns/core#resourceShape>;
 	dcterms:description "A Creation Factory MAY provide Resource Shapes that describe shapes of resources that may be created.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:hide "false";

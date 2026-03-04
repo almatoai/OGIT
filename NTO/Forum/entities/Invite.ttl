@@ -15,7 +15,7 @@ ogit.Forum:Invite
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "Invite";
 	dcterms:description "Invite is used to request participation with a node";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-09-02;";
 	dcterms:creator "bmoore@arago.de";
 	ogit:scope "NTO";

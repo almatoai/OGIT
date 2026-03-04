@@ -9,7 +9,7 @@ ogit.MARS.Network:interfaceMAC
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "interfaceMAC";
 	dcterms:description "Alloes to specifies the MAC address of all defined interfaces. It's a key'ed list with the key to be defined in attribute ogit/MARS/Network/interfaceName of the same Machine node. Replaces 'NetworkInterfaceMAC' from MARS-Schema";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2018-06-01;";
 	dcterms:creator "fotto@arago.de";
 .

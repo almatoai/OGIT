@@ -8,7 +8,7 @@ ogit:sells
 	rdfs:subPropertyOf ogit:Verb;
 	rdfs:label "sells";
 	dcterms:description "This relationship defines that one entity sells another entity.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2019-11-06;";
 	dcterms:creator "Marek Meyer";
 .

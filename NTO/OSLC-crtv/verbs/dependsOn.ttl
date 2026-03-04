@@ -12,7 +12,7 @@ ogit.OSLC-crtv:dependsOn
 	rdfs:label "dependsOn";
 	ogit:original <http://open-services.net/ns/crtv#dependsOn>;
 	dcterms:description "A relationship denoting that the source of the relationship cannot function properly without an association with the target. The dependency is directional ( the source depends on the target but the reverse is not necessarily true ) and can represent any cause or type of dependency. For instance, this relationship can be used to denote that a device depends on its power supply(s) or that an IP path depends on a layer 2 connection.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:hide "false";

@@ -8,7 +8,7 @@ ogit.Network:VLAN
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "VLAN";
 	dcterms:description "VLAN or Virtual LAN is a group of computers or network devices that appear to be on the same LAN, even if they are distributed. VLANs allow segregation of traffic within a network.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-05-21;";
 	dcterms:creator "Peter Larem";
 	ogit:scope "NTO";

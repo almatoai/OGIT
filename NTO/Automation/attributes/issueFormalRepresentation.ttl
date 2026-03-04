@@ -9,7 +9,7 @@ ogit.Automation:issueFormalRepresentation
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "issueFormalRepresentation";
 	dcterms:description "Obsolete attribute. Not used for HIRO >=6. Contains an issue in XML representation defined by IssueSchema.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-05-21;";
 	dcterms:creator "Peter Larem";
 .

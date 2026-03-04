@@ -11,7 +11,7 @@ ogit.Legal:LegalNorm
 	rdfs:label "LegalNorm";
 	dcterms:description """A single, structured body of legal text enacted as a unified law or code. It typically consists of multiple
 	clasues or articles and governs a defined legal domain such as civil, criminal, or administrative law.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2025-04-09;";
 	dcterms:creator "Daniel Maier";
 	ogit:scope "NTO";

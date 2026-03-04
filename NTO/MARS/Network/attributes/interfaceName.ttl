@@ -9,7 +9,7 @@ ogit.MARS.Network:interfaceName
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "interfaceName";
 	dcterms:description "This defines the network interface within a system. It's always a list containing all the defined interfaces, e.g. 'lo0 eth0 eth1'. Replaces 'NetworkInterface' from MARS-Schema";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2018-06-01;";
 	dcterms:creator "fotto@arago.de";
 .

@@ -9,7 +9,7 @@ ogit.ServiceManagement:task
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "task";
 	dcterms:description "A task related to a Service Management process.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-07-06;";
 	dcterms:creator "Aymen Ayoub";
 .

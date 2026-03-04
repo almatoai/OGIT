@@ -9,7 +9,7 @@ ogit:effort
 	rdfs:label "effort";
 	dcterms:description """Defines how much time was spent on the actual work for a change, task, or similar entity.
 The values is expected to be in format HH:MM, e.g. 1:00 for 1 hour effort.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-05-21;";
 	dcterms:creator "Peter Larem";
 	ogit:validation-type "regex";

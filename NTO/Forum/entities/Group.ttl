@@ -14,7 +14,7 @@ ogit.Forum:Group
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "Group";
 	dcterms:description "A Node to associate a profile to a particular group";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-12-03;";
 	dcterms:creator "bmoore@arago.de";
 	ogit:scope "NTO";

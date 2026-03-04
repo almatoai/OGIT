@@ -9,7 +9,7 @@ ogit:opens
 	rdfs:subPropertyOf ogit:Verb;
 	rdfs:label "opens";
 	dcterms:description "Indicates an entity which creates/opens another entity (e.g. Person opens Ticket).";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-05-21;";
 	dcterms:creator "Peter Larem";
 .

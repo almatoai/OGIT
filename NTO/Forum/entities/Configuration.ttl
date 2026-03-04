@@ -9,7 +9,7 @@ ogit.Forum:Configuration
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "Configuration";
 	dcterms:description "Configuration Data. No Schema - all free attributes";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-04-23;";
 	dcterms:creator "cwalker@arago.de";
 	ogit:scope "NTO";

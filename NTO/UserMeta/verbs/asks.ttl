@@ -9,7 +9,7 @@ ogit.UserMeta:asks
     rdfs:subPropertyOf ogit:Verb;
     rdfs:label "asks";
     dcterms:description "This verb represents that a games asks a question";
-    # For ranges, see http://dublincore.org/documents/dcmi-period/
+    # For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
     dcterms:valid "start=2016-07-19;";
     dcterms:creator "bneal@arago.de";
 .

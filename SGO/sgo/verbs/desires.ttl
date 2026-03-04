@@ -9,7 +9,7 @@ ogit:desires
 	rdfs:subPropertyOf ogit:Verb;
 	rdfs:label "desires";
 	dcterms:description "It is not required. But strong wish to have something or wish for something to happen.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2019-03-28;";
 	dcterms:creator "Kaushik Gondaliya";
 .

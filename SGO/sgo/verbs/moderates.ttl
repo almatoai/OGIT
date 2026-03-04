@@ -10,7 +10,7 @@ ogit:moderates
 	rdfs:label "moderates";
 	dcterms:description """Moderation as a verb, in the context of a forum, is a supervisory role. It implies that the
 entity takes a responsibility for the maintenance and upkeep of the connected entity.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-04-23;";
 	dcterms:creator "cwalker@arago.de";
 	ogit:cardinality "many2many";

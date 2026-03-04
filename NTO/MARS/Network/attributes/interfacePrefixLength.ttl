@@ -9,7 +9,7 @@ ogit.MARS.Network:interfacePrefixLength
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "interfacePrefixLength";
 	dcterms:description "Specifies the network prefix length (network mask) of all defined interfaces. It's a key'ed list with the key to be defined in attribute ogit/MARS/Network/interfaceName of the same Machine node. The values are always number, e.g. a value of '24' in the context of IPv4 is equivalent to 255.255.255.0 in dot-decimal notation. Replaces 'NetworkInterfacePrefixLength' and 'NetworkInterfaceNetmask' from MARS-Schema";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2018-06-01;";
 	dcterms:creator "fotto@arago.de";
 .

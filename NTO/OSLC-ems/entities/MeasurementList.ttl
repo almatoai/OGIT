@@ -12,7 +12,7 @@ ogit.OSLC-ems:MeasurementList
 	rdfs:label "MeasurementList";
 	ogit:original <http://open-services.net/ns/ems#MeasurementList>;
 	dcterms:description "A measurement list is a container for measurement resources.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:scope "NTO";

@@ -17,7 +17,7 @@ Issues can be injected into an automation engine from external systems e.g. Moni
 By comparing an Issue with the Issue Condition of a Knowledge Item an automation engine decides which Knowledge Items are are processed
 in which order. If multiple Knowledge Items can be applied to an Issue the KI with the more precisely defined
 IssueCondition is processed first.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-05-21;";
 	dcterms:creator "Peter Larem";
 	ogit:scope "NTO";

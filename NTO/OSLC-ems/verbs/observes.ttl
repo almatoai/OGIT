@@ -17,7 +17,7 @@ In an EMS service, the measurement is a resource of type
 <a href=\"#Measurement\"><code>ems:Measurement</code></a>
 which may observe zero or more measures.
 For example, a measurement at the end of a project may observe a <em>duration of 12 months</em> and a <em>cost of 200,000 USD</em>.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:hide "false";

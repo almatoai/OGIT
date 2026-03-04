@@ -23,7 +23,7 @@ ogit.ServiceManagement:Ticket
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "Ticket";
 	dcterms:description "This entity defines any type of tickets. For specific behaviour of tickets, please check specific entities (e.g. ogit/ServiceManagement/Incident).";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-05-21;";
 	dcterms:creator "Peter Larem";
 	ogit:scope "NTO";

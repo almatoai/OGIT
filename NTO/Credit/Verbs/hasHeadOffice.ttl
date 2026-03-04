@@ -9,7 +9,7 @@ ogit.Credit:hasHeadOffice
 	rdfs:subPropertyOf ogit:Verb;
 	rdfs:label "hasHeadOffice";
 	dcterms:description """This relationship indicates that an entity has the following head office, i.e. it has the following underlying legal entity.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2019-11-27;";
 	dcterms:creator "Ola Irgens Kylling";
 .

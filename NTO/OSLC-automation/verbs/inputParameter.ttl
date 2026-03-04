@@ -12,7 +12,7 @@ ogit.OSLC-automation:inputParameter
 	rdfs:label "inputParameter";
 	ogit:original <http://open-services.net/ns/auto#inputParameter>;
 	dcterms:description "Parameters provided when Automation Requests are created. These include parameters provided by the creator of the Automation Request (whether by delegated UI or HTTP POST) and *MAY* include additional parameters added by the service provider during Automation Request creation. See the definition of the `oslc_auto:parameterDefinition` attribute of the Automation Plan for additional guidance on determining which parameters are required. Creators of Automation Requests *MAY* provide parameters beyond those defined in the Automation Plan without guarantee the service provider will recognize or honor them. It is expected that this attribute is write-able on Automation Request creation and read-only thereafter.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:hide "false";

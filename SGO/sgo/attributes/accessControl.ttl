@@ -11,7 +11,7 @@ ogit:accessControl
 applications / policies. Initial intent is that policies would treat \"public-read\"
 (inspired by Amazon AWS S3 ACLs) to mean anyone would have read-only access to this
 node.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-03-26;";
 	dcterms:creator "Chris Walker";
 .

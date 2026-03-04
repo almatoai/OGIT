@@ -8,7 +8,7 @@ ogit:updateCount
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "updateCount";
 	dcterms:description "Contains the count of the records updated.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-07-27;";
 	dcterms:creator "Aymen Ayoub";
 .

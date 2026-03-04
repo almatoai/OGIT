@@ -10,7 +10,7 @@ ogit:includes
 	rdfs:subPropertyOf ogit:Verb;
 	rdfs:label "includes";
 	dcterms:description "Indicates if an entity includes something else.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2018-07-05;";
 	dcterms:creator "qikram@arago.de";
 .

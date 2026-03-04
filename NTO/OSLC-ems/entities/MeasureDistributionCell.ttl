@@ -16,7 +16,7 @@ A <em>measure distribution cell</em> is a cell in a fact distribution row.
 It refers to its column
 (see <a href=\"#inColumn\"><code>ems:inColumn</code></a>) and contains a measure distribution
 (see <a href=\"#distribution\"><code>ems:distribution</code></a>).""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:scope "NTO";

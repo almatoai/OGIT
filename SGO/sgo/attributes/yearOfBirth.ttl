@@ -8,7 +8,7 @@ ogit:yearOfBirth
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "yearOfBirth";
 	dcterms:description """Birth year of person.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2020-08-24;";
 	dcterms:creator "Kaushik Gondaliya";
 .

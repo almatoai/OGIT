@@ -19,7 +19,7 @@ The dimension columns contain dimension values.
 Dimension columns SHOULD contain standard dimension values when they exist, e.g. for roles.
 The creator of the fact table MAY use custom dimension dimension values and
 record how these custom values are mapped to the standard values.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:scope "NTO";

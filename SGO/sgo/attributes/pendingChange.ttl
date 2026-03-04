@@ -8,7 +8,7 @@ ogit:pendingChange
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "pendingChange";
 	dcterms:description "This field indicates whether or not there are any changes pending against a component/device. When you close or open a change for this component/device, this action sets or clears the flag..";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-07-27;";
 	dcterms:creator "Aymen Ayoub";
 .

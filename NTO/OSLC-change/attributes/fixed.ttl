@@ -12,7 +12,7 @@ ogit.OSLC-change:fixed
 	rdfs:label "fixed";
 	ogit:original <http://open-services.net/ns/cm#fixed>;
 	dcterms:description "Whether or not the Change Request has been fixed.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:hide "false";

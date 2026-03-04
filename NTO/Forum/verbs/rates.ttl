@@ -10,7 +10,7 @@ ogit.Forum:rates
 	rdfs:subPropertyOf ogit:Verb;
 	rdfs:label "rates";
 	dcterms:description "This verb represents the `Rating` between two nodes";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-08-12;";
 	dcterms:creator "bneal@arago.de";
 .

@@ -14,7 +14,7 @@ ogit.OSLC-ems:Metric
 	dcterms:description """
 A <em>metric</em> is a procedure or algorithm for quantifying or measuring some aspect of a thing, system, event, etc.
 For example <em>duration</em> is a metric that measures the amount of time an activity takes.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:scope "NTO";

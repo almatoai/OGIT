@@ -17,7 +17,7 @@ A measure cell refers to a measure column
 (see <a href=\"#inColumn\"><code>ems:inColumn</code></a>)
 and has a numeric value
 (see <a href=\"numericValue\"><code>ems:numericValue</code></a>.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:scope "NTO";

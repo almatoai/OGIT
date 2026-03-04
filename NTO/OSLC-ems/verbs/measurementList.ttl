@@ -12,7 +12,7 @@ ogit.OSLC-ems:measurementList
 	rdfs:label "measurementList";
 	ogit:original <http://open-services.net/ns/ems#measurementList>;
 	dcterms:description "This property links a service to its measurement list.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:hide "false";

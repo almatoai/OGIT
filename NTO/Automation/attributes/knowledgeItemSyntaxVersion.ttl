@@ -9,7 +9,7 @@ ogit.Automation:knowledgeItemSyntaxVersion
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "knowledgeItemSyntaxVersion";
 	dcterms:description "Contains an automation Knowledge Item (KI) syntax version.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2017-10-31;";
 	dcterms:creator "druss@arago.de";
 .

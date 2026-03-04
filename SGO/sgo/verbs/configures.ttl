@@ -9,7 +9,7 @@ ogit:configures
 	rdfs:subPropertyOf ogit:Verb;
 	rdfs:label "configures";
 	dcterms:description "The `from` entity, contains configuration data for the to `entity`";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-04-27;";
 	dcterms:creator "cwalker@arago.de";
 .

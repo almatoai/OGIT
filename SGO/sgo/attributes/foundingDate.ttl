@@ -8,7 +8,7 @@ ogit:foundingDate
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "foundingDate";
 	dcterms:description "The founding date of a company or other entity, in Unix time.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2025-10-02;";
 	dcterms:creator "Moritz Vannahme";
 .

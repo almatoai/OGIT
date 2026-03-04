@@ -8,7 +8,7 @@ ogit:_c-id
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "_c-id";
 	dcterms:description "[internally generated] The content version id for Attachments";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-05-27;";
 	dcterms:creator "arago";
 	dcterms:created "2019-08-06";

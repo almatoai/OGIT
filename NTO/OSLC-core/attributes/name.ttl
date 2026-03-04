@@ -12,7 +12,7 @@ ogit.OSLC-core:name
 	rdfs:label "name";
 	ogit:original <http://open-services.net/ns/core#name>;
 	dcterms:description "Name of property being defined, i.e. second part of property's Prefixed Name.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:hide "false";

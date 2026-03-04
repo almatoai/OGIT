@@ -9,7 +9,7 @@ ogit.Automation:mandatoryParameters
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "mandatoryParameters";
 	dcterms:description "Contains mandatory parameters as key/value mapping";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2019-04-01;";
 	dcterms:creator "Oday Jubran";
 .

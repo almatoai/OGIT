@@ -43,7 +43,7 @@ Entities of this type should be created with a predefined ID. Those IDs should b
 a concatention of some strings separated with a dot. if organization data is created from a LDAP then a mapping
 like \"cn=John Doe,dc=example,dc=com\" => \"john_doe.example.com\" should be employed.
 The ogit/function attribute should be used to tell what kind of grouping an entity of type Organization is: company, department, group, ...""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-05-21;";
 	dcterms:creator "Peter Larem";
 	ogit:scope "SGO";

@@ -9,7 +9,7 @@ ogit.MARS.Software:logPath
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "logPath";
 	dcterms:description "Defines where a software writes its logfiles. Replaces 'LogPath' from MARS-Schema";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2018-06-01;";
 	dcterms:creator "fotto@arago.de";
 .

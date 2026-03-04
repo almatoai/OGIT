@@ -13,7 +13,7 @@ ogit:CatalogItem
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "CatalogItem";
 	dcterms:description "An entry within a Catalog. the semantics of Item is more general than that of http://purl.org/goodrelations/v1#ProductOrService";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-05-21;";
 	dcterms:creator "Peter Larem";
 	ogit:scope "SGO";

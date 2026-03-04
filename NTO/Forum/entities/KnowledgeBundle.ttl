@@ -21,7 +21,7 @@ ogit.Forum:KnowledgeBundle
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "KnowledgeBundle";
 	dcterms:description "Deprecated in favor of `ogit/Automation/KnowledgeBundle`. A grouping of `ogit/Automation/KnowledgeItem`s into a package. ";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-04-27;";
 	dcterms:creator "cwalker@arago.de";
 	ogit:scope "NTO";

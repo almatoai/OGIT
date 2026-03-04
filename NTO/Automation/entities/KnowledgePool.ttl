@@ -23,7 +23,7 @@ ogit.Automation:KnowledgePool
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "KnowledgePool";
 	dcterms:description "A grouping of `ogit/Automation/KnowledgeItem`s and `ogit/Automation/KnowledgeBundle`s for user or automation engine.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-04-27;";
 	dcterms:creator "druss@arago.de";
 	ogit:scope "NTO";

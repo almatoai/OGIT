@@ -9,7 +9,7 @@ ogit.Data:timeToLive
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "timeToLive";
 	dcterms:description "Defines how many seconds data will be kept before expire.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2018-02-09;";
 	dcterms:creator "mglusiuk@arago.de";
 .

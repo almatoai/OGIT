@@ -9,7 +9,7 @@ ogit.Automation:sendHistory
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "sendHistory";
 	dcterms:description "Boolean flag whether issue history should be sent to decision service.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2018-05-01;";
 	dcterms:creator "cy@arago.de";
 	ogit:validation-type "fixed";

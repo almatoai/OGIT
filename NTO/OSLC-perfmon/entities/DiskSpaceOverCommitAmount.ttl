@@ -12,7 +12,7 @@ ogit.OSLC-perfmon:DiskSpaceOverCommitAmount
 	rdfs:label "DiskSpaceOverCommitAmount";
 	ogit:original <http://open-services.net/ns/perfmon#DiskSpaceOverCommitAmount>;
 	dcterms:description "Amount of disk space committed beyond the disk's capacity.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:scope "NTO";

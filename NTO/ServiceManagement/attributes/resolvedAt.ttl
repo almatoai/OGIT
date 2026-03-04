@@ -10,7 +10,7 @@ ogit.ServiceManagement:resolvedAt
 	rdfs:label "resolvedAt";
 	dcterms:description """Datetime indicating when a ticket was resolved. Can be used for incident or problem tickets when it is necessary to distinguish between the ticket resolving and ticket closure (closedAt).
 The values must be combined date and time with time zone designator according to ISO 8601""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-05-21;";
 	dcterms:creator "Peter Larem";
 .

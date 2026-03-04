@@ -12,7 +12,7 @@ ogit.OSLC-automation:parameterDefinition
 	rdfs:label "parameterDefinition";
 	ogit:original <http://open-services.net/ns/auto#parameterDefinition>;
 	dcterms:description "The definition of a parameter for this Automation Plan. parameterDefinitions are either a local (inline) or referenced resource and use the attributes (the range) of the oslc:Property resource with one exception. When used in the context of an oslc_auto:parameterDefinition, the cardinality of `oslc:propertyDefinition` becomes zero-or-one instead of exactly-one. Automation consumers creating Automation Requests *MUST* use the `oslc:occurs` attribute of the parameterDefinition, if present, to determine if a given parameter is required when creating the Automation Request. If the `oslc:occurs` attribute indicates the parameter is required (exactly-one or one-or-more), the service provider must guarantee the named parameter will be present in the Automation Result either as an `oslc_auto:inputParameter` when unmodified during execution, or as an `oslc_auto:outputParameter` when modified during execution.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:hide "false";

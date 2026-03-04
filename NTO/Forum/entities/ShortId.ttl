@@ -21,7 +21,7 @@ is used for this as the function of this shortId is to track a specific channel 
 inbound traffic. The ShortId can be used without this channel/referrer data, albeit
 to more limited use.
 The `ogit/id` attribute in this instance would be a short URL safe string.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-04-23;";
 	dcterms:creator "cwalker@arago.de";
 	ogit:scope "NTO";

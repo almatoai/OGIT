@@ -10,7 +10,7 @@ ogit:consumes
 	rdfs:subPropertyOf ogit:Verb;
 	rdfs:label "consumes";
 	dcterms:description "This relationship indicates that one consumes result of work from another.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-08-08;";
 	dcterms:creator "Alexander Ryabtsev";
 .

@@ -9,7 +9,7 @@ ogit:assumes
 	rdfs:subPropertyOf ogit:Verb;
 	rdfs:label "assumes";
 	dcterms:description "verb which allows to connect the planning parameters to a planning template";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-05-21;";
 	dcterms:creator "Peter Larem";
 .

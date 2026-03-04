@@ -9,7 +9,7 @@ ogit.MARS.Software:serviceName
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "serviceName";
 	dcterms:description "Defines the service name for a software which can buse for administrative operations like start, stop, or status. E.g on RedHat Linux it would be the name of the service unit (without the .service extension). Replaces 'ServiceName' from MARS-Schema";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2018-06-01;";
 	dcterms:creator "fotto@arago.de";
 .

@@ -14,7 +14,7 @@ ogit.OSLC-ems:isActive
 	dcterms:description """
 This boolean property indicates if a scenario is under active consideration.
 When a scenario has been ruled out, it is marked as inactive by setting this property to <code>false</code>.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:hide "false";

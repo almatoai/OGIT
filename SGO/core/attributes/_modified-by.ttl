@@ -8,7 +8,7 @@ ogit:_modified-by
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "_modified-by";
 	dcterms:description "[internally generated] The id of the identity who did the modification";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-05-21;";
 	dcterms:creator "Peter Larem";
 .

@@ -9,7 +9,7 @@ ogit:isMemberOf
 	rdfs:subPropertyOf ogit:Verb;
 	rdfs:label "isMemberOf";
 	dcterms:description "An entity  (e.g. person or organization) can be a member of another entity (e.g. organization/organizational unit).";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
     dcterms:valid       "start=2024-12-17;";
     dcterms:creator     "Semih Can Sancar";
 .

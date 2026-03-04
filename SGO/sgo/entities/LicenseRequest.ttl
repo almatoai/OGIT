@@ -21,7 +21,7 @@ ogit:LicenseRequest
 	dcterms:description """This allows clients to place a request for a license.
 Usually some license admin personnel will use the information from such a request to create the actual license.
 A request might contain a valid LicenseToken to indicate that this request is pre-approved.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-05-21;";
 	dcterms:creator "Peter Larem";
 	ogit:scope "SGO";

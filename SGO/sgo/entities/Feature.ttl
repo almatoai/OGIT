@@ -8,7 +8,7 @@ ogit:Feature
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "Feature";
 	dcterms:description "Describes specific qualities of an entity.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2025-02-14;";
 	dcterms:creator "Calvin Spolwind";
 	ogit:scope "SGO";

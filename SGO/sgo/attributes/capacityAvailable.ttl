@@ -8,7 +8,7 @@ ogit:capacityAvailable
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "capacityAvailable";
 	dcterms:description "If the flag is true, then service can be ordered by new instance. If the flag is false, the service cannot temporarily be ordered due to capacity reasons.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-05-21;";
 	dcterms:creator "Peter Larem";
 .

@@ -10,7 +10,7 @@ ogit:function
 	dcterms:description """Attibute used to specify a function that some entity does/provides.This is more specific then 'description'.  
 Should contain a short string. At this level of specification it is still a free from string.
 However, unlike 'description', it is expected to contain some list of fixed values.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-05-21;";
 	dcterms:creator "Peter Larem";
 .

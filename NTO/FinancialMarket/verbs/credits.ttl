@@ -9,7 +9,7 @@ ogit.FinancialMarket:credits
 	rdfs:subPropertyOf ogit:Verb;
 	rdfs:label "credits";
 	dcterms:description """This relationship indicates that an entity is the creditor for a contract.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2019-11-11;";
 	dcterms:creator "Marek Meyer";
 .

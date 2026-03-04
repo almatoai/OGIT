@@ -8,7 +8,7 @@ ogit:title
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "title";
 	dcterms:description "Title of any kind. In the context of a Person this can be a courtesy title, an academic title, or a job tilte.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-05-21;";
 	dcterms:creator "Peter Larem";
 .

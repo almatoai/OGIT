@@ -9,7 +9,7 @@ ogit:availableIn
 	rdfs:subPropertyOf ogit:Verb;
 	rdfs:label "availableIn";
 	dcterms:description "Indicates that something can be found from somewhere.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-05-21;";
 	dcterms:creator "Peter Larem";
 .

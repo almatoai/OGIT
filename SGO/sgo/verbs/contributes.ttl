@@ -10,7 +10,7 @@ ogit:contributes
 	rdfs:label "contributes";
 	dcterms:description """Verb associates which entity contributes to another, for example could be used to express a distribution for the percentage 
 of a cost element, which contributes to another cost element.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-05-21;";
 	dcterms:creator "Peter Larem";
 .

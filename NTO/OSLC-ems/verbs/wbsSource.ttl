@@ -17,7 +17,7 @@ This content MUST be in the XML format specified by the WBS resource.
 When this link is deferenced using an HTTP GET request, the response MUST be the WBS.
 If this property is absent, then the WBS resource MUST have a
 <a href=\"#wbsContent\"><code>ems:wbsContent</code></a> property.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:hide "false";

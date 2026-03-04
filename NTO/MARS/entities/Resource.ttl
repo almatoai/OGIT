@@ -22,7 +22,7 @@ ogit.MARS:Resource
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "Resource";
 	dcterms:description "Vertices of this type are the 'R'-nodes in the MARS model. 'R' stands for 'Resource' and those nodes form the second highest layer in the A-R-S-M layer model. A 'Resource' node groups 'Software' nodes. It's up the user whether this grouping is used to to group software instance of the same software (e.g. all instances of an Oracle RAC) or software instance of different softwares (functional grouping, e.g. 'persistence')";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2018-06-01;";
 	dcterms:creator "FCO";
 	ogit:scope "NTO";

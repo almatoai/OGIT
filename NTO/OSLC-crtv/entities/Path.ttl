@@ -12,7 +12,7 @@ ogit.OSLC-crtv:Path
 	rdfs:label "Path";
 	ogit:original <http://open-services.net/ns/crtv#Path>;
 	dcterms:description "Path represents individual components of a directed graph of resources, where specific ordering is necessary to preserve a graph. Examples of such directed graphs are the representation of workflows or processes.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:scope "NTO";

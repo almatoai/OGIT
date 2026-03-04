@@ -12,7 +12,7 @@ ogit.OSLC-change:testedByTestCase
 	rdfs:label "testedByTestCase";
 	ogit:original <http://open-services.net/ns/cm#testedByTestCase>;
 	dcterms:description "Test case by which this change request is tested. It is likely that the target resource will be an oslc_qm:TestCase but that is not necessarily the case.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:hide "false";

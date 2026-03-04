@@ -9,7 +9,7 @@ ogit:follows
 	rdfs:subPropertyOf ogit:Verb;
 	rdfs:label "follows";
 	dcterms:description "Indicates if one entity follows another, as in a sequence flow  connecting two elements of a process.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-05-21;";
 	dcterms:creator "Peter Larem";
 .

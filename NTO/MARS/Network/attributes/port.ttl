@@ -9,7 +9,7 @@ ogit.MARS.Network:port
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "port";
 	dcterms:description "A number indicating a network port (0..65535). Usually used define the listening port for a software (server). Replaces 'NetworkPort' from MARS-Schema";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2018-06-01;";
 	dcterms:creator "fotto@arago.de";
 .

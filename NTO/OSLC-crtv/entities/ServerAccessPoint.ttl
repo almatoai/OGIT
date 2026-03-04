@@ -12,7 +12,7 @@ ogit.OSLC-crtv:ServerAccessPoint
 	rdfs:label "ServerAccessPoint";
 	ogit:original <http://open-services.net/ns/crtv#ServerAccessPoint>;
 	dcterms:description "A network endpoint, i.e. the combination of IP address and port number that clients connect to when accessing a SoftwareServer.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:scope "NTO";

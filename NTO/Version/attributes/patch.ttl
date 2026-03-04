@@ -9,7 +9,7 @@ ogit.Version:patch
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "patch";
 	dcterms:description "patch version according to https://semver.org/";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2018-05-25;";
 	dcterms:creator "fotto@arago.de";
 .

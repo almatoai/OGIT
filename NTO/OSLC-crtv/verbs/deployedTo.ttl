@@ -12,7 +12,7 @@ ogit.OSLC-crtv:deployedTo
 	rdfs:label "deployedTo";
 	ogit:original <http://open-services.net/ns/crtv#deployedTo>;
 	dcterms:description "The SoftwareServer on which this SoftwareModule is deployed.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:hide "false";

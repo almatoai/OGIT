@@ -9,7 +9,7 @@ ogit.Datacenter:rackUnit
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "rackUnit";
 	dcterms:description "The name of the RackUnit within a datacenter.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-10-15;";
 	dcterms:creator "Aymen Ayoub";
 .

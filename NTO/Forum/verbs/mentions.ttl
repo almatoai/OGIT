@@ -11,7 +11,7 @@ ogit.Forum:mentions
 	dcterms:description """This verb was envisaged to represent the *Social Media* menaing of the word mention (or
 the Twitter-ism *at-mention*). However it simple represents that one entity mentions another,
 for example cross-references in documentation would also be a valid use-case.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-04-27;";
 	dcterms:creator "cwalker@arago.de";
 .

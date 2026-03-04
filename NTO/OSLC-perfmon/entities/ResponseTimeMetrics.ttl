@@ -12,7 +12,7 @@ ogit.OSLC-perfmon:ResponseTimeMetrics
 	rdfs:label "ResponseTimeMetrics";
 	ogit:original <http://open-services.net/ns/perfmon#ResponseTimeMetrics>;
 	dcterms:description "Metric category for metrics that show time it takes for a response to be returned to a request.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:scope "NTO";

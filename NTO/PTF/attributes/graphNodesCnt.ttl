@@ -9,7 +9,7 @@ ogit.PTF:graphNodesCnt
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "graphNodesCnt";
 	dcterms:description "How many graph nodes were used.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2019-02-19;";
 	dcterms:creator "Thomas Gotwig";
 .

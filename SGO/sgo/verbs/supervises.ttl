@@ -10,7 +10,7 @@ ogit:supervises
 	rdfs:subPropertyOf ogit:Verb;
 	rdfs:label "supervises";
 	dcterms:description "Indicates if an entity supervises another entity. E.g. a Person supervises a Ticket or a Task.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-05-21;";
 	dcterms:creator "Peter Larem";
 .

@@ -9,7 +9,7 @@ ogit.Automation:processingNode
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "processingNode";
 	dcterms:description "Defines where an AutomationIssue is currently being processed or was being processed last. Must contain a valid vertex id. Replaces the free attribute '/CurrentNodeID'";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2018-06-01;";
 	dcterms:creator "fotto@arago.de";
 .

@@ -9,7 +9,7 @@ ogit.MARS.Resource:class
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "class";
 	dcterms:description "Used to classifiy Resource nodes. Will contain values like: 'Backend', 'Database', and so on. Replaces 'ResourceClass' from MARS-Schema";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2018-06-01;";
 	dcterms:creator "fotto@arago.de";
 	ogit:validation-type "fixed";

@@ -9,7 +9,7 @@ ogit.Automation:issueType
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "issueType";
 	dcterms:description "Contains the type of the issue.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2018-11-01;";
 	dcterms:creator "cy@arago.de";
 .

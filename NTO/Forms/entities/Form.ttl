@@ -10,7 +10,7 @@ ogit.Forms:Form
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "Form";
 	dcterms:description """A form to fill out the different fields with information.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2025-05-30;";
 	dcterms:creator "Semih Can Sancar";
 	ogit:scope "NTO";

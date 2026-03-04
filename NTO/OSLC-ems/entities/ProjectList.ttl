@@ -12,7 +12,7 @@ ogit.OSLC-ems:ProjectList
 	rdfs:label "ProjectList";
 	ogit:original <http://open-services.net/ns/ems#ProjectList>;
 	dcterms:description "A project list is a container for projects.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:scope "NTO";

@@ -9,7 +9,7 @@ ogit.Auth:ApplicationReview
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "ApplicationReview";
 	dcterms:description "Represents an application review";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2018-05-18;";
 	dcterms:creator "Mikhail Osher";
 	dcterms:created "2018-05-18";

@@ -10,7 +10,7 @@ ogit:accepts
 	rdfs:subPropertyOf ogit:Verb;
 	rdfs:label "accepts";
 	dcterms:description "Indicates if an entity accepts something else.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-09-02;";
 	dcterms:creator "bmoore@arago.de";
 .

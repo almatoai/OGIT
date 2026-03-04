@@ -8,7 +8,7 @@ ogit:author
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "author";
 	dcterms:description """Author of a given entity (e.g. text)""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2025-07-09;";
 	dcterms:creator "Calvin Spolwind";
 .

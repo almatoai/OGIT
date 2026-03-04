@@ -9,7 +9,7 @@ ogit.Automation:weightMap
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "weightMap";
 	dcterms:description "Contains fingerprint weight values for a KI ranking.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2018-05-01;";
 	dcterms:creator "cy@arago.de";
 .

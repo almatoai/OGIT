@@ -18,7 +18,7 @@ Therefore time
 (<a href=\"http://open-services.net/ns/ems/dimension#Time\"><code>dimension:Time</code></a>)
 is a dimension of effort
 (<a href=\"http://open-services.net/ns/ems/metric#Effort\"><code>metric:Effort</code></a>).""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:scope "NTO";

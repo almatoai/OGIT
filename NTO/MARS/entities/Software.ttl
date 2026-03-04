@@ -20,7 +20,7 @@ ogit.MARS:Software
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "Software";
 	dcterms:description "Vertices of this type are the 'S'-nodes in the MARS model. 'S' stands for 'Software' and those nodes form the second lowest layer in the A-R-S-M layer model. It's up to the user whether it will model a specific instance of a software (linked to just one 'Machine' node) or several identical instances (then the 'Software' node will be linked to several 'Machine' nodes";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2018-06-01;";
 	dcterms:creator "FCO";
 	ogit:scope "NTO";

@@ -22,7 +22,7 @@ ogit.MARS:Application
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "Application";
 	dcterms:description "Vertices of this type are the 'A'-nodes in the MARS model. 'A' stands for 'Application' and those nodes form the highest layer in the A-R-S-M layer model. An 'Application' node groups 'Resource' nodes which form one business application.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2018-06-01;";
 	dcterms:creator "FCO";
 	ogit:scope "NTO";

@@ -11,7 +11,7 @@ ogit.Security:Incident
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "Incident";
 	dcterms:description "A security incident.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2025-10-24;";
 	dcterms:creator "Erik Wilfling";
 	ogit:scope "NTO";
