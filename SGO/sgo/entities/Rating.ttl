@@ -29,6 +29,5 @@ ogit:Rating
 	ogit:allowed (
 			[ ogit:rates  ogit.Auth:Application ]
 			[ ogit:rates  ogit.ServiceManagement:Service ]
-			[ ogit:references  ogit:Organization ]
 	);
 .
