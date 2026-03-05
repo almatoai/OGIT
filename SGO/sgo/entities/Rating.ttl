@@ -3,6 +3,7 @@
 @prefix ogit:                   <http://www.purl.org/ogit/> .
 @prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms:                <http://purl.org/dc/terms/> .
+@prefix ogit.ServiceManagement: <http://www.purl.org/ogit/ServiceManagement/> .
 
 ogit:Rating
 	a rdfs:Class;
@@ -19,11 +20,14 @@ ogit:Rating
 	);
 	ogit:optional-attributes (
 		ogit:comment
+		ogit:id
+		ogit:name
 	);
 	ogit:indexed-attributes (
 		
 	);
 	ogit:allowed (
 			[ ogit:rates  ogit.Auth:Application ]
+			[ ogit:rates  ogit.ServiceManagement:Service ]
 	);
 .
