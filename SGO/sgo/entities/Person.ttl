@@ -76,6 +76,7 @@ ogit:Person
 			[ ogit:supports  ogit.Project:Milestone ]
 			[ ogit:supports  ogit.Project:Project ]
 			[ ogit:supports  ogit:ConfigurationItem ]
+			[ ogit:supports  ogit:Organization ]
 			[ ogit:manages  ogit.Network:WifiAccessPoint ]
 			[ ogit:manages  ogit.Project:Project ]
 			[ ogit:manages  ogit.Network:VLAN ]
