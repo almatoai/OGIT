@@ -20,7 +20,7 @@ ogit.Forum:Rating
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "Rating";
 	dcterms:description "Rating is used to rank nodes based on an arbitrary integer `value`";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-08-12;";
 	dcterms:creator "bneal@arago.de";
 	ogit:scope "NTO";

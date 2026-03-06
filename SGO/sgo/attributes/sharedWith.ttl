@@ -8,7 +8,7 @@ ogit:sharedWith
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "sharedWith";
 	dcterms:description """The attribute indicates that the node's information is shared with another project in a dataset.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2025-07-30;";
 	dcterms:creator "Semih Can Sancar";
 .

@@ -8,7 +8,7 @@ ogit:tenantId
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "tenantId";
 	dcterms:description "The Id of the tenant graph object.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2024-06-24;";
 	dcterms:creator "Jens Bartsch";
 .

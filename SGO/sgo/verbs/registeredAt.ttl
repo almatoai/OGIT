@@ -9,7 +9,7 @@ ogit:registeredAt
 	rdfs:subPropertyOf ogit:Verb;
 	rdfs:label "registeredAt";
 	dcterms:description "Indicates that an entity is registered at another entity.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2020-09-28;";
 	dcterms:creator "Marek Meyer";
 .

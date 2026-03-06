@@ -26,7 +26,7 @@ from MARSModel to MARSNode is 'ogit/contains'.
 examples are: All MARS nodes describing the IT of one data center, or all MARS nodes associated with the same contract. 
 In such cases you would connect the other entity (data center, contract) with the MARSModel node instead creating links 
 to any MARSNode being part of that model.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-05-21;";
 	dcterms:creator "Peter Larem";
 	ogit:scope "NTO";

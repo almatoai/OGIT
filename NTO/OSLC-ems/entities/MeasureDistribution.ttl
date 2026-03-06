@@ -21,7 +21,7 @@ Measure distributions are used in scenario assumptions
 estimate predications
 (see <a href=\"#predicts\"><code>ems:predicts</code></a> and
 <a href=\"#predictsTable\"><code>ems:predictsTable</code></a>).""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:scope "NTO";

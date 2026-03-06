@@ -8,7 +8,7 @@ ogit:_v-id
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "_v-id";
 	dcterms:description "[internally generated] The vertex version id";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-05-27;";
 	dcterms:creator "cy@arago.de";
 	dcterms:created "2018-07-10";

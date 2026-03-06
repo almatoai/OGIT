@@ -8,7 +8,7 @@ ogit:sourceTable
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "sourceTable";
 	dcterms:description "Contains the source table, that stores where the data are coming from.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-08-20;";
 	dcterms:creator "Aymen Ayoub";
 .

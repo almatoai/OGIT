@@ -18,7 +18,7 @@ intermediate <em>most likely</em> value.
 The low value is given by <a href=\"#low\"><code>ems:low</code></a>.
 The most likely value is given by <a href=\"#mostLikely\"><code>ems:mostLikely</code></a>.
 The high value is given by <a href=\"#high\"><code>ems:high</code></a>.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:scope "NTO";

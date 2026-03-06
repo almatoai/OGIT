@@ -10,7 +10,7 @@ ogit:alerts
 	rdfs:subPropertyOf ogit:Verb;
 	rdfs:label "alerts";
 	dcterms:description "Verb showing if one entity alerts another.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-10-26;";
 	dcterms:creator "stravlos@arago.co";
 .

@@ -20,7 +20,7 @@ ogit.Cost:CostDistribution
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "CostDistribution";
 	dcterms:description "Auxiliary structure to express the influence of CostElements on one another. For more detailed explanation please check definition of the entity ogit/CostModel/CostElement and for a general overview: see the NTO description on github.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-05-21;";
 	dcterms:creator "Peter Larem";
 	ogit:scope "NTO";

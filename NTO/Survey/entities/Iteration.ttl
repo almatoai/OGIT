@@ -19,7 +19,7 @@ ogit.Survey:Iteration
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "Iteration";
 	dcterms:description """Iteration of the same survey""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-08-08;";
 	dcterms:creator "Alexander Ryabtsev";
 	ogit:scope "NTO";

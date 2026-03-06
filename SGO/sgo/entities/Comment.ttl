@@ -22,7 +22,7 @@ ogit:Comment
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "Comment";
 	dcterms:description "Defines comments for a ticket, issue or another type of entity. Also known as WorkLog, ChangeLog or HistoryEntry.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-05-21;";
 	dcterms:creator "Peter Larem";
 	ogit:scope "SGO";

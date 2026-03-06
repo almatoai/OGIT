@@ -10,7 +10,7 @@ ogit.Publications:ActorType
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "ActorType";
 	dcterms:description "Describes the Type a Actor belongs to.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2025-10-17;";
 	dcterms:creator "esteban.moreno@almato.de";
 	ogit:scope "NTO";

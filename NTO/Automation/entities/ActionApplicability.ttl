@@ -10,7 +10,7 @@ ogit.Automation:ActionApplicability
 	rdfs:label "ActionApplicability";
 	dcterms:description """Defines the applicability of an action handler, such
 	as `on ogit/_id`.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2019-04-01;";
 	dcterms:creator "Oday Jubran";
 	ogit:scope "NTO";

@@ -29,7 +29,7 @@ ogit:Asset
 ogit/Automation/MARSNode's and can be physical or virtual. Assets of a Service Provider include anything that could 
 contribute to the delivery of a Service. Assets can have a type, for example: Management, Organisation, Process, 
 Knowledge, People, Information, Applications, Infrastructure, Financial Capital.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-05-21;";
 	dcterms:creator "Peter Larem";
 	ogit:scope "SGO";

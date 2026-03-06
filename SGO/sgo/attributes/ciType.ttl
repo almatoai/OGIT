@@ -8,7 +8,7 @@ ogit:ciType
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "ciType";
 	dcterms:description "Type of a configuration item. For example: VM, Server or Device.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-08-20;";
 	dcterms:creator "Aymen Ayoub";
 .

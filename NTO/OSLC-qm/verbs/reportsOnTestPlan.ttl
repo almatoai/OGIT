@@ -12,7 +12,7 @@ ogit.OSLC-qm:reportsOnTestPlan
 	rdfs:label "reportsOnTestPlan";
 	ogit:original <http://open-services.net/ns/qm#reportsOnTestPlan>;
 	dcterms:description "Test Plan that the Test Execution Record reports on. It is likely that the target resource will be an oslc_qm:TestPlan but that is not necessarily the case.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:hide "false";

@@ -8,7 +8,7 @@ ogit:validTo
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "validTo";
 	dcterms:description "Defines a point in time when something stops being valid.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-11-29;";
 	dcterms:creator "stravlos@arago.co";
 .

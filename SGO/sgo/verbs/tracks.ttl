@@ -8,7 +8,7 @@ ogit:tracks
     rdfs:subPropertyOf ogit:Verb;
     rdfs:label "tracks";
     dcterms:description "This relationship defines that one entity tracks another entity.";
-    # For ranges, see http://dublincore.org/documents/dcmi-period/
+    # For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
     dcterms:valid "start=2017-06-26;";
     dcterms:creator "vteremasov@klika-tech.com";
 .

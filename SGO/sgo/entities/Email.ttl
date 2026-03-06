@@ -9,7 +9,7 @@ ogit:Email
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "Email";
 	dcterms:description "An Email message";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-01-22;";
 	dcterms:creator "Peter Larem";
 	ogit:scope "SGO";
@@ -31,6 +31,6 @@ ogit:Email
 	ogit:allowed (
 		[ ogit:responds  ogit:Person ]
 		[ ogit:has  ogit:Attachment ]
-		[ ogit:receives  ogit:Comment ]
+		[ ogit:sameAs  ogit:Comment ]
 	);
 .

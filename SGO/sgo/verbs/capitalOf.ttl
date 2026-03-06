@@ -8,7 +8,7 @@ ogit:capitalOf
 	rdfs:subPropertyOf ogit:Verb;
 	rdfs:label "capitalOf";
 	dcterms:description "Indicates that a entity is the capitol of another entity.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2025-07-23;";
 	dcterms:creator "Calvin Spolwind";
 .

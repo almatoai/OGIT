@@ -8,7 +8,7 @@ ogit:coordinate
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "Coordinate";
 	dcterms:description """A entities coordinate in space (e.g. location of a specific point in a Image).""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2025-03-14;";
 	dcterms:creator "Calvin Spolwind";
 .

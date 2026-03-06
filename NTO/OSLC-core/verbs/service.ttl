@@ -12,7 +12,7 @@ ogit.OSLC-core:service
 	rdfs:label "service";
 	ogit:original <http://open-services.net/ns/core#service>;
 	dcterms:description "Describes a service offered by the service provider.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:hide "false";

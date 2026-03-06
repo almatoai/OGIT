@@ -8,7 +8,7 @@ ogit:enumValues
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "enumValues";
 	dcterms:description "The enumeration values for the parameter types represented by a JSON array.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-05-21;";
 	dcterms:creator "Peter Larem";
 .

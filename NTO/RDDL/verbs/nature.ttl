@@ -12,7 +12,7 @@ ogit.RDDL:nature
 	rdfs:label "nature";
 	ogit:original <http://www.rddl.org/nature>;
 	dcterms:description "A machine-readable label provided by the value of the xlink:role attribute";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:hide "false";

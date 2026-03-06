@@ -22,7 +22,7 @@ If an upper bound exists, it is given by <a href=\"#high\"><code>ems:high</code>
 at an increasing sequence of cumulative probabilities between 0 and 1.
 The cumulative probability values are given by one or more
 <a href=\"#cdfPoint\"><code>ems:cdfPoint</code></a> properties.</p>""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:scope "NTO";

@@ -9,7 +9,7 @@ ogit.ClassificationStandard:categoryIdentifierChunk
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "categoryIdentifierChunk";
 	dcterms:description "The sub-string of a category identifier that is specific to the category.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2025-11-12;";
 	dcterms:creator "Moritz Vannahme";
 .

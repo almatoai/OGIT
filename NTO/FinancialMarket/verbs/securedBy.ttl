@@ -9,7 +9,7 @@ ogit.FinancialMarket:securedBy
 	rdfs:subPropertyOf ogit:Verb;
 	rdfs:label "securedBy";
 	dcterms:description """This relationship indicates that something is secured (in the financial sense) by another entity.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2019-11-06;";
 	dcterms:creator "Marek Meyer";
 .

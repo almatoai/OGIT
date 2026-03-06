@@ -10,7 +10,7 @@ ogit.SaaS:DeploymentTemplate
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "DeploymentTemplate";
 	dcterms:description "Specifies templates that can be instantiated as a Deployment. When instantiated all contained ConfigurationTemplates will be instantiated as ComponentConfigs";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2020-01-14;";
 	dcterms:creator "FCO";
 	ogit:scope "NTO";

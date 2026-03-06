@@ -12,7 +12,7 @@ ogit.RDDL:Resource
 	rdfs:label "Resource";
 	ogit:original <http://www.rddl.org/Resource>;
 	dcterms:description "RDF Schema for RDDL: 2001-01-29";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:scope "NTO";

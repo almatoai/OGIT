@@ -12,7 +12,7 @@ ogit.OSLC-crtv:ComputerSystem
 	rdfs:label "ComputerSystem";
 	ogit:original <http://open-services.net/ns/crtv#ComputerSystem>;
 	dcterms:description "An intelligent device, such as a computer, that can perform computing, data collection, and/or communication operations. This category includes general purpose computers, such as laptops, servers, and virtual machines; computers with specific functions, such as Networking and Storage hardware, Voice over IP Telephony devices, HVAC systems; monitoring data collection devices in buildings, automobiles, or electronic grids.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:scope "NTO";

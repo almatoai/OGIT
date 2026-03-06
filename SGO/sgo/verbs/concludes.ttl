@@ -9,7 +9,7 @@ ogit:concludes
 	rdfs:subPropertyOf ogit:Verb;
 	rdfs:label "concludes";
 	dcterms:description "Verb showing if a legal entity concludes something (e.g. Contract).";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-06-18;";
 	dcterms:creator "Peter Larem";
 .

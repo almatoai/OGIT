@@ -9,7 +9,7 @@ ogit:covers
 	rdfs:subPropertyOf ogit:Verb;
 	rdfs:label "covers";
 	dcterms:description "Verb showing which entity covers another entity.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-05-21;";
 	dcterms:creator "Peter Larem";
 .

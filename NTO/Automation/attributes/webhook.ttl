@@ -9,7 +9,7 @@ ogit.Automation:webhook
     rdfs:subPropertyOf ogit:Attribute;
     rdfs:label "webhook";
     dcterms:description "a http callback (https://en.wikipedia.org/wiki/Webhook)";
-    # For ranges, see http://dublincore.org/documents/dcmi-period/
+    # For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
     dcterms:valid "start=2019-06-01;";
     dcterms:creator "arago GmbH";
 .

@@ -10,7 +10,7 @@ ogit:consistsOf
 	rdfs:subPropertyOf ogit:Verb;
 	rdfs:label "consistsOf";
 	dcterms:description "It shows, that the destination entity is a non-exclusive part of the source.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2018-02-13;";
 	dcterms:creator "Aymen Ayoub";
 .

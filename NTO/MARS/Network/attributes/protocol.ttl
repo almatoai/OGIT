@@ -9,7 +9,7 @@ ogit.MARS.Network:protocol
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "protocol";
 	dcterms:description "Can be used to define the network protocol a service (software) is using. Typical values: 'tcp', 'udp'. Replaces 'NetworkProtocol' from MARS-Schema";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2018-06-01;";
 	dcterms:creator "fotto@arago.de";
 .

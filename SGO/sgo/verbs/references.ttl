@@ -8,7 +8,7 @@ ogit:references
 	rdfs:subPropertyOf ogit:Verb;
 	rdfs:label "references";
 	dcterms:description "Verb indicating if an entity references another entity.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2019-11-11;";
 	dcterms:creator "Marek Meyer";
 .

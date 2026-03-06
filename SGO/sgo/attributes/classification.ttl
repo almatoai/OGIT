@@ -8,7 +8,7 @@ ogit:classification
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "classification";
 	dcterms:description "Indicates a classification or label applied to the entity based on its nature, behavior, or context, supporting organizational or analytical use cases.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2025-05-05;";
 	dcterms:creator "Erik Wilfling";
 .

@@ -9,7 +9,7 @@ ogit:impact
 	rdfs:label "impact";
 	dcterms:description """Will contain the impact, for example of a ticket. In this case the actual semantics would depend on the ticket type, 
 which could correspond to an Incident, Service Request, etc.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-05-21;";
 	dcterms:creator "Peter Larem";
 .

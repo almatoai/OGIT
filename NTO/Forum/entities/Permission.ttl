@@ -9,7 +9,7 @@ ogit.Forum:Permission
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "Permission";
 	dcterms:description "Permission is used to approve a Nodes interaction with another Node";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-09-04;";
 	dcterms:creator "bmoore@arago.de";
 	ogit:scope "NTO";

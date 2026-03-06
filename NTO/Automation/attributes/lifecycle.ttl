@@ -9,7 +9,7 @@ ogit.Automation:lifecycle
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "lifecycle";
 	dcterms:description "Contains the lifecycle state of a MARSNode. If value is 'decommissioned' this node is ignored by engine, graph and UI.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2017-05-11;";
 	dcterms:creator "Philipp Kählitz";
 .

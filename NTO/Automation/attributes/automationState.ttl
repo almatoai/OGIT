@@ -9,7 +9,7 @@ ogit.Automation:automationState
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "automationState";
 	dcterms:description "A value of 'Manual' will mark a node as not eligible for Issue processing";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2018-06-01;";
 	dcterms:creator "fotto@arago.de";
 .

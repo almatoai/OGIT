@@ -15,7 +15,7 @@ ogit.OSLC-ems:wbsFormat
 This property links a WBS resource to the XML format of its content.
 EMS does not define a format for WBS content.
 Instead, this property identifies the specification that defines the XML format of the WBS content.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:hide "false";

@@ -17,7 +17,7 @@ A mapping maps some custom string label value for a dimension
 (see <a href=\"#from\"><code>ems:from</code></a>) to a dimension member URI which may be a standard
 value defined in some vocabulary.
 (see <a href=\"#to\"><code>ems:to</code></a>).""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:scope "NTO";

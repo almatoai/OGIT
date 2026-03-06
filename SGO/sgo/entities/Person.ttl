@@ -32,7 +32,7 @@ ogit:Person
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "Person";
 	dcterms:description "A Person represents a human identity.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-05-21;";
 	dcterms:creator "Peter Larem";
 	ogit:scope "SGO";
@@ -76,6 +76,7 @@ ogit:Person
 			[ ogit:supports  ogit.Project:Milestone ]
 			[ ogit:supports  ogit.Project:Project ]
 			[ ogit:supports  ogit:ConfigurationItem ]
+			[ ogit:supports  ogit:Organization ]
 			[ ogit:manages  ogit.Network:WifiAccessPoint ]
 			[ ogit:manages  ogit.Project:Project ]
 			[ ogit:manages  ogit.Network:VLAN ]

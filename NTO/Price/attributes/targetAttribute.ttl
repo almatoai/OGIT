@@ -9,7 +9,7 @@ ogit.Price:targetAttribute
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "targetAttribute";
 	dcterms:description "Attribute to which the factor will be applied to (If target == Attribute)";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-05-21;";
 	dcterms:creator "Peter Larem";
 .

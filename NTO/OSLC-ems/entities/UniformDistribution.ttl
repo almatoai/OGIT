@@ -16,7 +16,7 @@ A <em>uniform distribution</em> is a probability distribution that is evenly spr
 a <em>high</em> and a <em>low</em> value.
 The high value is given by <a href=\"#high\"><code>ems:high</code></a>.
 The low value is given by <a href=\"#low\"><code>ems:low</code></a>.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:scope "NTO";

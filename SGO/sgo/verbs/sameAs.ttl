@@ -1,0 +1,14 @@
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+
+ogit:sameAs
+	a owl:ObjectProperty;
+	rdfs:subPropertyOf ogit:Verb;
+    owl:equivalentClass owl:sameAs;
+	rdfs:label "sameAs";
+	dcterms:description "Identity relation equivalent to OWL owl:sameAs; indicates that two nodes denote the same real-world entity and are logically interchangeable.";
+	dcterms:valid "start=2026-03-04;";
+	dcterms:creator "Calvin Spolwind";
+.

@@ -9,7 +9,7 @@ ogit.Cost:Budget
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "Budget";
 	dcterms:description "The budget covers the CostElement. It is a list of all the money an Organisation or Business Unit plans to receive, and plans to pay out, over a specified period of time. For a general overview: see the NTO description on github.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-05-21;";
 	dcterms:creator "Peter Larem";
 	ogit:scope "NTO";

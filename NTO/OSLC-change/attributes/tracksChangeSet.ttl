@@ -12,7 +12,7 @@ ogit.OSLC-change:tracksChangeSet
 	rdfs:label "tracksChangeSet";
 	ogit:original <http://open-services.net/ns/cm#tracksChangeSet>;
 	dcterms:description "Tracks SCM change set resource. It is likely that the target resource will be an oslc_scm:ChangeSet but that is not necessarily the case.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:hide "false";

@@ -8,7 +8,7 @@ ogit:ontologyHide
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "ontologyHide";
 	dcterms:description "Indicates if this part of ontology should hidden from the documentation";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-06-01;";
 	dcterms:creator "Peter Larem";
 	ogit:hide "true";

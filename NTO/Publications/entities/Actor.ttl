@@ -11,7 +11,7 @@ ogit.Publications:Actor
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "Actor";
 	dcterms:description "Describes an Actor receiving or performing an Action to other Actor in an Event.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2025-09-04;";
 	dcterms:creator "esteban.moreno@almato.de";
 	ogit:scope "NTO";

@@ -9,7 +9,7 @@ ogit.Automation:maxIdleTime
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "maxIdleTime";
 	dcterms:description "Sets the maximum idle time of an AutomationIssue. HIRO Engine internally manages the idle time for each AutomationIssue. Whenever a KnowledgeItem gets applied it is reset to zero. If maximum idle time is reached the AutomationIssue is regarded as 'cannot be processed anymore until more knowledge is provided'";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2019-07-22;";
 	dcterms:creator "fotto@arago.de";
 .

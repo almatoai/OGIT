@@ -10,7 +10,7 @@ ogit.Auth.Account:defaultScope
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "defaultScope";
 	dcterms:description "Default working data scope of an account";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2019-12-01;";
 	dcterms:creator "arago GmbH";
 	dcterms:created "2019-12-01";

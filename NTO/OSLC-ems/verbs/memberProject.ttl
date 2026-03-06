@@ -12,7 +12,7 @@ ogit.OSLC-ems:memberProject
 	rdfs:label "memberProject";
 	ogit:original <http://open-services.net/ns/ems#memberProject>;
 	dcterms:description "This property links a project list to its member projects.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:hide "false";

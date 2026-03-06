@@ -13,7 +13,7 @@ ogit.OSLC-core:executes
 	ogit:original <http://open-services.net/ns/core#executes>;
 	dcterms:description """Link from a currently available action to the future action it realizes.
 		""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:hide "false";

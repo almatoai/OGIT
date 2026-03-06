@@ -11,7 +11,7 @@ ogit.Forms:FormField
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "FormField";
 	dcterms:description """A form field that needs to be filled out with information.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2025-05-30;";
 	dcterms:creator "Semih Can Sancar";
 	ogit:scope "NTO";

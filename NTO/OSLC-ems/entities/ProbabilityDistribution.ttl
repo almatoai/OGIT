@@ -19,7 +19,7 @@ will fall within some given range.
 Probability distributions are used in scenario assumptions
 (see <a href=\"#assumes\"><code>ems:assumes</code></a>) and estimate predictions
 (see <a href=\"#predicts\"><code>ems:predicts</code></a>).""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:scope "NTO";

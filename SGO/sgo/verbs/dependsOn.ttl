@@ -10,7 +10,7 @@ ogit:dependsOn
 	rdfs:subPropertyOf ogit:Verb;
 	rdfs:label "dependsOn";
 	dcterms:description "This relationship indicates that some entity is depending on some other. E.g. machine hosts software.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-10-15;";
 	dcterms:creator "Aymen Ayoub";
 .

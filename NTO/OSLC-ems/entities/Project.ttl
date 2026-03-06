@@ -13,7 +13,7 @@ ogit.OSLC-ems:Project
 	ogit:original <http://open-services.net/ns/ems#Project>;
 	dcterms:description """Within the scope of EMS, a project is any activity, system, or thing that can be the subject of a set of measurements.
 In practice, a project is often a time-bounded work effort that produces a unique result.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:scope "NTO";

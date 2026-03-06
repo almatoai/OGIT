@@ -9,7 +9,7 @@ ogit:isSupported
 	rdfs:label "isSupported";
 	dcterms:description """Indicates whether the service currently is supported.
 This filed contains a boolean value.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-07-27;";
 	dcterms:creator "Aymen Ayoub";
 .

@@ -9,7 +9,7 @@ ogit:orderedAt
 	rdfs:label "orderedAt";
 	dcterms:description """Defines a point in time when a component/device was actually ordered.
 The values must be combined date and time with time zone designator according to ISO 8601""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-07-27;";
 	dcterms:creator "Aymen Ayoub";
 .

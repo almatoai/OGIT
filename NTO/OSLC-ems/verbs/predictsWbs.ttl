@@ -13,7 +13,7 @@ ogit.OSLC-ems:predictsWbs
 	ogit:original <http://open-services.net/ns/ems#predictsWbs>;
 	dcterms:description """
 This property links an estimate to the predicted work breakdown structure.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:hide "false";

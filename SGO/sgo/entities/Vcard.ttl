@@ -16,7 +16,7 @@ ogit:Vcard
 	dcterms:description """vCard is a specification developed by the IETF for the description of people and organisations. Recently, vCard has been 
 significantly updated to Version 4 as documented in [RFC6350]. Typically, vCard objects are encoded in its own defined 
 text-based syntax or XML renderings.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-05-21;";
 	dcterms:creator "Peter Larem";
 	ogit:scope "SGO";

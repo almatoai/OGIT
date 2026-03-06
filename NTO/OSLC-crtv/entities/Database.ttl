@@ -12,7 +12,7 @@ ogit.OSLC-crtv:Database
 	rdfs:label "Database";
 	ogit:original <http://open-services.net/ns/crtv#Database>;
 	dcterms:description "An organized collection of digital data that is managed by a database management system (DBMS). (A Database Management System, in turn, is represented as a SoftwareServer).";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:scope "NTO";

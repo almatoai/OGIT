@@ -19,7 +19,7 @@ ogit:Status
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "Status";
 	dcterms:description "Any kind of status";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2017-04-19;";
 	dcterms:creator "stravlos@arago.de";
 	ogit:scope "SGO";

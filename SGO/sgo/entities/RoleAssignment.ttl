@@ -8,7 +8,7 @@ ogit:RoleAssignment
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "RoleAssignment";
 	dcterms:description "A role assignment defines which role a person has in an organization for a specific time period.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2025-04-09;";
 	dcterms:creator "Jens Bartsch";
 	ogit:scope "SGO";

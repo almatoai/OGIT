@@ -9,7 +9,7 @@ ogit:inventoryNumber
 	rdfs:label "inventoryNumber";
 	dcterms:description """This field specifies the inventory component number for the a device as defined by the company-defined  device inventory number in the model table.
 The system uses this number to provide data on the Manufacturer, Model, and Version fields if available.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-07-27;";
 	dcterms:creator "Aymen Ayoub";
 .

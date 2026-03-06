@@ -10,7 +10,7 @@ ogit.SaaS:ConfigurationTemplate
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "ConfigurationTemplate";
 	dcterms:description "Specifies a certain installation flavor of a Component. Might fix same configuration parameters and provide defaults for some others. Will be used within DeploymentTemplate to form a deployable template of several components";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2020-01-14;";
 	dcterms:creator "FCO";
 	ogit:scope "NTO";

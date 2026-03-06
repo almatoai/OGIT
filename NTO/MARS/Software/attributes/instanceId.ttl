@@ -9,7 +9,7 @@ ogit.MARS.Software:instanceId
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "instanceId";
 	dcterms:description "Allow to define some instance identifier for a Software node. Usually this is used to uniquely identify a cluster member. The value might be a composition of several attributes, e.g. <data-center-id>:<rack-id>. Replaces 'Instance' from MARS-Schema";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2018-06-01;";
 	dcterms:creator "fotto@arago.de";
 .

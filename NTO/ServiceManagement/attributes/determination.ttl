@@ -9,7 +9,7 @@ ogit.ServiceManagement:determination
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "determination";
 	dcterms:description "Represents the outcome of the analysis or investigation process, describing the true nature or origin of the element.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2025-05-02;";
 	dcterms:creator "Erik Wilfling";
 .

@@ -21,7 +21,7 @@ The scale of measurement, e.g. months or KLOC, is referred to as the <em>unit of
 and is given by the property <a href=\"#unitOfMeasure\"><code>ems:unitOfMeasure</code></a>.
 The numeric value of an observation, e.g. 12 or 10, is given by the property
 <a href=\"numericValue\"><code>ems:numericValue</a></code>.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:scope "NTO";

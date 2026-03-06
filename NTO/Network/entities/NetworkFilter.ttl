@@ -11,7 +11,7 @@ ogit.Network:NetworkFilter
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "NetworkFilter";
 	dcterms:description "A Network Filter is a security measure restricting usage.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-05-21;";
 	dcterms:creator "Peter Larem";
 	ogit:scope "NTO";

@@ -12,7 +12,7 @@ ogit:activates
 	rdfs:subPropertyOf ogit:Verb;
 	rdfs:label "activates";
 	dcterms:description "entity activates other entity.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2020-07-09;";
 	dcterms:creator "Kaushik Gondaliya";
 .

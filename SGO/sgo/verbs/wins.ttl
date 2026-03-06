@@ -10,7 +10,7 @@ ogit:wins
 	rdfs:label "wins";
 	dcterms:description """Associates the entity that has won something with the thing that was won. Despite the present
 tense used in the verb, this almost always will refer to some that *was* won in the past.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-04-23;";
 	dcterms:creator "cwalker@arago.de";
 	ogit:cardinality "many2many";

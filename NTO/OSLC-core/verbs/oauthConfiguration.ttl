@@ -12,7 +12,7 @@ ogit.OSLC-core:oauthConfiguration
 	rdfs:label "oauthConfiguration";
 	ogit:original <http://open-services.net/ns/core#oauthConfiguration>;
 	dcterms:description "Defines the three OAuth URIs required for a client to act as an OAuth consumer.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:hide "false";

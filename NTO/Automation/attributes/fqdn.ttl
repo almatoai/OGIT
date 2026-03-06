@@ -9,7 +9,7 @@ ogit.Automation:fqdn
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "fqdn";
 	dcterms:description "Contains a fully qualified domain name.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2019-01-15;";
 	dcterms:creator "Aymen Ayoub";
 .

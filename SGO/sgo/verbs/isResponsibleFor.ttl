@@ -10,7 +10,7 @@ ogit:isResponsibleFor
 	rdfs:subPropertyOf ogit:Verb;
 	rdfs:label "isResponsibleFor";
 	dcterms:description "Indicates that an entity is responsible for another entity.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2025-07-04;";
 	dcterms:creator "Calvin Spolwind";
 .

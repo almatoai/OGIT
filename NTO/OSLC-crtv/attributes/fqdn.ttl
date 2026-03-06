@@ -12,7 +12,7 @@ ogit.OSLC-crtv:fqdn
 	rdfs:label "fqdn";
 	ogit:original <http://open-services.net/ns/crtv#fqdn>;
 	dcterms:description "The fully qualified domain name (FQDN). In Internet communications, the name of a host system that includes all of the subnames of the domain name. An example of a fully qualified domain name is es123126.lab.ibm.com .";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:hide "false";

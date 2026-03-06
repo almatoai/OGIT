@@ -11,7 +11,7 @@ ogit.Publications:Publication
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "Publication";
 	dcterms:description "A public or private publication. Could be a newspaper article, book, or other.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-04-27;";
 	dcterms:creator "esteban.moreno@almato.de";
 	ogit:scope "NTO";

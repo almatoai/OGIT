@@ -12,7 +12,7 @@ ogit.OSLC-automation:verdict
 	rdfs:label "verdict";
 	ogit:original <http://open-services.net/ns/auto#verdict>;
 	dcterms:description "Used to indicate the verdict of the automation result based on values defined by the automation specification and, optionally, by the service provider. Most often a read-only property. It is expected that this will be a resource reference to a definition of a valid automation result verdict on the service provider.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:hide "false";

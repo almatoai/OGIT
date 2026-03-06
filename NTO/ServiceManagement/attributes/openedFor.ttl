@@ -9,7 +9,7 @@ ogit.ServiceManagement:openedFor
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "openedFor";
 	dcterms:description "A person this entity is created for";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-05-21;";
 	dcterms:creator "Patrick Roeglin";
 .

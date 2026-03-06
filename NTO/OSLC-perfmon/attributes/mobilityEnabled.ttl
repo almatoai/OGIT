@@ -12,7 +12,7 @@ ogit.OSLC-perfmon:mobilityEnabled
 	rdfs:label "mobilityEnabled";
 	ogit:original <http://open-services.net/ns/perfmon#mobilityEnabled>;
 	dcterms:description "An indication about whether the resource can move about dynamically.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:hide "false";

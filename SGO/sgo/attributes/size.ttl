@@ -8,7 +8,7 @@ ogit:size
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "size";
 	dcterms:description "The size, e.g. of a file.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-03-26;";
 	dcterms:creator "arago Technologies";
 .

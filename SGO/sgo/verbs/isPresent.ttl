@@ -8,7 +8,7 @@ ogit:isPresent
 	rdfs:subPropertyOf ogit:Verb;
 	rdfs:label "isPresent";
 	dcterms:description "An entity is present in/at another entity. E.g. Poltical Party is present in a parliament.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
     dcterms:valid       "start=2024-12-17;";
     dcterms:creator     "Semih Can Sancar";
 .

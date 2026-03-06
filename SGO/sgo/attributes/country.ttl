@@ -8,7 +8,7 @@ ogit:country
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "country";
 	dcterms:description "Name of a country.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-07-27;";
 	dcterms:creator "Philipp Pelchmann";
 .

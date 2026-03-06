@@ -9,7 +9,7 @@ ogit.MARS.Application:subClass
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "subClass";
 	dcterms:description "Allows to further classify applications. This can be used to match KnowledgeItems specific to a certain business domain. Replaces 'ApplicationSubClass' from MARS-Schema";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2018-06-01;";
 	dcterms:creator "fotto@arago.de";
 	ogit:validation-type "fixed";

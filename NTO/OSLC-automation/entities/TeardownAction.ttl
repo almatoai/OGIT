@@ -12,7 +12,7 @@ ogit.OSLC-automation:TeardownAction
 	rdfs:label "TeardownAction";
 	ogit:original <http://open-services.net/ns/auto#TeardownAction>;
 	dcterms:description "An action that tears down a previously deployed resource. It is likely that the resource was deployed using an OSLC Automation deployment plan, but this is not always the case. That is, a tear-down action typically has the opposite semantics from a oslc_auto:Deploy sub-domain Automation Plan or Request, even if the service provider offers no equivalents in its Automation Plan collection.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:scope "NTO";

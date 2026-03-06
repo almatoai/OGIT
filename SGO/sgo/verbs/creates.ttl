@@ -14,7 +14,7 @@ ogit:creates
 	rdfs:subPropertyOf ogit:Verb;
 	rdfs:label "creates";
 	dcterms:description "Indicates if one entity creates another one.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-05-19;";
 	dcterms:creator "Peter Larem";
 .

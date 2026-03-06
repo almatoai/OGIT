@@ -25,7 +25,7 @@ except that it has <em>fact distribution</em> rows
 (see <a href=\"#Fact\"><code>ems:Fact</code></a>), and they have <em>measure distribution</em> cells
 (see <a href=\"#MeasureDistributionCell\"><code>ems:MeasureDistributionCell</code></a>) instead of measure cells
 (see <a href=\"#MeasureCell\"><code>ems:MeasureCell</code></a>).</p>""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:scope "NTO";

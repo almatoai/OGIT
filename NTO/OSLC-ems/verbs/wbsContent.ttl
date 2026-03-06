@@ -18,7 +18,7 @@ If this property is absent, then <code>ems:wbsSource</code> MUST be present.
 If this property and <code>ems:wbsSource</code> are present,
 then the value of this property SHOULD be the XML document representation returned in the
 HTTP GET response for the link given in <code>ems:wbsSource</code>.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:hide "false";

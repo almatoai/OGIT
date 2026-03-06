@@ -24,7 +24,7 @@ ogit:Attachment
 	rdfs:label "Attachment";
 	dcterms:description """This entity defines a file attachment that an other entity might have. The attachment itself maybe
 stored directly in the graph itself or be referenced by an external url link.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-05-21;";
 	dcterms:creator "Peter Larem";
 	ogit:scope "SGO";

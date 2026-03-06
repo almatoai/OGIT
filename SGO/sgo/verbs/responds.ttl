@@ -10,7 +10,7 @@ ogit:responds
 	rdfs:label "responds";
 	dcterms:description """This relationship indicates that one entity is a response to another. For example, parts of a
 conversation/fourm thread.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-04-27;";
 	dcterms:creator "cwalker@arago.de";
 .

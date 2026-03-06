@@ -14,7 +14,7 @@ ogit.Forum:Post
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "Post";
 	dcterms:description "A Post is an online publication. Could be a blog post, or a posting on a forum/messageboard.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-04-27;";
 	dcterms:creator "cwalker@arago.de";
 	ogit:scope "NTO";

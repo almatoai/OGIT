@@ -9,7 +9,7 @@ ogit.FinancialMarket:services
 	rdfs:subPropertyOf ogit:Verb;
 	rdfs:label "services";
 	dcterms:description """This relationship indicates that an entity services a contract or instrument.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2019-11-11;";
 	dcterms:creator "Marek Meyer";
 .

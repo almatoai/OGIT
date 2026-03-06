@@ -23,7 +23,7 @@ ogit.ServiceManagement:Incident
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "Incident";
 	dcterms:description "This entity type defines an incident ticket.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-05-21;";
 	dcterms:creator "Peter Larem";
 	ogit:scope "NTO";

@@ -9,7 +9,7 @@ ogit.Automation:processingTimestamp
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "processingTimestamp";
 	dcterms:description "Contains the timestamp indicating last time an aumation issue was processed.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-05-21;";
 	dcterms:creator "Peter Larem";
 .

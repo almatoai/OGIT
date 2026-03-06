@@ -10,7 +10,7 @@ ogit.ServiceManagement:solution
 	rdfs:label "solution";
 	dcterms:description """Solution description, for example that is usually provided during incident resolving.
 This field is also use for problem tickets. There is defines the permanent solution desription for a problem.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-05-21;";
 	dcterms:creator "Peter Larem";
 .

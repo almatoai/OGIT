@@ -9,7 +9,7 @@ ogit.PTF:vertexSearchCount
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "vertexSearchCount";
 	dcterms:description "Amount of search items, expected response is just a number.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2019-02-19;";
 	dcterms:creator "Thomas Gotwig";
 .

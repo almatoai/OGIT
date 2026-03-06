@@ -12,7 +12,7 @@ ogit.OSLC-automation:progress
 	rdfs:label "progress";
 	ogit:original <http://open-services.net/ns/auto#progress>;
 	dcterms:description "Represents the progress that has been made towards completion (e.g. of an AutomationRequest or AutomationResult). The value of this property can either be an integer (showing percentage completion) or a resource (for implementation-specific details, or future extension).";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:hide "false";

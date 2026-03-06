@@ -8,7 +8,7 @@ ogit:attachmentID
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "attachmentID";
 	dcterms:description """Node Id for attachment node.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2020-02-19;";
 	dcterms:creator "Kaushik Gondaliya";
 .

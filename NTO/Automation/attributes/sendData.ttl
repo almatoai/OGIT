@@ -9,7 +9,7 @@ ogit.Automation:sendData
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "sendData";
 	dcterms:description "Boolean flag whether issue data should be sent to decision service.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2018-05-01;";
 	dcterms:creator "cy@arago.de";
 	ogit:validation-type "fixed";

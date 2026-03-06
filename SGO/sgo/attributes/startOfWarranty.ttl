@@ -8,7 +8,7 @@ ogit:startOfWarranty
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "startOfWarranty";
 	dcterms:description "Start of warranty phase of a component";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2025-07-09;";
 	dcterms:creator "Calvin Spolwind";
 .

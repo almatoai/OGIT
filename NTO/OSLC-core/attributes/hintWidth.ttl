@@ -12,7 +12,7 @@ ogit.OSLC-core:hintWidth
 	rdfs:label "hintWidth";
 	ogit:original <http://open-services.net/ns/core#hintWidth>;
 	dcterms:description "Values MUST be expressed in relative length units as defined in the W3C Cascading Style Sheets Specification (CSS 2.1) Em and ex units are interpreted relative to the default system font (at 100% size).";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:hide "false";

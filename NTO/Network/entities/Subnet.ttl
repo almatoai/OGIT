@@ -8,7 +8,7 @@ ogit.Network:Subnet
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "Subnet";
 	dcterms:description "Subnet is a group of IDAddresses located in one place.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-05-21;";
 	dcterms:creator "Peter Larem";
 	ogit:scope "NTO";

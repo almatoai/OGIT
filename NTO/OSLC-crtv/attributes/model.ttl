@@ -12,7 +12,7 @@ ogit.OSLC-crtv:model
 	rdfs:label "model";
 	ogit:original <http://open-services.net/ns/crtv#model>;
 	dcterms:description "Value of the device model. The model number as provided by the device manufacturer.  ";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:hide "false";

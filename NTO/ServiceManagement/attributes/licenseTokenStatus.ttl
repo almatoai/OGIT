@@ -9,7 +9,7 @@ ogit.ServiceManagement:licenseTokenStatus
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "licenseTokenStatus";
 	dcterms:description "The list of valid status values a license token can have";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-05-21;";
 	dcterms:creator "Peter Larem";
 	ogit:validation-type "fixed";

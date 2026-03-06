@@ -12,7 +12,7 @@ ogit.OSLC-change:blocksTestExecutionRecord
 	rdfs:label "blocksTestExecutionRecord";
 	ogit:original <http://open-services.net/ns/cm#blocksTestExecutionRecord>;
 	dcterms:description "Associated QM resource that is blocked by this Change Request. It is likely that the target resource will be an oslc_qm:TestExecutionRecord but that is not necessarily the case.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:hide "false";

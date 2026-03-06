@@ -12,7 +12,7 @@ ogit.OSLC-core:resourceType
 	rdfs:label "resourceType";
 	ogit:original <http://open-services.net/ns/core#resourceType>;
 	dcterms:description "The expected resource type URI of the resource that will be created using this creation factory. These would be the URIs found in the result resource's rdf:type property.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:hide "false";

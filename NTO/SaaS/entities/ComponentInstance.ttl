@@ -10,7 +10,7 @@ ogit.SaaS:ComponentInstance
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "ComponentInstance";
 	dcterms:description "An instance of a Component within a Deployment";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2020-01-14;";
 	dcterms:creator "FCO";
 	ogit:scope "NTO";

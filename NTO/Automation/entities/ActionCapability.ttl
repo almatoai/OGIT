@@ -10,7 +10,7 @@ ogit.Automation:ActionCapability
 	rdfs:label "ActionCapability";
 	dcterms:description """Defines the capability of an action handler, such
 	as remote execution via ssh.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2019-04-01;";
 	dcterms:creator "Oday Jubran";
 	ogit:scope "NTO";

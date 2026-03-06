@@ -12,7 +12,7 @@ ogit.OSLC-automation:outputParameter
 	rdfs:label "outputParameter";
 	ogit:original <http://open-services.net/ns/auto#outputParameter>;
 	dcterms:description "Automation Result output parameters are parameters associated with the automation execution which produced this Result. This includes the final value of all parameters used to initiate the execution and any additional parameters which may have been created during automation execution by the service provider or external agents. The value of a given `oslc_auto:outputParameter` MAY change as the execution proceeds. Point-in-time accuracy of the values of output parameters is not covered by this specification. Once the Automation Result is in a final state ( `oslc_auto:complete` or `oslc_auto:canceled`), the `oslc_auto:outputParameter` values MUST NOT change.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:hide "false";

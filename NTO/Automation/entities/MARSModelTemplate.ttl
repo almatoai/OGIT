@@ -21,7 +21,7 @@ ogit.Automation:MARSModelTemplate
 	rdfs:label "MARSModelTemplate";
 	dcterms:description """Represents a set of interconnected MARSNodes, which will be used to define a vendor implementation template of an ordered 
 service offering.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-05-21;";
 	dcterms:creator "Peter Larem";
 	ogit:scope "NTO";

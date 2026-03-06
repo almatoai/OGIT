@@ -9,7 +9,7 @@ ogit.Automation:parentIssue
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "parentIssue";
 	dcterms:description "Contains the ID of the issue which created this issue.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2019-06-01;";
 	dcterms:creator "cy@arago.co";
 .

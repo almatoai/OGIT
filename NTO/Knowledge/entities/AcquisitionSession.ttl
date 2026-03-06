@@ -10,7 +10,7 @@ ogit.Knowledge:AcquisitionSession
     rdfs:subClassOf ogit:Entity;
     rdfs:label "AcquisitionSession";
     dcterms:description "Entity to describe a Knowledge Acquisition Session, linking to Conversation, Structured Task Steps and the Knowledge";
-    # For ranges, see http://dublincore.org/documents/dcmi-period/
+    # For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
     dcterms:valid "start=2017-03-14;";
     dcterms:creator "cwalker@arago.de";
     ogit:scope "NTO";

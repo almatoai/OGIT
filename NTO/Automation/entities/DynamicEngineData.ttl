@@ -20,7 +20,7 @@ ogit.Automation:DynamicEngineData
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "DynamicEngineData";
 	dcterms:description "Dynamic information exists within the HIRO Engine used to store volatile data about current state of MARSNode, AutomationIssue or ServiceManagement Tickets.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-06-25;";
 	dcterms:creator "Miroslaw Glusiuk";
 	ogit:scope "NTO";

@@ -9,7 +9,7 @@ ogit.Automation:serviceType
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "serviceType";
 	dcterms:description "Contains the Type of a service.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-07-24;";
 	dcterms:creator "Aymen Ayoub";
 .

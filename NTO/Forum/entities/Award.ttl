@@ -10,7 +10,7 @@ ogit.Forum:Award
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "Award";
 	dcterms:description "Something which is won. A 'badge of merit' or an achievement, etc...";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-04-23;";
 	dcterms:creator "cwalker@arago.de";
 	ogit:scope "NTO";

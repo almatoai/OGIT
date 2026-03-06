@@ -8,7 +8,7 @@ ogit:originatesIn
 	rdfs:subPropertyOf ogit:Verb;
 	rdfs:label "originatesIn";
 	dcterms:description "Indicates if an entity originates in something else.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2025-10-28;";
 	dcterms:creator "Erik Wilfling";
 .

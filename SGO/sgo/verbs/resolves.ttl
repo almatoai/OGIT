@@ -10,7 +10,7 @@ ogit:resolves
 	rdfs:subPropertyOf ogit:Verb;
 	rdfs:label "resolves";
 	dcterms:description "Indicates if an entity resolves something else.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2025-05-02;";
 	dcterms:creator "Erik Wilfling";
 .

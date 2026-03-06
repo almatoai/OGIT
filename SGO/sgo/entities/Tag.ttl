@@ -7,7 +7,7 @@ ogit:Tag
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "Tag";
 	dcterms:description "An Tag is a customer defined tag to help filter data";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2020-08-04;";
 	dcterms:creator "Ben Neal";
 	ogit:scope "SGO";

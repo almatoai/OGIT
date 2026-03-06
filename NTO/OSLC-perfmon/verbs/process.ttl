@@ -12,7 +12,7 @@ ogit.OSLC-perfmon:process
 	rdfs:label "process";
 	ogit:original <http://open-services.net/ns/perfmon#process>;
 	dcterms:description "A process running, for example, in a computer system. Typically refers to a resource with type crtv:ComputerSystem, but it may refer to other resource types.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:hide "false";

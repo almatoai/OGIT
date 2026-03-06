@@ -9,7 +9,7 @@ ogit:forks
 	rdfs:subPropertyOf ogit:Verb;
 	rdfs:label "forks";
 	dcterms:description "General relationship indicating that some entitiy forks some other, assuming the same type.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2018-06-12;";
 	dcterms:creator "Vitaly Teremasov";
 	dcterms:created "2018-06-12";

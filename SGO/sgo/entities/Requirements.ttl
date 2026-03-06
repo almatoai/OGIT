@@ -8,7 +8,7 @@ ogit:Requirements
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "Requirements";
 	dcterms:description "Any kind of description for one or more requirements of an item or service";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2025-11-13;";
 	dcterms:creator "Daniel Brommer";
 	ogit:scope "SGO";

@@ -16,7 +16,7 @@ This property links the head of a fact table to one or more
 <a href=\"#DimensionColumn\"><code>ems:DimensionColumn</code></a>
 resources that define dimension columns.
 Every fact table MUST have at least one dimension column.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:hide "false";

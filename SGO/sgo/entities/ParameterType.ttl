@@ -16,7 +16,7 @@ ogit:ParameterType
 	rdfs:label "ParameterType";
 	dcterms:description """Allows to define more details about the values of a Parameter the Parameter will be linked to a ParameterType 
 by the \"uses\" relationship. Each Parameter can have only one those connection.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-05-21;";
 	dcterms:creator "Peter Larem";
 	ogit:scope "SGO";

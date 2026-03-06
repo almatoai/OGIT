@@ -10,7 +10,7 @@ ogit:holds
 	rdfs:subPropertyOf ogit:Verb;
 	rdfs:label "holds";
 	dcterms:description "An entity that holds another entity (e.g. a person holds a speech)";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
     dcterms:valid       "start=2024-12-17;";
     dcterms:creator     "Semih Can Sancar";
 .

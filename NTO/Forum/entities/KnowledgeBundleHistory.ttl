@@ -22,7 +22,7 @@ ogit.Forum:KnowledgeBundleHistory
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "KnowledgeBundleHistory";
 	dcterms:description "A point-in-time snapshot of an `ogit/Forum/KnowledgeBundle`";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-04-27;";
 	dcterms:creator "cwalker@arago.de";
 	ogit:scope "NTO";

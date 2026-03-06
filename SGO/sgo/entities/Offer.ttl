@@ -7,7 +7,7 @@ ogit:Offer
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "Offer";
 	dcterms:description "Any type of note.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-04-29;";
 	dcterms:creator "Peter Larem";
 	ogit:scope "SGO";

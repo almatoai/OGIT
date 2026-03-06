@@ -10,7 +10,7 @@ ogit.ServiceManagement:scheduledStartAt
 	rdfs:label "scheduledStartAt";
 	dcterms:description """Defines a point in time when the work on a change is planned/scheduled to start. This date time is usually defined during change planning and/or approval. This datetime is set by change coordinater (e.g it  is planned to be done at 7:30PM)
 The values must be combined date and time with time zone designator according to ISO 8601.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-05-21;";
 	dcterms:creator "Peter Larem";
 .

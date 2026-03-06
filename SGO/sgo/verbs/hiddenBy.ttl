@@ -8,7 +8,7 @@ ogit:hiddenBy
 	rdfs:subPropertyOf ogit:Verb;
 	rdfs:label "hiddenBy";
 	dcterms:description "An entity has been hidden by another Entity.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2017-07-04;";
 	dcterms:creator "Kristjan Liiva";
 .

@@ -12,7 +12,7 @@ ogit:precedes
 	dcterms:description """Describes the relation between a predecessor and a successor entity. This can be use in two ways:
 Either do define some temporal order of things. Or to define some dependency of actions to be done.
 The application managing such dependency graphs is responsible to prevent cyclic dependencies.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-05-21;";
 	dcterms:creator "Peter Larem";
 .

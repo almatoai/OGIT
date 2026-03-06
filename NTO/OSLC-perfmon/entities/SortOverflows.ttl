@@ -12,7 +12,7 @@ ogit.OSLC-perfmon:SortOverflows
 	rdfs:label "SortOverflows";
 	ogit:original <http://open-services.net/ns/perfmon#SortOverflows>;
 	dcterms:description "A sort's performance was impacted because the data to be sorted is large enough for it to overflow from (relatively) fast to (relatively) slow storage.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:scope "NTO";

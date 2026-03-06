@@ -12,7 +12,7 @@ ogit.OSLC-core:domain
 	rdfs:label "domain";
 	ogit:original <http://open-services.net/ns/core#domain>;
 	dcterms:description "Namespace URI of the specification that is implemented by this service. In most cases this namespace URI will be for an OSLC domain, but other URIs MAY be used.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:hide "false";

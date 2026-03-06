@@ -11,7 +11,7 @@ ogit:complies
 	rdfs:subPropertyOf ogit:Verb;
 	rdfs:label "complies";
 	dcterms:description "Indicates wether one entity should comply to another.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-05-21;";
 	dcterms:creator "Peter Larem";
 .

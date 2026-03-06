@@ -9,7 +9,7 @@ ogit.Cost:CostElement
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "CostElement";
 	dcterms:description "The cost element is a type of cost for an activity, an ordered service or a business unit or budget. There are 3 levels of cost elements: Top Level, Middle Level, Bottom Level. Between the different levels, for each cost element there could be two types of edges: Incoming and Outgoing. Each type of edge could have two types of connections: consistsOf and contributesTo. E.g. a cost element CPU consists in 30% of a HR cost element. The HR cost element contributes in 40% to the cost of the CPU cost element. This percentage values will then be saved in the entity Distribution, which will be connected to the cost element. For a general overview: see the NTO description on github.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-05-21;";
 	dcterms:creator "Peter Larem";
 	ogit:scope "NTO";

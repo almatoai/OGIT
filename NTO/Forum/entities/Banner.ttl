@@ -11,7 +11,7 @@ ogit.Forum:Banner
 Examples:
     http://getbootstrap.com/examples/carousel/ (a carousel of banners)
     http://getbootstrap.com/examples/jumbotron/ (the content at the top is a banner)""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-04-27;";
 	dcterms:creator "cwalker@arago.de";
 	ogit:scope "NTO";

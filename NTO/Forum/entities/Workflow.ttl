@@ -28,7 +28,7 @@ ogit.Forum:Workflow
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "Workflow";
 	dcterms:description """A Workflow defines a series of steps that must be completed in order.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2017-09-18;";
 	dcterms:creator "cwalker@arago.de";
 	ogit:scope "NTO";

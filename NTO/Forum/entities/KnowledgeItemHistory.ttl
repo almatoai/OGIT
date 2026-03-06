@@ -21,7 +21,7 @@ ogit.Forum:KnowledgeItemHistory
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "KnowledgeItemHistory";
 	dcterms:description "Deprecated in favor of `ogit/VersioningData`. A data container of `ogit/Automation/KnowledgeItem`s changes.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-11-13;";
 	dcterms:creator "bmmore@arago.de";
 	ogit:scope "NTO";

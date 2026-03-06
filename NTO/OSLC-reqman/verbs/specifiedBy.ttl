@@ -15,7 +15,7 @@ ogit.OSLC-reqman:specifiedBy
 	dcterms:description """Expresses a specification relationship
             between entities. For example, a model element can specifiy a
             requirement.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:hide "false";

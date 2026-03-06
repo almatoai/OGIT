@@ -12,7 +12,7 @@ ogit.OSLC-crtv:dbInstance
 	rdfs:label "dbInstance";
 	ogit:original <http://open-services.net/ns/crtv#dbInstance>;
 	dcterms:description "The Software Server representing the database instance that manages this database.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:hide "false";

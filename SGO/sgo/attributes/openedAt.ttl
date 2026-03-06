@@ -10,7 +10,7 @@ ogit:openedAt
 	dcterms:description """Time when a ticket or task was created/opened.
 The values could combine date and time with time zone designator according to ISO 8601 for service management tickets.
 For most tickets there is no real difference between creation and opened time. In case such a distinction is relevant the \"createdAt\" attribute can be used.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-05-21;";
 	dcterms:creator "Peter Larem";
 .

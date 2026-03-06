@@ -9,7 +9,7 @@ ogit:tags
 	rdfs:label "tags";
 	dcterms:description """A comma seperated list of descriptive tags associated with the entity.
 Tags are free-form text labels used for categorization, search, filtering, or lightweight classification.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2025-11-25;";
 	dcterms:creator "Daniel Brommer";
 .

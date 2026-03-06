@@ -14,7 +14,7 @@ ogit.OSLC-core:results
 	dcterms:description """Used to hold the results of dialog action or JSON query results (default).
 		The JSON query result attribute 'oslc:results' is used whenever a provider doesn't have
 		a suitable property already in its model for such purposes.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:hide "false";

@@ -9,7 +9,7 @@ ogit.Automation:databaseServer
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "databaseServer";
 	dcterms:description "Contains information about the database server.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-07-27;";
 	dcterms:creator "Aymen Ayoub";
 .

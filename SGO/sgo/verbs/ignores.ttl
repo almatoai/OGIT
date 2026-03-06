@@ -9,7 +9,7 @@ ogit:ignores
     rdfs:subPropertyOf ogit:Verb;
     rdfs:label "ignores";
     dcterms:description "Verb showing that one entity ignores another - (useful as a mark-as-read flag)";
-    # For ranges, see http://dublincore.org/documents/dcmi-period/
+    # For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
     dcterms:valid "start=2016-10-14;";
     dcterms:creator "cwalker@arago.de";
 .

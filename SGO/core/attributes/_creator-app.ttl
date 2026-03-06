@@ -8,7 +8,7 @@ ogit:_creator-app
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "_creator-app";
 	dcterms:description "[internally generated] App that creates nodes and edges.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-07-27;";
 	dcterms:creator "Peter Larem";
 .

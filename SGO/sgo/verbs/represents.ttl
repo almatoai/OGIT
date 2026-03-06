@@ -10,7 +10,7 @@ ogit:represents
 	rdfs:subPropertyOf ogit:Verb;
 	rdfs:label "represents";
 	dcterms:description "This relationship defines that one entity represents another entity.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2017-04-11;";
 	dcterms:creator "arago GmbH";
 .

@@ -13,7 +13,7 @@ ogit.OSLC-ems:unitOfMeasure
 	ogit:original <http://open-services.net/ns/ems#unitOfMeasure>;
 	dcterms:description """
 This property gives the unit of measure. For example, the measure <em>duration of 12 months</em> has a unit of measure <em>months</em>.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-09-22;";
 	dcterms:creator "OGIT Importer";
 	ogit:hide "false";

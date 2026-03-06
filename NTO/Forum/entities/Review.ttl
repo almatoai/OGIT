@@ -19,7 +19,7 @@ ogit.Forum:Review
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "Review";
 	dcterms:description "A review to a some other entity";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2018-01-08;";
 	dcterms:creator "bmoore@arago.de";
 	ogit:scope "NTO";

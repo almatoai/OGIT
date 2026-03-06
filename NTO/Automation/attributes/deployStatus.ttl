@@ -9,7 +9,7 @@ ogit.Automation:deployStatus
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "deployStatus";
 	dcterms:description "String value, represents the status if an automation Knowledge Item is not deployed into an Automation Engine.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-01-25;";
 	dcterms:creator "Peter Larem";
 .

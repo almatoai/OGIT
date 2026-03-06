@@ -14,7 +14,7 @@ ogit.Software:Connector
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "Connector";
 	dcterms:description "Represents any type of software connector";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-06-11;";
 	dcterms:creator "Aymen Ayoub";
 	ogit:scope "NTO";

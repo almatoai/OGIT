@@ -8,7 +8,7 @@ ogit:licenseId
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "licenseId";
 	dcterms:description "The id of the license to be used to fetch licenses.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2017-09-06;";
 	dcterms:creator "Oday Jubran";
 .

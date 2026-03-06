@@ -8,7 +8,7 @@ ogit:_reader
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "_reader";
 	dcterms:description "[internally generated] The organization id with read access to this node";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-05-21;";
 	dcterms:creator "Peter Larem";
 .

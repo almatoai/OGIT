@@ -9,7 +9,7 @@ ogit:derivesFrom
 	rdfs:subPropertyOf ogit:Verb;
 	rdfs:label "derivesFrom";
 	dcterms:description "The derivesFrom of a version. This verb could be generated internally.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2017-10-31;";
 	dcterms:creator "druss@arago.de";
 .

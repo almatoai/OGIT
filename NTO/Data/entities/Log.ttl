@@ -8,7 +8,7 @@ ogit.Data:Log
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "Log";
 	dcterms:description """This entity defines a log. It used to store a sequence of log records""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2017-06-14;";
 	dcterms:creator "stravlos@arago.de";
 	ogit:scope "NTO";

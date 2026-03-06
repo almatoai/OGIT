@@ -8,7 +8,7 @@ ogit:religion
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "religion";
 	dcterms:description "The religious confession of a person.";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2025-01-16;";
 	dcterms:creator "Semih Can Sancar";
 .

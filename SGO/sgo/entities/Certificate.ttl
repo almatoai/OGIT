@@ -22,7 +22,7 @@ ogit:Certificate
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "Certificate";
 	dcterms:description """This enables storing information about existing certificates as vertices.""";
-	# For ranges, see http://dublincore.org/documents/dcmi-period/
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2017-09-05;";
 	dcterms:creator "Oday Jubran";
 	ogit:scope "SGO";
