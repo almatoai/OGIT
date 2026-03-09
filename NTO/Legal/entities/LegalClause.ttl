@@ -32,6 +32,7 @@ ogit.Legal:LegalClause
 		ogit:sharedWith
 		ogit:cleanContent
 		ogit:description
+		ogit:url
 	);
 	ogit:indexed-attributes (
 	);

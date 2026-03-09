@@ -33,6 +33,7 @@ ogit.Legal:LegalNorm
 		ogit:endedAt
 		ogit:sharedWith
 		ogit:cleanContent
+		ogit:url
 	);
 	ogit:indexed-attributes (
 	);
