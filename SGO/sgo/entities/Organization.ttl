@@ -116,6 +116,7 @@ The ogit/function attribute should be used to tell what kind of grouping an enti
 			[ ogit:concludes  ogit:Contract ]
 			[ ogit:provides  ogit:ConfigurationItem ]
 			[ ogit:provides  ogit.Documents:Document ]
+			[ ogit:provides  ogit:Product ]
 			[ ogit:supervises  ogit.ServiceManagement:SubTask ]
 			[ ogit:supervises  ogit.ServiceManagement:ChangeRequest ]
 			[ ogit:supervises  ogit.ServiceManagement:Order ]

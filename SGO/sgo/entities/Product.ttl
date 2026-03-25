@@ -22,6 +22,7 @@ ogit:Product
 		ogit:manufacturer
 		ogit:validFrom
 		ogit:validTo
+		ogit:type
 	);
 	ogit:indexed-attributes (
 		
