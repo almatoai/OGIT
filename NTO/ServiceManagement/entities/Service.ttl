@@ -46,6 +46,7 @@ ogit.ServiceManagement:Service
 		ogit:reviewedBy
 		ogit:reviewedAt
 		ogit:lastUpdatedAt
+		ogit:favorite
 	);
 	ogit:indexed-attributes (
 		
