@@ -7,7 +7,7 @@ ogit:favorite
 	a owl:DatatypeProperty;
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "favorite";
-	dcterms:description "Used to indicate a favorite item.";
+	dcterms:description "Boolean value, used to indicate a favorite item.";
 	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2026-04-08;";
 	dcterms:creator "Daniel Brommer";
