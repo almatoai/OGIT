@@ -28,6 +28,7 @@ ogit.Forms:Form
 		ogit:subType
 		ogit:type
 		ogit:tenantId
+		ogit:favorite
 	);
 	ogit:indexed-attributes (
 	);
