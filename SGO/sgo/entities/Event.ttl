@@ -72,6 +72,7 @@ ogit:Event
 			[ ogit:relates  ogit.ServiceManagement:Order ]
 			[ ogit:relates  ogit.Automation:MARSNode ]
 			[ ogit:relates  ogit.ServiceManagement:Incident ]
+			[ ogit:relates  ogit.ServiceManagement:SubTask ]
 			[ ogit:relates  ogit:Event ]
 			[ ogit:follows ogit:Event ]
 			[ ogit:corresponds  ogit.Automation:AutomationIssue ]
