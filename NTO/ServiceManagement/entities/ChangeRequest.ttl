@@ -91,6 +91,7 @@ ogit.ServiceManagement:ChangeRequest
 			[ ogit:affects  ogit:Location ]
 			[ ogit:affects  ogit:ConfigurationItem ]
 			[ ogit:affects  ogit.ServiceManagement:Service ]
+			[ ogit:affects  ogit.Forms:Form ]
 			[ ogit:affects  ogit:Person ]
 			[ ogit:affects  ogit.MARS:Application ]
 			[ ogit:affects  ogit.MARS:Resource ]

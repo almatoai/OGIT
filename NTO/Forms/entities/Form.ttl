@@ -34,6 +34,7 @@ ogit.Forms:Form
 	);
 	ogit:allowed (
 		[ ogit:references  ogit.Forms:Form ]
+		[ ogit:uses  ogit.Forms:Form ]
 		[ ogit:contains  ogit.Forms:FormFieldGroup ]
 		[ ogit:contains  ogit.Forms:FormField ]
 		[ ogit:complies  ogit.Legal:LegalClause ]
