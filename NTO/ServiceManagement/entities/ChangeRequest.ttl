@@ -20,6 +20,7 @@
 @prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms:                <http://purl.org/dc/terms/> .
 @prefix ogit.ServiceManagement: <http://www.purl.org/ogit/ServiceManagement/> .
+@prefix ogit.Forms: <http://www.purl.org/ogit/Forms/> .
 
 ogit.ServiceManagement:ChangeRequest
 	a rdfs:Class;
