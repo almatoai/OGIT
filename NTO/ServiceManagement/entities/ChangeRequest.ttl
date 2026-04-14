@@ -20,6 +20,7 @@
 @prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms:                <http://purl.org/dc/terms/> .
 @prefix ogit.ServiceManagement: <http://www.purl.org/ogit/ServiceManagement/> .
+@prefix ogit.Forms: <http://www.purl.org/ogit/Forms/> .
 
 ogit.ServiceManagement:ChangeRequest
 	a rdfs:Class;
@@ -91,6 +92,7 @@ ogit.ServiceManagement:ChangeRequest
 			[ ogit:affects  ogit:Location ]
 			[ ogit:affects  ogit:ConfigurationItem ]
 			[ ogit:affects  ogit.ServiceManagement:Service ]
+			[ ogit:affects  ogit.Forms:Form ]
 			[ ogit:affects  ogit:Person ]
 			[ ogit:affects  ogit.MARS:Application ]
 			[ ogit:affects  ogit.MARS:Resource ]
