@@ -1,0 +1,25 @@
+@prefix ogit.FinancialMarket:     <http://www.purl.org/ogit/FinancialMarket/> .
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+
+ogit.FinancialMarket:OwnershipRelation
+  a rdfs:Class;
+  rdfs:subClassOf ogit:Relation;
+  rdfs:label "OwnershipRelation";
+  dcterms:description """Represents an ownership or equity relationship between two Organization entities. The relation is reified to allow storing attributes such as shares""";
+  dcterms:valid "start=2025-04-15;";
+  dcterms:creator "Calvin Spolwind";
+  ogit:scope "NTO";
+  ogit:parent ogit:Node;
+  ogit:mandatory-attributes (
+  );
+  ogit:optional-attributes (
+    ogit.FinancialMarket:shares
+  );
+  ogit:indexed-attributes (
+  );
+  ogit:allowed (
+	[ ogit:has ogit:Organization ]
+  );
+.
