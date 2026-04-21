@@ -1,4 +1,5 @@
 @prefix ogit.FinancialMarket:     <http://www.purl.org/ogit/FinancialMarket/> .
+@prefix ogit.ClassificationStandard:     <http://www.purl.org/ogit/ClassificationStandard/> .
 @prefix ogit:                   <http://www.purl.org/ogit/> .
 @prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms:                <http://purl.org/dc/terms/> .
