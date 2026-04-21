@@ -87,6 +87,7 @@ ogit.ServiceManagement:Ticket
 			[ ogit:affects  ogit.MARS:Machine ]
 			[ ogit:affects  ogit.Automation:MARSNode ]
 			[ ogit:affects  ogit:Account ]
+			[ ogit:affects  ogit:ConfigurationItem ]
 			[ ogit:has  ogit:Attachment ]
 	);
 .
