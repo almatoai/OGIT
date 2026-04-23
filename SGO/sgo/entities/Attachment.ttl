@@ -75,6 +75,7 @@ stored directly in the graph itself or be referenced by an external url link."""
 			[ ogit:belongs  ogit.Factory:Plant ]
 			[ ogit:belongs  ogit.SaaS:ComponentInstance ]
 			[ ogit:belongs  ogit.CustomerSupport:ChatMessage ]
+			[ ogit:belongs  ogit.Forms:Form ]
 			[ ogit:references ogit:Blob]
 	);
 .
