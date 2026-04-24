@@ -39,5 +39,6 @@ ogit.Forms:Form
 		[ ogit:contains  ogit.Forms:FormField ]
 		[ ogit:complies  ogit.Legal:LegalClause ]
 		[ ogit:complies  ogit.Legal:LegalNorm ]
+		[ ogit:has       ogit:Attachment ]
 	);
 .
