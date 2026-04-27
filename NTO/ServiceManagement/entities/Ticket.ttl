@@ -66,6 +66,9 @@ ogit.ServiceManagement:Ticket
 	ogit:allowed (
 			[ ogit:relates  ogit.ServiceManagement:Ticket ]
 			[ ogit:causes  ogit.ServiceManagement:Ticket ]
+			[ ogit:assignedTo  ogit.ServiceManagement:Ticket ]
+			[ ogit:isPartOf  ogit.ServiceManagement:Ticket ]
+			[ ogit:precedes  ogit.ServiceManagement:Ticket ]
 			[ ogit:assignedTo  ogit:Person ]
 			[ ogit:assignedTo  ogit:Account ]
 			[ ogit:assignedTo  ogit:Organization ]
