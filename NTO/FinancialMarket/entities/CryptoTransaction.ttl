@@ -1,0 +1,34 @@
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix ogit.FinancialMarket:   <http://www.purl.org/ogit/FinancialMarket/> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+
+ogit.FinancialMarket:CryptoTransaction
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "CryptoTransaction";
+	dcterms:description "A single blockchain transaction on Bitcoin or Ethereum. Identified by its transaction hash. Immutable once recorded. Used to trace fund flows between cryptocurrency wallets for financial intelligence and sanctions compliance.";
+	dcterms:valid "start=2026-04-27;";
+	dcterms:creator "chris.boos@almato.com";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:mandatory-attributes (
+		ogit.FinancialMarket:txHash
+		ogit.FinancialMarket:chain
+	);
+	ogit:optional-attributes (
+		ogit.FinancialMarket:blockNumber
+		ogit:timestamp
+		ogit.FinancialMarket:transactionValue
+		ogit.FinancialMarket:transactionFee
+		ogit:source
+	);
+	ogit:indexed-attributes (
+		ogit.FinancialMarket:txHash
+	);
+	ogit:allowed (
+			[ ogit.FinancialMarket:transactedFrom  ogit.FinancialMarket:CryptoWallet ]
+			[ ogit.FinancialMarket:transactedTo  ogit.FinancialMarket:CryptoWallet ]
+	);
+.

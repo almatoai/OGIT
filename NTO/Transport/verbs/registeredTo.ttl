@@ -1,0 +1,14 @@
+@prefix ogit.Transport:         <http://www.purl.org/ogit/Transport/> .
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+
+ogit.Transport:registeredTo
+	a owl:ObjectProperty;
+	rdfs:subPropertyOf ogit:Verb;
+	rdfs:label "registeredTo";
+	dcterms:description "Indicates that a vessel or aircraft is registered to a person or organization as its legal owner.";
+	dcterms:valid "start=2026-04-27;";
+	dcterms:creator "chris.boos@almato.com";
+.

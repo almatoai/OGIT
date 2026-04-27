@@ -1,0 +1,14 @@
+@prefix ogit.Compliance:        <http://www.purl.org/ogit/Compliance/> .
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+
+ogit.Compliance:crossListedWith
+	a owl:ObjectProperty;
+	rdfs:subPropertyOf ogit:Verb;
+	rdfs:label "crossListedWith";
+	dcterms:description "Links two SanctionsEntry nodes that refer to the same real-world person or organization across different sanctions lists. For example, an EU sanctions entry for a person linked to the corresponding OFAC SDN entry for the same person.";
+	dcterms:valid "start=2026-04-27;";
+	dcterms:creator "chris.boos@almato.com";
+.

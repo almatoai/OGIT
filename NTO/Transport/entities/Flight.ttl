@@ -1,0 +1,33 @@
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix ogit.Transport:         <http://www.purl.org/ogit/Transport/> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+
+ogit.Transport:Flight
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "Flight";
+	dcterms:description "A single flight event representing one aircraft movement from a departure airport to an arrival airport. Derived from ADS-B data via OpenSky Network. Identified by the combination of aircraft ICAO hex code and departure time.";
+	dcterms:valid "start=2026-04-27;";
+	dcterms:creator "chris.boos@almato.com";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:mandatory-attributes (
+		ogit:id
+	);
+	ogit:optional-attributes (
+		ogit.Transport:callsign
+		ogit:startedAt
+		ogit:endedAt
+		ogit:source
+	);
+	ogit:indexed-attributes (
+		ogit.Transport:callsign
+	);
+	ogit:allowed (
+			[ ogit.Transport:flownBy  ogit.Transport:Aircraft ]
+			[ ogit.Transport:departedFrom  ogit.Transport:Airport ]
+			[ ogit.Transport:arrivedAt  ogit.Transport:Airport ]
+	);
+.

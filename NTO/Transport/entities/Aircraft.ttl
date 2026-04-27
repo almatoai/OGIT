@@ -1,0 +1,45 @@
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix ogit.Transport:         <http://www.purl.org/ogit/Transport/> .
+@prefix ogit.Compliance:        <http://www.purl.org/ogit/Compliance/> .
+@prefix ogit.MRO.Aviation:      <http://www.purl.org/ogit/MRO/Aviation/> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+
+ogit.Transport:Aircraft
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "Aircraft";
+	dcterms:description "An aircraft identified by its ICAO 24-bit hex code and registration. Covers commercial, cargo, private, military and government aircraft as tracked through national aviation registries (FAA, CAA) and ADS-B flight data.";
+	dcterms:valid "start=2026-04-27;";
+	dcterms:creator "chris.boos@almato.com";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:mandatory-attributes (
+		ogit.Transport:icaoHex
+	);
+	ogit:optional-attributes (
+		ogit.Transport:registration
+		ogit:name
+		ogit:manufacturer
+		ogit:model
+		ogit.Transport:yearBuilt
+		ogit:category
+		ogit:country
+		ogit:status
+		ogit:source
+		ogit:sourceId
+	);
+	ogit:indexed-attributes (
+		ogit.Transport:icaoHex
+		ogit.Transport:registration
+	);
+	ogit:allowed (
+			[ ogit.Transport:registeredTo  ogit:Person ]
+			[ ogit.Transport:registeredTo  ogit:Organization ]
+			[ ogit.Transport:operatedBy  ogit:Organization ]
+			[ ogit:locatedIn  ogit:Location ]
+			[ ogit.Compliance:sanctionedUnder  ogit.Compliance:SanctionsEntry ]
+			[ ogit.Transport:correspondsTo  ogit.MRO.Aviation:Aircraft ]
+	);
+.

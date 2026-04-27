@@ -1,0 +1,37 @@
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix ogit.Compliance:        <http://www.purl.org/ogit/Compliance/> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+
+ogit.Compliance:SanctionsEntry
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "SanctionsEntry";
+	dcterms:description "A single entry on a sanctions list (EU, UN, OFAC SDN, OFAC Non-SDN, UK). Represents the listing of a person, organization, vessel or other entity under a specific sanctions programme with its legal basis, listing date and current status. A real-world person or organization may have multiple SanctionsEntry nodes, one per list. Inbound edges use the sanctionedUnder verb from Person, Organization, Vessel, Aircraft or CryptoWallet.";
+	dcterms:valid "start=2026-04-27;";
+	dcterms:creator "chris.boos@almato.com";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:mandatory-attributes (
+		ogit.Compliance:sourceList
+		ogit:sourceId
+	);
+	ogit:optional-attributes (
+		ogit.Compliance:programme
+		ogit.Compliance:legalBasis
+		ogit.Compliance:listedDate
+		ogit:lastUpdatedAt
+		ogit:description
+		ogit:status
+		ogit:source
+	);
+	ogit:indexed-attributes (
+		ogit.Compliance:sourceList
+		ogit:sourceId
+		ogit.Compliance:programme
+	);
+	ogit:allowed (
+			[ ogit.Compliance:crossListedWith  ogit.Compliance:SanctionsEntry ]
+	);
+.

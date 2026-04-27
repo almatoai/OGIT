@@ -1,0 +1,41 @@
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix ogit.FinancialMarket:   <http://www.purl.org/ogit/FinancialMarket/> .
+@prefix ogit.Compliance:        <http://www.purl.org/ogit/Compliance/> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+
+ogit.FinancialMarket:CryptoWallet
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "CryptoWallet";
+	dcterms:description "A cryptocurrency wallet address on a specific blockchain (Bitcoin or Ethereum). Identified by the combination of chain and address. May carry attribution labels from sanctions lists (OFAC), threat intelligence feeds (abuse.ch) or community reports (Chainabuse).";
+	dcterms:valid "start=2026-04-27;";
+	dcterms:creator "chris.boos@almato.com";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:mandatory-attributes (
+		ogit.FinancialMarket:chain
+		ogit.FinancialMarket:walletAddress
+	);
+	ogit:optional-attributes (
+		ogit:name
+		ogit.FinancialMarket:label
+		ogit.FinancialMarket:labelSource
+		ogit:firstOccurredAt
+		ogit:lastOccurredAt
+		ogit.FinancialMarket:totalReceived
+		ogit.FinancialMarket:totalSent
+		ogit:status
+		ogit:source
+	);
+	ogit:indexed-attributes (
+		ogit.FinancialMarket:walletAddress
+		ogit.FinancialMarket:label
+	);
+	ogit:allowed (
+			[ ogit.FinancialMarket:attributedTo  ogit:Person ]
+			[ ogit.FinancialMarket:attributedTo  ogit:Organization ]
+			[ ogit.Compliance:sanctionedUnder  ogit.Compliance:SanctionsEntry ]
+	);
+.

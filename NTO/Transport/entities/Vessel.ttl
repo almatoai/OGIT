@@ -1,0 +1,44 @@
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix ogit.Transport:         <http://www.purl.org/ogit/Transport/> .
+@prefix ogit.Compliance:        <http://www.purl.org/ogit/Compliance/> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+
+ogit.Transport:Vessel
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "Vessel";
+	dcterms:description "A watercraft identified by its IMO number. Includes cargo ships, tankers, container vessels, passenger ships and other seagoing or inland vessels tracked through maritime registries and port state control systems.";
+	dcterms:valid "start=2026-04-27;";
+	dcterms:creator "chris.boos@almato.com";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:mandatory-attributes (
+		ogit.Transport:imoNumber
+	);
+	ogit:optional-attributes (
+		ogit.Transport:mmsi
+		ogit:name
+		ogit.Transport:shipType
+		ogit.Transport:grossTonnage
+		ogit.Transport:deadweight
+		ogit.Transport:yearBuilt
+		ogit:status
+		ogit:source
+		ogit:sourceId
+	);
+	ogit:indexed-attributes (
+		ogit.Transport:imoNumber
+		ogit:name
+	);
+	ogit:allowed (
+			[ ogit.Transport:registeredTo  ogit:Person ]
+			[ ogit.Transport:registeredTo  ogit:Organization ]
+			[ ogit.Transport:operatedBy  ogit:Organization ]
+			[ ogit.Transport:flaggedBy  ogit:Region ]
+			[ ogit.Transport:inspectedAt  ogit.Transport:Port ]
+			[ ogit:locatedIn  ogit:Location ]
+			[ ogit.Compliance:sanctionedUnder  ogit.Compliance:SanctionsEntry ]
+	);
+.
