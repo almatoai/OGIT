@@ -11,8 +11,8 @@ ogit:Relation
 It is used when a relationship itself needs to carry attributes or metadata.
 Relations typically connect a source entity to a target entity via explicit edges.""";
 	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
-	dcterms:valid "start=2015-05-21;";
-	dcterms:creator "Peter Larem";
+	dcterms:valid "start=2025-04-28;";
+	dcterms:creator "Calvin Spolwind;
 	ogit:scope "SGO";
 	ogit:parent ogit:Node;
 	ogit:mandatory-attributes (
