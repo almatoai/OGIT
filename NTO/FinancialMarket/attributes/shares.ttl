@@ -8,7 +8,7 @@ ogit.FinancialMarket:shares
     a owl:DatatypeProperty;
     rdfs:subPropertyOf ogit:Attribute;
     rdfs:label "shares";
-    dcterms:description "Number of shares held in an ownership relation between two organizations. Represents the quantity of equity instruments owned.";
+    dcterms:description "Number of shares held in an ownership relation between two entities. Represents the quantity of equity instruments owned.";
     dcterms:valid "start=2025-04-15;";
     dcterms:creator "Calvin Spolwind";
 .
