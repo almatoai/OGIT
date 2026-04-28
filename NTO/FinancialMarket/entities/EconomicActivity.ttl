@@ -14,15 +14,15 @@ ogit.FinancialMarket:EconomicActivity
   ogit:scope "NTO";
   ogit:parent ogit:Node;
   ogit:mandatory-attributes (
-    ogit:type
+    ogit:id
   );
   ogit:optional-attributes (
     ogit:title
-    ogit:id
     ogit:source
     ogit:description
     ogit:identifierCode
     ogit:codeType
+    ogit:type
 	ogit:description
   );
   ogit:indexed-attributes (
