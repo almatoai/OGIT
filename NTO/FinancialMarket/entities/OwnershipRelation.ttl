@@ -5,7 +5,7 @@
 
 ogit.FinancialMarket:OwnershipRelation
   a rdfs:Class;
-  rdfs:subClassOf ogit:OntologyVerb; # is subclass of Verb since semantically it is intended to connect 2 entites with a specififying attribute in the relation
+  rdfs:subClassOf ogit:OntologyVerb;
   rdfs:label "OwnershipRelation";
   dcterms:description """Represents an ownership or equity relationship between two Organization entities. The relation is reified to allow storing attributes such as shares""";
   dcterms:valid "start=2025-04-15;";

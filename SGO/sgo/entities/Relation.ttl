@@ -1,0 +1,30 @@
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+
+
+ogit:Relation
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "Relation";
+	dcterms:description """A Relation represents a reified relationship between two or more entities.
+It is used when a relationship itself needs to carry attributes or metadata.
+Relations typically connect a source entity to a target entity via explicit edges.""";
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
+	dcterms:valid "start=2015-05-21;";
+	dcterms:creator "Peter Larem";
+	ogit:scope "SGO";
+	ogit:parent ogit:Node;
+	ogit:mandatory-attributes (
+		
+	);
+	ogit:optional-attributes (
+
+	);
+	ogit:indexed-attributes (
+		
+	);
+	ogit:allowed (
+
+	);
+.
