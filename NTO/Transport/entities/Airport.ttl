@@ -1,0 +1,39 @@
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix ogit.Transport:         <http://www.purl.org/ogit/Transport/> .
+@prefix ogit.MRO.Aviation:      <http://www.purl.org/ogit/MRO/Aviation/> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+
+ogit.Transport:Airport
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "Airport";
+	dcterms:description "An airport identified by its ICAO 4-letter code. Covers large, medium, small, military and closed airports worldwide as maintained in the OurAirports reference dataset.";
+	dcterms:valid "start=2026-04-27;";
+	dcterms:creator "chris.boos@almato.com";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:mandatory-attributes (
+		ogit.Transport:icaoCode
+	);
+	ogit:optional-attributes (
+		ogit.Transport:iataCode
+		ogit:name
+		ogit:country
+		ogit:latitude
+		ogit:longitude
+		ogit.Transport:airportType
+		ogit:status
+	);
+	ogit:indexed-attributes (
+		ogit.Transport:icaoCode
+		ogit.Transport:iataCode
+		ogit:name
+	);
+	ogit:allowed (
+			[ ogit:locatedIn  ogit:Location ]
+			[ ogit:locatedIn  ogit:Region ]
+			[ ogit.Transport:correspondsTo  ogit.MRO.Aviation:Airport ]
+	);
+.

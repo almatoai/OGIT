@@ -1,0 +1,14 @@
+@prefix ogit.FinancialMarket:   <http://www.purl.org/ogit/FinancialMarket/> .
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+
+ogit.FinancialMarket:transactedFrom
+	a owl:ObjectProperty;
+	rdfs:subPropertyOf ogit:Verb;
+	rdfs:label "transactedFrom";
+	dcterms:description "Links a blockchain transaction to its source (sender) wallet.";
+	dcterms:valid "start=2026-04-27;";
+	dcterms:creator "chris.boos@almato.com";
+.

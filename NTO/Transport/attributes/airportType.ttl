@@ -1,0 +1,14 @@
+@prefix ogit.Transport:     <http://www.purl.org/ogit/Transport/> .
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+
+ogit.Transport:airportType
+	a owl:DatatypeProperty;
+	rdfs:subPropertyOf ogit:Attribute;
+	rdfs:label "airportType";
+	dcterms:description "Type classification of an airport (large, medium, small, heliport, military, closed).";
+	dcterms:valid "start=2026-04-27;";
+	dcterms:creator "chris.boos@almato.com";
+.
