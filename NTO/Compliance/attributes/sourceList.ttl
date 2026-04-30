@@ -4,10 +4,10 @@
 @prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms:                <http://purl.org/dc/terms/> .
 
-ogit.Compliance:sourceList
+ogit.Compliance:listSource
 	a owl:DatatypeProperty;
 	rdfs:subPropertyOf ogit:Attribute;
-	rdfs:label "sourceList";
+	rdfs:label "listSource";
 	dcterms:description "Identifier of the sanctions list source (EU, UN, OFAC_SDN, OFAC_NON_SDN, UK).";
 	dcterms:valid "start=2026-04-27;";
 	dcterms:creator "chris.boos@almato.com";

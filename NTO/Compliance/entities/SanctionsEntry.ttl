@@ -14,11 +14,11 @@ ogit.Compliance:SanctionsEntry
 	ogit:scope "NTO";
 	ogit:parent ogit:Node;
 	ogit:mandatory-attributes (
-		ogit.Compliance:sourceList
+		ogit.Compliance:listSource
 		ogit:sourceId
 	);
 	ogit:optional-attributes (
-		ogit.Compliance:programme
+		ogit.Compliance:program
 		ogit.Compliance:legalBasis
 		ogit.Compliance:listedDate
 		ogit:lastUpdatedAt
@@ -27,9 +27,9 @@ ogit.Compliance:SanctionsEntry
 		ogit:source
 	);
 	ogit:indexed-attributes (
-		ogit.Compliance:sourceList
+		ogit.Compliance:listSource
 		ogit:sourceId
-		ogit.Compliance:programme
+		ogit.Compliance:program
 	);
 	ogit:allowed (
 			[ ogit.Compliance:crossListedWith  ogit.Compliance:SanctionsEntry ]
