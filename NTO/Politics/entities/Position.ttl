@@ -22,5 +22,8 @@ ogit.Politics:Position
     ogit:indexed-attributes (
     );
     ogit:allowed (
+        # --- OSINT Security Extension additions (2026-05-02) ---
+        [ ogit.Politics:establishedAt ogit:Organization ]
+        [ ogit:locatedIn     ogit:Region ]
     );
 .

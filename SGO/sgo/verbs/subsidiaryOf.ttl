@@ -1,0 +1,13 @@
+@prefix ogit:    <http://www.purl.org/ogit/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+ogit:subsidiaryOf
+    a owl:ObjectProperty;
+    rdfs:subPropertyOf ogit:Verb;
+    rdfs:label "subsidiaryOf";
+    dcterms:description "Indicates that the subject Organization is a corporate-law subsidiary of the object Organization (more than 50 percent voting share, consolidated reporting, OFAC 50-percent-rule sanctions inheritance). Distinct from contains, which is generic structural part-of without ownership semantics.";
+    dcterms:valid "start=2026-05-02;";
+    dcterms:creator "chris.boos@almato.com";
+.

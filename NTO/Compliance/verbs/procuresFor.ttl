@@ -1,0 +1,14 @@
+@prefix ogit:             <http://www.purl.org/ogit/> .
+@prefix ogit.Compliance:  <http://www.purl.org/ogit/Compliance/> .
+@prefix owl:              <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:             <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:          <http://purl.org/dc/terms/> .
+
+ogit.Compliance:procuresFor
+    a owl:ObjectProperty;
+    rdfs:subPropertyOf ogit:Verb;
+    rdfs:label "procuresFor";
+    dcterms:description "Indicates that the subject Person or Organization acts as a procurement agent for the object Person or Organization. The OFAC SDN term-of-art 'Procurement agent for' is load-bearing for sanctions: a procurement agent triggers material-support clauses.";
+    dcterms:valid "start=2026-05-02;";
+    dcterms:creator "chris.boos@almato.com";
+.
