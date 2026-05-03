@@ -33,6 +33,8 @@
 @prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms:                <http://purl.org/dc/terms/> .
 @prefix ogit.ClassificationStandard:              <http://www.purl.org/ogit/ClassificationStandard/> .
+@prefix ogit.Compliance:        <http://www.purl.org/ogit/Compliance/> .
+@prefix ogit.HR.Recruiting:     <http://www.purl.org/ogit/HR/Recruiting/> .
 
 ogit:Organization
 	a rdfs:Class;
@@ -172,5 +174,69 @@ The ogit/function attribute should be used to tell what kind of grouping an enti
 			[ ogit:locatedIn ogit.Location:Address ]
 			[ ogit:leads ogit.Religion:BeliefSystem ]
 			[ ogit:follows ogit.Religion:BeliefSystem ]
+
+			# --- OSINT Security Extension additions (2026-05-02) ---
+			# Reuse existing verbs (extending allowed-target lists)
+			[ ogit:precedes                ogit:Organization ]
+			[ ogit:sameAs                  ogit:Organization ]
+			[ ogit:owns                    ogit:Organization ]
+			[ ogit.HR.Recruiting:worksFor  ogit:Organization ]
+
+			# Org-to-Org structural (NEW verbs; corporate-law-specific concepts)
+			[ ogit:subsidiaryOf              ogit:Organization ]
+			[ ogit:whollyOwnedSubsidiaryOf   ogit:Organization ]
+			[ ogit:controlledBy              ogit:Organization ]
+			[ ogit:controlledBy              ogit:Person ]
+			[ ogit:affiliateOf               ogit:Organization ]
+			[ ogit:mergedWith                ogit:Organization ]
+			[ ogit:partneredWith             ogit:Organization ]
+
+			# Beneficial ownership (NEW verb)
+			[ ogit:beneficialOwnerOf  ogit:Organization ]
+
+			# Org acts on behalf of Org/Person (front-company patterns)
+			[ ogit:actsOnBehalfOf     ogit:Organization ]
+			[ ogit:actsOnBehalfOf     ogit:Person ]
+
+			# Service provision and lobbying (NEW verbs)
+			[ ogit:providesServicesTo  ogit:Organization ]
+			[ ogit:lobbyistFor         ogit:Organization ]
+			[ ogit:lobbyistFor         ogit:Person ]
+
+			# Trust-structure fiduciary (Org as trustee, settlor, beneficiary)
+			[ ogit:trusteeOf      ogit:Organization ]
+			[ ogit:settlorOf      ogit:Organization ]
+			[ ogit:beneficiaryOf  ogit:Organization ]
+
+			# Insolvency / receivership (Org as receiver/liquidator)
+			[ ogit:receiverFor                  ogit:Organization ]
+			[ ogit:liquidatorOf                 ogit:Organization ]
+			[ ogit:administratorInInsolvencyOf  ogit:Organization ]
+
+			# Audit (Org as audit firm)
+			[ ogit:auditorOf  ogit:Organization ]
+
+			# Investment management (Org-level)
+			[ ogit:investmentManagerOf  ogit:Person ]
+			[ ogit:investmentManagerOf  ogit:Organization ]
+			[ ogit:custodianOf          ogit:Person ]
+			[ ogit:custodianOf          ogit:Organization ]
+
+			# Reuse ogit.Legal:empowers (Org grants legal authority to Person/Org)
+			[ ogit.Legal:empowers  ogit:Person ]
+			[ ogit.Legal:empowers  ogit:Organization ]
+
+			# Nominee (Org as nominee for, e.g. nominee shareholders)
+			[ ogit:nomineeFor  ogit:Person ]
+			[ ogit:nomineeFor  ogit:Organization ]
+
+			# Sanctions (existing predicate, add to allowed list)
+			[ ogit.Compliance:sanctionedUnder ogit.Compliance:SanctionsEntry ]
+
+			# Sanctions-specific (NEW verbs in Compliance scope)
+			[ ogit.Compliance:procuresFor          ogit:Person ]
+			[ ogit.Compliance:procuresFor          ogit:Organization ]
+			[ ogit.Compliance:financiallySupports  ogit:Person ]
+			[ ogit.Compliance:financiallySupports  ogit:Organization ]
 	);
 .

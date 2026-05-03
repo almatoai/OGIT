@@ -1,0 +1,13 @@
+@prefix ogit:    <http://www.purl.org/ogit/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+ogit:controlledBy
+    a owl:ObjectProperty;
+    rdfs:subPropertyOf ogit:Verb;
+    rdfs:label "controlledBy";
+    dcterms:description "Indicates that the subject Organization is effectively controlled by the object Person or Organization, including governance control without majority equity (board control, voting agreements, golden share, dual-class shares, shareholder agreements). The OFAC and AML term-of-art for effective control. Distinct from ogit:governs, which connotes formal rule-enforcement / operational governance, while controlled-by captures the case where governance and ownership diverge.";
+    dcterms:valid "start=2026-05-02;";
+    dcterms:creator "chris.boos@almato.com";
+.
