@@ -82,6 +82,7 @@ The ogit/function attribute should be used to tell what kind of grouping an enti
 		ogit:subType
 		ogit:sharedWith
 		ogit:createdAt
+		ogit:endedAt
 	);
 	ogit:indexed-attributes (
 		ogit:name
@@ -172,5 +173,6 @@ The ogit/function attribute should be used to tell what kind of grouping an enti
 			[ ogit:locatedIn ogit.Location:Address ]
 			[ ogit:leads ogit.Religion:BeliefSystem ]
 			[ ogit:follows ogit.Religion:BeliefSystem ]
+			[ ogit:precedes ogit:Organization ]
 	);
 .
