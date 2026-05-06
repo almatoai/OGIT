@@ -239,7 +239,6 @@ The ogit/function attribute should be used to tell what kind of grouping an enti
 			[ ogit.Compliance:procuresFor          ogit:Organization ]
 			[ ogit.Compliance:financiallySupports  ogit:Person ]
 			[ ogit.Compliance:financiallySupports  ogit:Organization ]
-=======
 
 	);
 .
