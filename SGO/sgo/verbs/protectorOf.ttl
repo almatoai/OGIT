@@ -1,0 +1,13 @@
+@prefix ogit:    <http://www.purl.org/ogit/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+ogit:protectorOf
+    a owl:ObjectProperty;
+    rdfs:subPropertyOf ogit:Verb;
+    rdfs:label "protectorOf";
+    dcterms:description "Indicates that the subject Person serves as protector of the object Organization (a trust modelled as ogit:Organization with function='trust'), with oversight power including the power to remove the trustee. A sophisticated-trust feature, often used to obscure UBO.";
+    dcterms:valid "start=2026-05-02;";
+    dcterms:creator "chris.boos@almato.com";
+.

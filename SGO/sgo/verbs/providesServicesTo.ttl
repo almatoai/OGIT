@@ -1,0 +1,13 @@
+@prefix ogit:    <http://www.purl.org/ogit/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+ogit:providesServicesTo
+    a owl:ObjectProperty;
+    rdfs:subPropertyOf ogit:Verb;
+    rdfs:label "providesServicesTo";
+    dcterms:description "Indicates that the subject Person or Organization is or was a vendor, service provider, or supplier on a service-contract basis to the object Organization. Distinct from the generic ogit:provides because vendor / service-provider status has compliance-relevant implications under OFAC vendor-screening rules.";
+    dcterms:valid "start=2026-05-02;";
+    dcterms:creator "chris.boos@almato.com";
+.

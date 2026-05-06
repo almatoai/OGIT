@@ -26,6 +26,9 @@
 @prefix ogit:                   <http://www.purl.org/ogit/> .
 @prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms:                <http://purl.org/dc/terms/> .
+@prefix ogit.Compliance:        <http://www.purl.org/ogit/Compliance/> .
+@prefix ogit.Legal:             <http://www.purl.org/ogit/Legal/> .
+@prefix ogit.HR.Recruiting:     <http://www.purl.org/ogit/HR/Recruiting/> .
 
 ogit:Person
 	a rdfs:Class;
@@ -213,5 +216,107 @@ ogit:Person
 			[ ogit:creates ogit.Religion:BeliefSystem ]
 			[ ogit:leads ogit.Religion:BeliefSystem ]
 			[ ogit:follows ogit.Religion:BeliefSystem ]
+
+			# --- OSINT Security Extension additions (2026-05-02) ---
+			# Family network (NEW verbs)
+			[ ogit:hasParent       ogit:Person ]
+			[ ogit:hasChild        ogit:Person ]
+			[ ogit:hasSibling      ogit:Person ]
+			[ ogit:hasSpouse       ogit:Person ]
+			[ ogit:hasGrandparent  ogit:Person ]
+			[ ogit:hasGrandchild   ogit:Person ]
+			[ ogit:hasInLaw        ogit:Person ]
+			[ ogit:hasUncleAunt    ogit:Person ]
+			[ ogit:hasNieceNephew  ogit:Person ]
+			[ ogit:hasCousin       ogit:Person ]
+			[ ogit:hasGuardian     ogit:Person ]
+
+			# Marriage state (NEW verbs)
+			[ ogit:hasFormerSpouse ogit:Person ]
+			[ ogit:wasEngagedTo    ogit:Person ]
+
+			# Wedding ceremony roles (NEW verbs)
+			[ ogit:wasOfficiantFor       ogit:Person ]
+			[ ogit:wasBestManFor         ogit:Person ]
+			[ ogit:wasMaidOfHonorFor     ogit:Person ]
+			[ ogit:wasGroomsmanFor       ogit:Person ]
+			[ ogit:wasBridesmaidFor      ogit:Person ]
+			[ ogit:wasWeddingWitnessFor  ogit:Person ]
+
+			# Senior roles in Organization (NEW verbs)
+			[ ogit:directorOf              ogit:Organization ]
+			[ ogit:boardMemberOf           ogit:Organization ]
+			[ ogit:officerOf               ogit:Organization ]
+			[ ogit:chairmanOf              ogit:Organization ]
+			[ ogit:auditCommitteeMemberOf  ogit:Organization ]
+
+			# Specific work-relationship subtypes (NEW verbs)
+			[ ogit:contractsFor       ogit:Organization ]
+			[ ogit:providesServicesTo ogit:Organization ]
+			[ ogit:actsOnBehalfOf     ogit:Person ]
+			[ ogit:actsOnBehalfOf     ogit:Organization ]
+			[ ogit:lobbyistFor        ogit:Person ]
+			[ ogit:lobbyistFor        ogit:Organization ]
+
+			# Trust-structure fiduciary roles (NEW verbs)
+			# Trusts are modelled as ogit:Organization with function="trust"
+			[ ogit:trusteeOf      ogit:Organization ]
+			[ ogit:settlorOf      ogit:Organization ]
+			[ ogit:beneficiaryOf  ogit:Organization ]
+			[ ogit:protectorOf    ogit:Organization ]
+
+			# Estate / probate (NEW verbs)
+			[ ogit:executorOf       ogit:Person ]
+			[ ogit:administratorOf  ogit:Person ]
+			[ ogit:heirOf           ogit:Person ]
+
+			# Agency, attorney, signing authority (NEW verbs)
+			[ ogit:signatoryFor        ogit:Organization ]
+			[ ogit:nomineeFor          ogit:Person ]
+			[ ogit:nomineeFor          ogit:Organization ]
+
+			# Reuse ogit.Legal:empowers (Person grants legal authority to Person/Org)
+			[ ogit.Legal:empowers      ogit:Person ]
+			[ ogit.Legal:empowers      ogit:Organization ]
+
+			# Insolvency / receivership (NEW verbs)
+			[ ogit:receiverFor                  ogit:Organization ]
+			[ ogit:liquidatorOf                 ogit:Organization ]
+			[ ogit:administratorInInsolvencyOf  ogit:Organization ]
+
+			# Audit / oversight (NEW verbs)
+			[ ogit:auditorOf            ogit:Organization ]
+			[ ogit:complianceOfficerOf  ogit:Organization ]
+
+			# Investment management (NEW verbs)
+			[ ogit:investmentManagerOf  ogit:Person ]
+			[ ogit:investmentManagerOf  ogit:Organization ]
+			[ ogit:custodianOf          ogit:Person ]
+			[ ogit:custodianOf          ogit:Organization ]
+
+			# Beneficial ownership (NEW verb)
+			[ ogit:beneficialOwnerOf  ogit:Organization ]
+
+			# Reuse existing verbs by extending allowed targets
+			[ ogit:owns                       ogit:Organization ]
+			[ ogit.HR.Recruiting:worksFor     ogit:Organization ]
+			[ ogit:associates                 ogit:Person ]
+			[ ogit:controlledBy               ogit:Person ]
+			[ ogit:controlledBy               ogit:Organization ]
+
+			# Geographic anchors
+			[ ogit:locatedIn      ogit:Region ]
+			[ ogit:hasNationality ogit:Region ]
+			[ ogit:bornIn         ogit:Region ]
+			[ ogit:residesIn      ogit:Region ]
+
+			# Sanctions (existing predicate, add to allowed list)
+			[ ogit.Compliance:sanctionedUnder ogit.Compliance:SanctionsEntry ]
+
+			# Sanctions-specific (NEW verbs in Compliance scope)
+			[ ogit.Compliance:procuresFor          ogit:Person ]
+			[ ogit.Compliance:procuresFor          ogit:Organization ]
+			[ ogit.Compliance:financiallySupports  ogit:Person ]
+			[ ogit.Compliance:financiallySupports  ogit:Organization ]
 	);
 .

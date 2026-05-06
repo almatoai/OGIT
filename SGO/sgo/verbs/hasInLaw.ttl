@@ -1,0 +1,13 @@
+@prefix ogit:    <http://www.purl.org/ogit/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+ogit:hasInLaw
+    a owl:ObjectProperty;
+    rdfs:subPropertyOf ogit:Verb;
+    rdfs:label "hasInLaw";
+    dcterms:description "Indicates an in-law relationship between the subject Person and the object Person (mother-, father-, brother-, sister-, son-, or daughter-in-law).";
+    dcterms:valid "start=2026-05-02;";
+    dcterms:creator "chris.boos@almato.com";
+.

@@ -27,5 +27,7 @@ ogit.Location:Address
   );
   ogit:allowed (
     [ ogit:locatedIn ogit:Location]
+    # --- OSINT Security Extension addition (2026-05-02) ---
+    [ ogit:locatedIn ogit:Region ]
   );
 .

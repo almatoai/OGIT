@@ -1,0 +1,13 @@
+@prefix ogit:    <http://www.purl.org/ogit/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+ogit:wasWeddingWitnessFor
+    a owl:ObjectProperty;
+    rdfs:subPropertyOf ogit:Verb;
+    rdfs:label "wasWeddingWitnessFor";
+    dcterms:description "Indicates that the subject Person served as a legal witness at the marriage ceremony of which the object Person is one of the spouses, where the witness is not in the wedding party.";
+    dcterms:valid "start=2026-05-02;";
+    dcterms:creator "chris.boos@almato.com";
+.

@@ -1,0 +1,13 @@
+@prefix ogit:    <http://www.purl.org/ogit/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+ogit:officerOf
+    a owl:ObjectProperty;
+    rdfs:subPropertyOf ogit:Verb;
+    rdfs:label "officerOf";
+    dcterms:description "Indicates that the subject Person is or was a C-suite executive officer (CEO, CFO, COO, etc.) of the object Organization. Distinct from directorOf to capture operational vs governance roles.";
+    dcterms:valid "start=2026-05-02;";
+    dcterms:creator "chris.boos@almato.com";
+.

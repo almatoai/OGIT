@@ -1,0 +1,13 @@
+@prefix ogit:    <http://www.purl.org/ogit/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+ogit:whollyOwnedSubsidiaryOf
+    a owl:ObjectProperty;
+    rdfs:subPropertyOf ogit:Verb;
+    rdfs:label "whollyOwnedSubsidiaryOf";
+    dcterms:description "Indicates that the subject Organization is a 100-percent owned subsidiary of the object Organization. Distinct from subsidiaryOf because wholly-owned subsidiaries have stricter consolidation and tax treatment, and OFAC analysis at 100 percent is unambiguous.";
+    dcterms:valid "start=2026-05-02;";
+    dcterms:creator "chris.boos@almato.com";
+.

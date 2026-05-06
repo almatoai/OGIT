@@ -1,0 +1,13 @@
+@prefix ogit:    <http://www.purl.org/ogit/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+ogit:beneficialOwnerOf
+    a owl:ObjectProperty;
+    rdfs:subPropertyOf ogit:Verb;
+    rdfs:label "beneficialOwnerOf";
+    dcterms:description "Indicates that the subject Person or Organization is the Ultimate Beneficial Owner (UBO) of the object Organization, including via shells, nominees, or trusts. Distinct from owns because direct ownership and beneficial ownership trigger different reporting requirements under AML/CTF regimes.";
+    dcterms:valid "start=2026-05-02;";
+    dcterms:creator "chris.boos@almato.com";
+.
