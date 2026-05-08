@@ -306,6 +306,7 @@ ogit:Person
 
 			# Geographic anchors
 			[ ogit:locatedIn      ogit:Region ]
+			[ ogit:locatedIn      ogit.Location:Address ]
 			[ ogit:hasNationality ogit:Region ]
 			[ ogit:bornIn         ogit:Region ]
 			[ ogit:residesIn      ogit:Region ]
