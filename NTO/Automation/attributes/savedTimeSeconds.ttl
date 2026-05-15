@@ -8,7 +8,7 @@ ogit.Automation:savedTimeSeconds
 	a owl:DatatypeProperty;
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "savedTimeSeconds";
-	dcterms:description "An integer which contains the aggregation of all KI .";
+	dcterms:description "An integer which contains the aggregation of all KnowledgeItem manualProcessingTimeSeconds .";
 	dcterms:valid "start=2026-05-15;";
 	dcterms:creator "Meganitrospeed";
 .
