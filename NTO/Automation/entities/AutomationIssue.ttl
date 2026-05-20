@@ -44,6 +44,7 @@ IssueCondition is processed first.""";
     	ogit.Automation:webhook
     	ogit.RL:state
     	ogit.RL:totalReward
+		ogit.Automation:savedTimeSeconds
 	);
 	ogit:indexed-attributes (
 		ogit:subject
