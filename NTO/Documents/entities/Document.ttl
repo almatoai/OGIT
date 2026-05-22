@@ -23,6 +23,7 @@ ogit.Documents:Document
             ogit:type
             ogit:creationTime
             ogit:modificationTime
+			ogit:status
 	);
     ogit:indexed-attributes (
     );
@@ -30,5 +31,7 @@ ogit.Documents:Document
 			[ ogit:consistsOf  ogit:Attachment ]
 			[ ogit:describes  ogit.ServiceManagement:Service ]
 			[ ogit:represents  ogit.Forms:Form ]
+			[ ogit:references ogit.Forms:Form ]
+			[ ogit:references ogit.Forms:FormField ]
 	);
 .
