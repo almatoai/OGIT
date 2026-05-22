@@ -23,12 +23,14 @@ ogit.Documents:DocumentInfoRecord
 		ogit.Documents:documentVersion
 		ogit:name
 		ogit:description
+		ogit:type
+		ogit:creationTime
 	);
     ogit:indexed-attributes (
     );
 	ogit:allowed (
 			[ ogit:specifies ogit.PLM:Product ]
 			[ ogit:consistsOf  ogit:Attachment ]
-			
+			[ ogit:includes ogit.Documents:Document ]	
 	);
 .
