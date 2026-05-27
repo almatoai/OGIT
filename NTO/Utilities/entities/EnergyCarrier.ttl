@@ -1,0 +1,37 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities:EnergyCarrier
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "EnergyCarrier";
+    dcterms:description "Cross-domain energy-carrier classifier. Lifts the OEO oeo:energy_carrier concept into OGIT as a vertex class. Sector-coupling anchor: every conversion (Power-to-Gas, Power-to-Heat, Hydrogen-to-Power) crosses two EnergyCarrier instances. Used by GeneratingUnit, EnergyConsumer, EnergyStorage, ConversionUnit to declare their input and output carriers.";
+    dcterms:valid "start=2026-05-27;";
+    dcterms:creator "chris.boos@almato.com";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities:carrier_id
+        ogit.Utilities:carrier_kind
+    );
+    ogit:optional-attributes (
+        ogit.Utilities:nominal_lhv
+        ogit.Utilities:nominal_hhv
+        ogit.Utilities:gwp_factor
+        ogit.Utilities:standard_temperature
+        ogit.Utilities:standard_pressure
+        ogit.Utilities:iso_standard_ref
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities:carrier_id
+        ogit.Utilities:carrier_kind
+    );
+    ogit:allowed (
+        [ ogit.Utilities:convertedTo  ogit.Utilities:EnergyCarrier ]
+    );
+.

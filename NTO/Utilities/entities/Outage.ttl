@@ -1,0 +1,43 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities:Outage
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "Outage";
+    dcterms:description "ABSTRACT: Cross-domain operational concept. CIM 61968 has an Outage class; the same idea applies to gas valves, water mains, heat exchangers. Holds outage identity, kind, timing window, and cause; concrete subtypes (PlannedOutage, ForcedOutage) live in Electricity.Operations.";
+    dcterms:valid "start=2026-05-27;";
+    dcterms:creator "chris.boos@almato.com";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities:outage_id
+        ogit.Utilities:outage_kind
+        ogit.Utilities:start_time
+        ogit.Utilities:domain
+    );
+    ogit:optional-attributes (
+        ogit.Utilities:end_time
+        ogit.Utilities:expected_duration
+        ogit.Utilities:cause
+        ogit.Utilities:affected_population
+        ogit.Utilities:recovery_action_ref
+        ogit.Utilities:severity
+        ogit.Utilities:criticality_level
+        ogit.Utilities:restoration_priority
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities:outage_id
+    );
+    ogit:allowed (
+        [ ogit.Utilities:affects  ogit.Utilities.Electricity:PowerSystemResource ]
+        [ ogit.Utilities:causedBy  ogit.Utilities.Electricity:PowerSystemResource ]
+        [ ogit.Utilities:reportedBy  ogit.Utilities:NetworkOperator ]
+    );
+.

@@ -1,0 +1,15 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+ogit.Utilities:conversion_kind
+    a owl:DatatypeProperty;
+    rdfs:subPropertyOf ogit:Attribute;
+    rdfs:label "conversion_kind";
+    dcterms:description "Conversion device classification: electrolyser, fuel_cell, heat_pump, power_to_gas, power_to_heat, power_to_liquid, methanation, chp_thermal, district_heat_chiller, gas_engine, gas_turbine_chp.";
+    dcterms:valid "start=2026-05-27;";
+    dcterms:creator "chris.boos@almato.com";
+.

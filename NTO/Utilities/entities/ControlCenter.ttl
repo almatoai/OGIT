@@ -1,0 +1,37 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
+@prefix ogit.Utilities.Electricity.Markets:        <http://www.purl.org/ogit/Utilities/Electricity/Markets/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities:ControlCenter
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "ControlCenter";
+    dcterms:description "Physical or virtual control centre that supervises one or more ControlArea instances. ENTSO-E NCC (National Control Center), RSC (Regional Security Coordinator), and equivalent dispatch centres in gas / heat / water all instantiate this.";
+    dcterms:valid "start=2026-05-27;";
+    dcterms:creator "chris.boos@almato.com";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities:center_name
+        ogit.Utilities:operator_ref
+    );
+    ogit:optional-attributes (
+        ogit.Utilities:location_ref
+        ogit.Utilities:iso_function
+        ogit.Utilities:backup_center_ref
+        ogit.Utilities:redundancy_class
+        ogit:status
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities:center_name
+    );
+    ogit:allowed (
+        [ ogit.Utilities:supervises  ogit.Utilities.Electricity.Markets:ControlArea ]
+        [ ogit.Utilities:operatedBy  ogit.Utilities:NetworkOperator ]
+    );
+.

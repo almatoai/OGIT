@@ -1,0 +1,15 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+ogit.Utilities:operator_type
+    a owl:DatatypeProperty;
+    rdfs:subPropertyOf ogit:Attribute;
+    rdfs:label "operator_type";
+    dcterms:description "Operator classification: one of TSO, DSO, ISO, BSP (balancing service provider), BRP (balancing responsible party), MCO (market-coupling operator), generation-only, retail-only.";
+    dcterms:valid "start=2026-05-27;";
+    dcterms:creator "chris.boos@almato.com";
+.

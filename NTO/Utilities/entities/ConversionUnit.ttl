@@ -1,0 +1,46 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
+@prefix ogit.Utilities.Emissions:                  <http://www.purl.org/ogit/Utilities/Emissions/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities:ConversionUnit
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "ConversionUnit";
+    dcterms:description "ABSTRACT: Generic energy-carrier conversion device. Sector-coupling primitive: an electrolyser (electricity to hydrogen), a fuel cell (hydrogen to electricity), a heat pump (electricity to district heat), a Power-to-X facility. Distinct from GeneratingUnit because conversion can be bidirectional and may not produce electricity. For electricity-primary cases GeneratingUnit and EnergyStorage are used; ConversionUnit covers the non-electricity-primary cases.";
+    dcterms:valid "start=2026-05-27;";
+    dcterms:creator "chris.boos@almato.com";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities:unit_id
+        ogit:name
+        ogit.Utilities:conversion_kind
+        ogit.Utilities:input_carrier_ref
+        ogit.Utilities:output_carrier_ref
+    );
+    ogit:optional-attributes (
+        ogit.Utilities:bidirectional
+        ogit.Utilities:rated_p_input_mw
+        ogit.Utilities:rated_p_output_mw
+        ogit.Utilities:nominal_efficiency
+        ogit.Utilities:commissioning_year
+        ogit.Utilities:operator_ref
+        ogit.Utilities:location_ref
+        ogit:status
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities:unit_id
+    );
+    ogit:allowed (
+        [ ogit.Utilities:consumes  ogit.Utilities:EnergyCarrier ]
+        [ ogit.Utilities:produces  ogit.Utilities:EnergyCarrier ]
+        [ ogit.Utilities:operatedBy  ogit.Utilities:NetworkOperator ]
+        [ ogit.Utilities:emits  ogit.Utilities.Emissions:GreenhouseGasEmission ]
+        [ ogit.Utilities:generates  sgo:Timeseries ]
+    );
+.
