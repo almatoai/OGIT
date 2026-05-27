@@ -11,6 +11,6 @@ ogit.Auth.Application:category
 	rdfs:label "category";
 	dcterms:description "Category of an application";
 	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
-	dcterms:valid "start=2026-27-05;";
-	dcterms:creator "Calvin Spolwind;
+	dcterms:valid "start=2026-05-27;";
+	dcterms:creator "Calvin Spolwind";
 .
