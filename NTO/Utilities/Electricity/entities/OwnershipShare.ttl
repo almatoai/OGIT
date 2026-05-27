@@ -1,0 +1,42 @@
+@prefix ogit:                              <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                    <http://www.purl.org/ogit/Utilities/> .
+@prefix ogit.Utilities.Electricity:        <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix sgo:                               <http://www.purl.org/ogit/SGO/sgo/> .
+@prefix owl:                               <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                              <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                           <http://purl.org/dc/terms/> .
+
+ogit.Utilities.Electricity:OwnershipShare
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "OwnershipShare";
+    dcterms:description "Reified relation carrying an ownership fraction over a power-system resource (GeneratingUnit, PowerPlant, Interconnector, EnergyStorage, ConversionUnit) for a defined validity period. Empirical anchor: Krsko nuclear power plant (SI/HR 50/50 since 1981). Used wherever a single physical asset is jointly owned, operated, or off-taken by two or more parties. Reified because the relation has its own lifecycle (valid_from / valid_until), its own attributes (share_fraction), and is conflict-eligible across multiple data sources (CIM topology, Handelsregister, GEM). See concept document Section 8.1.";
+    dcterms:valid "start=2026-05-27;";
+    dcterms:creator "chris.boos@almato.com";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity:share_id
+        ogit.Utilities.Electricity:share_fraction
+        ogit.Utilities:valid_from
+    );
+    ogit:optional-attributes (
+        ogit.Utilities:valid_until
+        ogit.Utilities.Electricity:ownership_kind
+        ogit.Utilities.Electricity:regulatory_context_ref
+        ogit:source
+        ogit:sourceId
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity:share_id
+    );
+    ogit:allowed (
+        [ ogit.Utilities.Electricity:sharedOf  ogit.Utilities.Electricity:GeneratingUnit ]
+        [ ogit.Utilities.Electricity:sharedOf  ogit.Utilities.Electricity:PowerPlant ]
+        [ ogit.Utilities.Electricity:sharedOf  ogit.Utilities.Electricity:Interconnector ]
+        [ ogit.Utilities.Electricity:sharedOf  ogit.Utilities.Electricity:EnergyStorage ]
+        [ ogit.Utilities.Electricity:sharedOf  ogit.Utilities:ConversionUnit ]
+        [ ogit.Utilities.Electricity:heldBy    ogit.Utilities:NetworkOperator ]
+        [ ogit.Utilities.Electricity:heldBy    sgo:Organization ]
+    );
+.

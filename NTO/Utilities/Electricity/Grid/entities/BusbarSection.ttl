@@ -1,0 +1,37 @@
+@prefix ogit:                              <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities.Electricity:        <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix ogit.Utilities.Electricity.Grid:   <http://www.purl.org/ogit/Utilities/Electricity/Grid/> .
+@prefix owl:                               <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                              <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                           <http://purl.org/dc/terms/> .
+
+ogit.Utilities.Electricity.Grid:BusbarSection
+    a rdfs:Class;
+    rdfs:subClassOf ogit.Utilities.Electricity:PowerSystemResource;
+    rdfs:label "BusbarSection";
+    dcterms:description "A single busbar section inside a voltage level or bay. CIM cim:BusbarSection. Carries the per-section short-circuit withstand and nominal voltage; geographic location and operator come from the PSR-inherited verbs.";
+    dcterms:valid "start=2026-05-27;";
+    dcterms:creator "chris.boos@almato.com";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity:mrid
+        ogit:name
+    );
+    ogit:optional-attributes (
+        ogit.Utilities.Electricity.Grid:ip_max_ka
+        ogit.Utilities.Electricity.Grid:nominal_voltage_kv
+        ogit:status
+        ogit:source
+        ogit:sourceId
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity:mrid
+        ogit:name
+    );
+    ogit:allowed (
+        [ ogit.Utilities.Electricity.Grid:hasTerminal  ogit.Utilities.Electricity.Grid:Terminal ]
+        [ ogit:partOf                                  ogit.Utilities.Electricity.Grid:VoltageLevel ]
+        [ ogit:partOf                                  ogit.Utilities.Electricity.Grid:Bay ]
+    );
+.
