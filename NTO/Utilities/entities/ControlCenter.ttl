@@ -1,7 +1,7 @@
 @prefix dcterms:                                   <http://purl.org/dc/terms/> .
 @prefix ogit:                                      <http://www.purl.org/ogit/> .
 @prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
-@prefix ogit.Utilities.Electricity.Markets:        <http://www.purl.org/ogit/Utilities/Electricity/Markets/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
 @prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
@@ -31,7 +31,7 @@ ogit.Utilities:ControlCenter
         ogit.Utilities:center_name
     );
     ogit:allowed (
-        [ ogit.Utilities:supervises  ogit.Utilities.Electricity.Markets:ControlArea ]
+        [ ogit.Utilities:supervises  ogit.Utilities.Electricity:ControlArea ]
         [ ogit.Utilities:operatedBy  ogit.Utilities:NetworkOperator ]
     );
 .

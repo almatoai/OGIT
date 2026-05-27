@@ -1,0 +1,40 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity:BiddingZone
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "BiddingZone";
+    dcterms:description "ENTSO-E bidding zone. Not a CIM-EQ class but ubiquitous in market operations. Examples: DE-LU, FR, IT-N, IT-CN, IT-CS, IT-S, NO1-NO5, SE1-SE4, NL, BE, AT. Carries the EIC identifier, the validity window (zones change boundaries over time), and the imbalance settlement period.";
+    dcterms:valid "start=2026-05-27;";
+    dcterms:creator "chris.boos@almato.com";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity:zone_name
+        ogit.Utilities.Electricity:zone_eic
+        ogit.Utilities:valid_from
+    );
+    ogit:optional-attributes (
+        ogit.Utilities:valid_until
+        ogit.Utilities.Electricity:currency_iso
+        ogit.Utilities:time_zone
+        ogit.Utilities.Electricity:coupling_group_ref
+        ogit.Utilities.Electricity:imbalance_settlement_period_min
+        ogit.Utilities.Electricity:regulatory_authority_ref
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity:zone_eic
+        ogit.Utilities.Electricity:zone_name
+    );
+    ogit:allowed (
+        [ ogit.Utilities.Electricity:coveredBy  ogit.Utilities.Electricity:ControlArea ]
+        [ ogit.Utilities.Electricity:coupledTo  ogit.Utilities.Electricity:BiddingZone ]
+    );
+.

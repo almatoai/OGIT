@@ -1,0 +1,35 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity:ConformLoad
+    a rdfs:Class;
+    rdfs:subClassOf ogit.Utilities.Electricity:EnergyConsumer;
+    rdfs:label "ConformLoad";
+    dcterms:description "CIM cim:ConformLoad. EnergyConsumer whose consumption follows a standard load curve, scaled by a per-load factor. Used in load-flow models for aggregate residential and commercial demand.";
+    dcterms:valid "start=2026-05-27;";
+    dcterms:creator "chris.boos@almato.com";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity:mrid
+        ogit:name
+        ogit.Utilities.Electricity:nominal_p_mw
+    );
+    ogit:optional-attributes (
+        ogit.Utilities.Electricity:load_group_ref
+        ogit.Utilities.Electricity:p_fixed_mw
+        ogit.Utilities.Electricity:q_fixed_mvar
+        ogit.Utilities.Electricity:scaling_factor
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity:mrid
+    );
+    ogit:allowed (
+
+    );
+.

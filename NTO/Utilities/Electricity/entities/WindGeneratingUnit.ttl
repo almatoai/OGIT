@@ -1,0 +1,45 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity:WindGeneratingUnit
+    a rdfs:Class;
+    rdfs:subClassOf ogit.Utilities.Electricity:GeneratingUnit;
+    rdfs:label "WindGeneratingUnit";
+    dcterms:description "CIM cim:WindGeneratingUnit. Onshore, offshore-fixed, offshore-floating. Adds turbine count, rotor and hub geometry, cut-in / cut-out / rated wind speeds, and offshore-specific parameters (water body, depth, foundation type, connection technology).";
+    dcterms:valid "start=2026-05-27;";
+    dcterms:creator "chris.boos@almato.com";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity:mrid
+        ogit:name
+        ogit.Utilities.Electricity:rated_p_mw
+        ogit.Utilities.Electricity:min_operating_p_mw
+        ogit.Utilities.Electricity:max_operating_p_mw
+        ogit.Utilities.Electricity:wind_kind
+    );
+    ogit:optional-attributes (
+        ogit.Utilities.Electricity:turbine_count
+        ogit.Utilities.Electricity:turbine_model
+        ogit.Utilities.Electricity:rotor_diameter_m
+        ogit.Utilities.Electricity:hub_height_m
+        ogit.Utilities.Electricity:cut_in_speed_ms
+        ogit.Utilities.Electricity:cut_out_speed_ms
+        ogit.Utilities.Electricity:rated_speed_ms
+        ogit.Utilities.Electricity:water_body
+        ogit.Utilities.Electricity:water_depth_m
+        ogit.Utilities.Electricity:foundation_type
+        ogit.Utilities.Electricity:connection_type
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity:mrid
+    );
+    ogit:allowed (
+
+    );
+.

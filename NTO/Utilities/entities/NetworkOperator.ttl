@@ -2,7 +2,6 @@
 @prefix ogit:                                      <http://www.purl.org/ogit/> .
 @prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
 @prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
-@prefix ogit.Utilities.Electricity.Markets:        <http://www.purl.org/ogit/Utilities/Electricity/Markets/> .
 @prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
@@ -38,7 +37,7 @@ ogit.Utilities:NetworkOperator
     );
     ogit:allowed (
         [ ogit.Utilities:operates  ogit.Utilities.Electricity:PowerPlant ]
-        [ ogit.Utilities:responsibleFor  ogit.Utilities.Electricity.Markets:ControlArea ]
-        [ ogit.Utilities:memberOf  ogit.Utilities.Electricity.Markets:SynchronousArea ]
+        [ ogit.Utilities:responsibleFor  ogit.Utilities.Electricity:ControlArea ]
+        [ ogit.Utilities:memberOf  ogit.Utilities.Electricity:SynchronousArea ]
     );
 .

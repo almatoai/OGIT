@@ -1,0 +1,41 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity:EnergyConsumer
+    a rdfs:Class;
+    rdfs:subClassOf ogit.Utilities.Electricity:PowerSystemResource;
+    rdfs:label "EnergyConsumer";
+    dcterms:description "CIM cim:EnergyConsumer -- generic load class. Industrial, commercial, residential, traction, electrolysis, pumped-storage charge. Time-variant load lives on a sgo:Timeseries attached via generates.";
+    dcterms:valid "start=2026-05-27;";
+    dcterms:creator "chris.boos@almato.com";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity:mrid
+        ogit:name
+        ogit.Utilities.Electricity:nominal_p_mw
+    );
+    ogit:optional-attributes (
+        ogit.Utilities.Electricity:nominal_q_mvar
+        ogit.Utilities.Electricity:consumer_kind
+        ogit.Utilities.Electricity:dispatchable
+        ogit.Utilities.Electricity:interruptible
+        ogit.Utilities.Electricity:load_profile_ref
+        ogit.Utilities.Electricity:connection_voltage_kv
+        ogit.Utilities.Electricity:customer_count
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity:mrid
+    );
+    ogit:allowed (
+        [ ogit.Utilities.Electricity:consumes  ogit.Utilities:EnergyCarrier ]
+        [ ogit.Utilities.Electricity:subscribesTo  ogit.Utilities:Schedule ]
+        [ ogit.Utilities.Electricity:generates  sgo:Timeseries ]
+    );
+.

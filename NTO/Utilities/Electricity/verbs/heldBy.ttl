@@ -1,14 +1,15 @@
-@prefix ogit:                          <http://www.purl.org/ogit/> .
-@prefix ogit.Utilities.Electricity:    <http://www.purl.org/ogit/Utilities/Electricity/> .
-@prefix owl:                           <http://www.w3.org/2002/07/owl#> .
-@prefix rdfs:                          <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix dcterms:                       <http://purl.org/dc/terms/> .
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
 
 ogit.Utilities.Electricity:heldBy
     a owl:ObjectProperty;
     rdfs:subPropertyOf ogit:Verb;
     rdfs:label "heldBy";
-    dcterms:description "Reifies the ownership counter-party relation: an OwnershipShare is held by an organisation (NetworkOperator or generic sgo:Organization). Cardinality many2one. Used by reified OwnershipShare. See concept Section 8.1.";
+    dcterms:description "Reifies the counter-party side of an ownership relation: an OwnershipShare is held by an Organization (NetworkOperator or generic sgo:Organization). Cardinality: many2one.";
     dcterms:valid "start=2026-05-27;";
     dcterms:creator "chris.boos@almato.com";
 .

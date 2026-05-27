@@ -1,0 +1,35 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity:LFCArea
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "LFCArea";
+    dcterms:description "CIM cim:LfcArea. Load-frequency-control area. Finer than SynchronousArea, coarser-than-or-equal to ControlArea. Used in the ENTSO-E NC SO Article 141 grouping for AGC purposes.";
+    dcterms:valid "start=2026-05-27;";
+    dcterms:creator "chris.boos@almato.com";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity:area_name
+        ogit.Utilities.Electricity:area_eic
+    );
+    ogit:optional-attributes (
+        ogit.Utilities.Electricity:parent_synchronous_area_ref
+        ogit.Utilities.Electricity:member_control_area_refs
+        ogit.Utilities.Electricity:ace_open_loop_gain
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity:area_eic
+    );
+    ogit:allowed (
+        [ ogit.Utilities.Electricity:partOf  ogit.Utilities.Electricity:SynchronousArea ]
+        [ ogit.Utilities.Electricity:partOf  ogit.Utilities.Electricity:LFCBlock ]
+        [ ogit.Utilities.Electricity:consistsOf  ogit.Utilities.Electricity:ControlArea ]
+    );
+.

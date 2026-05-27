@@ -1,0 +1,45 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity:EnergyStorage
+    a rdfs:Class;
+    rdfs:subClassOf ogit.Utilities.Electricity:PowerSystemResource;
+    rdfs:label "EnergyStorage";
+    dcterms:description "CIM cim:EnergyStorage. Lithium-ion batteries (BESS), flow batteries, pumped hydro (when modelled as black-box storage), compressed air, flywheel, thermal, hydrogen, gravity. State of charge is time-variant and lives only on a sgo:Timeseries via generates -- not as a vertex attribute.";
+    dcterms:valid "start=2026-05-27;";
+    dcterms:creator "chris.boos@almato.com";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity:mrid
+        ogit:name
+        ogit.Utilities.Electricity:storage_kind
+    );
+    ogit:optional-attributes (
+        ogit.Utilities.Electricity:rated_p_mw
+        ogit.Utilities.Electricity:rated_e_mwh
+        ogit.Utilities.Electricity:round_trip_efficiency
+        ogit.Utilities.Electricity:min_soc_percent
+        ogit.Utilities.Electricity:max_soc_percent
+        ogit.Utilities.Electricity:cycle_count
+        ogit.Utilities.Electricity:calendar_life_years
+        ogit.Utilities.Electricity:c_rate
+        ogit.Utilities.Electricity:connection_voltage_kv
+        ogit.Utilities:commissioning_year
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity:mrid
+    );
+    ogit:allowed (
+        [ ogit.Utilities.Electricity:generates  sgo:Timeseries ]
+        [ ogit.Utilities.Electricity:storesEnergy  ogit.Utilities:EnergyCarrier ]
+        [ ogit.Utilities.Electricity:partOf  ogit.Utilities.Electricity:PowerPlant ]
+        [ ogit.Utilities.Electricity:operatedBy  ogit.Utilities:NetworkOperator ]
+    );
+.

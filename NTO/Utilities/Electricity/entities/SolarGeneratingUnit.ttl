@@ -1,0 +1,43 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity:SolarGeneratingUnit
+    a rdfs:Class;
+    rdfs:subClassOf ogit.Utilities.Electricity:GeneratingUnit;
+    rdfs:label "SolarGeneratingUnit";
+    dcterms:description "CIM cim:SolarGeneratingUnit. PV (rooftop, ground-mount, floating, agri-PV) and CSP. Adds panel technology, tracking kind, geometric orientation, DC-to-AC ratio, inverter and panel counts, plus CSP-specific storage parameters.";
+    dcterms:valid "start=2026-05-27;";
+    dcterms:creator "chris.boos@almato.com";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity:mrid
+        ogit:name
+        ogit.Utilities.Electricity:rated_p_mw
+        ogit.Utilities.Electricity:min_operating_p_mw
+        ogit.Utilities.Electricity:max_operating_p_mw
+        ogit.Utilities.Electricity:pv_kind
+    );
+    ogit:optional-attributes (
+        ogit.Utilities.Electricity:panel_technology
+        ogit.Utilities.Electricity:tracking_kind
+        ogit.Utilities.Electricity:tilt_angle_deg
+        ogit.Utilities.Electricity:azimuth_deg
+        ogit.Utilities.Electricity:dc_to_ac_ratio
+        ogit.Utilities.Electricity:inverter_count
+        ogit.Utilities.Electricity:panel_count
+        ogit.Utilities.Electricity:csp_technology
+        ogit.Utilities.Electricity:csp_storage_h
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity:mrid
+    );
+    ogit:allowed (
+
+    );
+.

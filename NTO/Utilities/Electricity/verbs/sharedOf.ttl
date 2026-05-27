@@ -1,14 +1,15 @@
-@prefix ogit:                          <http://www.purl.org/ogit/> .
-@prefix ogit.Utilities.Electricity:    <http://www.purl.org/ogit/Utilities/Electricity/> .
-@prefix owl:                           <http://www.w3.org/2002/07/owl#> .
-@prefix rdfs:                          <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix dcterms:                       <http://purl.org/dc/terms/> .
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
 
 ogit.Utilities.Electricity:sharedOf
     a owl:ObjectProperty;
     rdfs:subPropertyOf ogit:Verb;
     rdfs:label "sharedOf";
-    dcterms:description "Reifies the ownership relation: an OwnershipShare points (via sharedOf) at the physical asset whose ownership the share fraction describes. Cardinality many2one: many OwnershipShares may point at one asset; each OwnershipShare points at exactly one asset. See concept Section 8.1 (reified relations).";
+    dcterms:description "Reifies the asset side of an ownership relation: an OwnershipShare points (via sharedOf) at the physical asset whose ownership the share fraction describes. Cardinality: many2one.";
     dcterms:valid "start=2026-05-27;";
     dcterms:creator "chris.boos@almato.com";
 .

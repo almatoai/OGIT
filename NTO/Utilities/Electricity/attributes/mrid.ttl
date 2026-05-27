@@ -1,8 +1,9 @@
-@prefix ogit:                          <http://www.purl.org/ogit/> .
-@prefix ogit.Utilities.Electricity:    <http://www.purl.org/ogit/Utilities/Electricity/> .
-@prefix owl:                           <http://www.w3.org/2002/07/owl#> .
-@prefix rdfs:                          <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix dcterms:                       <http://purl.org/dc/terms/> .
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
 
 ogit.Utilities.Electricity:mrid
     a owl:DatatypeProperty;

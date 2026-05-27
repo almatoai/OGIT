@@ -1,0 +1,41 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity:Interconnector
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "Interconnector";
+    dcterms:description "Cross-border physical connection between two ControlAreas. Either AC (multiple parallel ACLineSegments) or HVDC (one bipole). Aggregate above the equipment level. Shared ownership and operation are modelled via reified OwnershipShare on the Interconnector vertex (concept Section 8.1).";
+    dcterms:valid "start=2026-05-27;";
+    dcterms:creator "chris.boos@almato.com";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity:interconnector_name
+        ogit.Utilities.Electricity:interconnector_id
+        ogit.Utilities.Electricity:endpoint_a_control_area_ref
+        ogit.Utilities.Electricity:endpoint_b_control_area_ref
+        ogit.Utilities.Electricity:technology
+    );
+    ogit:optional-attributes (
+        ogit.Utilities.Electricity:rated_p_mw
+        ogit.Utilities.Electricity:length_km
+        ogit.Utilities:commissioning_year
+        ogit.Utilities.Electricity:decommissioning_year
+        ogit.Utilities.Electricity:routing_country_iso2_list
+        ogit.Utilities.Electricity:submarine
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity:interconnector_id
+    );
+    ogit:allowed (
+        [ ogit.Utilities.Electricity:connects  ogit.Utilities.Electricity:ControlArea ]
+        [ ogit.Utilities.Electricity:transports  ogit.Utilities:EnergyCarrier ]
+    );
+.
