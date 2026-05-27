@@ -31,6 +31,7 @@ ogit.Auth:Application
 	    ogit.Auth:allowedTypes
 	    ogit.Auth.Application:type
 		ogit.Auth.Application:category
+		ogit.Auth.Application:tags
 	    ogit.Auth.Application:status
 	    ogit.Auth.Application:parent
 	    ogit.Auth.Application:urls
