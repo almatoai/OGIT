@@ -1,0 +1,40 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix ogit.Utilities.Electricity.Dynamics:       <http://www.purl.org/ogit/Utilities/Electricity/Dynamics/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity.Dynamics:WindGeneratorDynamics
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "WindGeneratorDynamics";
+    dcterms:description "Wind-generator dynamic model per IEC 61400-27-1 (Type 1/2/3/4). Decomposed into aerodynamic, mechanical, electrical, protection, and control sub-models referenced by id.";
+    dcterms:valid "start=2026-05-28;";
+    dcterms:creator "chris.boos@almato.com";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity:mrid
+        ogit:name
+        ogit.Utilities:subject_ref
+        ogit.Utilities.Electricity.Dynamics:iec_type
+    );
+    ogit:optional-attributes (
+        ogit.Utilities.Electricity.Dynamics:aerodynamic_model_ref
+        ogit.Utilities.Electricity.Dynamics:mechanical_model_ref
+        ogit.Utilities.Electricity.Dynamics:electrical_model_ref
+        ogit.Utilities.Electricity.Dynamics:protection_model_ref
+        ogit.Utilities.Electricity.Dynamics:control_model_ref
+        ogit.Utilities.Electricity.Dynamics:parameter_payload
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity:mrid
+    );
+    ogit:allowed (
+        [ ogit.Utilities.Electricity.Dynamics:models  ogit.Utilities.Electricity:WindGeneratingUnit ]
+    );
+.

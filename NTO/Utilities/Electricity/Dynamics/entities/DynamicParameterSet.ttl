@@ -1,0 +1,40 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
+@prefix ogit.Utilities.Electricity.Dynamics:       <http://www.purl.org/ogit/Utilities/Electricity/Dynamics/> .
+@prefix ogit.Utilities.Emissions:                  <http://www.purl.org/ogit/Utilities/Emissions/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity.Dynamics:DynamicParameterSet
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "DynamicParameterSet";
+    dcterms:description "Parameter-set version snapshot used for change-tracking on a dynamic model.";
+    dcterms:valid "start=2026-05-28;";
+    dcterms:creator "chris.boos@almato.com";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity.Dynamics:parameter_set_id
+        ogit:name
+        ogit.Utilities.Electricity.Dynamics:target_model_ref
+        ogit.Utilities:valid_from
+    );
+    ogit:optional-attributes (
+        ogit.Utilities:valid_until
+        ogit.Utilities.Electricity.Dynamics:parameter_payload
+        ogit.Utilities.Emissions:source_publication
+        ogit.Utilities.Electricity.Dynamics:verified_against_test_ref
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity.Dynamics:parameter_set_id
+    );
+    ogit:allowed (
+        [ ogit.Utilities.Electricity.Dynamics:appliesTo  ogit.Utilities.Electricity.Dynamics:SynchronousMachineDynamics ]
+        [ ogit.Utilities.Electricity.Dynamics:appliesTo  ogit.Utilities.Electricity.Dynamics:ExcitationSystemDynamics ]
+        [ ogit.Utilities.Electricity.Dynamics:appliesTo  ogit.Utilities.Electricity.Dynamics:TurbineGovernorDynamics ]
+    );
+.

@@ -1,0 +1,15 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities.Electricity.Telecontrol:    <http://www.purl.org/ogit/Utilities/Electricity/Telecontrol/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+ogit.Utilities.Electricity.Telecontrol:command_kind
+    a owl:DatatypeProperty;
+    rdfs:subPropertyOf ogit:Attribute;
+    rdfs:label "command_kind";
+    dcterms:description "File-transfer ASDU kind: file_ready, section_ready, call_directory, last_section, ack_file, segment, directory.";
+    dcterms:valid "start=2026-05-28;";
+    dcterms:creator "chris.boos@almato.com";
+.

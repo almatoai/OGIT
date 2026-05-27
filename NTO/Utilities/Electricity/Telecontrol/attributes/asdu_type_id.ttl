@@ -1,0 +1,15 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities.Electricity.Telecontrol:    <http://www.purl.org/ogit/Utilities/Electricity/Telecontrol/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+ogit.Utilities.Electricity.Telecontrol:asdu_type_id
+    a owl:DatatypeProperty;
+    rdfs:subPropertyOf ogit:Attribute;
+    rdfs:label "asdu_type_id";
+    dcterms:description "IEC 60870-5 ASDU type identification (1, 3, 5, 9, 11, 13, 15, 17, 20, 21, 30 etc.). See concept Section 4.8 for the full enumeration.";
+    dcterms:valid "start=2026-05-28;";
+    dcterms:creator "chris.boos@almato.com";
+.

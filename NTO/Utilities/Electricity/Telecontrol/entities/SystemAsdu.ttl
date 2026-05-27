@@ -1,0 +1,36 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities.Electricity.Telecontrol:    <http://www.purl.org/ogit/Utilities/Electricity/Telecontrol/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity.Telecontrol:SystemAsdu
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "SystemAsdu";
+    dcterms:description "ABSTRACT: Abstract parent of the typed system-direction service primitives (ASDU 70 + 100-107). System ASDUs target the ProtocolEndpoint, not a point, and have no per-sample value semantics. The actual events (instances) are TSDB entries on the ProtocolEndpoint.";
+    dcterms:valid "start=2026-05-28;";
+    dcterms:creator "chris.boos@almato.com";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity.Telecontrol:asdu_id
+        ogit.Utilities.Electricity.Telecontrol:endpoint_ref
+        ogit.Utilities.Electricity.Telecontrol:asdu_type_id
+    );
+    ogit:optional-attributes (
+        ogit.Utilities.Electricity.Telecontrol:cot_size_octets
+        ogit.Utilities.Electricity.Telecontrol:cot_value
+        ogit.Utilities.Electricity.Telecontrol:qoi_value
+        ogit.Utilities.Electricity.Telecontrol:qcc
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity.Telecontrol:asdu_id
+    );
+    ogit:allowed (
+        [ ogit.Utilities.Electricity.Telecontrol:addressedAt  ogit.Utilities.Electricity.Telecontrol:ProtocolEndpoint ]
+        [ ogit.Utilities.Electricity.Telecontrol:generates  sgo:Timeseries ]
+    );
+.

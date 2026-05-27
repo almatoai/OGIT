@@ -1,0 +1,40 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix ogit.Utilities.Electricity.Telecontrol.InterControlCenter: <http://www.purl.org/ogit/Utilities/Electricity/Telecontrol/InterControlCenter/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity.Telecontrol.InterControlCenter:TaseProgram
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "TaseProgram";
+    dcterms:description "TASE.2 Block 6 Program Object. Server-side program that the controlling station can request to start, stop, suspend, or resume on the controlled station.";
+    dcterms:valid "start=2026-05-28;";
+    dcterms:creator "chris.boos@almato.com";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:program_id
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:parent_table_ref
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:program_name
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:program_state
+    );
+    ogit:optional-attributes (
+        ogit.Utilities.Electricity:description_text
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:last_started_at
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:last_stopped_at
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:program_argument_payload_ref
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:program_id
+    );
+    ogit:allowed (
+        [ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:partOf  ogit.Utilities.Electricity.Telecontrol.InterControlCenter:BilateralTable ]
+        [ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:runsOn  ogit.Utilities:ControlCenter ]
+        [ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:generates  sgo:Timeseries ]
+    );
+.

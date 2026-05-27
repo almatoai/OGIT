@@ -1,0 +1,38 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix ogit.Utilities.Electricity.Dynamics:       <http://www.purl.org/ogit/Utilities/Electricity/Dynamics/> .
+@prefix ogit.Utilities.Electricity.Grid:           <http://www.purl.org/ogit/Utilities/Electricity/Grid/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity.Dynamics:EmtModel
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "EmtModel";
+    dcterms:description "Electromagnetic-transient detail model.";
+    dcterms:valid "start=2026-05-28;";
+    dcterms:creator "chris.boos@almato.com";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity.Dynamics:model_id
+        ogit:name
+        ogit.Utilities.Electricity.Dynamics:target_equipment_ref
+        ogit.Utilities.Electricity.Dynamics:tool_format
+    );
+    ogit:optional-attributes (
+        ogit.Utilities.Electricity.Dynamics:time_step_us
+        ogit.Utilities:valid_from
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity.Dynamics:model_id
+    );
+    ogit:allowed (
+        [ ogit.Utilities.Electricity.Dynamics:models  ogit.Utilities.Electricity.Grid:ACLineSegment ]
+        [ ogit.Utilities.Electricity.Dynamics:models  ogit.Utilities.Electricity:GeneratingUnit ]
+    );
+.

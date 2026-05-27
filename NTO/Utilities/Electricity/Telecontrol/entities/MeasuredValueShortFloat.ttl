@@ -1,0 +1,36 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities.Electricity.Telecontrol:    <http://www.purl.org/ogit/Utilities/Electricity/Telecontrol/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity.Telecontrol:MeasuredValueShortFloat
+    a rdfs:Class;
+    rdfs:subClassOf ogit.Utilities.Electricity.Telecontrol:DataPoint;
+    rdfs:label "MeasuredValueShortFloat";
+    dcterms:description "IEC 60870-5-101/104 ASDU 13, 14, 36. IEEE-754 single-precision float.";
+    dcterms:valid "start=2026-05-28;";
+    dcterms:creator "chris.boos@almato.com";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity.Telecontrol:point_id
+        ogit.Utilities.Electricity.Telecontrol:endpoint_ref
+        ogit.Utilities.Electricity.Telecontrol:common_address
+        ogit.Utilities.Electricity.Telecontrol:information_object_address
+        ogit.Utilities.Electricity.Telecontrol:asdu_type_id
+        ogit.Utilities.Electricity.Telecontrol:point_direction
+        ogit.Utilities.Electricity.Telecontrol:protocol_unit
+    );
+    ogit:optional-attributes (
+
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity.Telecontrol:point_id
+    );
+    ogit:allowed (
+        [ ogit.Utilities.Electricity.Telecontrol:generates  sgo:Timeseries ]
+    );
+.

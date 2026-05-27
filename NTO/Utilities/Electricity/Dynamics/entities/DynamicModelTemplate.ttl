@@ -1,0 +1,36 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities.Electricity.Dynamics:       <http://www.purl.org/ogit/Utilities/Electricity/Dynamics/> .
+@prefix ogit.Utilities.Electricity.Grid:           <http://www.purl.org/ogit/Utilities/Electricity/Grid/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity.Dynamics:DynamicModelTemplate
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "DynamicModelTemplate";
+    dcterms:description "Collection of dynamic-model parameter sets typified by manufacturer / model. Reusable across many machines.";
+    dcterms:valid "start=2026-05-28;";
+    dcterms:creator "chris.boos@almato.com";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity.Dynamics:template_id
+        ogit:name
+        ogit.Utilities.Electricity.Dynamics:model_kind
+        ogit.Utilities.Electricity.Dynamics:parameter_payload
+    );
+    ogit:optional-attributes (
+        ogit.Utilities.Electricity.Grid:manufacturer
+        ogit.Utilities.Electricity.Dynamics:tase_version
+        ogit.Utilities.Electricity.Dynamics:documentation_url
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity.Dynamics:template_id
+    );
+    ogit:allowed (
+        [ ogit.Utilities.Electricity.Dynamics:appliedTo  ogit.Utilities.Electricity.Dynamics:SynchronousMachineDynamics ]
+    );
+.

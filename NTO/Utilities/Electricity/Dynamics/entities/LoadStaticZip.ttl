@@ -1,0 +1,41 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix ogit.Utilities.Electricity.Dynamics:       <http://www.purl.org/ogit/Utilities/Electricity/Dynamics/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity.Dynamics:LoadStaticZip
+    a rdfs:Class;
+    rdfs:subClassOf ogit.Utilities.Electricity.Dynamics:LoadDynamics;
+    rdfs:label "LoadStaticZip";
+    dcterms:description "ZIP composite static load model: P = Pz V^2 + Pi V + Pp, analog for Q.";
+    dcterms:valid "start=2026-05-28;";
+    dcterms:creator "chris.boos@almato.com";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity:mrid
+        ogit:name
+        ogit.Utilities:subject_ref
+        ogit.Utilities.Electricity.Dynamics:model_kind
+        ogit.Utilities.Electricity.Dynamics:p_z
+        ogit.Utilities.Electricity.Dynamics:p_i
+        ogit.Utilities.Electricity.Dynamics:p_p
+        ogit.Utilities.Electricity.Dynamics:q_z
+        ogit.Utilities.Electricity.Dynamics:q_i
+        ogit.Utilities.Electricity.Dynamics:q_p
+    );
+    ogit:optional-attributes (
+
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity:mrid
+    );
+    ogit:allowed (
+
+    );
+.

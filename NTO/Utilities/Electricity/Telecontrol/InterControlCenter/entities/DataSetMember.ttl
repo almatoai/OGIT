@@ -1,0 +1,37 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities.Electricity.Telecontrol.InterControlCenter: <http://www.purl.org/ogit/Utilities/Electricity/Telecontrol/InterControlCenter/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity.Telecontrol.InterControlCenter:DataSetMember
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "DataSetMember";
+    dcterms:description "TASE.2 DataSet member entry.";
+    dcterms:valid "start=2026-05-28;";
+    dcterms:creator "chris.boos@almato.com";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:tase_member_id
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:parent_dataset_ref
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:tase_member_position
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:referenced_point_ref
+    );
+    ogit:optional-attributes (
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:tase_member_type
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:tase_member_id
+    );
+    ogit:allowed (
+        [ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:partOf  ogit.Utilities.Electricity.Telecontrol.InterControlCenter:DataSet ]
+        [ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:references  ogit.Utilities.Electricity.Telecontrol.InterControlCenter:IndicationPoint ]
+        [ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:references  ogit.Utilities.Electricity.Telecontrol.InterControlCenter:TaseProtectionEquipment ]
+        [ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:references  ogit.Utilities.Electricity.Telecontrol.InterControlCenter:DeviceTag ]
+        [ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:references  ogit.Utilities.Electricity.Telecontrol.InterControlCenter:ConditionVariable ]
+    );
+.
