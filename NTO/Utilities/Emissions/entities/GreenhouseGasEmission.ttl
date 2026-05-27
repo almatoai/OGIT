@@ -1,0 +1,48 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix ogit.Utilities.Emissions:                  <http://www.purl.org/ogit/Utilities/Emissions/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Emissions:GreenhouseGasEmission
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "GreenhouseGasEmission";
+    dcterms:description "One emission record linking an emitter (Equipment / Plant / Vehicle) to a quantity of greenhouse gas over a reporting period. Reported under IPCC Tier 1/2/3, GHG Protocol, EU ETS, or a regional standard.";
+    dcterms:valid "start=2026-05-27;";
+    dcterms:creator "chris.boos@almato.com";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Emissions:emission_id
+        ogit.Utilities.Emissions:emission_substance
+        ogit.Utilities.Emissions:emission_quantity_kg
+        ogit.Utilities.Emissions:period_start
+        ogit.Utilities.Emissions:period_end
+        ogit.Utilities:domain
+    );
+    ogit:optional-attributes (
+        ogit.Utilities.Emissions:emission_scope
+        ogit.Utilities.Emissions:reporting_methodology
+        ogit.Utilities.Emissions:measurement_method
+        ogit.Utilities.Emissions:confidence_class
+        ogit.Utilities.Emissions:verified_by
+        ogit.Utilities.Emissions:reporting_obligation_ref
+        ogit:source
+        ogit:sourceId
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Emissions:emission_id
+    );
+    ogit:allowed (
+        [ ogit.Utilities.Emissions:emittedBy  ogit.Utilities.Electricity:GeneratingUnit ]
+        [ ogit.Utilities.Emissions:emittedBy  ogit.Utilities.Electricity:PowerPlant ]
+        [ ogit.Utilities.Emissions:emittedBy  ogit.Utilities:ConversionUnit ]
+        [ ogit.Utilities.Emissions:reportedTo  ogit.Utilities:NetworkOperator ]
+        [ ogit.Utilities.Emissions:bookedAgainst  ogit.Utilities.Emissions:EmissionInventory ]
+    );
+.

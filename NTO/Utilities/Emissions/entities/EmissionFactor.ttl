@@ -1,0 +1,42 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix ogit.Utilities.Emissions:                  <http://www.purl.org/ogit/Utilities/Emissions/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Emissions:EmissionFactor
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "EmissionFactor";
+    dcterms:description "Per-technology and per-fuel emission factor in kgCO2eq per kWh, per m3, or per GJ. Used by emission calculations when direct measurement is not available. Sources: IPCC AR6, JRC, country-specific inventories.";
+    dcterms:valid "start=2026-05-27;";
+    dcterms:creator "chris.boos@almato.com";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Emissions:factor_id
+        ogit.Utilities.Emissions:technology_class
+        ogit.Utilities.Emissions:carrier_ref
+        ogit.Utilities.Emissions:factor_value
+        ogit.Utilities.Emissions:factor_unit_numerator
+        ogit.Utilities.Emissions:factor_unit_denominator
+    );
+    ogit:optional-attributes (
+        ogit.Utilities.Emissions:lifecycle_scope
+        ogit.Utilities.Emissions:source_publication
+        ogit.Utilities:valid_from
+        ogit.Utilities:valid_until
+        ogit.Utilities.Emissions:regional_scope
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Emissions:factor_id
+    );
+    ogit:allowed (
+        [ ogit.Utilities.Emissions:appliesTo  ogit.Utilities.Electricity:GeneratingUnit ]
+        [ ogit.Utilities.Emissions:appliesTo  ogit.Utilities.Electricity:EnergyConsumer ]
+    );
+.
