@@ -1,0 +1,37 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix ogit.Utilities.Electricity.Operations.Reserves: <http://www.purl.org/ogit/Utilities/Electricity/Operations/Reserves/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity.Operations.Reserves:BalancingServiceProvider
+    a rdfs:Class;
+    rdfs:subClassOf ogit.Utilities.Electricity:MarketParticipant;
+    rdfs:label "BalancingServiceProvider";
+    dcterms:description "NC EB Article 18. Market role: entity offering balancing services. Subtype of MarketParticipant; adds BSP-specific qualification metadata.";
+    dcterms:valid "start=2026-05-28;";
+    dcterms:creator "chris.boos@almato.com";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity:participant_name
+        ogit.Utilities.Electricity:participant_eic
+        ogit.Utilities.Electricity:role_kind
+    );
+    ogit:optional-attributes (
+        ogit.Utilities.Electricity.Operations.Reserves:bsp_id
+        ogit.Utilities.Electricity.Operations.Reserves:qualification_products
+        ogit.Utilities.Electricity.Operations.Reserves:qualification_control_areas
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity.Operations.Reserves:bsp_id
+        ogit.Utilities.Electricity:participant_eic
+    );
+    ogit:allowed (
+        [ ogit.Utilities.Electricity.Operations.Reserves:submits  ogit.Utilities.Electricity.Operations.Reserves:BalancingEnergyBid ]
+        [ ogit.Utilities.Electricity.Operations.Reserves:submits  ogit.Utilities.Electricity.Operations.Reserves:BalancingCapacityBid ]
+    );
+.

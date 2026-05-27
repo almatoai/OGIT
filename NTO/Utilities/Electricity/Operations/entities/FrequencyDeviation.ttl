@@ -1,0 +1,37 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix ogit.Utilities.Electricity.Operations:     <http://www.purl.org/ogit/Utilities/Electricity/Operations/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity.Operations:FrequencyDeviation
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "FrequencyDeviation";
+    dcterms:description "Signed deviation from nominal frequency, derived from SystemFrequency. Anchor + sgo:Timeseries.";
+    dcterms:valid "start=2026-05-28;";
+    dcterms:creator "chris.boos@almato.com";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity.Operations:deviation_id
+        ogit.Utilities.Electricity:synchronous_area_ref
+        ogit.Utilities.Electricity.Operations:dev_unit
+        ogit.Utilities:granularity_seconds
+    );
+    ogit:optional-attributes (
+        ogit.Utilities.Electricity.Operations:derived_from_frequency_ref
+        ogit.Utilities.Electricity.Operations:regulation_response_active
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity.Operations:deviation_id
+    );
+    ogit:allowed (
+        [ ogit.Utilities.Electricity.Operations:derivedFrom  ogit.Utilities.Electricity.Operations:SystemFrequency ]
+        [ ogit.Utilities.Electricity.Operations:generates  sgo:Timeseries ]
+    );
+.

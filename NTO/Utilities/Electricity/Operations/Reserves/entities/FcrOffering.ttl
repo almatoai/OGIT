@@ -1,0 +1,41 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities.Electricity.Market:         <http://www.purl.org/ogit/Utilities/Electricity/Market/> .
+@prefix ogit.Utilities.Electricity.Operations.Reserves: <http://www.purl.org/ogit/Utilities/Electricity/Operations/Reserves/> .
+@prefix ogit.Utilities.Emissions:                  <http://www.purl.org/ogit/Utilities/Emissions/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity.Operations.Reserves:FcrOffering
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "FcrOffering";
+    dcterms:description "NC EB Article 32. FCR (Frequency Containment Reserve) bid. One offering per period, capacity_mw and price.";
+    dcterms:valid "start=2026-05-28;";
+    dcterms:creator "chris.boos@almato.com";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity.Operations.Reserves:offering_id
+        ogit.Utilities.Electricity.Operations.Reserves:reserve_unit_ref
+        ogit.Utilities.Emissions:period_start
+        ogit.Utilities.Emissions:period_end
+        ogit.Utilities.Electricity.Operations.Reserves:capacity_mw
+        ogit.Utilities.Electricity.Operations.Reserves:price_eur_per_mw_per_period
+    );
+    ogit:optional-attributes (
+        ogit.Utilities.Electricity.Operations.Reserves:min_capacity_mw
+        ogit.Utilities.Electricity.Operations.Reserves:divisible
+        ogit.Utilities.Electricity.Operations.Reserves:awarded
+        ogit.Utilities.Electricity.Operations.Reserves:awarded_capacity_mw
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity.Operations.Reserves:offering_id
+    );
+    ogit:allowed (
+        [ ogit.Utilities.Electricity.Operations.Reserves:offeredFor  ogit.Utilities.Electricity.Operations.Reserves:ReserveUnit ]
+        [ ogit.Utilities.Electricity.Operations.Reserves:clearedIn  ogit.Utilities.Electricity.Market:Market ]
+    );
+.

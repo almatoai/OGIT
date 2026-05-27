@@ -1,0 +1,43 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix ogit.Utilities.Electricity.Market:         <http://www.purl.org/ogit/Utilities/Electricity/Market/> .
+@prefix ogit.Utilities.Electricity.Operations.Reserves: <http://www.purl.org/ogit/Utilities/Electricity/Operations/Reserves/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity.Operations.Reserves:ReserveUnit
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "ReserveUnit";
+    dcterms:description "NC EB. A registered resource that can offer one or more reserve products. ReserveUnit aggregates above the equipment level for market participation.";
+    dcterms:valid "start=2026-05-28;";
+    dcterms:creator "chris.boos@almato.com";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities:unit_id
+        ogit:name
+        ogit.Utilities.Electricity.Market:participant_ref
+        ogit.Utilities.Electricity:control_area_ref
+    );
+    ogit:optional-attributes (
+        ogit.Utilities.Electricity.Operations.Reserves:min_capacity_mw
+        ogit.Utilities.Electricity.Operations.Reserves:max_capacity_mw
+        ogit.Utilities.Electricity.Operations.Reserves:min_runtime_min
+        ogit.Utilities.Electricity.Operations.Reserves:min_downtime_min
+        ogit.Utilities.Electricity.Operations.Reserves:qualified_products
+        ogit.Utilities.Electricity.Operations.Reserves:qualification_date
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities:unit_id
+    );
+    ogit:allowed (
+        [ ogit.Utilities.Electricity.Operations.Reserves:operatedBy  ogit.Utilities.Electricity:MarketParticipant ]
+        [ ogit.Utilities.Electricity.Operations.Reserves:provides  ogit.Utilities.Electricity.Operations.Reserves:FcrOffering ]
+        [ ogit.Utilities.Electricity.Operations.Reserves:partOf  ogit.Utilities.Electricity:ControlArea ]
+    );
+.

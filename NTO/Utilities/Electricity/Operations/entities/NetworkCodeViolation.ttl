@@ -1,0 +1,41 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix ogit.Utilities.Electricity.Operations:     <http://www.purl.org/ogit/Utilities/Electricity/Operations/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity.Operations:NetworkCodeViolation
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "NetworkCodeViolation";
+    dcterms:description "NC SO. Recorded breach of a defined operational threshold.";
+    dcterms:valid "start=2026-05-28;";
+    dcterms:creator "chris.boos@almato.com";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity.Operations:violation_id
+        ogit.Utilities.Electricity.Operations:code_reference
+        ogit.Utilities:subject_ref
+        ogit.Utilities.Electricity.Operations:occurred_at
+        ogit.Utilities.Electricity.Operations:resolved_at
+    );
+    ogit:optional-attributes (
+        ogit.Utilities:severity
+        ogit.Utilities.Electricity.Operations:notification_status
+        ogit.Utilities.Electricity.Operations:reported_to_ref
+        ogit.Utilities.Electricity.Operations:root_cause
+        ogit.Utilities.Electricity.Operations:corrective_action_ref
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity.Operations:violation_id
+    );
+    ogit:allowed (
+        [ ogit.Utilities.Electricity.Operations:affects  ogit.Utilities.Electricity:ControlArea ]
+        [ ogit.Utilities.Electricity.Operations:reportedBy  ogit.Utilities:NetworkOperator ]
+    );
+.

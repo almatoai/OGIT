@@ -1,0 +1,39 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
+@prefix ogit.Utilities.Electricity.Operations:     <http://www.purl.org/ogit/Utilities/Electricity/Operations/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity.Operations:ContingencyAnalysis
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "ContingencyAnalysis";
+    dcterms:description "NC SO Article 33. The N-1 (or N-k) security study run on a snapshot. The pass/fail counts, risk metrics, and result summary live on a sgo:Timeseries attached via generates, not as a JSON payload on this vertex (Section 7a).";
+    dcterms:valid "start=2026-05-28;";
+    dcterms:creator "chris.boos@almato.com";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity.Operations:analysis_id
+        ogit.Utilities:subject_ref
+        ogit.Utilities.Electricity.Operations:snapshot_time
+        ogit.Utilities.Electricity.Operations:analysis_kind
+    );
+    ogit:optional-attributes (
+        ogit.Utilities.Electricity.Operations:tool_name
+        ogit.Utilities.Electricity.Operations:tool_version
+        ogit.Utilities.Electricity.Operations:compute_duration_s
+        ogit.Utilities.Electricity.Operations:triggered_by_kind
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity.Operations:analysis_id
+    );
+    ogit:allowed (
+        [ ogit.Utilities.Electricity.Operations:analyzes  ogit.Utilities.Electricity.Operations:ContingencyList ]
+        [ ogit.Utilities.Electricity.Operations:producedBy  ogit.Utilities:NetworkOperator ]
+        [ ogit.Utilities.Electricity.Operations:generates  sgo:Timeseries ]
+    );
+.

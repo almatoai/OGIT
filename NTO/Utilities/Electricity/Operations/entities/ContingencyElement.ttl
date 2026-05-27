@@ -1,0 +1,33 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities.Electricity.Operations:     <http://www.purl.org/ogit/Utilities/Electricity/Operations/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity.Operations:ContingencyElement
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "ContingencyElement";
+    dcterms:description "CIM cim:ContingencyElement. One equipment failure inside a Contingency definition.";
+    dcterms:valid "start=2026-05-28;";
+    dcterms:creator "chris.boos@almato.com";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity.Operations:element_id
+        ogit.Utilities.Electricity.Operations:parent_contingency_ref
+        ogit.Utilities.Electricity.Operations:equipment_ref
+        ogit.Utilities.Electricity.Operations:action
+    );
+    ogit:optional-attributes (
+        ogit.Utilities.Electricity.Operations:simultaneous_with_ref
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity.Operations:element_id
+    );
+    ogit:allowed (
+        [ ogit.Utilities.Electricity.Operations:partOf  ogit.Utilities.Electricity.Operations:Contingency ]
+    );
+.

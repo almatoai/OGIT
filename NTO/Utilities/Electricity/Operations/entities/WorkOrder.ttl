@@ -1,0 +1,44 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix ogit.Utilities.Electricity.Operations:     <http://www.purl.org/ogit/Utilities/Electricity/Operations/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity.Operations:WorkOrder
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "WorkOrder";
+    dcterms:description "Cross-domain maintenance / repair work order on equipment. Holds the work kind, scheduling window, the assigned team, and the cost rollup.";
+    dcterms:valid "start=2026-05-28;";
+    dcterms:creator "chris.boos@almato.com";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity.Operations:work_order_id
+        ogit.Utilities:subject_ref
+        ogit.Utilities.Electricity.Operations:work_kind
+        ogit:status
+    );
+    ogit:optional-attributes (
+        ogit.Utilities.Electricity.Operations:scheduled_start
+        ogit.Utilities.Electricity.Operations:scheduled_end
+        ogit.Utilities.Electricity.Operations:actual_start
+        ogit.Utilities.Electricity.Operations:actual_end
+        ogit.Utilities.Electricity.Operations:assigned_team_ref
+        ogit.Utilities.Electricity.Operations:parts_used_payload
+        ogit.Utilities.Electricity.Operations:total_cost
+        ogit.Utilities.Electricity.Operations:priority
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity.Operations:work_order_id
+    );
+    ogit:allowed (
+        [ ogit.Utilities.Electricity.Operations:appliesTo  ogit.Utilities.Electricity:PowerSystemResource ]
+        [ ogit.Utilities.Electricity.Operations:causes  ogit.Utilities.Electricity.Operations:PlannedOutage ]
+        [ ogit.Utilities.Electricity.Operations:causes  ogit.Utilities:Outage ]
+    );
+.

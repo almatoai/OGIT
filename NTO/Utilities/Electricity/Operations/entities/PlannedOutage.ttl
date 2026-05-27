@@ -1,0 +1,38 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix ogit.Utilities.Electricity.Operations:     <http://www.purl.org/ogit/Utilities/Electricity/Operations/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity.Operations:PlannedOutage
+    a rdfs:Class;
+    rdfs:subClassOf ogit.Utilities:Outage;
+    rdfs:label "PlannedOutage";
+    dcterms:description "Planned-outage variant of Utilities:Outage. Adds work-order reference, maintenance kind, notice given, and regulatory notification reference.";
+    dcterms:valid "start=2026-05-28;";
+    dcterms:creator "chris.boos@almato.com";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities:outage_id
+        ogit.Utilities:outage_kind
+        ogit.Utilities:start_time
+        ogit.Utilities:domain
+    );
+    ogit:optional-attributes (
+        ogit.Utilities.Electricity.Operations:work_order_ref
+        ogit.Utilities.Electricity.Operations:maintenance_kind
+        ogit.Utilities.Electricity.Operations:notice_given_days
+        ogit.Utilities.Electricity.Operations:regulatory_notification_ref
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities:outage_id
+    );
+    ogit:allowed (
+        [ ogit.Utilities.Electricity.Operations:affects  ogit.Utilities.Electricity:PowerSystemResource ]
+    );
+.

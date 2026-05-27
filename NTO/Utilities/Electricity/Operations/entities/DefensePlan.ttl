@@ -1,0 +1,42 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix ogit.Utilities.Electricity.Operations:     <http://www.purl.org/ogit/Utilities/Electricity/Operations/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity.Operations:DefensePlan
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "DefensePlan";
+    dcterms:description "NC ER Article 11. Pre-defined automatic action set to mitigate emergency states. The list of pre-defined actions is NOT a JSON payload on this vertex; individual actions are first-class SwitchAction vertices attached via consistsOf. Activation history rides on a sgo:Timeseries attached via generates.";
+    dcterms:valid "start=2026-05-28;";
+    dcterms:creator "chris.boos@almato.com";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity.Operations:plan_id
+        ogit:name
+        ogit.Utilities.Electricity.Operations:trigger_condition
+        ogit.Utilities.Electricity:synchronous_area_ref
+    );
+    ogit:optional-attributes (
+        ogit.Utilities.Electricity.Operations:last_test_date
+        ogit.Utilities.Electricity.Operations:last_activation_date
+        ogit.Utilities.Electricity.Operations:responsible_party_ref
+        ogit.Utilities:valid_from
+        ogit.Utilities:valid_until
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity.Operations:plan_id
+    );
+    ogit:allowed (
+        [ ogit.Utilities.Electricity.Operations:appliesTo  ogit.Utilities.Electricity:SynchronousArea ]
+        [ ogit.Utilities.Electricity.Operations:appliesTo  ogit.Utilities.Electricity:LFCBlock ]
+        [ ogit.Utilities.Electricity.Operations:consistsOf  ogit.Utilities.Electricity.Operations:SwitchAction ]
+        [ ogit.Utilities.Electricity.Operations:generates  sgo:Timeseries ]
+    );
+.

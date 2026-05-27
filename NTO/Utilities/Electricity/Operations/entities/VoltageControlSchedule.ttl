@@ -1,0 +1,38 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
+@prefix ogit.Utilities.Electricity.Grid:           <http://www.purl.org/ogit/Utilities/Electricity/Grid/> .
+@prefix ogit.Utilities.Electricity.Operations:     <http://www.purl.org/ogit/Utilities/Electricity/Operations/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity.Operations:VoltageControlSchedule
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "VoltageControlSchedule";
+    dcterms:description "CIM cim:VoltageControlZone-related. Per-zone voltage set-points across time. Anchor + sgo:Timeseries.";
+    dcterms:valid "start=2026-05-28;";
+    dcterms:creator "chris.boos@almato.com";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities:schedule_id
+        ogit.Utilities.Electricity.Operations:zone_ref
+        ogit.Utilities.Electricity.Operations:voltage_unit
+        ogit.Utilities:granularity_seconds
+    );
+    ogit:optional-attributes (
+        ogit.Utilities.Electricity.Operations:tolerance_kv
+        ogit.Utilities.Electricity.Operations:priority
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities:schedule_id
+    );
+    ogit:allowed (
+        [ ogit.Utilities.Electricity.Operations:appliesTo  ogit.Utilities.Electricity.Grid:VoltageLevel ]
+        [ ogit.Utilities.Electricity.Operations:appliesTo  ogit.Utilities.Electricity.Grid:Substation ]
+        [ ogit.Utilities.Electricity.Operations:generates  sgo:Timeseries ]
+    );
+.

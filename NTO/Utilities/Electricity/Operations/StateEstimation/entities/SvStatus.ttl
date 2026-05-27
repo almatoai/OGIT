@@ -1,0 +1,35 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix ogit.Utilities.Electricity.Grid:           <http://www.purl.org/ogit/Utilities/Electricity/Grid/> .
+@prefix ogit.Utilities.Electricity.Operations.StateEstimation: <http://www.purl.org/ogit/Utilities/Electricity/Operations/StateEstimation/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity.Operations.StateEstimation:SvStatus
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "SvStatus";
+    dcterms:description "CIM cim:SvStatus. SV-profile observed in/out-service status of conducting equipment.";
+    dcterms:valid "start=2026-05-28;";
+    dcterms:creator "chris.boos@almato.com";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity:mrid
+        ogit.Utilities.Electricity.Operations.StateEstimation:conducting_equipment_ref
+    );
+    ogit:optional-attributes (
+
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity:mrid
+    );
+    ogit:allowed (
+        [ ogit.Utilities.Electricity.Operations.StateEstimation:at  ogit.Utilities.Electricity.Grid:ACLineSegment ]
+        [ ogit.Utilities.Electricity.Operations.StateEstimation:at  ogit.Utilities.Electricity.Grid:Switch ]
+        [ ogit.Utilities.Electricity.Operations.StateEstimation:generates  sgo:Timeseries ]
+    );
+.
