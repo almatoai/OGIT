@@ -1,0 +1,35 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix ogit.Utilities.Electricity.Market:         <http://www.purl.org/ogit/Utilities/Electricity/Market/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity.Market:SchedulingArea
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "SchedulingArea";
+    dcterms:description "NC CACM scheduling scope. Often equals a ControlArea.";
+    dcterms:valid "start=2026-05-28;";
+    dcterms:creator "chris.boos@almato.com";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity.Market:area_id
+        ogit:name
+        ogit.Utilities.Electricity:control_area_ref
+    );
+    ogit:optional-attributes (
+
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity.Market:area_id
+    );
+    ogit:allowed (
+        [ ogit.Utilities.Electricity.Market:partOf  ogit.Utilities.Electricity:ControlArea ]
+        [ ogit.Utilities.Electricity.Market:governsSchedule  ogit.Utilities:Schedule ]
+    );
+.

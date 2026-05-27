@@ -1,0 +1,43 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities.Electricity.Grid:           <http://www.purl.org/ogit/Utilities/Electricity/Grid/> .
+@prefix ogit.Utilities.Electricity.Legacy:         <http://www.purl.org/ogit/Utilities/Electricity/Legacy/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity.Legacy:UcteThreeWindingTransformer
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "UcteThreeWindingTransformer";
+    dcterms:description "UCTE-DEF TT record. Three-winding transformer. Maps forward to a CGMES PowerTransformer with three PowerTransformerEnds and (in the star-equivalent representation) a TransformerStarImpedance.";
+    dcterms:valid "start=2026-05-28;";
+    dcterms:creator "chris.boos@almato.com";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity.Legacy:record_id
+        ogit.Utilities.Electricity.Legacy:node_a_ref
+        ogit.Utilities.Electricity.Legacy:node_b_ref
+        ogit.Utilities.Electricity.Legacy:node_c_ref
+        ogit.Utilities.Electricity.Legacy:order_code
+        ogit.Utilities.Electricity.Legacy:status_code
+    );
+    ogit:optional-attributes (
+        ogit.Utilities.Electricity.Legacy:nominal_u_a_kv
+        ogit.Utilities.Electricity.Legacy:nominal_u_b_kv
+        ogit.Utilities.Electricity.Legacy:nominal_u_c_kv
+        ogit.Utilities.Electricity.Legacy:nominal_power_mva
+        ogit.Utilities.Electricity.Grid:r_ohm
+        ogit.Utilities.Electricity.Grid:x_ohm
+        ogit.Utilities.Electricity.Legacy:b_microsiemens
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity.Legacy:record_id
+    );
+    ogit:allowed (
+        [ ogit.Utilities.Electricity.Legacy:mappedTo  ogit.Utilities.Electricity.Grid:PowerTransformer ]
+        [ ogit.Utilities.Electricity.Legacy:connects  ogit.Utilities.Electricity.Legacy:UcteNode ]
+    );
+.

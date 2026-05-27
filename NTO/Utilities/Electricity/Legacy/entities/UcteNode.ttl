@@ -1,0 +1,47 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix ogit.Utilities.Electricity.Grid:           <http://www.purl.org/ogit/Utilities/Electricity/Grid/> .
+@prefix ogit.Utilities.Electricity.Legacy:         <http://www.purl.org/ogit/Utilities/Electricity/Legacy/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity.Legacy:UcteNode
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "UcteNode";
+    dcterms:description "UCTE-DEF N record. One bus / node in the network. The 8-character node_code is the deterministic identifier used by all other UCTE records to refer to this node.";
+    dcterms:valid "start=2026-05-28;";
+    dcterms:creator "chris.boos@almato.com";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity.Legacy:record_id
+        ogit.Utilities.Electricity.Legacy:node_code
+        ogit.Utilities.Electricity.Legacy:ucte_country_code
+        ogit.Utilities.Electricity.Legacy:voltage_level_letter
+        ogit.Utilities.Electricity.Legacy:node_name
+        ogit.Utilities.Electricity.Legacy:node_kind
+    );
+    ogit:optional-attributes (
+        ogit.Utilities.Electricity.Grid:nominal_voltage_kv
+        ogit.Utilities.Electricity.Legacy:min_voltage_kv
+        ogit.Utilities.Electricity.Legacy:max_voltage_kv
+        ogit.Utilities.Electricity.Legacy:active_load_mw
+        ogit.Utilities.Electricity.Legacy:reactive_load_mvar
+        ogit.Utilities.Electricity.Legacy:active_generation_mw
+        ogit.Utilities.Electricity.Legacy:reactive_generation_mvar
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity.Legacy:record_id
+        ogit.Utilities.Electricity.Legacy:node_code
+    );
+    ogit:allowed (
+        [ ogit.Utilities.Electricity.Legacy:mappedTo  ogit.Utilities.Electricity.Grid:ConnectivityNode ]
+        [ ogit.Utilities.Electricity.Legacy:mappedTo  ogit.Utilities.Electricity.Grid:TopologicalNode ]
+        [ ogit.Utilities.Electricity.Legacy:mappedTo  ogit.Utilities.Electricity:EnergyConsumer ]
+        [ ogit.Utilities.Electricity.Legacy:mappedTo  ogit.Utilities.Electricity:GeneratingUnit ]
+    );
+.

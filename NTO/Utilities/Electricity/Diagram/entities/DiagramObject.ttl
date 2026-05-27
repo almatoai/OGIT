@@ -1,0 +1,36 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix ogit.Utilities.Electricity.Diagram:        <http://www.purl.org/ogit/Utilities/Electricity/Diagram/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity.Diagram:DiagramObject
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "DiagramObject";
+    dcterms:description "CIM cim:DiagramObject. One graphical entity in a diagram, with reference to the underlying PowerSystemResource.";
+    dcterms:valid "start=2026-05-28;";
+    dcterms:creator "chris.boos@almato.com";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity:mrid
+        ogit.Utilities.Electricity.Diagram:parent_diagram_ref
+        ogit.Utilities.Electricity.Diagram:psr_ref
+    );
+    ogit:optional-attributes (
+        ogit.Utilities.Electricity.Diagram:rotation_degrees
+        ogit.Utilities.Electricity.Diagram:style_ref
+        ogit.Utilities.Electricity.Diagram:is_polygon
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity:mrid
+    );
+    ogit:allowed (
+        [ ogit.Utilities.Electricity.Diagram:representsObject  ogit.Utilities.Electricity:PowerSystemResource ]
+        [ ogit.Utilities.Electricity.Diagram:partOf  ogit.Utilities.Electricity.Diagram:Diagram ]
+    );
+.

@@ -1,0 +1,40 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix ogit.Utilities.Electricity.Market:         <http://www.purl.org/ogit/Utilities/Electricity/Market/> .
+@prefix ogit.Utilities.Emissions:                  <http://www.purl.org/ogit/Utilities/Emissions/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity.Market:CrossZonalCapacity
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "CrossZonalCapacity";
+    dcterms:description "NC CACM cross-zonal capacity. Time-varying transmission capacity available for cross-border trading between two BiddingZones. Anchor + sgo:Timeseries: the vertex carries metadata, the actual capacity over time rides on the linked sgo:Timeseries.";
+    dcterms:valid "start=2026-05-28;";
+    dcterms:creator "chris.boos@almato.com";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity.Market:capacity_id
+        ogit.Utilities.Electricity.Market:from_bidding_zone_ref
+        ogit.Utilities.Electricity.Market:to_bidding_zone_ref
+        ogit.Utilities.Electricity.Market:direction
+        ogit.Utilities.Electricity.Market:czc_unit
+        ogit.Utilities:granularity_seconds
+    );
+    ogit:optional-attributes (
+        ogit.Utilities.Emissions:methodology
+        ogit.Utilities.Electricity.Market:flowgate_ref
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity.Market:capacity_id
+    );
+    ogit:allowed (
+        [ ogit.Utilities.Electricity.Market:betweenZones  ogit.Utilities.Electricity:BiddingZone ]
+        [ ogit.Utilities.Electricity.Market:generates  sgo:Timeseries ]
+    );
+.

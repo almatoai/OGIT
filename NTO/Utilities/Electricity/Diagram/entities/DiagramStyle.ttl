@@ -1,0 +1,32 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix ogit.Utilities.Electricity.Diagram:        <http://www.purl.org/ogit/Utilities/Electricity/Diagram/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity.Diagram:DiagramStyle
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "DiagramStyle";
+    dcterms:description "CIM cim:DiagramStyle. Style definition (color, font, line) for diagrams.";
+    dcterms:valid "start=2026-05-28;";
+    dcterms:creator "chris.boos@almato.com";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity:mrid
+        ogit:name
+    );
+    ogit:optional-attributes (
+        ogit.Utilities.Electricity.Diagram:style_payload
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity:mrid
+    );
+    ogit:allowed (
+        [ ogit.Utilities.Electricity.Diagram:governs  ogit.Utilities.Electricity.Diagram:Diagram ]
+    );
+.

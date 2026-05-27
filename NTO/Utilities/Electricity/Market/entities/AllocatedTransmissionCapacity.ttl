@@ -1,0 +1,40 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix ogit.Utilities.Electricity.Market:         <http://www.purl.org/ogit/Utilities/Electricity/Market/> .
+@prefix ogit.Utilities.Emissions:                  <http://www.purl.org/ogit/Utilities/Emissions/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity.Market:AllocatedTransmissionCapacity
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "AllocatedTransmissionCapacity";
+    dcterms:description "NC CACM Article 33 allocated cross-zonal capacity per market session. Records one allocation outcome with volume, price, and the winning participant.";
+    dcterms:valid "start=2026-05-28;";
+    dcterms:creator "chris.boos@almato.com";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity.Market:allocation_id
+        ogit.Utilities.Electricity.Market:from_zone_ref
+        ogit.Utilities.Electricity.Market:to_zone_ref
+        ogit.Utilities.Emissions:period_start
+        ogit.Utilities.Emissions:period_end
+        ogit.Utilities.Electricity.Market:allocated_volume_mw
+        ogit.Utilities.Electricity.Market:price_eur_per_mw
+    );
+    ogit:optional-attributes (
+        ogit.Utilities.Electricity.Market:participant_ref
+        ogit.Utilities.Electricity.Market:allocation_method
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity.Market:allocation_id
+    );
+    ogit:allowed (
+        [ ogit.Utilities.Electricity.Market:awardedTo  ogit.Utilities.Electricity:MarketParticipant ]
+        [ ogit.Utilities.Electricity.Market:governedBy  ogit.Utilities.Electricity.Market:Market ]
+    );
+.

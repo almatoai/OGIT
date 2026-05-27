@@ -1,0 +1,34 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix ogit.Utilities.Electricity.Market:         <http://www.purl.org/ogit/Utilities/Electricity/Market/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity.Market:ImbalanceArea
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "ImbalanceArea";
+    dcterms:description "NC EB imbalance accounting scope. Often equals a BiddingZone but may be a finer or coarser geographic subdivision depending on the country.";
+    dcterms:valid "start=2026-05-28;";
+    dcterms:creator "chris.boos@almato.com";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity.Market:area_id
+        ogit:name
+        ogit.Utilities.Electricity.Market:bidding_zone_ref
+        ogit.Utilities.Electricity.Market:responsible_party_ref
+    );
+    ogit:optional-attributes (
+        ogit.Utilities.Electricity.Market:settlement_currency
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity.Market:area_id
+    );
+    ogit:allowed (
+        [ ogit.Utilities.Electricity.Market:partOf  ogit.Utilities.Electricity:BiddingZone ]
+    );
+.
