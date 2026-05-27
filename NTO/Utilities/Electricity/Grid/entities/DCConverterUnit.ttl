@@ -7,11 +7,11 @@
 @prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
 
 
-ogit.Utilities.Electricity.Grid:BusbarSection
+ogit.Utilities.Electricity.Grid:DCConverterUnit
     a rdfs:Class;
-    rdfs:subClassOf ogit.Utilities.Electricity:PowerSystemResource;
-    rdfs:label "BusbarSection";
-    dcterms:description "CIM cim:BusbarSection. Conducting equipment representing one busbar segment in a voltage level or bay. Carries the per-section short-circuit withstand and nominal voltage.";
+    rdfs:subClassOf ogit.Utilities.Electricity.Grid:EquipmentContainer;
+    rdfs:label "DCConverterUnit";
+    dcterms:description "CIM cim:DCConverterUnit. EquipmentContainer for the DC-side of an HVDC converter pole. Holds one or more CsConverter / VsConverter instances and the DC-side terminals.";
     dcterms:valid "start=2026-05-27;";
     dcterms:creator "chris.boos@almato.com";
     ogit:scope "NTO";
@@ -19,21 +19,18 @@ ogit.Utilities.Electricity.Grid:BusbarSection
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
         ogit:name
+        ogit.Utilities.Electricity.Grid:parent_substation_ref
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Grid:ip_max_ka
-        ogit.Utilities.Electricity.Grid:nominal_voltage_kv
-        ogit:status
-        ogit:source
-        ogit:sourceId
+        ogit.Utilities.Electricity.Grid:operation_mode
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid
-        ogit.Utilities.Electricity.Grid:ogit:name
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Grid:hasTerminal  ogit.Utilities.Electricity.Grid:Terminal ]
-        [ ogit.Utilities.Electricity.Grid:partOf  ogit.Utilities.Electricity.Grid:VoltageLevel ]
-        [ ogit.Utilities.Electricity.Grid:partOf  ogit.Utilities.Electricity.Grid:Bay ]
+        [ ogit.Utilities.Electricity.Grid:partOf  ogit.Utilities.Electricity.Grid:Substation ]
+        [ ogit.Utilities.Electricity.Grid:consistsOf  ogit.Utilities.Electricity.Grid:CsConverter ]
+        [ ogit.Utilities.Electricity.Grid:consistsOf  ogit.Utilities.Electricity.Grid:VsConverter ]
+        [ ogit.Utilities.Electricity.Grid:consistsOf  ogit.Utilities.Electricity.Grid:DCTerminal ]
     );
 .

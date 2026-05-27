@@ -7,11 +7,11 @@
 @prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
 
 
-ogit.Utilities.Electricity.Grid:BusbarSection
+ogit.Utilities.Electricity.Grid:Bay
     a rdfs:Class;
-    rdfs:subClassOf ogit.Utilities.Electricity:PowerSystemResource;
-    rdfs:label "BusbarSection";
-    dcterms:description "CIM cim:BusbarSection. Conducting equipment representing one busbar segment in a voltage level or bay. Carries the per-section short-circuit withstand and nominal voltage.";
+    rdfs:subClassOf ogit.Utilities.Electricity.Grid:EquipmentContainer;
+    rdfs:label "Bay";
+    dcterms:description "CIM cim:Bay. Sub-container of VoltageLevel for one switching arrangement.";
     dcterms:valid "start=2026-05-27;";
     dcterms:creator "chris.boos@almato.com";
     ogit:scope "NTO";
@@ -21,19 +21,14 @@ ogit.Utilities.Electricity.Grid:BusbarSection
         ogit:name
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Grid:ip_max_ka
-        ogit.Utilities.Electricity.Grid:nominal_voltage_kv
-        ogit:status
-        ogit:source
-        ogit:sourceId
+        ogit.Utilities.Electricity.Grid:bay_kind
+        ogit.Utilities.Electricity.Grid:parent_voltage_level_ref
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid
-        ogit.Utilities.Electricity.Grid:ogit:name
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Grid:hasTerminal  ogit.Utilities.Electricity.Grid:Terminal ]
         [ ogit.Utilities.Electricity.Grid:partOf  ogit.Utilities.Electricity.Grid:VoltageLevel ]
-        [ ogit.Utilities.Electricity.Grid:partOf  ogit.Utilities.Electricity.Grid:Bay ]
+        [ ogit.Utilities.Electricity.Grid:consistsOf  ogit.Utilities.Electricity.Grid:Switch ]
     );
 .

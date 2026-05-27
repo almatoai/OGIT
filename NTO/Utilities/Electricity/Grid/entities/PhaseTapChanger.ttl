@@ -7,33 +7,33 @@
 @prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
 
 
-ogit.Utilities.Electricity.Grid:BusbarSection
+ogit.Utilities.Electricity.Grid:PhaseTapChanger
     a rdfs:Class;
     rdfs:subClassOf ogit.Utilities.Electricity:PowerSystemResource;
-    rdfs:label "BusbarSection";
-    dcterms:description "CIM cim:BusbarSection. Conducting equipment representing one busbar segment in a voltage level or bay. Carries the per-section short-circuit withstand and nominal voltage.";
+    rdfs:label "PhaseTapChanger";
+    dcterms:description "CIM cim:PhaseTapChanger. Phase-shifting transformer control.";
     dcterms:valid "start=2026-05-27;";
     dcterms:creator "chris.boos@almato.com";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
-        ogit:name
+        ogit.Utilities.Electricity.Grid:low_step
+        ogit.Utilities.Electricity.Grid:high_step
+        ogit.Utilities.Electricity.Grid:neutral_step
+        ogit.Utilities.Electricity.Grid:phase_tap_changer_kind
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Grid:ip_max_ka
-        ogit.Utilities.Electricity.Grid:nominal_voltage_kv
-        ogit:status
-        ogit:source
-        ogit:sourceId
+        ogit.Utilities.Electricity.Grid:normal_step
+        ogit.Utilities.Electricity.Grid:voltage_step_increment
+        ogit.Utilities.Electricity.Grid:phase_angle_increment_degrees
+        ogit.Utilities.Electricity.Grid:winding_connection_angle
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid
-        ogit.Utilities.Electricity.Grid:ogit:name
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Grid:hasTerminal  ogit.Utilities.Electricity.Grid:Terminal ]
-        [ ogit.Utilities.Electricity.Grid:partOf  ogit.Utilities.Electricity.Grid:VoltageLevel ]
-        [ ogit.Utilities.Electricity.Grid:partOf  ogit.Utilities.Electricity.Grid:Bay ]
+        [ ogit.Utilities.Electricity.Grid:controls  ogit.Utilities.Electricity.Grid:PowerTransformerEnd ]
+        [ ogit.Utilities.Electricity.Grid:generates  sgo:Timeseries ]
     );
 .

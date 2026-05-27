@@ -7,11 +7,11 @@
 @prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
 
 
-ogit.Utilities.Electricity.Grid:BusbarSection
+ogit.Utilities.Electricity.Grid:CsConverter
     a rdfs:Class;
     rdfs:subClassOf ogit.Utilities.Electricity:PowerSystemResource;
-    rdfs:label "BusbarSection";
-    dcterms:description "CIM cim:BusbarSection. Conducting equipment representing one busbar segment in a voltage level or bay. Carries the per-section short-circuit withstand and nominal voltage.";
+    rdfs:label "CsConverter";
+    dcterms:description "CIM cim:CsConverter. Current-source HVDC converter (LCC, classic thyristor).";
     dcterms:valid "start=2026-05-27;";
     dcterms:creator "chris.boos@almato.com";
     ogit:scope "NTO";
@@ -19,21 +19,24 @@ ogit.Utilities.Electricity.Grid:BusbarSection
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
         ogit:name
+        ogit.Utilities.Electricity.Grid:max_alpha_degrees
+        ogit.Utilities.Electricity.Grid:max_gamma_degrees
+        ogit.Utilities.Electricity.Grid:pole_loss_p_mw
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Grid:ip_max_ka
-        ogit.Utilities.Electricity.Grid:nominal_voltage_kv
-        ogit:status
-        ogit:source
-        ogit:sourceId
+        ogit.Utilities.Electricity.Grid:rated_idc_a
+        ogit.Utilities.Electricity.Grid:rated_udc_kv
+        ogit.Utilities.Electricity.Grid:min_alpha_degrees
+        ogit.Utilities.Electricity.Grid:min_gamma_degrees
+        ogit.Utilities.Electricity.Grid:commutation_capability
+        ogit.Utilities.Electricity.Grid:idle_loss_p_mw
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid
-        ogit.Utilities.Electricity.Grid:ogit:name
     );
     ogit:allowed (
         [ ogit.Utilities.Electricity.Grid:hasTerminal  ogit.Utilities.Electricity.Grid:Terminal ]
-        [ ogit.Utilities.Electricity.Grid:partOf  ogit.Utilities.Electricity.Grid:VoltageLevel ]
-        [ ogit.Utilities.Electricity.Grid:partOf  ogit.Utilities.Electricity.Grid:Bay ]
+        [ ogit.Utilities.Electricity.Grid:partOf  ogit.Utilities.Electricity.Grid:DCConverterUnit ]
+        [ ogit.Utilities.Electricity.Grid:generates  sgo:Timeseries ]
     );
 .

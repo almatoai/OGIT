@@ -7,11 +7,11 @@
 @prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
 
 
-ogit.Utilities.Electricity.Grid:BusbarSection
+ogit.Utilities.Electricity.Grid:ACLineSegment
     a rdfs:Class;
     rdfs:subClassOf ogit.Utilities.Electricity:PowerSystemResource;
-    rdfs:label "BusbarSection";
-    dcterms:description "CIM cim:BusbarSection. Conducting equipment representing one busbar segment in a voltage level or bay. Carries the per-section short-circuit withstand and nominal voltage.";
+    rdfs:label "ACLineSegment";
+    dcterms:description "CIM cim:ACLineSegment. One section of an alternating-current overhead line or cable. Holds the per-section R/X/B/G impedance parameters plus geometry and rated current.";
     dcterms:valid "start=2026-05-27;";
     dcterms:creator "chris.boos@almato.com";
     ogit:scope "NTO";
@@ -19,21 +19,30 @@ ogit.Utilities.Electricity.Grid:BusbarSection
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
         ogit:name
+        ogit.Utilities.Electricity.Grid:r_ohm
+        ogit.Utilities.Electricity.Grid:x_ohm
+        ogit.Utilities.Electricity.Grid:length_km
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Grid:ip_max_ka
-        ogit.Utilities.Electricity.Grid:nominal_voltage_kv
-        ogit:status
-        ogit:source
-        ogit:sourceId
+        ogit.Utilities.Electricity.Grid:b_siemens
+        ogit.Utilities.Electricity.Grid:g_siemens
+        ogit.Utilities.Electricity.Grid:r0_ohm
+        ogit.Utilities.Electricity.Grid:x0_ohm
+        ogit.Utilities.Electricity.Grid:b0_siemens
+        ogit.Utilities.Electricity.Grid:g0_siemens
+        ogit.Utilities.Electricity.Grid:bch_siemens
+        ogit.Utilities.Electricity.Grid:gch_siemens
+        ogit.Utilities.Electricity.Grid:shunt_ratio
+        ogit.Utilities.Electricity.Grid:rated_current_a
+        ogit.Utilities.Electricity.Grid:conductor_material
+        ogit.Utilities.Electricity.Grid:circuit_arrangement
+        ogit.Utilities.Electricity.Grid:tower_type
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid
-        ogit.Utilities.Electricity.Grid:ogit:name
     );
     ogit:allowed (
         [ ogit.Utilities.Electricity.Grid:hasTerminal  ogit.Utilities.Electricity.Grid:Terminal ]
-        [ ogit.Utilities.Electricity.Grid:partOf  ogit.Utilities.Electricity.Grid:VoltageLevel ]
-        [ ogit.Utilities.Electricity.Grid:partOf  ogit.Utilities.Electricity.Grid:Bay ]
+        [ ogit.Utilities.Electricity.Grid:partOf  ogit.Utilities.Electricity:Interconnector ]
     );
 .

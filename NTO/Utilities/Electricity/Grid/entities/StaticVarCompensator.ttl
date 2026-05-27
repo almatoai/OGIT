@@ -7,11 +7,11 @@
 @prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
 
 
-ogit.Utilities.Electricity.Grid:BusbarSection
+ogit.Utilities.Electricity.Grid:StaticVarCompensator
     a rdfs:Class;
     rdfs:subClassOf ogit.Utilities.Electricity:PowerSystemResource;
-    rdfs:label "BusbarSection";
-    dcterms:description "CIM cim:BusbarSection. Conducting equipment representing one busbar segment in a voltage level or bay. Carries the per-section short-circuit withstand and nominal voltage.";
+    rdfs:label "StaticVarCompensator";
+    dcterms:description "CIM cim:StaticVarCompensator. Dynamic reactive-power source using thyristor-controlled reactors and capacitors.";
     dcterms:valid "start=2026-05-27;";
     dcterms:creator "chris.boos@almato.com";
     ogit:scope "NTO";
@@ -19,21 +19,20 @@ ogit.Utilities.Electricity.Grid:BusbarSection
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
         ogit:name
+        ogit.Utilities.Electricity.Grid:inductive_rating_mvar
+        ogit.Utilities.Electricity.Grid:capacitive_rating_mvar
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Grid:ip_max_ka
-        ogit.Utilities.Electricity.Grid:nominal_voltage_kv
-        ogit:status
-        ogit:source
-        ogit:sourceId
+        ogit.Utilities.Electricity.Grid:slope_percent
+        ogit.Utilities.Electricity.Grid:voltage_set_point_kv
+        ogit.Utilities.Electricity.Grid:regulating_control_ref
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid
-        ogit.Utilities.Electricity.Grid:ogit:name
     );
     ogit:allowed (
+        [ ogit.Utilities.Electricity.Grid:controlledBy  ogit.Utilities.Electricity.Grid:RegulatingControl ]
         [ ogit.Utilities.Electricity.Grid:hasTerminal  ogit.Utilities.Electricity.Grid:Terminal ]
-        [ ogit.Utilities.Electricity.Grid:partOf  ogit.Utilities.Electricity.Grid:VoltageLevel ]
-        [ ogit.Utilities.Electricity.Grid:partOf  ogit.Utilities.Electricity.Grid:Bay ]
+        [ ogit.Utilities.Electricity.Grid:generates  sgo:Timeseries ]
     );
 .

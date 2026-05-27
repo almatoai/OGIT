@@ -7,11 +7,11 @@
 @prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
 
 
-ogit.Utilities.Electricity.Grid:BusbarSection
+ogit.Utilities.Electricity.Grid:ShuntCompensator
     a rdfs:Class;
     rdfs:subClassOf ogit.Utilities.Electricity:PowerSystemResource;
-    rdfs:label "BusbarSection";
-    dcterms:description "CIM cim:BusbarSection. Conducting equipment representing one busbar segment in a voltage level or bay. Carries the per-section short-circuit withstand and nominal voltage.";
+    rdfs:label "ShuntCompensator";
+    dcterms:description "CIM cim:ShuntCompensator. Linear or non-linear shunt reactor / capacitor for reactive-power compensation.";
     dcterms:valid "start=2026-05-27;";
     dcterms:creator "chris.boos@almato.com";
     ogit:scope "NTO";
@@ -19,21 +19,24 @@ ogit.Utilities.Electricity.Grid:BusbarSection
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
         ogit:name
+        ogit.Utilities.Electricity.Grid:shunt_kind
+        ogit.Utilities.Electricity:nominal_q_mvar
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Grid:ip_max_ka
         ogit.Utilities.Electricity.Grid:nominal_voltage_kv
-        ogit:status
-        ogit:source
-        ogit:sourceId
+        ogit.Utilities.Electricity.Grid:section_count
+        ogit.Utilities.Electricity.Grid:normal_sections
+        ogit.Utilities.Electricity.Grid:b_per_section_siemens
+        ogit.Utilities.Electricity.Grid:g_per_section_siemens
+        ogit.Utilities.Electricity.Grid:voltage_sensitivity
+        ogit.Utilities.Electricity.Grid:regulating_control_ref
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid
-        ogit.Utilities.Electricity.Grid:ogit:name
     );
     ogit:allowed (
+        [ ogit.Utilities.Electricity.Grid:controlledBy  ogit.Utilities.Electricity.Grid:RegulatingControl ]
         [ ogit.Utilities.Electricity.Grid:hasTerminal  ogit.Utilities.Electricity.Grid:Terminal ]
-        [ ogit.Utilities.Electricity.Grid:partOf  ogit.Utilities.Electricity.Grid:VoltageLevel ]
-        [ ogit.Utilities.Electricity.Grid:partOf  ogit.Utilities.Electricity.Grid:Bay ]
+        [ ogit.Utilities.Electricity.Grid:generates  sgo:Timeseries ]
     );
 .

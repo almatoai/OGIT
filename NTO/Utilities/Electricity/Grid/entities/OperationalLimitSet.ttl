@@ -1,5 +1,6 @@
 @prefix dcterms:                                   <http://purl.org/dc/terms/> .
 @prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
 @prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
 @prefix ogit.Utilities.Electricity.Grid:           <http://www.purl.org/ogit/Utilities/Electricity/Grid/> .
 @prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
@@ -7,11 +8,11 @@
 @prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
 
 
-ogit.Utilities.Electricity.Grid:BusbarSection
+ogit.Utilities.Electricity.Grid:OperationalLimitSet
     a rdfs:Class;
-    rdfs:subClassOf ogit.Utilities.Electricity:PowerSystemResource;
-    rdfs:label "BusbarSection";
-    dcterms:description "CIM cim:BusbarSection. Conducting equipment representing one busbar segment in a voltage level or bay. Carries the per-section short-circuit withstand and nominal voltage.";
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "OperationalLimitSet";
+    dcterms:description "CIM cim:OperationalLimitSet. Grouping container for one or more OperationalLimit instances applied to one terminal, conducting-equipment, or generating-unit.";
     dcterms:valid "start=2026-05-27;";
     dcterms:creator "chris.boos@almato.com";
     ogit:scope "NTO";
@@ -19,21 +20,18 @@ ogit.Utilities.Electricity.Grid:BusbarSection
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
         ogit:name
+        ogit.Utilities:subject_ref
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Grid:ip_max_ka
-        ogit.Utilities.Electricity.Grid:nominal_voltage_kv
-        ogit:status
-        ogit:source
-        ogit:sourceId
+        ogit.Utilities.Electricity.Grid:regulation_basis_ref
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid
-        ogit.Utilities.Electricity.Grid:ogit:name
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Grid:hasTerminal  ogit.Utilities.Electricity.Grid:Terminal ]
-        [ ogit.Utilities.Electricity.Grid:partOf  ogit.Utilities.Electricity.Grid:VoltageLevel ]
-        [ ogit.Utilities.Electricity.Grid:partOf  ogit.Utilities.Electricity.Grid:Bay ]
+        [ ogit.Utilities.Electricity.Grid:appliesTo  ogit.Utilities.Electricity.Grid:ACLineSegment ]
+        [ ogit.Utilities.Electricity.Grid:appliesTo  ogit.Utilities.Electricity.Grid:Terminal ]
+        [ ogit.Utilities.Electricity.Grid:appliesTo  ogit.Utilities.Electricity:GeneratingUnit ]
+        [ ogit.Utilities.Electricity.Grid:groups  ogit.Utilities:OperationalLimit ]
     );
 .

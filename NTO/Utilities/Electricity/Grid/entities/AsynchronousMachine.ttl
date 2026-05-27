@@ -7,11 +7,11 @@
 @prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
 
 
-ogit.Utilities.Electricity.Grid:BusbarSection
+ogit.Utilities.Electricity.Grid:AsynchronousMachine
     a rdfs:Class;
     rdfs:subClassOf ogit.Utilities.Electricity:PowerSystemResource;
-    rdfs:label "BusbarSection";
-    dcterms:description "CIM cim:BusbarSection. Conducting equipment representing one busbar segment in a voltage level or bay. Carries the per-section short-circuit withstand and nominal voltage.";
+    rdfs:label "AsynchronousMachine";
+    dcterms:description "CIM cim:AsynchronousMachine. Induction machine (motor or generator), e.g. wind turbines of IEC 61400 Type 1 / 2.";
     dcterms:valid "start=2026-05-27;";
     dcterms:creator "chris.boos@almato.com";
     ogit:scope "NTO";
@@ -19,21 +19,29 @@ ogit.Utilities.Electricity.Grid:BusbarSection
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
         ogit:name
+        ogit.Utilities.Electricity.Grid:rated_s_mva
+        ogit.Utilities.Electricity.Grid:rated_u_kv
+        ogit.Utilities.Electricity.Grid:asynchronous_machine_kind
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Grid:ip_max_ka
-        ogit.Utilities.Electricity.Grid:nominal_voltage_kv
-        ogit:status
-        ogit:source
-        ogit:sourceId
+        ogit.Utilities.Electricity.Grid:r_a_pu
+        ogit.Utilities.Electricity.Grid:x_a_pu
+        ogit.Utilities.Electricity.Grid:r_b_pu
+        ogit.Utilities.Electricity.Grid:x_b_pu
+        ogit.Utilities.Electricity.Grid:xm_pu
+        ogit.Utilities.Electricity.Grid:rs_pu
+        ogit.Utilities.Electricity.Grid:xs_pu
+        ogit.Utilities.Electricity.Grid:efficiency
+        ogit.Utilities.Electricity.Grid:polar_pair_count
+        ogit.Utilities.Electricity.Grid:rated_speed_rpm
+        ogit.Utilities.Electricity.Grid:member_of_generating_unit_ref
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid
-        ogit.Utilities.Electricity.Grid:ogit:name
     );
     ogit:allowed (
+        [ ogit.Utilities.Electricity.Grid:partOf  ogit.Utilities.Electricity:GeneratingUnit ]
         [ ogit.Utilities.Electricity.Grid:hasTerminal  ogit.Utilities.Electricity.Grid:Terminal ]
-        [ ogit.Utilities.Electricity.Grid:partOf  ogit.Utilities.Electricity.Grid:VoltageLevel ]
-        [ ogit.Utilities.Electricity.Grid:partOf  ogit.Utilities.Electricity.Grid:Bay ]
+        [ ogit.Utilities.Electricity.Grid:generates  sgo:Timeseries ]
     );
 .
