@@ -1,0 +1,16 @@
+@prefix ogit.Auth.Application:  <http://www.purl.org/ogit/Auth/Application/> .
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ogit.Auth:              <http://www.purl.org/ogit/Auth/> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+
+ogit.Auth.Application:category
+	a owl:DatatypeProperty;
+	rdfs:subPropertyOf ogit:Attribute;
+	rdfs:label "category";
+	dcterms:description "Category of an application";
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
+	dcterms:valid "start=2026-27-05;";
+	dcterms:creator "Calvin Spolwind;
+.
