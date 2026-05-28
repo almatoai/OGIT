@@ -19,7 +19,7 @@ ogit.Utilities.Electricity.Grid:Disconnector
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
         ogit:name
-        ogit.Utilities.Electricity.Grid:normal_open
+        ogit.Utilities.Electricity.Grid:normalOpen
     );
     ogit:optional-attributes (
 

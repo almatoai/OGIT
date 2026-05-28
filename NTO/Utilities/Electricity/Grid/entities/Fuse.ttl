@@ -19,13 +19,13 @@ ogit.Utilities.Electricity.Grid:Fuse
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
         ogit:name
-        ogit.Utilities.Electricity.Grid:normal_open
-        ogit.Utilities.Electricity.Grid:fuse_kind
-        ogit.Utilities.Electricity.Grid:rated_current_a
+        ogit.Utilities.Electricity.Grid:normalOpen
+        ogit.Utilities.Electricity.Grid:fuseKind
+        ogit.Utilities.Electricity.Grid:ratedCurrentA
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Grid:interrupting_rating_ka
-        ogit.Utilities.Electricity.Grid:voltage_class_kv
+        ogit.Utilities.Electricity.Grid:interruptingRatingKa
+        ogit.Utilities.Electricity.Grid:voltageClassKv
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid

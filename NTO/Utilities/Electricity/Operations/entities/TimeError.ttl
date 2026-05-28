@@ -3,6 +3,7 @@
 @prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
 @prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
 @prefix ogit.Utilities.Electricity.Operations:     <http://www.purl.org/ogit/Utilities/Electricity/Operations/> .
+@prefix ogit.Utilities.Emissions:                  <http://www.purl.org/ogit/Utilities/Emissions/> .
 @prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
@@ -18,20 +19,20 @@ ogit.Utilities.Electricity.Operations:TimeError
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity.Operations:time_error_id
-        ogit.Utilities.Electricity:synchronous_area_ref
-        ogit.Utilities.Electricity.Operations:time_error_unit
-        ogit.Utilities:granularity_seconds
+        ogit.Utilities.Electricity.Operations:timeErrorId
+        ogit.Utilities.Electricity:synchronousAreaRef
+        ogit.Utilities.Electricity.Operations:timeErrorUnit
+        ogit.Utilities:granularitySeconds
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Operations:correction_program_active
-        ogit.Utilities.Electricity.Operations:correction_target_seconds
+        ogit.Utilities.Electricity.Operations:correctionProgramActive
+        ogit.Utilities.Electricity.Operations:correctionTargetSeconds
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity.Operations:time_error_id
+        ogit.Utilities.Electricity.Operations:timeErrorId
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Operations:measuredFor  ogit.Utilities.Electricity:SynchronousArea ]
-        [ ogit.Utilities.Electricity.Operations:generates  sgo:Timeseries ]
+        [ ogit.Utilities.Emissions:measuredFor  ogit.Utilities.Electricity:SynchronousArea ]
+        [ ogit:generates  sgo:Timeseries ]
     );
 .

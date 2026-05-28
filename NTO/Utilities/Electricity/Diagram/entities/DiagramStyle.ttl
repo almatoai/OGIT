@@ -21,12 +21,12 @@ ogit.Utilities.Electricity.Diagram:DiagramStyle
         ogit:name
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Diagram:style_payload
+        ogit.Utilities.Electricity.Diagram:stylePayload
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Diagram:governs  ogit.Utilities.Electricity.Diagram:Diagram ]
+        [ ogit:governs  ogit.Utilities.Electricity.Diagram:Diagram ]
     );
 .

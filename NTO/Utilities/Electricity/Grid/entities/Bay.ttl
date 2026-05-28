@@ -21,14 +21,14 @@ ogit.Utilities.Electricity.Grid:Bay
         ogit:name
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Grid:bay_kind
-        ogit.Utilities.Electricity.Grid:parent_voltage_level_ref
+        ogit.Utilities.Electricity.Grid:bayKind
+        ogit.Utilities.Electricity.Grid:parentVoltageLevelRef
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Grid:partOf  ogit.Utilities.Electricity.Grid:VoltageLevel ]
-        [ ogit.Utilities.Electricity.Grid:consistsOf  ogit.Utilities.Electricity.Grid:Switch ]
+        [ ogit:isPartOf  ogit.Utilities.Electricity.Grid:VoltageLevel ]
+        [ ogit:consistsOf  ogit.Utilities.Electricity.Grid:Switch ]
     );
 .

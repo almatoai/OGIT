@@ -19,22 +19,22 @@ ogit.Utilities.Electricity.Market:CrossZonalCapacity
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity.Market:capacity_id
-        ogit.Utilities.Electricity.Market:from_bidding_zone_ref
-        ogit.Utilities.Electricity.Market:to_bidding_zone_ref
+        ogit.Utilities.Electricity.Market:capacityId
+        ogit.Utilities.Electricity.Market:fromBiddingZoneRef
+        ogit.Utilities.Electricity.Market:toBiddingZoneRef
         ogit.Utilities.Electricity.Market:direction
-        ogit.Utilities.Electricity.Market:czc_unit
-        ogit.Utilities:granularity_seconds
+        ogit.Utilities.Electricity.Market:czcUnit
+        ogit.Utilities:granularitySeconds
     );
     ogit:optional-attributes (
         ogit.Utilities.Emissions:methodology
-        ogit.Utilities.Electricity.Market:flowgate_ref
+        ogit.Utilities.Electricity.Market:flowgateRef
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity.Market:capacity_id
+        ogit.Utilities.Electricity.Market:capacityId
     );
     ogit:allowed (
         [ ogit.Utilities.Electricity.Market:betweenZones  ogit.Utilities.Electricity:BiddingZone ]
-        [ ogit.Utilities.Electricity.Market:generates  sgo:Timeseries ]
+        [ ogit:generates  sgo:Timeseries ]
     );
 .

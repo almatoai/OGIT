@@ -19,18 +19,18 @@ ogit.Utilities.Electricity.Grid:Breaker
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
         ogit:name
-        ogit.Utilities.Electricity.Grid:normal_open
+        ogit.Utilities.Electricity.Grid:normalOpen
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Grid:in_transit_time_ms
-        ogit.Utilities.Electricity.Grid:arc_extinguishing_kind
-        ogit.Utilities.Electricity.Grid:auto_reclose_capability
+        ogit.Utilities.Electricity.Grid:inTransitTimeMs
+        ogit.Utilities.Electricity.Grid:arcExtinguishingKind
+        ogit.Utilities.Electricity.Grid:autoRecloseCapability
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid
     );
     ogit:allowed (
         [ ogit.Utilities.Electricity.Grid:hasTerminal  ogit.Utilities.Electricity.Grid:Terminal ]
-        [ ogit.Utilities.Electricity.Grid:generates  sgo:Timeseries ]
+        [ ogit:generates  sgo:Timeseries ]
     );
 .

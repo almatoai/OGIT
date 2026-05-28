@@ -17,20 +17,20 @@ ogit.Utilities.Emissions:EmissionInventory
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Emissions:inventory_id
-        ogit.Utilities.Emissions:period_start
-        ogit.Utilities.Emissions:period_end
-        ogit.Utilities.Emissions:jurisdiction_ref
-        ogit.Utilities.Emissions:obligation_kind
+        ogit.Utilities.Emissions:inventoryId
+        ogit.Utilities.Emissions:periodStart
+        ogit.Utilities.Emissions:periodEnd
+        ogit.Utilities.Emissions:jurisdictionRef
+        ogit.Utilities.Emissions:obligationKind
     );
     ogit:optional-attributes (
-        ogit.Utilities.Emissions:submission_status
-        ogit.Utilities.Emissions:total_quantity_kg_co2eq
-        ogit.Utilities.Emissions:breakdown_payload
-        ogit.Utilities.Emissions:auditor_ref
+        ogit.Utilities.Emissions:submissionStatus
+        ogit.Utilities.Emissions:totalQuantityKgCo2eq
+        ogit.Utilities.Emissions:breakdownPayload
+        ogit.Utilities.Emissions:auditorRef
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Emissions:inventory_id
+        ogit.Utilities.Emissions:inventoryId
     );
     ogit:allowed (
         [ ogit.Utilities.Emissions:aggregatesFrom  ogit.Utilities.Emissions:GreenhouseGasEmission ]

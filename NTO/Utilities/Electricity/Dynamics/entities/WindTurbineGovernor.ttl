@@ -19,12 +19,12 @@ ogit.Utilities.Electricity.Dynamics:WindTurbineGovernor
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
         ogit:name
-        ogit.Utilities.Electricity.Dynamics:synchronous_machine_dynamics_ref
-        ogit.Utilities.Electricity.Dynamics:model_kind
+        ogit.Utilities.Electricity.Dynamics:synchronousMachineDynamicsRef
+        ogit.Utilities.Electricity.Dynamics:modelKind
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Dynamics:wind_turbine_kind
-        ogit.Utilities.Electricity.Dynamics:parameter_payload
+        ogit.Utilities.Electricity.Dynamics:windTurbineKind
+        ogit.Utilities.Electricity.Dynamics:parameterPayload
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid

@@ -19,12 +19,12 @@ ogit.Utilities.Electricity.Grid:EquivalentShunt
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
         ogit:name
-        ogit.Utilities.Electricity.Grid:b_siemens
-        ogit.Utilities.Electricity.Grid:g_siemens
+        ogit.Utilities.Electricity.Grid:bSiemens
+        ogit.Utilities.Electricity.Grid:gSiemens
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Grid:b0_siemens
-        ogit.Utilities.Electricity.Grid:g0_siemens
+        ogit.Utilities.Electricity.Grid:b0Siemens
+        ogit.Utilities.Electricity.Grid:g0Siemens
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid

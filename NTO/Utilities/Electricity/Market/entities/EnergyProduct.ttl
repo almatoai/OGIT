@@ -18,18 +18,18 @@ ogit.Utilities.Electricity.Market:EnergyProduct
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity.Market:product_id
-        ogit.Utilities.Electricity.Market:product_kind
-        ogit.Utilities:granularity_seconds
-        ogit.Utilities.Electricity.Market:delivery_unit
+        ogit.Utilities.Electricity.Market:productId
+        ogit.Utilities.Electricity.Market:productKind
+        ogit.Utilities:granularitySeconds
+        ogit.Utilities.Electricity.Market:deliveryUnit
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Market:bidding_zone_ref
-        ogit.Utilities.Electricity:currency_iso
-        ogit.Utilities.Electricity.Market:min_volume_mwh
+        ogit.Utilities.Electricity.Market:biddingZoneRef
+        ogit.Utilities.Electricity:currencyIso
+        ogit.Utilities.Electricity.Market:minVolumeMwh
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity.Market:product_id
+        ogit.Utilities.Electricity.Market:productId
     );
     ogit:allowed (
         [ ogit.Utilities.Electricity.Market:tradedAs  ogit.Utilities.Electricity.Market:Market ]

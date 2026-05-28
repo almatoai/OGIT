@@ -1,6 +1,5 @@
 @prefix dcterms:                                   <http://purl.org/dc/terms/> .
 @prefix ogit:                                      <http://www.purl.org/ogit/> .
-@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
 @prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
 @prefix ogit.Utilities.Electricity.Dynamics:       <http://www.purl.org/ogit/Utilities/Electricity/Dynamics/> .
 @prefix ogit.Utilities.Electricity.Grid:           <http://www.purl.org/ogit/Utilities/Electricity/Grid/> .
@@ -19,17 +18,17 @@ ogit.Utilities.Electricity.Dynamics:EmtModel
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity.Dynamics:model_id
+        ogit.Utilities.Electricity.Dynamics:modelId
         ogit:name
-        ogit.Utilities.Electricity.Dynamics:target_equipment_ref
-        ogit.Utilities.Electricity.Dynamics:tool_format
+        ogit.Utilities.Electricity.Dynamics:targetEquipmentRef
+        ogit.Utilities.Electricity.Dynamics:toolFormat
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Dynamics:time_step_us
-        ogit.Utilities:valid_from
+        ogit.Utilities.Electricity.Dynamics:timeStepUs
+        ogit:validFrom
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity.Dynamics:model_id
+        ogit.Utilities.Electricity.Dynamics:modelId
     );
     ogit:allowed (
         [ ogit.Utilities.Electricity.Dynamics:models  ogit.Utilities.Electricity.Grid:ACLineSegment ]

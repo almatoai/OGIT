@@ -18,24 +18,24 @@ ogit.Utilities.Electricity:NuclearGeneratingUnit
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
         ogit:name
-        ogit.Utilities.Electricity:rated_p_mw
-        ogit.Utilities.Electricity:min_operating_p_mw
-        ogit.Utilities.Electricity:max_operating_p_mw
-        ogit.Utilities.Electricity:reactor_type
+        ogit.Utilities.Electricity:ratedPMw
+        ogit.Utilities.Electricity:minOperatingPMw
+        ogit.Utilities.Electricity:maxOperatingPMw
+        ogit.Utilities.Electricity:reactorType
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity:reactor_count
-        ogit.Utilities.Electricity:reactor_supplier
-        ogit.Utilities.Electricity:fuel_cycle_class
-        ogit.Utilities.Electricity:cooling_system
-        ogit.Utilities.Electricity:cooling_water_source
-        ogit.Utilities.Electricity:regulatory_status
-        ogit.Utilities.Electricity:licensee_ref
-        ogit.Utilities.Electricity:iaea_registry_id
+        ogit.Utilities.Electricity:reactorCount
+        ogit.Utilities.Electricity:reactorSupplier
+        ogit.Utilities.Electricity:fuelCycleClass
+        ogit.Utilities.Electricity:coolingSystem
+        ogit.Utilities.Electricity:coolingWaterSource
+        ogit.Utilities.Electricity:regulatoryStatus
+        ogit.Utilities.Electricity:licenseeRef
+        ogit.Utilities.Electricity:iaeaRegistryId
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid
-        ogit.Utilities.Electricity:iaea_registry_id
+        ogit.Utilities.Electricity:iaeaRegistryId
     );
     ogit:allowed (
 

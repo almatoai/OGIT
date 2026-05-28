@@ -1,6 +1,5 @@
 @prefix dcterms:                                   <http://purl.org/dc/terms/> .
 @prefix ogit:                                      <http://www.purl.org/ogit/> .
-@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
 @prefix ogit.Utilities.Electricity.Dynamics:       <http://www.purl.org/ogit/Utilities/Electricity/Dynamics/> .
 @prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
@@ -17,23 +16,23 @@ ogit.Utilities.Electricity.Dynamics:StabilityModel
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity.Dynamics:model_id
+        ogit.Utilities.Electricity.Dynamics:modelId
         ogit:name
-        ogit.Utilities.Electricity.Dynamics:target_synchronous_area_ref
-        ogit.Utilities.Electricity.Dynamics:stability_version
+        ogit.Utilities.Electricity.Dynamics:targetSynchronousAreaRef
+        ogit.Utilities.Electricity.Dynamics:stabilityVersion
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Dynamics:tool_specific_format
-        ogit.Utilities:valid_from
+        ogit.Utilities.Electricity.Dynamics:toolSpecificFormat
+        ogit:validFrom
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity.Dynamics:model_id
+        ogit.Utilities.Electricity.Dynamics:modelId
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Dynamics:consistsOf  ogit.Utilities.Electricity.Dynamics:SynchronousMachineDynamics ]
-        [ ogit.Utilities.Electricity.Dynamics:consistsOf  ogit.Utilities.Electricity.Dynamics:ExcitationSystemDynamics ]
-        [ ogit.Utilities.Electricity.Dynamics:consistsOf  ogit.Utilities.Electricity.Dynamics:TurbineGovernorDynamics ]
-        [ ogit.Utilities.Electricity.Dynamics:consistsOf  ogit.Utilities.Electricity.Dynamics:LoadDynamics ]
-        [ ogit.Utilities.Electricity.Dynamics:consistsOf  ogit.Utilities.Electricity.Dynamics:HvdcDynamics ]
+        [ ogit:consistsOf  ogit.Utilities.Electricity.Dynamics:SynchronousMachineDynamics ]
+        [ ogit:consistsOf  ogit.Utilities.Electricity.Dynamics:ExcitationSystemDynamics ]
+        [ ogit:consistsOf  ogit.Utilities.Electricity.Dynamics:TurbineGovernorDynamics ]
+        [ ogit:consistsOf  ogit.Utilities.Electricity.Dynamics:LoadDynamics ]
+        [ ogit:consistsOf  ogit.Utilities.Electricity.Dynamics:HvdcDynamics ]
     );
 .

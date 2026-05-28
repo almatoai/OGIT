@@ -19,24 +19,24 @@ ogit.Utilities.Electricity.Operations:ForcedOutage
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities:outage_id
-        ogit.Utilities:outage_kind
-        ogit.Utilities:start_time
+        ogit.Utilities:outageId
+        ogit.Utilities:outageKind
+        ogit.Utilities:startTime
         ogit.Utilities:domain
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Operations:fault_kind
-        ogit.Utilities.Electricity.Operations:fault_location
-        ogit.Utilities.Electricity.Operations:fault_duration_ms
-        ogit.Utilities.Electricity.Operations:auto_reclose_attempts
-        ogit.Utilities.Electricity.Operations:successful_reclose
-        ogit.Utilities.Electricity.Operations:protection_action_ref
+        ogit.Utilities.Electricity.Operations:faultKind
+        ogit.Utilities.Electricity.Operations:faultLocation
+        ogit.Utilities.Electricity.Operations:faultDurationMs
+        ogit.Utilities.Electricity.Operations:autoRecloseAttempts
+        ogit.Utilities.Electricity.Operations:successfulReclose
+        ogit.Utilities.Electricity.Operations:protectionActionRef
     );
     ogit:indexed-attributes (
-        ogit.Utilities:outage_id
+        ogit.Utilities:outageId
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Operations:affects  ogit.Utilities.Electricity:PowerSystemResource ]
-        [ ogit.Utilities.Electricity.Operations:causedBy  ogit.Utilities.Electricity.Grid:ACLineSegment ]
+        [ ogit:affects  ogit.Utilities.Electricity:PowerSystemResource ]
+        [ ogit.Utilities:causedBy  ogit.Utilities.Electricity.Grid:ACLineSegment ]
     );
 .

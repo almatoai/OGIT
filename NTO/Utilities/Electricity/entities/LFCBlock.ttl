@@ -16,20 +16,20 @@ ogit.Utilities.Electricity:LFCBlock
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity:block_name
-        ogit.Utilities.Electricity:block_eic
+        ogit.Utilities.Electricity:blockName
+        ogit.Utilities.Electricity:blockEic
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity:parent_synchronous_area_ref
-        ogit.Utilities.Electricity:member_lfc_area_refs
-        ogit.Utilities.Electricity:block_responsible_party_ref
-        ogit.Utilities.Electricity:dimensioning_incident_mw
+        ogit.Utilities.Electricity:parentSynchronousAreaRef
+        ogit.Utilities.Electricity:memberLfcAreaRefs
+        ogit.Utilities.Electricity:blockResponsiblePartyRef
+        ogit.Utilities.Electricity:dimensioningIncidentMw
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity:block_eic
+        ogit.Utilities.Electricity:blockEic
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity:partOf  ogit.Utilities.Electricity:SynchronousArea ]
-        [ ogit.Utilities.Electricity:consistsOf  ogit.Utilities.Electricity:LFCArea ]
+        [ ogit:isPartOf  ogit.Utilities.Electricity:SynchronousArea ]
+        [ ogit:consistsOf  ogit.Utilities.Electricity:LFCArea ]
     );
 .

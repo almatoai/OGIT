@@ -20,22 +20,22 @@ ogit.Utilities.Electricity.Grid:Switch
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
         ogit:name
-        ogit.Utilities.Electricity.Grid:normal_open
+        ogit.Utilities.Electricity.Grid:normalOpen
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Grid:rated_current_a
-        ogit.Utilities.Electricity.Grid:breaking_capacity_ka
-        ogit.Utilities.Electricity.Grid:make_capacity_ka
-        ogit.Utilities.Electricity.Grid:switch_on_count
-        ogit.Utilities:commissioning_year
+        ogit.Utilities.Electricity.Grid:ratedCurrentA
+        ogit.Utilities.Electricity.Grid:breakingCapacityKa
+        ogit.Utilities.Electricity.Grid:makeCapacityKa
+        ogit.Utilities.Electricity.Grid:switchOnCount
+        ogit.Utilities:commissioningYear
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid
     );
     ogit:allowed (
         [ ogit.Utilities.Electricity.Grid:hasTerminal  ogit.Utilities.Electricity.Grid:Terminal ]
-        [ ogit.Utilities.Electricity.Grid:partOf  ogit.Utilities.Electricity.Grid:Bay ]
-        [ ogit.Utilities.Electricity.Grid:partOf  ogit.Utilities.Electricity.Grid:Substation ]
-        [ ogit.Utilities.Electricity.Grid:generates  sgo:Timeseries ]
+        [ ogit:isPartOf  ogit.Utilities.Electricity.Grid:Bay ]
+        [ ogit:isPartOf  ogit.Utilities.Electricity.Grid:Substation ]
+        [ ogit:generates  sgo:Timeseries ]
     );
 .

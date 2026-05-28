@@ -1,5 +1,6 @@
 @prefix dcterms:                                   <http://purl.org/dc/terms/> .
 @prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
 @prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
 @prefix ogit.Utilities.Electricity.Telecontrol.InterControlCenter: <http://www.purl.org/ogit/Utilities/Electricity/Telecontrol/InterControlCenter/> .
 @prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
@@ -17,19 +18,19 @@ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:StateEnumeration
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:enumeration_id
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:enumerationId
         ogit:name
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:enumeration_payload
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:enumerationPayload
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity:description_text
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:parent_table_ref
+        ogit.Utilities.Electricity:descriptionText
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:parentTableRef
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:enumeration_id
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:enumerationId
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:appliesTo  ogit.Utilities.Electricity.Telecontrol.InterControlCenter:StatePointIndication ]
-        [ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:partOf  ogit.Utilities.Electricity.Telecontrol.InterControlCenter:BilateralTable ]
+        [ ogit.Utilities:appliesTo  ogit.Utilities.Electricity.Telecontrol.InterControlCenter:StatePointIndication ]
+        [ ogit:isPartOf  ogit.Utilities.Electricity.Telecontrol.InterControlCenter:BilateralTable ]
     );
 .

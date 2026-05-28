@@ -19,11 +19,11 @@ ogit.Utilities.Electricity.Grid:NonlinearShuntCompensator
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
         ogit:name
-        ogit.Utilities.Electricity.Grid:shunt_kind
-        ogit.Utilities.Electricity:nominal_q_mvar
+        ogit.Utilities.Electricity.Grid:shuntKind
+        ogit.Utilities.Electricity:nominalQMvar
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Grid:nonlinear_shunt_point_payload_ref
+        ogit.Utilities.Electricity.Grid:nonlinearShuntPointPayloadRef
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid

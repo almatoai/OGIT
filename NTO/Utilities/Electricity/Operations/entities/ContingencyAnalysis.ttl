@@ -17,23 +17,23 @@ ogit.Utilities.Electricity.Operations:ContingencyAnalysis
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity.Operations:analysis_id
-        ogit.Utilities:subject_ref
-        ogit.Utilities.Electricity.Operations:snapshot_time
-        ogit.Utilities.Electricity.Operations:analysis_kind
+        ogit.Utilities.Electricity.Operations:analysisId
+        ogit.Utilities:subjectRef
+        ogit.Utilities.Electricity.Operations:snapshotTime
+        ogit.Utilities.Electricity.Operations:analysisKind
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Operations:tool_name
-        ogit.Utilities.Electricity.Operations:tool_version
-        ogit.Utilities.Electricity.Operations:compute_duration_s
-        ogit.Utilities.Electricity.Operations:triggered_by_kind
+        ogit.Utilities.Electricity.Operations:toolName
+        ogit.Utilities.Electricity.Operations:toolVersion
+        ogit.Utilities.Electricity.Operations:computeDurationS
+        ogit.Utilities.Electricity.Operations:triggeredByKind
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity.Operations:analysis_id
+        ogit.Utilities.Electricity.Operations:analysisId
     );
     ogit:allowed (
         [ ogit.Utilities.Electricity.Operations:analyzes  ogit.Utilities.Electricity.Operations:ContingencyList ]
         [ ogit.Utilities.Electricity.Operations:producedBy  ogit.Utilities:NetworkOperator ]
-        [ ogit.Utilities.Electricity.Operations:generates  sgo:Timeseries ]
+        [ ogit:generates  sgo:Timeseries ]
     );
 .

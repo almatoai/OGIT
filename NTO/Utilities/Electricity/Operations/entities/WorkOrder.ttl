@@ -18,27 +18,27 @@ ogit.Utilities.Electricity.Operations:WorkOrder
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity.Operations:work_order_id
-        ogit.Utilities:subject_ref
-        ogit.Utilities.Electricity.Operations:work_kind
+        ogit.Utilities.Electricity.Operations:workOrderId
+        ogit.Utilities:subjectRef
+        ogit.Utilities.Electricity.Operations:workKind
         ogit:status
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Operations:scheduled_start
-        ogit.Utilities.Electricity.Operations:scheduled_end
-        ogit.Utilities.Electricity.Operations:actual_start
-        ogit.Utilities.Electricity.Operations:actual_end
-        ogit.Utilities.Electricity.Operations:assigned_team_ref
-        ogit.Utilities.Electricity.Operations:parts_used_payload
-        ogit.Utilities.Electricity.Operations:total_cost
-        ogit.Utilities.Electricity.Operations:priority
+        ogit.Utilities.Electricity.Operations:scheduledStart
+        ogit.Utilities.Electricity.Operations:scheduledEnd
+        ogit.Utilities.Electricity.Operations:actualStart
+        ogit.Utilities.Electricity.Operations:actualEnd
+        ogit.Utilities.Electricity.Operations:assignedTeamRef
+        ogit.Utilities.Electricity.Operations:partsUsedPayload
+        ogit.Utilities.Electricity.Operations:totalCost
+        ogit:priority
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity.Operations:work_order_id
+        ogit.Utilities.Electricity.Operations:workOrderId
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Operations:appliesTo  ogit.Utilities.Electricity:PowerSystemResource ]
-        [ ogit.Utilities.Electricity.Operations:causes  ogit.Utilities.Electricity.Operations:PlannedOutage ]
-        [ ogit.Utilities.Electricity.Operations:causes  ogit.Utilities:Outage ]
+        [ ogit.Utilities:appliesTo  ogit.Utilities.Electricity:PowerSystemResource ]
+        [ ogit:causes  ogit.Utilities.Electricity.Operations:PlannedOutage ]
+        [ ogit:causes  ogit.Utilities:Outage ]
     );
 .

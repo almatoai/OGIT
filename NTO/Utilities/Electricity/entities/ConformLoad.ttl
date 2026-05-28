@@ -18,13 +18,13 @@ ogit.Utilities.Electricity:ConformLoad
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
         ogit:name
-        ogit.Utilities.Electricity:nominal_p_mw
+        ogit.Utilities.Electricity:nominalPMw
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity:load_group_ref
-        ogit.Utilities.Electricity:p_fixed_mw
-        ogit.Utilities.Electricity:q_fixed_mvar
-        ogit.Utilities.Electricity:scaling_factor
+        ogit.Utilities.Electricity:loadGroupRef
+        ogit.Utilities.Electricity:pFixedMw
+        ogit.Utilities.Electricity:qFixedMvar
+        ogit.Utilities.Electricity:scalingFactor
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid

@@ -17,19 +17,19 @@ ogit.Utilities.Electricity:OwnershipShare
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity:share_id
-        ogit.Utilities.Electricity:share_fraction
-        ogit.Utilities:valid_from
+        ogit.Utilities.Electricity:shareId
+        ogit.Utilities.Electricity:shareFraction
+        ogit:validFrom
     );
     ogit:optional-attributes (
-        ogit.Utilities:valid_until
-        ogit.Utilities.Electricity:ownership_kind
-        ogit.Utilities.Electricity:regulatory_context_ref
+        ogit.Utilities:validUntil
+        ogit.Utilities.Electricity:ownershipKind
+        ogit.Utilities.Electricity:regulatoryContextRef
         ogit:source
         ogit:sourceId
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity:share_id
+        ogit.Utilities.Electricity:shareId
     );
     ogit:allowed (
         [ ogit.Utilities.Electricity:sharedOf  ogit.Utilities.Electricity:GeneratingUnit ]

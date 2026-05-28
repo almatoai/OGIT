@@ -17,18 +17,18 @@ ogit.Utilities.Electricity.Market:ImbalanceArea
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity.Market:area_id
+        ogit.Utilities.Electricity.Market:areaId
         ogit:name
-        ogit.Utilities.Electricity.Market:bidding_zone_ref
-        ogit.Utilities.Electricity.Market:responsible_party_ref
+        ogit.Utilities.Electricity.Market:biddingZoneRef
+        ogit.Utilities.Electricity.Market:responsiblePartyRef
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Market:settlement_currency
+        ogit.Utilities.Electricity.Market:settlementCurrency
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity.Market:area_id
+        ogit.Utilities.Electricity.Market:areaId
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Market:partOf  ogit.Utilities.Electricity:BiddingZone ]
+        [ ogit:isPartOf  ogit.Utilities.Electricity:BiddingZone ]
     );
 .

@@ -1,6 +1,7 @@
 @prefix dcterms:                                   <http://purl.org/dc/terms/> .
 @prefix ogit:                                      <http://www.purl.org/ogit/> .
 @prefix ogit.Utilities.Electricity.Grid:           <http://www.purl.org/ogit/Utilities/Electricity/Grid/> .
+@prefix ogit.Utilities.Electricity.Market:         <http://www.purl.org/ogit/Utilities/Electricity/Market/> .
 @prefix ogit.Utilities.Electricity.Telecontrol.InterControlCenter: <http://www.purl.org/ogit/Utilities/Electricity/Telecontrol/InterControlCenter/> .
 @prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
@@ -17,19 +18,19 @@ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:TaseProtectionEquipmen
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:tase_equipment_id
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:parent_dataset_member_ref
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:event_qualifier
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:taseEquipmentId
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:parentDatasetMemberRef
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:eventQualifier
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:linked_cim_protection_ref
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:linkedCimProtectionRef
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:tase_equipment_id
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:taseEquipmentId
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:referencedBy  ogit.Utilities.Electricity.Telecontrol.InterControlCenter:DataSetMember ]
+        [ ogit.Utilities.Electricity.Market:referencedBy  ogit.Utilities.Electricity.Telecontrol.InterControlCenter:DataSetMember ]
         [ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:mirrors  ogit.Utilities.Electricity.Grid:ProtectionEquipment ]
-        [ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:generates  sgo:Timeseries ]
+        [ ogit:generates  sgo:Timeseries ]
     );
 .

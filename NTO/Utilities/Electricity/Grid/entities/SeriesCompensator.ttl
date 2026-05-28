@@ -19,12 +19,12 @@ ogit.Utilities.Electricity.Grid:SeriesCompensator
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
         ogit:name
-        ogit.Utilities.Electricity.Grid:r_ohm
-        ogit.Utilities.Electricity.Grid:x_ohm
+        ogit.Utilities.Electricity.Grid:rOhm
+        ogit.Utilities.Electricity.Grid:xOhm
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Grid:varistor_present
-        ogit.Utilities.Electricity.Grid:varistor_rated_current_a
+        ogit.Utilities.Electricity.Grid:varistorPresent
+        ogit.Utilities.Electricity.Grid:varistorRatedCurrentA
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid

@@ -19,17 +19,17 @@ ogit.Utilities.Electricity.Operations.StateEstimation:SvVoltage
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
-        ogit.Utilities.Electricity.Operations.StateEstimation:topological_node_ref
+        ogit.Utilities.Electricity.Operations.StateEstimation:topologicalNodeRef
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Operations.StateEstimation:voltage_v_unit_kv
-        ogit.Utilities.Electricity.Operations.StateEstimation:angle_unit_degrees
+        ogit.Utilities.Electricity.Operations.StateEstimation:voltageVUnitKv
+        ogit.Utilities.Electricity.Operations.StateEstimation:angleUnitDegrees
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Operations.StateEstimation:at  ogit.Utilities.Electricity.Grid:TopologicalNode ]
-        [ ogit.Utilities.Electricity.Operations.StateEstimation:generates  sgo:Timeseries ]
+        [ ogit.Utilities.Electricity.Grid:at  ogit.Utilities.Electricity.Grid:TopologicalNode ]
+        [ ogit:generates  sgo:Timeseries ]
     );
 .

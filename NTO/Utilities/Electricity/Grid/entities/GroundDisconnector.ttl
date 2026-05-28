@@ -19,10 +19,10 @@ ogit.Utilities.Electricity.Grid:GroundDisconnector
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
         ogit:name
-        ogit.Utilities.Electricity.Grid:normal_open
+        ogit.Utilities.Electricity.Grid:normalOpen
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Grid:interlocking_ref
+        ogit.Utilities.Electricity.Grid:interlockingRef
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid

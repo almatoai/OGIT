@@ -17,19 +17,19 @@ ogit.Utilities.Electricity:BiddingZoneMembership
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity:membership_id
-        ogit.Utilities:valid_from
+        ogit.Utilities.Electricity:membershipId
+        ogit:validFrom
     );
     ogit:optional-attributes (
-        ogit.Utilities:valid_until
-        ogit.Utilities.Electricity:transition_reason
-        ogit.Utilities.Electricity:regulatory_action_ref
+        ogit.Utilities:validUntil
+        ogit.Utilities.Electricity:transitionReason
+        ogit.Utilities.Electricity:regulatoryActionRef
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity:membership_id
+        ogit.Utilities.Electricity:membershipId
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity:memberOf  ogit.Utilities.Electricity:BiddingZone ]
+        [ ogit.Utilities:memberOf  ogit.Utilities.Electricity:BiddingZone ]
         [ ogit.Utilities.Electricity:memberSubject  ogit.Utilities.Electricity:GeneratingUnit ]
         [ ogit.Utilities.Electricity:memberSubject  ogit.Utilities.Electricity:EnergyStorage ]
         [ ogit.Utilities.Electricity:memberSubject  ogit.Utilities.Electricity:EnergyConsumer ]

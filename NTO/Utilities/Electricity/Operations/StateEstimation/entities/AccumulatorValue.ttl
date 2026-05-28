@@ -18,18 +18,18 @@ ogit.Utilities.Electricity.Operations.StateEstimation:AccumulatorValue
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
-        ogit.Utilities.Electricity.Operations.StateEstimation:parent_measurement_ref
-        ogit.Utilities.Electricity.Operations.StateEstimation:unit_symbol
+        ogit.Utilities.Electricity.Operations.StateEstimation:parentMeasurementRef
+        ogit.Utilities.Electricity.Operations.StateEstimation:unitSymbol
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Operations.StateEstimation:rollover_value
-        ogit.Utilities.Electricity.Operations.StateEstimation:last_reset_at
+        ogit.Utilities.Electricity.Operations.StateEstimation:rolloverValue
+        ogit.Utilities.Electricity.Operations.StateEstimation:lastResetAt
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid
     );
     ogit:allowed (
         [ ogit.Utilities.Electricity.Operations.StateEstimation:belongsTo  ogit.Utilities.Electricity.Operations.StateEstimation:Measurement ]
-        [ ogit.Utilities.Electricity.Operations.StateEstimation:generates  sgo:Timeseries ]
+        [ ogit:generates  sgo:Timeseries ]
     );
 .

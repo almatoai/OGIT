@@ -18,24 +18,24 @@ ogit.Utilities.Electricity.Operations:NetworkCodeViolation
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity.Operations:violation_id
-        ogit.Utilities.Electricity.Operations:code_reference
-        ogit.Utilities:subject_ref
-        ogit.Utilities.Electricity.Operations:occurred_at
-        ogit.Utilities.Electricity.Operations:resolved_at
+        ogit.Utilities.Electricity.Operations:violationId
+        ogit.Utilities.Electricity.Operations:codeReference
+        ogit.Utilities:subjectRef
+        ogit.Utilities.Electricity.Operations:occurredAt
+        ogit.Utilities.Electricity.Operations:resolvedAt
     );
     ogit:optional-attributes (
-        ogit.Utilities:severity
-        ogit.Utilities.Electricity.Operations:notification_status
-        ogit.Utilities.Electricity.Operations:reported_to_ref
-        ogit.Utilities.Electricity.Operations:root_cause
-        ogit.Utilities.Electricity.Operations:corrective_action_ref
+        ogit:severity
+        ogit.Utilities.Electricity.Operations:notificationStatus
+        ogit.Utilities.Electricity.Operations:reportedToRef
+        ogit.Utilities.Electricity.Operations:rootCause
+        ogit.Utilities.Electricity.Operations:correctiveActionRef
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity.Operations:violation_id
+        ogit.Utilities.Electricity.Operations:violationId
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Operations:affects  ogit.Utilities.Electricity:ControlArea ]
-        [ ogit.Utilities.Electricity.Operations:reportedBy  ogit.Utilities:NetworkOperator ]
+        [ ogit:affects  ogit.Utilities.Electricity:ControlArea ]
+        [ ogit.Utilities:reportedBy  ogit.Utilities:NetworkOperator ]
     );
 .

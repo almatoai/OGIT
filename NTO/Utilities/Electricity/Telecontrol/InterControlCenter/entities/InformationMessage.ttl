@@ -18,23 +18,23 @@ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:InformationMessage
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:message_id
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:parent_table_ref
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:info_reference
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:local_reference
-        ogit.Utilities.Electricity.Operations:message_text
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:sent_at
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:messageId
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:parentTableRef
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:infoReference
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:localReference
+        ogit.Utilities.Electricity.Operations:messageText
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:sentAt
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:acknowledged_at
-        ogit.Utilities.Electricity.Operations:priority
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:category
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:acknowledgedAt
+        ogit:priority
+        ogit:category
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:message_id
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:messageId
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:partOf  ogit.Utilities.Electricity.Telecontrol.InterControlCenter:BilateralTable ]
+        [ ogit:isPartOf  ogit.Utilities.Electricity.Telecontrol.InterControlCenter:BilateralTable ]
         [ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:sentBy  ogit.Utilities:ControlCenter ]
         [ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:acknowledgedBy  ogit.Utilities:ControlCenter ]
     );

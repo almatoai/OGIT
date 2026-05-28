@@ -19,20 +19,20 @@ ogit.Utilities.Electricity.Grid:StaticVarCompensator
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
         ogit:name
-        ogit.Utilities.Electricity.Grid:inductive_rating_mvar
-        ogit.Utilities.Electricity.Grid:capacitive_rating_mvar
+        ogit.Utilities.Electricity.Grid:inductiveRatingMvar
+        ogit.Utilities.Electricity.Grid:capacitiveRatingMvar
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Grid:slope_percent
-        ogit.Utilities.Electricity.Grid:voltage_set_point_kv
-        ogit.Utilities.Electricity.Grid:regulating_control_ref
+        ogit.Utilities.Electricity.Grid:slopePercent
+        ogit.Utilities.Electricity.Grid:voltageSetPointKv
+        ogit.Utilities.Electricity.Grid:regulatingControlRef
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Grid:controlledBy  ogit.Utilities.Electricity.Grid:RegulatingControl ]
+        [ ogit:controlledBy  ogit.Utilities.Electricity.Grid:RegulatingControl ]
         [ ogit.Utilities.Electricity.Grid:hasTerminal  ogit.Utilities.Electricity.Grid:Terminal ]
-        [ ogit.Utilities.Electricity.Grid:generates  sgo:Timeseries ]
+        [ ogit:generates  sgo:Timeseries ]
     );
 .

@@ -18,19 +18,19 @@ ogit.Utilities.Electricity.Diagram:DiagramObject
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
-        ogit.Utilities.Electricity.Diagram:parent_diagram_ref
-        ogit.Utilities.Electricity.Diagram:psr_ref
+        ogit.Utilities.Electricity.Diagram:parentDiagramRef
+        ogit.Utilities.Electricity.Diagram:psrRef
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Diagram:rotation_degrees
-        ogit.Utilities.Electricity.Diagram:style_ref
-        ogit.Utilities.Electricity.Diagram:is_polygon
+        ogit.Utilities.Electricity.Diagram:rotationDegrees
+        ogit.Utilities.Electricity.Diagram:styleRef
+        ogit.Utilities.Electricity.Diagram:isPolygon
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid
     );
     ogit:allowed (
         [ ogit.Utilities.Electricity.Diagram:representsObject  ogit.Utilities.Electricity:PowerSystemResource ]
-        [ ogit.Utilities.Electricity.Diagram:partOf  ogit.Utilities.Electricity.Diagram:Diagram ]
+        [ ogit:isPartOf  ogit.Utilities.Electricity.Diagram:Diagram ]
     );
 .

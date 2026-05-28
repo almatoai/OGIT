@@ -18,25 +18,25 @@ ogit.Utilities.Electricity.Dynamics:DynamicSimulationCase
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity.Dynamics:case_id
+        ogit.Utilities.Electricity.Dynamics:caseId
         ogit:name
-        ogit.Utilities.Electricity.Dynamics:subject_synchronous_area_ref
-        ogit.Utilities.Electricity.Dynamics:simulation_kind
-        ogit.Utilities.Electricity.Dynamics:initial_state_snapshot_ref
+        ogit.Utilities.Electricity.Dynamics:subjectSynchronousAreaRef
+        ogit.Utilities.Electricity.Dynamics:simulationKind
+        ogit.Utilities.Electricity.Dynamics:initialStateSnapshotRef
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Operations:tool_name
-        ogit.Utilities.Electricity.Operations:tool_version
-        ogit.Utilities.Electricity.Dynamics:simulation_duration_s
-        ogit.Utilities.Electricity.Dynamics:time_step_ms
-        ogit.Utilities.Electricity.Dynamics:result_artifact_uri
+        ogit.Utilities.Electricity.Operations:toolName
+        ogit.Utilities.Electricity.Operations:toolVersion
+        ogit.Utilities.Electricity.Dynamics:simulationDurationS
+        ogit.Utilities.Electricity.Dynamics:timeStepMs
+        ogit.Utilities.Electricity.Dynamics:resultArtifactUri
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity.Dynamics:case_id
+        ogit.Utilities.Electricity.Dynamics:caseId
     );
     ogit:allowed (
         [ ogit.Utilities.Electricity.Dynamics:studies  ogit.Utilities.Electricity:SynchronousArea ]
-        [ ogit.Utilities.Electricity.Dynamics:triggeredBy  sgo:Event ]
-        [ ogit.Utilities.Electricity.Dynamics:generates  sgo:Timeseries ]
+        [ ogit.Utilities.Electricity.Operations:triggeredBy  sgo:Event ]
+        [ ogit:generates  sgo:Timeseries ]
     );
 .

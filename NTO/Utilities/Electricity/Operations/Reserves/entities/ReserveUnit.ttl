@@ -19,25 +19,25 @@ ogit.Utilities.Electricity.Operations.Reserves:ReserveUnit
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities:unit_id
+        ogit.Utilities:unitId
         ogit:name
-        ogit.Utilities.Electricity.Market:participant_ref
-        ogit.Utilities.Electricity:control_area_ref
+        ogit.Utilities.Electricity.Market:participantRef
+        ogit.Utilities.Electricity:controlAreaRef
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Operations.Reserves:min_capacity_mw
-        ogit.Utilities.Electricity.Operations.Reserves:max_capacity_mw
-        ogit.Utilities.Electricity.Operations.Reserves:min_runtime_min
-        ogit.Utilities.Electricity.Operations.Reserves:min_downtime_min
-        ogit.Utilities.Electricity.Operations.Reserves:qualified_products
-        ogit.Utilities.Electricity.Operations.Reserves:qualification_date
+        ogit.Utilities.Electricity.Operations.Reserves:minCapacityMw
+        ogit.Utilities.Electricity.Operations.Reserves:maxCapacityMw
+        ogit.Utilities.Electricity.Operations.Reserves:minRuntimeMin
+        ogit.Utilities.Electricity.Operations.Reserves:minDowntimeMin
+        ogit.Utilities.Electricity.Operations.Reserves:qualifiedProducts
+        ogit.Utilities.Electricity.Operations.Reserves:qualificationDate
     );
     ogit:indexed-attributes (
-        ogit.Utilities:unit_id
+        ogit.Utilities:unitId
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Operations.Reserves:operatedBy  ogit.Utilities.Electricity:MarketParticipant ]
-        [ ogit.Utilities.Electricity.Operations.Reserves:provides  ogit.Utilities.Electricity.Operations.Reserves:FcrOffering ]
-        [ ogit.Utilities.Electricity.Operations.Reserves:partOf  ogit.Utilities.Electricity:ControlArea ]
+        [ ogit.Utilities:operatedBy  ogit.Utilities.Electricity:MarketParticipant ]
+        [ ogit:provides  ogit.Utilities.Electricity.Operations.Reserves:FcrOffering ]
+        [ ogit:isPartOf  ogit.Utilities.Electricity:ControlArea ]
     );
 .

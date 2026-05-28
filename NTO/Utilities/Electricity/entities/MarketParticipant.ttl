@@ -17,18 +17,18 @@ ogit.Utilities.Electricity:MarketParticipant
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity:participant_name
-        ogit.Utilities.Electricity:participant_eic
-        ogit.Utilities.Electricity:role_kind
+        ogit.Utilities.Electricity:participantName
+        ogit.Utilities.Electricity:participantEic
+        ogit.Utilities.Electricity:roleKind
     );
     ogit:optional-attributes (
-        ogit.Utilities:country_iso2
-        ogit.Utilities:parent_organization_ref
-        ogit.Utilities.Electricity:accredited_in
-        ogit.Utilities.Electricity:accreditation_status
+        ogit.Utilities:countryIso2
+        ogit.Utilities:parentOrganizationRef
+        ogit.Utilities.Electricity:accreditedIn
+        ogit.Utilities.Electricity:accreditationStatus
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity:participant_eic
+        ogit.Utilities.Electricity:participantEic
     );
     ogit:allowed (
 

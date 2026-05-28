@@ -20,11 +20,11 @@ ogit.Utilities.Electricity.Dynamics:SolarInverterDynamics
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
         ogit:name
-        ogit.Utilities:subject_ref
-        ogit.Utilities.Electricity.Dynamics:model_kind
+        ogit.Utilities:subjectRef
+        ogit.Utilities.Electricity.Dynamics:modelKind
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Dynamics:parameter_payload
+        ogit.Utilities.Electricity.Dynamics:parameterPayload
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid

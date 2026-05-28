@@ -19,18 +19,18 @@ ogit.Utilities.Electricity.Grid:Curve
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
         ogit:name
-        ogit.Utilities.Electricity.Grid:curve_style
-        ogit.Utilities.Electricity.Grid:x_unit
-        ogit.Utilities.Electricity.Grid:y1_unit
+        ogit.Utilities.Electricity.Grid:curveStyle
+        ogit.Utilities.Electricity.Grid:xUnit
+        ogit.Utilities.Electricity.Grid:y1Unit
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Grid:y2_unit
-        ogit.Utilities.Electricity.Grid:y3_unit
+        ogit.Utilities.Electricity.Grid:y2Unit
+        ogit.Utilities.Electricity.Grid:y3Unit
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Grid:consistsOf  ogit.Utilities.Electricity.Grid:CurveData ]
+        [ ogit:consistsOf  ogit.Utilities.Electricity.Grid:CurveData ]
     );
 .

@@ -19,13 +19,13 @@ ogit.Utilities.Electricity.Dynamics:GasTurbineGovernor
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
         ogit:name
-        ogit.Utilities.Electricity.Dynamics:synchronous_machine_dynamics_ref
-        ogit.Utilities.Electricity.Dynamics:model_kind
+        ogit.Utilities.Electricity.Dynamics:synchronousMachineDynamicsRef
+        ogit.Utilities.Electricity.Dynamics:modelKind
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity:cycle_kind
-        ogit.Utilities.Electricity.Dynamics:frequency_droop_percent
-        ogit.Utilities.Electricity.Dynamics:parameter_payload
+        ogit.Utilities.Electricity:cycleKind
+        ogit.Utilities.Electricity.Dynamics:frequencyDroopPercent
+        ogit.Utilities.Electricity.Dynamics:parameterPayload
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid

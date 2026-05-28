@@ -18,23 +18,23 @@ ogit.Utilities.Electricity:WindGeneratingUnit
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
         ogit:name
-        ogit.Utilities.Electricity:rated_p_mw
-        ogit.Utilities.Electricity:min_operating_p_mw
-        ogit.Utilities.Electricity:max_operating_p_mw
-        ogit.Utilities.Electricity:wind_kind
+        ogit.Utilities.Electricity:ratedPMw
+        ogit.Utilities.Electricity:minOperatingPMw
+        ogit.Utilities.Electricity:maxOperatingPMw
+        ogit.Utilities.Electricity:windKind
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity:turbine_count
-        ogit.Utilities.Electricity:turbine_model
-        ogit.Utilities.Electricity:rotor_diameter_m
-        ogit.Utilities.Electricity:hub_height_m
-        ogit.Utilities.Electricity:cut_in_speed_ms
-        ogit.Utilities.Electricity:cut_out_speed_ms
-        ogit.Utilities.Electricity:rated_speed_ms
-        ogit.Utilities.Electricity:water_body
-        ogit.Utilities.Electricity:water_depth_m
-        ogit.Utilities.Electricity:foundation_type
-        ogit.Utilities.Electricity:connection_type
+        ogit.Utilities.Electricity:turbineCount
+        ogit.Utilities.Electricity:turbineModel
+        ogit.Utilities.Electricity:rotorDiameterM
+        ogit.Utilities.Electricity:hubHeightM
+        ogit.Utilities.Electricity:cutInSpeedMs
+        ogit.Utilities.Electricity:cutOutSpeedMs
+        ogit.Utilities.Electricity:ratedSpeedMs
+        ogit.Utilities.Electricity:waterBody
+        ogit.Utilities.Electricity:waterDepthM
+        ogit.Utilities.Electricity:foundationType
+        ogit.Utilities.Electricity:connectionType
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid

@@ -19,10 +19,10 @@ ogit.Utilities.Electricity.Grid:LoadBreakSwitch
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
         ogit:name
-        ogit.Utilities.Electricity.Grid:normal_open
+        ogit.Utilities.Electricity.Grid:normalOpen
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Grid:rated_load_break_current_a
+        ogit.Utilities.Electricity.Grid:ratedLoadBreakCurrentA
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid

@@ -18,23 +18,23 @@ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:TaseProgram
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:program_id
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:parent_table_ref
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:program_name
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:program_state
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:programId
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:parentTableRef
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:programName
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:programState
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity:description_text
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:last_started_at
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:last_stopped_at
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:program_argument_payload_ref
+        ogit.Utilities.Electricity:descriptionText
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:lastStartedAt
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:lastStoppedAt
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:programArgumentPayloadRef
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:program_id
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:programId
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:partOf  ogit.Utilities.Electricity.Telecontrol.InterControlCenter:BilateralTable ]
-        [ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:runsOn  ogit.Utilities:ControlCenter ]
-        [ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:generates  sgo:Timeseries ]
+        [ ogit:isPartOf  ogit.Utilities.Electricity.Telecontrol.InterControlCenter:BilateralTable ]
+        [ ogit:runsOn  ogit.Utilities:ControlCenter ]
+        [ ogit:generates  sgo:Timeseries ]
     );
 .

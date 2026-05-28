@@ -18,7 +18,7 @@ ogit.Utilities.Electricity.Grid:Terminal
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
-        ogit.Utilities.Electricity.Grid:sequence_number
+        ogit.Utilities.Electricity.Grid:sequenceNumber
     );
     ogit:optional-attributes (
         ogit.Utilities.Electricity.Grid:connected

@@ -19,18 +19,18 @@ ogit.Utilities.Electricity.Diagram:DiagramObjectPoint
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
-        ogit.Utilities.Electricity.Diagram:parent_diagram_object_ref
-        ogit.Utilities.Electricity.Grid:sequence_number
-        ogit.Utilities.Electricity.Diagram:x_position
-        ogit.Utilities.Electricity.Diagram:y_position
+        ogit.Utilities.Electricity.Diagram:parentDiagramObjectRef
+        ogit.Utilities.Electricity.Grid:sequenceNumber
+        ogit.Utilities.Electricity.Diagram:xPosition
+        ogit.Utilities.Electricity.Diagram:yPosition
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Diagram:z_position
+        ogit.Utilities.Electricity.Diagram:zPosition
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Diagram:partOf  ogit.Utilities.Electricity.Diagram:DiagramObject ]
+        [ ogit:isPartOf  ogit.Utilities.Electricity.Diagram:DiagramObject ]
     );
 .

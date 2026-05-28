@@ -20,16 +20,16 @@ ogit.Utilities.Electricity.Dynamics:WindGeneratorDynamics
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
         ogit:name
-        ogit.Utilities:subject_ref
-        ogit.Utilities.Electricity.Dynamics:iec_type
+        ogit.Utilities:subjectRef
+        ogit.Utilities.Electricity.Dynamics:iecType
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Dynamics:aerodynamic_model_ref
-        ogit.Utilities.Electricity.Dynamics:mechanical_model_ref
-        ogit.Utilities.Electricity.Dynamics:electrical_model_ref
-        ogit.Utilities.Electricity.Dynamics:protection_model_ref
-        ogit.Utilities.Electricity.Dynamics:control_model_ref
-        ogit.Utilities.Electricity.Dynamics:parameter_payload
+        ogit.Utilities.Electricity.Dynamics:aerodynamicModelRef
+        ogit.Utilities.Electricity.Dynamics:mechanicalModelRef
+        ogit.Utilities.Electricity.Dynamics:electricalModelRef
+        ogit.Utilities.Electricity.Dynamics:protectionModelRef
+        ogit.Utilities.Electricity.Dynamics:controlModelRef
+        ogit.Utilities.Electricity.Dynamics:parameterPayload
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid

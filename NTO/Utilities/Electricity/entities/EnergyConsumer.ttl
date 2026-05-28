@@ -19,23 +19,23 @@ ogit.Utilities.Electricity:EnergyConsumer
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
         ogit:name
-        ogit.Utilities.Electricity:nominal_p_mw
+        ogit.Utilities.Electricity:nominalPMw
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity:nominal_q_mvar
-        ogit.Utilities.Electricity:consumer_kind
+        ogit.Utilities.Electricity:nominalQMvar
+        ogit.Utilities.Electricity:consumerKind
         ogit.Utilities.Electricity:dispatchable
         ogit.Utilities.Electricity:interruptible
-        ogit.Utilities.Electricity:load_profile_ref
-        ogit.Utilities.Electricity:connection_voltage_kv
-        ogit.Utilities.Electricity:customer_count
+        ogit.Utilities.Electricity:loadProfileRef
+        ogit.Utilities.Electricity:connectionVoltageKv
+        ogit.Utilities.Electricity:customerCount
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity:consumes  ogit.Utilities:EnergyCarrier ]
+        [ ogit:consumes  ogit.Utilities:EnergyCarrier ]
         [ ogit.Utilities.Electricity:subscribesTo  ogit.Utilities:Schedule ]
-        [ ogit.Utilities.Electricity:generates  sgo:Timeseries ]
+        [ ogit:generates  sgo:Timeseries ]
     );
 .

@@ -20,22 +20,22 @@ ogit.Utilities.Electricity.Grid:Substation
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
         ogit:name
-        ogit.Utilities:country_iso2
+        ogit.Utilities:countryIso2
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Grid:substation_kind
-        ogit.Utilities.Electricity.Grid:region_ref
-        ogit.Utilities.Electricity.Grid:subregion_ref
-        ogit.Utilities:operator_ref
-        ogit.Utilities:commissioning_year
+        ogit.Utilities.Electricity.Grid:substationKind
+        ogit.Utilities.Electricity.Grid:regionRef
+        ogit.Utilities.Electricity.Grid:subregionRef
+        ogit.Utilities:operatorRef
+        ogit.Utilities:commissioningYear
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Grid:partOf  ogit.Utilities.Electricity.Grid:GeographicalRegion ]
-        [ ogit.Utilities.Electricity.Grid:partOf  ogit.Utilities.Electricity.Grid:SubGeographicalRegion ]
-        [ ogit.Utilities.Electricity.Grid:consistsOf  ogit.Utilities.Electricity.Grid:VoltageLevel ]
-        [ ogit.Utilities.Electricity.Grid:consistsOf  ogit.Utilities.Electricity.Grid:Bay ]
+        [ ogit:isPartOf  ogit.Utilities.Electricity.Grid:GeographicalRegion ]
+        [ ogit:isPartOf  ogit.Utilities.Electricity.Grid:SubGeographicalRegion ]
+        [ ogit:consistsOf  ogit.Utilities.Electricity.Grid:VoltageLevel ]
+        [ ogit:consistsOf  ogit.Utilities.Electricity.Grid:Bay ]
     );
 .

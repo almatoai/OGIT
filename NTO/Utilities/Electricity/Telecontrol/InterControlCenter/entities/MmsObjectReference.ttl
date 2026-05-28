@@ -17,16 +17,16 @@ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:MmsObjectReference
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:ref_id
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:domain_name
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:item_name
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:refId
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:domainName
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:itemName
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:vmd_name
-        ogit.Utilities.Electricity:description_text
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:vmdName
+        ogit.Utilities.Electricity:descriptionText
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:ref_id
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:refId
     );
     ogit:allowed (
         [ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:identifies  ogit.Utilities.Electricity.Telecontrol.InterControlCenter:IndicationPoint ]

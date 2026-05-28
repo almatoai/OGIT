@@ -18,24 +18,24 @@ ogit.Utilities.Electricity:HydroGeneratingUnit
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
         ogit:name
-        ogit.Utilities.Electricity:rated_p_mw
-        ogit.Utilities.Electricity:min_operating_p_mw
-        ogit.Utilities.Electricity:max_operating_p_mw
-        ogit.Utilities.Electricity:hydro_kind
+        ogit.Utilities.Electricity:ratedPMw
+        ogit.Utilities.Electricity:minOperatingPMw
+        ogit.Utilities.Electricity:maxOperatingPMw
+        ogit.Utilities.Electricity:hydroKind
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity:head_meters
-        ogit.Utilities.Electricity:reservoir_capacity_mcm
-        ogit.Utilities.Electricity:dam_height_m
-        ogit.Utilities.Electricity:river_name
-        ogit.Utilities.Electricity:installed_year
-        ogit.Utilities.Electricity:pump_capacity_mw
-        ogit.Utilities.Electricity:round_trip_efficiency
-        ogit.Utilities.Electricity:min_storage_mwh
-        ogit.Utilities.Electricity:max_storage_mwh
-        ogit.Utilities.Electricity:cascade_position
-        ogit.Utilities.Electricity:upstream_unit_ref
-        ogit.Utilities.Electricity:downstream_unit_ref
+        ogit.Utilities.Electricity:headMeters
+        ogit.Utilities.Electricity:reservoirCapacityMcm
+        ogit.Utilities.Electricity:damHeightM
+        ogit.Utilities.Electricity:riverName
+        ogit.Utilities.Electricity:installedYear
+        ogit.Utilities.Electricity:pumpCapacityMw
+        ogit.Utilities.Electricity:roundTripEfficiency
+        ogit.Utilities.Electricity:minStorageMwh
+        ogit.Utilities.Electricity:maxStorageMwh
+        ogit.Utilities.Electricity:cascadePosition
+        ogit.Utilities.Electricity:upstreamUnitRef
+        ogit.Utilities.Electricity:downstreamUnitRef
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid

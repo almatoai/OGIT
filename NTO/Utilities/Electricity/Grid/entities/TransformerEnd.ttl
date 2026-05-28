@@ -18,14 +18,14 @@ ogit.Utilities.Electricity.Grid:TransformerEnd
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
-        ogit.Utilities.Electricity.Grid:end_number
+        ogit.Utilities.Electricity.Grid:endNumber
     );
     ogit:optional-attributes (
         ogit.Utilities.Electricity.Grid:grounded
-        ogit.Utilities.Electricity.Grid:r_ground_ohm
-        ogit.Utilities.Electricity.Grid:x_ground_ohm
-        ogit.Utilities.Electricity.Grid:bmagsat_siemens
-        ogit.Utilities.Electricity.Grid:magnetizing_branch_present
+        ogit.Utilities.Electricity.Grid:rGroundOhm
+        ogit.Utilities.Electricity.Grid:xGroundOhm
+        ogit.Utilities.Electricity.Grid:bmagsatSiemens
+        ogit.Utilities.Electricity.Grid:magnetizingBranchPresent
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid

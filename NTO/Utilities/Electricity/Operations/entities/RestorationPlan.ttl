@@ -18,25 +18,25 @@ ogit.Utilities.Electricity.Operations:RestorationPlan
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity.Operations:plan_id
+        ogit.Utilities.Electricity.Operations:planId
         ogit:name
-        ogit.Utilities.Electricity:synchronous_area_ref
-        ogit.Utilities:valid_from
+        ogit.Utilities.Electricity:synchronousAreaRef
+        ogit:validFrom
     );
     ogit:optional-attributes (
-        ogit.Utilities:valid_until
-        ogit.Utilities.Electricity.Operations:last_drill_date
-        ogit.Utilities.Electricity.Operations:next_drill_date
-        ogit.Utilities.Electricity.Operations:responsible_party_ref
+        ogit.Utilities:validUntil
+        ogit.Utilities.Electricity.Operations:lastDrillDate
+        ogit.Utilities.Electricity.Operations:nextDrillDate
+        ogit.Utilities.Electricity.Operations:responsiblePartyRef
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity.Operations:plan_id
+        ogit.Utilities.Electricity.Operations:planId
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Operations:appliesTo  ogit.Utilities.Electricity:SynchronousArea ]
-        [ ogit.Utilities.Electricity.Operations:appliesTo  ogit.Utilities.Electricity:ControlArea ]
-        [ ogit.Utilities.Electricity.Operations:consistsOf  ogit.Utilities.Electricity.Operations:SwitchAction ]
-        [ ogit.Utilities.Electricity.Operations:triggers  ogit.Utilities.Electricity.Operations:BlackStartService ]
-        [ ogit.Utilities.Electricity.Operations:generates  sgo:Timeseries ]
+        [ ogit.Utilities:appliesTo  ogit.Utilities.Electricity:SynchronousArea ]
+        [ ogit.Utilities:appliesTo  ogit.Utilities.Electricity:ControlArea ]
+        [ ogit:consistsOf  ogit.Utilities.Electricity.Operations:SwitchAction ]
+        [ ogit:triggers  ogit.Utilities.Electricity.Operations:BlackStartService ]
+        [ ogit:generates  sgo:Timeseries ]
     );
 .

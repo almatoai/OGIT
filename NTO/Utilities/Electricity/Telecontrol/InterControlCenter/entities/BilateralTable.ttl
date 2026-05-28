@@ -17,24 +17,24 @@ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:BilateralTable
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:table_id
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:tableId
         ogit:name
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:local_party_ref
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:remote_party_ref
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:signed_at
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:effective_from
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:localPartyRef
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:remotePartyRef
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:signedAt
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:effectiveFrom
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:effective_until
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:tase_version
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:signatories_payload
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:conformance_blocks
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:effectiveUntil
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:taseVersion
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:signatoriesPayload
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:conformanceBlocks
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:table_id
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:tableId
     );
     ogit:allowed (
         [ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:negotiatedBy  ogit.Utilities:ControlCenter ]
-        [ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:governs  ogit.Utilities.Electricity.Telecontrol.InterControlCenter:DataSet ]
+        [ ogit:governs  ogit.Utilities.Electricity.Telecontrol.InterControlCenter:DataSet ]
     );
 .

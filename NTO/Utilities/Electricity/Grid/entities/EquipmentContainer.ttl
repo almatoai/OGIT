@@ -21,7 +21,7 @@ ogit.Utilities.Electricity.Grid:EquipmentContainer
         ogit:name
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity:description_text
+        ogit.Utilities.Electricity:descriptionText
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid

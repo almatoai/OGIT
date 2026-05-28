@@ -17,19 +17,19 @@ ogit.Utilities.Electricity:SynchronousAreaMembership
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity:membership_id
-        ogit.Utilities:valid_from
+        ogit.Utilities.Electricity:membershipId
+        ogit:validFrom
     );
     ogit:optional-attributes (
-        ogit.Utilities:valid_until
-        ogit.Utilities.Electricity:transition_reason
-        ogit.Utilities.Electricity:desynchronisation_event_ref
+        ogit.Utilities:validUntil
+        ogit.Utilities.Electricity:transitionReason
+        ogit.Utilities.Electricity:desynchronisationEventRef
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity:membership_id
+        ogit.Utilities.Electricity:membershipId
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity:memberOf  ogit.Utilities.Electricity:SynchronousArea ]
+        [ ogit.Utilities:memberOf  ogit.Utilities.Electricity:SynchronousArea ]
         [ ogit.Utilities.Electricity:memberSubject  ogit.Utilities.Electricity:ControlArea ]
         [ ogit.Utilities.Electricity:memberSubject  ogit.Utilities.Electricity:BiddingZone ]
     );

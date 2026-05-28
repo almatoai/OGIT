@@ -18,25 +18,25 @@ ogit.Utilities.Electricity.Operations:DefensePlan
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity.Operations:plan_id
+        ogit.Utilities.Electricity.Operations:planId
         ogit:name
-        ogit.Utilities.Electricity.Operations:trigger_condition
-        ogit.Utilities.Electricity:synchronous_area_ref
+        ogit.Utilities.Electricity.Operations:triggerCondition
+        ogit.Utilities.Electricity:synchronousAreaRef
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Operations:last_test_date
-        ogit.Utilities.Electricity.Operations:last_activation_date
-        ogit.Utilities.Electricity.Operations:responsible_party_ref
-        ogit.Utilities:valid_from
-        ogit.Utilities:valid_until
+        ogit.Utilities.Electricity.Operations:lastTestDate
+        ogit.Utilities.Electricity.Operations:lastActivationDate
+        ogit.Utilities.Electricity.Operations:responsiblePartyRef
+        ogit:validFrom
+        ogit.Utilities:validUntil
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity.Operations:plan_id
+        ogit.Utilities.Electricity.Operations:planId
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Operations:appliesTo  ogit.Utilities.Electricity:SynchronousArea ]
-        [ ogit.Utilities.Electricity.Operations:appliesTo  ogit.Utilities.Electricity:LFCBlock ]
-        [ ogit.Utilities.Electricity.Operations:consistsOf  ogit.Utilities.Electricity.Operations:SwitchAction ]
-        [ ogit.Utilities.Electricity.Operations:generates  sgo:Timeseries ]
+        [ ogit.Utilities:appliesTo  ogit.Utilities.Electricity:SynchronousArea ]
+        [ ogit.Utilities:appliesTo  ogit.Utilities.Electricity:LFCBlock ]
+        [ ogit:consistsOf  ogit.Utilities.Electricity.Operations:SwitchAction ]
+        [ ogit:generates  sgo:Timeseries ]
     );
 .

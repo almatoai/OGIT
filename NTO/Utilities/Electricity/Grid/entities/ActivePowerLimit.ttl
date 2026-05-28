@@ -17,18 +17,18 @@ ogit.Utilities.Electricity.Grid:ActivePowerLimit
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities:limit_id
-        ogit.Utilities:limit_kind
-        ogit.Utilities:limit_value
-        ogit.Utilities:limit_unit
-        ogit.Utilities:limit_direction
-        ogit.Utilities.Electricity.Grid:value_mw
+        ogit.Utilities:limitId
+        ogit.Utilities:limitKind
+        ogit.Utilities:limitValue
+        ogit.Utilities:limitUnit
+        ogit.Utilities:limitDirection
+        ogit.Utilities.Electricity.Grid:valueMw
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Grid:normal_value_mw
+        ogit.Utilities.Electricity.Grid:normalValueMw
     );
     ogit:indexed-attributes (
-        ogit.Utilities:limit_id
+        ogit.Utilities:limitId
     );
     ogit:allowed (
 

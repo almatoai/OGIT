@@ -16,21 +16,21 @@ ogit.Utilities.Electricity:SynchronousArea
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity:area_name
-        ogit.Utilities.Electricity:area_eic
-        ogit.Utilities.Electricity:nominal_frequency_hz
+        ogit.Utilities.Electricity:areaName
+        ogit.Utilities.Electricity:areaEic
+        ogit.Utilities.Electricity:nominalFrequencyHz
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity:member_country_iso2_list
-        ogit.Utilities.Electricity:desynchronization_event_ref
-        ogit.Utilities.Electricity:minimum_inertia_mws
-        ogit.Utilities.Electricity:reference_organization_ref
+        ogit.Utilities.Electricity:memberCountryIso2List
+        ogit.Utilities.Electricity:desynchronizationEventRef
+        ogit.Utilities.Electricity:minimumInertiaMws
+        ogit.Utilities.Electricity:referenceOrganizationRef
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity:area_eic
+        ogit.Utilities.Electricity:areaEic
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity:consistsOf  ogit.Utilities.Electricity:ControlArea ]
+        [ ogit:consistsOf  ogit.Utilities.Electricity:ControlArea ]
         [ ogit.Utilities.Electricity:interconnectsTo  ogit.Utilities.Electricity:SynchronousArea ]
     );
 .

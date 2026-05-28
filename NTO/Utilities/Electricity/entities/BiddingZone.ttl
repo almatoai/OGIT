@@ -17,21 +17,21 @@ ogit.Utilities.Electricity:BiddingZone
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity:zone_name
-        ogit.Utilities.Electricity:zone_eic
-        ogit.Utilities:valid_from
+        ogit.Utilities.Electricity:zoneName
+        ogit.Utilities.Electricity:zoneEic
+        ogit:validFrom
     );
     ogit:optional-attributes (
-        ogit.Utilities:valid_until
-        ogit.Utilities.Electricity:currency_iso
-        ogit.Utilities:time_zone
-        ogit.Utilities.Electricity:coupling_group_ref
-        ogit.Utilities.Electricity:imbalance_settlement_period_min
-        ogit.Utilities.Electricity:regulatory_authority_ref
+        ogit.Utilities:validUntil
+        ogit.Utilities.Electricity:currencyIso
+        ogit:timeZone
+        ogit.Utilities.Electricity:couplingGroupRef
+        ogit.Utilities.Electricity:imbalanceSettlementPeriodMin
+        ogit.Utilities.Electricity:regulatoryAuthorityRef
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity:zone_eic
-        ogit.Utilities.Electricity:zone_name
+        ogit.Utilities.Electricity:zoneEic
+        ogit.Utilities.Electricity:zoneName
     );
     ogit:allowed (
         [ ogit.Utilities.Electricity:coveredBy  ogit.Utilities.Electricity:ControlArea ]

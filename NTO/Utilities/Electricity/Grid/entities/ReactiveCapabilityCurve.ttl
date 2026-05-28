@@ -1,5 +1,6 @@
 @prefix dcterms:                                   <http://purl.org/dc/terms/> .
 @prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
 @prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
 @prefix ogit.Utilities.Electricity.Grid:           <http://www.purl.org/ogit/Utilities/Electricity/Grid/> .
 @prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
@@ -19,17 +20,17 @@ ogit.Utilities.Electricity.Grid:ReactiveCapabilityCurve
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
         ogit:name
-        ogit.Utilities.Electricity.Grid:curve_style
-        ogit.Utilities.Electricity.Grid:x_unit
-        ogit.Utilities.Electricity.Grid:y1_unit
+        ogit.Utilities.Electricity.Grid:curveStyle
+        ogit.Utilities.Electricity.Grid:xUnit
+        ogit.Utilities.Electricity.Grid:y1Unit
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Grid:coupling_voltage_kv
+        ogit.Utilities.Electricity.Grid:couplingVoltageKv
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Grid:appliesTo  ogit.Utilities.Electricity.Grid:SynchronousMachine ]
+        [ ogit.Utilities:appliesTo  ogit.Utilities.Electricity.Grid:SynchronousMachine ]
     );
 .

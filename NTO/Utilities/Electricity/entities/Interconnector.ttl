@@ -17,25 +17,25 @@ ogit.Utilities.Electricity:Interconnector
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity:interconnector_name
-        ogit.Utilities.Electricity:interconnector_id
-        ogit.Utilities.Electricity:endpoint_a_control_area_ref
-        ogit.Utilities.Electricity:endpoint_b_control_area_ref
+        ogit.Utilities.Electricity:interconnectorName
+        ogit.Utilities.Electricity:interconnectorId
+        ogit.Utilities.Electricity:endpointAControlAreaRef
+        ogit.Utilities.Electricity:endpointBControlAreaRef
         ogit.Utilities.Electricity:technology
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity:rated_p_mw
-        ogit.Utilities.Electricity:length_km
-        ogit.Utilities:commissioning_year
-        ogit.Utilities.Electricity:decommissioning_year
-        ogit.Utilities.Electricity:routing_country_iso2_list
+        ogit.Utilities.Electricity:ratedPMw
+        ogit.Utilities.Electricity:lengthKm
+        ogit.Utilities:commissioningYear
+        ogit.Utilities.Electricity:decommissioningYear
+        ogit.Utilities.Electricity:routingCountryIso2List
         ogit.Utilities.Electricity:submarine
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity:interconnector_id
+        ogit.Utilities.Electricity:interconnectorId
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity:connects  ogit.Utilities.Electricity:ControlArea ]
+        [ ogit:connects  ogit.Utilities.Electricity:ControlArea ]
         [ ogit.Utilities.Electricity:transports  ogit.Utilities:EnergyCarrier ]
     );
 .

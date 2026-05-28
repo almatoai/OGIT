@@ -21,9 +21,9 @@ ogit.Utilities.Electricity.Grid:NonConformLoadGroup
         ogit:name
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Grid:sub_load_area_ref
-        ogit.Utilities.Electricity:nominal_p_mw
-        ogit.Utilities.Electricity:nominal_q_mvar
+        ogit.Utilities.Electricity.Grid:subLoadAreaRef
+        ogit.Utilities.Electricity:nominalPMw
+        ogit.Utilities.Electricity:nominalQMvar
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid

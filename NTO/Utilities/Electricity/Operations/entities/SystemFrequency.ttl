@@ -19,21 +19,21 @@ ogit.Utilities.Electricity.Operations:SystemFrequency
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity.Operations:frequency_id
-        ogit.Utilities.Electricity:synchronous_area_ref
-        ogit.Utilities.Electricity.Operations:freq_unit
-        ogit.Utilities.Electricity.Operations:nominal_freq_hz
-        ogit.Utilities:granularity_seconds
+        ogit.Utilities.Electricity.Operations:frequencyId
+        ogit.Utilities.Electricity:synchronousAreaRef
+        ogit.Utilities.Electricity.Operations:freqUnit
+        ogit.Utilities.Electricity.Operations:nominalFreqHz
+        ogit.Utilities:granularitySeconds
     );
     ogit:optional-attributes (
-        ogit.Utilities.Emissions:measurement_method
-        ogit.Utilities.Electricity.Operations:measurement_location_ref
+        ogit.Utilities.Emissions:measurementMethod
+        ogit.Utilities.Electricity.Operations:measurementLocationRef
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity.Operations:frequency_id
+        ogit.Utilities.Electricity.Operations:frequencyId
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Operations:measuredFor  ogit.Utilities.Electricity:SynchronousArea ]
-        [ ogit.Utilities.Electricity.Operations:generates  sgo:Timeseries ]
+        [ ogit.Utilities.Emissions:measuredFor  ogit.Utilities.Electricity:SynchronousArea ]
+        [ ogit:generates  sgo:Timeseries ]
     );
 .

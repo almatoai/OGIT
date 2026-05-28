@@ -19,21 +19,21 @@ ogit.Utilities.Electricity.Grid:VsConverter
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
         ogit:name
-        ogit.Utilities.Electricity.Grid:rated_udc_kv
+        ogit.Utilities.Electricity.Grid:ratedUdcKv
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Grid:q_set_pwm_min_mvar
-        ogit.Utilities.Electricity.Grid:q_set_pwm_max_mvar
-        ogit.Utilities.Electricity.Grid:delta_max_degrees
-        ogit.Utilities.Electricity.Grid:pq_capability_curve_ref
-        ogit.Utilities.Electricity.Grid:pole_loss_p_mw
+        ogit.Utilities.Electricity.Grid:qSetPwmMinMvar
+        ogit.Utilities.Electricity.Grid:qSetPwmMaxMvar
+        ogit.Utilities.Electricity.Grid:deltaMaxDegrees
+        ogit.Utilities.Electricity.Grid:pqCapabilityCurveRef
+        ogit.Utilities.Electricity.Grid:poleLossPMw
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid
     );
     ogit:allowed (
         [ ogit.Utilities.Electricity.Grid:hasTerminal  ogit.Utilities.Electricity.Grid:Terminal ]
-        [ ogit.Utilities.Electricity.Grid:partOf  ogit.Utilities.Electricity.Grid:DCConverterUnit ]
-        [ ogit.Utilities.Electricity.Grid:generates  sgo:Timeseries ]
+        [ ogit:isPartOf  ogit.Utilities.Electricity.Grid:DCConverterUnit ]
+        [ ogit:generates  sgo:Timeseries ]
     );
 .

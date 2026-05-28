@@ -18,21 +18,21 @@ ogit.Utilities.Electricity.Operations:PlannedOutage
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities:outage_id
-        ogit.Utilities:outage_kind
-        ogit.Utilities:start_time
+        ogit.Utilities:outageId
+        ogit.Utilities:outageKind
+        ogit.Utilities:startTime
         ogit.Utilities:domain
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Operations:work_order_ref
-        ogit.Utilities.Electricity.Operations:maintenance_kind
-        ogit.Utilities.Electricity.Operations:notice_given_days
-        ogit.Utilities.Electricity.Operations:regulatory_notification_ref
+        ogit.Utilities.Electricity.Operations:workOrderRef
+        ogit.Utilities.Electricity.Operations:maintenanceKind
+        ogit.Utilities.Electricity.Operations:noticeGivenDays
+        ogit.Utilities.Electricity.Operations:regulatoryNotificationRef
     );
     ogit:indexed-attributes (
-        ogit.Utilities:outage_id
+        ogit.Utilities:outageId
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Operations:affects  ogit.Utilities.Electricity:PowerSystemResource ]
+        [ ogit:affects  ogit.Utilities.Electricity:PowerSystemResource ]
     );
 .

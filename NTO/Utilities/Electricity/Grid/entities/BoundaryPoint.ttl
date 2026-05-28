@@ -19,13 +19,13 @@ ogit.Utilities.Electricity.Grid:BoundaryPoint
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
         ogit:name
-        ogit.Utilities.Electricity.Grid:connectivity_node_ref
-        ogit.Utilities.Electricity.Grid:from_endpoint_iso_code
-        ogit.Utilities.Electricity.Grid:to_endpoint_iso_code
+        ogit.Utilities.Electricity.Grid:connectivityNodeRef
+        ogit.Utilities.Electricity.Grid:fromEndpointIsoCode
+        ogit.Utilities.Electricity.Grid:toEndpointIsoCode
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Grid:boundary_description
-        ogit.Utilities.Electricity.Grid:tieline_id
+        ogit.Utilities.Electricity.Grid:boundaryDescription
+        ogit.Utilities.Electricity.Grid:tielineId
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid

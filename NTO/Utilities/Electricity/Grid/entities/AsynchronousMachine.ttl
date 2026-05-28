@@ -19,29 +19,29 @@ ogit.Utilities.Electricity.Grid:AsynchronousMachine
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
         ogit:name
-        ogit.Utilities.Electricity.Grid:rated_s_mva
-        ogit.Utilities.Electricity.Grid:rated_u_kv
-        ogit.Utilities.Electricity.Grid:asynchronous_machine_kind
+        ogit.Utilities.Electricity.Grid:ratedSMva
+        ogit.Utilities.Electricity.Grid:ratedUKv
+        ogit.Utilities.Electricity.Grid:asynchronousMachineKind
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Grid:r_a_pu
-        ogit.Utilities.Electricity.Grid:x_a_pu
-        ogit.Utilities.Electricity.Grid:r_b_pu
-        ogit.Utilities.Electricity.Grid:x_b_pu
-        ogit.Utilities.Electricity.Grid:xm_pu
-        ogit.Utilities.Electricity.Grid:rs_pu
-        ogit.Utilities.Electricity.Grid:xs_pu
+        ogit.Utilities.Electricity.Grid:rAPu
+        ogit.Utilities.Electricity.Grid:xAPu
+        ogit.Utilities.Electricity.Grid:rBPu
+        ogit.Utilities.Electricity.Grid:xBPu
+        ogit.Utilities.Electricity.Grid:xmPu
+        ogit.Utilities.Electricity.Grid:rsPu
+        ogit.Utilities.Electricity.Grid:xsPu
         ogit.Utilities.Electricity.Grid:efficiency
-        ogit.Utilities.Electricity.Grid:polar_pair_count
-        ogit.Utilities.Electricity.Grid:rated_speed_rpm
-        ogit.Utilities.Electricity.Grid:member_of_generating_unit_ref
+        ogit.Utilities.Electricity.Grid:polarPairCount
+        ogit.Utilities.Electricity.Grid:ratedSpeedRpm
+        ogit.Utilities.Electricity.Grid:memberOfGeneratingUnitRef
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Grid:partOf  ogit.Utilities.Electricity:GeneratingUnit ]
+        [ ogit:isPartOf  ogit.Utilities.Electricity:GeneratingUnit ]
         [ ogit.Utilities.Electricity.Grid:hasTerminal  ogit.Utilities.Electricity.Grid:Terminal ]
-        [ ogit.Utilities.Electricity.Grid:generates  sgo:Timeseries ]
+        [ ogit:generates  sgo:Timeseries ]
     );
 .

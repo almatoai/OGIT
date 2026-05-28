@@ -18,21 +18,21 @@ ogit.Utilities.Electricity:SolarGeneratingUnit
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
         ogit:name
-        ogit.Utilities.Electricity:rated_p_mw
-        ogit.Utilities.Electricity:min_operating_p_mw
-        ogit.Utilities.Electricity:max_operating_p_mw
-        ogit.Utilities.Electricity:pv_kind
+        ogit.Utilities.Electricity:ratedPMw
+        ogit.Utilities.Electricity:minOperatingPMw
+        ogit.Utilities.Electricity:maxOperatingPMw
+        ogit.Utilities.Electricity:pvKind
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity:panel_technology
-        ogit.Utilities.Electricity:tracking_kind
-        ogit.Utilities.Electricity:tilt_angle_deg
-        ogit.Utilities.Electricity:azimuth_deg
-        ogit.Utilities.Electricity:dc_to_ac_ratio
-        ogit.Utilities.Electricity:inverter_count
-        ogit.Utilities.Electricity:panel_count
-        ogit.Utilities.Electricity:csp_technology
-        ogit.Utilities.Electricity:csp_storage_h
+        ogit.Utilities.Electricity:panelTechnology
+        ogit.Utilities.Electricity:trackingKind
+        ogit.Utilities.Electricity:tiltAngleDeg
+        ogit.Utilities.Electricity:azimuthDeg
+        ogit.Utilities.Electricity:dcToAcRatio
+        ogit.Utilities.Electricity:inverterCount
+        ogit.Utilities.Electricity:panelCount
+        ogit.Utilities.Electricity:cspTechnology
+        ogit.Utilities.Electricity:cspStorageH
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid

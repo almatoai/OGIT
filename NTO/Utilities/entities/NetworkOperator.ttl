@@ -17,23 +17,23 @@ ogit.Utilities:NetworkOperator
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities:operator_name
-        ogit.Utilities:operator_eic
+        ogit.Utilities:operatorName
+        ogit.Utilities:operatorEic
         ogit.Utilities:domain
     );
     ogit:optional-attributes (
-        ogit.Utilities:operator_type
-        ogit.Utilities:country_iso2
-        ogit.Utilities:parent_organization_ref
-        ogit.Utilities:legal_form
-        ogit.Utilities:regulator_authority
+        ogit.Utilities:operatorType
+        ogit.Utilities:countryIso2
+        ogit.Utilities:parentOrganizationRef
+        ogit.Utilities:legalForm
+        ogit.Utilities:regulatorAuthority
         ogit:status
         ogit:source
         ogit:sourceId
     );
     ogit:indexed-attributes (
-        ogit.Utilities:operator_eic
-        ogit.Utilities:operator_name
+        ogit.Utilities:operatorEic
+        ogit.Utilities:operatorName
     );
     ogit:allowed (
         [ ogit.Utilities:operates  ogit.Utilities.Electricity:PowerPlant ]

@@ -18,21 +18,21 @@ ogit.Utilities.Electricity.Operations:ContingencyList
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity.Operations:list_id
+        ogit.Utilities.Electricity.Operations:listId
         ogit:name
-        ogit.Utilities:subject_ref
-        ogit.Utilities:valid_from
+        ogit.Utilities:subjectRef
+        ogit:validFrom
     );
     ogit:optional-attributes (
-        ogit.Utilities:valid_until
-        ogit.Utilities.Electricity.Grid:member_count
-        ogit.Utilities.Electricity.Operations:analysis_priority
+        ogit.Utilities:validUntil
+        ogit.Utilities.Electricity.Grid:memberCount
+        ogit.Utilities.Electricity.Operations:analysisPriority
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity.Operations:list_id
+        ogit.Utilities.Electricity.Operations:listId
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Operations:consistsOf  ogit.Utilities.Electricity.Operations:Contingency ]
+        [ ogit:consistsOf  ogit.Utilities.Electricity.Operations:Contingency ]
         [ ogit.Utilities.Electricity.Operations:analyzedBy  ogit.Utilities.Electricity.Operations:ContingencyAnalysis ]
     );
 .

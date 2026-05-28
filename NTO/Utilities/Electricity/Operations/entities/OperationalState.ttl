@@ -18,22 +18,22 @@ ogit.Utilities.Electricity.Operations:OperationalState
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity.Operations:state_kind
-        ogit.Utilities:subject_ref
-        ogit.Utilities.Electricity.Operations:entered_at
+        ogit.Utilities.Electricity.Operations:stateKind
+        ogit.Utilities:subjectRef
+        ogit.Utilities.Electricity.Operations:enteredAt
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Operations:triggering_event_ref
-        ogit.Utilities.Electricity.Operations:declared_by
-        ogit.Utilities.Electricity.Operations:exited_at
-        ogit.Utilities.Electricity.Operations:defense_plan_activated_ref
+        ogit.Utilities.Electricity.Operations:triggeringEventRef
+        ogit.Utilities.Electricity.Operations:declaredBy
+        ogit.Utilities.Electricity.Operations:exitedAt
+        ogit.Utilities.Electricity.Operations:defensePlanActivatedRef
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity.Operations:state_kind
+        ogit.Utilities.Electricity.Operations:stateKind
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Operations:appliesTo  ogit.Utilities.Electricity:SynchronousArea ]
-        [ ogit.Utilities.Electricity.Operations:appliesTo  ogit.Utilities.Electricity:ControlArea ]
+        [ ogit.Utilities:appliesTo  ogit.Utilities.Electricity:SynchronousArea ]
+        [ ogit.Utilities:appliesTo  ogit.Utilities.Electricity:ControlArea ]
         [ ogit.Utilities.Electricity.Operations:triggeredBy  ogit.Utilities.Electricity.Operations:Contingency ]
         [ ogit.Utilities.Electricity.Operations:triggeredBy  ogit.Utilities:Outage ]
     );

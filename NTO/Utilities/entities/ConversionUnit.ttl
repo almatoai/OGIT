@@ -17,30 +17,30 @@ ogit.Utilities:ConversionUnit
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities:unit_id
+        ogit.Utilities:unitId
         ogit:name
-        ogit.Utilities:conversion_kind
-        ogit.Utilities:input_carrier_ref
-        ogit.Utilities:output_carrier_ref
+        ogit.Utilities:conversionKind
+        ogit.Utilities:inputCarrierRef
+        ogit.Utilities:outputCarrierRef
     );
     ogit:optional-attributes (
         ogit.Utilities:bidirectional
-        ogit.Utilities:rated_p_input_mw
-        ogit.Utilities:rated_p_output_mw
-        ogit.Utilities:nominal_efficiency
-        ogit.Utilities:commissioning_year
-        ogit.Utilities:operator_ref
-        ogit.Utilities:location_ref
+        ogit.Utilities:ratedPInputMw
+        ogit.Utilities:ratedPOutputMw
+        ogit.Utilities:nominalEfficiency
+        ogit.Utilities:commissioningYear
+        ogit.Utilities:operatorRef
+        ogit.Utilities:locationRef
         ogit:status
     );
     ogit:indexed-attributes (
-        ogit.Utilities:unit_id
+        ogit.Utilities:unitId
     );
     ogit:allowed (
-        [ ogit.Utilities:consumes  ogit.Utilities:EnergyCarrier ]
-        [ ogit.Utilities:produces  ogit.Utilities:EnergyCarrier ]
+        [ ogit:consumes  ogit.Utilities:EnergyCarrier ]
+        [ ogit:produces  ogit.Utilities:EnergyCarrier ]
         [ ogit.Utilities:operatedBy  ogit.Utilities:NetworkOperator ]
         [ ogit.Utilities:emits  ogit.Utilities.Emissions:GreenhouseGasEmission ]
-        [ ogit.Utilities:generates  sgo:Timeseries ]
+        [ ogit:generates  sgo:Timeseries ]
     );
 .

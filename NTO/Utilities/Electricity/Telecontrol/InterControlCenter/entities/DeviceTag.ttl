@@ -19,19 +19,19 @@ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:DeviceTag
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:tag_id
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:referenced_point_ref
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:tag_kind
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:applied_at
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:applied_by_ref
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:tagId
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:referencedPointRef
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:tagKind
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:appliedAt
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:appliedByRef
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Operations:cleared_at
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:cleared_by_ref
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:reason
+        ogit.Utilities.Electricity.Operations:clearedAt
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:clearedByRef
+        ogit:reason
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:tag_id
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:tagId
     );
     ogit:allowed (
         [ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:appliedToIndication  ogit.Utilities.Electricity.Telecontrol.InterControlCenter:IndicationPoint ]

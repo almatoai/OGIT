@@ -19,21 +19,21 @@ ogit.Utilities.Electricity.Telecontrol:RTU
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity.Telecontrol:rtu_id
-        ogit.Utilities.Electricity.Grid:manufacturer
-        ogit.Utilities.Electricity.Grid:model
+        ogit.Utilities.Electricity.Telecontrol:rtuId
+        ogit:manufacturer
+        ogit:model
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Grid:firmware_version
-        ogit.Utilities.Electricity.Telecontrol:serial_number
-        ogit.Utilities:commissioning_year
-        ogit.Utilities.Electricity.Telecontrol:subject_substation_ref
+        ogit.Utilities.Electricity.Grid:firmwareVersion
+        ogit:serialNumber
+        ogit.Utilities:commissioningYear
+        ogit.Utilities.Electricity.Telecontrol:subjectSubstationRef
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity.Telecontrol:rtu_id
+        ogit.Utilities.Electricity.Telecontrol:rtuId
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Telecontrol:locatedIn  ogit.Utilities.Electricity.Grid:Substation ]
+        [ ogit:locatedIn  ogit.Utilities.Electricity.Grid:Substation ]
         [ ogit.Utilities.Electricity.Telecontrol:runs  ogit.Utilities.Electricity.Telecontrol:ProtocolEndpoint ]
     );
 .

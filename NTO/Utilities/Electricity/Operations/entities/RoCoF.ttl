@@ -3,6 +3,7 @@
 @prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
 @prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
 @prefix ogit.Utilities.Electricity.Operations:     <http://www.purl.org/ogit/Utilities/Electricity/Operations/> .
+@prefix ogit.Utilities.Emissions:                  <http://www.purl.org/ogit/Utilities/Emissions/> .
 @prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
@@ -18,22 +19,22 @@ ogit.Utilities.Electricity.Operations:RoCoF
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity.Operations:rocof_id
-        ogit.Utilities:subject_ref
-        ogit.Utilities.Electricity.Operations:rocof_unit
-        ogit.Utilities.Electricity.Operations:window_ms
-        ogit.Utilities:granularity_seconds
+        ogit.Utilities.Electricity.Operations:rocofId
+        ogit.Utilities:subjectRef
+        ogit.Utilities.Electricity.Operations:rocofUnit
+        ogit.Utilities.Electricity.Operations:windowMs
+        ogit.Utilities:granularitySeconds
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Operations:computation_method
-        ogit.Utilities.Electricity.Operations:threshold_alert_hz_per_s
+        ogit.Utilities.Electricity.Operations:computationMethod
+        ogit.Utilities.Electricity.Operations:thresholdAlertHzPerS
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity.Operations:rocof_id
+        ogit.Utilities.Electricity.Operations:rocofId
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Operations:measuredFor  ogit.Utilities.Electricity:SynchronousArea ]
-        [ ogit.Utilities.Electricity.Operations:measuredFor  ogit.Utilities.Electricity:GeneratingUnit ]
-        [ ogit.Utilities.Electricity.Operations:generates  sgo:Timeseries ]
+        [ ogit.Utilities.Emissions:measuredFor  ogit.Utilities.Electricity:SynchronousArea ]
+        [ ogit.Utilities.Emissions:measuredFor  ogit.Utilities.Electricity:GeneratingUnit ]
+        [ ogit:generates  sgo:Timeseries ]
     );
 .

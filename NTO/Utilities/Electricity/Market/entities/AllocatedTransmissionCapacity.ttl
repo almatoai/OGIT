@@ -18,23 +18,23 @@ ogit.Utilities.Electricity.Market:AllocatedTransmissionCapacity
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity.Market:allocation_id
-        ogit.Utilities.Electricity.Market:from_zone_ref
-        ogit.Utilities.Electricity.Market:to_zone_ref
-        ogit.Utilities.Emissions:period_start
-        ogit.Utilities.Emissions:period_end
-        ogit.Utilities.Electricity.Market:allocated_volume_mw
-        ogit.Utilities.Electricity.Market:price_eur_per_mw
+        ogit.Utilities.Electricity.Market:allocationId
+        ogit.Utilities.Electricity.Market:fromZoneRef
+        ogit.Utilities.Electricity.Market:toZoneRef
+        ogit.Utilities.Emissions:periodStart
+        ogit.Utilities.Emissions:periodEnd
+        ogit.Utilities.Electricity.Market:allocatedVolumeMw
+        ogit.Utilities.Electricity.Market:priceEurPerMw
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Market:participant_ref
-        ogit.Utilities.Electricity.Market:allocation_method
+        ogit.Utilities.Electricity.Market:participantRef
+        ogit.Utilities.Electricity.Market:allocationMethod
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity.Market:allocation_id
+        ogit.Utilities.Electricity.Market:allocationId
     );
     ogit:allowed (
         [ ogit.Utilities.Electricity.Market:awardedTo  ogit.Utilities.Electricity:MarketParticipant ]
-        [ ogit.Utilities.Electricity.Market:governedBy  ogit.Utilities.Electricity.Market:Market ]
+        [ ogit.Utilities.Electricity:governedBy  ogit.Utilities.Electricity.Market:Market ]
     );
 .

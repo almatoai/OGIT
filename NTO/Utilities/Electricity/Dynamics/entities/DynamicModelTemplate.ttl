@@ -1,7 +1,6 @@
 @prefix dcterms:                                   <http://purl.org/dc/terms/> .
 @prefix ogit:                                      <http://www.purl.org/ogit/> .
 @prefix ogit.Utilities.Electricity.Dynamics:       <http://www.purl.org/ogit/Utilities/Electricity/Dynamics/> .
-@prefix ogit.Utilities.Electricity.Grid:           <http://www.purl.org/ogit/Utilities/Electricity/Grid/> .
 @prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
@@ -17,18 +16,18 @@ ogit.Utilities.Electricity.Dynamics:DynamicModelTemplate
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity.Dynamics:template_id
+        ogit.Utilities.Electricity.Dynamics:templateId
         ogit:name
-        ogit.Utilities.Electricity.Dynamics:model_kind
-        ogit.Utilities.Electricity.Dynamics:parameter_payload
+        ogit.Utilities.Electricity.Dynamics:modelKind
+        ogit.Utilities.Electricity.Dynamics:parameterPayload
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Grid:manufacturer
-        ogit.Utilities.Electricity.Dynamics:tase_version
-        ogit.Utilities.Electricity.Dynamics:documentation_url
+        ogit:manufacturer
+        ogit.Utilities.Electricity.Dynamics:templateVersion
+        ogit.Utilities.Electricity.Dynamics:documentationUrl
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity.Dynamics:template_id
+        ogit.Utilities.Electricity.Dynamics:templateId
     );
     ogit:allowed (
         [ ogit.Utilities.Electricity.Dynamics:appliedTo  ogit.Utilities.Electricity.Dynamics:SynchronousMachineDynamics ]

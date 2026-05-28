@@ -18,20 +18,20 @@ ogit.Utilities.Electricity.Market:MarketTimeSlot
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity.Market:slot_id
-        ogit.Utilities.Emissions:period_start
-        ogit.Utilities.Emissions:period_end
-        ogit.Utilities:granularity_seconds
+        ogit.Utilities.Electricity.Market:slotId
+        ogit.Utilities.Emissions:periodStart
+        ogit.Utilities.Emissions:periodEnd
+        ogit.Utilities:granularitySeconds
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Market:bidding_zone_ref
-        ogit.Utilities.Electricity.Market:product_ref
+        ogit.Utilities.Electricity.Market:biddingZoneRef
+        ogit.Utilities.Electricity.Market:productRef
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity.Market:slot_id
+        ogit.Utilities.Electricity.Market:slotId
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Market:partOf  ogit.Utilities:Schedule ]
-        [ ogit.Utilities.Electricity.Market:partOf  ogit.Utilities.Electricity.Market:Market ]
+        [ ogit:isPartOf  ogit.Utilities:Schedule ]
+        [ ogit:isPartOf  ogit.Utilities.Electricity.Market:Market ]
     );
 .

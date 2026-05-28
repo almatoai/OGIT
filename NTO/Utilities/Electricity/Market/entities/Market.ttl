@@ -18,22 +18,22 @@ ogit.Utilities.Electricity.Market:Market
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity.Market:market_id
+        ogit.Utilities.Electricity.Market:marketId
         ogit:name
-        ogit.Utilities.Electricity.Market:market_kind
-        ogit.Utilities:operator_ref
+        ogit.Utilities.Electricity.Market:marketKind
+        ogit.Utilities:operatorRef
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Market:coupling_method
-        ogit.Utilities.Electricity.Market:gate_closure_time_zone
-        ogit.Utilities.Electricity.Market:participants_count
+        ogit.Utilities.Electricity.Market:couplingMethod
+        ogit.Utilities.Electricity.Market:gateClosureTimeZone
+        ogit.Utilities.Electricity.Market:participantsCount
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity.Market:market_id
+        ogit.Utilities.Electricity.Market:marketId
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Market:operatedBy  ogit.Utilities:NetworkOperator ]
-        [ ogit.Utilities.Electricity.Market:covers  ogit.Utilities.Electricity:BiddingZone ]
+        [ ogit.Utilities:operatedBy  ogit.Utilities:NetworkOperator ]
+        [ ogit:covers  ogit.Utilities.Electricity:BiddingZone ]
         [ ogit.Utilities.Electricity.Market:trades  ogit.Utilities.Electricity.Market:EnergyProduct ]
     );
 .

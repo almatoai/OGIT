@@ -18,28 +18,28 @@ ogit.Utilities.Electricity:PowerPlant
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity:plant_name
-        ogit.Utilities.Electricity:plant_id
+        ogit.Utilities.Electricity:plantName
+        ogit.Utilities.Electricity:plantId
     );
     ogit:optional-attributes (
-        ogit.Utilities:operator_ref
-        ogit.Utilities:country_iso2
-        ogit.Utilities:location_ref
-        ogit.Utilities.Electricity:total_rated_p_mw
-        ogit.Utilities.Electricity:total_storage_mwh
-        ogit.Utilities.Electricity:primary_carrier_ref
-        ogit.Utilities:commissioning_year
-        ogit.Utilities.Electricity:decommissioning_year
-        ogit.Utilities.Electricity:replaces_plant_ref
+        ogit.Utilities:operatorRef
+        ogit.Utilities:countryIso2
+        ogit.Utilities:locationRef
+        ogit.Utilities.Electricity:totalRatedPMw
+        ogit.Utilities.Electricity:totalStorageMwh
+        ogit.Utilities.Electricity:primaryCarrierRef
+        ogit.Utilities:commissioningYear
+        ogit.Utilities.Electricity:decommissioningYear
+        ogit.Utilities.Electricity:replacesPlantRef
         ogit:status
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity:plant_id
-        ogit.Utilities.Electricity:plant_name
+        ogit.Utilities.Electricity:plantId
+        ogit.Utilities.Electricity:plantName
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity:consistsOf  ogit.Utilities.Electricity:GeneratingUnit ]
-        [ ogit.Utilities.Electricity:operatedBy  ogit.Utilities:NetworkOperator ]
-        [ ogit.Utilities.Electricity:emits  ogit.Utilities.Emissions:GreenhouseGasEmission ]
+        [ ogit:consistsOf  ogit.Utilities.Electricity:GeneratingUnit ]
+        [ ogit.Utilities:operatedBy  ogit.Utilities:NetworkOperator ]
+        [ ogit.Utilities:emits  ogit.Utilities.Emissions:GreenhouseGasEmission ]
     );
 .

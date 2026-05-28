@@ -20,10 +20,10 @@ ogit.Utilities.Electricity.Dynamics:LoadStaticExponential
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
         ogit:name
-        ogit.Utilities:subject_ref
-        ogit.Utilities.Electricity.Dynamics:model_kind
-        ogit.Utilities.Electricity.Dynamics:exponent_p
-        ogit.Utilities.Electricity.Dynamics:exponent_q
+        ogit.Utilities:subjectRef
+        ogit.Utilities.Electricity.Dynamics:modelKind
+        ogit.Utilities.Electricity.Dynamics:exponentP
+        ogit.Utilities.Electricity.Dynamics:exponentQ
     );
     ogit:optional-attributes (
 

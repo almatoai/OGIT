@@ -21,13 +21,13 @@ ogit.Utilities.Electricity:PowerSystemResource
         ogit:name
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity:description_text
-        ogit.Utilities.Electricity:alias_name
-        ogit.Utilities.Electricity:category_ref
-        ogit.Utilities:operator_ref
-        ogit.Utilities.Electricity:commissioning_date
-        ogit.Utilities.Electricity:decommissioning_date
-        ogit.Utilities.Electricity:psr_type
+        ogit.Utilities.Electricity:descriptionText
+        ogit.Utilities.Electricity:aliasName
+        ogit.Utilities.Electricity:categoryRef
+        ogit.Utilities:operatorRef
+        ogit.Utilities.Electricity:commissioningDate
+        ogit.Utilities.Electricity:decommissioningDate
+        ogit.Utilities.Electricity:psrType
         ogit:status
         ogit:source
         ogit:sourceId
@@ -37,7 +37,7 @@ ogit.Utilities.Electricity:PowerSystemResource
         ogit:name
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity:operatedBy  ogit.Utilities:NetworkOperator ]
-        [ ogit.Utilities.Electricity:partOf  ogit.Utilities.Electricity:PowerPlant ]
+        [ ogit.Utilities:operatedBy  ogit.Utilities:NetworkOperator ]
+        [ ogit:isPartOf  ogit.Utilities.Electricity:PowerPlant ]
     );
 .

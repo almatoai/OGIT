@@ -21,14 +21,14 @@ ogit.Utilities.Electricity.Grid:EquivalentInjection
         ogit:name
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Grid:min_p_mw
-        ogit.Utilities.Electricity.Grid:max_p_mw
-        ogit.Utilities.Electricity.Grid:min_q_mvar
-        ogit.Utilities.Electricity.Grid:max_q_mvar
-        ogit.Utilities.Electricity.Grid:r_ohm
-        ogit.Utilities.Electricity.Grid:x_ohm
-        ogit.Utilities.Electricity.Grid:regulation_capability
-        ogit.Utilities.Electricity.Grid:regulation_target_kv
+        ogit.Utilities.Electricity.Grid:minPMw
+        ogit.Utilities.Electricity.Grid:maxPMw
+        ogit.Utilities.Electricity.Grid:minQMvar
+        ogit.Utilities.Electricity.Grid:maxQMvar
+        ogit.Utilities.Electricity.Grid:rOhm
+        ogit.Utilities.Electricity.Grid:xOhm
+        ogit.Utilities.Electricity.Grid:regulationCapability
+        ogit.Utilities.Electricity.Grid:regulationTargetKv
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid

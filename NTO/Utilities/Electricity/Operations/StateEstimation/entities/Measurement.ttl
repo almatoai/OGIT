@@ -20,16 +20,16 @@ ogit.Utilities.Electricity.Operations.StateEstimation:Measurement
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
         ogit:name
-        ogit.Utilities.Electricity.Operations.StateEstimation:measurement_kind
-        ogit.Utilities.Electricity.Operations.StateEstimation:measurement_type
-        ogit.Utilities.Electricity.Operations.StateEstimation:unit_symbol
-        ogit.Utilities.Electricity.Operations.StateEstimation:unit_multiplier
+        ogit.Utilities.Electricity.Operations.StateEstimation:measurementKind
+        ogit.Utilities.Electricity.Operations.StateEstimation:measurementType
+        ogit.Utilities.Electricity.Operations.StateEstimation:unitSymbol
+        ogit.Utilities.Electricity.Operations.StateEstimation:unitMultiplier
         ogit.Utilities.Electricity.Grid:phases
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity:terminal_ref
-        ogit.Utilities.Electricity.Operations.StateEstimation:power_system_resource_ref
-        ogit.Utilities.Electricity:description_text
+        ogit.Utilities.Electricity:terminalRef
+        ogit.Utilities.Electricity.Operations.StateEstimation:powerSystemResourceRef
+        ogit.Utilities.Electricity:descriptionText
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid
@@ -37,6 +37,6 @@ ogit.Utilities.Electricity.Operations.StateEstimation:Measurement
     ogit:allowed (
         [ ogit.Utilities.Electricity.Operations.StateEstimation:measures  ogit.Utilities.Electricity.Grid:Terminal ]
         [ ogit.Utilities.Electricity.Operations.StateEstimation:measures  ogit.Utilities.Electricity.Grid:TopologicalNode ]
-        [ ogit.Utilities.Electricity.Operations.StateEstimation:generates  sgo:Timeseries ]
+        [ ogit:generates  sgo:Timeseries ]
     );
 .

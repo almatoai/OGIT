@@ -16,17 +16,17 @@ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:RealPointIndication
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:tase_point_id
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:parent_dataset_member_ref
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:data_type
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:tasePointId
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:parentDatasetMemberRef
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:dataType
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:tase_unit
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:taseUnit
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:tase_point_id
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:tasePointId
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:generates  sgo:Timeseries ]
+        [ ogit:generates  sgo:Timeseries ]
     );
 .

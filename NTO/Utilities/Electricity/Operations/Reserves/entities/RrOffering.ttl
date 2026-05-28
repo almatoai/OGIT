@@ -18,23 +18,23 @@ ogit.Utilities.Electricity.Operations.Reserves:RrOffering
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity.Operations.Reserves:offering_id
-        ogit.Utilities.Electricity.Operations.Reserves:reserve_unit_ref
-        ogit.Utilities.Emissions:period_start
-        ogit.Utilities.Emissions:period_end
+        ogit.Utilities.Electricity.Operations.Reserves:offeringId
+        ogit.Utilities.Electricity.Operations.Reserves:reserveUnitRef
+        ogit.Utilities.Emissions:periodStart
+        ogit.Utilities.Emissions:periodEnd
         ogit.Utilities.Electricity.Market:direction
-        ogit.Utilities.Electricity.Operations.Reserves:capacity_mw
-        ogit.Utilities.Electricity.Operations.Reserves:capacity_price_eur_per_mw
-        ogit.Utilities.Electricity.Operations.Reserves:energy_price_eur_per_mwh
-        ogit.Utilities.Electricity.Operations.Reserves:activation_time_min
-        ogit.Utilities.Electricity.Operations.Reserves:min_delivery_duration_min
+        ogit.Utilities.Electricity.Operations.Reserves:capacityMw
+        ogit.Utilities.Electricity.Operations.Reserves:capacityPriceEurPerMw
+        ogit.Utilities.Electricity.Operations.Reserves:energyPriceEurPerMwh
+        ogit.Utilities.Electricity.Operations.Reserves:activationTimeMin
+        ogit.Utilities.Electricity.Operations.Reserves:minDeliveryDurationMin
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Operations.Reserves:awarded_capacity_mw
-        ogit.Utilities.Electricity.Operations.Reserves:awarded_status
+        ogit.Utilities.Electricity.Operations.Reserves:awardedCapacityMw
+        ogit.Utilities.Electricity.Operations.Reserves:awardedStatus
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity.Operations.Reserves:offering_id
+        ogit.Utilities.Electricity.Operations.Reserves:offeringId
     );
     ogit:allowed (
         [ ogit.Utilities.Electricity.Operations.Reserves:offeredFor  ogit.Utilities.Electricity.Operations.Reserves:ReserveUnit ]

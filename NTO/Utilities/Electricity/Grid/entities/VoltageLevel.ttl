@@ -18,20 +18,20 @@ ogit.Utilities.Electricity.Grid:VoltageLevel
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
-        ogit.Utilities.Electricity.Grid:nominal_voltage_kv
+        ogit.Utilities.Electricity.Grid:nominalVoltageKv
     );
     ogit:optional-attributes (
         ogit:name
-        ogit.Utilities.Electricity.Grid:high_voltage_limit_kv
-        ogit.Utilities.Electricity.Grid:low_voltage_limit_kv
-        ogit.Utilities.Electricity.Grid:parent_substation_ref
+        ogit.Utilities.Electricity.Grid:highVoltageLimitKv
+        ogit.Utilities.Electricity.Grid:lowVoltageLimitKv
+        ogit.Utilities.Electricity.Grid:parentSubstationRef
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Grid:partOf  ogit.Utilities.Electricity.Grid:Substation ]
-        [ ogit.Utilities.Electricity.Grid:consistsOf  ogit.Utilities.Electricity.Grid:Bay ]
-        [ ogit.Utilities.Electricity.Grid:consistsOf  ogit.Utilities.Electricity.Grid:BusbarSection ]
+        [ ogit:isPartOf  ogit.Utilities.Electricity.Grid:Substation ]
+        [ ogit:consistsOf  ogit.Utilities.Electricity.Grid:Bay ]
+        [ ogit:consistsOf  ogit.Utilities.Electricity.Grid:BusbarSection ]
     );
 .

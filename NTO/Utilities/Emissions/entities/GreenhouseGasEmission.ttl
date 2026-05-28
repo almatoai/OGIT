@@ -18,25 +18,25 @@ ogit.Utilities.Emissions:GreenhouseGasEmission
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Emissions:emission_id
-        ogit.Utilities.Emissions:emission_substance
-        ogit.Utilities.Emissions:emission_quantity_kg
-        ogit.Utilities.Emissions:period_start
-        ogit.Utilities.Emissions:period_end
+        ogit.Utilities.Emissions:emissionId
+        ogit.Utilities.Emissions:emissionSubstance
+        ogit.Utilities.Emissions:emissionQuantityKg
+        ogit.Utilities.Emissions:periodStart
+        ogit.Utilities.Emissions:periodEnd
         ogit.Utilities:domain
     );
     ogit:optional-attributes (
-        ogit.Utilities.Emissions:emission_scope
-        ogit.Utilities.Emissions:reporting_methodology
-        ogit.Utilities.Emissions:measurement_method
-        ogit.Utilities.Emissions:confidence_class
-        ogit.Utilities.Emissions:verified_by
-        ogit.Utilities.Emissions:reporting_obligation_ref
+        ogit.Utilities.Emissions:emissionScope
+        ogit.Utilities.Emissions:reportingMethodology
+        ogit.Utilities.Emissions:measurementMethod
+        ogit.Utilities.Emissions:confidenceClass
+        ogit.Utilities.Emissions:verifiedBy
+        ogit.Utilities.Emissions:reportingObligationRef
         ogit:source
         ogit:sourceId
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Emissions:emission_id
+        ogit.Utilities.Emissions:emissionId
     );
     ogit:allowed (
         [ ogit.Utilities.Emissions:emittedBy  ogit.Utilities.Electricity:GeneratingUnit ]

@@ -19,16 +19,16 @@ ogit.Utilities.Electricity.Dynamics:MechanicalLoadDynamics
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
         ogit:name
-        ogit.Utilities.Electricity.Dynamics:asynchronous_machine_dynamics_ref
-        ogit.Utilities.Electricity.Dynamics:model_kind
+        ogit.Utilities.Electricity.Dynamics:asynchronousMachineDynamicsRef
+        ogit.Utilities.Electricity.Dynamics:modelKind
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Dynamics:parameter_payload
+        ogit.Utilities.Electricity.Dynamics:parameterPayload
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Dynamics:partOf  ogit.Utilities.Electricity.Dynamics:AsynchronousMachineDynamics ]
+        [ ogit:isPartOf  ogit.Utilities.Electricity.Dynamics:AsynchronousMachineDynamics ]
     );
 .

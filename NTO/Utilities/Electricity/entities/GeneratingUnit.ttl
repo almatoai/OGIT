@@ -20,33 +20,33 @@ ogit.Utilities.Electricity:GeneratingUnit
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
         ogit:name
-        ogit.Utilities.Electricity:rated_p_mw
-        ogit.Utilities.Electricity:min_operating_p_mw
-        ogit.Utilities.Electricity:max_operating_p_mw
+        ogit.Utilities.Electricity:ratedPMw
+        ogit.Utilities.Electricity:minOperatingPMw
+        ogit.Utilities.Electricity:maxOperatingPMw
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity:nominal_p_mw
-        ogit.Utilities.Electricity:rated_voltage_kv
-        ogit.Utilities.Electricity:inertia_constant_h_s
-        ogit.Utilities.Electricity:governor_p_mw_per_hz
-        ogit.Utilities.Electricity:control_response_kind
-        ogit.Utilities:commissioning_year
-        ogit.Utilities.Electricity:decommissioning_year
-        ogit.Utilities.Electricity:lifecycle_status_snapshot
-        ogit.Utilities.Electricity:fuel_efficiency
-        ogit.Utilities.Electricity:min_run_time_h
-        ogit.Utilities.Electricity:min_down_time_h
-        ogit.Utilities.Electricity:startup_cost
-        ogit.Utilities.Electricity:variable_cost_per_mwh
+        ogit.Utilities.Electricity:nominalPMw
+        ogit.Utilities.Electricity:ratedVoltageKv
+        ogit.Utilities.Electricity:inertiaConstantHS
+        ogit.Utilities.Electricity:governorPMwPerHz
+        ogit.Utilities.Electricity:controlResponseKind
+        ogit.Utilities:commissioningYear
+        ogit.Utilities.Electricity:decommissioningYear
+        ogit.Utilities.Electricity:lifecycleStatusSnapshot
+        ogit.Utilities.Electricity:fuelEfficiency
+        ogit.Utilities.Electricity:minRunTimeH
+        ogit.Utilities.Electricity:minDownTimeH
+        ogit.Utilities.Electricity:startupCost
+        ogit.Utilities.Electricity:variableCostPerMwh
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity:partOf  ogit.Utilities.Electricity:PowerPlant ]
-        [ ogit.Utilities.Electricity:controlledBy  ogit.Utilities.Electricity:ControlArea ]
-        [ ogit.Utilities.Electricity:emits  ogit.Utilities.Emissions:GreenhouseGasEmission ]
-        [ ogit.Utilities.Electricity:consumes  ogit.Utilities:EnergyCarrier ]
-        [ ogit.Utilities.Electricity:generates  sgo:Timeseries ]
+        [ ogit:isPartOf  ogit.Utilities.Electricity:PowerPlant ]
+        [ ogit:controlledBy  ogit.Utilities.Electricity:ControlArea ]
+        [ ogit.Utilities:emits  ogit.Utilities.Emissions:GreenhouseGasEmission ]
+        [ ogit:consumes  ogit.Utilities:EnergyCarrier ]
+        [ ogit:generates  sgo:Timeseries ]
     );
 .

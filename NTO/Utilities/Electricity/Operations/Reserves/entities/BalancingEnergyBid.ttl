@@ -19,21 +19,21 @@ ogit.Utilities.Electricity.Operations.Reserves:BalancingEnergyBid
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity.Operations.Reserves:bid_id
-        ogit.Utilities.Electricity.Operations.Reserves:bsp_ref
-        ogit.Utilities.Emissions:period_start
-        ogit.Utilities.Emissions:period_end
+        ogit.Utilities.Electricity.Operations.Reserves:bidId
+        ogit.Utilities.Electricity.Operations.Reserves:bspRef
+        ogit.Utilities.Emissions:periodStart
+        ogit.Utilities.Emissions:periodEnd
         ogit.Utilities.Electricity.Market:direction
-        ogit.Utilities.Electricity.Operations:volume_mw
-        ogit.Utilities.Electricity.Operations.Reserves:bid_energy_price_eur_per_mwh
+        ogit.Utilities.Electricity.Operations:volumeMw
+        ogit.Utilities.Electricity.Operations.Reserves:bidEnergyPriceEurPerMwh
     );
     ogit:optional-attributes (
         ogit.Utilities.Electricity.Operations.Reserves:divisible
-        ogit.Utilities.Electricity.Operations.Reserves:linked_bid_refs
+        ogit.Utilities.Electricity.Operations.Reserves:linkedBidRefs
         ogit:status
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity.Operations.Reserves:bid_id
+        ogit.Utilities.Electricity.Operations.Reserves:bidId
     );
     ogit:allowed (
         [ ogit.Utilities.Electricity.Operations.Reserves:submittedBy  ogit.Utilities.Electricity.Operations.Reserves:BalancingServiceProvider ]

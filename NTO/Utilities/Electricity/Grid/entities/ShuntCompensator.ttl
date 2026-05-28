@@ -19,24 +19,24 @@ ogit.Utilities.Electricity.Grid:ShuntCompensator
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
         ogit:name
-        ogit.Utilities.Electricity.Grid:shunt_kind
-        ogit.Utilities.Electricity:nominal_q_mvar
+        ogit.Utilities.Electricity.Grid:shuntKind
+        ogit.Utilities.Electricity:nominalQMvar
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Grid:nominal_voltage_kv
-        ogit.Utilities.Electricity.Grid:section_count
-        ogit.Utilities.Electricity.Grid:normal_sections
-        ogit.Utilities.Electricity.Grid:b_per_section_siemens
-        ogit.Utilities.Electricity.Grid:g_per_section_siemens
-        ogit.Utilities.Electricity.Grid:voltage_sensitivity
-        ogit.Utilities.Electricity.Grid:regulating_control_ref
+        ogit.Utilities.Electricity.Grid:nominalVoltageKv
+        ogit.Utilities.Electricity.Grid:sectionCount
+        ogit.Utilities.Electricity.Grid:normalSections
+        ogit.Utilities.Electricity.Grid:bPerSectionSiemens
+        ogit.Utilities.Electricity.Grid:gPerSectionSiemens
+        ogit.Utilities.Electricity.Grid:voltageSensitivity
+        ogit.Utilities.Electricity.Grid:regulatingControlRef
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Grid:controlledBy  ogit.Utilities.Electricity.Grid:RegulatingControl ]
+        [ ogit:controlledBy  ogit.Utilities.Electricity.Grid:RegulatingControl ]
         [ ogit.Utilities.Electricity.Grid:hasTerminal  ogit.Utilities.Electricity.Grid:Terminal ]
-        [ ogit.Utilities.Electricity.Grid:generates  sgo:Timeseries ]
+        [ ogit:generates  sgo:Timeseries ]
     );
 .

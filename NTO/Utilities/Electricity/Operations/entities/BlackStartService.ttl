@@ -17,22 +17,22 @@ ogit.Utilities.Electricity.Operations:BlackStartService
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity.Operations:service_id
-        ogit.Utilities.Electricity.Operations:generating_unit_ref
-        ogit.Utilities.Electricity.Operations:service_class
-        ogit.Utilities.Electricity.Operations:procurement_kind
+        ogit.Utilities.Electricity.Operations:serviceId
+        ogit.Utilities.Electricity.Operations:generatingUnitRef
+        ogit.Utilities.Electricity.Operations:serviceClass
+        ogit.Utilities.Electricity.Operations:procurementKind
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Operations:verified_date
-        ogit.Utilities.Electricity.Operations:next_test_date
-        ogit.Utilities.Electricity.Operations:procurement_contract_ref
-        ogit.Utilities.Electricity.Operations:compensation_terms
+        ogit.Utilities.Electricity.Operations:verifiedDate
+        ogit.Utilities.Electricity.Operations:nextTestDate
+        ogit.Utilities.Electricity.Operations:procurementContractRef
+        ogit.Utilities.Electricity.Operations:compensationTerms
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity.Operations:service_id
+        ogit.Utilities.Electricity.Operations:serviceId
     );
     ogit:allowed (
         [ ogit.Utilities.Electricity.Operations:providedBy  ogit.Utilities.Electricity:GeneratingUnit ]
-        [ ogit.Utilities.Electricity.Operations:partOf  ogit.Utilities.Electricity.Operations:RestorationPlan ]
+        [ ogit:isPartOf  ogit.Utilities.Electricity.Operations:RestorationPlan ]
     );
 .

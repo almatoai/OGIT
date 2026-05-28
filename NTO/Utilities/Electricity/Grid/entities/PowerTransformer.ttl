@@ -20,20 +20,20 @@ ogit.Utilities.Electricity.Grid:PowerTransformer
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
         ogit:name
-        ogit.Utilities.Electricity.Grid:vector_group
+        ogit.Utilities.Electricity.Grid:vectorGroup
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Grid:cooling_type
-        ogit.Utilities.Electricity.Grid:tank_count
-        ogit.Utilities.Electricity.Grid:phase_count
-        ogit.Utilities:commissioning_year
+        ogit.Utilities.Electricity.Grid:coolingType
+        ogit.Utilities.Electricity.Grid:tankCount
+        ogit.Utilities.Electricity.Grid:phaseCount
+        ogit.Utilities:commissioningYear
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Grid:consistsOf  ogit.Utilities.Electricity.Grid:PowerTransformerEnd ]
-        [ ogit.Utilities.Electricity.Grid:partOf  ogit.Utilities.Electricity.Grid:Substation ]
-        [ ogit.Utilities.Electricity.Grid:partOf  ogit.Utilities.Electricity.Grid:Bay ]
+        [ ogit:consistsOf  ogit.Utilities.Electricity.Grid:PowerTransformerEnd ]
+        [ ogit:isPartOf  ogit.Utilities.Electricity.Grid:Substation ]
+        [ ogit:isPartOf  ogit.Utilities.Electricity.Grid:Bay ]
     );
 .

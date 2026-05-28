@@ -1,6 +1,7 @@
 @prefix dcterms:                                   <http://purl.org/dc/terms/> .
 @prefix ogit:                                      <http://www.purl.org/ogit/> .
 @prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
+@prefix ogit.Utilities.Electricity.Diagram:        <http://www.purl.org/ogit/Utilities/Electricity/Diagram/> .
 @prefix ogit.Utilities.Electricity.Telecontrol.InterControlCenter: <http://www.purl.org/ogit/Utilities/Electricity/Telecontrol/InterControlCenter/> .
 @prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
@@ -17,19 +18,19 @@ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:Account
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:account_id
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:accountId
         ogit:name
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:parent_table_ref
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:parentTableRef
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:tase_algorithm
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:cipher_suite
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:taseAlgorithm
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:cipherSuite
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:account_id
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:accountId
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:usedBy  ogit.Utilities:ControlCenter ]
-        [ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:partOf  ogit.Utilities.Electricity.Telecontrol.InterControlCenter:BilateralTable ]
+        [ ogit.Utilities.Electricity.Diagram:usedBy  ogit.Utilities:ControlCenter ]
+        [ ogit:isPartOf  ogit.Utilities.Electricity.Telecontrol.InterControlCenter:BilateralTable ]
     );
 .

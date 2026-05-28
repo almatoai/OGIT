@@ -19,15 +19,15 @@ ogit.Utilities.Electricity.Grid:EquivalentBranch
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
         ogit:name
-        ogit.Utilities.Electricity.Grid:r_ohm
-        ogit.Utilities.Electricity.Grid:x_ohm
+        ogit.Utilities.Electricity.Grid:rOhm
+        ogit.Utilities.Electricity.Grid:xOhm
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Grid:r0_ohm
-        ogit.Utilities.Electricity.Grid:x0_ohm
-        ogit.Utilities.Electricity.Grid:r21_ohm
-        ogit.Utilities.Electricity.Grid:x21_ohm
-        ogit.Utilities.Electricity.Grid:rated_current_a
+        ogit.Utilities.Electricity.Grid:r0Ohm
+        ogit.Utilities.Electricity.Grid:x0Ohm
+        ogit.Utilities.Electricity.Grid:r21Ohm
+        ogit.Utilities.Electricity.Grid:x21Ohm
+        ogit.Utilities.Electricity.Grid:ratedCurrentA
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid

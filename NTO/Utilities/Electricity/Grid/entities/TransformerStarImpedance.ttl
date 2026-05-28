@@ -18,18 +18,18 @@ ogit.Utilities.Electricity.Grid:TransformerStarImpedance
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
-        ogit.Utilities.Electricity.Grid:parent_transformer_end_ref
+        ogit.Utilities.Electricity.Grid:parentTransformerEndRef
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Grid:r_ohm
-        ogit.Utilities.Electricity.Grid:x_ohm
-        ogit.Utilities.Electricity.Grid:r0_ohm
-        ogit.Utilities.Electricity.Grid:x0_ohm
+        ogit.Utilities.Electricity.Grid:rOhm
+        ogit.Utilities.Electricity.Grid:xOhm
+        ogit.Utilities.Electricity.Grid:r0Ohm
+        ogit.Utilities.Electricity.Grid:x0Ohm
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Grid:partOf  ogit.Utilities.Electricity.Grid:PowerTransformerEnd ]
+        [ ogit:isPartOf  ogit.Utilities.Electricity.Grid:PowerTransformerEnd ]
     );
 .

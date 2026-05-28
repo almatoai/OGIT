@@ -18,22 +18,22 @@ ogit.Utilities.Electricity.Operations:SystemWideAlert
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity.Operations:alert_id
-        ogit.Utilities.Electricity.Operations:alert_kind
-        ogit.Utilities.Electricity.Operations:issued_at
-        ogit.Utilities.Electricity.Operations:issued_by_ref
+        ogit.Utilities.Electricity.Operations:alertId
+        ogit.Utilities.Electricity.Operations:alertKind
+        ogit.Utilities.Electricity.Operations:issuedAt
+        ogit.Utilities.Electricity.Operations:issuedByRef
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Operations:cleared_at
-        ogit.Utilities.Electricity.Operations:affected_area_refs
-        ogit.Utilities.Electricity.Operations:message_text
+        ogit.Utilities.Electricity.Operations:clearedAt
+        ogit.Utilities.Electricity.Operations:affectedAreaRefs
+        ogit.Utilities.Electricity.Operations:messageText
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity.Operations:alert_id
+        ogit.Utilities.Electricity.Operations:alertId
     );
     ogit:allowed (
         [ ogit.Utilities.Electricity.Operations:issuedBy  ogit.Utilities:NetworkOperator ]
-        [ ogit.Utilities.Electricity.Operations:affects  ogit.Utilities.Electricity:ControlArea ]
-        [ ogit.Utilities.Electricity.Operations:affects  ogit.Utilities.Electricity:SynchronousArea ]
+        [ ogit:affects  ogit.Utilities.Electricity:ControlArea ]
+        [ ogit:affects  ogit.Utilities.Electricity:SynchronousArea ]
     );
 .

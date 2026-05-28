@@ -19,7 +19,7 @@ ogit.Utilities.Electricity.Grid:SubGeographicalRegion
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
         ogit:name
-        ogit.Utilities.Electricity.Grid:parent_region_ref
+        ogit.Utilities.Electricity.Grid:parentRegionRef
     );
     ogit:optional-attributes (
 
@@ -28,7 +28,7 @@ ogit.Utilities.Electricity.Grid:SubGeographicalRegion
         ogit.Utilities.Electricity:mrid
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Grid:partOf  ogit.Utilities.Electricity.Grid:GeographicalRegion ]
-        [ ogit.Utilities.Electricity.Grid:consistsOf  ogit.Utilities.Electricity.Grid:Substation ]
+        [ ogit:isPartOf  ogit.Utilities.Electricity.Grid:GeographicalRegion ]
+        [ ogit:consistsOf  ogit.Utilities.Electricity.Grid:Substation ]
     );
 .

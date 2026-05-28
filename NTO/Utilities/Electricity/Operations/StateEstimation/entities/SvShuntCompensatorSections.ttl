@@ -19,7 +19,7 @@ ogit.Utilities.Electricity.Operations.StateEstimation:SvShuntCompensatorSections
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
-        ogit.Utilities.Electricity.Operations.StateEstimation:shunt_compensator_ref
+        ogit.Utilities.Electricity.Operations.StateEstimation:shuntCompensatorRef
     );
     ogit:optional-attributes (
 
@@ -28,7 +28,7 @@ ogit.Utilities.Electricity.Operations.StateEstimation:SvShuntCompensatorSections
         ogit.Utilities.Electricity:mrid
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Operations.StateEstimation:at  ogit.Utilities.Electricity.Grid:ShuntCompensator ]
-        [ ogit.Utilities.Electricity.Operations.StateEstimation:generates  sgo:Timeseries ]
+        [ ogit.Utilities.Electricity.Grid:at  ogit.Utilities.Electricity.Grid:ShuntCompensator ]
+        [ ogit:generates  sgo:Timeseries ]
     );
 .

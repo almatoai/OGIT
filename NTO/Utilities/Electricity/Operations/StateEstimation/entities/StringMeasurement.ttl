@@ -18,7 +18,7 @@ ogit.Utilities.Electricity.Operations.StateEstimation:StringMeasurement
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
-        ogit.Utilities.Electricity.Operations.StateEstimation:parent_measurement_ref
+        ogit.Utilities.Electricity.Operations.StateEstimation:parentMeasurementRef
     );
     ogit:optional-attributes (
 
@@ -28,6 +28,6 @@ ogit.Utilities.Electricity.Operations.StateEstimation:StringMeasurement
     );
     ogit:allowed (
         [ ogit.Utilities.Electricity.Operations.StateEstimation:belongsTo  ogit.Utilities.Electricity.Operations.StateEstimation:Measurement ]
-        [ ogit.Utilities.Electricity.Operations.StateEstimation:generates  sgo:Timeseries ]
+        [ ogit:generates  sgo:Timeseries ]
     );
 .

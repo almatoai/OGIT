@@ -22,15 +22,15 @@ ogit.Utilities.Electricity.Diagram:Diagram
         ogit.Utilities.Electricity.Diagram:orientation
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity:description_text
-        ogit.Utilities.Electricity.Diagram:diagram_version
-        ogit.Utilities.Electricity.Diagram:diagram_style_ref
+        ogit.Utilities.Electricity:descriptionText
+        ogit.Utilities.Electricity.Diagram:diagramVersion
+        ogit.Utilities.Electricity.Diagram:diagramStyleRef
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Diagram:consistsOf  ogit.Utilities.Electricity.Diagram:DiagramObject ]
-        [ ogit.Utilities.Electricity.Diagram:governedBy  ogit.Utilities.Electricity.Diagram:DiagramStyle ]
+        [ ogit:consistsOf  ogit.Utilities.Electricity.Diagram:DiagramObject ]
+        [ ogit.Utilities.Electricity:governedBy  ogit.Utilities.Electricity.Diagram:DiagramStyle ]
     );
 .

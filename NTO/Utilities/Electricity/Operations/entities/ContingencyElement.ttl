@@ -16,18 +16,18 @@ ogit.Utilities.Electricity.Operations:ContingencyElement
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity.Operations:element_id
-        ogit.Utilities.Electricity.Operations:parent_contingency_ref
-        ogit.Utilities.Electricity.Operations:equipment_ref
+        ogit.Utilities.Electricity.Operations:elementId
+        ogit.Utilities.Electricity.Operations:parentContingencyRef
+        ogit.Utilities.Electricity.Operations:equipmentRef
         ogit.Utilities.Electricity.Operations:action
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Operations:simultaneous_with_ref
+        ogit.Utilities.Electricity.Operations:simultaneousWithRef
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity.Operations:element_id
+        ogit.Utilities.Electricity.Operations:elementId
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Operations:partOf  ogit.Utilities.Electricity.Operations:Contingency ]
+        [ ogit:isPartOf  ogit.Utilities.Electricity.Operations:Contingency ]
     );
 .

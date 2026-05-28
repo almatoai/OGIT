@@ -19,26 +19,26 @@ ogit.Utilities.Electricity.Grid:SynchronousMachine
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
         ogit:name
-        ogit.Utilities.Electricity.Grid:rated_s_mva
-        ogit.Utilities.Electricity.Grid:rated_u_kv
+        ogit.Utilities.Electricity.Grid:ratedSMva
+        ogit.Utilities.Electricity.Grid:ratedUKv
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Grid:r_synchronous
-        ogit.Utilities.Electricity.Grid:x_synchronous
-        ogit.Utilities.Electricity.Grid:r_subtransient
-        ogit.Utilities.Electricity.Grid:x_subtransient
-        ogit.Utilities.Electricity:inertia_constant_h_s
-        ogit.Utilities.Electricity.Grid:damping_factor
-        ogit.Utilities.Electricity.Grid:synchronous_machine_kind
-        ogit.Utilities.Electricity.Grid:cooling_kind
-        ogit.Utilities.Electricity.Grid:member_of_generating_unit_ref
+        ogit.Utilities.Electricity.Grid:rSynchronous
+        ogit.Utilities.Electricity.Grid:xSynchronous
+        ogit.Utilities.Electricity.Grid:rSubtransient
+        ogit.Utilities.Electricity.Grid:xSubtransient
+        ogit.Utilities.Electricity:inertiaConstantHS
+        ogit.Utilities.Electricity.Grid:dampingFactor
+        ogit.Utilities.Electricity.Grid:synchronousMachineKind
+        ogit.Utilities.Electricity.Grid:coolingKind
+        ogit.Utilities.Electricity.Grid:memberOfGeneratingUnitRef
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Grid:partOf  ogit.Utilities.Electricity:GeneratingUnit ]
+        [ ogit:isPartOf  ogit.Utilities.Electricity:GeneratingUnit ]
         [ ogit.Utilities.Electricity.Grid:hasTerminal  ogit.Utilities.Electricity.Grid:Terminal ]
-        [ ogit.Utilities.Electricity.Grid:generates  sgo:Timeseries ]
+        [ ogit:generates  sgo:Timeseries ]
     );
 .

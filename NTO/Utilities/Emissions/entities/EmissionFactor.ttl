@@ -18,25 +18,25 @@ ogit.Utilities.Emissions:EmissionFactor
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Emissions:factor_id
-        ogit.Utilities.Emissions:technology_class
-        ogit.Utilities.Emissions:carrier_ref
-        ogit.Utilities.Emissions:factor_value
-        ogit.Utilities.Emissions:factor_unit_numerator
-        ogit.Utilities.Emissions:factor_unit_denominator
+        ogit.Utilities.Emissions:factorId
+        ogit.Utilities.Emissions:technologyClass
+        ogit.Utilities.Emissions:carrierRef
+        ogit.Utilities.Emissions:factorValue
+        ogit.Utilities.Emissions:factorUnitNumerator
+        ogit.Utilities.Emissions:factorUnitDenominator
     );
     ogit:optional-attributes (
-        ogit.Utilities.Emissions:lifecycle_scope
-        ogit.Utilities.Emissions:source_publication
-        ogit.Utilities:valid_from
-        ogit.Utilities:valid_until
-        ogit.Utilities.Emissions:regional_scope
+        ogit.Utilities.Emissions:lifecycleScope
+        ogit.Utilities.Emissions:sourcePublication
+        ogit:validFrom
+        ogit.Utilities:validUntil
+        ogit.Utilities.Emissions:regionalScope
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Emissions:factor_id
+        ogit.Utilities.Emissions:factorId
     );
     ogit:allowed (
-        [ ogit.Utilities.Emissions:appliesTo  ogit.Utilities.Electricity:GeneratingUnit ]
-        [ ogit.Utilities.Emissions:appliesTo  ogit.Utilities.Electricity:EnergyConsumer ]
+        [ ogit.Utilities:appliesTo  ogit.Utilities.Electricity:GeneratingUnit ]
+        [ ogit.Utilities:appliesTo  ogit.Utilities.Electricity:EnergyConsumer ]
     );
 .

@@ -19,8 +19,8 @@ ogit.Utilities.Electricity.Grid:LinearShuntCompensator
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
         ogit:name
-        ogit.Utilities.Electricity.Grid:shunt_kind
-        ogit.Utilities.Electricity:nominal_q_mvar
+        ogit.Utilities.Electricity.Grid:shuntKind
+        ogit.Utilities.Electricity:nominalQMvar
     );
     ogit:optional-attributes (
 

@@ -16,23 +16,23 @@ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:DataSetTransferSet
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:transfer_id
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:dataset_ref
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:transfer_mode
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:interval_seconds
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:transferId
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:datasetRef
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:transferMode
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:intervalSeconds
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:block_data
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:event_code_requested
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:ts_start_time
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:ts_stop_time
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:transfer_set_name
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:blockData
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:eventCodeRequested
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:tsStartTime
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:tsStopTime
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:transferSetName
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:transfer_id
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:transferId
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:governs  ogit.Utilities.Electricity.Telecontrol.InterControlCenter:DataSet ]
-        [ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:generates  sgo:Timeseries ]
+        [ ogit:governs  ogit.Utilities.Electricity.Telecontrol.InterControlCenter:DataSet ]
+        [ ogit:generates  sgo:Timeseries ]
     );
 .

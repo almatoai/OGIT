@@ -19,18 +19,18 @@ ogit.Utilities.Electricity.Grid:DCConverterUnit
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
         ogit:name
-        ogit.Utilities.Electricity.Grid:parent_substation_ref
+        ogit.Utilities.Electricity.Grid:parentSubstationRef
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Grid:operation_mode
+        ogit.Utilities.Electricity.Grid:operationMode
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Grid:partOf  ogit.Utilities.Electricity.Grid:Substation ]
-        [ ogit.Utilities.Electricity.Grid:consistsOf  ogit.Utilities.Electricity.Grid:CsConverter ]
-        [ ogit.Utilities.Electricity.Grid:consistsOf  ogit.Utilities.Electricity.Grid:VsConverter ]
-        [ ogit.Utilities.Electricity.Grid:consistsOf  ogit.Utilities.Electricity.Grid:DCTerminal ]
+        [ ogit:isPartOf  ogit.Utilities.Electricity.Grid:Substation ]
+        [ ogit:consistsOf  ogit.Utilities.Electricity.Grid:CsConverter ]
+        [ ogit:consistsOf  ogit.Utilities.Electricity.Grid:VsConverter ]
+        [ ogit:consistsOf  ogit.Utilities.Electricity.Grid:DCTerminal ]
     );
 .

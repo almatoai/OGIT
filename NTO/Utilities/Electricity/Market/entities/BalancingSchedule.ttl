@@ -18,20 +18,20 @@ ogit.Utilities.Electricity.Market:BalancingSchedule
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities:schedule_id
-        ogit.Utilities:schedule_kind
-        ogit.Utilities:valid_from
-        ogit.Utilities:valid_until
-        ogit.Utilities:granularity_seconds
+        ogit.Utilities:scheduleId
+        ogit.Utilities:scheduleKind
+        ogit:validFrom
+        ogit.Utilities:validUntil
+        ogit.Utilities:granularitySeconds
     );
     ogit:optional-attributes (
 
     );
     ogit:indexed-attributes (
-        ogit.Utilities:schedule_id
+        ogit.Utilities:scheduleId
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Market:appliesTo  ogit.Utilities.Electricity:ControlArea ]
-        [ ogit.Utilities.Electricity.Market:generates  sgo:Timeseries ]
+        [ ogit.Utilities:appliesTo  ogit.Utilities.Electricity:ControlArea ]
+        [ ogit:generates  sgo:Timeseries ]
     );
 .

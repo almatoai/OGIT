@@ -19,7 +19,7 @@ ogit.Utilities.Electricity.Grid:SubLoadArea
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
         ogit:name
-        ogit.Utilities.Electricity.Grid:parent_load_area_ref
+        ogit.Utilities.Electricity.Grid:parentLoadAreaRef
     );
     ogit:optional-attributes (
 
@@ -28,8 +28,8 @@ ogit.Utilities.Electricity.Grid:SubLoadArea
         ogit.Utilities.Electricity:mrid
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Grid:partOf  ogit.Utilities.Electricity.Grid:LoadArea ]
-        [ ogit.Utilities.Electricity.Grid:consistsOf  ogit.Utilities.Electricity.Grid:ConformLoadGroup ]
-        [ ogit.Utilities.Electricity.Grid:consistsOf  ogit.Utilities.Electricity.Grid:NonConformLoadGroup ]
+        [ ogit:isPartOf  ogit.Utilities.Electricity.Grid:LoadArea ]
+        [ ogit:consistsOf  ogit.Utilities.Electricity.Grid:ConformLoadGroup ]
+        [ ogit:consistsOf  ogit.Utilities.Electricity.Grid:NonConformLoadGroup ]
     );
 .

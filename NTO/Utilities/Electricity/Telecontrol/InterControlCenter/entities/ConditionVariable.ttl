@@ -17,18 +17,18 @@ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:ConditionVariable
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:variable_id
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:parent_dataset_ref
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:condition_type
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:variableId
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:parentDatasetRef
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:conditionType
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:threshold_value
-        ogit.Utilities.Electricity:description_text
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:thresholdValue
+        ogit.Utilities.Electricity:descriptionText
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:variable_id
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:variableId
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:partOf  ogit.Utilities.Electricity.Telecontrol.InterControlCenter:DataSet ]
+        [ ogit:isPartOf  ogit.Utilities.Electricity.Telecontrol.InterControlCenter:DataSet ]
     );
 .

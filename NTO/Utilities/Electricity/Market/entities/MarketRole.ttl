@@ -17,17 +17,17 @@ ogit.Utilities.Electricity.Market:MarketRole
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity.Market:role_id
-        ogit.Utilities.Electricity:role_kind
+        ogit.Utilities.Electricity.Market:roleId
+        ogit.Utilities.Electricity:roleKind
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity:description_text
-        ogit.Utilities.Electricity.Market:regulatory_basis_ref
+        ogit.Utilities.Electricity:descriptionText
+        ogit.Utilities.Electricity.Market:regulatoryBasisRef
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity.Market:role_id
+        ogit.Utilities.Electricity.Market:roleId
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Market:heldBy  ogit.Utilities.Electricity:MarketParticipant ]
+        [ ogit.Utilities.Electricity:heldBy  ogit.Utilities.Electricity:MarketParticipant ]
     );
 .

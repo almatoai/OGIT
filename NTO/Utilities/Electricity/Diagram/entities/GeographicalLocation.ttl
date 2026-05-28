@@ -21,19 +21,19 @@ ogit.Utilities.Electricity.Diagram:GeographicalLocation
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
         ogit:name
-        ogit.Utilities.Electricity.Diagram:coordinate_system_ref
+        ogit.Utilities.Electricity.Diagram:coordinateSystemRef
     );
     ogit:optional-attributes (
-        ogit.Utilities:country_iso2
-        ogit.Utilities.Electricity.Grid:region_ref
-        ogit.Utilities.Electricity.Grid:subregion_ref
-        ogit.Utilities.Electricity:description_text
+        ogit.Utilities:countryIso2
+        ogit.Utilities.Electricity.Grid:regionRef
+        ogit.Utilities.Electricity.Grid:subregionRef
+        ogit.Utilities.Electricity:descriptionText
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Diagram:consistsOf  ogit.Utilities.Electricity.Diagram:PositionPoint ]
-        [ ogit.Utilities.Electricity.Diagram:appliesTo  ogit.Utilities.Electricity:PowerSystemResource ]
+        [ ogit:consistsOf  ogit.Utilities.Electricity.Diagram:PositionPoint ]
+        [ ogit.Utilities:appliesTo  ogit.Utilities.Electricity:PowerSystemResource ]
     );
 .

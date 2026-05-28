@@ -16,21 +16,21 @@ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:DataSet
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:dataset_id
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:datasetId
         ogit:name
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:owning_table_ref
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:tase_member_count
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:owningTableRef
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:taseMemberCount
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:dataset_creation_time
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:dataset_last_modified
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:datasetCreationTime
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:datasetLastModified
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:dataset_id
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:datasetId
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:partOf  ogit.Utilities.Electricity.Telecontrol.InterControlCenter:BilateralTable ]
-        [ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:consistsOf  ogit.Utilities.Electricity.Telecontrol.InterControlCenter:DataSetMember ]
+        [ ogit:isPartOf  ogit.Utilities.Electricity.Telecontrol.InterControlCenter:BilateralTable ]
+        [ ogit:consistsOf  ogit.Utilities.Electricity.Telecontrol.InterControlCenter:DataSetMember ]
         [ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:transferredVia  ogit.Utilities.Electricity.Telecontrol.InterControlCenter:DataSetTransferSet ]
     );
 .

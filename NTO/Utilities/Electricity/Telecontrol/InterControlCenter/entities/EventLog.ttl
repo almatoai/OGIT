@@ -16,20 +16,20 @@ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:EventLog
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:log_id
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:parent_table_ref
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:log_kind
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:logId
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:parentTableRef
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:logKind
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:retention_days
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:last_event_at
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:event_count_per_day
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:retentionDays
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:lastEventAt
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:eventCountPerDay
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:log_id
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:logId
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:partOf  ogit.Utilities.Electricity.Telecontrol.InterControlCenter:BilateralTable ]
-        [ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:generates  sgo:Timeseries ]
+        [ ogit:isPartOf  ogit.Utilities.Electricity.Telecontrol.InterControlCenter:BilateralTable ]
+        [ ogit:generates  sgo:Timeseries ]
     );
 .

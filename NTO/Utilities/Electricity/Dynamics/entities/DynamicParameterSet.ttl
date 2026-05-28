@@ -18,23 +18,23 @@ ogit.Utilities.Electricity.Dynamics:DynamicParameterSet
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity.Dynamics:parameter_set_id
+        ogit.Utilities.Electricity.Dynamics:parameterSetId
         ogit:name
-        ogit.Utilities.Electricity.Dynamics:target_model_ref
-        ogit.Utilities:valid_from
+        ogit.Utilities.Electricity.Dynamics:targetModelRef
+        ogit:validFrom
     );
     ogit:optional-attributes (
-        ogit.Utilities:valid_until
-        ogit.Utilities.Electricity.Dynamics:parameter_payload
-        ogit.Utilities.Emissions:source_publication
-        ogit.Utilities.Electricity.Dynamics:verified_against_test_ref
+        ogit.Utilities:validUntil
+        ogit.Utilities.Electricity.Dynamics:parameterPayload
+        ogit.Utilities.Emissions:sourcePublication
+        ogit.Utilities.Electricity.Dynamics:verifiedAgainstTestRef
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity.Dynamics:parameter_set_id
+        ogit.Utilities.Electricity.Dynamics:parameterSetId
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Dynamics:appliesTo  ogit.Utilities.Electricity.Dynamics:SynchronousMachineDynamics ]
-        [ ogit.Utilities.Electricity.Dynamics:appliesTo  ogit.Utilities.Electricity.Dynamics:ExcitationSystemDynamics ]
-        [ ogit.Utilities.Electricity.Dynamics:appliesTo  ogit.Utilities.Electricity.Dynamics:TurbineGovernorDynamics ]
+        [ ogit.Utilities:appliesTo  ogit.Utilities.Electricity.Dynamics:SynchronousMachineDynamics ]
+        [ ogit.Utilities:appliesTo  ogit.Utilities.Electricity.Dynamics:ExcitationSystemDynamics ]
+        [ ogit.Utilities:appliesTo  ogit.Utilities.Electricity.Dynamics:TurbineGovernorDynamics ]
     );
 .

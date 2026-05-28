@@ -18,23 +18,23 @@ ogit.Utilities.Electricity.Grid:RatioTapChanger
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
-        ogit.Utilities.Electricity.Grid:low_step
-        ogit.Utilities.Electricity.Grid:high_step
-        ogit.Utilities.Electricity.Grid:neutral_step
-        ogit.Utilities.Electricity.Grid:step_voltage_increment_percent
+        ogit.Utilities.Electricity.Grid:lowStep
+        ogit.Utilities.Electricity.Grid:highStep
+        ogit.Utilities.Electricity.Grid:neutralStep
+        ogit.Utilities.Electricity.Grid:stepVoltageIncrementPercent
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Grid:normal_step
-        ogit.Utilities.Electricity.Grid:tcul_control_mode
-        ogit.Utilities.Electricity.Grid:regulating_control_ref
-        ogit.Utilities.Electricity.Grid:dead_band
+        ogit.Utilities.Electricity.Grid:normalStep
+        ogit.Utilities.Electricity.Grid:tculControlMode
+        ogit.Utilities.Electricity.Grid:regulatingControlRef
+        ogit.Utilities.Electricity.Grid:deadBand
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid
     );
     ogit:allowed (
         [ ogit.Utilities.Electricity.Grid:controls  ogit.Utilities.Electricity.Grid:PowerTransformerEnd ]
-        [ ogit.Utilities.Electricity.Grid:controlledBy  ogit.Utilities.Electricity.Grid:RegulatingControl ]
-        [ ogit.Utilities.Electricity.Grid:generates  sgo:Timeseries ]
+        [ ogit:controlledBy  ogit.Utilities.Electricity.Grid:RegulatingControl ]
+        [ ogit:generates  sgo:Timeseries ]
     );
 .

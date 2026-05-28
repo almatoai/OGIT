@@ -16,18 +16,18 @@ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:ConformanceBlock
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:block_id
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:block_number
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:services_payload
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:blockId
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:blockNumber
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:servicesPayload
     );
     ogit:optional-attributes (
 
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:block_id
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:block_number
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:blockId
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:blockNumber
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:partOf  ogit.Utilities.Electricity.Telecontrol.InterControlCenter:BilateralTable ]
+        [ ogit:isPartOf  ogit.Utilities.Electricity.Telecontrol.InterControlCenter:BilateralTable ]
     );
 .

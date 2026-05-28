@@ -1,5 +1,6 @@
 @prefix dcterms:                                   <http://purl.org/dc/terms/> .
 @prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
 @prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
 @prefix ogit.Utilities.Emissions:                  <http://www.purl.org/ogit/Utilities/Emissions/> .
 @prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
@@ -19,30 +20,30 @@ ogit.Utilities.Electricity:ThermalGeneratingUnit
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
         ogit:name
-        ogit.Utilities.Electricity:rated_p_mw
-        ogit.Utilities.Electricity:min_operating_p_mw
-        ogit.Utilities.Electricity:max_operating_p_mw
-        ogit.Utilities.Electricity:fuel_type
+        ogit.Utilities.Electricity:ratedPMw
+        ogit.Utilities.Electricity:minOperatingPMw
+        ogit.Utilities.Electricity:maxOperatingPMw
+        ogit.Utilities.Electricity:fuelType
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity:thermal_efficiency
-        ogit.Utilities.Electricity:cycle_kind
-        ogit.Utilities.Electricity:chp_capable
-        ogit.Utilities.Electricity:boiler_count
-        ogit.Utilities.Electricity:turbine_count
-        ogit.Utilities.Electricity:cogeneration_thermal_capacity_mw
-        ogit.Utilities.Electricity:min_ramp_up_rate_mw_min
-        ogit.Utilities.Electricity:min_ramp_down_rate_mw_min
-        ogit.Utilities.Electricity:cold_start_time_min
-        ogit.Utilities.Electricity:warm_start_time_min
-        ogit.Utilities.Electricity:hot_start_time_min
+        ogit.Utilities.Electricity:thermalEfficiency
+        ogit.Utilities.Electricity:cycleKind
+        ogit.Utilities.Electricity:chpCapable
+        ogit.Utilities.Electricity:boilerCount
+        ogit.Utilities.Electricity:turbineCount
+        ogit.Utilities.Electricity:cogenerationThermalCapacityMw
+        ogit.Utilities.Electricity:minRampUpRateMwMin
+        ogit.Utilities.Electricity:minRampDownRateMwMin
+        ogit.Utilities.Electricity:coldStartTimeMin
+        ogit.Utilities.Electricity:warmStartTimeMin
+        ogit.Utilities.Electricity:hotStartTimeMin
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity:partOf  ogit.Utilities.Electricity:PowerPlant ]
-        [ ogit.Utilities.Electricity:emits  ogit.Utilities.Emissions:GreenhouseGasEmission ]
-        [ ogit.Utilities.Electricity:generates  sgo:Timeseries ]
+        [ ogit:isPartOf  ogit.Utilities.Electricity:PowerPlant ]
+        [ ogit.Utilities:emits  ogit.Utilities.Emissions:GreenhouseGasEmission ]
+        [ ogit:generates  sgo:Timeseries ]
     );
 .

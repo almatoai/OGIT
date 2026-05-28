@@ -18,22 +18,22 @@ ogit.Utilities.Electricity.Operations:Contingency
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity.Operations:contingency_id
+        ogit.Utilities.Electricity.Operations:contingencyId
         ogit:name
-        ogit.Utilities.Electricity.Operations:contingency_kind
+        ogit.Utilities.Electricity.Operations:contingencyKind
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Operations:frequency_class
-        ogit.Utilities.Electricity.Operations:severity_rank
-        ogit.Utilities.Electricity.Operations:must_study
+        ogit.Utilities.Electricity.Operations:frequencyClass
+        ogit.Utilities.Electricity.Operations:severityRank
+        ogit.Utilities.Electricity.Operations:mustStudy
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity.Operations:contingency_id
+        ogit.Utilities.Electricity.Operations:contingencyId
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Operations:affects  ogit.Utilities.Electricity:GeneratingUnit ]
-        [ ogit.Utilities.Electricity.Operations:affects  ogit.Utilities.Electricity.Grid:ACLineSegment ]
+        [ ogit:affects  ogit.Utilities.Electricity:GeneratingUnit ]
+        [ ogit:affects  ogit.Utilities.Electricity.Grid:ACLineSegment ]
         [ ogit.Utilities.Electricity.Operations:analyzedIn  ogit.Utilities.Electricity.Operations:ContingencyAnalysis ]
-        [ ogit.Utilities.Electricity.Operations:partOf  ogit.Utilities.Electricity.Operations:ContingencyList ]
+        [ ogit:isPartOf  ogit.Utilities.Electricity.Operations:ContingencyList ]
     );
 .

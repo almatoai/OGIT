@@ -16,22 +16,22 @@ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:DataSetMember
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:tase_member_id
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:parent_dataset_ref
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:tase_member_position
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:referenced_point_ref
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:taseMemberId
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:parentDatasetRef
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:taseMemberPosition
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:referencedPointRef
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:tase_member_type
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:taseMemberType
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:tase_member_id
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:taseMemberId
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:partOf  ogit.Utilities.Electricity.Telecontrol.InterControlCenter:DataSet ]
-        [ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:references  ogit.Utilities.Electricity.Telecontrol.InterControlCenter:IndicationPoint ]
-        [ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:references  ogit.Utilities.Electricity.Telecontrol.InterControlCenter:TaseProtectionEquipment ]
-        [ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:references  ogit.Utilities.Electricity.Telecontrol.InterControlCenter:DeviceTag ]
-        [ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:references  ogit.Utilities.Electricity.Telecontrol.InterControlCenter:ConditionVariable ]
+        [ ogit:isPartOf  ogit.Utilities.Electricity.Telecontrol.InterControlCenter:DataSet ]
+        [ ogit:references  ogit.Utilities.Electricity.Telecontrol.InterControlCenter:IndicationPoint ]
+        [ ogit:references  ogit.Utilities.Electricity.Telecontrol.InterControlCenter:TaseProtectionEquipment ]
+        [ ogit:references  ogit.Utilities.Electricity.Telecontrol.InterControlCenter:DeviceTag ]
+        [ ogit:references  ogit.Utilities.Electricity.Telecontrol.InterControlCenter:ConditionVariable ]
     );
 .

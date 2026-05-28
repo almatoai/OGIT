@@ -18,21 +18,21 @@ ogit.Utilities.Electricity.Operations:MinimumInertia
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity.Operations:minimum_inertia_id
-        ogit.Utilities.Electricity:synchronous_area_ref
-        ogit.Utilities.Electricity.Operations:required_value_mw_s
-        ogit.Utilities:valid_from
+        ogit.Utilities.Electricity.Operations:minimumInertiaId
+        ogit.Utilities.Electricity:synchronousAreaRef
+        ogit.Utilities.Electricity.Operations:requiredValueMwS
+        ogit:validFrom
     );
     ogit:optional-attributes (
-        ogit.Utilities:valid_until
-        ogit.Utilities.Electricity.Operations:derivation_basis
-        ogit.Utilities.Electricity.Operations:compliance_status
+        ogit.Utilities:validUntil
+        ogit.Utilities.Electricity.Operations:derivationBasis
+        ogit.Utilities.Electricity.Operations:complianceStatus
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity.Operations:minimum_inertia_id
+        ogit.Utilities.Electricity.Operations:minimumInertiaId
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Operations:appliesTo  ogit.Utilities.Electricity:SynchronousArea ]
+        [ ogit.Utilities:appliesTo  ogit.Utilities.Electricity:SynchronousArea ]
         [ ogit.Utilities.Electricity.Operations:derivedFrom  ogit.Utilities.Electricity.Operations:ContingencyAnalysis ]
     );
 .

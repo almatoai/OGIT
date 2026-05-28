@@ -18,20 +18,20 @@ ogit.Utilities.Electricity.Operations:FrequencyDeviation
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity.Operations:deviation_id
-        ogit.Utilities.Electricity:synchronous_area_ref
-        ogit.Utilities.Electricity.Operations:dev_unit
-        ogit.Utilities:granularity_seconds
+        ogit.Utilities.Electricity.Operations:deviationId
+        ogit.Utilities.Electricity:synchronousAreaRef
+        ogit.Utilities.Electricity.Operations:devUnit
+        ogit.Utilities:granularitySeconds
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Operations:derived_from_frequency_ref
-        ogit.Utilities.Electricity.Operations:regulation_response_active
+        ogit.Utilities.Electricity.Operations:derivedFromFrequencyRef
+        ogit.Utilities.Electricity.Operations:regulationResponseActive
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity.Operations:deviation_id
+        ogit.Utilities.Electricity.Operations:deviationId
     );
     ogit:allowed (
         [ ogit.Utilities.Electricity.Operations:derivedFrom  ogit.Utilities.Electricity.Operations:SystemFrequency ]
-        [ ogit.Utilities.Electricity.Operations:generates  sgo:Timeseries ]
+        [ ogit:generates  sgo:Timeseries ]
     );
 .

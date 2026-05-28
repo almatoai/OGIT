@@ -17,26 +17,26 @@ ogit.Utilities.Electricity.Operations:SwitchAction
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity.Operations:action_id
-        ogit.Utilities.Electricity.Operations:parent_plan_ref
-        ogit.Utilities.Electricity.Operations:target_ref
-        ogit.Utilities.Electricity.Operations:action_kind
-        ogit.Utilities.Electricity.Operations:scheduled_time
-        ogit.Utilities.Electricity.Grid:sequence_number
+        ogit.Utilities.Electricity.Operations:actionId
+        ogit.Utilities.Electricity.Operations:parentPlanRef
+        ogit.Utilities.Electricity.Operations:targetRef
+        ogit.Utilities.Electricity.Operations:actionKind
+        ogit.Utilities.Electricity.Operations:scheduledTime
+        ogit.Utilities.Electricity.Grid:sequenceNumber
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Operations:executed_time
-        ogit.Utilities.Electricity.Operations:executed_by_ref
+        ogit.Utilities.Electricity.Operations:executedTime
+        ogit.Utilities.Electricity.Operations:executedByRef
         ogit:status
-        ogit.Utilities.Electricity.Operations:switch_notes
+        ogit.Utilities.Electricity.Operations:switchNotes
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity.Operations:action_id
+        ogit.Utilities.Electricity.Operations:actionId
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Operations:partOf  ogit.Utilities.Electricity.Operations:SwitchingPlan ]
-        [ ogit.Utilities.Electricity.Operations:partOf  ogit.Utilities.Electricity.Operations:RestorationPlan ]
-        [ ogit.Utilities.Electricity.Operations:partOf  ogit.Utilities.Electricity.Operations:DefensePlan ]
+        [ ogit:isPartOf  ogit.Utilities.Electricity.Operations:SwitchingPlan ]
+        [ ogit:isPartOf  ogit.Utilities.Electricity.Operations:RestorationPlan ]
+        [ ogit:isPartOf  ogit.Utilities.Electricity.Operations:DefensePlan ]
         [ ogit.Utilities.Electricity.Operations:actsOn  ogit.Utilities.Electricity.Grid:Switch ]
         [ ogit.Utilities.Electricity.Operations:actsOn  ogit.Utilities.Electricity.Grid:PowerTransformer ]
         [ ogit.Utilities.Electricity.Operations:actsOn  ogit.Utilities.Electricity.Grid:RatioTapChanger ]

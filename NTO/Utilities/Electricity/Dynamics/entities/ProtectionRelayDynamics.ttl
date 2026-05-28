@@ -21,11 +21,11 @@ ogit.Utilities.Electricity.Dynamics:ProtectionRelayDynamics
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
         ogit:name
-        ogit.Utilities:subject_ref
-        ogit.Utilities.Electricity.Dynamics:relay_model_kind
+        ogit.Utilities:subjectRef
+        ogit.Utilities.Electricity.Dynamics:relayModelKind
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Dynamics:parameter_payload
+        ogit.Utilities.Electricity.Dynamics:parameterPayload
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid

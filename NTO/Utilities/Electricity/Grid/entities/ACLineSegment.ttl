@@ -19,30 +19,30 @@ ogit.Utilities.Electricity.Grid:ACLineSegment
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
         ogit:name
-        ogit.Utilities.Electricity.Grid:r_ohm
-        ogit.Utilities.Electricity.Grid:x_ohm
-        ogit.Utilities.Electricity.Grid:length_km
+        ogit.Utilities.Electricity.Grid:rOhm
+        ogit.Utilities.Electricity.Grid:xOhm
+        ogit.Utilities.Electricity.Grid:lengthKm
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Grid:b_siemens
-        ogit.Utilities.Electricity.Grid:g_siemens
-        ogit.Utilities.Electricity.Grid:r0_ohm
-        ogit.Utilities.Electricity.Grid:x0_ohm
-        ogit.Utilities.Electricity.Grid:b0_siemens
-        ogit.Utilities.Electricity.Grid:g0_siemens
-        ogit.Utilities.Electricity.Grid:bch_siemens
-        ogit.Utilities.Electricity.Grid:gch_siemens
-        ogit.Utilities.Electricity.Grid:shunt_ratio
-        ogit.Utilities.Electricity.Grid:rated_current_a
-        ogit.Utilities.Electricity.Grid:conductor_material
-        ogit.Utilities.Electricity.Grid:circuit_arrangement
-        ogit.Utilities.Electricity.Grid:tower_type
+        ogit.Utilities.Electricity.Grid:bSiemens
+        ogit.Utilities.Electricity.Grid:gSiemens
+        ogit.Utilities.Electricity.Grid:r0Ohm
+        ogit.Utilities.Electricity.Grid:x0Ohm
+        ogit.Utilities.Electricity.Grid:b0Siemens
+        ogit.Utilities.Electricity.Grid:g0Siemens
+        ogit.Utilities.Electricity.Grid:bchSiemens
+        ogit.Utilities.Electricity.Grid:gchSiemens
+        ogit.Utilities.Electricity.Grid:shuntRatio
+        ogit.Utilities.Electricity.Grid:ratedCurrentA
+        ogit.Utilities.Electricity.Grid:conductorMaterial
+        ogit.Utilities.Electricity.Grid:circuitArrangement
+        ogit.Utilities.Electricity.Grid:towerType
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid
     );
     ogit:allowed (
         [ ogit.Utilities.Electricity.Grid:hasTerminal  ogit.Utilities.Electricity.Grid:Terminal ]
-        [ ogit.Utilities.Electricity.Grid:partOf  ogit.Utilities.Electricity:Interconnector ]
+        [ ogit:isPartOf  ogit.Utilities.Electricity:Interconnector ]
     );
 .

@@ -16,20 +16,20 @@ ogit.Utilities:EnergyCarrier
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities:carrier_id
-        ogit.Utilities:carrier_kind
+        ogit.Utilities:carrierId
+        ogit.Utilities:carrierKind
     );
     ogit:optional-attributes (
-        ogit.Utilities:nominal_lhv
-        ogit.Utilities:nominal_hhv
-        ogit.Utilities:gwp_factor
-        ogit.Utilities:standard_temperature
-        ogit.Utilities:standard_pressure
-        ogit.Utilities:iso_standard_ref
+        ogit.Utilities:nominalLhv
+        ogit.Utilities:nominalHhv
+        ogit.Utilities:gwpFactor
+        ogit.Utilities:standardTemperature
+        ogit.Utilities:standardPressure
+        ogit.Utilities:isoStandardRef
     );
     ogit:indexed-attributes (
-        ogit.Utilities:carrier_id
-        ogit.Utilities:carrier_kind
+        ogit.Utilities:carrierId
+        ogit.Utilities:carrierKind
     );
     ogit:allowed (
         [ ogit.Utilities:convertedTo  ogit.Utilities:EnergyCarrier ]

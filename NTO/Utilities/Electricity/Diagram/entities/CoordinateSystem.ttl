@@ -19,10 +19,10 @@ ogit.Utilities.Electricity.Diagram:CoordinateSystem
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
         ogit:name
-        ogit.Utilities.Electricity.Diagram:crs_urn
+        ogit.Utilities.Electricity.Diagram:crsUrn
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity:description_text
+        ogit.Utilities.Electricity:descriptionText
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid

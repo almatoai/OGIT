@@ -19,7 +19,7 @@ ogit.Utilities.Electricity.Operations.StateEstimation:SvTapStep
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
-        ogit.Utilities.Electricity.Operations.StateEstimation:tap_changer_ref
+        ogit.Utilities.Electricity.Operations.StateEstimation:tapChangerRef
     );
     ogit:optional-attributes (
 
@@ -28,8 +28,8 @@ ogit.Utilities.Electricity.Operations.StateEstimation:SvTapStep
         ogit.Utilities.Electricity:mrid
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Operations.StateEstimation:at  ogit.Utilities.Electricity.Grid:RatioTapChanger ]
-        [ ogit.Utilities.Electricity.Operations.StateEstimation:at  ogit.Utilities.Electricity.Grid:PhaseTapChanger ]
-        [ ogit.Utilities.Electricity.Operations.StateEstimation:generates  sgo:Timeseries ]
+        [ ogit.Utilities.Electricity.Grid:at  ogit.Utilities.Electricity.Grid:RatioTapChanger ]
+        [ ogit.Utilities.Electricity.Grid:at  ogit.Utilities.Electricity.Grid:PhaseTapChanger ]
+        [ ogit:generates  sgo:Timeseries ]
     );
 .

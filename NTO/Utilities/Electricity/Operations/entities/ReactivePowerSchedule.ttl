@@ -19,20 +19,20 @@ ogit.Utilities.Electricity.Operations:ReactivePowerSchedule
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities:schedule_id
-        ogit.Utilities.Electricity:control_area_ref
-        ogit.Utilities.Electricity.Operations:reactive_unit
-        ogit.Utilities:granularity_seconds
+        ogit.Utilities:scheduleId
+        ogit.Utilities.Electricity:controlAreaRef
+        ogit.Utilities.Electricity.Operations:reactiveUnit
+        ogit.Utilities:granularitySeconds
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Operations:counterparty_ref
+        ogit.Utilities.Electricity.Operations:counterpartyRef
         ogit.Utilities.Electricity.Market:direction
     );
     ogit:indexed-attributes (
-        ogit.Utilities:schedule_id
+        ogit.Utilities:scheduleId
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Operations:appliesTo  ogit.Utilities.Electricity:ControlArea ]
-        [ ogit.Utilities.Electricity.Operations:generates  sgo:Timeseries ]
+        [ ogit.Utilities:appliesTo  ogit.Utilities.Electricity:ControlArea ]
+        [ ogit:generates  sgo:Timeseries ]
     );
 .

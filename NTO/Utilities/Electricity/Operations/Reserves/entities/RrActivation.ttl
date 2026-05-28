@@ -17,20 +17,20 @@ ogit.Utilities.Electricity.Operations.Reserves:RrActivation
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity.Operations.Reserves:activation_id
-        ogit.Utilities.Electricity.Operations.Reserves:reserve_unit_ref
-        ogit.Utilities:granularity_seconds
+        ogit.Utilities.Electricity.Operations.Reserves:activationId
+        ogit.Utilities.Electricity.Operations.Reserves:reserveUnitRef
+        ogit.Utilities:granularitySeconds
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Operations.Reserves:activation_source
-        ogit.Utilities.Electricity.Operations.Reserves:setpoint_unit
-        ogit.Utilities.Electricity.Operations.Reserves:dispatch_instruction_ref
+        ogit.Utilities.Electricity.Operations.Reserves:activationSource
+        ogit.Utilities.Electricity.Operations.Reserves:setpointUnit
+        ogit.Utilities.Electricity.Operations.Reserves:dispatchInstructionRef
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity.Operations.Reserves:activation_id
+        ogit.Utilities.Electricity.Operations.Reserves:activationId
     );
     ogit:allowed (
         [ ogit.Utilities.Electricity.Operations.Reserves:deliveredBy  ogit.Utilities.Electricity.Operations.Reserves:ReserveUnit ]
-        [ ogit.Utilities.Electricity.Operations.Reserves:generates  sgo:Timeseries ]
+        [ ogit:generates  sgo:Timeseries ]
     );
 .

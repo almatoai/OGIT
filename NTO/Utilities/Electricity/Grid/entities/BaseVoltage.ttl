@@ -1,5 +1,6 @@
 @prefix dcterms:                                   <http://purl.org/dc/terms/> .
 @prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
 @prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
 @prefix ogit.Utilities.Electricity.Grid:           <http://www.purl.org/ogit/Utilities/Electricity/Grid/> .
 @prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
@@ -19,18 +20,18 @@ ogit.Utilities.Electricity.Grid:BaseVoltage
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
         ogit:name
-        ogit.Utilities.Electricity.Grid:nominal_voltage_kv
+        ogit.Utilities.Electricity.Grid:nominalVoltageKv
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Grid:is_dc
+        ogit.Utilities.Electricity.Grid:isDc
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Grid:appliesTo  ogit.Utilities.Electricity.Grid:VoltageLevel ]
-        [ ogit.Utilities.Electricity.Grid:appliesTo  ogit.Utilities.Electricity.Grid:TransformerEnd ]
-        [ ogit.Utilities.Electricity.Grid:appliesTo  ogit.Utilities.Electricity.Grid:Terminal ]
-        [ ogit.Utilities.Electricity.Grid:appliesTo  ogit.Utilities.Electricity.Grid:ACLineSegment ]
+        [ ogit.Utilities:appliesTo  ogit.Utilities.Electricity.Grid:VoltageLevel ]
+        [ ogit.Utilities:appliesTo  ogit.Utilities.Electricity.Grid:TransformerEnd ]
+        [ ogit.Utilities:appliesTo  ogit.Utilities.Electricity.Grid:Terminal ]
+        [ ogit.Utilities:appliesTo  ogit.Utilities.Electricity.Grid:ACLineSegment ]
     );
 .

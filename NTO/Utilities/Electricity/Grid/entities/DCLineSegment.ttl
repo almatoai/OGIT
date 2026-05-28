@@ -19,14 +19,14 @@ ogit.Utilities.Electricity.Grid:DCLineSegment
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
         ogit:name
-        ogit.Utilities.Electricity.Grid:r_ohm
-        ogit.Utilities.Electricity.Grid:length_km
+        ogit.Utilities.Electricity.Grid:rOhm
+        ogit.Utilities.Electricity.Grid:lengthKm
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Grid:inductance_h
-        ogit.Utilities.Electricity.Grid:capacitance_f
-        ogit.Utilities.Electricity.Grid:rated_voltage_kv
-        ogit.Utilities.Electricity.Grid:rated_current_a
+        ogit.Utilities.Electricity.Grid:inductanceH
+        ogit.Utilities.Electricity.Grid:capacitanceF
+        ogit.Utilities.Electricity.Grid:ratedVoltageKv
+        ogit.Utilities.Electricity.Grid:ratedCurrentA
         ogit.Utilities.Electricity:submarine
     );
     ogit:indexed-attributes (
@@ -34,6 +34,6 @@ ogit.Utilities.Electricity.Grid:DCLineSegment
     );
     ogit:allowed (
         [ ogit.Utilities.Electricity.Grid:hasTerminal  ogit.Utilities.Electricity.Grid:Terminal ]
-        [ ogit.Utilities.Electricity.Grid:partOf  ogit.Utilities.Electricity:Interconnector ]
+        [ ogit:isPartOf  ogit.Utilities.Electricity:Interconnector ]
     );
 .

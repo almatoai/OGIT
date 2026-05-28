@@ -19,18 +19,18 @@ ogit.Utilities.Electricity.Operations.StateEstimation:SvPowerFlow
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
-        ogit.Utilities.Electricity:terminal_ref
+        ogit.Utilities.Electricity:terminalRef
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Operations.StateEstimation:unit_p_mw
-        ogit.Utilities.Electricity.Operations.StateEstimation:unit_q_mvar
-        ogit.Utilities.Electricity.Operations.StateEstimation:positive_flow_direction_definition
+        ogit.Utilities.Electricity.Operations.StateEstimation:unitPMw
+        ogit.Utilities.Electricity.Operations.StateEstimation:unitQMvar
+        ogit.Utilities.Electricity.Operations.StateEstimation:positiveFlowDirectionDefinition
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Operations.StateEstimation:at  ogit.Utilities.Electricity.Grid:Terminal ]
-        [ ogit.Utilities.Electricity.Operations.StateEstimation:generates  sgo:Timeseries ]
+        [ ogit.Utilities.Electricity.Grid:at  ogit.Utilities.Electricity.Grid:Terminal ]
+        [ ogit:generates  sgo:Timeseries ]
     );
 .

@@ -18,18 +18,18 @@ ogit.Utilities.Electricity.Market:SchedulingArea
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity.Market:area_id
+        ogit.Utilities.Electricity.Market:areaId
         ogit:name
-        ogit.Utilities.Electricity:control_area_ref
+        ogit.Utilities.Electricity:controlAreaRef
     );
     ogit:optional-attributes (
 
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity.Market:area_id
+        ogit.Utilities.Electricity.Market:areaId
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Market:partOf  ogit.Utilities.Electricity:ControlArea ]
+        [ ogit:isPartOf  ogit.Utilities.Electricity:ControlArea ]
         [ ogit.Utilities.Electricity.Market:governsSchedule  ogit.Utilities:Schedule ]
     );
 .

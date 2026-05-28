@@ -18,10 +18,10 @@ ogit.Utilities.Electricity:NonConformLoad
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
         ogit:name
-        ogit.Utilities.Electricity:nominal_p_mw
+        ogit.Utilities.Electricity:nominalPMw
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity:load_group_ref
+        ogit.Utilities.Electricity:loadGroupRef
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid

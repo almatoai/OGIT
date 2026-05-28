@@ -20,16 +20,16 @@ ogit.Utilities.Electricity.Grid:ProtectionEquipment
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
         ogit:name
-        ogit.Utilities.Electricity.Grid:protection_kind
+        ogit.Utilities.Electricity.Grid:protectionKind
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Grid:relay_delay_ms
-        ogit.Utilities.Electricity.Grid:high_limit
-        ogit.Utilities.Electricity.Grid:low_limit
-        ogit.Utilities.Electricity.Grid:manufacturer
-        ogit.Utilities.Electricity.Grid:model
-        ogit.Utilities.Electricity.Grid:firmware_version
-        ogit.Utilities:commissioning_year
+        ogit.Utilities.Electricity.Grid:relayDelayMs
+        ogit.Utilities.Electricity.Grid:highLimit
+        ogit.Utilities.Electricity.Grid:lowLimit
+        ogit:manufacturer
+        ogit:model
+        ogit.Utilities.Electricity.Grid:firmwareVersion
+        ogit.Utilities:commissioningYear
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid
@@ -37,6 +37,6 @@ ogit.Utilities.Electricity.Grid:ProtectionEquipment
     ogit:allowed (
         [ ogit.Utilities.Electricity.Grid:protects  ogit.Utilities.Electricity.Grid:ACLineSegment ]
         [ ogit.Utilities.Electricity.Grid:operatesOn  ogit.Utilities.Electricity.Grid:Breaker ]
-        [ ogit.Utilities.Electricity.Grid:generates  sgo:Timeseries ]
+        [ ogit:generates  sgo:Timeseries ]
     );
 .

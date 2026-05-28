@@ -20,18 +20,18 @@ ogit.Utilities.Electricity.Grid:OperationalLimitSet
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
         ogit:name
-        ogit.Utilities:subject_ref
+        ogit.Utilities:subjectRef
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Grid:regulation_basis_ref
+        ogit.Utilities.Electricity.Grid:regulationBasisRef
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Grid:appliesTo  ogit.Utilities.Electricity.Grid:ACLineSegment ]
-        [ ogit.Utilities.Electricity.Grid:appliesTo  ogit.Utilities.Electricity.Grid:Terminal ]
-        [ ogit.Utilities.Electricity.Grid:appliesTo  ogit.Utilities.Electricity:GeneratingUnit ]
+        [ ogit.Utilities:appliesTo  ogit.Utilities.Electricity.Grid:ACLineSegment ]
+        [ ogit.Utilities:appliesTo  ogit.Utilities.Electricity.Grid:Terminal ]
+        [ ogit.Utilities:appliesTo  ogit.Utilities.Electricity:GeneratingUnit ]
         [ ogit.Utilities.Electricity.Grid:groups  ogit.Utilities:OperationalLimit ]
     );
 .

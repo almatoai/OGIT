@@ -16,15 +16,15 @@ ogit.Utilities.Electricity.Legacy:UcteComment
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity.Legacy:record_id
+        ogit.Utilities.Electricity.Legacy:recordId
         ogit.Utilities.Electricity.Legacy:text
-        ogit.Utilities.Electricity.Legacy:source_file_ref
+        ogit.Utilities.Electricity.Legacy:sourceFileRef
     );
     ogit:optional-attributes (
 
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity.Legacy:record_id
+        ogit.Utilities.Electricity.Legacy:recordId
     );
     ogit:allowed (
 

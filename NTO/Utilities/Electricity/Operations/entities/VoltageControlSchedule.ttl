@@ -18,21 +18,21 @@ ogit.Utilities.Electricity.Operations:VoltageControlSchedule
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities:schedule_id
-        ogit.Utilities.Electricity.Operations:zone_ref
-        ogit.Utilities.Electricity.Operations:voltage_unit
-        ogit.Utilities:granularity_seconds
+        ogit.Utilities:scheduleId
+        ogit.Utilities.Electricity.Operations:zoneRef
+        ogit.Utilities.Electricity.Operations:voltageUnit
+        ogit.Utilities:granularitySeconds
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Operations:tolerance_kv
-        ogit.Utilities.Electricity.Operations:priority
+        ogit.Utilities.Electricity.Operations:toleranceKv
+        ogit:priority
     );
     ogit:indexed-attributes (
-        ogit.Utilities:schedule_id
+        ogit.Utilities:scheduleId
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Operations:appliesTo  ogit.Utilities.Electricity.Grid:VoltageLevel ]
-        [ ogit.Utilities.Electricity.Operations:appliesTo  ogit.Utilities.Electricity.Grid:Substation ]
-        [ ogit.Utilities.Electricity.Operations:generates  sgo:Timeseries ]
+        [ ogit.Utilities:appliesTo  ogit.Utilities.Electricity.Grid:VoltageLevel ]
+        [ ogit.Utilities:appliesTo  ogit.Utilities.Electricity.Grid:Substation ]
+        [ ogit:generates  sgo:Timeseries ]
     );
 .

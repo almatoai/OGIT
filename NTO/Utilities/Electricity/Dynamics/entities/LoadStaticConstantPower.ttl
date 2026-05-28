@@ -20,8 +20,8 @@ ogit.Utilities.Electricity.Dynamics:LoadStaticConstantPower
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
         ogit:name
-        ogit.Utilities:subject_ref
-        ogit.Utilities.Electricity.Dynamics:model_kind
+        ogit.Utilities:subjectRef
+        ogit.Utilities.Electricity.Dynamics:modelKind
     );
     ogit:optional-attributes (
 

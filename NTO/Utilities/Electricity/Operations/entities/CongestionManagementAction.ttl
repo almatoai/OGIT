@@ -18,24 +18,24 @@ ogit.Utilities.Electricity.Operations:CongestionManagementAction
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity.Operations:action_id
-        ogit.Utilities.Electricity.Operations:congestion_subject_ref
-        ogit.Utilities.Electricity.Operations:action_kind
-        ogit.Utilities.Electricity.Operations:volume_mw
-        ogit.Utilities.Electricity.Operations:effective_period_start
+        ogit.Utilities.Electricity.Operations:actionId
+        ogit.Utilities.Electricity.Operations:congestionSubjectRef
+        ogit.Utilities.Electricity.Operations:actionKind
+        ogit.Utilities.Electricity.Operations:volumeMw
+        ogit.Utilities.Electricity.Operations:effectivePeriodStart
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Operations:effective_period_end
+        ogit.Utilities.Electricity.Operations:effectivePeriodEnd
         ogit.Utilities.Electricity.Operations:cost
-        ogit.Utilities.Electricity.Operations:triggered_by_kind
-        ogit.Utilities.Electricity.Operations:affected_market_participants_refs
+        ogit.Utilities.Electricity.Operations:triggeredByKind
+        ogit.Utilities.Electricity.Operations:affectedMarketParticipantsRefs
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity.Operations:action_id
+        ogit.Utilities.Electricity.Operations:actionId
     );
     ogit:allowed (
         [ ogit.Utilities.Electricity.Operations:targets  ogit.Utilities.Electricity.Grid:ACLineSegment ]
         [ ogit.Utilities.Electricity.Operations:targets  ogit.Utilities.Electricity:Interconnector ]
-        [ ogit.Utilities.Electricity.Operations:affects  ogit.Utilities.Electricity:GeneratingUnit ]
+        [ ogit:affects  ogit.Utilities.Electricity:GeneratingUnit ]
     );
 .

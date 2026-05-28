@@ -17,23 +17,23 @@ ogit.Utilities.Electricity.Legacy:UcteDcLink
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity.Legacy:record_id
-        ogit.Utilities.Electricity.Legacy:node_a_ref
-        ogit.Utilities.Electricity.Legacy:node_b_ref
-        ogit.Utilities.Electricity.Legacy:link_id
+        ogit.Utilities.Electricity.Legacy:recordId
+        ogit.Utilities.Electricity.Legacy:nodeARef
+        ogit.Utilities.Electricity.Legacy:nodeBRef
+        ogit.Utilities.Electricity.Legacy:linkId
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Legacy:rated_power_mw
-        ogit.Utilities.Electricity.Grid:rated_voltage_kv
-        ogit.Utilities.Electricity.Legacy:operating_mode
+        ogit.Utilities.Electricity.Legacy:ratedPowerMw
+        ogit.Utilities.Electricity.Grid:ratedVoltageKv
+        ogit.Utilities.Electricity.Legacy:operatingMode
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity.Legacy:record_id
+        ogit.Utilities.Electricity.Legacy:recordId
     );
     ogit:allowed (
         [ ogit.Utilities.Electricity.Legacy:mappedTo  ogit.Utilities.Electricity.Grid:DCLineSegment ]
         [ ogit.Utilities.Electricity.Legacy:mappedTo  ogit.Utilities.Electricity.Grid:CsConverter ]
         [ ogit.Utilities.Electricity.Legacy:mappedTo  ogit.Utilities.Electricity.Grid:VsConverter ]
-        [ ogit.Utilities.Electricity.Legacy:connects  ogit.Utilities.Electricity.Legacy:UcteNode ]
+        [ ogit:connects  ogit.Utilities.Electricity.Legacy:UcteNode ]
     );
 .

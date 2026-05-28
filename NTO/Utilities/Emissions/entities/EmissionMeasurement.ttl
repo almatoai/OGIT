@@ -18,26 +18,26 @@ ogit.Utilities.Emissions:EmissionMeasurement
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Emissions:measurement_id
-        ogit.Utilities:subject_ref
+        ogit.Utilities.Emissions:measurementId
+        ogit.Utilities:subjectRef
         ogit.Utilities.Emissions:substance
-        ogit.Utilities.Emissions:cems_unit
-        ogit.Utilities:granularity_seconds
-        ogit.Utilities.Emissions:measurement_device_ref
+        ogit.Utilities.Emissions:cemsUnit
+        ogit.Utilities:granularitySeconds
+        ogit.Utilities.Emissions:measurementDeviceRef
     );
     ogit:optional-attributes (
-        ogit.Utilities.Emissions:calibration_record_ref
-        ogit.Utilities.Emissions:nominal_uncertainty
-        ogit.Utilities.Emissions:aggregation_method
-        ogit.Utilities.Electricity:commissioning_date
-        ogit.Utilities.Electricity:decommissioning_date
-        ogit.Utilities.Emissions:regulatory_certification_ref
+        ogit.Utilities.Emissions:calibrationRecordRef
+        ogit.Utilities.Emissions:nominalUncertainty
+        ogit.Utilities.Emissions:aggregationMethod
+        ogit.Utilities.Electricity:commissioningDate
+        ogit.Utilities.Electricity:decommissioningDate
+        ogit.Utilities.Emissions:regulatoryCertificationRef
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Emissions:measurement_id
+        ogit.Utilities.Emissions:measurementId
     );
     ogit:allowed (
         [ ogit.Utilities.Emissions:feedsInto  ogit.Utilities.Emissions:GreenhouseGasEmission ]
-        [ ogit.Utilities.Emissions:generates  sgo:Timeseries ]
+        [ ogit:generates  sgo:Timeseries ]
     );
 .

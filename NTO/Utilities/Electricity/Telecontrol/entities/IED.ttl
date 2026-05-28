@@ -19,24 +19,24 @@ ogit.Utilities.Electricity.Telecontrol:IED
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity.Telecontrol:ied_id
-        ogit.Utilities.Electricity.Grid:manufacturer
-        ogit.Utilities.Electricity.Grid:model
-        ogit.Utilities.Electricity.Telecontrol:ied_function
+        ogit.Utilities.Electricity.Telecontrol:iedId
+        ogit:manufacturer
+        ogit:model
+        ogit.Utilities.Electricity.Telecontrol:iedFunction
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Grid:firmware_version
-        ogit.Utilities.Electricity.Telecontrol:iec_61850_supported
-        ogit.Utilities.Electricity.Telecontrol:protection_functions_payload
-        ogit.Utilities:commissioning_year
+        ogit.Utilities.Electricity.Grid:firmwareVersion
+        ogit.Utilities.Electricity.Telecontrol:iec61850Supported
+        ogit.Utilities.Electricity.Telecontrol:protectionFunctionsPayload
+        ogit.Utilities:commissioningYear
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity.Telecontrol:ied_id
+        ogit.Utilities.Electricity.Telecontrol:iedId
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Telecontrol:locatedIn  ogit.Utilities.Electricity.Grid:Substation ]
-        [ ogit.Utilities.Electricity.Telecontrol:locatedIn  ogit.Utilities.Electricity.Grid:Bay ]
+        [ ogit:locatedIn  ogit.Utilities.Electricity.Grid:Substation ]
+        [ ogit:locatedIn  ogit.Utilities.Electricity.Grid:Bay ]
         [ ogit.Utilities.Electricity.Telecontrol:runs  ogit.Utilities.Electricity.Telecontrol:ProtocolEndpoint ]
-        [ ogit.Utilities.Electricity.Telecontrol:protects  ogit.Utilities.Electricity.Grid:ACLineSegment ]
+        [ ogit.Utilities.Electricity.Grid:protects  ogit.Utilities.Electricity.Grid:ACLineSegment ]
     );
 .

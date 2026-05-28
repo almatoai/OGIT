@@ -18,24 +18,24 @@ ogit.Utilities.Electricity.Grid:PowerTransformerEnd
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
-        ogit.Utilities.Electricity.Grid:end_number
-        ogit.Utilities.Electricity.Grid:rated_s_mva
-        ogit.Utilities.Electricity.Grid:rated_u_kv
+        ogit.Utilities.Electricity.Grid:endNumber
+        ogit.Utilities.Electricity.Grid:ratedSMva
+        ogit.Utilities.Electricity.Grid:ratedUKv
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Grid:r_ohm
-        ogit.Utilities.Electricity.Grid:x_ohm
-        ogit.Utilities.Electricity.Grid:b_siemens
-        ogit.Utilities.Electricity.Grid:g_siemens
-        ogit.Utilities.Electricity.Grid:r0_ohm
-        ogit.Utilities.Electricity.Grid:x0_ohm
-        ogit.Utilities.Electricity.Grid:phase_angle_clock
-        ogit.Utilities.Electricity.Grid:connection_kind
+        ogit.Utilities.Electricity.Grid:rOhm
+        ogit.Utilities.Electricity.Grid:xOhm
+        ogit.Utilities.Electricity.Grid:bSiemens
+        ogit.Utilities.Electricity.Grid:gSiemens
+        ogit.Utilities.Electricity.Grid:r0Ohm
+        ogit.Utilities.Electricity.Grid:x0Ohm
+        ogit.Utilities.Electricity.Grid:phaseAngleClock
+        ogit.Utilities.Electricity.Grid:connectionKind
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Grid:partOf  ogit.Utilities.Electricity.Grid:PowerTransformer ]
+        [ ogit:isPartOf  ogit.Utilities.Electricity.Grid:PowerTransformer ]
     );
 .

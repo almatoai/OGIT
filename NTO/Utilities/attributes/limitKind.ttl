@@ -1,0 +1,15 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+ogit.Utilities:limitKind
+    a owl:DatatypeProperty;
+    rdfs:subPropertyOf ogit:Attribute;
+    rdfs:label "limitKind";
+    dcterms:description "Limit classification. For electricity: PATL (permanent admissible transmission loading), TATL (temporary admissible transmission loading), voltage_high, voltage_low, current_high, current_low, frequency_high, frequency_low, apparent_power, active_power, reactive_power. For gas: pressure_high, pressure_low, flow_high. For water: flow_high, level_high, level_low. Domain-specific enumeration.";
+    dcterms:valid "start=2026-05-27;";
+    dcterms:creator "chris.boos@almato.com";
+.

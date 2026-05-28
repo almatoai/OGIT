@@ -17,27 +17,27 @@ ogit.Utilities.Electricity.Legacy:UcteTwoWindingTransformer
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity.Legacy:record_id
-        ogit.Utilities.Electricity.Legacy:node_a_ref
-        ogit.Utilities.Electricity.Legacy:node_b_ref
-        ogit.Utilities.Electricity.Legacy:order_code
-        ogit.Utilities.Electricity.Legacy:status_code
+        ogit.Utilities.Electricity.Legacy:recordId
+        ogit.Utilities.Electricity.Legacy:nodeARef
+        ogit.Utilities.Electricity.Legacy:nodeBRef
+        ogit.Utilities.Electricity.Legacy:orderCode
+        ogit.Utilities.Electricity.Legacy:statusCode
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Legacy:nominal_u_a_kv
-        ogit.Utilities.Electricity.Legacy:nominal_u_b_kv
-        ogit.Utilities.Electricity.Legacy:nominal_power_mva
-        ogit.Utilities.Electricity.Grid:r_ohm
-        ogit.Utilities.Electricity.Grid:x_ohm
-        ogit.Utilities.Electricity.Legacy:b_microsiemens
-        ogit.Utilities.Electricity.Legacy:g_microsiemens
-        ogit.Utilities.Electricity.Grid:phase_angle_clock
+        ogit.Utilities.Electricity.Legacy:nominalUAKv
+        ogit.Utilities.Electricity.Legacy:nominalUBKv
+        ogit.Utilities.Electricity.Legacy:nominalPowerMva
+        ogit.Utilities.Electricity.Grid:rOhm
+        ogit.Utilities.Electricity.Grid:xOhm
+        ogit.Utilities.Electricity.Legacy:bMicrosiemens
+        ogit.Utilities.Electricity.Legacy:gMicrosiemens
+        ogit.Utilities.Electricity.Grid:phaseAngleClock
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity.Legacy:record_id
+        ogit.Utilities.Electricity.Legacy:recordId
     );
     ogit:allowed (
         [ ogit.Utilities.Electricity.Legacy:mappedTo  ogit.Utilities.Electricity.Grid:PowerTransformer ]
-        [ ogit.Utilities.Electricity.Legacy:connects  ogit.Utilities.Electricity.Legacy:UcteNode ]
+        [ ogit:connects  ogit.Utilities.Electricity.Legacy:UcteNode ]
     );
 .

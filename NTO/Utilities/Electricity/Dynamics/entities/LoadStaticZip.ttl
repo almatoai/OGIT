@@ -20,14 +20,14 @@ ogit.Utilities.Electricity.Dynamics:LoadStaticZip
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
         ogit:name
-        ogit.Utilities:subject_ref
-        ogit.Utilities.Electricity.Dynamics:model_kind
-        ogit.Utilities.Electricity.Dynamics:p_z
-        ogit.Utilities.Electricity.Dynamics:p_i
-        ogit.Utilities.Electricity.Dynamics:p_p
-        ogit.Utilities.Electricity.Dynamics:q_z
-        ogit.Utilities.Electricity.Dynamics:q_i
-        ogit.Utilities.Electricity.Dynamics:q_p
+        ogit.Utilities:subjectRef
+        ogit.Utilities.Electricity.Dynamics:modelKind
+        ogit.Utilities.Electricity.Dynamics:pZ
+        ogit.Utilities.Electricity.Dynamics:pI
+        ogit.Utilities.Electricity.Dynamics:pP
+        ogit.Utilities.Electricity.Dynamics:qZ
+        ogit.Utilities.Electricity.Dynamics:qI
+        ogit.Utilities.Electricity.Dynamics:qP
     );
     ogit:optional-attributes (
 

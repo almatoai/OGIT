@@ -19,24 +19,24 @@ ogit.Utilities.Electricity.Grid:CsConverter
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
         ogit:name
-        ogit.Utilities.Electricity.Grid:max_alpha_degrees
-        ogit.Utilities.Electricity.Grid:max_gamma_degrees
-        ogit.Utilities.Electricity.Grid:pole_loss_p_mw
+        ogit.Utilities.Electricity.Grid:maxAlphaDegrees
+        ogit.Utilities.Electricity.Grid:maxGammaDegrees
+        ogit.Utilities.Electricity.Grid:poleLossPMw
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Grid:rated_idc_a
-        ogit.Utilities.Electricity.Grid:rated_udc_kv
-        ogit.Utilities.Electricity.Grid:min_alpha_degrees
-        ogit.Utilities.Electricity.Grid:min_gamma_degrees
-        ogit.Utilities.Electricity.Grid:commutation_capability
-        ogit.Utilities.Electricity.Grid:idle_loss_p_mw
+        ogit.Utilities.Electricity.Grid:ratedIdcA
+        ogit.Utilities.Electricity.Grid:ratedUdcKv
+        ogit.Utilities.Electricity.Grid:minAlphaDegrees
+        ogit.Utilities.Electricity.Grid:minGammaDegrees
+        ogit.Utilities.Electricity.Grid:commutationCapability
+        ogit.Utilities.Electricity.Grid:idleLossPMw
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid
     );
     ogit:allowed (
         [ ogit.Utilities.Electricity.Grid:hasTerminal  ogit.Utilities.Electricity.Grid:Terminal ]
-        [ ogit.Utilities.Electricity.Grid:partOf  ogit.Utilities.Electricity.Grid:DCConverterUnit ]
-        [ ogit.Utilities.Electricity.Grid:generates  sgo:Timeseries ]
+        [ ogit:isPartOf  ogit.Utilities.Electricity.Grid:DCConverterUnit ]
+        [ ogit:generates  sgo:Timeseries ]
     );
 .

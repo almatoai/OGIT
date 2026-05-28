@@ -16,14 +16,14 @@ ogit.Utilities.Electricity.Diagram:ColorScheme
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity.Diagram:scheme_id
+        ogit.Utilities.Electricity.Diagram:schemeId
         ogit:name
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Diagram:scheme_payload
+        ogit.Utilities.Electricity.Diagram:schemePayload
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity.Diagram:scheme_id
+        ogit.Utilities.Electricity.Diagram:schemeId
     );
     ogit:allowed (
         [ ogit.Utilities.Electricity.Diagram:usedBy  ogit.Utilities.Electricity.Diagram:DiagramStyle ]

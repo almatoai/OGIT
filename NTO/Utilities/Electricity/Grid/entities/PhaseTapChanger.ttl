@@ -18,22 +18,22 @@ ogit.Utilities.Electricity.Grid:PhaseTapChanger
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
-        ogit.Utilities.Electricity.Grid:low_step
-        ogit.Utilities.Electricity.Grid:high_step
-        ogit.Utilities.Electricity.Grid:neutral_step
-        ogit.Utilities.Electricity.Grid:phase_tap_changer_kind
+        ogit.Utilities.Electricity.Grid:lowStep
+        ogit.Utilities.Electricity.Grid:highStep
+        ogit.Utilities.Electricity.Grid:neutralStep
+        ogit.Utilities.Electricity.Grid:phaseTapChangerKind
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Grid:normal_step
-        ogit.Utilities.Electricity.Grid:voltage_step_increment
-        ogit.Utilities.Electricity.Grid:phase_angle_increment_degrees
-        ogit.Utilities.Electricity.Grid:winding_connection_angle
+        ogit.Utilities.Electricity.Grid:normalStep
+        ogit.Utilities.Electricity.Grid:voltageStepIncrement
+        ogit.Utilities.Electricity.Grid:phaseAngleIncrementDegrees
+        ogit.Utilities.Electricity.Grid:windingConnectionAngle
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid
     );
     ogit:allowed (
         [ ogit.Utilities.Electricity.Grid:controls  ogit.Utilities.Electricity.Grid:PowerTransformerEnd ]
-        [ ogit.Utilities.Electricity.Grid:generates  sgo:Timeseries ]
+        [ ogit:generates  sgo:Timeseries ]
     );
 .

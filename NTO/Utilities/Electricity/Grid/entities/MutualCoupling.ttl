@@ -19,18 +19,18 @@ ogit.Utilities.Electricity.Grid:MutualCoupling
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
         ogit:name
-        ogit.Utilities.Electricity.Grid:r0_ohm
-        ogit.Utilities.Electricity.Grid:x0_ohm
-        ogit.Utilities.Electricity.Grid:first_line_segment_ref
-        ogit.Utilities.Electricity.Grid:second_line_segment_ref
+        ogit.Utilities.Electricity.Grid:r0Ohm
+        ogit.Utilities.Electricity.Grid:x0Ohm
+        ogit.Utilities.Electricity.Grid:firstLineSegmentRef
+        ogit.Utilities.Electricity.Grid:secondLineSegmentRef
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Grid:b0_siemens
-        ogit.Utilities.Electricity.Grid:g0_siemens
-        ogit.Utilities.Electricity.Grid:distance_11_m
-        ogit.Utilities.Electricity.Grid:distance_12_m
-        ogit.Utilities.Electricity.Grid:distance_21_m
-        ogit.Utilities.Electricity.Grid:distance_22_m
+        ogit.Utilities.Electricity.Grid:b0Siemens
+        ogit.Utilities.Electricity.Grid:g0Siemens
+        ogit.Utilities.Electricity.Grid:distance11M
+        ogit.Utilities.Electricity.Grid:distance12M
+        ogit.Utilities.Electricity.Grid:distance21M
+        ogit.Utilities.Electricity.Grid:distance22M
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid

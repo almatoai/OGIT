@@ -19,16 +19,16 @@ ogit.Utilities.Electricity.Dynamics:TurbineGovernorDynamics
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
         ogit:name
-        ogit.Utilities.Electricity.Dynamics:synchronous_machine_dynamics_ref
-        ogit.Utilities.Electricity.Dynamics:model_kind
+        ogit.Utilities.Electricity.Dynamics:synchronousMachineDynamicsRef
+        ogit.Utilities.Electricity.Dynamics:modelKind
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Dynamics:parameter_payload
+        ogit.Utilities.Electricity.Dynamics:parameterPayload
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Dynamics:partOf  ogit.Utilities.Electricity.Dynamics:SynchronousMachineDynamics ]
+        [ ogit:isPartOf  ogit.Utilities.Electricity.Dynamics:SynchronousMachineDynamics ]
     );
 .

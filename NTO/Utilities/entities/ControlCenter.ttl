@@ -17,21 +17,21 @@ ogit.Utilities:ControlCenter
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities:center_name
-        ogit.Utilities:operator_ref
+        ogit.Utilities:centerName
+        ogit.Utilities:operatorRef
     );
     ogit:optional-attributes (
-        ogit.Utilities:location_ref
-        ogit.Utilities:iso_function
-        ogit.Utilities:backup_center_ref
-        ogit.Utilities:redundancy_class
+        ogit.Utilities:locationRef
+        ogit.Utilities:isoFunction
+        ogit.Utilities:backupCenterRef
+        ogit.Utilities:redundancyClass
         ogit:status
     );
     ogit:indexed-attributes (
-        ogit.Utilities:center_name
+        ogit.Utilities:centerName
     );
     ogit:allowed (
-        [ ogit.Utilities:supervises  ogit.Utilities.Electricity:ControlArea ]
+        [ ogit:supervises  ogit.Utilities.Electricity:ControlArea ]
         [ ogit.Utilities:operatedBy  ogit.Utilities:NetworkOperator ]
     );
 .

@@ -19,20 +19,20 @@ ogit.Utilities.Electricity.Grid:ConnectivityNode
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
         ogit:name
-        ogit.Utilities.Electricity.Grid:parent_container_ref
+        ogit.Utilities.Electricity.Grid:parentContainerRef
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Grid:boundary_point
-        ogit.Utilities.Electricity.Grid:fromendiso_code
-        ogit.Utilities.Electricity.Grid:toendiso_code
+        ogit.Utilities.Electricity.Grid:boundaryPoint
+        ogit.Utilities.Electricity.Grid:fromendisoCode
+        ogit.Utilities.Electricity.Grid:toendisoCode
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Grid:connects  ogit.Utilities.Electricity.Grid:Terminal ]
-        [ ogit.Utilities.Electricity.Grid:partOf  ogit.Utilities.Electricity.Grid:VoltageLevel ]
-        [ ogit.Utilities.Electricity.Grid:partOf  ogit.Utilities.Electricity.Grid:Bay ]
+        [ ogit:connects  ogit.Utilities.Electricity.Grid:Terminal ]
+        [ ogit:isPartOf  ogit.Utilities.Electricity.Grid:VoltageLevel ]
+        [ ogit:isPartOf  ogit.Utilities.Electricity.Grid:Bay ]
         [ ogit.Utilities.Electricity.Grid:groupedInto  ogit.Utilities.Electricity.Grid:TopologicalNode ]
     );
 .

@@ -16,18 +16,18 @@ ogit.Utilities.Electricity.Telecontrol:FileTransferCommand
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity.Telecontrol:command_id
-        ogit.Utilities.Electricity.Telecontrol:endpoint_ref
-        ogit.Utilities.Electricity.Telecontrol:command_kind
+        ogit.Utilities.Electricity.Telecontrol:commandId
+        ogit.Utilities.Electricity.Telecontrol:endpointRef
+        ogit.Utilities.Electricity.Telecontrol:commandKind
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Telecontrol:file_name
-        ogit.Utilities.Electricity.Telecontrol:file_length
-        ogit.Utilities.Electricity.Telecontrol:section_length
-        ogit.Utilities.Electricity.Telecontrol:name_of_file
+        ogit.Utilities.Electricity.Telecontrol:fileName
+        ogit.Utilities.Electricity.Telecontrol:fileLength
+        ogit.Utilities.Electricity.Telecontrol:sectionLength
+        ogit.Utilities.Electricity.Telecontrol:nameOfFile
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity.Telecontrol:command_id
+        ogit.Utilities.Electricity.Telecontrol:commandId
     );
     ogit:allowed (
         [ ogit.Utilities.Electricity.Telecontrol:addressedAt  ogit.Utilities.Electricity.Telecontrol:ProtocolEndpoint ]

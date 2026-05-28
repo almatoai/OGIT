@@ -17,23 +17,23 @@ ogit.Utilities.Electricity.Market:RegisteredResource
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity.Market:resource_id
+        ogit.Utilities.Electricity.Market:resourceId
         ogit:name
-        ogit.Utilities.Electricity.Market:participant_ref
-        ogit.Utilities.Electricity.Market:physical_subject_ref
-        ogit.Utilities.Electricity.Market:qualification_status
+        ogit.Utilities.Electricity.Market:participantRef
+        ogit.Utilities.Electricity.Market:physicalSubjectRef
+        ogit.Utilities.Electricity.Market:qualificationStatus
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Market:registered_in_bidding_zone_refs
-        ogit.Utilities.Electricity.Market:registered_capacity_mw
+        ogit.Utilities.Electricity.Market:registeredInBiddingZoneRefs
+        ogit.Utilities.Electricity.Market:registeredCapacityMw
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity.Market:resource_id
+        ogit.Utilities.Electricity.Market:resourceId
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Market:controlledBy  ogit.Utilities.Electricity:MarketParticipant ]
-        [ ogit.Utilities.Electricity.Market:represents  ogit.Utilities.Electricity:GeneratingUnit ]
-        [ ogit.Utilities.Electricity.Market:represents  ogit.Utilities.Electricity:EnergyStorage ]
-        [ ogit.Utilities.Electricity.Market:represents  ogit.Utilities.Electricity:EnergyConsumer ]
+        [ ogit:controlledBy  ogit.Utilities.Electricity:MarketParticipant ]
+        [ ogit:represents  ogit.Utilities.Electricity:GeneratingUnit ]
+        [ ogit:represents  ogit.Utilities.Electricity:EnergyStorage ]
+        [ ogit:represents  ogit.Utilities.Electricity:EnergyConsumer ]
     );
 .

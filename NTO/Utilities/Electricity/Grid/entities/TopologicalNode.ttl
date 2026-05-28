@@ -19,20 +19,20 @@ ogit.Utilities.Electricity.Grid:TopologicalNode
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
         ogit:name
-        ogit.Utilities.Electricity.Grid:base_voltage_kv
+        ogit.Utilities.Electricity.Grid:baseVoltageKv
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Grid:parent_island_ref
-        ogit.Utilities.Electricity.Grid:boundary_point
-        ogit.Utilities.Electricity.Grid:equivalent_bus_id
+        ogit.Utilities.Electricity.Grid:parentIslandRef
+        ogit.Utilities.Electricity.Grid:boundaryPoint
+        ogit.Utilities.Electricity.Grid:equivalentBusId
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Grid:consistsOf  ogit.Utilities.Electricity.Grid:ConnectivityNode ]
-        [ ogit.Utilities.Electricity.Grid:partOf  ogit.Utilities.Electricity.Grid:TopologicalIsland ]
+        [ ogit:consistsOf  ogit.Utilities.Electricity.Grid:ConnectivityNode ]
+        [ ogit:isPartOf  ogit.Utilities.Electricity.Grid:TopologicalIsland ]
         [ ogit.Utilities.Electricity.Grid:at  ogit.Utilities.Electricity.Grid:Substation ]
-        [ ogit.Utilities.Electricity.Grid:generates  sgo:Timeseries ]
+        [ ogit:generates  sgo:Timeseries ]
     );
 .

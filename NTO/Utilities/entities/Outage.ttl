@@ -17,26 +17,26 @@ ogit.Utilities:Outage
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities:outage_id
-        ogit.Utilities:outage_kind
-        ogit.Utilities:start_time
+        ogit.Utilities:outageId
+        ogit.Utilities:outageKind
+        ogit.Utilities:startTime
         ogit.Utilities:domain
     );
     ogit:optional-attributes (
-        ogit.Utilities:end_time
-        ogit.Utilities:expected_duration
+        ogit.Utilities:endTime
+        ogit.Utilities:expectedDuration
         ogit.Utilities:cause
-        ogit.Utilities:affected_population
-        ogit.Utilities:recovery_action_ref
-        ogit.Utilities:severity
-        ogit.Utilities:criticality_level
-        ogit.Utilities:restoration_priority
+        ogit.Utilities:affectedPopulation
+        ogit.Utilities:recoveryActionRef
+        ogit:severity
+        ogit.Utilities:criticalityLevel
+        ogit.Utilities:restorationPriority
     );
     ogit:indexed-attributes (
-        ogit.Utilities:outage_id
+        ogit.Utilities:outageId
     );
     ogit:allowed (
-        [ ogit.Utilities:affects  ogit.Utilities.Electricity:PowerSystemResource ]
+        [ ogit:affects  ogit.Utilities.Electricity:PowerSystemResource ]
         [ ogit.Utilities:causedBy  ogit.Utilities.Electricity:PowerSystemResource ]
         [ ogit.Utilities:reportedBy  ogit.Utilities:NetworkOperator ]
     );

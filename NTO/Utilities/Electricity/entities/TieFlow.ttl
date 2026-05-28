@@ -16,19 +16,19 @@ ogit.Utilities.Electricity:TieFlow
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity:tieflow_id
-        ogit.Utilities.Electricity:terminal_ref
-        ogit.Utilities.Electricity:control_area_ref
-        ogit.Utilities.Electricity:positive_flow_in
+        ogit.Utilities.Electricity:tieflowId
+        ogit.Utilities.Electricity:terminalRef
+        ogit.Utilities.Electricity:controlAreaRef
+        ogit.Utilities.Electricity:positiveFlowIn
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity:interconnector_ref
-        ogit.Utilities.Electricity:measurement_ref
+        ogit.Utilities.Electricity:interconnectorRef
+        ogit.Utilities.Electricity:measurementRef
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity:tieflow_id
+        ogit.Utilities.Electricity:tieflowId
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity:partOf  ogit.Utilities.Electricity:ControlArea ]
+        [ ogit:isPartOf  ogit.Utilities.Electricity:ControlArea ]
     );
 .

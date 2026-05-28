@@ -1,5 +1,6 @@
 @prefix dcterms:                                   <http://purl.org/dc/terms/> .
 @prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities.Electricity.Operations.StateEstimation: <http://www.purl.org/ogit/Utilities/Electricity/Operations/StateEstimation/> .
 @prefix ogit.Utilities.Electricity.Telecontrol.InterControlCenter: <http://www.purl.org/ogit/Utilities/Electricity/Telecontrol/InterControlCenter/> .
 @prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
@@ -16,19 +17,19 @@ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:AuthenticationRecord
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:tase_record_id
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:parent_account_ref
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:taseRecordId
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:parentAccountRef
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:last_authenticated_at
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:authentication_method
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:session_duration_seconds
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:lastAuthenticatedAt
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:authenticationMethod
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:sessionDurationSeconds
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:tase_record_id
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:taseRecordId
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:belongsTo  ogit.Utilities.Electricity.Telecontrol.InterControlCenter:Account ]
-        [ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:generates  sgo:Timeseries ]
+        [ ogit.Utilities.Electricity.Operations.StateEstimation:belongsTo  ogit.Utilities.Electricity.Telecontrol.InterControlCenter:Account ]
+        [ ogit:generates  sgo:Timeseries ]
     );
 .

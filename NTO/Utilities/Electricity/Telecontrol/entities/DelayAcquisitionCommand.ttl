@@ -16,15 +16,15 @@ ogit.Utilities.Electricity.Telecontrol:DelayAcquisitionCommand
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity.Telecontrol:asdu_id
-        ogit.Utilities.Electricity.Telecontrol:endpoint_ref
-        ogit.Utilities.Electricity.Telecontrol:asdu_type_id
+        ogit.Utilities.Electricity.Telecontrol:asduId
+        ogit.Utilities.Electricity.Telecontrol:endpointRef
+        ogit.Utilities.Electricity.Telecontrol:asduTypeId
     );
     ogit:optional-attributes (
 
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity.Telecontrol:asdu_id
+        ogit.Utilities.Electricity.Telecontrol:asduId
     );
     ogit:allowed (
         [ ogit.Utilities.Electricity.Telecontrol:addressedAt  ogit.Utilities.Electricity.Telecontrol:ProtocolEndpoint ]

@@ -3,6 +3,7 @@
 @prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
 @prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
 @prefix ogit.Utilities.Electricity.Operations:     <http://www.purl.org/ogit/Utilities/Electricity/Operations/> .
+@prefix ogit.Utilities.Emissions:                  <http://www.purl.org/ogit/Utilities/Emissions/> .
 @prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
@@ -18,22 +19,22 @@ ogit.Utilities.Electricity.Operations:AreaControlError
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity.Operations:ace_id
-        ogit.Utilities.Electricity:control_area_ref
-        ogit.Utilities.Electricity.Operations:ace_unit
-        ogit.Utilities:granularity_seconds
+        ogit.Utilities.Electricity.Operations:aceId
+        ogit.Utilities.Electricity:controlAreaRef
+        ogit.Utilities.Electricity.Operations:aceUnit
+        ogit.Utilities:granularitySeconds
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Operations:computation_method
-        ogit.Utilities.Electricity.Operations:k_factor_mw_per_hz
-        ogit.Utilities.Electricity.Operations:bias_setting
-        ogit.Utilities.Electricity:lfc_block_ref
+        ogit.Utilities.Electricity.Operations:computationMethod
+        ogit.Utilities.Electricity.Operations:kFactorMwPerHz
+        ogit.Utilities.Electricity.Operations:biasSetting
+        ogit.Utilities.Electricity:lfcBlockRef
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity.Operations:ace_id
+        ogit.Utilities.Electricity.Operations:aceId
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Operations:measuredFor  ogit.Utilities.Electricity:ControlArea ]
-        [ ogit.Utilities.Electricity.Operations:generates  sgo:Timeseries ]
+        [ ogit.Utilities.Emissions:measuredFor  ogit.Utilities.Electricity:ControlArea ]
+        [ ogit:generates  sgo:Timeseries ]
     );
 .

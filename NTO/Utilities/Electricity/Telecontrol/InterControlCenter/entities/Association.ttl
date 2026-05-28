@@ -1,6 +1,7 @@
 @prefix dcterms:                                   <http://purl.org/dc/terms/> .
 @prefix ogit:                                      <http://www.purl.org/ogit/> .
 @prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
 @prefix ogit.Utilities.Electricity.Telecontrol.InterControlCenter: <http://www.purl.org/ogit/Utilities/Electricity/Telecontrol/InterControlCenter/> .
 @prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
@@ -17,22 +18,22 @@ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:Association
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:association_id
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:local_party_ref
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:remote_party_ref
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:assoc_state
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:associationId
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:localPartyRef
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:remotePartyRef
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:assocState
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:established_at
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:released_at
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:transport_endpoint_ref
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:tase_version
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:establishedAt
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:releasedAt
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:transportEndpointRef
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:taseVersion
     );
     ogit:indexed-attributes (
-        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:association_id
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:associationId
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:connects  ogit.Utilities:ControlCenter ]
-        [ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:governedBy  ogit.Utilities.Electricity.Telecontrol.InterControlCenter:BilateralTable ]
+        [ ogit:connects  ogit.Utilities:ControlCenter ]
+        [ ogit.Utilities.Electricity:governedBy  ogit.Utilities.Electricity.Telecontrol.InterControlCenter:BilateralTable ]
     );
 .

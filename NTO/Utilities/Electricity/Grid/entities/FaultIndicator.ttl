@@ -19,17 +19,17 @@ ogit.Utilities.Electricity.Grid:FaultIndicator
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
         ogit:name
-        ogit.Utilities.Electricity.Grid:fault_indicator_kind
+        ogit.Utilities.Electricity.Grid:faultIndicatorKind
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Grid:reset_kind
-        ogit.Utilities.Electricity.Grid:pickup_value
+        ogit.Utilities.Electricity.Grid:resetKind
+        ogit.Utilities.Electricity.Grid:pickupValue
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid
     );
     ogit:allowed (
         [ ogit.Utilities.Electricity.Grid:hasTerminal  ogit.Utilities.Electricity.Grid:Terminal ]
-        [ ogit.Utilities.Electricity.Grid:generates  sgo:Timeseries ]
+        [ ogit:generates  sgo:Timeseries ]
     );
 .
