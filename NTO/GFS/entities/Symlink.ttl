@@ -37,6 +37,8 @@ ogit.GFS:Symlink
     ogit:history (
     );
     ogit:allowed (
-        [ ogit.GFS:refersTo  ogit:Entity ]
+        [ ogit.GFS:refersTo  ogit.GFS:File ]
+        [ ogit.GFS:refersTo  ogit.GFS:Folder ]
+        [ ogit.GFS:refersTo  ogit.GFS:Symlink ]
     );
 .
