@@ -26,12 +26,12 @@ ogit.Utilities.Electricity.Dynamics:LoadStaticExponential
         ogit.Utilities.Electricity.Dynamics:exponentQ
     );
     ogit:optional-attributes (
-
+        ogit.Utilities.Electricity.Dynamics:parameterPayload
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid
     );
     ogit:allowed (
-
+        [ ogit.Utilities.Electricity.Dynamics:models  ogit.Utilities.Electricity:EnergyConsumer ]
     );
 .

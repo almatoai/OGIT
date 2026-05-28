@@ -21,8 +21,8 @@ ogit.Utilities.Emissions:GreenhouseGasEmission
         ogit.Utilities.Emissions:emissionId
         ogit.Utilities.Emissions:emissionSubstance
         ogit.Utilities.Emissions:emissionQuantityKg
-        ogit.Utilities.Emissions:periodStart
-        ogit.Utilities.Emissions:periodEnd
+        ogit.Utilities:periodStart
+        ogit.Utilities:periodEnd
         ogit.Utilities:domain
     );
     ogit:optional-attributes (

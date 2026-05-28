@@ -2,7 +2,6 @@
 @prefix ogit:                                      <http://www.purl.org/ogit/> .
 @prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
 @prefix ogit.Utilities.Electricity.Market:         <http://www.purl.org/ogit/Utilities/Electricity/Market/> .
-@prefix ogit.Utilities.Emissions:                  <http://www.purl.org/ogit/Utilities/Emissions/> .
 @prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
@@ -19,8 +18,8 @@ ogit.Utilities.Electricity.Market:SettlementPeriod
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity.Market:periodId
-        ogit.Utilities.Emissions:periodStart
-        ogit.Utilities.Emissions:periodEnd
+        ogit.Utilities:periodStart
+        ogit.Utilities:periodEnd
         ogit.Utilities.Electricity.Market:biddingZoneRef
     );
     ogit:optional-attributes (

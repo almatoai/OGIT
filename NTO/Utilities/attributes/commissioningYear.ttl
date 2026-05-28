@@ -9,7 +9,7 @@ ogit.Utilities:commissioningYear
     a owl:DatatypeProperty;
     rdfs:subPropertyOf ogit:Attribute;
     rdfs:label "commissioningYear";
-    dcterms:description "Year of first commercial operation (integer, e.g. 2024).";
+    dcterms:description "Year of first commercial operation (integer, e.g. 2024). **Legacy / convenience attribute** for source systems that only carry the year, not a full date. The canonical attribute is `Utilities:commissioningDate` (ISO 8601 date) on PowerSystemResource; populate `commissioningYear` only when the calendar day is unknown. Lives in Utilities because it is also relevant to cross-domain power-system assets (gas, heat) under ConversionUnit.";
     dcterms:valid "start=2026-05-27;";
     dcterms:creator "chris.boos@almato.com";
 .

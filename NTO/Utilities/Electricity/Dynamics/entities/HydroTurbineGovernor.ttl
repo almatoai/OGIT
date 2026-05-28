@@ -30,6 +30,6 @@ ogit.Utilities.Electricity.Dynamics:HydroTurbineGovernor
         ogit.Utilities.Electricity:mrid
     );
     ogit:allowed (
-
+        [ ogit:isPartOf  ogit.Utilities.Electricity.Dynamics:SynchronousMachineDynamics ]
     );
 .

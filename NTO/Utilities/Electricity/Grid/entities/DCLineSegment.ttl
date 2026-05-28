@@ -1,5 +1,6 @@
 @prefix dcterms:                                   <http://purl.org/dc/terms/> .
 @prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
 @prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
 @prefix ogit.Utilities.Electricity.Grid:           <http://www.purl.org/ogit/Utilities/Electricity/Grid/> .
 @prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
@@ -28,12 +29,27 @@ ogit.Utilities.Electricity.Grid:DCLineSegment
         ogit.Utilities.Electricity.Grid:ratedVoltageKv
         ogit.Utilities.Electricity.Grid:ratedCurrentA
         ogit.Utilities.Electricity:submarine
+        ogit.Utilities.Electricity:descriptionText
+        ogit.Utilities.Electricity:aliasName
+        ogit.Utilities.Electricity:categoryRef
+        ogit.Utilities:commissioningDate
+        ogit.Utilities:decommissioningDate
+        ogit.Utilities.Electricity:psrType
+        ogit.Utilities.Electricity:externalRefs
+        ogit:status
+        ogit:source
+        ogit:sourceId
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid
+        ogit.Utilities.Electricity:mrid
+        ogit:name
     );
     ogit:allowed (
         [ ogit.Utilities.Electricity.Grid:hasTerminal  ogit.Utilities.Electricity.Grid:Terminal ]
         [ ogit:isPartOf  ogit.Utilities.Electricity:Interconnector ]
+        [ ogit.Utilities:operatedBy  ogit.Utilities:NetworkOperator ]
+        [ ogit:locatedIn  ogit:Location ]
+        [ ogit:isPartOf  ogit.Utilities.Electricity:PowerPlant ]
     );
 .

@@ -36,7 +36,7 @@ ogit.Utilities.Electricity.Operations.Reserves:ReserveUnit
         ogit.Utilities:unitId
     );
     ogit:allowed (
-        [ ogit.Utilities:operatedBy  ogit.Utilities.Electricity:MarketParticipant ]
+        [ ogit.Utilities:registeredBy  ogit.Utilities.Electricity:MarketParticipant ]
         [ ogit:provides  ogit.Utilities.Electricity.Operations.Reserves:FcrOffering ]
         [ ogit:isPartOf  ogit.Utilities.Electricity:ControlArea ]
     );

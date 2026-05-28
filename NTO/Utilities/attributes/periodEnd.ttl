@@ -1,15 +1,15 @@
 @prefix dcterms:                                   <http://purl.org/dc/terms/> .
 @prefix ogit:                                      <http://www.purl.org/ogit/> .
-@prefix ogit.Utilities.Emissions:                  <http://www.purl.org/ogit/Utilities/Emissions/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
 @prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
 
-ogit.Utilities.Emissions:measuredFor
-    a owl:ObjectProperty;
-    rdfs:subPropertyOf ogit:Verb;
-    rdfs:label "measuredFor";
-    dcterms:description "Asserts that a CarbonIntensity anchor is measured for / attached to the target subject (ControlArea, BiddingZone, Portfolio). Cardinality: many2one.";
+ogit.Utilities:periodEnd
+    a owl:DatatypeProperty;
+    rdfs:subPropertyOf ogit:Attribute;
+    rdfs:label "periodEnd";
+    dcterms:description "Reporting / accounting / settlement period end timestamp (ISO 8601, UTC). Used by the same set of classes as `periodStart`; lives in Utilities as the lowest common ancestor.";
     dcterms:valid "start=2026-05-27;";
     dcterms:creator "chris.boos@almato.com";
 .

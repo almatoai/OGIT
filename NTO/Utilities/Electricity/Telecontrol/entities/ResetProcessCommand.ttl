@@ -21,12 +21,16 @@ ogit.Utilities.Electricity.Telecontrol:ResetProcessCommand
         ogit.Utilities.Electricity.Telecontrol:asduTypeId
     );
     ogit:optional-attributes (
-
+        ogit.Utilities.Electricity.Telecontrol:cotSizeOctets
+        ogit.Utilities.Electricity.Telecontrol:cotValue
+        ogit.Utilities.Electricity.Telecontrol:qoiValue
+        ogit.Utilities.Electricity.Telecontrol:qcc
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity.Telecontrol:asduId
     );
     ogit:allowed (
         [ ogit.Utilities.Electricity.Telecontrol:addressedAt  ogit.Utilities.Electricity.Telecontrol:ProtocolEndpoint ]
+        [ ogit:generates  sgo:Timeseries ]
     );
 .

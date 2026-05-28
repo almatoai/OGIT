@@ -2,7 +2,6 @@
 @prefix ogit:                                      <http://www.purl.org/ogit/> .
 @prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
 @prefix ogit.Utilities.Electricity.Grid:           <http://www.purl.org/ogit/Utilities/Electricity/Grid/> .
-@prefix ogit.Utilities.Electricity.Operations.StateEstimation: <http://www.purl.org/ogit/Utilities/Electricity/Operations/StateEstimation/> .
 @prefix ogit.Utilities.Electricity.Telecontrol:    <http://www.purl.org/ogit/Utilities/Electricity/Telecontrol/> .
 @prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
@@ -41,8 +40,8 @@ ogit.Utilities.Electricity.Telecontrol:ProtocolEndpoint
     ogit:allowed (
         [ ogit.Utilities:operatedBy  ogit.Utilities.Electricity.Telecontrol:RTU ]
         [ ogit.Utilities:operatedBy  ogit.Utilities.Electricity.Telecontrol:IED ]
-        [ ogit.Utilities.Electricity.Operations.StateEstimation:belongsTo  ogit.Utilities.Electricity.Grid:Substation ]
-        [ ogit.Utilities.Electricity.Operations.StateEstimation:belongsTo  ogit.Utilities:ControlCenter ]
+        [ ogit.Utilities.Electricity.Telecontrol:belongsTo  ogit.Utilities.Electricity.Grid:Substation ]
+        [ ogit.Utilities.Electricity.Telecontrol:belongsTo  ogit.Utilities:ControlCenter ]
         [ ogit.Utilities.Electricity.Telecontrol:pairsWith  ogit.Utilities.Electricity.Telecontrol:ProtocolEndpoint ]
     );
 .

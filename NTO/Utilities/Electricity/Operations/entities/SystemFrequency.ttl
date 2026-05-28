@@ -33,7 +33,7 @@ ogit.Utilities.Electricity.Operations:SystemFrequency
         ogit.Utilities.Electricity.Operations:frequencyId
     );
     ogit:allowed (
-        [ ogit.Utilities.Emissions:measuredFor  ogit.Utilities.Electricity:SynchronousArea ]
+        [ ogit.Utilities:measuredFor  ogit.Utilities.Electricity:SynchronousArea ]
         [ ogit:generates  sgo:Timeseries ]
     );
 .

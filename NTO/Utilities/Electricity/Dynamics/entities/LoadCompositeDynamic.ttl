@@ -32,6 +32,6 @@ ogit.Utilities.Electricity.Dynamics:LoadCompositeDynamic
         ogit.Utilities.Electricity:mrid
     );
     ogit:allowed (
-
+        [ ogit.Utilities.Electricity.Dynamics:models  ogit.Utilities.Electricity:EnergyConsumer ]
     );
 .

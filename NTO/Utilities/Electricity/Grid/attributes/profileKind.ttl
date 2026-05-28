@@ -1,15 +1,15 @@
 @prefix dcterms:                                   <http://purl.org/dc/terms/> .
 @prefix ogit:                                      <http://www.purl.org/ogit/> .
-@prefix ogit.Utilities.Electricity.Operations.StateEstimation: <http://www.purl.org/ogit/Utilities/Electricity/Operations/StateEstimation/> .
+@prefix ogit.Utilities.Electricity.Grid:           <http://www.purl.org/ogit/Utilities/Electricity/Grid/> .
 @prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
 
-ogit.Utilities.Electricity.Operations.StateEstimation:rolloverValue
+ogit.Utilities.Electricity.Grid:profileKind
     a owl:DatatypeProperty;
     rdfs:subPropertyOf ogit:Attribute;
-    rdfs:label "rolloverValue";
-    dcterms:description "Roll-over value at which the accumulator wraps to zero.";
-    dcterms:valid "start=2026-05-28;";
+    rdfs:label "profileKind";
+    dcterms:description "Profile semantics: per_hour_of_week (168-entry weekly pattern), per_typical_day (24-entry daily pattern), per_day_of_year (8760-entry annual pattern), custom.";
+    dcterms:valid "start=2026-05-27;";
     dcterms:creator "chris.boos@almato.com";
 .

@@ -10,7 +10,7 @@ ogit.Utilities.Electricity.Legacy:UcteComment
     a rdfs:Class;
     rdfs:subClassOf ogit:Entity;
     rdfs:label "UcteComment";
-    dcterms:description "UCTE-DEF C record. Comment / free-text annotation line in the source file. Mostly metadata; carried over so a connector can preserve provenance and operator notes.";
+    dcterms:description "UCTE-DEF C record. Comment / free-text annotation line in the source file. Mostly metadata; carried over so a connector can preserve provenance and operator notes. Variant records (S Switched-line status, C_T transformer-coupling) used by some PSS/E-based exporters are also mapped here with `variantRecordKind` set so downstream consumers can distinguish them from genuine comments.";
     dcterms:valid "start=2026-05-28;";
     dcterms:creator "chris.boos@almato.com";
     ogit:scope "NTO";
@@ -21,7 +21,7 @@ ogit.Utilities.Electricity.Legacy:UcteComment
         ogit.Utilities.Electricity.Legacy:sourceFileRef
     );
     ogit:optional-attributes (
-
+        ogit.Utilities.Electricity.Legacy:variantRecordKind
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity.Legacy:recordId

@@ -12,7 +12,7 @@ ogit.Utilities.Electricity.Telecontrol:DataPoint
     a rdfs:Class;
     rdfs:subClassOf ogit:Entity;
     rdfs:label "DataPoint";
-    dcterms:description "ABSTRACT: Abstract parent of the typed monitor / control / parameter / protection points. Carries the protocol-level addressing (Common Address, IOA, ASDU type, scaling, unit, quality-flag template). The actual sample stream (values + per-sample quality flags + CP56Time2a) lives in TSDB on a sgo:Timeseries vertex attached via generates.";
+    dcterms:description "Parent of the typed monitor / control / parameter / protection points. Carries the protocol-level addressing (Common Address, IOA, ASDU type, scaling, unit, quality-flag template). The actual sample stream (values + per-sample quality flags + CP56Time2a) lives in TSDB on a sgo:Timeseries vertex attached via generates. Normally a connector instantiates one of the typed subtypes (SinglePointInformation, MeasuredValueShortFloat, ...). For ASDU types in the reserved range 22-29 -- which IEC 60870-5-101 Ed.2 does not standardise and which national profiles use for vendor extensions -- the connector instantiates `DataPoint` directly with `asduTypeId` set to the reserved-range integer, preserving round-trip fidelity without inventing a synthetic typed subtype.";
     dcterms:valid "start=2026-05-28;";
     dcterms:creator "chris.boos@almato.com";
     ogit:scope "NTO";

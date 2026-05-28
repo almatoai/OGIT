@@ -9,7 +9,7 @@ ogit.Utilities.Electricity.Diagram:representsObject
     a owl:ObjectProperty;
     rdfs:subPropertyOf ogit:Verb;
     rdfs:label "representsObject";
-    dcterms:description "Asserts that a DiagramObject represents one underlying PowerSystemResource graphically. Cardinality: one2one.";
+    dcterms:description "Asserts that a DiagramObject represents one underlying PowerSystemResource graphically. Many DiagramObjects (in different Diagrams) can represent the same PowerSystemResource; each DiagramObject represents exactly one PowerSystemResource. Cardinality: many2one.";
     dcterms:valid "start=2026-05-28;";
     dcterms:creator "chris.boos@almato.com";
 .

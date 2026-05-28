@@ -22,6 +22,7 @@ ogit.Utilities.Electricity.Legacy:UcteSchedule
         ogit.Utilities.Electricity.Legacy:countryA
         ogit.Utilities.Electricity.Legacy:countryB
         ogit.Utilities:scheduleKind
+        ogit.Utilities:granularitySeconds
         ogit.Utilities.Electricity.Legacy:ucteUnit
     );
     ogit:optional-attributes (

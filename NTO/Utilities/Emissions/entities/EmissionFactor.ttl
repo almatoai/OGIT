@@ -27,7 +27,7 @@ ogit.Utilities.Emissions:EmissionFactor
     );
     ogit:optional-attributes (
         ogit.Utilities.Emissions:lifecycleScope
-        ogit.Utilities.Emissions:sourcePublication
+        ogit.Utilities:sourcePublication
         ogit:validFrom
         ogit.Utilities:validUntil
         ogit.Utilities.Emissions:regionalScope

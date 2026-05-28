@@ -30,12 +30,12 @@ ogit.Utilities.Electricity.Dynamics:LoadStaticZip
         ogit.Utilities.Electricity.Dynamics:qP
     );
     ogit:optional-attributes (
-
+        ogit.Utilities.Electricity.Dynamics:parameterPayload
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid
     );
     ogit:allowed (
-
+        [ ogit.Utilities.Electricity.Dynamics:models  ogit.Utilities.Electricity:EnergyConsumer ]
     );
 .

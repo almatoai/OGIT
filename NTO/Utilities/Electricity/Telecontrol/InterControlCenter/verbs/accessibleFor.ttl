@@ -1,0 +1,15 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities.Electricity.Telecontrol.InterControlCenter: <http://www.purl.org/ogit/Utilities/Electricity/Telecontrol/InterControlCenter/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+ogit.Utilities.Electricity.Telecontrol.InterControlCenter:accessibleFor
+    a owl:ObjectProperty;
+    rdfs:subPropertyOf ogit:Verb;
+    rdfs:label "accessibleFor";
+    dcterms:description "Authentication / access-control relation: a TASE.2 Account is accessible for one or more ControlCenters. Distinct from `Utilities.Electricity.Diagram:usedBy` (visualisation-context \"used by\" relation) which was previously incorrectly referenced here -- see QS Round 14 Sonnet COMP-04. Cardinality: many2many.";
+    dcterms:valid "start=2026-05-28;";
+    dcterms:creator "chris.boos@almato.com";
+.

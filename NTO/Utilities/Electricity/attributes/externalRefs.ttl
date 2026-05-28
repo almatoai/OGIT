@@ -5,11 +5,11 @@
 @prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
 
-ogit.Utilities.Electricity:decommissioningDate
+ogit.Utilities.Electricity:externalRefs
     a owl:DatatypeProperty;
     rdfs:subPropertyOf ogit:Attribute;
-    rdfs:label "decommissioningDate";
-    dcterms:description "Date the resource left commercial operation (ISO 8601 date).";
+    rdfs:label "externalRefs";
+    dcterms:description "JSON array of cross-source identity references for this vertex. Each entry follows the form `<xid-prefix>:<source-id>` (e.g. \"cgmes-mrid:_abc-123\", \"iec60870-5:ca-251:rtu-3\", \"tase2:bilateral-table:BT-DE-FR:point-42\"). The xid-prefix catalogue is defined in Architecture Section 6.3 (Reserved identity keys). This attribute is the IdentityResolver query target (PLAN D20 Mode A: Deterministic by source-id). The array is unordered; duplicate entries are removed at write time. Stored as a JSON array string on the vertex (OGIT has no native list type); consumer-side JSON-parse.";
     dcterms:valid "start=2026-05-27;";
     dcterms:creator "chris.boos@almato.com";
 .

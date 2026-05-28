@@ -12,14 +12,13 @@ ogit.Utilities.Electricity.Operations.StateEstimation:SvPowerFlow
     a rdfs:Class;
     rdfs:subClassOf ogit:Entity;
     rdfs:label "SvPowerFlow";
-    dcterms:description "CIM cim:SvPowerFlow. SV-profile P/Q flow at one terminal. Anchor + sgo:Timeseries (two channels: P and Q).";
+    dcterms:description "CIM cim:SvPowerFlow. SV-profile P/Q flow at one terminal. Anchor + sgo:Timeseries (two channels: P and Q). The terminal binding is expressed via the `at -> Terminal` graph edge; no parallel `terminalRef` attribute (per QS Round 14 Sonnet CONS-08 -- verb is canonical for graph relations).";
     dcterms:valid "start=2026-05-28;";
     dcterms:creator "chris.boos@almato.com";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
-        ogit.Utilities.Electricity:terminalRef
     );
     ogit:optional-attributes (
         ogit.Utilities.Electricity.Operations.StateEstimation:unitPMw
@@ -30,7 +29,7 @@ ogit.Utilities.Electricity.Operations.StateEstimation:SvPowerFlow
         ogit.Utilities.Electricity:mrid
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Grid:at  ogit.Utilities.Electricity.Grid:Terminal ]
+        [ ogit.Utilities.Electricity.Operations.StateEstimation:at  ogit.Utilities.Electricity.Grid:Terminal ]
         [ ogit:generates  sgo:Timeseries ]
     );
 .

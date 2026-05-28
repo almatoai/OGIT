@@ -11,7 +11,7 @@ ogit.Utilities.Electricity:Interconnector
     a rdfs:Class;
     rdfs:subClassOf ogit:Entity;
     rdfs:label "Interconnector";
-    dcterms:description "Cross-border physical connection between two ControlAreas. Either AC (multiple parallel ACLineSegments) or HVDC (one bipole). Aggregate above the equipment level. Shared ownership and operation are modelled via reified OwnershipShare on the Interconnector vertex (concept Section 8.1).";
+    dcterms:description "Cross-border physical connection between two ControlAreas. Either AC (multiple parallel ACLineSegments) or HVDC (one bipole). **Business-level aggregate** above the equipment hierarchy -- distinct from `Utilities.Electricity.Grid:EquipmentContainer` (which is the CIM physical-containment hierarchy: Substation / VoltageLevel / Bay). Concrete ACLineSegment / Line / DCLineSegment instances both connect at the equipment level (hasTerminal -> Terminal) AND aggregate up to one Interconnector via `ogit:isPartOf` to express the business-level cross-border link. Shared ownership and operation are modelled via reified OwnershipShare on the Interconnector vertex (concept Section 8.1).";
     dcterms:valid "start=2026-05-27;";
     dcterms:creator "chris.boos@almato.com";
     ogit:scope "NTO";

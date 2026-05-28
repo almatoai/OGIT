@@ -26,11 +26,14 @@ ogit.Utilities.Electricity.Grid:ReactiveCapabilityCurve
     );
     ogit:optional-attributes (
         ogit.Utilities.Electricity.Grid:couplingVoltageKv
+        ogit.Utilities.Electricity.Grid:y2Unit
+        ogit.Utilities.Electricity.Grid:y3Unit
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid
     );
     ogit:allowed (
         [ ogit.Utilities:appliesTo  ogit.Utilities.Electricity.Grid:SynchronousMachine ]
+        [ ogit:consistsOf  ogit.Utilities.Electricity.Grid:CurveData ]
     );
 .

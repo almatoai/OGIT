@@ -22,9 +22,7 @@ ogit.Utilities.Electricity:PowerPlant
         ogit.Utilities.Electricity:plantId
     );
     ogit:optional-attributes (
-        ogit.Utilities:operatorRef
         ogit.Utilities:countryIso2
-        ogit.Utilities:locationRef
         ogit.Utilities.Electricity:totalRatedPMw
         ogit.Utilities.Electricity:totalStorageMwh
         ogit.Utilities.Electricity:primaryCarrierRef
@@ -39,7 +37,9 @@ ogit.Utilities.Electricity:PowerPlant
     );
     ogit:allowed (
         [ ogit:consistsOf  ogit.Utilities.Electricity:GeneratingUnit ]
+        [ ogit:consistsOf  ogit.Utilities:ConversionUnit ]
         [ ogit.Utilities:operatedBy  ogit.Utilities:NetworkOperator ]
+        [ ogit:locatedIn  ogit:Location ]
         [ ogit.Utilities:emits  ogit.Utilities.Emissions:GreenhouseGasEmission ]
     );
 .

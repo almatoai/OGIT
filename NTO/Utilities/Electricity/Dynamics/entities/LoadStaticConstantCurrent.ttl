@@ -24,12 +24,12 @@ ogit.Utilities.Electricity.Dynamics:LoadStaticConstantCurrent
         ogit.Utilities.Electricity.Dynamics:modelKind
     );
     ogit:optional-attributes (
-
+        ogit.Utilities.Electricity.Dynamics:parameterPayload
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid
     );
     ogit:allowed (
-
+        [ ogit.Utilities.Electricity.Dynamics:models  ogit.Utilities.Electricity:EnergyConsumer ]
     );
 .

@@ -1,7 +1,9 @@
 @prefix dcterms:                                   <http://purl.org/dc/terms/> .
 @prefix ogit:                                      <http://www.purl.org/ogit/> .
 @prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
 @prefix ogit.Utilities.Electricity.Grid:           <http://www.purl.org/ogit/Utilities/Electricity/Grid/> .
+@prefix ogit.Utilities.Electricity.Operations:     <http://www.purl.org/ogit/Utilities/Electricity/Operations/> .
 @prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
@@ -26,11 +28,19 @@ ogit.Utilities.Electricity.Grid:VoltageLimit
     );
     ogit:optional-attributes (
         ogit.Utilities.Electricity.Grid:normalValueKv
+        ogit.Utilities:acceptableDuration
+        ogit.Utilities:apparentLimitKind
+        ogit.Utilities:season
+        ogit.Utilities:timePeriod
+        ogit.Utilities:subjectRef
     );
     ogit:indexed-attributes (
         ogit.Utilities:limitId
+        ogit.Utilities:limitId
     );
     ogit:allowed (
-
+        [ ogit.Utilities:applicableTo  ogit.Utilities.Electricity:PowerSystemResource ]
+        [ ogit.Utilities:partOfLimitSet  ogit.Utilities.Electricity.Grid:OperationalLimitSet ]
+        [ ogit.Utilities:definedBy  ogit.Utilities.Electricity.Operations:NetworkCodeViolation ]
     );
 .

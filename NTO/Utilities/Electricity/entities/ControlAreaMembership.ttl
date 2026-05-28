@@ -2,6 +2,7 @@
 @prefix ogit:                                      <http://www.purl.org/ogit/> .
 @prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
 @prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix ogit.Utilities.Electricity.Grid:           <http://www.purl.org/ogit/Utilities/Electricity/Grid/> .
 @prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
@@ -29,9 +30,10 @@ ogit.Utilities.Electricity:ControlAreaMembership
         ogit.Utilities.Electricity:membershipId
     );
     ogit:allowed (
-        [ ogit.Utilities:memberOf  ogit.Utilities.Electricity:ControlArea ]
+        [ ogit.Utilities.Electricity:memberOf  ogit.Utilities.Electricity:ControlArea ]
         [ ogit.Utilities.Electricity:memberSubject  ogit.Utilities.Electricity:GeneratingUnit ]
         [ ogit.Utilities.Electricity:memberSubject  ogit.Utilities.Electricity:EnergyStorage ]
         [ ogit.Utilities.Electricity:memberSubject  ogit.Utilities.Electricity:EnergyConsumer ]
+        [ ogit.Utilities.Electricity:memberSubject  ogit.Utilities.Electricity.Grid:Substation ]
     );
 .

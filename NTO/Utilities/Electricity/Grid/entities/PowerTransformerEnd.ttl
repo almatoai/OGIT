@@ -31,11 +31,20 @@ ogit.Utilities.Electricity.Grid:PowerTransformerEnd
         ogit.Utilities.Electricity.Grid:x0Ohm
         ogit.Utilities.Electricity.Grid:phaseAngleClock
         ogit.Utilities.Electricity.Grid:connectionKind
+        ogit.Utilities.Electricity.Grid:grounded
+        ogit.Utilities.Electricity.Grid:rGroundOhm
+        ogit.Utilities.Electricity.Grid:xGroundOhm
+        ogit.Utilities.Electricity.Grid:bmagsatSiemens
+        ogit.Utilities.Electricity.Grid:magnetizingBranchPresent
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid
     );
     ogit:allowed (
         [ ogit:isPartOf  ogit.Utilities.Electricity.Grid:PowerTransformer ]
+        [ ogit.Utilities.Electricity.Grid:connectedAt  ogit.Utilities.Electricity.Grid:Terminal ]
+        [ ogit.Utilities.Electricity.Grid:hasBaseVoltage  ogit.Utilities.Electricity.Grid:BaseVoltage ]
+        [ ogit.Utilities.Electricity.Grid:hasTapChanger  ogit.Utilities.Electricity.Grid:RatioTapChanger ]
+        [ ogit.Utilities.Electricity.Grid:hasTapChanger  ogit.Utilities.Electricity.Grid:PhaseTapChanger ]
     );
 .

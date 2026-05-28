@@ -23,11 +23,16 @@ ogit.Utilities.Electricity.Telecontrol:ClockSynchronization
     ogit:optional-attributes (
         ogit.Utilities.Electricity.Telecontrol:masterTimeCp56
         ogit.Utilities.Electricity.Telecontrol:timeQualityIv
+        ogit.Utilities.Electricity.Telecontrol:cotSizeOctets
+        ogit.Utilities.Electricity.Telecontrol:cotValue
+        ogit.Utilities.Electricity.Telecontrol:qoiValue
+        ogit.Utilities.Electricity.Telecontrol:qcc
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity.Telecontrol:asduId
     );
     ogit:allowed (
         [ ogit.Utilities.Electricity.Telecontrol:addressedAt  ogit.Utilities.Electricity.Telecontrol:ProtocolEndpoint ]
+        [ ogit:generates  sgo:Timeseries ]
     );
 .

@@ -11,9 +11,9 @@
 
 ogit.Utilities.Electricity.Operations:ReactivePowerSchedule
     a rdfs:Class;
-    rdfs:subClassOf ogit:Entity;
+    rdfs:subClassOf ogit.Utilities:Schedule;
     rdfs:label "ReactivePowerSchedule";
-    dcterms:description "NC SO. Per-control-area reactive-power exchange schedules. Anchor + sgo:Timeseries.";
+    dcterms:description "NC SO. Per-control-area reactive-power exchange schedules. Anchor + sgo:Timeseries. Inherits scheduleId / scheduleKind / validFrom / validUntil / granularitySeconds from Utilities:Schedule (materialised at TTL-phase per Architecture Section 5.1c).";
     dcterms:valid "start=2026-05-28;";
     dcterms:creator "chris.boos@almato.com";
     ogit:scope "NTO";
@@ -23,16 +23,28 @@ ogit.Utilities.Electricity.Operations:ReactivePowerSchedule
         ogit.Utilities.Electricity:controlAreaRef
         ogit.Utilities.Electricity.Operations:reactiveUnit
         ogit.Utilities:granularitySeconds
+        ogit.Utilities:scheduleKind
+        ogit:validFrom
+        ogit.Utilities:validUntil
     );
     ogit:optional-attributes (
         ogit.Utilities.Electricity.Operations:counterpartyRef
         ogit.Utilities.Electricity.Market:direction
+        ogit:timeZone
+        ogit:currency
+        ogit.Utilities:unitOfQuantity
+        ogit.Utilities:revisionNumber
+        ogit.Utilities:publishedBy
+        ogit.Utilities:acceptedBy
     );
     ogit:indexed-attributes (
+        ogit.Utilities:scheduleId
         ogit.Utilities:scheduleId
     );
     ogit:allowed (
         [ ogit.Utilities:appliesTo  ogit.Utilities.Electricity:ControlArea ]
         [ ogit:generates  sgo:Timeseries ]
+        [ ogit.Utilities:appliesTo  ogit.Utilities.Electricity:ControlArea ]
+        [ ogit.Utilities:supersedes  ogit.Utilities:Schedule ]
     );
 .

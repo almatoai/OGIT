@@ -1,0 +1,50 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix ogit.Utilities.Electricity.Grid:           <http://www.purl.org/ogit/Utilities/Electricity/Grid/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity.Grid:ConformLoadSchedule
+    a rdfs:Class;
+    rdfs:subClassOf ogit.Utilities:Schedule;
+    rdfs:label "ConformLoadSchedule";
+    dcterms:description "CIM cim:ConformLoadSchedule. CGMES EQ-profile time-pattern carrier for a ConformLoadGroup: the standard load curve (per-hour-of-week or per-typical-day P / Q multipliers) that all ConformLoads in the group share. Anchor + sgo:Timeseries -- the per-timestamp multipliers ride on a sgo:Timeseries attached via `ogit:generates`. Inherits scheduleId / scheduleKind / validFrom / validUntil / granularitySeconds from Utilities:Schedule.";
+    dcterms:valid "start=2026-05-27;";
+    dcterms:creator "chris.boos@almato.com";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities:scheduleId
+        ogit.Utilities.Electricity.Grid:parentLoadGroupRef
+        ogit.Utilities.Electricity.Grid:pUnit
+        ogit.Utilities.Electricity.Grid:qUnit
+        ogit.Utilities:scheduleKind
+        ogit:validFrom
+        ogit.Utilities:validUntil
+        ogit.Utilities:granularitySeconds
+    );
+    ogit:optional-attributes (
+        ogit.Utilities:granularitySeconds
+        ogit.Utilities.Electricity.Grid:profileKind
+        ogit:timeZone
+        ogit:currency
+        ogit.Utilities:unitOfQuantity
+        ogit.Utilities:revisionNumber
+        ogit.Utilities:publishedBy
+        ogit.Utilities:acceptedBy
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities:scheduleId
+        ogit.Utilities:scheduleId
+    );
+    ogit:allowed (
+        [ ogit.Utilities:appliesTo  ogit.Utilities.Electricity.Grid:ConformLoadGroup ]
+        [ ogit:generates  sgo:Timeseries ]
+        [ ogit.Utilities:appliesTo  ogit.Utilities.Electricity:ControlArea ]
+        [ ogit.Utilities:supersedes  ogit.Utilities:Schedule ]
+    );
+.

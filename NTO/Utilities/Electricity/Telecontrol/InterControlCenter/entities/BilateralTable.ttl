@@ -36,5 +36,6 @@ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:BilateralTable
     ogit:allowed (
         [ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:negotiatedBy  ogit.Utilities:ControlCenter ]
         [ ogit:governs  ogit.Utilities.Electricity.Telecontrol.InterControlCenter:DataSet ]
+        [ ogit:consistsOf  ogit.Utilities.Electricity.Telecontrol.InterControlCenter:ConformanceBlock ]
     );
 .

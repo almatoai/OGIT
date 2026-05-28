@@ -21,7 +21,6 @@ ogit.Utilities.Electricity.Market:Market
         ogit.Utilities.Electricity.Market:marketId
         ogit:name
         ogit.Utilities.Electricity.Market:marketKind
-        ogit.Utilities:operatorRef
     );
     ogit:optional-attributes (
         ogit.Utilities.Electricity.Market:couplingMethod

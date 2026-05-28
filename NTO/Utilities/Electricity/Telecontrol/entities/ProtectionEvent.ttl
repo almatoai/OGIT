@@ -1,5 +1,7 @@
 @prefix dcterms:                                   <http://purl.org/dc/terms/> .
 @prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
 @prefix ogit.Utilities.Electricity.Telecontrol:    <http://www.purl.org/ogit/Utilities/Electricity/Telecontrol/> .
 @prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
@@ -25,12 +27,15 @@ ogit.Utilities.Electricity.Telecontrol:ProtectionEvent
         ogit.Utilities.Electricity.Telecontrol:protectionEventKind
     );
     ogit:optional-attributes (
-
+        ogit.Utilities:subjectRef
+        ogit.Utilities.Electricity:descriptionText
+        ogit.Utilities.Electricity.Telecontrol:qualityDescriptorTemplate
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity.Telecontrol:pointId
     );
     ogit:allowed (
         [ ogit:generates  sgo:Timeseries ]
+        [ ogit.Utilities.Electricity.Telecontrol:addressedAt  ogit.Utilities.Electricity.Telecontrol:ProtocolEndpoint ]
     );
 .

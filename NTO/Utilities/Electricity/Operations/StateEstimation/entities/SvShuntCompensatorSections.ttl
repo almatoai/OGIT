@@ -28,7 +28,7 @@ ogit.Utilities.Electricity.Operations.StateEstimation:SvShuntCompensatorSections
         ogit.Utilities.Electricity:mrid
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Grid:at  ogit.Utilities.Electricity.Grid:ShuntCompensator ]
+        [ ogit.Utilities.Electricity.Operations.StateEstimation:at  ogit.Utilities.Electricity.Grid:ShuntCompensator ]
         [ ogit:generates  sgo:Timeseries ]
     );
 .

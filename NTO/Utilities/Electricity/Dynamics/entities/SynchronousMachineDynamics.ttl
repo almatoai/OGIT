@@ -12,7 +12,7 @@ ogit.Utilities.Electricity.Dynamics:SynchronousMachineDynamics
     a rdfs:Class;
     rdfs:subClassOf ogit:Entity;
     rdfs:label "SynchronousMachineDynamics";
-    dcterms:description "ABSTRACT: CIM cim:SynchronousMachineDynamics. Parent of typed synchronous-machine dynamic models. model_kind selects between classical, gentpf, gentpj, genrou, genwro, gencls, gensae, gensal, genwbr, vsource_for_psse.";
+    dcterms:description "CIM cim:SynchronousMachineDynamics. Concrete parametric class covering all typed synchronous-machine dynamic models. modelKind selects between classical, gentpf, gentpj, genrou, genwro, gencls, gensae, gensal, genwbr, vsource_for_psse (see Ontology Reference Section 4 -- CGMES DY bijection). Per Architecture Section 11.3 the typed model variants are differentiated by the modelKind enum on the instance, not by subclassing -- consistent with the other parametric Dynamics top-level classes (ExcitationSystemDynamics, PowerSystemStabilizerDynamics, AsynchronousMachineDynamics, HvdcDynamics, FactsDynamics, WindGeneratorDynamics, SolarInverterDynamics, BatteryEnergyStorageDynamics, OverexcitationLimiterDynamics, UnderexcitationLimiterDynamics, VoltageCompensatorDynamics, MechanicalLoadDynamics, ProtectionRelayDynamics). LoadDynamics and TurbineGovernorDynamics stay abstract because they carry concrete subtypes with their own attribute shapes.";
     dcterms:valid "start=2026-05-28;";
     dcterms:creator "chris.boos@almato.com";
     ogit:scope "NTO";

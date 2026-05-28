@@ -5,7 +5,6 @@
 @prefix ogit.Utilities.Electricity.Market:         <http://www.purl.org/ogit/Utilities/Electricity/Market/> .
 @prefix ogit.Utilities.Electricity.Operations:     <http://www.purl.org/ogit/Utilities/Electricity/Operations/> .
 @prefix ogit.Utilities.Electricity.Operations.Reserves: <http://www.purl.org/ogit/Utilities/Electricity/Operations/Reserves/> .
-@prefix ogit.Utilities.Emissions:                  <http://www.purl.org/ogit/Utilities/Emissions/> .
 @prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
@@ -23,8 +22,8 @@ ogit.Utilities.Electricity.Operations.Reserves:ImbalanceSettlement
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity.Operations.Reserves:settlementId
         ogit.Utilities.Electricity.Operations:responsiblePartyRef
-        ogit.Utilities.Emissions:periodStart
-        ogit.Utilities.Emissions:periodEnd
+        ogit.Utilities:periodStart
+        ogit.Utilities:periodEnd
         ogit.Utilities.Electricity.Operations.Reserves:imbalanceMwh
         ogit.Utilities.Electricity.Operations.Reserves:settlePriceEurPerMwh
         ogit.Utilities.Electricity.Market:settlementCurrency

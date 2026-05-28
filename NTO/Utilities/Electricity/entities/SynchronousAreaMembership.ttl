@@ -29,7 +29,7 @@ ogit.Utilities.Electricity:SynchronousAreaMembership
         ogit.Utilities.Electricity:membershipId
     );
     ogit:allowed (
-        [ ogit.Utilities:memberOf  ogit.Utilities.Electricity:SynchronousArea ]
+        [ ogit.Utilities.Electricity:memberOf  ogit.Utilities.Electricity:SynchronousArea ]
         [ ogit.Utilities.Electricity:memberSubject  ogit.Utilities.Electricity:ControlArea ]
         [ ogit.Utilities.Electricity:memberSubject  ogit.Utilities.Electricity:BiddingZone ]
     );

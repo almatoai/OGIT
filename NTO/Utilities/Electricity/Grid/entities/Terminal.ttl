@@ -18,7 +18,7 @@ ogit.Utilities.Electricity.Grid:Terminal
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
-        ogit.Utilities.Electricity.Grid:sequenceNumber
+        ogit.Utilities.Electricity:sequenceNumber
     );
     ogit:optional-attributes (
         ogit.Utilities.Electricity.Grid:connected
@@ -30,8 +30,21 @@ ogit.Utilities.Electricity.Grid:Terminal
     );
     ogit:allowed (
         [ ogit.Utilities.Electricity.Grid:terminalOf  ogit.Utilities.Electricity.Grid:ACLineSegment ]
+        [ ogit.Utilities.Electricity.Grid:terminalOf  ogit.Utilities.Electricity.Grid:DCLineSegment ]
         [ ogit.Utilities.Electricity.Grid:terminalOf  ogit.Utilities.Electricity.Grid:Switch ]
         [ ogit.Utilities.Electricity.Grid:terminalOf  ogit.Utilities.Electricity.Grid:PowerTransformerEnd ]
+        [ ogit.Utilities.Electricity.Grid:terminalOf  ogit.Utilities.Electricity.Grid:BusbarSection ]
+        [ ogit.Utilities.Electricity.Grid:terminalOf  ogit.Utilities.Electricity.Grid:ShuntCompensator ]
+        [ ogit.Utilities.Electricity.Grid:terminalOf  ogit.Utilities.Electricity.Grid:SeriesCompensator ]
+        [ ogit.Utilities.Electricity.Grid:terminalOf  ogit.Utilities.Electricity.Grid:StaticVarCompensator ]
+        [ ogit.Utilities.Electricity.Grid:terminalOf  ogit.Utilities.Electricity.Grid:CsConverter ]
+        [ ogit.Utilities.Electricity.Grid:terminalOf  ogit.Utilities.Electricity.Grid:VsConverter ]
+        [ ogit.Utilities.Electricity.Grid:terminalOf  ogit.Utilities.Electricity.Grid:EquivalentInjection ]
+        [ ogit.Utilities.Electricity.Grid:terminalOf  ogit.Utilities.Electricity.Grid:EquivalentBranch ]
+        [ ogit.Utilities.Electricity.Grid:terminalOf  ogit.Utilities.Electricity.Grid:EquivalentShunt ]
+        [ ogit.Utilities.Electricity.Grid:terminalOf  ogit.Utilities.Electricity.Grid:FaultIndicator ]
+        [ ogit.Utilities.Electricity.Grid:terminalOf  ogit.Utilities.Electricity.Grid:SynchronousMachine ]
+        [ ogit.Utilities.Electricity.Grid:terminalOf  ogit.Utilities.Electricity.Grid:AsynchronousMachine ]
         [ ogit.Utilities.Electricity.Grid:connectsAt  ogit.Utilities.Electricity.Grid:ConnectivityNode ]
         [ ogit.Utilities.Electricity.Grid:connectsAt  ogit.Utilities.Electricity.Grid:TopologicalNode ]
         [ ogit.Utilities.Electricity.Grid:tieFlowAt  ogit.Utilities.Electricity:TieFlow ]

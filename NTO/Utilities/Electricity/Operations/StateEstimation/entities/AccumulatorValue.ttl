@@ -22,7 +22,7 @@ ogit.Utilities.Electricity.Operations.StateEstimation:AccumulatorValue
         ogit.Utilities.Electricity.Operations.StateEstimation:unitSymbol
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Operations.StateEstimation:rolloverValue
+        ogit.Utilities.Electricity:rolloverValue
         ogit.Utilities.Electricity.Operations.StateEstimation:lastResetAt
     );
     ogit:indexed-attributes (

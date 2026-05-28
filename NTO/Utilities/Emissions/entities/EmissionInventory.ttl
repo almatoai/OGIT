@@ -18,8 +18,8 @@ ogit.Utilities.Emissions:EmissionInventory
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
         ogit.Utilities.Emissions:inventoryId
-        ogit.Utilities.Emissions:periodStart
-        ogit.Utilities.Emissions:periodEnd
+        ogit.Utilities:periodStart
+        ogit.Utilities:periodEnd
         ogit.Utilities.Emissions:jurisdictionRef
         ogit.Utilities.Emissions:obligationKind
     );

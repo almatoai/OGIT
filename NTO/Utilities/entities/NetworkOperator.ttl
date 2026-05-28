@@ -38,6 +38,6 @@ ogit.Utilities:NetworkOperator
     ogit:allowed (
         [ ogit.Utilities:operates  ogit.Utilities.Electricity:PowerPlant ]
         [ ogit.Utilities:responsibleFor  ogit.Utilities.Electricity:ControlArea ]
-        [ ogit.Utilities:memberOf  ogit.Utilities.Electricity:SynchronousArea ]
+        [ ogit.Utilities:participates  ogit.Utilities.Electricity:SynchronousArea ]
     );
 .

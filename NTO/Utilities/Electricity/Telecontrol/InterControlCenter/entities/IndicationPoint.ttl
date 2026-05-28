@@ -1,7 +1,6 @@
 @prefix dcterms:                                   <http://purl.org/dc/terms/> .
 @prefix ogit:                                      <http://www.purl.org/ogit/> .
 @prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
-@prefix ogit.Utilities.Electricity.Market:         <http://www.purl.org/ogit/Utilities/Electricity/Market/> .
 @prefix ogit.Utilities.Electricity.Operations.StateEstimation: <http://www.purl.org/ogit/Utilities/Electricity/Operations/StateEstimation/> .
 @prefix ogit.Utilities.Electricity.Telecontrol:    <http://www.purl.org/ogit/Utilities/Electricity/Telecontrol/> .
 @prefix ogit.Utilities.Electricity.Telecontrol.InterControlCenter: <http://www.purl.org/ogit/Utilities/Electricity/Telecontrol/InterControlCenter/> .
@@ -35,7 +34,7 @@ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:IndicationPoint
         ogit.Utilities.Electricity.Telecontrol.InterControlCenter:tasePointId
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Market:referencedBy  ogit.Utilities.Electricity.Telecontrol.InterControlCenter:DataSetMember ]
+        [ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:referencedBy  ogit.Utilities.Electricity.Telecontrol.InterControlCenter:DataSetMember ]
         [ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:mirrors  ogit.Utilities.Electricity.Telecontrol:DataPoint ]
         [ ogit:generates  sgo:Timeseries ]
     );

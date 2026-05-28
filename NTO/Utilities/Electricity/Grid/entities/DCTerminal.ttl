@@ -18,7 +18,7 @@ ogit.Utilities.Electricity.Grid:DCTerminal
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
-        ogit.Utilities.Electricity.Grid:sequenceNumber
+        ogit.Utilities.Electricity:sequenceNumber
         ogit.Utilities.Electricity.Grid:dcNodeRef
         ogit.Utilities.Electricity.Grid:parentDcConductingEquipmentRef
     );

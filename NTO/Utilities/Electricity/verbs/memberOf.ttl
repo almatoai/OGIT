@@ -9,7 +9,7 @@ ogit.Utilities.Electricity:memberOf
     a owl:ObjectProperty;
     rdfs:subPropertyOf ogit:Verb;
     rdfs:label "memberOf";
-    dcterms:description "Reifies the group side of a membership relation: a *Membership anchor points to the group (ControlArea, SynchronousArea, BiddingZone). Cardinality: many2one.";
+    dcterms:description "Reifies the group side of a membership relation: a *Membership anchor (ControlAreaMembership / SynchronousAreaMembership / BiddingZoneMembership) points to the group it represents membership in. Many memberships can point to the same group; each membership instance points to exactly one group. Distinct from `Utilities:participates` (many2many) which models direct operator-side affiliation without lifecycle anchoring. Cardinality: many2one.";
     dcterms:valid "start=2026-05-27;";
     dcterms:creator "chris.boos@almato.com";
 .

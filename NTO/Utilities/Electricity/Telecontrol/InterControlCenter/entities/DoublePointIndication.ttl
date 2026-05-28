@@ -1,5 +1,8 @@
 @prefix dcterms:                                   <http://purl.org/dc/terms/> .
 @prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix ogit.Utilities.Electricity.Operations.StateEstimation: <http://www.purl.org/ogit/Utilities/Electricity/Operations/StateEstimation/> .
+@prefix ogit.Utilities.Electricity.Telecontrol:    <http://www.purl.org/ogit/Utilities/Electricity/Telecontrol/> .
 @prefix ogit.Utilities.Electricity.Telecontrol.InterControlCenter: <http://www.purl.org/ogit/Utilities/Electricity/Telecontrol/InterControlCenter/> .
 @prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
@@ -21,12 +24,18 @@ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:DoublePointIndication
         ogit.Utilities.Electricity.Telecontrol.InterControlCenter:dataType
     );
     ogit:optional-attributes (
-
+        ogit:name
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:taseUnit
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:taseScale
+        ogit.Utilities.Electricity.Operations.StateEstimation:powerSystemResourceRef
+        ogit.Utilities.Electricity:descriptionText
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity.Telecontrol.InterControlCenter:tasePointId
     );
     ogit:allowed (
         [ ogit:generates  sgo:Timeseries ]
+        [ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:referencedBy  ogit.Utilities.Electricity.Telecontrol.InterControlCenter:DataSetMember ]
+        [ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:mirrors  ogit.Utilities.Electricity.Telecontrol:DataPoint ]
     );
 .

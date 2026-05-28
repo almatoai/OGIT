@@ -1,5 +1,6 @@
 @prefix dcterms:                                   <http://purl.org/dc/terms/> .
 @prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
 @prefix ogit.Utilities.Electricity.Grid:           <http://www.purl.org/ogit/Utilities/Electricity/Grid/> .
 @prefix ogit.Utilities.Electricity.Operations:     <http://www.purl.org/ogit/Utilities/Electricity/Operations/> .
 @prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
@@ -22,7 +23,7 @@ ogit.Utilities.Electricity.Operations:SwitchAction
         ogit.Utilities.Electricity.Operations:targetRef
         ogit.Utilities.Electricity.Operations:actionKind
         ogit.Utilities.Electricity.Operations:scheduledTime
-        ogit.Utilities.Electricity.Grid:sequenceNumber
+        ogit.Utilities.Electricity:sequenceNumber
     );
     ogit:optional-attributes (
         ogit.Utilities.Electricity.Operations:executedTime
@@ -39,6 +40,5 @@ ogit.Utilities.Electricity.Operations:SwitchAction
         [ ogit:isPartOf  ogit.Utilities.Electricity.Operations:DefensePlan ]
         [ ogit.Utilities.Electricity.Operations:actsOn  ogit.Utilities.Electricity.Grid:Switch ]
         [ ogit.Utilities.Electricity.Operations:actsOn  ogit.Utilities.Electricity.Grid:PowerTransformer ]
-        [ ogit.Utilities.Electricity.Operations:actsOn  ogit.Utilities.Electricity.Grid:RatioTapChanger ]
     );
 .

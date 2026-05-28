@@ -5,11 +5,11 @@
 @prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
 
-ogit.Utilities.Electricity:commissioningDate
+ogit.Utilities.Electricity:rolloverValue
     a owl:DatatypeProperty;
     rdfs:subPropertyOf ogit:Attribute;
-    rdfs:label "commissioningDate";
-    dcterms:description "Date the resource entered commercial operation (ISO 8601 date).";
+    rdfs:label "rolloverValue";
+    dcterms:description "Roll-over value at which an accumulator counter wraps to zero. Used by StateEstimation:AccumulatorValue (CIM state-estimator output) and Telecontrol:IntegratedTotal (IEC 60870-5 integrated-total ASDU). Lives in Utilities.Electricity as the lowest common ancestor.";
     dcterms:valid "start=2026-05-27;";
     dcterms:creator "chris.boos@almato.com";
 .

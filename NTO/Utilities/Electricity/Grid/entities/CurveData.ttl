@@ -11,14 +11,13 @@ ogit.Utilities.Electricity.Grid:CurveData
     a rdfs:Class;
     rdfs:subClassOf ogit:Entity;
     rdfs:label "CurveData";
-    dcterms:description "CIM cim:CurveData. Single (x, y1, [y2, y3]) data point of a parent Curve.";
+    dcterms:description "CIM cim:CurveData. Single (x, y1, [y2, y3]) data point of a parent Curve. The parent Curve is expressed via the `ogit:isPartOf -> Curve` graph edge; no parallel `parentCurveRef` attribute is declared (per QS Round 13 architecture decision -- verb is canonical for graph relations).";
     dcterms:valid "start=2026-05-27;";
     dcterms:creator "chris.boos@almato.com";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
-        ogit.Utilities.Electricity.Grid:parentCurveRef
         ogit.Utilities.Electricity.Grid:xValue
         ogit.Utilities.Electricity.Grid:y1Value
     );

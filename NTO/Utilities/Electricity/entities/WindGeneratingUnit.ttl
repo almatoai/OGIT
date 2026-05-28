@@ -1,6 +1,8 @@
 @prefix dcterms:                                   <http://purl.org/dc/terms/> .
 @prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
 @prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix ogit.Utilities.Emissions:                  <http://www.purl.org/ogit/Utilities/Emissions/> .
 @prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
@@ -35,11 +37,43 @@ ogit.Utilities.Electricity:WindGeneratingUnit
         ogit.Utilities.Electricity:waterDepthM
         ogit.Utilities.Electricity:foundationType
         ogit.Utilities.Electricity:connectionType
+        ogit.Utilities.Electricity:nominalPMw
+        ogit.Utilities.Electricity:ratedVoltageKv
+        ogit.Utilities.Electricity:inertiaConstantHS
+        ogit.Utilities.Electricity:governorPMwPerHz
+        ogit.Utilities.Electricity:controlResponseKind
+        ogit.Utilities.Electricity:rfgConnectionType
+        ogit.Utilities:commissioningYear
+        ogit.Utilities.Electricity:decommissioningYear
+        ogit.Utilities.Electricity:lifecycleStatusSnapshot
+        ogit.Utilities.Electricity:fuelEfficiency
+        ogit.Utilities.Electricity:minRunTimeH
+        ogit.Utilities.Electricity:minDownTimeH
+        ogit.Utilities.Electricity:startupCost
+        ogit.Utilities.Electricity:variableCostPerMwh
+        ogit.Utilities.Electricity:descriptionText
+        ogit.Utilities.Electricity:aliasName
+        ogit.Utilities.Electricity:categoryRef
+        ogit.Utilities:commissioningDate
+        ogit.Utilities:decommissioningDate
+        ogit.Utilities.Electricity:psrType
+        ogit.Utilities.Electricity:externalRefs
+        ogit:status
+        ogit:source
+        ogit:sourceId
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid
+        ogit:name
     );
     ogit:allowed (
-
+        [ ogit:isPartOf  ogit.Utilities.Electricity:PowerPlant ]
+        [ ogit:controlledBy  ogit.Utilities.Electricity:ControlArea ]
+        [ ogit.Utilities:emits  ogit.Utilities.Emissions:GreenhouseGasEmission ]
+        [ ogit:consumes  ogit.Utilities:EnergyCarrier ]
+        [ ogit:generates  sgo:Timeseries ]
+        [ ogit.Utilities:operatedBy  ogit.Utilities:NetworkOperator ]
+        [ ogit:locatedIn  ogit:Location ]
+        [ ogit:isPartOf  ogit.Utilities.Electricity:PowerPlant ]
     );
 .

@@ -1,7 +1,6 @@
 @prefix dcterms:                                   <http://purl.org/dc/terms/> .
 @prefix ogit:                                      <http://www.purl.org/ogit/> .
 @prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
-@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
 @prefix ogit.Utilities.Emissions:                  <http://www.purl.org/ogit/Utilities/Emissions/> .
 @prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
@@ -29,8 +28,8 @@ ogit.Utilities.Emissions:EmissionMeasurement
         ogit.Utilities.Emissions:calibrationRecordRef
         ogit.Utilities.Emissions:nominalUncertainty
         ogit.Utilities.Emissions:aggregationMethod
-        ogit.Utilities.Electricity:commissioningDate
-        ogit.Utilities.Electricity:decommissioningDate
+        ogit.Utilities:commissioningDate
+        ogit.Utilities:decommissioningDate
         ogit.Utilities.Emissions:regulatoryCertificationRef
     );
     ogit:indexed-attributes (

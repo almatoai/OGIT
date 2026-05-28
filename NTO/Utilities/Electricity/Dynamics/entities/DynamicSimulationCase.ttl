@@ -25,8 +25,8 @@ ogit.Utilities.Electricity.Dynamics:DynamicSimulationCase
         ogit.Utilities.Electricity.Dynamics:initialStateSnapshotRef
     );
     ogit:optional-attributes (
-        ogit.Utilities.Electricity.Operations:toolName
-        ogit.Utilities.Electricity.Operations:toolVersion
+        ogit.Utilities.Electricity:toolName
+        ogit.Utilities.Electricity:toolVersion
         ogit.Utilities.Electricity.Dynamics:simulationDurationS
         ogit.Utilities.Electricity.Dynamics:timeStepMs
         ogit.Utilities.Electricity.Dynamics:resultArtifactUri

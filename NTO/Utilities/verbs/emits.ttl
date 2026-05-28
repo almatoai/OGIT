@@ -9,7 +9,7 @@ ogit.Utilities:emits
     a owl:ObjectProperty;
     rdfs:subPropertyOf ogit:Verb;
     rdfs:label "emits";
-    dcterms:description "Asserts that the source entity (a piece of equipment or a plant) emits the target GreenhouseGasEmission record. The actual quantity over time rides on a sgo:Timeseries on a CarbonIntensity or EmissionMeasurement anchor; this verb only declares the relation. Cardinality: many2many.";
+    dcterms:description "Asserts that the source entity (a piece of equipment or a plant) emits the target GreenhouseGasEmission record. Cardinality `one2many`: one emitter (GeneratingUnit / PowerPlant / ConversionUnit / vehicle) can produce many emission records over time and substance; each GreenhouseGasEmission record is attributed to exactly one emitter (see the reverse verb `Utilities.Emissions:emittedBy` many2one). The actual quantity over time rides on a sgo:Timeseries on a CarbonIntensity or EmissionMeasurement anchor; this verb only declares the relation. Cardinality: one2many.";
     dcterms:valid "start=2026-05-27;";
     dcterms:creator "chris.boos@almato.com";
 .

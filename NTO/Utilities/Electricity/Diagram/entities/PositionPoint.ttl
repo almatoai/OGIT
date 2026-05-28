@@ -2,7 +2,6 @@
 @prefix ogit:                                      <http://www.purl.org/ogit/> .
 @prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
 @prefix ogit.Utilities.Electricity.Diagram:        <http://www.purl.org/ogit/Utilities/Electricity/Diagram/> .
-@prefix ogit.Utilities.Electricity.Grid:           <http://www.purl.org/ogit/Utilities/Electricity/Grid/> .
 @prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
@@ -12,15 +11,14 @@ ogit.Utilities.Electricity.Diagram:PositionPoint
     a rdfs:Class;
     rdfs:subClassOf ogit:Entity;
     rdfs:label "PositionPoint";
-    dcterms:description "CIM cim:PositionPoint. One 2D / 3D point in a GeographicalLocation.";
+    dcterms:description "CIM cim:PositionPoint. One 2D / 3D point in a GeographicalLocation. The parent GeographicalLocation is expressed via the `ogit:isPartOf -> GeographicalLocation` graph edge; no parallel `parentLocationRef` attribute.";
     dcterms:valid "start=2026-05-28;";
     dcterms:creator "chris.boos@almato.com";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
-        ogit.Utilities.Electricity.Diagram:parentLocationRef
-        ogit.Utilities.Electricity.Grid:sequenceNumber
+        ogit.Utilities.Electricity:sequenceNumber
         ogit.Utilities.Electricity.Diagram:xPosition
         ogit.Utilities.Electricity.Diagram:yPosition
     );

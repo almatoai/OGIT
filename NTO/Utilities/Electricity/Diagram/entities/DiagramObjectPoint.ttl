@@ -2,7 +2,6 @@
 @prefix ogit:                                      <http://www.purl.org/ogit/> .
 @prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
 @prefix ogit.Utilities.Electricity.Diagram:        <http://www.purl.org/ogit/Utilities/Electricity/Diagram/> .
-@prefix ogit.Utilities.Electricity.Grid:           <http://www.purl.org/ogit/Utilities/Electricity/Grid/> .
 @prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
@@ -12,15 +11,14 @@ ogit.Utilities.Electricity.Diagram:DiagramObjectPoint
     a rdfs:Class;
     rdfs:subClassOf ogit:Entity;
     rdfs:label "DiagramObjectPoint";
-    dcterms:description "CIM cim:DiagramObjectPoint. A point in 2D / 3D diagram coordinates belonging to a DiagramObject (e.g. corner of a polygon).";
+    dcterms:description "CIM cim:DiagramObjectPoint. A point in 2D / 3D diagram coordinates belonging to a DiagramObject (e.g. corner of a polygon). The parent DiagramObject is expressed via the `ogit:isPartOf -> DiagramObject` graph edge; no parallel `parentDiagramObjectRef` attribute.";
     dcterms:valid "start=2026-05-28;";
     dcterms:creator "chris.boos@almato.com";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity:mrid
-        ogit.Utilities.Electricity.Diagram:parentDiagramObjectRef
-        ogit.Utilities.Electricity.Grid:sequenceNumber
+        ogit.Utilities.Electricity:sequenceNumber
         ogit.Utilities.Electricity.Diagram:xPosition
         ogit.Utilities.Electricity.Diagram:yPosition
     );

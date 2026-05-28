@@ -1,5 +1,6 @@
 @prefix dcterms:                                   <http://purl.org/dc/terms/> .
 @prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
 @prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
 @prefix ogit.Utilities.Electricity.Grid:           <http://www.purl.org/ogit/Utilities/Electricity/Grid/> .
 @prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
@@ -9,7 +10,7 @@
 
 ogit.Utilities.Electricity.Grid:CsConverter
     a rdfs:Class;
-    rdfs:subClassOf ogit.Utilities.Electricity:PowerSystemResource;
+    rdfs:subClassOf ogit.Utilities.Electricity.Grid:ACDCConverter;
     rdfs:label "CsConverter";
     dcterms:description "CIM cim:CsConverter. Current-source HVDC converter (LCC, classic thyristor).";
     dcterms:valid "start=2026-05-27;";
@@ -30,13 +31,29 @@ ogit.Utilities.Electricity.Grid:CsConverter
         ogit.Utilities.Electricity.Grid:minGammaDegrees
         ogit.Utilities.Electricity.Grid:commutationCapability
         ogit.Utilities.Electricity.Grid:idleLossPMw
+        ogit.Utilities.Electricity.Grid:poleLossPMw
+        ogit.Utilities.Electricity:descriptionText
+        ogit.Utilities.Electricity:aliasName
+        ogit.Utilities.Electricity:categoryRef
+        ogit.Utilities:commissioningDate
+        ogit.Utilities:decommissioningDate
+        ogit.Utilities.Electricity:psrType
+        ogit.Utilities.Electricity:externalRefs
+        ogit:status
+        ogit:source
+        ogit:sourceId
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid
+        ogit.Utilities.Electricity:mrid
+        ogit:name
     );
     ogit:allowed (
         [ ogit.Utilities.Electricity.Grid:hasTerminal  ogit.Utilities.Electricity.Grid:Terminal ]
         [ ogit:isPartOf  ogit.Utilities.Electricity.Grid:DCConverterUnit ]
         [ ogit:generates  sgo:Timeseries ]
+        [ ogit.Utilities:operatedBy  ogit.Utilities:NetworkOperator ]
+        [ ogit:locatedIn  ogit:Location ]
+        [ ogit:isPartOf  ogit.Utilities.Electricity:PowerPlant ]
     );
 .

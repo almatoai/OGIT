@@ -31,12 +31,23 @@ ogit.Utilities.Electricity.Operations:ForcedOutage
         ogit.Utilities.Electricity.Operations:autoRecloseAttempts
         ogit.Utilities.Electricity.Operations:successfulReclose
         ogit.Utilities.Electricity.Operations:protectionActionRef
+        ogit.Utilities:endTime
+        ogit.Utilities:expectedDuration
+        ogit.Utilities:cause
+        ogit.Utilities:affectedPopulation
+        ogit.Utilities:recoveryActionRef
+        ogit:severity
+        ogit.Utilities:criticalityLevel
+        ogit.Utilities:restorationPriority
     );
     ogit:indexed-attributes (
+        ogit.Utilities:outageId
         ogit.Utilities:outageId
     );
     ogit:allowed (
         [ ogit:affects  ogit.Utilities.Electricity:PowerSystemResource ]
         [ ogit.Utilities:causedBy  ogit.Utilities.Electricity.Grid:ACLineSegment ]
+        [ ogit.Utilities:causedBy  ogit.Utilities.Electricity:PowerSystemResource ]
+        [ ogit.Utilities:reportedBy  ogit.Utilities:NetworkOperator ]
     );
 .

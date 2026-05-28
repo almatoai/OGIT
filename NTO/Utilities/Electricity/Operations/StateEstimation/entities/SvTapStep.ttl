@@ -28,8 +28,8 @@ ogit.Utilities.Electricity.Operations.StateEstimation:SvTapStep
         ogit.Utilities.Electricity:mrid
     );
     ogit:allowed (
-        [ ogit.Utilities.Electricity.Grid:at  ogit.Utilities.Electricity.Grid:RatioTapChanger ]
-        [ ogit.Utilities.Electricity.Grid:at  ogit.Utilities.Electricity.Grid:PhaseTapChanger ]
+        [ ogit.Utilities.Electricity.Operations.StateEstimation:at  ogit.Utilities.Electricity.Grid:RatioTapChanger ]
+        [ ogit.Utilities.Electricity.Operations.StateEstimation:at  ogit.Utilities.Electricity.Grid:PhaseTapChanger ]
         [ ogit:generates  sgo:Timeseries ]
     );
 .

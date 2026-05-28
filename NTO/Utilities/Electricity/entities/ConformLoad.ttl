@@ -1,5 +1,6 @@
 @prefix dcterms:                                   <http://purl.org/dc/terms/> .
 @prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
 @prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
 @prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
@@ -25,11 +26,34 @@ ogit.Utilities.Electricity:ConformLoad
         ogit.Utilities.Electricity:pFixedMw
         ogit.Utilities.Electricity:qFixedMvar
         ogit.Utilities.Electricity:scalingFactor
+        ogit.Utilities.Electricity:nominalQMvar
+        ogit.Utilities.Electricity:consumerKind
+        ogit.Utilities.Electricity:dispatchable
+        ogit.Utilities.Electricity:interruptible
+        ogit.Utilities.Electricity:loadProfileRef
+        ogit.Utilities.Electricity:connectionVoltageKv
+        ogit.Utilities.Electricity:customerCount
+        ogit.Utilities.Electricity:descriptionText
+        ogit.Utilities.Electricity:aliasName
+        ogit.Utilities.Electricity:categoryRef
+        ogit.Utilities:commissioningDate
+        ogit.Utilities:decommissioningDate
+        ogit.Utilities.Electricity:psrType
+        ogit.Utilities.Electricity:externalRefs
+        ogit:status
+        ogit:source
+        ogit:sourceId
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid
+        ogit:name
     );
     ogit:allowed (
-
+        [ ogit:consumes  ogit.Utilities:EnergyCarrier ]
+        [ ogit.Utilities.Electricity:subscribesTo  ogit.Utilities:Schedule ]
+        [ ogit:generates  sgo:Timeseries ]
+        [ ogit.Utilities:operatedBy  ogit.Utilities:NetworkOperator ]
+        [ ogit:locatedIn  ogit:Location ]
+        [ ogit:isPartOf  ogit.Utilities.Electricity:PowerPlant ]
     );
 .

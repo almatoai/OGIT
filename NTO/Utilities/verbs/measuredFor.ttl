@@ -5,11 +5,11 @@
 @prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
 
-ogit.Utilities:memberOf
+ogit.Utilities:measuredFor
     a owl:ObjectProperty;
     rdfs:subPropertyOf ogit:Verb;
-    rdfs:label "memberOf";
-    dcterms:description "Generic membership relation: a NetworkOperator is member of a SynchronousArea / ENTSO-E / RSC. Used at the Utilities top level so it can be reused by sub-namespaces. Cardinality: many2many.";
+    rdfs:label "measuredFor";
+    dcterms:description "Cross-domain measurement-attachment relation. Asserts that the source measurement anchor (CarbonIntensity in Emissions, AreaControlError / TimeError / SystemFrequency / RoCoF in Electricity.Operations, future cross-domain measurement anchors) is measured for / attached to the target subject (ControlArea, BiddingZone, SynchronousArea, Portfolio). Lives in Utilities as the lowest common ancestor; both Emissions and Operations sub-namespaces reference it via the `Utilities:measuredFor` prefix. Cardinality: many2one.";
     dcterms:valid "start=2026-05-27;";
     dcterms:creator "chris.boos@almato.com";
 .

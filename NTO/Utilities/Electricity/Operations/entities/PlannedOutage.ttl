@@ -28,11 +28,22 @@ ogit.Utilities.Electricity.Operations:PlannedOutage
         ogit.Utilities.Electricity.Operations:maintenanceKind
         ogit.Utilities.Electricity.Operations:noticeGivenDays
         ogit.Utilities.Electricity.Operations:regulatoryNotificationRef
+        ogit.Utilities:endTime
+        ogit.Utilities:expectedDuration
+        ogit.Utilities:cause
+        ogit.Utilities:affectedPopulation
+        ogit.Utilities:recoveryActionRef
+        ogit:severity
+        ogit.Utilities:criticalityLevel
+        ogit.Utilities:restorationPriority
     );
     ogit:indexed-attributes (
+        ogit.Utilities:outageId
         ogit.Utilities:outageId
     );
     ogit:allowed (
         [ ogit:affects  ogit.Utilities.Electricity:PowerSystemResource ]
+        [ ogit.Utilities:causedBy  ogit.Utilities.Electricity:PowerSystemResource ]
+        [ ogit.Utilities:reportedBy  ogit.Utilities:NetworkOperator ]
     );
 .
