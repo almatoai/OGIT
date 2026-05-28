@@ -14,6 +14,7 @@ ogit.Documents:DocumentInfoRecord
 	dcterms:creator "Marek Meyer";
 	ogit:scope "NTO";
 	ogit:parent ogit:Node;
+	ogit:blob "true";
 	ogit:mandatory-attributes (
 	);
 	ogit:optional-attributes (
