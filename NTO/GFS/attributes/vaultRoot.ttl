@@ -1,0 +1,14 @@
+@prefix ogit:           <http://www.purl.org/ogit/> .
+@prefix ogit.GFS:       <http://www.purl.org/ogit/GFS/> .
+@prefix owl:            <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:           <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:        <http://purl.org/dc/terms/> .
+
+ogit.GFS:vaultRoot
+    a owl:DatatypeProperty;
+    rdfs:subPropertyOf ogit:Attribute;
+    rdfs:label "vaultRoot";
+    dcterms:description "Boolean marker on Folder. When true, this folder is the user-facing root of a Vault DataScope (Personal Vault or Team Vault). Exactly one such folder exists per Vault scope.";
+    dcterms:valid "start=2026-05-22;";
+    dcterms:creator "Almato AG";
+.

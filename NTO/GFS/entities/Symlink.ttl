@@ -1,0 +1,42 @@
+@prefix ogit:           <http://www.purl.org/ogit/> .
+@prefix ogit.GFS:       <http://www.purl.org/ogit/GFS/> .
+@prefix owl:            <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:           <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:        <http://purl.org/dc/terms/> .
+
+# ogit.GFS:Symlink -- Verweis-Vertex im Bardioc GFS.
+# v0.2 (post Round-1 reviewer feedback).
+#
+# Permission-Pruefung erfolgt am Ziel (refersTo-Target), nicht am
+# Symlink. Der Symlink selbst braucht nur read in der Pfad-
+# Resolution, um in Folder-Listings zu erscheinen.
+
+ogit.GFS:Symlink
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "Symlink";
+    dcterms:description "A symbolic link in the Bardioc Graph File System. Refers to an arbitrary target vertex via ogit.GFS:refersTo. Cycle protection: maximum resolution hop depth is enforced by the GFS-API (default 16).";
+    dcterms:valid "start=2026-05-21;";
+    dcterms:creator "Almato AG";
+    dcterms:created "2026-05-21";
+    dcterms:modified "2026-05-28";
+    ogit:admin-contact "Almato AG";
+    ogit:tech-contact "Almato AG";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:blob "false";
+    ogit:mandatory-attributes (
+        ogit:name
+    );
+    ogit:optional-attributes (
+        ogit.GFS:archivedAt
+    );
+    ogit:indexed-attributes (
+        ogit:name
+    );
+    ogit:history (
+    );
+    ogit:allowed (
+        [ ogit.GFS:refersTo  ogit:Entity ]
+    );
+.

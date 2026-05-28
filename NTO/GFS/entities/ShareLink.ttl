@@ -1,0 +1,51 @@
+@prefix ogit:           <http://www.purl.org/ogit/> .
+@prefix ogit.GFS:       <http://www.purl.org/ogit/GFS/> .
+@prefix owl:            <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:           <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:        <http://purl.org/dc/terms/> .
+
+# ogit.GFS:ShareLink -- Capability-Token-Vertex im Bardioc GFS.
+# v0.2 (post Round-1 reviewer feedback).
+#
+# Lebt im DataScope des Sharers, damit Audit, Revocation und
+# Listing trivial moeglich sind. Token-Property ist indexiert,
+# damit der Public-Share-WebService schnell aufloesen kann.
+#
+# Hinweis zu capability: in v0.2 ist capability eine Vertex-
+# Property an der ShareLink (nicht eine Edge-Property an einer
+# grants-Edge, weil Bardioc-Edges keine Attribute tragen).
+
+ogit.GFS:ShareLink
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "ShareLink";
+    dcterms:description "A capability-bearing token vertex in the Bardioc Graph File System. Used by the Public-Share-WebService to expose a File or Folder to non-Bardioc recipients via an opaque URL. The capability set is a vertex property on this ShareLink, not on any edge.";
+    dcterms:valid "start=2026-05-21;";
+    dcterms:creator "Almato AG";
+    dcterms:created "2026-05-21";
+    dcterms:modified "2026-05-28";
+    ogit:admin-contact "Almato AG";
+    ogit:tech-contact "Almato AG";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:blob "false";
+    ogit:mandatory-attributes (
+        ogit.GFS:token
+        ogit.GFS:capability
+        ogit.GFS:expiresAt
+    );
+    ogit:optional-attributes (
+        ogit.GFS:maxUses
+        ogit.GFS:usedCount
+        ogit.GFS:allowedEmails
+        ogit.GFS:revokedAt
+    );
+    ogit:indexed-attributes (
+        ogit.GFS:token
+        ogit.GFS:expiresAt
+    );
+    ogit:history (
+    );
+    ogit:allowed (
+    );
+.

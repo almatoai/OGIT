@@ -1,0 +1,14 @@
+@prefix ogit:           <http://www.purl.org/ogit/> .
+@prefix ogit.GFS:       <http://www.purl.org/ogit/GFS/> .
+@prefix owl:            <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:           <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:        <http://purl.org/dc/terms/> .
+
+ogit.GFS:restrictToDevices
+    a owl:DatatypeProperty;
+    rdfs:subPropertyOf ogit:Attribute;
+    rdfs:label "restrictToDevices";
+    dcterms:description "Optional multi-value list of ogit.Auth:Device IDs on File or Folder. When set, only the listed devices may render the file (or any File reached through this Folder's contains-chain, subject to inheritPermissions). Materialised into the platform-maintained _effectiveDevices property on each File.";
+    dcterms:valid "start=2026-05-22;";
+    dcterms:creator "Almato AG";
+.
