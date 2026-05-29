@@ -4,16 +4,14 @@
 @prefix rdfs:           <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms:        <http://purl.org/dc/terms/> .
 
-# ogit.GFS:ShareLink -- Capability-Token-Vertex im Bardioc GFS.
-# v0.2 (post Round-1 reviewer feedback).
+# ogit.GFS:ShareLink -- capability-bearing token vertex.
 #
-# Lebt im DataScope des Sharers, damit Audit, Revocation und
-# Listing trivial moeglich sind. Token-Property ist indexiert,
-# damit der Public-Share-WebService schnell aufloesen kann.
+# Lives in the sharer's DataScope so that audit, revocation and
+# listing are trivial. The token property is indexed so the
+# public-share web service can resolve a token in constant time.
 #
-# Hinweis zu capability: in v0.2 ist capability eine Vertex-
-# Property an der ShareLink (nicht eine Edge-Property an einer
-# grants-Edge, weil Bardioc-Edges keine Attribute tragen).
+# Capability set is a vertex-property on the ShareLink (not an
+# edge attribute, because Bardioc edges cannot carry attributes).
 
 ogit.GFS:ShareLink
     a rdfs:Class;
@@ -23,7 +21,7 @@ ogit.GFS:ShareLink
     dcterms:valid "start=2026-05-21;";
     dcterms:creator "Almato AG";
     dcterms:created "2026-05-21";
-    dcterms:modified "2026-05-28";
+    dcterms:modified "2026-05-29";
     ogit:admin-contact "Almato AG";
     ogit:tech-contact "Almato AG";
     ogit:scope "NTO";

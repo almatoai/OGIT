@@ -4,12 +4,11 @@
 @prefix rdfs:           <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms:        <http://purl.org/dc/terms/> .
 
-# ogit.GFS:Symlink -- Verweis-Vertex im Bardioc GFS.
-# v0.2 (post Round-1 reviewer feedback).
+# ogit.GFS:Symlink -- reference vertex in the Bardioc GFS.
 #
-# Permission-Pruefung erfolgt am Ziel (refersTo-Target), nicht am
-# Symlink. Der Symlink selbst braucht nur read in der Pfad-
-# Resolution, um in Folder-Listings zu erscheinen.
+# Permission check is evaluated on the refersTo-target, not on
+# the symlink itself. The symlink only needs read permission
+# during path resolution to appear in folder listings.
 
 ogit.GFS:Symlink
     a rdfs:Class;
@@ -19,7 +18,7 @@ ogit.GFS:Symlink
     dcterms:valid "start=2026-05-21;";
     dcterms:creator "Almato AG";
     dcterms:created "2026-05-21";
-    dcterms:modified "2026-05-28";
+    dcterms:modified "2026-05-29";
     ogit:admin-contact "Almato AG";
     ogit:tech-contact "Almato AG";
     ogit:scope "NTO";

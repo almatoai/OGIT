@@ -4,16 +4,15 @@
 @prefix rdfs:           <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms:        <http://purl.org/dc/terms/> .
 
-# ogit.GFS:File -- Filesystem-Datei im Bardioc Graph File System.
-# v0.2 (post Round-1 reviewer feedback).
+# ogit.GFS:File -- filesystem file in the Bardioc Graph File System.
 #
-# Bytes liegen im Object-Store hinter der Graph-API
-# (BlobStorageProvider). Der Vertex haelt Metadaten, optional
-# Per-Device-Restriktionen, und wird per ogit:contains in einen
-# Folder gehaengt. Permissions werden ueber die platform-
-# maintained Properties _effectiveReaders und _effectiveDevices
-# materialisiert (nicht in dieser TTL definiert; sie leben im
-# Plattform-reservierten Namespace analog zu ogit/_acl).
+# Bytes live in the object store behind the platform graph API
+# (BlobStorageProvider). The vertex carries metadata, optional
+# per-device restrictions, and is placed under a Folder via
+# ogit:contains. Permissions are materialised by the platform
+# pipeline into the platform-reserved properties _effectiveReaders
+# and _effectiveDevices (not defined here; they live in the
+# platform-reserved namespace alongside ogit/_acl).
 
 ogit.GFS:File
     a rdfs:Class;
@@ -23,7 +22,7 @@ ogit.GFS:File
     dcterms:valid "start=2026-05-21;";
     dcterms:creator "Almato AG";
     dcterms:created "2026-05-21";
-    dcterms:modified "2026-05-28";
+    dcterms:modified "2026-05-29";
     ogit:admin-contact "Almato AG";
     ogit:tech-contact "Almato AG";
     ogit:scope "NTO";

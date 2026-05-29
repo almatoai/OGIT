@@ -12,7 +12,7 @@ ogit.GFS:sharedVia
     dcterms:valid "start=2026-05-21;";
     dcterms:creator "Almato AG";
     dcterms:created "2026-05-21";
-    dcterms:modified "2026-05-28";
+    dcterms:modified "2026-05-29";
     ogit:admin-contact "Almato AG";
     ogit:tech-contact "Almato AG";
     ogit:history (

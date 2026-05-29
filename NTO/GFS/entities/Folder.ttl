@@ -4,16 +4,15 @@
 @prefix rdfs:           <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms:        <http://purl.org/dc/terms/> .
 
-# ogit.GFS:Folder -- Container fuer FS-Children im Bardioc GFS.
-# v0.2 (post Round-1 reviewer feedback).
+# ogit.GFS:Folder -- container vertex for filesystem children.
 #
-# Verwendet das bestehende ogit:contains Verb. In der GFS-Sicht
-# ist die Containment-Beziehung single-parent (Sharing erfolgt
-# nicht durch Multi-Parent-Mount, sondern durch Vertex-Kopie in
-# den Ziel-DataScope plus ACL-Erweiterung im selben Scope).
+# Uses the existing ogit:contains verb. In the GFS view, the
+# containment relation is single-parent: sharing is done by
+# vertex-copy into the target DataScope plus ACL extension
+# within the same scope, not by multi-parent mount.
 #
-# Ein Folder mit vaultRoot=true ist der user-facing Wurzel-
-# Folder eines Vault-DataScope; Default-Name "My Files Protected".
+# A folder with vaultRoot=true is the user-facing root folder
+# of a Vault DataScope; default name "My Files Protected".
 
 ogit.GFS:Folder
     a rdfs:Class;
@@ -23,7 +22,7 @@ ogit.GFS:Folder
     dcterms:valid "start=2026-05-21;";
     dcterms:creator "Almato AG";
     dcterms:created "2026-05-21";
-    dcterms:modified "2026-05-28";
+    dcterms:modified "2026-05-29";
     ogit:admin-contact "Almato AG";
     ogit:tech-contact "Almato AG";
     ogit:scope "NTO";

@@ -4,12 +4,11 @@
 @prefix rdfs:           <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms:        <http://purl.org/dc/terms/> .
 
-# ogit.GFS:AppHandler -- MIME-zu-Bardioc-App-Mapping fuer "Open-with"-
-# Verhalten im FileExplorer.
-# v0.2 (post Round-1 reviewer feedback).
+# ogit.GFS:AppHandler -- MIME-pattern to Bardioc-app mapping for
+# the FileExplorer "Open with" behaviour.
 #
-# Default-Mappings beim Bardioc-Bootstrap installiert. Pro Workspace
-# oder pro User koennen Overrides via scopeRef gesetzt werden.
+# Default mappings are installed at Bardioc bootstrap. Per-workspace
+# or per-user overrides can be set via scopeRef.
 
 ogit.GFS:AppHandler
     a rdfs:Class;
@@ -19,7 +18,7 @@ ogit.GFS:AppHandler
     dcterms:valid "start=2026-05-21;";
     dcterms:creator "Almato AG";
     dcterms:created "2026-05-21";
-    dcterms:modified "2026-05-28";
+    dcterms:modified "2026-05-29";
     ogit:admin-contact "Almato AG";
     ogit:tech-contact "Almato AG";
     ogit:scope "NTO";
