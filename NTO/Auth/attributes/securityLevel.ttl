@@ -1,0 +1,16 @@
+@prefix ogit:           <http://www.purl.org/ogit/> .
+@prefix ogit.Auth:      <http://www.purl.org/ogit/Auth/> .
+@prefix owl:            <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:           <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:        <http://purl.org/dc/terms/> .
+
+ogit.Auth:securityLevel
+    a owl:DatatypeProperty;
+    rdfs:subPropertyOf ogit:Attribute;
+    rdfs:label "securityLevel";
+    dcterms:description "Discrete security level of an end-user device. 0 = unverified, 50 = registered, 80 = managed (MDM or equivalent), 100 = HSM or hardware wallet. Drives per-file device restrictions in conjunction with file-side minDeviceSecurityLevel.";
+    dcterms:valid "start=2026-06-01;";
+    dcterms:creator "Almato AG";
+    ogit:validation-parameter "0,50,80,100";
+    ogit:validation-type "fixed";
+.

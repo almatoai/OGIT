@@ -1,0 +1,14 @@
+@prefix ogit:           <http://www.purl.org/ogit/> .
+@prefix ogit.Auth:      <http://www.purl.org/ogit/Auth/> .
+@prefix owl:            <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:           <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:        <http://purl.org/dc/terms/> .
+
+ogit.Auth:revokedAt
+    a owl:DatatypeProperty;
+    rdfs:subPropertyOf ogit:Attribute;
+    rdfs:label "revokedAt";
+    dcterms:description "ISO timestamp set when an end-user device is revoked (loss, theft, or admin action). After this point all authentication attempts from the device are denied. Distinct from ogit.GFS:revokedAt which lives in the GFS namespace on ShareLink vertices.";
+    dcterms:valid "start=2026-06-01;";
+    dcterms:creator "Almato AG";
+.

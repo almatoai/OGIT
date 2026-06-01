@@ -1,0 +1,16 @@
+@prefix ogit:           <http://www.purl.org/ogit/> .
+@prefix ogit.Auth:      <http://www.purl.org/ogit/Auth/> .
+@prefix owl:            <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:           <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:        <http://purl.org/dc/terms/> .
+
+ogit.Auth:isWorkspace
+    a owl:DatatypeProperty;
+    rdfs:subPropertyOf ogit:Attribute;
+    rdfs:label "isWorkspace";
+    dcterms:description "Boolean marker on ogit.Auth:Team. When true, the team is a self-service Workspace whose members manage themselves and which owns its own DataScope. When false or absent, the team is a classical enterprise-RBAC group administered by org admins.";
+    dcterms:valid "start=2026-06-01;";
+    dcterms:creator "Almato AG";
+    ogit:validation-parameter "true,false";
+    ogit:validation-type "fixed";
+.
