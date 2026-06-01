@@ -4,11 +4,11 @@
 @prefix rdfs:           <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms:        <http://purl.org/dc/terms/> .
 
-ogit.Auth:hasVault
+ogit.Auth:owns
     a owl:ObjectProperty;
     rdfs:subPropertyOf ogit:Verb;
-    rdfs:label "hasVault";
-    dcterms:description "Anchors a Personal Vault DataScope to a Person. The relation survives Account deactivation so that a Person who changes employer keeps the Vault reachable through any remaining Account that belongs to the Person.";
+    rdfs:label "owns";
+    dcterms:description "Auth-namespace ownership relation. Currently used to anchor a Vault DataScope to its owning Person (Personal Vault) -- the relation survives Account deactivation so a Person who changes employer keeps the Vault reachable through any remaining Account that belongs to the Person.";
     dcterms:valid "start=2026-06-01;";
     dcterms:creator "Almato AG";
     dcterms:created "2026-06-01";

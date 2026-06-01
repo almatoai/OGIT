@@ -68,7 +68,7 @@ ogit.Auth:Account
 			[ ogit.Auth:consents  ogit.Auth:Application ]
 			[ ogit.Auth:isMemberOf  ogit.Auth:Organization ]
 			[ ogit.Auth:isMemberOf  ogit.Auth:Team ]
-			[ ogit.Auth:usesDevice  ogit.Auth:Device ]
+			[ ogit.Auth:uses        ogit.Auth:Device ]
 			[ ogit:consumes  ogit.Project:Milestone ]
 			[ ogit:consumes  ogit.Project:Project ]
 			[ ogit:supervises  ogit.Project:Project ]
