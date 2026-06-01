@@ -34,6 +34,7 @@ ogit.Auth:Device
     );
     ogit:optional-attributes (
         ogit.Auth:fingerprint
+        ogit.Auth:registeredAt
         ogit.Auth:lastSeenAt
         ogit.Auth:revokedAt
     );
