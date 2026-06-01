@@ -11,4 +11,6 @@ ogit.GFS:inheritPermissions
     dcterms:description "Boolean flag on Folder. When true, the platform permission materialisation pipeline walks up the parent chain to compute effective permissions. When false, only this folder's and its descendants' explicit permissions count (Replace semantics, NTFS-style).";
     dcterms:valid "start=2026-05-21;";
     dcterms:creator "Almato AG";
+    ogit:validation-parameter "true,false";
+    ogit:validation-type "fixed";
 .

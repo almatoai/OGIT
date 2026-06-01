@@ -11,4 +11,6 @@ ogit.GFS:vaultRoot
     dcterms:description "Boolean marker on Folder. When true, this folder is the user-facing root of a Vault DataScope (Personal Vault or Team Vault). Exactly one such folder exists per Vault scope.";
     dcterms:valid "start=2026-05-22;";
     dcterms:creator "Almato AG";
+    ogit:validation-parameter "true,false";
+    ogit:validation-type "fixed";
 .

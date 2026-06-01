@@ -11,4 +11,6 @@ ogit.GFS:capability
     dcterms:description "Capability set as a vertex property on ogit.GFS:ShareLink. Subset of: read, write, share, admin, delete. Drives what the token holder is allowed to do via the public-share gateway. Bardioc edges cannot carry attributes, so capability lives on the ShareLink vertex, not on any edge.";
     dcterms:valid "start=2026-05-21;";
     dcterms:creator "Almato AG";
+    ogit:validation-parameter "read,write,share,admin,delete";
+    ogit:validation-type "fixed";
 .
