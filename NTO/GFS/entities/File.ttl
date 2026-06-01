@@ -1,0 +1,51 @@
+@prefix ogit:           <http://www.purl.org/ogit/> .
+@prefix ogit.GFS:       <http://www.purl.org/ogit/GFS/> .
+@prefix owl:            <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:           <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:        <http://purl.org/dc/terms/> .
+
+# ogit.GFS:File -- filesystem file in the Bardioc Graph File System.
+#
+# Bytes live in the object store behind the platform graph API
+# (BlobStorageProvider). The vertex carries metadata, optional
+# per-device restrictions, and is placed under a Folder via
+# ogit:contains. Permissions are materialised by the platform
+# pipeline into the platform-reserved properties _effectiveReaders
+# and _effectiveDevices (not defined here; they live in the
+# platform-reserved namespace alongside ogit/_acl).
+
+ogit.GFS:File
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "File";
+    dcterms:description "A filesystem file in the Bardioc Graph File System (GFS). Bytes are stored in the platform object store via the existing BlobStorageProvider mechanism; this vertex holds metadata, optional per-device restrictions, and folder placement. Permissions on the file are materialised by the platform pipeline into _effectiveReaders and _effectiveDevices, not modelled here.";
+    dcterms:valid "start=2026-05-21;";
+    dcterms:creator "Almato AG";
+    dcterms:created "2026-05-21";
+    dcterms:modified "2026-05-29";
+    ogit:admin-contact "Almato AG";
+    ogit:tech-contact "Almato AG";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:blob "true";
+    ogit:mandatory-attributes (
+        ogit:name
+        ogit.GFS:mimeType
+    );
+    ogit:optional-attributes (
+        ogit:size
+        ogit:version
+        ogit.GFS:minDeviceSecurityLevel
+        ogit.GFS:restrictToDevices
+        ogit.GFS:archivedAt
+    );
+    ogit:indexed-attributes (
+        ogit:name
+        ogit.GFS:mimeType
+    );
+    ogit:history (
+    );
+    ogit:allowed (
+        [ ogit.GFS:sharedVia  ogit.GFS:ShareLink ]
+    );
+.

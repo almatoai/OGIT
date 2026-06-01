@@ -1,0 +1,53 @@
+@prefix ogit:           <http://www.purl.org/ogit/> .
+@prefix ogit.GFS:       <http://www.purl.org/ogit/GFS/> .
+@prefix owl:            <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:           <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:        <http://purl.org/dc/terms/> .
+
+# ogit.GFS:Folder -- container vertex for filesystem children.
+#
+# Uses the existing ogit:contains verb. In the GFS view, the
+# containment relation is single-parent: sharing is done by
+# vertex-copy into the target DataScope plus ACL extension
+# within the same scope, not by multi-parent mount.
+#
+# A folder with vaultRoot=true is the user-facing root folder
+# of a Vault DataScope; default name "My Files Protected".
+
+ogit.GFS:Folder
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "Folder";
+    dcterms:description "A container vertex in the Bardioc Graph File System. Holds child vertices via the reused ogit:contains verb. In the GFS view containment is single-parent. A folder with vaultRoot=true (default false) is the user-facing root of a Vault DataScope.";
+    dcterms:valid "start=2026-05-21;";
+    dcterms:creator "Almato AG";
+    dcterms:created "2026-05-21";
+    dcterms:modified "2026-05-29";
+    ogit:admin-contact "Almato AG";
+    ogit:tech-contact "Almato AG";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:blob "false";
+    ogit:mandatory-attributes (
+        ogit:name
+        ogit.GFS:inheritPermissions
+    );
+    ogit:optional-attributes (
+        ogit.GFS:vaultRoot
+        ogit.GFS:minDeviceSecurityLevel
+        ogit.GFS:restrictToDevices
+        ogit.GFS:archivedAt
+    );
+    ogit:indexed-attributes (
+        ogit:name
+        ogit.GFS:vaultRoot
+    );
+    ogit:history (
+    );
+    ogit:allowed (
+        [ ogit:contains       ogit.GFS:File ]
+        [ ogit:contains       ogit.GFS:Folder ]
+        [ ogit:contains       ogit.GFS:Symlink ]
+        [ ogit.GFS:sharedVia  ogit.GFS:ShareLink ]
+    );
+.

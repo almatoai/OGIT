@@ -1,0 +1,43 @@
+@prefix ogit:           <http://www.purl.org/ogit/> .
+@prefix ogit.GFS:       <http://www.purl.org/ogit/GFS/> .
+@prefix owl:            <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:           <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:        <http://purl.org/dc/terms/> .
+
+# ogit.GFS:AppHandler -- MIME-pattern to Bardioc-app mapping for
+# the FileExplorer "Open with" behaviour.
+#
+# Default mappings are installed at Bardioc bootstrap. Per-workspace
+# or per-user overrides can be set via scopeRef.
+
+ogit.GFS:AppHandler
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "AppHandler";
+    dcterms:description "Maps a MIME type or MIME pattern to a Bardioc app. The FileExplorer queries this registry to decide which app should open a given file when the user clicks 'Open'. Lower priority value means higher preference. Optional scopeRef restricts a mapping to a Workspace or DataScope.";
+    dcterms:valid "start=2026-05-21;";
+    dcterms:creator "Almato AG";
+    dcterms:created "2026-05-21";
+    dcterms:modified "2026-05-29";
+    ogit:admin-contact "Almato AG";
+    ogit:tech-contact "Almato AG";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:blob "false";
+    ogit:mandatory-attributes (
+        ogit.GFS:mimePattern
+        ogit.GFS:appId
+        ogit.GFS:priority
+    );
+    ogit:optional-attributes (
+        ogit.GFS:scopeRef
+    );
+    ogit:indexed-attributes (
+        ogit.GFS:mimePattern
+        ogit.GFS:scopeRef
+    );
+    ogit:history (
+    );
+    ogit:allowed (
+    );
+.

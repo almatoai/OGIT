@@ -1,0 +1,14 @@
+@prefix ogit:           <http://www.purl.org/ogit/> .
+@prefix ogit.GFS:       <http://www.purl.org/ogit/GFS/> .
+@prefix owl:            <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:           <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:        <http://purl.org/dc/terms/> .
+
+ogit.GFS:mimePattern
+    a owl:DatatypeProperty;
+    rdfs:subPropertyOf ogit:Attribute;
+    rdfs:label "mimePattern";
+    dcterms:description "MIME pattern at ogit.GFS:AppHandler. Exact MIME or wildcard form (e.g. 'image/*').";
+    dcterms:valid "start=2026-05-21;";
+    dcterms:creator "Almato AG";
+.

@@ -1,0 +1,14 @@
+@prefix ogit:           <http://www.purl.org/ogit/> .
+@prefix ogit.GFS:       <http://www.purl.org/ogit/GFS/> .
+@prefix owl:            <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:           <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:        <http://purl.org/dc/terms/> .
+
+ogit.GFS:token
+    a owl:DatatypeProperty;
+    rdfs:subPropertyOf ogit:Attribute;
+    rdfs:label "token";
+    dcterms:description "Opaque, cryptographically random token on a ShareLink. Indexed so the Public-Share-WebService can look up the ShareLink by token quickly.";
+    dcterms:valid "start=2026-05-21;";
+    dcterms:creator "Almato AG";
+.

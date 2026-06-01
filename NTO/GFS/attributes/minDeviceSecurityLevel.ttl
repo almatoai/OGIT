@@ -1,0 +1,14 @@
+@prefix ogit:           <http://www.purl.org/ogit/> .
+@prefix ogit.GFS:       <http://www.purl.org/ogit/GFS/> .
+@prefix owl:            <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:           <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:        <http://purl.org/dc/terms/> .
+
+ogit.GFS:minDeviceSecurityLevel
+    a owl:DatatypeProperty;
+    rdfs:subPropertyOf ogit:Attribute;
+    rdfs:label "minDeviceSecurityLevel";
+    dcterms:description "Optional integer property on File or Folder. The accessing ogit.Auth:Device must have a securityLevel greater than or equal to this value. Set on a Folder, the value applies to every File reached through that Folder's contains-chain (subject to inheritPermissions). Materialised into the platform-maintained _effectiveDevices property on each File.";
+    dcterms:valid "start=2026-05-22;";
+    dcterms:creator "Almato AG";
+.

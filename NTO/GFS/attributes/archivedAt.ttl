@@ -1,0 +1,14 @@
+@prefix ogit:           <http://www.purl.org/ogit/> .
+@prefix ogit.GFS:       <http://www.purl.org/ogit/GFS/> .
+@prefix owl:            <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:           <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:        <http://purl.org/dc/terms/> .
+
+ogit.GFS:archivedAt
+    a owl:DatatypeProperty;
+    rdfs:subPropertyOf ogit:Attribute;
+    rdfs:label "archivedAt";
+    dcterms:description "Soft-delete marker on File, Folder, or Symlink. When set, the vertex is hidden from default listings but remains in the graph for audit and possible restore.";
+    dcterms:valid "start=2026-05-21;";
+    dcterms:creator "Almato AG";
+.

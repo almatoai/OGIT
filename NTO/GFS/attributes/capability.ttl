@@ -1,0 +1,16 @@
+@prefix ogit:           <http://www.purl.org/ogit/> .
+@prefix ogit.GFS:       <http://www.purl.org/ogit/GFS/> .
+@prefix owl:            <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:           <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:        <http://purl.org/dc/terms/> .
+
+ogit.GFS:capability
+    a owl:DatatypeProperty;
+    rdfs:subPropertyOf ogit:Attribute;
+    rdfs:label "capability";
+    dcterms:description "Capability set as a vertex property on ogit.GFS:ShareLink. Subset of: read, write, share, admin, delete. Drives what the token holder is allowed to do via the public-share gateway. Bardioc edges cannot carry attributes, so capability lives on the ShareLink vertex, not on any edge.";
+    dcterms:valid "start=2026-05-21;";
+    dcterms:creator "Almato AG";
+    ogit:validation-parameter "read,write,share,admin,delete";
+    ogit:validation-type "fixed";
+.
