@@ -11,5 +11,5 @@ ogit.Utilities.Emissions:submittedTo
     rdfs:label "submittedTo";
     dcterms:description "Asserts that an EmissionInventory is submitted to the target regulatory authority. Cardinality: many2one.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

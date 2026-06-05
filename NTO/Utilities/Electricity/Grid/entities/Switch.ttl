@@ -14,7 +14,7 @@ ogit.Utilities.Electricity.Grid:Switch
     rdfs:label "Switch";
     dcterms:description "ABSTRACT: CIM cim:Switch. Abstract parent of Breaker, Disconnector, LoadBreakSwitch, GroundDisconnector, Jumper, Fuse. Inherits descriptionText, aliasName, ogit:status, ogit:source, ogit:sourceId from PowerSystemResource via materialised inheritance at TTL generation time.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

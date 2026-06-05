@@ -13,7 +13,7 @@ ogit.Utilities.Electricity.Grid:TopologicalNode
     rdfs:label "TopologicalNode";
     dcterms:description "CIM cim:TopologicalNode. TP-profile collapsed-bus representation derived from ConnectivityNode topology after switching state is applied.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

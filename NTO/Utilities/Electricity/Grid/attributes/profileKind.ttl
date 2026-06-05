@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Grid:profileKind
     rdfs:label "profileKind";
     dcterms:description "Profile semantics: per_hour_of_week (168-entry weekly pattern), per_typical_day (24-entry daily pattern), per_day_of_year (8760-entry annual pattern), custom.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Grid:polarPairCount
     rdfs:label "polarPairCount";
     dcterms:description "Number of magnetic pole pairs of the machine.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

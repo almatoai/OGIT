@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Grid:angleRefTopologicalNodeRef
     rdfs:label "angleRefTopologicalNodeRef";
     dcterms:description "Reference to the TopologicalNode chosen as voltage-angle reference for the island.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

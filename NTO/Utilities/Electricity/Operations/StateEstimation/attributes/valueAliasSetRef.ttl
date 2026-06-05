@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Operations.StateEstimation:valueAliasSetRef
     rdfs:label "valueAliasSetRef";
     dcterms:description "Reference to a ValueAliasSet vertex mapping integer codes to state labels (for discrete measurements).";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

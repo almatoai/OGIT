@@ -1,15 +1,17 @@
 @prefix dcterms:                                   <http://purl.org/dc/terms/> .
 @prefix ogit:                                      <http://www.purl.org/ogit/> .
-@prefix ogit.Utilities.Electricity.Operations.Reserves: <http://www.purl.org/ogit/Utilities/Electricity/Operations/Reserves/> .
+@prefix ogit.Utilities.Electricity.Operations:     <http://www.purl.org/ogit/Utilities/Electricity/Operations/> .
 @prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
 
-ogit.Utilities.Electricity.Operations.Reserves:qualifiedProducts
+ogit.Utilities.Electricity.Operations:analysisNetworkKind
     a owl:DatatypeProperty;
     rdfs:subPropertyOf ogit:Attribute;
-    rdfs:label "qualifiedProducts";
-    dcterms:description "Comma-separated list of qualified reserve products: FCR, aFRR, mFRR, RR.";
+    rdfs:label "analysisNetworkKind";
+    dcterms:description "Network-model variant: AC (full three-phase or positive-sequence AC) or DC (linearised DC power-flow / DC OPF). Orthogonal to analysisTimeKind per Section 11.1a Regel 7.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "AC,DC";
 .

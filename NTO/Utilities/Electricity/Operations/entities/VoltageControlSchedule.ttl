@@ -15,7 +15,7 @@ ogit.Utilities.Electricity.Operations:VoltageControlSchedule
     rdfs:label "VoltageControlSchedule";
     dcterms:description "CIM cim:VoltageControlZone-related. Per-zone voltage set-points across time. Anchor + sgo:Timeseries. Inherits scheduleId / scheduleKind / validFrom / validUntil / granularitySeconds from Utilities:Schedule (materialised at TTL-phase per Architecture Section 5.1c).";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

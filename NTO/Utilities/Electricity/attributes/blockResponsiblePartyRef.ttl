@@ -11,5 +11,5 @@ ogit.Utilities.Electricity:blockResponsiblePartyRef
     rdfs:label "blockResponsiblePartyRef";
     dcterms:description "Reference to the NetworkOperator vertex acting as block coordinator.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

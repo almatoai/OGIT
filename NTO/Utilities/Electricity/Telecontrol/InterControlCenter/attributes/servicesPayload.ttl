@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:servicesPayload
     rdfs:label "servicesPayload";
     dcterms:description "JSON-encoded list of TASE.2 services supported by the block.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

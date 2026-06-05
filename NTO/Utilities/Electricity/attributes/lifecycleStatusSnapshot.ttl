@@ -11,5 +11,5 @@ ogit.Utilities.Electricity:lifecycleStatusSnapshot
     rdfs:label "lifecycleStatusSnapshot";
     dcterms:description "Current lifecycle phase of the unit: operational, reserve, mothballed, decommissioned. Snapshot value; the full status-change history lives on a sgo:Timeseries attached via generates.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

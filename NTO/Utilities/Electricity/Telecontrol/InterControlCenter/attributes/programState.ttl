@@ -11,5 +11,7 @@ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:programState
     rdfs:label "programState";
     dcterms:description "Program state: idle, ready, running, stopped, finished, unavailable.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "idle,ready,running,stopped,finished,unavailable";
 .

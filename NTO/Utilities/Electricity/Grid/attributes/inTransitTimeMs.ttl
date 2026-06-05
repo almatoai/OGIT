@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Grid:inTransitTimeMs
     rdfs:label "inTransitTimeMs";
     dcterms:description "Time in milliseconds for the breaker to transit from one state to another.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

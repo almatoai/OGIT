@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:identifies
     rdfs:label "identifies";
     dcterms:description "Asserts that an MmsObjectReference identifies the target TASE.2 object. Cardinality: many2one.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

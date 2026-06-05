@@ -11,5 +11,5 @@ ogit.Utilities.Electricity:controlResponseKind
     rdfs:label "controlResponseKind";
     dcterms:description "Highest control reserve product the unit can deliver: primary (FCR), secondary (aFRR), tertiary (mFRR / RR), none.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

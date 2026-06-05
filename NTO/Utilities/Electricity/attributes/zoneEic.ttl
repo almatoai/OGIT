@@ -11,5 +11,5 @@ ogit.Utilities.Electricity:zoneEic
     rdfs:label "zoneEic";
     dcterms:description "ENTSO-E EIC Z-code or X-code identifying the bidding zone.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

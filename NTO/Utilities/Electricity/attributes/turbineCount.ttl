@@ -11,5 +11,5 @@ ogit.Utilities.Electricity:turbineCount
     rdfs:label "turbineCount";
     dcterms:description "Number of turbines in the unit. Wind aggregations and CCGT trains both have multiple turbines per nameplate.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

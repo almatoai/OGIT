@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Operations.Reserves:minRuntimeMin
     rdfs:label "minRuntimeMin";
     dcterms:description "Minimum run-time in minutes required between starts.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

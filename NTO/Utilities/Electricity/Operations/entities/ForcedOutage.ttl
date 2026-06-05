@@ -15,7 +15,7 @@ ogit.Utilities.Electricity.Operations:ForcedOutage
     rdfs:label "ForcedOutage";
     dcterms:description "Unplanned-outage variant from fault. Adds fault classification, location, duration, auto-reclose attempts, and the protection-action reference.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

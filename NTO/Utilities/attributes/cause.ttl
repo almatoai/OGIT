@@ -11,5 +11,5 @@ ogit.Utilities:cause
     rdfs:label "cause";
     dcterms:description "Free-text cause description; complemented by the causedBy verb for structured causation.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

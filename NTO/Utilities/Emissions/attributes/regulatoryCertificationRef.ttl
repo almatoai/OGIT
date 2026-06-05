@@ -11,5 +11,5 @@ ogit.Utilities.Emissions:regulatoryCertificationRef
     rdfs:label "regulatoryCertificationRef";
     dcterms:description "Reference to the regulatory certification that approves this measurement device for compliance reporting.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

@@ -11,5 +11,5 @@ ogit.Utilities.Electricity:nominalQMvar
     rdfs:label "nominalQMvar";
     dcterms:description "Nominal reactive-power consumption of the load in MVAr.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

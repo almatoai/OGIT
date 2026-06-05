@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Operations:defensePlanActivatedRef
     rdfs:label "defensePlanActivatedRef";
     dcterms:description "Reference to the DefensePlan that was activated as part of the state transition.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

@@ -13,7 +13,7 @@ ogit.Utilities.Electricity.Market:MarketRole
     rdfs:label "MarketRole";
     dcterms:description "ENTSO-E EIC market roles. A vertex per role kind so MarketParticipants can hold multiple authoritative roles simultaneously through heldBy edges. The role_kind attribute on MarketParticipant is a convenience flat copy; the authoritative role assignment is the MarketRole vertex.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

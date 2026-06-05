@@ -11,5 +11,7 @@ ogit.Utilities.Electricity.Operations:notificationStatus
     rdfs:label "notificationStatus";
     dcterms:description "Notification status: pending, notified, escalated, closed.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "pending,notified,escalated,closed";
 .

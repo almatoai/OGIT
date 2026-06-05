@@ -13,7 +13,7 @@ ogit.Utilities:Outage
     rdfs:label "Outage";
     dcterms:description "ABSTRACT: Cross-domain operational concept. CIM 61968 has an Outage class; the same idea applies to gas valves, water mains, heat exchangers. Holds outage identity, kind, timing window, and cause; concrete subtypes (PlannedOutage, ForcedOutage) live in Electricity.Operations.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

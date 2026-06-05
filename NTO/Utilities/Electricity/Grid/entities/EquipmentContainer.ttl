@@ -14,7 +14,7 @@ ogit.Utilities.Electricity.Grid:EquipmentContainer
     rdfs:label "EquipmentContainer";
     dcterms:description "ABSTRACT: CIM cim:EquipmentContainer. Abstract container for Equipment instances. Parent of Substation, VoltageLevel, Bay, Line, DCConverterUnit. Carries no class-specific delta beyond PSR; the materialised TTL inherits PSR's `mrid`, `ogit:name`, `descriptionText`, `aliasName`, `commissioningDate`, etc. per Architecture Section 5.1c. Listed here only for the inheritance chain.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

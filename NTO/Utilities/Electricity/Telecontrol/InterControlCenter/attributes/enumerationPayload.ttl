@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:enumerationPayload
     rdfs:label "enumerationPayload";
     dcterms:description "JSON-encoded array of integer to state-name mappings.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

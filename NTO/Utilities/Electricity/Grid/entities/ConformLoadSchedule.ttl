@@ -14,7 +14,7 @@ ogit.Utilities.Electricity.Grid:ConformLoadSchedule
     rdfs:label "ConformLoadSchedule";
     dcterms:description "CIM cim:ConformLoadSchedule. CGMES EQ-profile time-pattern carrier for a ConformLoadGroup: the standard load curve (per-hour-of-week or per-typical-day P / Q multipliers) that all ConformLoads in the group share. Anchor + sgo:Timeseries -- the per-timestamp multipliers ride on a sgo:Timeseries attached via `ogit:generates`. Inherits scheduleId / scheduleKind / validFrom / validUntil / granularitySeconds from Utilities:Schedule.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
@@ -28,7 +28,6 @@ ogit.Utilities.Electricity.Grid:ConformLoadSchedule
         ogit.Utilities:granularitySeconds
     );
     ogit:optional-attributes (
-        ogit.Utilities:granularitySeconds
         ogit.Utilities.Electricity.Grid:profileKind
         ogit:timeZone
         ogit:currency

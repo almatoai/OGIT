@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Diagram:usedBy
     rdfs:label "usedBy";
     dcterms:description "Generic reverse-direction discovery verb: the source (Curve / CoordinateSystem / ColorScheme) is used by the target. Cardinality: many2many.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

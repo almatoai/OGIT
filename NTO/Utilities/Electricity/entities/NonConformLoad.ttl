@@ -13,7 +13,7 @@ ogit.Utilities.Electricity:NonConformLoad
     rdfs:label "NonConformLoad";
     dcterms:description "CIM cim:NonConformLoad. EnergyConsumer with an individually defined load profile rather than a standard curve. The bespoke P and Q profiles live on sgo:Timeseries channels attached via generates.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

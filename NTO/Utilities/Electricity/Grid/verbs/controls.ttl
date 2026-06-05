@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Grid:controls
     rdfs:label "controls";
     dcterms:description "Asserts that a RegulatingControl or TapChanger controls the target equipment (TransformerEnd, ShuntCompensator, StaticVarCompensator). Cardinality: one2many.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Legacy:parentTransformerRef
     rdfs:label "parentTransformerRef";
     dcterms:description "Reference to the parent UcteTwoWindingTransformer or UcteThreeWindingTransformer vertex of a regulation record.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

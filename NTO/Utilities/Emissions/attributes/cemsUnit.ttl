@@ -11,5 +11,5 @@ ogit.Utilities.Emissions:cemsUnit
     rdfs:label "cemsUnit";
     dcterms:description "Unit of the measured quantity: mg/Nm3, kg/h, ppm, ug/Nm3.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

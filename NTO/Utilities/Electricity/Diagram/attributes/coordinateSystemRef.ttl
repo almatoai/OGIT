@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Diagram:coordinateSystemRef
     rdfs:label "coordinateSystemRef";
     dcterms:description "Reference to the CoordinateSystem vertex used by the GeographicalLocation.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

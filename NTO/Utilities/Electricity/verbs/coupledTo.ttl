@@ -11,5 +11,5 @@ ogit.Utilities.Electricity:coupledTo
     rdfs:label "coupledTo";
     dcterms:description "Asserts that two BiddingZones are market-coupled (SDAC, SIDC, regional coupling). Cardinality: many2many.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

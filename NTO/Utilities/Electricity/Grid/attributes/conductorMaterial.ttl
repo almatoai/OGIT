@@ -9,7 +9,9 @@ ogit.Utilities.Electricity.Grid:conductorMaterial
     a owl:DatatypeProperty;
     rdfs:subPropertyOf ogit:Attribute;
     rdfs:label "conductorMaterial";
-    dcterms:description "Conductor material: aluminium, copper, acsr, accc, aaac, aaa, aluminum_alloy.";
+    dcterms:description "Conductor material: aluminium, copper, ACSR (Aluminium Conductor Steel Reinforced), ACCC (Aluminium Conductor Composite Core), AAAC (All Aluminium Alloy Conductor), ACAR (Aluminium Conductor Alloy Reinforced), AACSR (Aluminium Alloy Conductor Steel Reinforced), aluminium_alloy, OPGW (Optical Ground Wire per CGMES Annex F), steel (steel earth wires). Industry acronyms ACSR / ACCC / AAAC / ACAR / AACSR / OPGW use uppercase per Section 11.1a Regel 5.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "aluminium,copper,ACSR,ACCC,AAAC,ACAR,AACSR,aluminium_alloy,OPGW,steel";
 .

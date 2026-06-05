@@ -13,7 +13,7 @@ ogit.Utilities.Electricity.Grid:BoundaryPoint
     rdfs:label "BoundaryPoint";
     dcterms:description "ENTSO-E CGMES Boundary Set extension. Marks a ConnectivityNode as a CGMES boundary point used for cross-TSO topology assembly.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

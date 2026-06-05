@@ -9,7 +9,9 @@ ogit.Utilities.Electricity.Grid:shuntKind
     a owl:DatatypeProperty;
     rdfs:subPropertyOf ogit:Attribute;
     rdfs:label "shuntKind";
-    dcterms:description "Shunt-compensator kind: capacitor, reactor, shuntCompensatorLinear, shuntCompensatorNonLinear.";
+    dcterms:description "Shunt-compensator kind (NTO domain-autonomous enum, not directly mirrored from a single CIM enum -- CIM models shunt classification via subtype classes ShuntCompensator, LinearShuntCompensator, NonlinearShuntCompensator). Values: capacitor, reactor (the physical compensator type) plus shuntCompensatorLinear, shuntCompensatorNonLinear (the CIM model variant). Mixed casing reflects the dual origin: capacitor / reactor are domain-new lowercase, shuntCompensatorLinear / shuntCompensatorNonLinear follow the CIM class-name camelCase form.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "capacitor,reactor,shuntCompensatorLinear,shuntCompensatorNonLinear";
 .

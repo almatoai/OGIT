@@ -9,7 +9,9 @@ ogit.Utilities.Electricity.Grid:substationKind
     a owl:DatatypeProperty;
     rdfs:subPropertyOf ogit:Attribute;
     rdfs:label "substationKind";
-    dcterms:description "Substation classification: transmission, distribution, switching, converter, customer, mobile.";
+    dcterms:description "Substation classification: transmission, distribution, switching, converter, customer, mobile (NTO additions for service substations and mobile units), islandIsolating, industrialFacility, generationStation. CIM SubstationKind core (transmission / distribution / switching / converter / industrialFacility / islandIsolating) is included; customer, mobile and generationStation are NTO-domain-autonomous extensions.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "transmission,distribution,switching,converter,customer,mobile,islandIsolating,industrialFacility,generationStation";
 .

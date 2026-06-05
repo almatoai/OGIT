@@ -13,7 +13,7 @@ ogit.Utilities.Emissions:EmissionMeasurement
     rdfs:label "EmissionMeasurement";
     dcterms:description "Continuous-emission-monitoring-system (CEMS) measurement series on a chimney, or vehicle / mobile-source measurement series. Anchor-vertex plus sgo:Timeseries: the EmissionMeasurement vertex represents one measurement point with its metadata (subject, substance, unit, granularity, device, calibration reference). The timestamped quantity values live on the attached sgo:Timeseries. Per-sample quality flags ride with the TSDB entries, not as vertex attributes.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

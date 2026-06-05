@@ -11,5 +11,5 @@ ogit.Utilities.Electricity:sequenceNumber
     rdfs:label "sequenceNumber";
     dcterms:description "Ordinal sequence number on a parent object. Used by Grid:Terminal (CIM Terminal.sequenceNumber on parent equipment), Diagram:DiagramObjectPoint and Diagram:PositionPoint (point order in the polyline), Operations:SwitchAction (step order inside a SwitchingPlan). Lives in Utilities.Electricity as the lowest common ancestor of these three sub-namespaces.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

@@ -14,14 +14,15 @@ ogit.Utilities.Electricity.Operations:ContingencyAnalysis
     rdfs:label "ContingencyAnalysis";
     dcterms:description "NC SO Article 33. The N-1 (or N-k) security study run on a snapshot. The pass/fail counts, risk metrics, and result summary live on a sgo:Timeseries attached via generates, not as a JSON payload on this vertex (Section 7a).";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
         ogit.Utilities.Electricity.Operations:analysisId
         ogit.Utilities:subjectRef
         ogit.Utilities.Electricity.Operations:snapshotTime
-        ogit.Utilities.Electricity.Operations:analysisKind
+        ogit.Utilities.Electricity.Operations:analysisTimeKind
+        ogit.Utilities.Electricity.Operations:analysisNetworkKind
     );
     ogit:optional-attributes (
         ogit.Utilities.Electricity:toolName

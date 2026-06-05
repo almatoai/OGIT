@@ -11,5 +11,5 @@ ogit.Utilities.Electricity:inertiaConstantHS
     rdfs:label "inertiaConstantHS";
     dcterms:description "Kundur inertia constant H in seconds, as used in standard power-system dynamics textbooks. Defined as the ratio of stored kinetic energy at synchronous speed to the rated apparent power of the machine.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

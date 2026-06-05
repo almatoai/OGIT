@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Grid:minQMvar
     rdfs:label "minQMvar";
     dcterms:description "Minimum reactive power in MVAr.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

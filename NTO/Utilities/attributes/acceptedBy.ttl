@@ -11,5 +11,5 @@ ogit.Utilities:acceptedBy
     rdfs:label "acceptedBy";
     dcterms:description "Reference to the NetworkOperator (or market operator) that accepted the schedule.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

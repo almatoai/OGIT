@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Grid:parentLoadGroupRef
     rdfs:label "parentLoadGroupRef";
     dcterms:description "Reference to the parent ConformLoadGroup or NonConformLoadGroup vertex that a ConformLoadSchedule belongs to.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

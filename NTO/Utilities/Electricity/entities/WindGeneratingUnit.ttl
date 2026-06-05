@@ -14,7 +14,7 @@ ogit.Utilities.Electricity:WindGeneratingUnit
     rdfs:label "WindGeneratingUnit";
     dcterms:description "CIM cim:WindGeneratingUnit. Onshore, offshore-fixed, offshore-floating. Adds turbine count, rotor and hub geometry, cut-in / cut-out / rated wind speeds, and offshore-specific parameters (water body, depth, foundation type, connection technology).";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

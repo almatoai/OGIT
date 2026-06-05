@@ -14,7 +14,7 @@ ogit.Utilities.Electricity:BiddingZoneMembership
     rdfs:label "BiddingZoneMembership";
     dcterms:description "Reified membership of a GeneratingUnit / EnergyStorage / EnergyConsumer / Substation in a BiddingZone over a validity window. Reified because bidding zones are redrawn periodically (regulatory action, market-coupling change). Concept Section 8.4.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

@@ -12,7 +12,7 @@ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:AuthenticationRecord
     rdfs:label "AuthenticationRecord";
     dcterms:description "TASE.2 authentication exchanges over the connection. An audit anchor for sessions; the per-event sequence lives as sgo:Timeseries.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

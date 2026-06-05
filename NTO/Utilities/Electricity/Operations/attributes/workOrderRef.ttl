@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Operations:workOrderRef
     rdfs:label "workOrderRef";
     dcterms:description "Reference to a WorkOrder vertex.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

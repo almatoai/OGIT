@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Grid:terminalOf
     rdfs:label "terminalOf";
     dcterms:description "Inverse of hasTerminal: the Terminal belongs to the ConductingEquipment / Switch / TransformerEnd. Cardinality: many2one.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

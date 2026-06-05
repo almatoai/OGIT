@@ -11,5 +11,5 @@ ogit.Utilities.Electricity:interconnectorRef
     rdfs:label "interconnectorRef";
     dcterms:description "Reference to the Interconnector vertex this tie-flow is attached to (when applicable).";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

@@ -11,5 +11,5 @@ ogit.Utilities:granularitySeconds
     rdfs:label "granularitySeconds";
     dcterms:description "Sampling or scheduling granularity in seconds (900 for 15-min, 3600 for hourly, 86400 for daily).";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

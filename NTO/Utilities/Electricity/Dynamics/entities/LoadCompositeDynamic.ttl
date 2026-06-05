@@ -14,7 +14,7 @@ ogit.Utilities.Electricity.Dynamics:LoadCompositeDynamic
     rdfs:label "LoadCompositeDynamic";
     dcterms:description "Composite dynamic load: static load plus induction motor share.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

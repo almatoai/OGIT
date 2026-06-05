@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Operations.Reserves:clearedIn
     rdfs:label "clearedIn";
     dcterms:description "Asserts that an offering / bid is cleared in the target Market. Cardinality: many2one.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

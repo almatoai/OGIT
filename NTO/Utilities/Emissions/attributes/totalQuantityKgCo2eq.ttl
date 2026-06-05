@@ -11,5 +11,5 @@ ogit.Utilities.Emissions:totalQuantityKgCo2eq
     rdfs:label "totalQuantityKgCo2eq";
     dcterms:description "Total CO2-equivalent quantity in kg across all entries in the inventory.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

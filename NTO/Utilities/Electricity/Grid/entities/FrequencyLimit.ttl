@@ -15,7 +15,7 @@ ogit.Utilities.Electricity.Grid:FrequencyLimit
     rdfs:label "FrequencyLimit";
     dcterms:description "ENTSO-E NC SO frequency limit. Typed limit on system frequency.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

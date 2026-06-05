@@ -14,7 +14,7 @@ ogit.Utilities.Electricity.Dynamics:LoadStaticConstantCurrent
     rdfs:label "LoadStaticConstantCurrent";
     dcterms:description "Constant-current load model: P, Q scale linearly with voltage.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

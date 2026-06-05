@@ -15,7 +15,7 @@ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:IndicationPoint
     rdfs:label "IndicationPoint";
     dcterms:description "ABSTRACT: TASE.2 IndicationPoint. Abstract parent of TASE.2 typed points (single, double, discrete, real, state).";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

@@ -13,7 +13,7 @@ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:ConditionVariable
     rdfs:label "ConditionVariable";
     dcterms:description "TASE.2 Condition Variable. Server-side state variable that can trigger transfer-set notifications.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

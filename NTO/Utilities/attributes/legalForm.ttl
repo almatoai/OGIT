@@ -11,5 +11,5 @@ ogit.Utilities:legalForm
     rdfs:label "legalForm";
     dcterms:description "Legal form of the organisation: AG, GmbH, S.A., Ltd, Plc, B.V., SE, etc.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

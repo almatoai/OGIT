@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:itemName
     rdfs:label "itemName";
     dcterms:description "MMS item name within the domain.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

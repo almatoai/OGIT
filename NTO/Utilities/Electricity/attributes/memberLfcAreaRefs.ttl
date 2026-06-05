@@ -11,5 +11,5 @@ ogit.Utilities.Electricity:memberLfcAreaRefs
     rdfs:label "memberLfcAreaRefs";
     dcterms:description "Comma-separated list of LFCArea references that make up this LFC block.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

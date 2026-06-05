@@ -11,5 +11,5 @@ ogit.Utilities.Electricity:areaName
     rdfs:label "areaName";
     dcterms:description "Display name of the area (e.g. 'TenneT Germany', 'Continental Europe').";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

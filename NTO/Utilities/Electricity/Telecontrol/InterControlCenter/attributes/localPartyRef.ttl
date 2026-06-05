@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:localPartyRef
     rdfs:label "localPartyRef";
     dcterms:description "Reference to the local ControlCenter vertex of an inter-center agreement / association.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

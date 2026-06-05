@@ -12,7 +12,7 @@ ogit.Utilities.Electricity:TieFlow
     rdfs:label "TieFlow";
     dcterms:description "CIM cim:TieFlow. The signed-flow contribution of one Terminal toward one ControlArea net-interchange computation. Captures the convention 'does positive measurement direction count as inflow to this control area'.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

@@ -11,5 +11,7 @@ ogit.Utilities.Electricity.Market:productKind
     rdfs:label "productKind";
     dcterms:description "Product macro class: energy, capacity, balancing_capacity, balancing_energy, congestion_capacity.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "energy,capacity,balancing_capacity,balancing_energy,congestion_capacity";
 .

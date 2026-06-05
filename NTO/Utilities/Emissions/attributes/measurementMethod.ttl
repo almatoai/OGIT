@@ -11,5 +11,5 @@ ogit.Utilities.Emissions:measurementMethod
     rdfs:label "measurementMethod";
     dcterms:description "How the quantity was determined: direct (CEMS), calculation (fuel-input * factor), estimation (model-based).";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

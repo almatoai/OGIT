@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Dynamics:motorShare
     rdfs:label "motorShare";
     dcterms:description "Share (0..1) of induction-motor load in a composite dynamic load.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

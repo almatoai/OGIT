@@ -11,5 +11,5 @@ ogit.Utilities:gwpFactor
     rdfs:label "gwpFactor";
     dcterms:description "Global-warming potential of the carrier as kgCO2eq per kg (or per m3 for gases) over the standard 100-year horizon (IPCC AR6 default).";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

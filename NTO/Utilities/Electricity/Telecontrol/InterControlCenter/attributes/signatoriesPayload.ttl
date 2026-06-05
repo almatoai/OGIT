@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:signatoriesPayload
     rdfs:label "signatoriesPayload";
     dcterms:description "JSON-encoded list of signatory representatives.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

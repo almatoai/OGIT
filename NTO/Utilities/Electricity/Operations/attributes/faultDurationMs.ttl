@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Operations:faultDurationMs
     rdfs:label "faultDurationMs";
     dcterms:description "Fault duration in milliseconds.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

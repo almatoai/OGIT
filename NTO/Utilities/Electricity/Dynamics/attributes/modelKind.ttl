@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Dynamics:modelKind
     rdfs:label "modelKind";
     dcterms:description "Dynamic-model subtype identifier per CIM DY profile (e.g. classical, gentpf, esac1a, govst1, pss1a).";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

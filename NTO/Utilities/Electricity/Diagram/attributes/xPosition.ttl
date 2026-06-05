@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Diagram:xPosition
     rdfs:label "xPosition";
     dcterms:description "X-coordinate of the position point (units depend on the coordinate system / diagram style).";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

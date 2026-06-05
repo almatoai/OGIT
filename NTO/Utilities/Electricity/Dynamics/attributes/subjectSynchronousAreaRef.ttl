@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Dynamics:subjectSynchronousAreaRef
     rdfs:label "subjectSynchronousAreaRef";
     dcterms:description "Reference to the SynchronousArea vertex the simulation case studies.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

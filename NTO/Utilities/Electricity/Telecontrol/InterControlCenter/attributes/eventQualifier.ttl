@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:eventQualifier
     rdfs:label "eventQualifier";
     dcterms:description "TASE.2 protection event qualifier (start, trip, reset, alarm).";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

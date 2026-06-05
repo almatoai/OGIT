@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Grid:nonlinearShuntPointPayloadRef
     rdfs:label "nonlinearShuntPointPayloadRef";
     dcterms:description "Reference to the sgo:Series carrying the (section, b, g) data points of a NonlinearShuntCompensator.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

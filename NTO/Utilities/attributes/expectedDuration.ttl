@@ -11,5 +11,5 @@ ogit.Utilities:expectedDuration
     rdfs:label "expectedDuration";
     dcterms:description "Expected duration in seconds at the time of declaration.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

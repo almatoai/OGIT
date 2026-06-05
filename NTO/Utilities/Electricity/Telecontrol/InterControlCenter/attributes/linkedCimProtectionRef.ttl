@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:linkedCimProtectionRef
     rdfs:label "linkedCimProtectionRef";
     dcterms:description "Reference to the CIM ProtectionEquipment vertex this TASE.2 view mirrors.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

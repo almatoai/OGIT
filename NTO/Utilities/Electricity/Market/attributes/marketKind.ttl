@@ -11,5 +11,7 @@ ogit.Utilities.Electricity.Market:marketKind
     rdfs:label "marketKind";
     dcterms:description "Market kind: day_ahead, intraday, balancing_capacity, balancing_energy, cross_zonal_capacity.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "day_ahead,intraday,balancing_capacity,balancing_energy,cross_zonal_capacity";
 .

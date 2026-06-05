@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Operations:producedBy
     rdfs:label "producedBy";
     dcterms:description "Asserts that a result vertex (ContingencyAnalysis, derived dataset) was produced by the target Operator / Tool / Person. Cardinality: many2one.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Operations.Reserves:qualificationProducts
     rdfs:label "qualificationProducts";
     dcterms:description "Comma-separated list of products the BSP is qualified for.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

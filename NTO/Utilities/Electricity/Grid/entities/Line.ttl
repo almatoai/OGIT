@@ -14,7 +14,7 @@ ogit.Utilities.Electricity.Grid:Line
     rdfs:label "Line";
     dcterms:description "CIM cim:Line. Grouping container for one or more ACLineSegments and DCLineSegments forming one physical line corridor.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

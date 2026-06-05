@@ -14,7 +14,7 @@ ogit.Utilities.Emissions:GreenhouseGasEmission
     rdfs:label "GreenhouseGasEmission";
     dcterms:description "One emission record linking an emitter (Equipment / Plant / Vehicle) to a quantity of greenhouse gas over a reporting period. Reported under IPCC Tier 1/2/3, GHG Protocol, EU ETS, or a regional standard.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

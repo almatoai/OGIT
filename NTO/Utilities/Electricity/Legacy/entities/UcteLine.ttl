@@ -13,7 +13,7 @@ ogit.Utilities.Electricity.Legacy:UcteLine
     rdfs:label "UcteLine";
     dcterms:description "UCTE-DEF L record. AC line connecting two UcteNodes. Maps forward to a CGMES ACLineSegment.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

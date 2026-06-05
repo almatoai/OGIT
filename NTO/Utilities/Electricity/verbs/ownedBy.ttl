@@ -11,5 +11,5 @@ ogit.Utilities.Electricity:ownedBy
     rdfs:label "ownedBy";
     dcterms:description "Asserts that the source PowerSystemResource is legally owned by the target Organization or NetworkOperator. Distinguished from operatedBy (operational responsibility) and from heldBy on OwnershipShare (reified, share-fraction-bearing). Cardinality: many2many.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

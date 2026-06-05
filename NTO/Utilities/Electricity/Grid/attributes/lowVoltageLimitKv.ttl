@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Grid:lowVoltageLimitKv
     rdfs:label "lowVoltageLimitKv";
     dcterms:description "Lower operating voltage limit in kV for the voltage level.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

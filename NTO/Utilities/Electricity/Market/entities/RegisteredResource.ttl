@@ -13,7 +13,7 @@ ogit.Utilities.Electricity.Market:RegisteredResource
     rdfs:label "RegisteredResource";
     dcterms:description "NC EB / NC CACM Article 4 RegisteredResource. Registered for participation in markets, distinct from the physical equipment. The physical_subject_ref points back to the underlying GeneratingUnit / EnergyStorage / EnergyConsumer.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

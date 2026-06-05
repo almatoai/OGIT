@@ -13,7 +13,7 @@ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:Account
     rdfs:label "Account";
     dcterms:description "TASE.2 Account. Connection-level account for authentication.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

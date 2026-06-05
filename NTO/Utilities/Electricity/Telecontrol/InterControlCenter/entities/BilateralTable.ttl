@@ -13,7 +13,7 @@ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:BilateralTable
     rdfs:label "BilateralTable";
     dcterms:description "TASE.2 Bilateral Agreement. The contract between two control centers identifying which data sets, which points, and under which conformance blocks are exchanged.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

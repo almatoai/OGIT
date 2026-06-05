@@ -11,5 +11,5 @@ ogit.Utilities.Electricity:areaEic
     rdfs:label "areaEic";
     dcterms:description "ENTSO-E EIC X-code identifying the area (16-character format with check digit).";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

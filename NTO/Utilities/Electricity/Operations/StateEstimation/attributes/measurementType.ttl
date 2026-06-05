@@ -9,7 +9,9 @@ ogit.Utilities.Electricity.Operations.StateEstimation:measurementType
     a owl:DatatypeProperty;
     rdfs:subPropertyOf ogit:Attribute;
     rdfs:label "measurementType";
-    dcterms:description "Measurement type per CIM: ThreePhaseActivePower, Voltage, Current, Frequency, ApparentPower, ReactivePower, Energy, Temperature, etc.";
+    dcterms:description "Measurement type, NTO domain-autonomous curated subset of CIM measurement-type strings frequently observed in CGMES instance data: ThreePhaseActivePower, Voltage, Current, Frequency, ApparentPower, ReactivePower, Energy, Temperature. The CIM cim:Measurement.measurementType is itself an open string in CIM (no closed enum); this fixed list is the NTO stable contract. Revision-newer or vendor-specific types ride on the companion attribute `measurementTypeExt` (Section 11.1a Regel 8 fixed-core / open-extension split).";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "ThreePhaseActivePower,Voltage,Current,Frequency,ApparentPower,ReactivePower,Energy,Temperature";
 .

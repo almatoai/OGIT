@@ -9,7 +9,9 @@ ogit.Utilities.Electricity.Grid:protectionKind
     a owl:DatatypeProperty;
     rdfs:subPropertyOf ogit:Attribute;
     rdfs:label "protectionKind";
-    dcterms:description "Protection kind: distance, differential, overcurrent, earthFault, frequency, voltage, busbar, lineCurrent, transformerDifferential, generator, motor, busbarBlocking.";
+    dcterms:description "Protection kind: distance, differential, overcurrent, earthFault, frequency, voltage, busbar, lineCurrent, transformerDifferential, generator, motor, busbarBlocking, underFrequency, overFrequency, underVoltage, overVoltage, rateOfChangeOfFrequency, lossOfExcitation, reversePower, statorEarthFault, lossOfMains, arcProtection.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "distance,differential,overcurrent,earthFault,frequency,voltage,busbar,lineCurrent,transformerDifferential,generator,motor,busbarBlocking,underFrequency,overFrequency,underVoltage,overVoltage,rateOfChangeOfFrequency,lossOfExcitation,reversePower,statorEarthFault,lossOfMains,arcProtection";
 .

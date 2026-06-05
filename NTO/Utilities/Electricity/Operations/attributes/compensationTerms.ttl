@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Operations:compensationTerms
     rdfs:label "compensationTerms";
     dcterms:description "Free-text compensation terms or reference to contract clause.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

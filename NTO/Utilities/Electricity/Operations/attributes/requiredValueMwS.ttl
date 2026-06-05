@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Operations:requiredValueMwS
     rdfs:label "requiredValueMwS";
     dcterms:description "Required minimum system inertia in MW.s (energy units of kinetic stored energy).";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

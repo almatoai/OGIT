@@ -11,5 +11,7 @@ ogit.Utilities:conversionKind
     rdfs:label "conversionKind";
     dcterms:description "Conversion device classification: electrolyser, fuel_cell, heat_pump, power_to_gas, power_to_heat, power_to_liquid, methanation, chp_thermal, district_heat_chiller, gas_engine, gas_turbine_chp.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "electrolyser,fuel_cell,heat_pump,power_to_gas,power_to_heat,power_to_liquid,methanation,chp_thermal,district_heat_chiller,gas_engine,gas_turbine_chp";
 .

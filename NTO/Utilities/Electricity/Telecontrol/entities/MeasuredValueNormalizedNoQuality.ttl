@@ -14,7 +14,7 @@ ogit.Utilities.Electricity.Telecontrol:MeasuredValueNormalizedNoQuality
     rdfs:label "MeasuredValueNormalizedNoQuality";
     dcterms:description "IEC 60870-5-101/104 ASDU 21 (M_ME_ND_1). Measured value, normalized, without quality descriptor. Distinct from ASDU 9/10/34 because the per-sample quality flags are absent by definition.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Legacy:ucteUnit
     rdfs:label "ucteUnit";
     dcterms:description "Unit of the UCTE schedule values (MW).";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

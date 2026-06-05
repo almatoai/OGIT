@@ -11,5 +11,5 @@ ogit.Utilities.Electricity:minDownTimeH
     rdfs:label "minDownTimeH";
     dcterms:description "Minimum down time in hours required between shutdowns and the next start (thermal units).";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

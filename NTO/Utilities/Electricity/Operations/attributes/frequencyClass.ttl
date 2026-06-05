@@ -11,5 +11,7 @@ ogit.Utilities.Electricity.Operations:frequencyClass
     rdfs:label "frequencyClass";
     dcterms:description "Frequency-class of the contingency: frequent, infrequent, rare.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "frequent,infrequent,rare";
 .

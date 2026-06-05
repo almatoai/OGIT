@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Grid:normalValueKv
     rdfs:label "normalValueKv";
     dcterms:description "Normal operating voltage value in kV.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

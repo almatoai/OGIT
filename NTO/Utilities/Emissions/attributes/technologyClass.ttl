@@ -9,7 +9,9 @@ ogit.Utilities.Emissions:technologyClass
     a owl:DatatypeProperty;
     rdfs:subPropertyOf ogit:Attribute;
     rdfs:label "technologyClass";
-    dcterms:description "Technology class: coal_supercritical, ccgt, ocgt, lignite, hydro, nuclear, wind, solar_pv, geothermal, biomass, oil, refuse_derived, gas_engine_chp.";
+    dcterms:description "Technology class: coal_supercritical, coal_subcritical, coal_ultrasupercritical, ccgt, ocgt, lignite, hydro, nuclear, wind, solar_pv, geothermal, biomass, oil, refuse_derived, gas_engine_chp.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "coal_supercritical,coal_subcritical,coal_ultrasupercritical,ccgt,ocgt,lignite,hydro,nuclear,wind,solar_pv,geothermal,biomass,oil,refuse_derived,gas_engine_chp";
 .

@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Grid:hasBaseVoltage
     rdfs:label "hasBaseVoltage";
     dcterms:description "Asserts that the source has the target BaseVoltage as its nominal voltage reference. Cardinality: many2one.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

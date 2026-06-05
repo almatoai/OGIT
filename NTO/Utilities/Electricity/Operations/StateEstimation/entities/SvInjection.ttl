@@ -14,7 +14,7 @@ ogit.Utilities.Electricity.Operations.StateEstimation:SvInjection
     rdfs:label "SvInjection";
     dcterms:description "CIM cim:SvInjection. SV-profile injection mismatch (P and Q residual) at a TopologicalNode. Used for state-estimation residuals.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

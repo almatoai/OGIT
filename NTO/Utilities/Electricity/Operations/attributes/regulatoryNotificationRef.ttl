@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Operations:regulatoryNotificationRef
     rdfs:label "regulatoryNotificationRef";
     dcterms:description "Reference to the regulatory notification associated with the planned outage.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

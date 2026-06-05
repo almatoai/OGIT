@@ -11,5 +11,5 @@ ogit.Utilities.Emissions:measurementDeviceRef
     rdfs:label "measurementDeviceRef";
     dcterms:description "Reference to the SensorDevice or CEMS instrument vertex.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

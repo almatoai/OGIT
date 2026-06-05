@@ -11,5 +11,7 @@ ogit.Utilities.Electricity:windKind
     rdfs:label "windKind";
     dcterms:description "Wind-turbine siting kind: onshore, offshore_fixed, offshore_floating.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "onshore,offshore_fixed,offshore_floating";
 .

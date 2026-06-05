@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Operations.Reserves:qualificationDate
     rdfs:label "qualificationDate";
     dcterms:description "Date of last qualification approval (ISO 8601 date).";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

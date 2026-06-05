@@ -14,7 +14,7 @@ ogit.Utilities.Electricity.Operations.Reserves:FcrOffering
     rdfs:label "FcrOffering";
     dcterms:description "NC EB Article 32. FCR (Frequency Containment Reserve) bid. One offering per period, capacity_mw and price.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

@@ -11,5 +11,7 @@ ogit.Utilities.Electricity.Grid:discrete
     rdfs:label "discrete";
     dcterms:description "Boolean. True if the control is discrete (e.g. tap changer) rather than continuous.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "true,false";
 .

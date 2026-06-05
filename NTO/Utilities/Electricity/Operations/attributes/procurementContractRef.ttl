@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Operations:procurementContractRef
     rdfs:label "procurementContractRef";
     dcterms:description "Reference to the procurement-contract vertex.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

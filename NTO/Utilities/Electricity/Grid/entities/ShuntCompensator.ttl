@@ -14,7 +14,7 @@ ogit.Utilities.Electricity.Grid:ShuntCompensator
     rdfs:label "ShuntCompensator";
     dcterms:description "CIM cim:ShuntCompensator. Linear or non-linear shunt reactor / capacitor for reactive-power compensation.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

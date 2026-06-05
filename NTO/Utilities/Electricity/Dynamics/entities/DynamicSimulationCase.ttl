@@ -14,7 +14,7 @@ ogit.Utilities.Electricity.Dynamics:DynamicSimulationCase
     rdfs:label "DynamicSimulationCase";
     dcterms:description "One transient-stability or EMT study run. Anchor + sgo:Timeseries: per-channel trajectory output lives in TSDB.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

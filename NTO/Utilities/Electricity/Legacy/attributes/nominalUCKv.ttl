@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Legacy:nominalUCKv
     rdfs:label "nominalUCKv";
     dcterms:description "Nominal voltage in kV at side C of the three-winding transformer.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

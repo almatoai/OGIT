@@ -11,5 +11,7 @@ ogit.Utilities.Emissions:lifecycleScope
     rdfs:label "lifecycleScope";
     dcterms:description "Lifecycle scope of the factor: direct, well_to_wheel, full_lca.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "direct,well_to_wheel,full_lca";
 .

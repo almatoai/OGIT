@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Telecontrol:protectionFunctionsPayload
     rdfs:label "protectionFunctionsPayload";
     dcterms:description "JSON-encoded list of protection functions implemented (ANSI 50/51, 87, 21, 25, etc.).";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

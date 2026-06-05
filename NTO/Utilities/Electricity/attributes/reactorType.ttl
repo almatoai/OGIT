@@ -11,5 +11,5 @@ ogit.Utilities.Electricity:reactorType
     rdfs:label "reactorType";
     dcterms:description "Reactor technology for a nuclear unit: PWR, BWR, EPR, WWER-440, WWER-1000, AGR, CANDU, RBMK, other.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

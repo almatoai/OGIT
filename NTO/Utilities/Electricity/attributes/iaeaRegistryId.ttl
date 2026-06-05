@@ -11,5 +11,5 @@ ogit.Utilities.Electricity:iaeaRegistryId
     rdfs:label "iaeaRegistryId";
     dcterms:description "IAEA PRIS reactor identifier (e.g. 'KKW-ISAR-2'). Stable cross-source key for nuclear units.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

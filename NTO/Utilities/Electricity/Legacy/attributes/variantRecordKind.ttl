@@ -11,5 +11,7 @@ ogit.Utilities.Electricity.Legacy:variantRecordKind
     rdfs:label "variantRecordKind";
     dcterms:description "Discriminator on UcteComment for variant records that are not in the canonical UCTE-DEF specification. Enum: `comment` (default; genuine C record), `s_record` (Switched-line status, PSS/E-style variant), `c_t_record` (transformer-coupling extension). The operator decides per case whether to upgrade variants to CGMES topology constructs.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "comment,s_record,c_t_record";
 .

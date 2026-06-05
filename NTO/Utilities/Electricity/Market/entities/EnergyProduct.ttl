@@ -14,7 +14,7 @@ ogit.Utilities.Electricity.Market:EnergyProduct
     rdfs:label "EnergyProduct";
     dcterms:description "ENTSO-E product catalogue entry. The standardised product traded in a market (EE-DA 1H, EE-ID 15min, Balancing-aFRR-Down-15min). The product_kind attribute carries the macro class.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Operations:issuedByRef
     rdfs:label "issuedByRef";
     dcterms:description "Reference to the Operator / NetworkOperator that issued the alert.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

@@ -11,5 +11,7 @@ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:authenticationMethod
     rdfs:label "authenticationMethod";
     dcterms:description "Authentication method: password, public_key, x509, kerberos.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "password,public_key,x509,kerberos";
 .

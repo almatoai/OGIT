@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Diagram:diagramStyleRef
     rdfs:label "diagramStyleRef";
     dcterms:description "Reference to the DiagramStyle vertex used by the diagram.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

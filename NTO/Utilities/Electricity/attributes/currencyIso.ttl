@@ -11,5 +11,5 @@ ogit.Utilities.Electricity:currencyIso
     rdfs:label "currencyIso";
     dcterms:description "ISO 4217 currency code used by the bidding zone (EUR, GBP, CHF, NOK).";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

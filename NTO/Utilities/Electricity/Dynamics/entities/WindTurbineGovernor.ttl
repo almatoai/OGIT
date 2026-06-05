@@ -13,7 +13,7 @@ ogit.Utilities.Electricity.Dynamics:WindTurbineGovernor
     rdfs:label "WindTurbineGovernor";
     dcterms:description "Wind-turbine governor dynamic model per IEC 61400-27-1.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

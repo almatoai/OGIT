@@ -9,7 +9,9 @@ ogit.Utilities.Electricity.Operations:faultKind
     a owl:DatatypeProperty;
     rdfs:subPropertyOf ogit:Attribute;
     rdfs:label "faultKind";
-    dcterms:description "Fault classification: single_phase_to_ground, two_phase, two_phase_to_ground, three_phase.";
+    dcterms:description "Fault classification per IEC 60909 (NTO domain-autonomous phase-based nomenclature, semantically equivalent but not byte-identical to CIM FaultKind which uses line-based labels lineToGround / lineToLine / lineToLineToGround / threePhase / threePhaseToGround): single_phase_to_ground, two_phase, two_phase_to_ground, three_phase (balanced three-phase clear), three_phase_to_ground (three-phase-to-earth). The MappingRule DSL converts to / from CIM line-based labels when interoperating with CGMES instance data.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "single_phase_to_ground,two_phase,two_phase_to_ground,three_phase,three_phase_to_ground";
 .

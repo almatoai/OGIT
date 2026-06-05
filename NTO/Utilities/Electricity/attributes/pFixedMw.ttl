@@ -11,5 +11,5 @@ ogit.Utilities.Electricity:pFixedMw
     rdfs:label "pFixedMw";
     dcterms:description "Fixed active-power consumption in MW that does not follow the scaled curve.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

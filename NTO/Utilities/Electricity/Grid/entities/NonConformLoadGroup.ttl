@@ -13,7 +13,7 @@ ogit.Utilities.Electricity.Grid:NonConformLoadGroup
     rdfs:label "NonConformLoadGroup";
     dcterms:description "CIM cim:NonConformLoadGroup. Grouping of NonConformLoads sharing an aggregated profile.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

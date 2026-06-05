@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Grid:marks
     rdfs:label "marks";
     dcterms:description "Asserts that a BoundaryPoint marks the target ConnectivityNode as a CGMES boundary point. Cardinality: one2one.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

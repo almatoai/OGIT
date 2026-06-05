@@ -11,5 +11,7 @@ ogit.Utilities.Electricity:fuelCycleClass
     rdfs:label "fuelCycleClass";
     dcterms:description "Fuel-cycle classification: once_through, plutonium_recycle, thorium, future_breeder.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "once_through,plutonium_recycle,thorium,future_breeder";
 .

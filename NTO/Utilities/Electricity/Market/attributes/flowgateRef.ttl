@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Market:flowgateRef
     rdfs:label "flowgateRef";
     dcterms:description "Reference to the FlowGate vertex bounding the cross-zonal capacity.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

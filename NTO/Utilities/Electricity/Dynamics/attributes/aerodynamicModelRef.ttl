@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Dynamics:aerodynamicModelRef
     rdfs:label "aerodynamicModelRef";
     dcterms:description "Reference to the aerodynamic sub-model vertex of a wind-generator dynamic model.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

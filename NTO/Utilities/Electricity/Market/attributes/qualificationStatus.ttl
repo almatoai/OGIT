@@ -9,7 +9,9 @@ ogit.Utilities.Electricity.Market:qualificationStatus
     a owl:DatatypeProperty;
     rdfs:subPropertyOf ogit:Attribute;
     rdfs:label "qualificationStatus";
-    dcterms:description "Qualification status of the registered resource: qualified, pre_qualified, conditional, suspended, revoked.";
+    dcterms:description "Qualification status of the registered resource (lifecycle order): pending (in qualification process), pre_qualified (passed initial review), qualified (fully qualified), conditional (with conditions), suspended, revoked, expired (qualification has lapsed and needs renewal -- distinct from revoked).";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "pending,pre_qualified,qualified,conditional,suspended,revoked,expired";
 .

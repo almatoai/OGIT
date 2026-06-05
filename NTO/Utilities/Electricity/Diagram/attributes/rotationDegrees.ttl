@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Diagram:rotationDegrees
     rdfs:label "rotationDegrees";
     dcterms:description "Rotation angle in degrees applied to the diagram object.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

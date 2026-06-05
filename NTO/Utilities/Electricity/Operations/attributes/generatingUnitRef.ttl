@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Operations:generatingUnitRef
     rdfs:label "generatingUnitRef";
     dcterms:description "Reference to the GeneratingUnit providing the service.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

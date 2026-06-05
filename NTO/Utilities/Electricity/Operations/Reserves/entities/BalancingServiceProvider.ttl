@@ -14,7 +14,7 @@ ogit.Utilities.Electricity.Operations.Reserves:BalancingServiceProvider
     rdfs:label "BalancingServiceProvider";
     dcterms:description "NC EB Article 18. Market role: entity offering balancing services. Subtype of MarketParticipant (which itself extends sgo:Organization), adding BSP-specific qualification metadata. Per Architecture Section 5.1g the materialised-inheritance pattern propagates over the full 3-level chain at TTL generation time: the BSP TTL carries the seven sgo:Organization-inherited verbs (sgo:manages, sgo:employs, ogit:locatedIn, ogit:contains, sgo:supports, sgo:owns, sgo:hasParent) plus the MarketParticipant-domain verbs plus the BSP-specific submit verbs. The verb list shown here is the BSP-specific delta; the full materialised set is in the generated TTL file.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
@@ -37,6 +37,13 @@ ogit.Utilities.Electricity.Operations.Reserves:BalancingServiceProvider
         ogit.Utilities.Electricity:participantEic
     );
     ogit:allowed (
+        [ sgo:manages  sgo:Process ]
+        [ sgo:employs  sgo:Person ]
+        [ ogit:locatedIn  ogit:Location ]
+        [ ogit:contains  ogit:Entity ]
+        [ sgo:supports  ogit:Entity ]
+        [ sgo:owns  sgo:Asset ]
+        [ sgo:hasParent  sgo:Organization ]
         [ ogit.Utilities.Electricity:submits  ogit.Utilities.Electricity.Operations.Reserves:BalancingEnergyBid ]
         [ ogit.Utilities.Electricity:submits  ogit.Utilities.Electricity.Operations.Reserves:BalancingCapacityBid ]
     );

@@ -11,5 +11,7 @@ ogit.Utilities.Electricity.Operations.Reserves:divisible
     rdfs:label "divisible";
     dcterms:description "Boolean. True if the offering or bid can be partially awarded.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "true,false";
 .

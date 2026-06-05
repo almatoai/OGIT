@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Dynamics:synchronousMachineDynamicsRef
     rdfs:label "synchronousMachineDynamicsRef";
     dcterms:description "Reference to the SynchronousMachineDynamics vertex this excitation / governor / stabilizer is attached to.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

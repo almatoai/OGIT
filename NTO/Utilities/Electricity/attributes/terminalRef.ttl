@@ -11,5 +11,5 @@ ogit.Utilities.Electricity:terminalRef
     rdfs:label "terminalRef";
     dcterms:description "Reference to a Terminal vertex (CIM Terminal).";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

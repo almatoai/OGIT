@@ -14,7 +14,7 @@ ogit.Utilities.Electricity.Grid:VsConverter
     rdfs:label "VsConverter";
     dcterms:description "CIM cim:VsConverter. Voltage-source HVDC converter (VSC, IGBT-based).";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

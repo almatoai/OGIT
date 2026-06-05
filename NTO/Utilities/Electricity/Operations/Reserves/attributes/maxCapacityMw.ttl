@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Operations.Reserves:maxCapacityMw
     rdfs:label "maxCapacityMw";
     dcterms:description "Maximum offered capacity in MW that the reserve unit can sustain.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

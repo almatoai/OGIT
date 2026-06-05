@@ -11,5 +11,5 @@ ogit.Utilities.Electricity:shareFraction
     rdfs:label "shareFraction";
     dcterms:description "Ownership fraction as a number in [0.0, 1.0]. The sum of share_fraction over all active OwnershipShare anchors pointing at the same asset SHOULD equal 1.0; this cross-vertex invariant is enforced by the Connector-Framework MappingRule validator V13a, not by OGIT-Validator.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

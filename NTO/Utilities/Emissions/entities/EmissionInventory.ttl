@@ -13,7 +13,7 @@ ogit.Utilities.Emissions:EmissionInventory
     rdfs:label "EmissionInventory";
     dcterms:description "Accounting envelope for one reporting period, jurisdiction, and obligation (e.g. EU ETS yearly, national UNFCCC inventory). Aggregates from GreenhouseGasEmission records and ultimately submits to a regulatory authority.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

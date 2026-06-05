@@ -14,7 +14,7 @@ ogit.Utilities.Electricity.Dynamics:LoadStaticZip
     rdfs:label "LoadStaticZip";
     dcterms:description "ZIP composite static load model: P = Pz V^2 + Pi V + Pp, analog for Q.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

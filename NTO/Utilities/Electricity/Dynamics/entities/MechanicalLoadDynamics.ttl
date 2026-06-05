@@ -13,7 +13,7 @@ ogit.Utilities.Electricity.Dynamics:MechanicalLoadDynamics
     rdfs:label "MechanicalLoadDynamics";
     dcterms:description "CIM cim:MechanicalLoadDynamics. Driven-mechanical-load model for motor analyses.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

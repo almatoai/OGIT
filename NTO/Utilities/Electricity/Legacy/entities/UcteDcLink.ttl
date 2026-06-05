@@ -13,7 +13,7 @@ ogit.Utilities.Electricity.Legacy:UcteDcLink
     rdfs:label "UcteDcLink";
     dcterms:description "UCTE-DEF DC record. HVDC link between two UcteNodes. Maps forward to a CGMES DCLineSegment plus the associated converters (CsConverter or VsConverter).";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

@@ -11,5 +11,5 @@ ogit.Utilities.Electricity:tradesIn
     rdfs:label "tradesIn";
     dcterms:description "Asserts that a MarketParticipant trades in a BiddingZone or Market. Cardinality: many2many.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

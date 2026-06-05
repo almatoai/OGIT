@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Operations:switchNotes
     rdfs:label "switchNotes";
     dcterms:description "Free-text notes accompanying the SwitchAction record.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

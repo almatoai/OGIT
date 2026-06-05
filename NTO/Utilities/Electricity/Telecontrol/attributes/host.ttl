@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Telecontrol:host
     rdfs:label "host";
     dcterms:description "TCP host (FQDN or IP address) for IEC 60870-5-104.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

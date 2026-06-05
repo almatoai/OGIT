@@ -13,7 +13,7 @@ ogit.Utilities.Electricity.Dynamics:SteamTurbineGovernor
     rdfs:label "SteamTurbineGovernor";
     dcterms:description "Steam-turbine governor dynamic model. Adds governor_kind plus HP/IP/LP section counts.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

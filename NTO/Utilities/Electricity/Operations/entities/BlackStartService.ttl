@@ -13,7 +13,7 @@ ogit.Utilities.Electricity.Operations:BlackStartService
     rdfs:label "BlackStartService";
     dcterms:description "NC ER Article 4. Capability declared by a generator to start without grid supply.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

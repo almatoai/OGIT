@@ -14,7 +14,7 @@ ogit.Utilities.Electricity.Operations:MinimumInertia
     rdfs:label "MinimumInertia";
     dcterms:description "NC SO Article 39. Required minimum system inertia. The required_value_mw_s is expressed in MW.s (energy per Hz).";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

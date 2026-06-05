@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Operations.StateEstimation:positiveFlowDirectionDefin
     rdfs:label "positiveFlowDirectionDefinition";
     dcterms:description "Convention describing which direction at the terminal counts as positive flow.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

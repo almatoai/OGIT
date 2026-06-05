@@ -14,7 +14,7 @@ ogit.Utilities.Electricity.Grid:Fuse
     rdfs:label "Fuse";
     dcterms:description "CIM cim:Fuse. Switch that opens irreversibly on overcurrent.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

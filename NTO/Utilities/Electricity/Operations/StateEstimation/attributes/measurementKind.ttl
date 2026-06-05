@@ -11,5 +11,7 @@ ogit.Utilities.Electricity.Operations.StateEstimation:measurementKind
     rdfs:label "measurementKind";
     dcterms:description "Measurement kind: analog, discrete, accumulator, string.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "analog,discrete,accumulator,string";
 .

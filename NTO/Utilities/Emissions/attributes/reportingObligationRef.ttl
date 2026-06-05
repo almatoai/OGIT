@@ -11,5 +11,5 @@ ogit.Utilities.Emissions:reportingObligationRef
     rdfs:label "reportingObligationRef";
     dcterms:description "Reference to the regulatory obligation that triggered the report (EU ETS Article 14, UNFCCC national inventory, etc.).";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

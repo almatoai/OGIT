@@ -11,5 +11,7 @@ ogit.Utilities.Electricity.Grid:normalOpen
     rdfs:label "normalOpen";
     dcterms:description "Boolean. Normal operating state of the switch (true = normally open).";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "true,false";
 .

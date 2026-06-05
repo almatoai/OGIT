@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:lastEventAt
     rdfs:label "lastEventAt";
     dcterms:description "Timestamp of the last event in the log (ISO 8601, UTC).";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

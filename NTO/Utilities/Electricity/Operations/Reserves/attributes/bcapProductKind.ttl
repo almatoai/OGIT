@@ -11,5 +11,7 @@ ogit.Utilities.Electricity.Operations.Reserves:bcapProductKind
     rdfs:label "bcapProductKind";
     dcterms:description "Balancing-capacity-bid product class: FCR, aFRR, mFRR, RR.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "FCR,aFRR,mFRR,RR";
 .

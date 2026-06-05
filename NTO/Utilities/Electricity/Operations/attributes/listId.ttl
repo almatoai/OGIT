@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Operations:listId
     rdfs:label "listId";
     dcterms:description "Stable identifier of a ContingencyList.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

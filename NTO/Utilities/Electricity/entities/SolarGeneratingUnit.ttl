@@ -14,7 +14,7 @@ ogit.Utilities.Electricity:SolarGeneratingUnit
     rdfs:label "SolarGeneratingUnit";
     dcterms:description "CIM cim:SolarGeneratingUnit. PV (rooftop, ground-mount, floating, agri-PV) and CSP. Adds panel technology, tracking kind, geometric orientation, DC-to-AC ratio, inverter and panel counts, plus CSP-specific storage parameters.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

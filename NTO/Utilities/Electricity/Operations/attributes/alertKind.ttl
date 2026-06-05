@@ -11,5 +11,7 @@ ogit.Utilities.Electricity.Operations:alertKind
     rdfs:label "alertKind";
     dcterms:description "Alert kind: emergency, contingency_notice, market_information, restoration.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "emergency,contingency_notice,market_information,restoration";
 .

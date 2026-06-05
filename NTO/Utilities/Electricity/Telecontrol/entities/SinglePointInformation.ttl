@@ -14,7 +14,7 @@ ogit.Utilities.Electricity.Telecontrol:SinglePointInformation
     rdfs:label "SinglePointInformation";
     dcterms:description "IEC 60870-5-101/104 ASDU 1 (M_SP_NA_1), 2 (M_SP_TA_1), 30 (M_SP_TB_1). Binary 0/1 point.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

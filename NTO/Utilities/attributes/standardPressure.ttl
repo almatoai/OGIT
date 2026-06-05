@@ -11,5 +11,5 @@ ogit.Utilities:standardPressure
     rdfs:label "standardPressure";
     dcterms:description "Pressure in pascals at which LHV / HHV / density are referenced (101325 Pa for STP).";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

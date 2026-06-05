@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Grid:voltageMagnitudePu
     rdfs:label "voltageMagnitudePu";
     dcterms:description "Voltage magnitude in per-unit at the EnergySource bus. Typically 1.0 (slack reference).";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

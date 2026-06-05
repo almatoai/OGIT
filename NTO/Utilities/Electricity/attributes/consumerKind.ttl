@@ -9,7 +9,9 @@ ogit.Utilities.Electricity:consumerKind
     a owl:DatatypeProperty;
     rdfs:subPropertyOf ogit:Attribute;
     rdfs:label "consumerKind";
-    dcterms:description "Load classification: industrial, commercial, residential, traction, electrolysis, pumped_storage_charge.";
+    dcterms:description "Load classification: industrial, commercial, residential, traction, electrolysis, pumped_storage_charge, agriculture, charging_point, data_centre.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "industrial,commercial,residential,traction,electrolysis,pumped_storage_charge,agriculture,charging_point,data_centre";
 .

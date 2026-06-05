@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Grid:bmagsatSiemens
     rdfs:label "bmagsatSiemens";
     dcterms:description "Magnetising-branch saturation admittance in siemens.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Grid:parentTransformerEndRef
     rdfs:label "parentTransformerEndRef";
     dcterms:description "Reference to the PowerTransformerEnd vertex the star-impedance refers to.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

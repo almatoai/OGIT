@@ -11,5 +11,5 @@ ogit.Utilities.Electricity:hubHeightM
     rdfs:label "hubHeightM";
     dcterms:description "Hub height above ground (or sea level for offshore) in metres.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

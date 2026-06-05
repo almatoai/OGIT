@@ -14,7 +14,7 @@ ogit.Utilities.Electricity.Legacy:UcteNode
     rdfs:label "UcteNode";
     dcterms:description "UCTE-DEF N record. One bus / node in the network. The 8-character node_code is the deterministic identifier used by all other UCTE records to refer to this node.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

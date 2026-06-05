@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Operations.StateEstimation:shuntCompensatorRef
     rdfs:label "shuntCompensatorRef";
     dcterms:description "Reference to the ShuntCompensator vertex whose sections are observed.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

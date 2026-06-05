@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Telecontrol:cotSizeOctets
     rdfs:label "cotSizeOctets";
     dcterms:description "Size of the Cause of Transmission field in octets (1 or 2).";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

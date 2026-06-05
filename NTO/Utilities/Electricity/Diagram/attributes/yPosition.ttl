@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Diagram:yPosition
     rdfs:label "yPosition";
     dcterms:description "Y-coordinate of the position point.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

@@ -11,5 +11,5 @@ ogit.Utilities:standardTemperature
     rdfs:label "standardTemperature";
     dcterms:description "Temperature in Kelvin at which LHV / HHV / density are referenced (273.15 K for STP, 288.15 K for some gas-trade conventions).";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

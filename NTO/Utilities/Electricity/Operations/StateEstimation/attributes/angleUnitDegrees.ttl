@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Operations.StateEstimation:angleUnitDegrees
     rdfs:label "angleUnitDegrees";
     dcterms:description "Unit declaration for the voltage-angle channel (degrees).";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

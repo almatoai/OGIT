@@ -14,7 +14,7 @@ ogit.Utilities.Electricity.Operations.StateEstimation:SvVoltage
     rdfs:label "SvVoltage";
     dcterms:description "CIM cim:SvVoltage. SV-profile bus-voltage estimate (magnitude and angle) attached to a TopologicalNode. Anchor + sgo:Timeseries (two channels: magnitude and angle).";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

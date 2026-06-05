@@ -11,5 +11,5 @@ ogit.Utilities.Electricity:rolloverValue
     rdfs:label "rolloverValue";
     dcterms:description "Roll-over value at which an accumulator counter wraps to zero. Used by StateEstimation:AccumulatorValue (CIM state-estimator output) and Telecontrol:IntegratedTotal (IEC 60870-5 integrated-total ASDU). Lives in Utilities.Electricity as the lowest common ancestor.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

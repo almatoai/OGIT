@@ -11,5 +11,5 @@ ogit.Utilities.Electricity:hotStartTimeMin
     rdfs:label "hotStartTimeMin";
     dcterms:description "Time in minutes from a hot state (unit off < 8 h) to rated output.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

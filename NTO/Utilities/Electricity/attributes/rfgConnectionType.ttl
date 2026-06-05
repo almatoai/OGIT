@@ -11,5 +11,5 @@ ogit.Utilities.Electricity:rfgConnectionType
     rdfs:label "rfgConnectionType";
     dcterms:description "ENTSO-E NC RfG (Commission Regulation (EU) 2016/631) power-generating-module type classification: typeA (microgenerator, < 0.8 kV / < 1 MW), typeB (distribution-connected, 1-50 MW depending on synchronous area), typeC (HV-connected, mid-size), typeD (large or cross-border, >= 75-100 MW or HV-connected >=110 kV). The four types carry different connection requirements (LVRT / HVRT envelopes, P-Q capability at the connection point, frequency-active-power control, voltage control, protection-coordination, communication). The current NTO models the type discriminator on the GeneratingUnit; the type-specific rule classes (FaultRideThroughEnvelope, GeneratorConnectionRequirement) are deferred to v2 (see Architecture Section 11.3).";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

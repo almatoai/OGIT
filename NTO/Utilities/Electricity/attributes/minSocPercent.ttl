@@ -11,5 +11,5 @@ ogit.Utilities.Electricity:minSocPercent
     rdfs:label "minSocPercent";
     dcterms:description "Minimum operational state of charge as percentage of rated_e_mwh.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

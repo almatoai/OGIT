@@ -11,5 +11,5 @@ ogit.Utilities.Electricity:warmStartTimeMin
     rdfs:label "warmStartTimeMin";
     dcterms:description "Time in minutes from a warm state (unit off 8-48 h) to rated output.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

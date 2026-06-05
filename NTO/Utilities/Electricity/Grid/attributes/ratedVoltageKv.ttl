@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Grid:ratedVoltageKv
     rdfs:label "ratedVoltageKv";
     dcterms:description "Rated voltage in kV at the terminal of the equipment.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

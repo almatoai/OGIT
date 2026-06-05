@@ -14,7 +14,7 @@ ogit.Utilities.Electricity.Operations:RestorationPlan
     rdfs:label "RestorationPlan";
     dcterms:description "NC ER Title 3. Pre-defined recovery procedure for re-energising a control area after a blackout or partial loss. Composed of stepwise SwitchActions in a SwitchingPlan-like structure.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

@@ -11,5 +11,5 @@ ogit.Utilities.Electricity:nominalFrequencyHz
     rdfs:label "nominalFrequencyHz";
     dcterms:description "Nominal synchronous frequency in Hz (50 for Continental Europe / Nordic / Baltic; 60 for some external systems).";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

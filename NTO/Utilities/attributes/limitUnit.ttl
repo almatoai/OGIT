@@ -11,5 +11,5 @@ ogit.Utilities:limitUnit
     rdfs:label "limitUnit";
     dcterms:description "Unit of the limit value: MVA, MW, MVAr, A, kV, Hz, bar, m3/h, m, etc.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

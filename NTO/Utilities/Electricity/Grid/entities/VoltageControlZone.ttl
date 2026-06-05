@@ -13,7 +13,7 @@ ogit.Utilities.Electricity.Grid:VoltageControlZone
     rdfs:label "VoltageControlZone";
     dcterms:description "CIM cim:VoltageControlZone. CGMES EQ-profile container grouping BusbarSections / VoltageLevels under a shared voltage-regulation regime. Each zone has one designated voltage-setpoint reference busbar; voltage-control commands inside the zone derive from that reference. The applicable setpoint schedule rides on `Operations:VoltageControlSchedule` (Anchor + sgo:Timeseries).";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

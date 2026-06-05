@@ -11,5 +11,7 @@ ogit.Utilities.Electricity.Telecontrol:protectionEventKind
     rdfs:label "protectionEventKind";
     dcterms:description "Protection-event subkind: single, packed_start, packed_output_circuit.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "single,packed_start,packed_output_circuit";
 .

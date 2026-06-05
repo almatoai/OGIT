@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Grid:y3Unit
     rdfs:label "y3Unit";
     dcterms:description "Unit of the y3-axis of a curve.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

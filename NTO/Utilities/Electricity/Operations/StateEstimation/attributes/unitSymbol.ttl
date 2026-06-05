@@ -9,7 +9,7 @@ ogit.Utilities.Electricity.Operations.StateEstimation:unitSymbol
     a owl:DatatypeProperty;
     rdfs:subPropertyOf ogit:Attribute;
     rdfs:label "unitSymbol";
-    dcterms:description "Unit symbol per CIM UnitSymbol enumeration (V, A, W, var, VA, Hz, K, degC, J, Wh).";
+    dcterms:description "Unit symbol per CIM UnitSymbol enumeration (IEC 61970-301). Common values include V, A, W, var, VA, Hz, K, degC, J, Wh, kWh, Ohm, S, F, H, Wb, T, Pa, rad, deg, m, m2, m3, s, min, h, percent, none, kg, g, t, tonne, l, lPerS, rev, rpm, mol, bar, VArh, WPerA, pu, etc. The CIM UnitSymbol enum is a moving target with each CIM revision -- the attribute is left open per Section 11.1a Regel 3.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

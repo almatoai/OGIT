@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Legacy:nodeName
     rdfs:label "nodeName";
     dcterms:description "Free-text node name (positions 9-20 of the N record).";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

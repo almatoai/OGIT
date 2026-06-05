@@ -11,5 +11,5 @@ ogit.Utilities.Electricity:cycleCount
     rdfs:label "cycleCount";
     dcterms:description "Cumulative full equivalent cycle count (snapshot).";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

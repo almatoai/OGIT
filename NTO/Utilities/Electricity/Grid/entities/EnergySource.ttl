@@ -14,7 +14,7 @@ ogit.Utilities.Electricity.Grid:EnergySource
     rdfs:label "EnergySource";
     dcterms:description "CIM cim:EnergySource. Slack-bus / reference-bus equivalent: an infinite-bus source used as voltage / angle reference in radial distribution feeders and in standalone power-flow models. Distinct from EquivalentInjection (which is the boundary-injection equivalent used at TSO-TSO boundaries). Added per QS Round 14 Sonnet COV-02.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

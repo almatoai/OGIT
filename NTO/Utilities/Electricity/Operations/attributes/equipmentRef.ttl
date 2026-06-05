@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Operations:equipmentRef
     rdfs:label "equipmentRef";
     dcterms:description "Reference to the equipment vertex that is hypothetically failed in the contingency.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

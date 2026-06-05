@@ -9,7 +9,9 @@ ogit.Utilities.Electricity:technology
     a owl:DatatypeProperty;
     rdfs:subPropertyOf ogit:Attribute;
     rdfs:label "technology";
-    dcterms:description "Interconnector technology: ac, hvdc_lcc, hvdc_vsc.";
+    dcterms:description "Interconnector technology: AC (alternating current), HVDC_LCC (line-commutated converter HVDC), HVDC_VSC (voltage-source converter HVDC). AC and HVDC are industrial acronyms in uppercase per Section 11.1a Regel 5; LCC and VSC are themselves acronyms suffixed via underscore.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "AC,HVDC_LCC,HVDC_VSC";
 .

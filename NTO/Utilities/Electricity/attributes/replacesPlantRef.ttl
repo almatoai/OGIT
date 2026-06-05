@@ -11,5 +11,5 @@ ogit.Utilities.Electricity:replacesPlantRef
     rdfs:label "replacesPlantRef";
     dcterms:description "Reference to the PowerPlant vertex this plant replaces on the site (succession chain).";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

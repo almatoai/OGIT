@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Grid:acceptableDurationSeconds
     rdfs:label "acceptableDurationSeconds";
     dcterms:description "Acceptable duration of the limit being exceeded in seconds.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

@@ -11,5 +11,5 @@ ogit.Utilities.Emissions:calculationBasis
     rdfs:label "calculationBasis";
     dcterms:description "Whether intensity is computed on production, consumption, or allocated portfolio.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

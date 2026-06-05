@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Operations.StateEstimation:at
     rdfs:label "at";
     dcterms:description "Locates a state-variable anchor at the underlying topology / equipment vertex (e.g. SvVoltage at TopologicalNode, SvPowerFlow at Terminal, SvTapStep at TapChanger). Distinct from `Utilities.Electricity.Grid:at` (TopologicalNode at Substation) -- separate verbs by sub-namespace because the semantics and ranges differ. Cardinality: many2one.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

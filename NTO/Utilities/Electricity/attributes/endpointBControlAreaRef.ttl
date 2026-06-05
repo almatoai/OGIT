@@ -11,5 +11,5 @@ ogit.Utilities.Electricity:endpointBControlAreaRef
     rdfs:label "endpointBControlAreaRef";
     dcterms:description "Reference to the ControlArea vertex at endpoint B.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

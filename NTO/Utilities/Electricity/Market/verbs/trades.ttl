@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Market:trades
     rdfs:label "trades";
     dcterms:description "Asserts that a Market trades the target EnergyProduct. Cardinality: many2many.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

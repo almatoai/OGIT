@@ -14,7 +14,7 @@ ogit.Utilities.Electricity.Operations:PlannedOutage
     rdfs:label "PlannedOutage";
     dcterms:description "Planned-outage variant of Utilities:Outage. Adds work-order reference, maintenance kind, notice given, and regulatory notification reference.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

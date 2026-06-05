@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Operations:reactiveUnit
     rdfs:label "reactiveUnit";
     dcterms:description "Unit of reactive-power values (MVAr).";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

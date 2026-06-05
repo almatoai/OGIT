@@ -11,5 +11,7 @@ ogit.Utilities.Electricity.Telecontrol:frozenKind
     rdfs:label "frozenKind";
     dcterms:description "Counter frozen kind: frozen, reset, not_supported.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "frozen,reset,not_supported";
 .

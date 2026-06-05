@@ -11,5 +11,5 @@ ogit.Utilities.Electricity:routingCountryIso2List
     rdfs:label "routingCountryIso2List";
     dcterms:description "Comma-separated list of countries the interconnector crosses or transits.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

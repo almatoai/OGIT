@@ -14,7 +14,7 @@ ogit.Utilities.Electricity.Dynamics:AsynchronousMachineDynamics
     rdfs:label "AsynchronousMachineDynamics";
     dcterms:description "CIM cim:AsynchronousMachineDynamics. Induction-machine dynamic model (classical, double-cage).";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

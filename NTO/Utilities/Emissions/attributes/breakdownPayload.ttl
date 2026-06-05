@@ -11,5 +11,5 @@ ogit.Utilities.Emissions:breakdownPayload
     rdfs:label "breakdownPayload";
     dcterms:description "JSON-encoded breakdown of the inventory by source category and substance.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

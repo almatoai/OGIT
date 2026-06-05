@@ -11,5 +11,7 @@ ogit.Utilities.Electricity.Operations:maintenanceKind
     rdfs:label "maintenanceKind";
     dcterms:description "Maintenance classification: preventive, predictive, corrective.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "preventive,predictive,corrective";
 .

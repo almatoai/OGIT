@@ -5,11 +5,13 @@
 @prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
 
-ogit.Utilities.Electricity.Operations:analysisKind
+ogit.Utilities.Electricity.Operations:analysisTimeKind
     a owl:DatatypeProperty;
     rdfs:subPropertyOf ogit:Attribute;
-    rdfs:label "analysisKind";
-    dcterms:description "Analysis kind: steady_state, dynamic, AC, DC.";
+    rdfs:label "analysisTimeKind";
+    dcterms:description "Time-domain analysis regime: steady_state (load-flow / state-estimation / power-balance) or dynamic (transient / electromagnetic / small-signal). Orthogonal to analysisNetworkKind per Section 11.1a Regel 7.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "steady_state,dynamic";
 .

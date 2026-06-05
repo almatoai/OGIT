@@ -14,7 +14,7 @@ ogit.Utilities.Electricity:ThermalGeneratingUnit
     rdfs:label "ThermalGeneratingUnit";
     dcterms:description "CIM cim:ThermalGeneratingUnit. Coal, lignite, gas (CCGT / OCGT), oil, biomass, geothermal, oil-shale. Adds fuel and thermodynamic-cycle parameters plus start-time and ramp-rate characteristics.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Operations:triggerCondition
     rdfs:label "triggerCondition";
     dcterms:description "Free-text or formal trigger condition for the DefensePlan.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

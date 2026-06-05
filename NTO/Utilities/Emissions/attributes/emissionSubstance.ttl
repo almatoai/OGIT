@@ -11,5 +11,5 @@ ogit.Utilities.Emissions:emissionSubstance
     rdfs:label "emissionSubstance";
     dcterms:description "Greenhouse gas substance: CO2, CH4, N2O, SF6, NF3, HFC-blend, PFC-blend, or another IPCC-recognised species.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

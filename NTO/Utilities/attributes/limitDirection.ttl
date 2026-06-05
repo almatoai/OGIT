@@ -11,5 +11,5 @@ ogit.Utilities:limitDirection
     rdfs:label "limitDirection";
     dcterms:description "Limit direction: high (do not exceed), low (do not fall below), absolute (magnitude).";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

@@ -14,7 +14,7 @@ ogit.Utilities.Electricity.Telecontrol:SetPointCommandScaled
     rdfs:label "SetPointCommandScaled";
     dcterms:description "IEC 60870-5-101/104 ASDU 49, 62. Scaled set-point command.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

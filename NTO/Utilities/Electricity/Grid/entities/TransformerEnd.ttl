@@ -13,7 +13,7 @@ ogit.Utilities.Electricity.Grid:TransformerEnd
     rdfs:label "TransformerEnd";
     dcterms:description "ABSTRACT: CIM cim:TransformerEnd. Abstract parent for typed transformer ends (PowerTransformerEnd today; TransformerTankEnd in distribution, deferred). In CIM, TransformerEnd is a subtype of IdentifiedObject, not of ConductingEquipment or PowerSystemResource. The NTO follows the CIM inheritance and attaches TransformerEnd directly under ogit:Entity.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

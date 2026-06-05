@@ -13,7 +13,7 @@ ogit.Utilities.Electricity.Dynamics:HvdcDynamics
     rdfs:label "HvdcDynamics";
     dcterms:description "CIM cim:HVDCDynamics. HVDC-link dynamic model (LCC classic, VSC classic, MMC modular).";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

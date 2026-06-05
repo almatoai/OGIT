@@ -12,7 +12,7 @@ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:TransferReport
     rdfs:label "TransferReport";
     dcterms:description "TASE.2 Transfer Report. The actual report message of one DataSetTransferSet trigger. The parent DataSetTransferSet is expressed via the `belongsTo -> DataSetTransferSet` graph edge; no parallel `parentTransferSetRef` attribute.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

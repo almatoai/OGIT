@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Operations.Reserves:activationTimeMin
     rdfs:label "activationTimeMin";
     dcterms:description "Maximum activation time in minutes (12.5 for mFRR, 30 for RR).";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

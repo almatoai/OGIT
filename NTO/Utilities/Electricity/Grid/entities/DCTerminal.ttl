@@ -13,7 +13,7 @@ ogit.Utilities.Electricity.Grid:DCTerminal
     rdfs:label "DCTerminal";
     dcterms:description "CIM cim:DCTerminal. DC-side equivalent of Terminal. Connects DC conducting equipment to a DCNode.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

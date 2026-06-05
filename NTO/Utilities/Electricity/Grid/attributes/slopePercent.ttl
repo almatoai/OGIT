@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Grid:slopePercent
     rdfs:label "slopePercent";
     dcterms:description "Voltage-droop slope of the SVC control characteristic in percent.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Grid:tielineId
     rdfs:label "tielineId";
     dcterms:description "Tie-line identifier (CGMES Boundary Set extension).";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

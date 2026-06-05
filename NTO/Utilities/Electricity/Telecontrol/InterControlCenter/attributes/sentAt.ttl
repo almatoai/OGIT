@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:sentAt
     rdfs:label "sentAt";
     dcterms:description "Timestamp the message was sent (ISO 8601, UTC).";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Grid:toendisoCode
     rdfs:label "toendisoCode";
     dcterms:description "ISO-2 country code on the 'to' side of a boundary connection.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Legacy:sourceFileRef
     rdfs:label "sourceFileRef";
     dcterms:description "Reference to the source UCTE-DEF file vertex.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

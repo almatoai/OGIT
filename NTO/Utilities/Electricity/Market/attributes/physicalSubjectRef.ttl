@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Market:physicalSubjectRef
     rdfs:label "physicalSubjectRef";
     dcterms:description "Reference to the physical equipment vertex the RegisteredResource represents (GeneratingUnit, EnergyStorage, EnergyConsumer).";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

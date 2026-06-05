@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Operations.StateEstimation:unitQMvar
     rdfs:label "unitQMvar";
     dcterms:description "Unit declaration for the reactive-power channel (MVAr).";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

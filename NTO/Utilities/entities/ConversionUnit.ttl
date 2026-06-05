@@ -13,7 +13,7 @@ ogit.Utilities:ConversionUnit
     rdfs:label "ConversionUnit";
     dcterms:description "Generic energy-carrier conversion device. Sector-coupling primitive: an electrolyser (electricity to hydrogen), a fuel cell (hydrogen to electricity), a heat pump (electricity to district heat), a Power-to-X facility. Distinct from GeneratingUnit because conversion can be bidirectional and may not produce electricity. For electricity-primary cases GeneratingUnit and EnergyStorage are used; ConversionUnit covers the non-electricity-primary cases. Concrete parametric class: subtype discrimination is via the `conversionKind` enum (electrolyser, fuel_cell, heat_pump, power_to_methane, power_to_methanol, power_to_ammonia, district_heat_chiller, biomass_gasifier), not via subclassing -- consistent with the Dynamics-class parametric pattern. Discovery edges: `Utilities.Electricity:PowerPlant` consistsOf this unit (when integrated in a multi-unit facility), `OwnershipShare.sharedOf` references it, `GreenhouseGasEmission.attributedTo` points at it.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

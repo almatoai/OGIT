@@ -11,5 +11,5 @@ ogit.Utilities:sourcePublication
     rdfs:label "sourcePublication";
     dcterms:description "Citation of the publication the data was taken from (IPCC AR6, JRC report, country-specific inventory, IEEE / CIGRE paper, manufacturer datasheet). Used by Emissions:EmissionFactor and Dynamics:DynamicParameterSet; lives in Utilities as the lowest common ancestor.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

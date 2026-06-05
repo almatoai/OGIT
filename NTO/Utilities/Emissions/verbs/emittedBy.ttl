@@ -11,5 +11,5 @@ ogit.Utilities.Emissions:emittedBy
     rdfs:label "emittedBy";
     dcterms:description "Asserts that a GreenhouseGasEmission record is attributed to the target emitter (GeneratingUnit / PowerPlant / ConversionUnit / vehicle). Cardinality: many2one.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

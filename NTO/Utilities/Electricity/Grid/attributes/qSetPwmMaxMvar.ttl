@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Grid:qSetPwmMaxMvar
     rdfs:label "qSetPwmMaxMvar";
     dcterms:description "Maximum Q set-point for VSC PWM control in MVAr.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

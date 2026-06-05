@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Operations.Reserves:offeringId
     rdfs:label "offeringId";
     dcterms:description "Stable identifier of a reserve offering.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Telecontrol:ioaSizeOctets
     rdfs:label "ioaSizeOctets";
     dcterms:description "Size of the Information Object Address field in octets (1, 2, or 3; 3 in 104).";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

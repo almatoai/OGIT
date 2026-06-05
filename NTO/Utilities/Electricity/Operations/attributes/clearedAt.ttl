@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Operations:clearedAt
     rdfs:label "clearedAt";
     dcterms:description "Timestamp the alert was cleared (ISO 8601, UTC).";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

@@ -11,5 +11,5 @@ ogit.Utilities:isoStandardRef
     rdfs:label "isoStandardRef";
     dcterms:description "Reference to the ISO / DIN / IEC standard that fixes the heating value, density, and measurement procedure for this carrier.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

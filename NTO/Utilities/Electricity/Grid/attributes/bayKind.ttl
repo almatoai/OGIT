@@ -9,7 +9,9 @@ ogit.Utilities.Electricity.Grid:bayKind
     a owl:DatatypeProperty;
     rdfs:subPropertyOf ogit:Attribute;
     rdfs:label "bayKind";
-    dcterms:description "Bay classification: busbar, line, transformer, feeder, coupler, measuring.";
+    dcterms:description "Bay classification: busbar, line, transformer, feeder, coupler, measuring, earthing, auxiliary.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "busbar,line,transformer,feeder,coupler,measuring,earthing,auxiliary";
 .

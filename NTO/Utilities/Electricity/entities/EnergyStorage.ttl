@@ -13,7 +13,7 @@ ogit.Utilities.Electricity:EnergyStorage
     rdfs:label "EnergyStorage";
     dcterms:description "CIM cim:EnergyStorage. Lithium-ion batteries (BESS), flow batteries, pumped hydro (when modelled as black-box storage), compressed air, flywheel, thermal, hydrogen, gravity. State of charge is time-variant and lives only on a sgo:Timeseries via generates -- not as a vertex attribute.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

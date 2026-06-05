@@ -14,7 +14,7 @@ ogit.Utilities.Electricity.Operations:WorkOrder
     rdfs:label "WorkOrder";
     dcterms:description "Cross-domain maintenance / repair work order on equipment. Holds the work kind, scheduling window, the assigned team, and the cost rollup. The work subject is expressed via the `Utilities:appliesTo -> PowerSystemResource` graph edge (typed verb, see allowed edges); no parallel `subjectRef` attribute is declared (per QS Round 14 Sonnet IMPL-10 -- verb is canonical for structural relations).";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

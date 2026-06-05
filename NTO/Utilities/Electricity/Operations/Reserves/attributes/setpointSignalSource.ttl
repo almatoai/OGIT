@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Operations.Reserves:setpointSignalSource
     rdfs:label "setpointSignalSource";
     dcterms:description "Source of the set-point signal for aFRR: LFC, manual.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

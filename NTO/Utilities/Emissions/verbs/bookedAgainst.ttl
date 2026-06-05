@@ -11,5 +11,5 @@ ogit.Utilities.Emissions:bookedAgainst
     rdfs:label "bookedAgainst";
     dcterms:description "Asserts that the emission is booked against the target EmissionInventory accounting envelope. Cardinality: many2one.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

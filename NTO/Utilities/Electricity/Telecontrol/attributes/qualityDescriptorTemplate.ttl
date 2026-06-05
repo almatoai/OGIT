@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Telecontrol:qualityDescriptorTemplate
     rdfs:label "qualityDescriptorTemplate";
     dcterms:description "Template indicating which quality flags the per-sample QDS may carry (IV, NT, SB, BL, OV).";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

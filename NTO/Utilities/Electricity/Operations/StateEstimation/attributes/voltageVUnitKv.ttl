@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Operations.StateEstimation:voltageVUnitKv
     rdfs:label "voltageVUnitKv";
     dcterms:description "Unit declaration for the voltage channel (kV).";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

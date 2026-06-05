@@ -11,5 +11,5 @@ ogit.Utilities:nominalEfficiency
     rdfs:label "nominalEfficiency";
     dcterms:description "Nominal one-way conversion efficiency (ratio in 0..1) at the rated operating point.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

@@ -11,5 +11,5 @@ ogit.Utilities:operates
     rdfs:label "operates";
     dcterms:description "Asserts that a NetworkOperator runs, dispatches, or maintains the target entity. Used wherever there is an operational responsibility but not necessarily legal ownership. Cardinality: many2many.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

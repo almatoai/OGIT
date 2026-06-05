@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:parentTransferSetRef
     rdfs:label "parentTransferSetRef";
     dcterms:description "Reference to the DataSetTransferSet that triggered the report.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

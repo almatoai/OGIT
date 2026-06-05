@@ -9,7 +9,9 @@ ogit.Utilities.Electricity.Grid:curveStyle
     a owl:DatatypeProperty;
     rdfs:subPropertyOf ogit:Attribute;
     rdfs:label "curveStyle";
-    dcterms:description "Curve style: constantYValue, rampYValue, straightLineYValues.";
+    dcterms:description "Curve style per CIM CurveStyle enumeration: constantYValue, straightLineYValues, formula plus rampYValue (CIM 17 addition observed in post-2018 CGMES instance data; anchor `frozen_at: CIM17`).";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "constantYValue,straightLineYValues,formula,rampYValue";
 .

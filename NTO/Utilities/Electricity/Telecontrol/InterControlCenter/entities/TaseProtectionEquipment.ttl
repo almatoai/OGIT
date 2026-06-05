@@ -13,7 +13,7 @@ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:TaseProtectionEquipmen
     rdfs:label "TaseProtectionEquipment";
     dcterms:description "TASE.2 ProtectionEquipment object (distinct from CIM ProtectionEquipment; the TASE.2 view exposes per-relay events via the inter-center channel).";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

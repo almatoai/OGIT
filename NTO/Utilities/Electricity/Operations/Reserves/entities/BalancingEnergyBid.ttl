@@ -15,7 +15,7 @@ ogit.Utilities.Electricity.Operations.Reserves:BalancingEnergyBid
     rdfs:label "BalancingEnergyBid";
     dcterms:description "NC EB Article 16. Per-imbalance-settlement-period energy bid for activation.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Telecontrol:qcc
     rdfs:label "qcc";
     dcterms:description "Qualifier of Counter-Interrogation.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

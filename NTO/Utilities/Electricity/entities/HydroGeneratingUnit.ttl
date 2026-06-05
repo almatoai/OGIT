@@ -14,7 +14,7 @@ ogit.Utilities.Electricity:HydroGeneratingUnit
     rdfs:label "HydroGeneratingUnit";
     dcterms:description "CIM cim:HydroGeneratingUnit. Run-of-river, reservoir, pumped-storage, tidal. Adds head, reservoir capacity, dam parameters, and cascade-position references. Pumped-storage is modelled here whenever turbine parameters matter; the bare-storage view of pumped hydro is captured by a separate EnergyStorage vertex on the same physical asset.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

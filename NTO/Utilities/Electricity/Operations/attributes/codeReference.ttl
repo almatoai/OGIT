@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Operations:codeReference
     rdfs:label "codeReference";
     dcterms:description "Reference string to the network-code article that was violated (e.g. 'NC SO Art. 127').";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

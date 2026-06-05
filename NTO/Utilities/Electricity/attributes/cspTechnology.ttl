@@ -11,5 +11,7 @@ ogit.Utilities.Electricity:cspTechnology
     rdfs:label "cspTechnology";
     dcterms:description "CSP collector technology: parabolic_trough, central_receiver, dish_stirling, linear_fresnel.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "parabolic_trough,central_receiver,dish_stirling,linear_fresnel";
 .

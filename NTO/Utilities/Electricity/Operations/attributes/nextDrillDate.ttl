@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Operations:nextDrillDate
     rdfs:label "nextDrillDate";
     dcterms:description "Date of the next scheduled RestorationPlan drill (ISO 8601 date).";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

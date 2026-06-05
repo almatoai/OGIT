@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Dynamics:asynchronousMachineDynamicsRef
     rdfs:label "asynchronousMachineDynamicsRef";
     dcterms:description "Reference to the AsynchronousMachineDynamics vertex a mechanical load is attached to.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

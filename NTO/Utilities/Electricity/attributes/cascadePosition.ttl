@@ -11,5 +11,7 @@ ogit.Utilities.Electricity:cascadePosition
     rdfs:label "cascadePosition";
     dcterms:description "Position of the unit within a hydro cascade: top, middle, bottom, isolated.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "top,middle,bottom,isolated";
 .

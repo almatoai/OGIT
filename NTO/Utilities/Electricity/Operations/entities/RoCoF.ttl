@@ -14,7 +14,7 @@ ogit.Utilities.Electricity.Operations:RoCoF
     rdfs:label "RoCoF";
     dcterms:description "UCTE OH P1, NC RfG. Rate of change of frequency in Hz/s. Anchor + sgo:Timeseries with computation window typically 500 ms.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

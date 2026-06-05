@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Operations.StateEstimation:maxValue
     rdfs:label "maxValue";
     dcterms:description "Maximum value of the analog measurement range.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

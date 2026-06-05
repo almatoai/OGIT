@@ -13,7 +13,7 @@ ogit.Utilities.Electricity:MarketParticipant
     rdfs:label "MarketParticipant";
     dcterms:description "ENTSO-E market participant identified by EIC X-code or Y-code. Represents a legal entity active in electricity wholesale markets: producer, supplier, trader, balancing-responsible party, retailer, aggregator, market operator.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
@@ -31,6 +31,12 @@ ogit.Utilities.Electricity:MarketParticipant
         ogit.Utilities.Electricity:participantEic
     );
     ogit:allowed (
-
+        [ sgo:manages  sgo:Process ]
+        [ sgo:employs  sgo:Person ]
+        [ ogit:locatedIn  ogit:Location ]
+        [ ogit:contains  ogit:Entity ]
+        [ sgo:supports  ogit:Entity ]
+        [ sgo:owns  sgo:Asset ]
+        [ sgo:hasParent  sgo:Organization ]
     );
 .

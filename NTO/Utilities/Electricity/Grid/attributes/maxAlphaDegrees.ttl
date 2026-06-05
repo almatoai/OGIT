@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Grid:maxAlphaDegrees
     rdfs:label "maxAlphaDegrees";
     dcterms:description "Maximum firing angle (alpha) of an LCC HVDC converter in degrees.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

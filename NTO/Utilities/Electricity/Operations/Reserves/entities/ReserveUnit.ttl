@@ -15,7 +15,7 @@ ogit.Utilities.Electricity.Operations.Reserves:ReserveUnit
     rdfs:label "ReserveUnit";
     dcterms:description "NC EB. A registered resource that can offer one or more reserve products. ReserveUnit aggregates above the equipment level for market participation.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
@@ -29,7 +29,10 @@ ogit.Utilities.Electricity.Operations.Reserves:ReserveUnit
         ogit.Utilities.Electricity.Operations.Reserves:maxCapacityMw
         ogit.Utilities.Electricity.Operations.Reserves:minRuntimeMin
         ogit.Utilities.Electricity.Operations.Reserves:minDowntimeMin
-        ogit.Utilities.Electricity.Operations.Reserves:qualifiedProducts
+        ogit.Utilities.Electricity.Operations.Reserves:qualifiedFcr
+        ogit.Utilities.Electricity.Operations.Reserves:qualifiedAfrr
+        ogit.Utilities.Electricity.Operations.Reserves:qualifiedMfrr
+        ogit.Utilities.Electricity.Operations.Reserves:qualifiedRr
         ogit.Utilities.Electricity.Operations.Reserves:qualificationDate
     );
     ogit:indexed-attributes (

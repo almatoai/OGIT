@@ -13,7 +13,7 @@ ogit.Utilities.Electricity.Operations.StateEstimation:AccumulatorValue
     rdfs:label "AccumulatorValue";
     dcterms:description "CIM cim:AccumulatorValue. Cumulative-counter anchor (energy meter, operation count).";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

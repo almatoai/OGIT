@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Grid:pickupValue
     rdfs:label "pickupValue";
     dcterms:description "Pickup-current or pickup-voltage value at which the indicator triggers.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

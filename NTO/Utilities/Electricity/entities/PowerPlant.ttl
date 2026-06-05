@@ -14,7 +14,7 @@ ogit.Utilities.Electricity:PowerPlant
     rdfs:label "PowerPlant";
     dcterms:description "Pragmatic aggregate above GeneratingUnit. Not a first-class CIM class but ubiquitous in asset-register and plant-inventory sources, which aggregate at plant level rather than at the unit level CIM defines. Holds plant identity, the plant operator, the primary energy carrier and the aggregate capacity rollups.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

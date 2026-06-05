@@ -9,7 +9,9 @@ ogit.Utilities.Electricity:storageKind
     a owl:DatatypeProperty;
     rdfs:subPropertyOf ogit:Attribute;
     rdfs:label "storageKind";
-    dcterms:description "Storage technology: lithium_ion_bess, flow_battery, pumped_hydro, compressed_air, flywheel, thermal, hydrogen, gravity.";
+    dcterms:description "Storage technology: lithium_ion_bess, flow_battery, pumped_hydro, compressed_air, flywheel, thermal, hydrogen, gravity, sodium_ion, supercapacitor, lead_acid, liquid_air (LAES / cryo-storage).";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "lithium_ion_bess,flow_battery,pumped_hydro,compressed_air,flywheel,thermal,hydrogen,gravity,sodium_ion,supercapacitor,lead_acid,liquid_air";
 .

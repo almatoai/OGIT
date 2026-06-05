@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Operations:triggeringEventRef
     rdfs:label "triggeringEventRef";
     dcterms:description "Reference to the Contingency / Outage / Event that triggered the state transition.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

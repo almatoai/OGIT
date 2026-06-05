@@ -13,7 +13,7 @@ ogit.Utilities.Electricity.Dynamics:HydroTurbineGovernor
     rdfs:label "HydroTurbineGovernor";
     dcterms:description "Hydro-turbine governor dynamic model. Adds turbine_kind (francis, kaplan, pelton, bulb, propeller).";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

@@ -13,7 +13,7 @@ ogit.Utilities.Electricity.Market:ImbalanceArea
     rdfs:label "ImbalanceArea";
     dcterms:description "NC EB imbalance accounting scope. Often equals a BiddingZone but may be a finer or coarser geographic subdivision depending on the country.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

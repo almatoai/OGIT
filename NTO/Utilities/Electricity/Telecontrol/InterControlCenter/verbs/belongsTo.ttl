@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:belongsTo
     rdfs:label "belongsTo";
     dcterms:description "Containment relation inside the InterControlCenter sub-namespace: a TransferReport belongs to its parent DataSetTransferSet; an AuthenticationRecord belongs to its parent Account. Distinct from `Utilities.Electricity.Operations.StateEstimation:belongsTo` (Measurement-value containment) -- separate verbs by sub-namespace because OGIT-allowed is per-class and the semantics are independent. Cardinality: many2one.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

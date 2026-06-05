@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Dynamics:timeStepMs
     rdfs:label "timeStepMs";
     dcterms:description "Integration time step in milliseconds (for RMS) or microseconds (for EMT).";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

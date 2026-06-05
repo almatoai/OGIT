@@ -12,7 +12,7 @@ ogit.Utilities.Electricity:LFCBlock
     rdfs:label "LFCBlock";
     dcterms:description "ENTSO-E NC SO Article 141 LFC Block. Grouping of LFC Areas for AGC purposes. Continental Europe defines multiple LFC Blocks; holds the block-responsible party reference and the dimensioning incident MW used for reserve sizing.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

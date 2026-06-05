@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Operations:exitedAt
     rdfs:label "exitedAt";
     dcterms:description "Timestamp at which the state was exited (ISO 8601, UTC); open while still active.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

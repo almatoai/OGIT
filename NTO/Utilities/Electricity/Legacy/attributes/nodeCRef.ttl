@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Legacy:nodeCRef
     rdfs:label "nodeCRef";
     dcterms:description "Reference to the third UcteNode (three-winding transformer).";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

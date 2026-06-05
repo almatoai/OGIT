@@ -13,7 +13,7 @@ ogit.Utilities.Electricity:OwnershipShare
     rdfs:label "OwnershipShare";
     dcterms:description "Reified relation carrying an ownership fraction over a power-system resource (GeneratingUnit, PowerPlant, Interconnector, EnergyStorage, ConversionUnit) for a defined validity period. Empirical anchor: Krsko nuclear power plant (SI/HR 50/50 since 1981). Used wherever a single physical asset is jointly owned, operated, or off-taken. Reified because the relation has its own lifecycle, its own attributes, and is conflict-eligible across multiple data sources. Concept Section 8.1.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

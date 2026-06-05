@@ -13,7 +13,7 @@ ogit.Utilities.Electricity.Market:MarketTimeSlot
     rdfs:label "MarketTimeSlot";
     dcterms:description "Market period definition. One slot maps to a (period_start, period_end) interval at the product granularity.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

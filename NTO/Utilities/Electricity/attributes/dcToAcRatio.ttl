@@ -11,5 +11,5 @@ ogit.Utilities.Electricity:dcToAcRatio
     rdfs:label "dcToAcRatio";
     dcterms:description "Ratio of installed DC capacity to AC inverter capacity (typically 1.1 - 1.4 for utility-scale PV).";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

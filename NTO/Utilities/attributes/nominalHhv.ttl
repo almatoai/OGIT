@@ -11,5 +11,5 @@ ogit.Utilities:nominalHhv
     rdfs:label "nominalHhv";
     dcterms:description "Higher heating value at standard temperature and pressure, in J/kg or J/m3.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

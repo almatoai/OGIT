@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Diagram:parentDiagramRef
     rdfs:label "parentDiagramRef";
     dcterms:description "Reference to the parent Diagram vertex of a DiagramObject.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

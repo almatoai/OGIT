@@ -9,7 +9,9 @@ ogit.Utilities.Electricity.Grid:towerType
     a owl:DatatypeProperty;
     rdfs:subPropertyOf ogit:Attribute;
     rdfs:label "towerType";
-    dcterms:description "Tower type: lattice, monopole, h_frame, guyed, underground.";
+    dcterms:description "Tower type: lattice, monopole, h_frame, guyed, portal.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "lattice,monopole,h_frame,guyed,portal";
 .

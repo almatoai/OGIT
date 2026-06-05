@@ -14,7 +14,7 @@ ogit.Utilities.Electricity.Operations:DefensePlan
     rdfs:label "DefensePlan";
     dcterms:description "NC ER Article 11. Pre-defined automatic action set to mitigate emergency states. The list of pre-defined actions is NOT a JSON payload on this vertex; individual actions are first-class SwitchAction vertices attached via consistsOf. Activation history rides on a sgo:Timeseries attached via generates.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

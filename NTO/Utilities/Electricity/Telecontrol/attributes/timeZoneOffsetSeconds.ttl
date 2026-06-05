@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Telecontrol:timeZoneOffsetSeconds
     rdfs:label "timeZoneOffsetSeconds";
     dcterms:description "Offset in seconds from UTC for time-tag interpretation.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

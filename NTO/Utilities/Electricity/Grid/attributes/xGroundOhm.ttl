@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Grid:xGroundOhm
     rdfs:label "xGroundOhm";
     dcterms:description "Grounding-reactor reactance in ohms.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

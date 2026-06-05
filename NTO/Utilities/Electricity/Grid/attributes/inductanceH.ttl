@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Grid:inductanceH
     rdfs:label "inductanceH";
     dcterms:description "Inductance in henries (used by DCLineSegment).";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

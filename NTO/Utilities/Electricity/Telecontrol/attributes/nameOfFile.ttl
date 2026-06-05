@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Telecontrol:nameOfFile
     rdfs:label "nameOfFile";
     dcterms:description "Encoded NOF (Name of File) identifier per ASDU 120-127 semantics.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

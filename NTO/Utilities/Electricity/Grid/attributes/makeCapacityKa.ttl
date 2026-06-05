@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Grid:makeCapacityKa
     rdfs:label "makeCapacityKa";
     dcterms:description "Rated short-circuit making capacity in kA.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

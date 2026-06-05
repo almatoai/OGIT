@@ -14,7 +14,7 @@ ogit.Utilities.Electricity:ControlArea
     rdfs:label "ControlArea";
     dcterms:description "CIM cim:ControlArea. The operational scope of one TSO or control centre for frequency and balancing purposes. In this NTO ControlArea inherits directly from ogit:Entity, not from PowerSystemResource: it is an operational grouping concept without physical existence. Net interchange target and ACE target are time-variant and live only on sgo:Timeseries channels, not as vertex attributes.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

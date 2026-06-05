@@ -9,7 +9,9 @@ ogit.Utilities.Electricity:panelTechnology
     a owl:DatatypeProperty;
     rdfs:subPropertyOf ogit:Attribute;
     rdfs:label "panelTechnology";
-    dcterms:description "PV panel cell technology: mono_si, poly_si, thin_film, perovskite, cdte, cis.";
+    dcterms:description "PV panel cell technology: mono_si, poly_si, thin_film, perovskite, cdte, cis, hjt, topcon.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "mono_si,poly_si,thin_film,perovskite,cdte,cis,hjt,topcon";
 .

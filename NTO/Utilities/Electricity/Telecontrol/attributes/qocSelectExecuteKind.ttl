@@ -11,5 +11,7 @@ ogit.Utilities.Electricity.Telecontrol:qocSelectExecuteKind
     rdfs:label "qocSelectExecuteKind";
     dcterms:description "Qualifier of Command select-execute mode: select, execute, direct_execute.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "select,execute,direct_execute";
 .

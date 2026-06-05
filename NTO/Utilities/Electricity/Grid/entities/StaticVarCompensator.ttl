@@ -14,7 +14,7 @@ ogit.Utilities.Electricity.Grid:StaticVarCompensator
     rdfs:label "StaticVarCompensator";
     dcterms:description "CIM cim:StaticVarCompensator. Dynamic reactive-power source using thyristor-controlled reactors and capacitors.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

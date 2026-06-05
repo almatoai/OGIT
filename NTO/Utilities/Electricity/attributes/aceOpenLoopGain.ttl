@@ -11,5 +11,5 @@ ogit.Utilities.Electricity:aceOpenLoopGain
     rdfs:label "aceOpenLoopGain";
     dcterms:description "Open-loop gain of the ACE controller for the LFC area, in MW/Hz.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

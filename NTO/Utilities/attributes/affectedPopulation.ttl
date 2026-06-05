@@ -11,5 +11,5 @@ ogit.Utilities:affectedPopulation
     rdfs:label "affectedPopulation";
     dcterms:description "Population affected by the outage (count of customers, households, or MW of load lost).";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

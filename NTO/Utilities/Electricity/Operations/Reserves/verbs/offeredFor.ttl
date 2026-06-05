@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Operations.Reserves:offeredFor
     rdfs:label "offeredFor";
     dcterms:description "Asserts that an offering is offered for the target ReserveUnit. Cardinality: many2one.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

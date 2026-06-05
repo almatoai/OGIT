@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Dynamics:pI
     rdfs:label "pI";
     dcterms:description "ZIP load coefficient for constant-current share of P.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

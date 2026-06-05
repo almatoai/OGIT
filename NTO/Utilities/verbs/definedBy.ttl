@@ -11,5 +11,5 @@ ogit.Utilities:definedBy
     rdfs:label "definedBy";
     dcterms:description "Asserts that the source entity (typically an OperationalLimit) is defined by an external regulation / NetworkCodeReference / standard. Cardinality: many2many.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

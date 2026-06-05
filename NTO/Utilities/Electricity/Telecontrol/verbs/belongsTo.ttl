@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Telecontrol:belongsTo
     rdfs:label "belongsTo";
     dcterms:description "Containment relation inside the Telecontrol sub-namespace: a ProtocolEndpoint belongs to a parent Substation or ControlCenter. Distinct from the homonymous verbs in StateEstimation and InterControlCenter -- OGIT-allowed is per-class and each sub-namespace declares its own verb with its own semantics. Cardinality: many2one.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

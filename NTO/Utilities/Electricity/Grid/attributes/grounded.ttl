@@ -11,5 +11,7 @@ ogit.Utilities.Electricity.Grid:grounded
     rdfs:label "grounded";
     dcterms:description "Boolean. True if the transformer end neutral is grounded.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "true,false";
 .

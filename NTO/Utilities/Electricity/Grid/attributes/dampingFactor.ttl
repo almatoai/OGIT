@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Grid:dampingFactor
     rdfs:label "dampingFactor";
     dcterms:description "Damping factor of a SynchronousMachine.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

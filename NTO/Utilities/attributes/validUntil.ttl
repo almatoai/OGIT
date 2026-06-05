@@ -11,5 +11,5 @@ ogit.Utilities:validUntil
     rdfs:label "validUntil";
     dcterms:description "Validity end timestamp (ISO 8601, UTC). Open / null while the period is still active. Local because the existing SGO/sgo only ships validFrom.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

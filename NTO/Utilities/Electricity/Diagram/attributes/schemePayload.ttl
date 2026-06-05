@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Diagram:schemePayload
     rdfs:label "schemePayload";
     dcterms:description "Free-form color-scheme payload (JSON / CSS) defining colour ramps and overlays.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

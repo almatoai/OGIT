@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Operations.Reserves:bspId
     rdfs:label "bspId";
     dcterms:description "Stable identifier of a Balancing-Service-Provider record (in addition to the participant_eic).";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

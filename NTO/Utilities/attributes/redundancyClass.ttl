@@ -11,5 +11,5 @@ ogit.Utilities:redundancyClass
     rdfs:label "redundancyClass";
     dcterms:description "Redundancy classification of the control centre: tier_1 (mirrored cold standby), tier_2 (hot standby), tier_3 (active-active).";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

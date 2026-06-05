@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Operations:devUnit
     rdfs:label "devUnit";
     dcterms:description "Unit of the frequency-deviation signal (mHz or Hz).";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

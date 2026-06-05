@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Operations:triggeredBy
     rdfs:label "triggeredBy";
     dcterms:description "Asserts that the source (OperationalState transition, NetworkCodeViolation) was triggered by the target Contingency / Outage / Event. Cardinality: many2one.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

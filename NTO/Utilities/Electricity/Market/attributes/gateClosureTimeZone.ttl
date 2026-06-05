@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Market:gateClosureTimeZone
     rdfs:label "gateClosureTimeZone";
     dcterms:description "Time zone used for gate-closure boundaries (IANA identifier).";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

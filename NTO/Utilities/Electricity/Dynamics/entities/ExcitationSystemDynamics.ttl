@@ -13,7 +13,7 @@ ogit.Utilities.Electricity.Dynamics:ExcitationSystemDynamics
     rdfs:label "ExcitationSystemDynamics";
     dcterms:description "CIM cim:ExcitationSystemDynamics. AVR (automatic voltage regulator) model parameter set. model_kind covers IEEE ESACx, ESDCx, ESSTx, EXACx, EXDCx, EXSTx, EXWT1E, IEEESTAB1 etc.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

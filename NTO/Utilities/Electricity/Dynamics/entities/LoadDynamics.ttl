@@ -14,7 +14,7 @@ ogit.Utilities.Electricity.Dynamics:LoadDynamics
     rdfs:label "LoadDynamics";
     dcterms:description "ABSTRACT: CIM cim:LoadDynamics. Abstract parent of load-dynamic models (constant power, constant impedance, constant current, exponential, ZIP, composite).";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

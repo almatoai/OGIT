@@ -11,5 +11,7 @@ ogit.Utilities.Electricity.Telecontrol:protocolKind
     rdfs:label "protocolKind";
     dcterms:description "Protocol kind: iec60870_5_101, iec60870_5_104.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "iec60870_5_101,iec60870_5_104";
 .

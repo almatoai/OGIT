@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Dynamics:asynchronousMachineRef
     rdfs:label "asynchronousMachineRef";
     dcterms:description "Reference to the AsynchronousMachine vertex whose dynamic behaviour is modelled.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

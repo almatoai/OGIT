@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Grid:voltageAngleDegrees
     rdfs:label "voltageAngleDegrees";
     dcterms:description "Voltage angle in degrees at the EnergySource bus. The slack/reference angle is typically 0 degrees.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

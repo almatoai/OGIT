@@ -11,5 +11,5 @@ ogit.Utilities.Electricity:memberControlAreaRefs
     rdfs:label "memberControlAreaRefs";
     dcterms:description "Comma-separated list of ControlArea references that make up this LFC area or block.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

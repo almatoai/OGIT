@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Market:criticalOutageRef
     rdfs:label "criticalOutageRef";
     dcterms:description "Reference to the outage scenario the flowgate considers critical (CNE-CO).";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

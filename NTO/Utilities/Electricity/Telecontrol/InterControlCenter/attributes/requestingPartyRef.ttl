@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:requestingPartyRef
     rdfs:label "requestingPartyRef";
     dcterms:description "Reference to the ControlCenter / Account vertex on whose behalf the request was issued.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Operations.Reserves:setpointUnit
     rdfs:label "setpointUnit";
     dcterms:description "Unit of the set-point series (MW).";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

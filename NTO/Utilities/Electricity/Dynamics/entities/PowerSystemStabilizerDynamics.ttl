@@ -13,7 +13,7 @@ ogit.Utilities.Electricity.Dynamics:PowerSystemStabilizerDynamics
     rdfs:label "PowerSystemStabilizerDynamics";
     dcterms:description "CIM cim:PowerSystemStabilizerDynamics. PSS model (pss1a, pss2b, pss3b, pss4b, pss5, pssIEEE2B).";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

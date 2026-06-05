@@ -12,7 +12,7 @@ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:EventLog
     rdfs:label "EventLog";
     dcterms:description "TASE.2 Block 7 Event Service. Persistent event log carried over the inter-center link. Anchor + sgo:Timeseries: the vertex holds the log identity; the individual log entries are TSDB entries.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Operations:serviceClass
     rdfs:label "serviceClass";
     dcterms:description "BlackStartService class: autonomous, assisted.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

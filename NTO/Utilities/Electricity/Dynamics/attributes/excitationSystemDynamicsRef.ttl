@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Dynamics:excitationSystemDynamicsRef
     rdfs:label "excitationSystemDynamicsRef";
     dcterms:description "Reference to the ExcitationSystemDynamics vertex this PSS / OEL / UEL / VC is attached to.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

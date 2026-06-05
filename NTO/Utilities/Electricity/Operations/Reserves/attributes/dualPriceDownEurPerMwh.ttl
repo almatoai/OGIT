@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Operations.Reserves:dualPriceDownEurPerMwh
     rdfs:label "dualPriceDownEurPerMwh";
     dcterms:description "Down-direction settlement price under dual pricing in EUR per MWh.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

@@ -14,7 +14,7 @@ ogit.Utilities.Electricity.Market:SchedulingArea
     rdfs:label "SchedulingArea";
     dcterms:description "NC CACM scheduling scope. Often equals a ControlArea.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

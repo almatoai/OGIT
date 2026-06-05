@@ -14,7 +14,7 @@ ogit.Utilities.Electricity.Operations.Reserves:RrOffering
     rdfs:label "RrOffering";
     dcterms:description "NC EB Article 35. RR (Replacement Reserve) bid. Adds activation_time_min (typical 30 min) and min_delivery_duration_min (typical 15 min sustained).";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

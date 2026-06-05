@@ -13,7 +13,7 @@ ogit.Utilities.Electricity.Diagram:PositionPoint
     rdfs:label "PositionPoint";
     dcterms:description "CIM cim:PositionPoint. One 2D / 3D point in a GeographicalLocation. The parent GeographicalLocation is expressed via the `ogit:isPartOf -> GeographicalLocation` graph edge; no parallel `parentLocationRef` attribute.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

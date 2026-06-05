@@ -14,7 +14,7 @@ ogit.Utilities.Electricity.Operations:SystemWideAlert
     rdfs:label "SystemWideAlert";
     dcterms:description "NC SO operational communications. Emergency, contingency notice, market information, restoration alerts issued by control centres.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Grid:maxPMw
     rdfs:label "maxPMw";
     dcterms:description "Maximum active power in MW.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

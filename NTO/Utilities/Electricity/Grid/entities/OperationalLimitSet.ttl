@@ -14,7 +14,7 @@ ogit.Utilities.Electricity.Grid:OperationalLimitSet
     rdfs:label "OperationalLimitSet";
     dcterms:description "CIM cim:OperationalLimitSet. Grouping container for one or more OperationalLimit instances applied to one terminal, conducting-equipment, or generating-unit.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

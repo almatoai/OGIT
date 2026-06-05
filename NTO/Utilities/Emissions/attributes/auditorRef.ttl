@@ -11,5 +11,5 @@ ogit.Utilities.Emissions:auditorRef
     rdfs:label "auditorRef";
     dcterms:description "Reference to the auditor that signed off the inventory.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

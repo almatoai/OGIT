@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Operations:analyzedIn
     rdfs:label "analyzedIn";
     dcterms:description "Asserts that a Contingency is analyzed in the target ContingencyAnalysis. Cardinality: many2one.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

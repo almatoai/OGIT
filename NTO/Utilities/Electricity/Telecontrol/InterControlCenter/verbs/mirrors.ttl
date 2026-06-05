@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:mirrors
     rdfs:label "mirrors";
     dcterms:description "Asserts that the source TASE.2 vertex mirrors a CIM Telecontrol / Grid counterpart (same physical sample, different protocol). Cardinality: many2one.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

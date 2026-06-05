@@ -14,7 +14,7 @@ ogit.Utilities.Electricity.Grid:RegulatingControl
     rdfs:label "RegulatingControl";
     dcterms:description "CIM cim:RegulatingControl. Generic control reference used by tap changers, shunt compensators, etc. Modelled as a PowerSystemResource subtype to match the CIM inheritance (cim:RegulatingControl extends cim:PowerSystemResource). Per QS Round 4 finding CONS-05: targetValue, targetValueUnit, targetDeadband, enabled are CGMES SSH-profile attributes (time-variant); they live exclusively on the linked sgo:Timeseries (channels RegulatingControl.targetValue, .targetDeadband, .enabled), not as vertex attributes. The vertex carries only the static control-mode discriminator plus regulation-priority metadata.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

@@ -14,7 +14,7 @@ ogit.Utilities.Electricity.Grid:LinearShuntCompensator
     rdfs:label "LinearShuntCompensator";
     dcterms:description "CIM cim:LinearShuntCompensator. ShuntCompensator with linear section model.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

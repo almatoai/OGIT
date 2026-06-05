@@ -11,5 +11,7 @@ ogit.Utilities.Emissions:confidenceClass
     rdfs:label "confidenceClass";
     dcterms:description "Confidence classification: high, medium, low, indicative.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "high,medium,low,indicative";
 .

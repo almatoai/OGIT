@@ -14,7 +14,7 @@ ogit.Utilities.Electricity.Grid:GeographicalRegion
     rdfs:label "GeographicalRegion";
     dcterms:description "CIM cim:GeographicalRegion. Top-level geographic partitioning of a TSO control area for CGMES boundary modelling. Typically equates to a country or a TSO operational area.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Grid:protects
     rdfs:label "protects";
     dcterms:description "Asserts that a ProtectionEquipment protects the target ConductingEquipment. Cardinality: one2many.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

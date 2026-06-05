@@ -11,5 +11,5 @@ ogit.Utilities:revisionNumber
     rdfs:label "revisionNumber";
     dcterms:description "Schedule revision number; increments on each republication.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

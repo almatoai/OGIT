@@ -11,5 +11,5 @@ ogit.Utilities.Emissions:aggregatesFrom
     rdfs:label "aggregatesFrom";
     dcterms:description "Asserts that an EmissionInventory aggregates from the target GreenhouseGasEmission records. Cardinality: one2many.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

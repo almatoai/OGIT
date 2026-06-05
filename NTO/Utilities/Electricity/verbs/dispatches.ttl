@@ -11,5 +11,5 @@ ogit.Utilities.Electricity:dispatches
     rdfs:label "dispatches";
     dcterms:description "Asserts that a ControlArea dispatches (issues set points to) the target GeneratingUnit or EnergyStorage. Cardinality: one2many.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

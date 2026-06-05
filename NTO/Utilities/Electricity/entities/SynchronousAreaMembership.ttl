@@ -13,7 +13,7 @@ ogit.Utilities.Electricity:SynchronousAreaMembership
     rdfs:label "SynchronousAreaMembership";
     dcterms:description "Reified membership of a ControlArea or BiddingZone in a SynchronousArea over a validity window. Empirical anchor: Baltic states leaving IPS/UPS on 2025-02-09 to join Continental Europe. Concept Section 8.3.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

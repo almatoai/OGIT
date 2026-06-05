@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Operations:verifiedDate
     rdfs:label "verifiedDate";
     dcterms:description "Date of last black-start verification (ISO 8601 date).";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

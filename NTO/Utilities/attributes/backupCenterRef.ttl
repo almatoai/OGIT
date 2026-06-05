@@ -11,5 +11,5 @@ ogit.Utilities:backupCenterRef
     rdfs:label "backupCenterRef";
     dcterms:description "Reference to the ControlCenter vertex that takes over operations on failure of the primary.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

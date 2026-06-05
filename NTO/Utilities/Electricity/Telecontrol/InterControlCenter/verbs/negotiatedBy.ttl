@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:negotiatedBy
     rdfs:label "negotiatedBy";
     dcterms:description "Asserts that a BilateralTable was negotiated by the named ControlCenters. Cardinality: many2many.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

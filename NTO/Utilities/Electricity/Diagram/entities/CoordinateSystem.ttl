@@ -13,7 +13,7 @@ ogit.Utilities.Electricity.Diagram:CoordinateSystem
     rdfs:label "CoordinateSystem";
     dcterms:description "CIM cim:CoordinateSystem. Reference system for positions (WGS84 default, or local UTM zones, or other CRS).";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

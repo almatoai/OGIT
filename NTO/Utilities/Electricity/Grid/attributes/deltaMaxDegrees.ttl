@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Grid:deltaMaxDegrees
     rdfs:label "deltaMaxDegrees";
     dcterms:description "Maximum PWM modulation depth angle for VSC in degrees.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

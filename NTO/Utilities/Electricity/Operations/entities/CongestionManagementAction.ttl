@@ -14,7 +14,7 @@ ogit.Utilities.Electricity.Operations:CongestionManagementAction
     rdfs:label "CongestionManagementAction";
     dcterms:description "NC CACM, NC SO. Remedial action against congestion (re-dispatch, counter-trading, topological change, curtailment, load-shed).";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

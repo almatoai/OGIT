@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Grid:r21Ohm
     rdfs:label "r21Ohm";
     dcterms:description "Asymmetric R parameter for branch impedance (terminal 2 to 1) in ohms.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

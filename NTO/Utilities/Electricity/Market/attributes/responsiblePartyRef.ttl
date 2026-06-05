@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Market:responsiblePartyRef
     rdfs:label "responsiblePartyRef";
     dcterms:description "Reference to the NetworkOperator (or balancing-responsible party) vertex responsible for the area.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

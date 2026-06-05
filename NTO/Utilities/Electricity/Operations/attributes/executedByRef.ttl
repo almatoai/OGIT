@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Operations:executedByRef
     rdfs:label "executedByRef";
     dcterms:description "Reference to the Person / Actor that executed the action.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

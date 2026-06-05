@@ -11,5 +11,7 @@ ogit.Utilities:season
     rdfs:label "season";
     dcterms:description "Seasonal applicability: summer, winter, spring, autumn, all.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "summer,winter,spring,autumn,all";
 .

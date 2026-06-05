@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Dynamics:targetModelRef
     rdfs:label "targetModelRef";
     dcterms:description "Reference to the dynamic-model vertex this parameter set applies to.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

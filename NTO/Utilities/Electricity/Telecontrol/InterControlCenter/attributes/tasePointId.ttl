@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:tasePointId
     rdfs:label "tasePointId";
     dcterms:description "Stable identifier of a TASE.2 IndicationPoint.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

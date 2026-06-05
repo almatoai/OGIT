@@ -9,7 +9,9 @@ ogit.Utilities.Electricity.Grid:limitTypeKind
     a owl:DatatypeProperty;
     rdfs:subPropertyOf ogit:Attribute;
     rdfs:label "limitTypeKind";
-    dcterms:description "CIM cim:OperationalLimitType.kind enum: patl (permanent admissible transmission loading), tatl (temporary admissible transmission loading), dynamic (state-dependent), static (fixed), warning, low_voltage, high_voltage, low_voltage_emergency, high_voltage_emergency, low_voltage_disturbance, high_voltage_disturbance.";
+    dcterms:description "CIM cim:OperationalLimitType.kind enum: patl (permanent admissible transmission loading), tatl (temporary admissible transmission loading), dynamic (state-dependent), static (fixed), warning, lowVoltage, highVoltage, lowVoltageEmergency, highVoltageEmergency, lowVoltageDisturbance, highVoltageDisturbance, current. The voltage-related values follow CIM camelCase per Section 11.1a Regel 5.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "patl,tatl,dynamic,static,warning,lowVoltage,highVoltage,lowVoltageEmergency,highVoltageEmergency,lowVoltageDisturbance,highVoltageDisturbance,current";
 .

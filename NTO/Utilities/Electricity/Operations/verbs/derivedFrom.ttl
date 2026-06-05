@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Operations:derivedFrom
     rdfs:label "derivedFrom";
     dcterms:description "Asserts that the source signal (FrequencyDeviation, MinimumInertia derivation) is derived from the target source (SystemFrequency, ContingencyAnalysis). Cardinality: many2one.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

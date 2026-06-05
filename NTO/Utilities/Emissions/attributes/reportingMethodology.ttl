@@ -11,5 +11,5 @@ ogit.Utilities.Emissions:reportingMethodology
     rdfs:label "reportingMethodology";
     dcterms:description "Reporting methodology: IPCC 2006 Tier 1 / Tier 2 / Tier 3, GHG Protocol, EU ETS, regional inventory.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

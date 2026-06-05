@@ -9,7 +9,9 @@ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:dataType
     a owl:DatatypeProperty;
     rdfs:subPropertyOf ogit:Attribute;
     rdfs:label "dataType";
-    dcterms:description "TASE.2 data type: single, double, discrete, real, state.";
+    dcterms:description "TASE.2 data type per IEC 60870-6-503 (Conformance Block 1): single, double, discrete, real, state, stateSupplemental. The `stateSupplemental` value is the CIM/TASE.2-binding-document camelCase form of the IEC 60870-6-503 `STATESUP` Conformance-Block-2 supplementary data type.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "single,double,discrete,real,state,stateSupplemental";
 .

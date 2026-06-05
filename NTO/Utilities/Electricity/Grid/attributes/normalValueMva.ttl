@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Grid:normalValueMva
     rdfs:label "normalValueMva";
     dcterms:description "Normal operating apparent-power value in MVA.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

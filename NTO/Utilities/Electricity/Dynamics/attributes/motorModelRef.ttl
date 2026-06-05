@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Dynamics:motorModelRef
     rdfs:label "motorModelRef";
     dcterms:description "Reference to the induction-motor model vertex in a composite dynamic load.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

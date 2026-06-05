@@ -9,7 +9,9 @@ ogit.Utilities.Electricity:fuelType
     a owl:DatatypeProperty;
     rdfs:subPropertyOf ogit:Attribute;
     rdfs:label "fuelType";
-    dcterms:description "Primary fuel of a thermal generating unit: coal, lignite, natural_gas, oil, biomass, geothermal, oil_shale, mixed_fossil, refuse_derived.";
+    dcterms:description "Primary fuel of a thermal generating unit per CIM 17 cim:FuelType plus ENTSO-E TP extensions: coal, hardCoal (CIM 17 distinct from lignite), lignite, naturalGas, oil, biomass, geothermal, oilShale, mixedFossil, refuseDerived, nuclear, peat, hydrogen, gas (non-fossil gas mixtures: synthetic, mine gas, blast-furnace gas), waste, landfillGas, municipalSolidWaste, other. Casing follows CIM upstream camelCase per Section 11.1a Regel 5; nuclear is included because ThermalGeneratingUnit subclass instances may represent nuclear-thermal plants, with NuclearGeneratingUnit remaining the preferred modelling target for nuclear-specific attributes.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "coal,hardCoal,lignite,naturalGas,oil,biomass,geothermal,oilShale,mixedFossil,refuseDerived,nuclear,peat,hydrogen,gas,waste,landfillGas,municipalSolidWaste,other";
 .

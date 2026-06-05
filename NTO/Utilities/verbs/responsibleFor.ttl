@@ -11,5 +11,5 @@ ogit.Utilities:responsibleFor
     rdfs:label "responsibleFor";
     dcterms:description "Asserts that a NetworkOperator carries regulatory or contractual responsibility for the target entity (e.g. ControlArea, BalancingArea, SynchronousArea segment). Distinguished from operates because responsibility can extend to assets operated by others. Cardinality: many2many.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

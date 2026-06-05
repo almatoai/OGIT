@@ -11,5 +11,5 @@ ogit.Utilities:periodStart
     rdfs:label "periodStart";
     dcterms:description "Reporting / accounting / settlement period start timestamp (ISO 8601, UTC). Used by GreenhouseGasEmission and EmissionInventory (Emissions namespace), Allocation and Settlement (Market namespace), BalancingEnergyBid / BalancingCapacityBid / Activation / Settlement (Reserves namespace). Lives in Utilities as the lowest common ancestor.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

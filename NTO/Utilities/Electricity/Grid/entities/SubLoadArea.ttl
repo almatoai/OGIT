@@ -13,7 +13,7 @@ ogit.Utilities.Electricity.Grid:SubLoadArea
     rdfs:label "SubLoadArea";
     dcterms:description "CIM cim:SubLoadArea. Sub-aggregation under a LoadArea.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

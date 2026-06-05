@@ -11,5 +11,5 @@ ogit.Utilities:convertedTo
     rdfs:label "convertedTo";
     dcterms:description "Asserts a cross-carrier conversion path: source EnergyCarrier can be transformed into target EnergyCarrier via some ConversionUnit. Sector-coupling vocabulary. Cardinality: many2many.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

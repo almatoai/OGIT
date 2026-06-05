@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Grid:groupedInto
     rdfs:label "groupedInto";
     dcterms:description "Asserts that a ConnectivityNode is grouped into a TopologicalNode (the topology-collapse mapping). Cardinality: many2one.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Telecontrol:qocQualifier
     rdfs:label "qocQualifier";
     dcterms:description "Qualifier of Command additional value (1..31 per IEC 60870-5-5).";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

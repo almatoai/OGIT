@@ -11,5 +11,5 @@ ogit.Utilities.Emissions:calibrationRecordRef
     rdfs:label "calibrationRecordRef";
     dcterms:description "Reference to the calibration record certifying the measurement device.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

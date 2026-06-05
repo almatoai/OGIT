@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Grid:ratedSpeedRpm
     rdfs:label "ratedSpeedRpm";
     dcterms:description "Rated rotational speed in rpm.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

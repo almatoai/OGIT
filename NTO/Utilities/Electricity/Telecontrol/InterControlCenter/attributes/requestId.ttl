@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:requestId
     rdfs:label "requestId";
     dcterms:description "Stable identifier of a TASE.2 IntegrityRequest (Block 2 client-side service invocation).";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

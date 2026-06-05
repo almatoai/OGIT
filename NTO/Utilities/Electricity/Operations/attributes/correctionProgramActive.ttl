@@ -11,5 +11,7 @@ ogit.Utilities.Electricity.Operations:correctionProgramActive
     rdfs:label "correctionProgramActive";
     dcterms:description "Boolean. True if a time-error correction program is currently active.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "true,false";
 .

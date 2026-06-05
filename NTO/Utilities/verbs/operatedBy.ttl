@@ -11,5 +11,5 @@ ogit.Utilities:operatedBy
     rdfs:label "operatedBy";
     dcterms:description "Inverse of operates. Asserts that the source entity is operated by the target NetworkOperator. Range is intentionally restricted to `Utilities:NetworkOperator` -- a MarketParticipant is not a valid target for operatedBy even though both inherit from `sgo:Organization`. Market responsibility (offering / settlement) is expressed by `Utilities.Electricity.Market:submits` from the participant side, not by an inverse operatedBy. Cardinality: many2one.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

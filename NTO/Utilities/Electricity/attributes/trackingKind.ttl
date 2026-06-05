@@ -11,5 +11,7 @@ ogit.Utilities.Electricity:trackingKind
     rdfs:label "trackingKind";
     dcterms:description "Module-mounting tracker kind: fixed, single_axis, dual_axis.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "fixed,single_axis,dual_axis";
 .

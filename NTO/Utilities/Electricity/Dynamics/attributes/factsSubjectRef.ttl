@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Dynamics:factsSubjectRef
     rdfs:label "factsSubjectRef";
     dcterms:description "Reference to the FACTS device (SVC, SeriesCompensator) the dynamic model applies to.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

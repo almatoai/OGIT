@@ -14,7 +14,7 @@ ogit.Utilities.Electricity.Dynamics:FactsDynamics
     rdfs:label "FactsDynamics";
     dcterms:description "FACTS (Flexible AC Transmission System) dynamic model. Subjects are SVC, SeriesCompensator, etc.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

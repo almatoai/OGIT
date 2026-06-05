@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Grid:neutralStep
     rdfs:label "neutralStep";
     dcterms:description "Neutral (no-action) tap step index.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

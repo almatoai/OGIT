@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Grid:xBPu
     rdfs:label "xBPu";
     dcterms:description "Second-cage rotor reactance in per-unit.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

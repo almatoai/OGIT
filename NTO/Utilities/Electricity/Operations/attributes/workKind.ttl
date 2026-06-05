@@ -11,5 +11,7 @@ ogit.Utilities.Electricity.Operations:workKind
     rdfs:label "workKind";
     dcterms:description "Work kind: inspection, repair, replacement, upgrade, commissioning, decommissioning, calibration.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "inspection,repair,replacement,upgrade,commissioning,decommissioning,calibration";
 .

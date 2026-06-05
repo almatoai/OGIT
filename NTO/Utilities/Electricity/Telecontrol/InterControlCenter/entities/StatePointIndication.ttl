@@ -15,7 +15,7 @@ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:StatePointIndication
     rdfs:label "StatePointIndication";
     dcterms:description "TASE.2 State Indication. Multi-state enumeration referencing a StateEnumeration vertex.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

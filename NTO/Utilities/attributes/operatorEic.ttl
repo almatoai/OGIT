@@ -11,5 +11,5 @@ ogit.Utilities:operatorEic
     rdfs:label "operatorEic";
     dcterms:description "ENTSO-E EIC identifier for the operator (X-code for transmission operators, Y-code for market participants). 16-character format with check digit per ENTSO-E EIC specification.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

@@ -9,7 +9,9 @@ ogit.Utilities.Electricity:hydroKind
     a owl:DatatypeProperty;
     rdfs:subPropertyOf ogit:Attribute;
     rdfs:label "hydroKind";
-    dcterms:description "Hydro technology: run_of_river, reservoir, pumped_storage, tide.";
+    dcterms:description "Hydro technology per CIM HydroPlantStorageKind plus ENTSO-E TP marine extensions: runOfRiver, reservoir, pumpedStorage, tide, pondage (CIM day-balancing pondage between run-of-river and full reservoir), wave (non-CIM ENTSO-E TP marine subcategory). Casing follows CIM upstream camelCase per Section 11.1a Regel 5.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "runOfRiver,reservoir,pumpedStorage,tide,pondage,wave";
 .

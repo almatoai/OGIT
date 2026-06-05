@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Dynamics:templateVersion
     rdfs:label "templateVersion";
     dcterms:description "Version identifier of the dynamic-model template.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

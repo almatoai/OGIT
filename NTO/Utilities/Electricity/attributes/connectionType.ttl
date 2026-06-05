@@ -11,5 +11,5 @@ ogit.Utilities.Electricity:connectionType
     rdfs:label "connectionType";
     dcterms:description "Grid-connection technology for offshore wind: HVAC, HVDC-LCC, HVDC-VSC.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

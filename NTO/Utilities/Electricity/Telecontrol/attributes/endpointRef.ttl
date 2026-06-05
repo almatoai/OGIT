@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Telecontrol:endpointRef
     rdfs:label "endpointRef";
     dcterms:description "Reference to the ProtocolEndpoint vertex through which this point / ASDU is addressed.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

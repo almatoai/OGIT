@@ -11,5 +11,5 @@ ogit.Utilities.Electricity:participantEic
     rdfs:label "participantEic";
     dcterms:description "ENTSO-E EIC X-code or Y-code identifying the market participant.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

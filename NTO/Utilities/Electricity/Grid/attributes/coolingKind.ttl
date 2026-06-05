@@ -9,7 +9,9 @@ ogit.Utilities.Electricity.Grid:coolingKind
     a owl:DatatypeProperty;
     rdfs:subPropertyOf ogit:Attribute;
     rdfs:label "coolingKind";
-    dcterms:description "Cooling type of a SynchronousMachine: open_ventilated, hydrogen_air, hydrogen_water, water.";
+    dcterms:description "Cooling type of a SynchronousMachine: open_ventilated, hydrogen_air, hydrogen_water, water, hydrogen (pure-H2 cooling, no secondary medium), air (totally-enclosed air cooling, no forced ventilation).";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "open_ventilated,hydrogen_air,hydrogen_water,water,hydrogen,air";
 .

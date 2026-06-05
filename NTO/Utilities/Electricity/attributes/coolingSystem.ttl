@@ -11,5 +11,5 @@ ogit.Utilities.Electricity:coolingSystem
     rdfs:label "coolingSystem";
     dcterms:description "Cooling-system technology: direct (once-through river / sea), indirect (cooling tower), dry_tower.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

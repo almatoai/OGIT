@@ -13,7 +13,7 @@ ogit.Utilities.Electricity:PowerSystemResource
     rdfs:label "PowerSystemResource";
     dcterms:description "ABSTRACT: CIM cim:PowerSystemResource -- the root of every CIM electrical resource. Most concrete classes in this sub-namespace and the Grid sub-namespace derive from it. Holds the cross-resource attributes mrid, name, commissioning dates, operator reference, and the verbs locatedIn / operatedBy / ownedBy / partOf. **Materialised inheritance**: per Architecture Section 5.1c the TTL-phase generator copies the PSR-level mandatory and optional attributes plus the PSR-level allowed verbs into every concrete subtype TTL file. The per-subtype block in this Reference shows only the subtype-specific delta; the parent block (PSR or higher) is also present in the emitted TTL file. Authors writing TTL by hand must do the same materialisation: for any concrete PSR subtype, declare `Utilities:operatedBy -> Utilities:NetworkOperator` and `ogit:isPartOf -> PowerPlant` in the subtype TTL even if not shown explicitly in this Reference block.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

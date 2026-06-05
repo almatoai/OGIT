@@ -11,5 +11,5 @@ ogit.Utilities.Electricity:descriptionText
     rdfs:label "descriptionText";
     dcterms:description "Free-text description. The CIM attribute cim:description; renamed locally to description_text because ogit reserves the unprefixed name elsewhere.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

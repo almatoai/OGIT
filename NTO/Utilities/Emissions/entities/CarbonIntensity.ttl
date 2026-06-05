@@ -14,7 +14,7 @@ ogit.Utilities.Emissions:CarbonIntensity
     rdfs:label "CarbonIntensity";
     dcterms:description "Time-varying intensity of an energy supply, attached to a ControlArea, BiddingZone, NetworkOperator, or Portfolio. Anchor-vertex plus sgo:Timeseries: the CarbonIntensity vertex carries metadata only; the timestamped values ride on the attached sgo:Timeseries. Concept Section 7a.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

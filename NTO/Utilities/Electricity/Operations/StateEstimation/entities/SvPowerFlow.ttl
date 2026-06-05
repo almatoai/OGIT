@@ -14,7 +14,7 @@ ogit.Utilities.Electricity.Operations.StateEstimation:SvPowerFlow
     rdfs:label "SvPowerFlow";
     dcterms:description "CIM cim:SvPowerFlow. SV-profile P/Q flow at one terminal. Anchor + sgo:Timeseries (two channels: P and Q). The terminal binding is expressed via the `at -> Terminal` graph edge; no parallel `terminalRef` attribute (per QS Round 14 Sonnet CONS-08 -- verb is canonical for graph relations).";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

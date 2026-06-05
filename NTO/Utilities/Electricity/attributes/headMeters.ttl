@@ -11,5 +11,5 @@ ogit.Utilities.Electricity:headMeters
     rdfs:label "headMeters";
     dcterms:description "Hydraulic head in metres at rated operation.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

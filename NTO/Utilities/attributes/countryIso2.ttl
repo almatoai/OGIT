@@ -11,5 +11,5 @@ ogit.Utilities:countryIso2
     rdfs:label "countryIso2";
     dcterms:description "ISO 3166-1 alpha-2 country code (DE, FR, AT, CH, ...).";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

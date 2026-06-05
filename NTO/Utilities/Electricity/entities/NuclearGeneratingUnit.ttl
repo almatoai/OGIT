@@ -14,7 +14,7 @@ ogit.Utilities.Electricity:NuclearGeneratingUnit
     rdfs:label "NuclearGeneratingUnit";
     dcterms:description "CIM cim:NuclearGeneratingUnit. PWR, BWR, EPR, WWER-440/1000, AGR, CANDU, RBMK. Adds reactor type, count, fuel-cycle class, cooling system, and the IAEA registry identifier.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

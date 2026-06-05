@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Dynamics:qZ
     rdfs:label "qZ";
     dcterms:description "ZIP load coefficient for constant-impedance share of Q.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

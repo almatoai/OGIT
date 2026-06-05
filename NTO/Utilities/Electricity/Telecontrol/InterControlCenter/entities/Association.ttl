@@ -14,7 +14,7 @@ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:Association
     rdfs:label "Association";
     dcterms:description "TASE.2 Association (MMS connection between two parties).";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

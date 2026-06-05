@@ -15,7 +15,7 @@ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:RealPointIndication
     rdfs:label "RealPointIndication";
     dcterms:description "TASE.2 Real-Valued Indication. Floating-point.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

@@ -11,5 +11,5 @@ ogit.Utilities:commissioningDate
     rdfs:label "commissioningDate";
     dcterms:description "Date the resource entered commercial operation (ISO 8601 date). **Canonical commissioning attribute** on PowerSystemResource and used by EmissionMeasurement (CEMS device). Use this whenever the calendar day is known. The companion `Utilities:commissioningYear` (integer) is a legacy fallback for source systems that only report the year. Lives in Utilities (not Utilities.Electricity) so cross-domain consumers (Emissions, future Gas / Heat) can reference it without crossing namespace scoping.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

@@ -15,7 +15,7 @@ ogit.Utilities.Electricity.Dynamics:ProtectionRelayDynamics
     rdfs:label "ProtectionRelayDynamics";
     dcterms:description "Distance / overcurrent relay dynamic model used in protection-coordination studies.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

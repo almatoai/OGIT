@@ -11,5 +11,5 @@ ogit.Utilities:publishedBy
     rdfs:label "publishedBy";
     dcterms:description "Reference to the NetworkOperator (or market participant) that published the schedule.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

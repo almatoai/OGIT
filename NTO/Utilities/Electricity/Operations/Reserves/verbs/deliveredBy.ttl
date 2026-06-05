@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Operations.Reserves:deliveredBy
     rdfs:label "deliveredBy";
     dcterms:description "Asserts that an activation is delivered by the target ReserveUnit. Cardinality: many2one.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

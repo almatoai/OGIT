@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Operations:computeDurationS
     rdfs:label "computeDurationS";
     dcterms:description "Compute duration in seconds for the analysis run.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

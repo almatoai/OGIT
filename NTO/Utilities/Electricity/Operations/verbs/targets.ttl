@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Operations:targets
     rdfs:label "targets";
     dcterms:description "Asserts that a CongestionManagementAction targets the named network element. Cardinality: many2many.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

@@ -11,5 +11,5 @@ ogit.Utilities:participates
     rdfs:label "participates";
     dcterms:description "Operator-side participation relation: a NetworkOperator participates in a SynchronousArea, ENTSO-E, Regional Security Coordinator, balancing-market platform. Distinct from `Utilities.Electricity:memberOf` (many2one) which is used by reified *Membership anchors to point at a single group with full lifecycle attributes. Cardinality: many2many.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

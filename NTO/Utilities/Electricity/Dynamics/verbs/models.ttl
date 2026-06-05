@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Dynamics:models
     rdfs:label "models";
     dcterms:description "Asserts that a dynamic model represents (models) the target equipment / load / interconnector. Cardinality: many2one.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

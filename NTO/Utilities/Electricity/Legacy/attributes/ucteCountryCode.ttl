@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Legacy:ucteCountryCode
     rdfs:label "ucteCountryCode";
     dcterms:description "1-character UCTE country code (position 1 of the node code).";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

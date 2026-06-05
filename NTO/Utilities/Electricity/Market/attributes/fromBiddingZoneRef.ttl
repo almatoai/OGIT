@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Market:fromBiddingZoneRef
     rdfs:label "fromBiddingZoneRef";
     dcterms:description "Reference to the source BiddingZone vertex of a cross-zonal capacity allocation.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

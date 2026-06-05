@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Grid:capacitiveRatingMvar
     rdfs:label "capacitiveRatingMvar";
     dcterms:description "Capacitive rating of a static var compensator in MVAr (capacitor side).";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

@@ -11,5 +11,5 @@ ogit.Utilities.Electricity:reactorCount
     rdfs:label "reactorCount";
     dcterms:description "Number of reactors on site (a single NuclearGeneratingUnit usually maps to one reactor; multi-reactor plants are modelled per reactor).";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

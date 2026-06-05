@@ -11,5 +11,5 @@ ogit.Utilities.Emissions:mixBreakdownMethodologyRef
     rdfs:label "mixBreakdownMethodologyRef";
     dcterms:description "Reference to the methodology defining how the generation mix is broken down (per-fuel, per-technology).";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

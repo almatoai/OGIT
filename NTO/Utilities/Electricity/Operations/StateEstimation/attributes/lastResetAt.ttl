@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Operations.StateEstimation:lastResetAt
     rdfs:label "lastResetAt";
     dcterms:description "Timestamp at which the accumulator was last reset (ISO 8601, UTC).";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

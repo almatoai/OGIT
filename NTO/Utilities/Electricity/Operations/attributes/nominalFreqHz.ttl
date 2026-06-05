@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Operations:nominalFreqHz
     rdfs:label "nominalFreqHz";
     dcterms:description "Nominal frequency in Hz (50 for Continental Europe, Nordic, Baltic, GB, Ireland; 60 elsewhere).";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

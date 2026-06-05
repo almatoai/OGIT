@@ -11,5 +11,5 @@ ogit.Utilities.Electricity:subscribesTo
     rdfs:label "subscribesTo";
     dcterms:description "Asserts that an EnergyConsumer subscribes to a Schedule (e.g. an industrial customer to a day-ahead schedule). Cardinality: many2many.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

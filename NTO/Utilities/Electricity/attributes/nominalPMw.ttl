@@ -11,5 +11,5 @@ ogit.Utilities.Electricity:nominalPMw
     rdfs:label "nominalPMw";
     dcterms:description "Nominal active-power output of the unit in MW. Snapshot value -- historic changes ride on a sgo:Timeseries.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

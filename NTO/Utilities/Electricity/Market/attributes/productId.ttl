@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Market:productId
     rdfs:label "productId";
     dcterms:description "Stable identifier of an EnergyProduct catalogue entry.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

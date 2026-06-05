@@ -14,7 +14,7 @@ ogit.Utilities.Electricity.Grid:Disconnector
     rdfs:label "Disconnector";
     dcterms:description "CIM cim:Disconnector. Switch without load-break capability (isolation under no-current condition).";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

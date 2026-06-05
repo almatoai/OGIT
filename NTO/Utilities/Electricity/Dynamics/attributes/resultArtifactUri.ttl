@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Dynamics:resultArtifactUri
     rdfs:label "resultArtifactUri";
     dcterms:description "External (cold-tier) URI to large raw-binary tool output. Headline channels are also reflected as sgo:Timeseries.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

@@ -9,7 +9,9 @@ ogit.Utilities.Electricity.Legacy:statusCode
     a owl:DatatypeProperty;
     rdfs:subPropertyOf ogit:Attribute;
     rdfs:label "statusCode";
-    dcterms:description "1-character UCTE status code: real, equivalent, busbar_coupler_in_operation, busbar_coupler_out_of_operation.";
+    dcterms:description "UCTE node status indicator. The wire-format is a 1-character code in the source UCTE-DEF file; this attribute carries the mnemonic expansion: real (R), equivalent (E), busbar_coupler_in_operation (B closed), busbar_coupler_out_of_operation (B open). Mapping from the 1-character code to the mnemonic happens in the parser.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "real,equivalent,busbar_coupler_in_operation,busbar_coupler_out_of_operation";
 .

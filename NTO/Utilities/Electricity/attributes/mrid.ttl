@@ -11,5 +11,5 @@ ogit.Utilities.Electricity:mrid
     rdfs:label "mrid";
     dcterms:description "CIM master resource identifier. Cross-system stable id for the entity. Conventionally a UUID with an optional leading underscore. Shared across all Electricity sub-namespaces per concept Section 5.1d (attribute namespace scoping).";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

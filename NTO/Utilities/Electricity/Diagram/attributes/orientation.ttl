@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Diagram:orientation
     rdfs:label "orientation";
     dcterms:description "Diagram orientation: positive (right-handed) or negative (left-handed).";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

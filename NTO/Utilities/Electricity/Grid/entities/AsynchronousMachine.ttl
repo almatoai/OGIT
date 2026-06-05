@@ -14,7 +14,7 @@ ogit.Utilities.Electricity.Grid:AsynchronousMachine
     rdfs:label "AsynchronousMachine";
     dcterms:description "CIM cim:AsynchronousMachine. Induction machine (motor or generator), e.g. wind turbines of IEC 61400 Type 1 / 2.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

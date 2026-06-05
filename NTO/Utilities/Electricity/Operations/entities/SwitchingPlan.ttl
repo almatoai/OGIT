@@ -14,7 +14,7 @@ ogit.Utilities.Electricity.Operations:SwitchingPlan
     rdfs:label "SwitchingPlan";
     dcterms:description "CIM cim:SwitchingPlan. A pre-defined sequence of switch actions for a scheduled task (maintenance, restoration, reconfiguration, test, isolation).";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Grid:representsExternal
     rdfs:label "representsExternal";
     dcterms:description "Asserts that an EquivalentInjection / EquivalentBranch / EquivalentShunt represents the target external ControlArea / SynchronousArea. Cardinality: many2one.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

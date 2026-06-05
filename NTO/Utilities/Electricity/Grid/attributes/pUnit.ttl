@@ -11,5 +11,7 @@ ogit.Utilities.Electricity.Grid:pUnit
     rdfs:label "pUnit";
     dcterms:description "Unit of the active-power profile values: MW, kW, percent, multiplier (dimensionless 0..1 or > 1 over the curve baseline).";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "MW,kW,percent,multiplier";
 .

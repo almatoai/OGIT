@@ -14,7 +14,7 @@ ogit.Utilities.Electricity.Operations.StateEstimation:Measurement
     rdfs:label "Measurement";
     dcterms:description "ABSTRACT: CIM cim:Measurement. Abstract parent of all measurements (analog, discrete, accumulator, string). In CIM, Measurement is a subtype of IdentifiedObject, not of PowerSystemResource. The NTO follows the CIM inheritance and attaches Measurement directly under ogit:Entity.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
@@ -30,6 +30,7 @@ ogit.Utilities.Electricity.Operations.StateEstimation:Measurement
         ogit.Utilities.Electricity:terminalRef
         ogit.Utilities.Electricity.Operations.StateEstimation:powerSystemResourceRef
         ogit.Utilities.Electricity:descriptionText
+        ogit.Utilities.Electricity.Operations.StateEstimation:measurementTypeExt
     );
     ogit:indexed-attributes (
         ogit.Utilities.Electricity:mrid

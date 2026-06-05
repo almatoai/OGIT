@@ -11,5 +11,5 @@ ogit.Utilities:acceptableDuration
     rdfs:label "acceptableDuration";
     dcterms:description "Acceptable duration of the limit being violated, in seconds (used for TATL: e.g. 900 s for short-term, 60 s for emergency).";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

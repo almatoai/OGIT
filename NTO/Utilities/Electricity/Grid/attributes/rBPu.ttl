@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Grid:rBPu
     rdfs:label "rBPu";
     dcterms:description "Second-cage rotor resistance in per-unit (double-cage induction).";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

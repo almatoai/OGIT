@@ -9,7 +9,9 @@ ogit.Utilities.Electricity.Grid:phases
     a owl:DatatypeProperty;
     rdfs:subPropertyOf ogit:Attribute;
     rdfs:label "phases";
-    dcterms:description "Phases the terminal carries (CIM PhaseCode enumeration: ABC, AB, AC, BC, A, B, C, ABCN, ABN, ACN, BCN, AN, BN, CN, N, s1, s2, s12, s1N, s2N, s12N, X, XN, XY, XYN, none).";
+    dcterms:description "CIM cim:PhaseCode enumeration -- ABC (three-phase), AB / AC / BC (two of three), A / B / C (single phase), ABCN / ABN / ACN / BCN / AN / BN / CN (with neutral), N (neutral only), s1 / s2 / s12 / s1N / s2N / s12N (split-secondary), X / XN / XY / XYN (per-unit / unknown), none. Closed enumeration per IEC 61970-301.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "ABC,AB,AC,BC,A,B,C,ABCN,ABN,ACN,BCN,AN,BN,CN,N,s1,s2,s12,s1N,s2N,s12N,X,XN,XY,XYN,none";
 .

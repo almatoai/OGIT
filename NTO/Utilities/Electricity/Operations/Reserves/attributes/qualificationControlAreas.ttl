@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Operations.Reserves:qualificationControlAreas
     rdfs:label "qualificationControlAreas";
     dcterms:description "Comma-separated list of ControlArea EICs the BSP is qualified in.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

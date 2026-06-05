@@ -9,7 +9,9 @@ ogit.Utilities.Electricity.Grid:connectionKind
     a owl:DatatypeProperty;
     rdfs:subPropertyOf ogit:Attribute;
     rdfs:label "connectionKind";
-    dcterms:description "Transformer end connection kind: Y, D, Z, Yn, Dn, Zn (per IEC vector-group encoding).";
+    dcterms:description "Transformer end connection kind per CIM 17 / CGMES 3.0 WindingConnection: Y, D, Z, Yn, Zn, A (auto-transformer), I (independent winding), G (Zigzag-Grounding per CGMES 3.0 Boundary-Profile WindingConnection extension; anchor `frozen_at: CGMES3.0`). Delta windings have no neutral point and therefore no `Dn` form.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "Y,D,Z,Yn,Zn,A,I,G";
 .

@@ -11,5 +11,7 @@ ogit.Utilities.Electricity.Operations:computationMethod
     rdfs:label "computationMethod";
     dcterms:description "ACE / RoCoF computation method: open_loop, closed_loop_with_K_factor, closed_loop_with_frequency_bias, point_to_point, sliding_window.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "open_loop,closed_loop_with_K_factor,closed_loop_with_frequency_bias,point_to_point,sliding_window";
 .

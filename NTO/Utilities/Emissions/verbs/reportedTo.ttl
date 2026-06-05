@@ -11,5 +11,5 @@ ogit.Utilities.Emissions:reportedTo
     rdfs:label "reportedTo";
     dcterms:description "Asserts that the emission was reported to the target authority (regulator, NetworkOperator). Cardinality: many2one.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

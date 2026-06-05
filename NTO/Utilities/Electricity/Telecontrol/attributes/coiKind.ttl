@@ -11,5 +11,7 @@ ogit.Utilities.Electricity.Telecontrol:coiKind
     rdfs:label "coiKind";
     dcterms:description "Cause of Initialisation: local_power_switch_on, local_manual_reset, remote_reset, other_remote_init.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "local_power_switch_on,local_manual_reset,remote_reset,other_remote_init";
 .

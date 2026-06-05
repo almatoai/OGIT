@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:referencedBy
     rdfs:label "referencedBy";
     dcterms:description "Inverse of references: an IndicationPoint is referenced by one or more DataSetMembers. Cardinality: one2many.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

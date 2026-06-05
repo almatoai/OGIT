@@ -11,5 +11,5 @@ ogit.Utilities:domain
     rdfs:label "domain";
     dcterms:description "Utility domain the entity belongs to: one of electricity, gas, district_heat, hydrogen, water. Used cross-namespace to dispatch domain-specific behaviour from the same generic class.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

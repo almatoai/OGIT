@@ -11,5 +11,5 @@ ogit.Utilities:regulatorAuthority
     rdfs:label "regulatorAuthority";
     dcterms:description "Name of the regulatory authority overseeing this operator: BNetzA (DE), Ofgem (UK), CRE (FR), E-Control (AT), ElCom (CH), etc.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

@@ -9,7 +9,9 @@ ogit.Utilities.Electricity.Grid:synchronousMachineKind
     a owl:DatatypeProperty;
     rdfs:subPropertyOf ogit:Attribute;
     rdfs:label "synchronousMachineKind";
-    dcterms:description "SynchronousMachine kind: generator, condenser, generatorOrCondenser, motor.";
+    dcterms:description "SynchronousMachine kind: generator, condenser, generatorOrCondenser, motor, motorOrCondenser, generatorOrMotor.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "generator,condenser,generatorOrCondenser,motor,motorOrCondenser,generatorOrMotor";
 .

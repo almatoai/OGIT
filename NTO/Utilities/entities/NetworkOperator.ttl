@@ -13,7 +13,7 @@ ogit.Utilities:NetworkOperator
     rdfs:label "NetworkOperator";
     dcterms:description "An organisation that operates, owns, or balances a utility network. For electricity: TSO / DSO / ISO / BSP / BRP / market-coupling operator. Cross-domain equivalents in gas (DSO-G, TSO-G), district heat, hydrogen, water. Identified by ENTSO-E EIC (X-code) for electricity, DVGW number for gas, regulator-issued id for water/heat.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (
@@ -36,6 +36,13 @@ ogit.Utilities:NetworkOperator
         ogit.Utilities:operatorName
     );
     ogit:allowed (
+        [ sgo:manages  sgo:Process ]
+        [ sgo:employs  sgo:Person ]
+        [ ogit:locatedIn  ogit:Location ]
+        [ ogit:contains  ogit:Entity ]
+        [ sgo:supports  ogit:Entity ]
+        [ sgo:owns  sgo:Asset ]
+        [ sgo:hasParent  sgo:Organization ]
         [ ogit.Utilities:operates  ogit.Utilities.Electricity:PowerPlant ]
         [ ogit.Utilities:responsibleFor  ogit.Utilities.Electricity:ControlArea ]
         [ ogit.Utilities:participates  ogit.Utilities.Electricity:SynchronousArea ]

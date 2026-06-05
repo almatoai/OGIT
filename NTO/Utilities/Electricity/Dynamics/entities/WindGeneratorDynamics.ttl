@@ -14,7 +14,7 @@ ogit.Utilities.Electricity.Dynamics:WindGeneratorDynamics
     rdfs:label "WindGeneratorDynamics";
     dcterms:description "Wind-generator dynamic model per IEC 61400-27-1 (Type 1/2/3/4). Decomposed into aerodynamic, mechanical, electrical, protection, and control sub-models referenced by id.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

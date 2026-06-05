@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Grid:distance21M
     rdfs:label "distance21M";
     dcterms:description "Inter-conductor distance term in metres.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

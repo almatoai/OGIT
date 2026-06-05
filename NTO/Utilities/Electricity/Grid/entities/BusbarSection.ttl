@@ -14,7 +14,7 @@ ogit.Utilities.Electricity.Grid:BusbarSection
     rdfs:label "BusbarSection";
     dcterms:description "CIM cim:BusbarSection. Conducting equipment representing one busbar segment in a voltage level or bay. Carries the per-section short-circuit withstand and nominal voltage.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

@@ -11,5 +11,5 @@ ogit.Utilities:subjectRef
     rdfs:label "subjectRef";
     dcterms:description "Reference to the equipment, zone, or carrier the limit applies to.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

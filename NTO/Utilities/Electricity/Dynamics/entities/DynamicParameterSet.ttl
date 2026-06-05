@@ -13,7 +13,7 @@ ogit.Utilities.Electricity.Dynamics:DynamicParameterSet
     rdfs:label "DynamicParameterSet";
     dcterms:description "Parameter-set version snapshot used for change-tracking on a dynamic model.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

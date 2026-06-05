@@ -15,7 +15,7 @@ ogit.Utilities:OperationalLimit
     rdfs:label "OperationalLimit";
     dcterms:description "ABSTRACT: Cross-domain limit envelope. CIM 61970 has OperationalLimit and OperationalLimitSet; the generic abstraction lifts gas pressure limits, water flow limits, heat transfer limits to the same shape. Concrete typed limits (CurrentLimit, VoltageLimit, ApparentPowerLimit, ActivePowerLimit, FrequencyLimit) live in Electricity sub-namespaces.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

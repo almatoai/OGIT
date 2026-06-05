@@ -11,5 +11,7 @@ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:eventCode
     rdfs:label "eventCode";
     dcterms:description "Report event code: integrity, change, set, time, interval_change, start_stop.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "integrity,change,set,time,interval_change,start_stop";
 .

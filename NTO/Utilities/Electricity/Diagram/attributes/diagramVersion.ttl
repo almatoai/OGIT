@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Diagram:diagramVersion
     rdfs:label "diagramVersion";
     dcterms:description "Diagram version identifier.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

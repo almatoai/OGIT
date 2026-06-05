@@ -9,7 +9,9 @@ ogit.Utilities:carrierKind
     a owl:DatatypeProperty;
     rdfs:subPropertyOf ogit:Attribute;
     rdfs:label "carrierKind";
-    dcterms:description "Energy-carrier classification: electricity, natural_gas, hydrogen, district_heat, oil, coal, biomass, biogas, synthetic_gas, ammonia, methanol, water_pumped, water_potable, sewage, compressed_air, kinetic_storage.";
+    dcterms:description "Energy-carrier classification: electricity, natural_gas, hydrogen, district_heat, oil, coal, biomass, biogas, synthetic_gas, ammonia, methanol, water_pumped, water_potable, sewage, compressed_air, kinetic_storage, steam, LNG.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "electricity,natural_gas,hydrogen,district_heat,oil,coal,biomass,biogas,synthetic_gas,ammonia,methanol,water_pumped,water_potable,sewage,compressed_air,kinetic_storage,steam,LNG";
 .

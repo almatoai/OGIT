@@ -11,5 +11,7 @@ ogit.Utilities.Electricity.Legacy:nodeKind
     rdfs:label "nodeKind";
     dcterms:description "UCTE node kind: PQ, PV, slack, isolated.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "PQ,PV,slack,isolated";
 .

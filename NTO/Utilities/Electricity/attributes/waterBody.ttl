@@ -11,5 +11,5 @@ ogit.Utilities.Electricity:waterBody
     rdfs:label "waterBody";
     dcterms:description "Body of water hosting an offshore wind farm: North Sea, Baltic Sea, Irish Sea, etc.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

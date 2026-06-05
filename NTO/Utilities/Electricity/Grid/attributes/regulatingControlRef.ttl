@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Grid:regulatingControlRef
     rdfs:label "regulatingControlRef";
     dcterms:description "Reference to the RegulatingControl vertex driving the tap changer or compensator.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

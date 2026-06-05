@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Operations.Reserves:minDowntimeMin
     rdfs:label "minDowntimeMin";
     dcterms:description "Minimum down-time in minutes required between shutdowns.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

@@ -11,5 +11,5 @@ ogit.Utilities:operatorType
     rdfs:label "operatorType";
     dcterms:description "Operator classification: one of TSO, DSO, ISO, BSP (balancing service provider), BRP (balancing responsible party), MCO (market-coupling operator), generation-only, retail-only.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

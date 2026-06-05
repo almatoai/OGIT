@@ -11,5 +11,5 @@ ogit.Utilities.Electricity:pumpCapacityMw
     rdfs:label "pumpCapacityMw";
     dcterms:description "Rated active-power input in MW when pumping (pumped-storage units only).";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

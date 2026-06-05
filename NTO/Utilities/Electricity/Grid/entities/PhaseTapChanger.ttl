@@ -14,7 +14,7 @@ ogit.Utilities.Electricity.Grid:PhaseTapChanger
     rdfs:label "PhaseTapChanger";
     dcterms:description "CIM cim:PhaseTapChanger. Phase-shifting transformer control.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

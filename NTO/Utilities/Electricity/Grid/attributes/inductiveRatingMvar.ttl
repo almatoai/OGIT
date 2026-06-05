@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Grid:inductiveRatingMvar
     rdfs:label "inductiveRatingMvar";
     dcterms:description "Inductive rating of a static var compensator in MVAr (reactor side).";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

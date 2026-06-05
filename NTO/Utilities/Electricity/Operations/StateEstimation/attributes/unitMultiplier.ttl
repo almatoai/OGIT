@@ -9,7 +9,9 @@ ogit.Utilities.Electricity.Operations.StateEstimation:unitMultiplier
     a owl:DatatypeProperty;
     rdfs:subPropertyOf ogit:Attribute;
     rdfs:label "unitMultiplier";
-    dcterms:description "Unit multiplier per CIM UnitMultiplier enumeration (k, M, G, T, none, m, micro, n).";
+    dcterms:description "Unit multiplier per CIM UnitMultiplier enumeration (IEC 61970-301): y (yocto), z (zepto), a (atto), f (femto), p (pico), n (nano), micro, m (milli), c (centi), d (deci), none, da (deca), h (hecto), k (kilo), M (mega), G (giga), T (tera), P (peta), E (exa), Z (zetta), Y (yotta).";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "y,z,a,f,p,n,micro,m,c,d,none,da,h,k,M,G,T,P,E,Z,Y";
 .

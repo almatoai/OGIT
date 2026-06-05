@@ -11,5 +11,5 @@ ogit.Utilities:restorationPriority
     rdfs:label "restorationPriority";
     dcterms:description "Restoration priority assigned at outage declaration: 1 (immediate) through 5 (deferred).";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

@@ -9,7 +9,9 @@ ogit.Utilities.Emissions:obligationKind
     a owl:DatatypeProperty;
     rdfs:subPropertyOf ogit:Attribute;
     rdfs:label "obligationKind";
-    dcterms:description "Reporting obligation classification: EU_ETS, UNFCCC, voluntary, internal.";
+    dcterms:description "Reporting obligation classification: EU_ETS, UNFCCC, national_law (e.g. DE BEHG, UK-ETS, country-specific carbon-pricing regimes), voluntary, internal.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "EU_ETS,UNFCCC,national_law,voluntary,internal";
 .

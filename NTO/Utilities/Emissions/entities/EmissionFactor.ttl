@@ -14,7 +14,7 @@ ogit.Utilities.Emissions:EmissionFactor
     rdfs:label "EmissionFactor";
     dcterms:description "Per-technology and per-fuel emission factor in kgCO2eq per kWh, per m3, or per GJ. Used by emission calculations when direct measurement is not available. Sources: IPCC AR6, JRC, country-specific inventories.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

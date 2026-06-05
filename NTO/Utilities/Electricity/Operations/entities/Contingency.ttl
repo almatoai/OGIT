@@ -14,7 +14,7 @@ ogit.Utilities.Electricity.Operations:Contingency
     rdfs:label "Contingency";
     dcterms:description "CIM cim:Contingency. A defined hypothetical event used in N-1 / N-k security analysis.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

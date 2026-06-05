@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Dynamics:frequencyDroopPercent
     rdfs:label "frequencyDroopPercent";
     dcterms:description "Frequency-droop coefficient in percent for a gas turbine governor.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

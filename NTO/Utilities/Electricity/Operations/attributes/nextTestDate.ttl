@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Operations:nextTestDate
     rdfs:label "nextTestDate";
     dcterms:description "Date of next scheduled black-start test (ISO 8601 date).";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

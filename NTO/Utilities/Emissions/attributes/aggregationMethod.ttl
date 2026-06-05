@@ -11,5 +11,7 @@ ogit.Utilities.Emissions:aggregationMethod
     rdfs:label "aggregationMethod";
     dcterms:description "Aggregation method to produce reported values from raw samples: average, sum, maximum, sliding_window_15min.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "average,sum,maximum,sliding_window_15min";
 .

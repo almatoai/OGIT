@@ -11,5 +11,5 @@ ogit.Utilities.Electricity:controlAreaRef
     rdfs:label "controlAreaRef";
     dcterms:description "Reference to a ControlArea vertex.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

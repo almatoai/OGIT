@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Legacy:recordId
     rdfs:label "recordId";
     dcterms:description "Stable identifier of one UCTE-DEF record line. Convention: source_file_id + line_number.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

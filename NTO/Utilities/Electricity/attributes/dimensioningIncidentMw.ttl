@@ -11,5 +11,5 @@ ogit.Utilities.Electricity:dimensioningIncidentMw
     rdfs:label "dimensioningIncidentMw";
     dcterms:description "Dimensioning incident in MW used for reserve sizing across the LFC block (NC EB Article 153).";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Grid:tieFlowAt
     rdfs:label "tieFlowAt";
     dcterms:description "Asserts that a Terminal participates in a TieFlow at the named area boundary. Cardinality: one2one.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

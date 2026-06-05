@@ -11,5 +11,7 @@ ogit.Utilities.Electricity.Market:direction
     rdfs:label "direction";
     dcterms:description "Direction qualifier of a flowgate / capacity / settlement: a_to_b, b_to_a, both.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "a_to_b,b_to_a,both";
 .

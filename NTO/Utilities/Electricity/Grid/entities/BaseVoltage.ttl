@@ -14,7 +14,7 @@ ogit.Utilities.Electricity.Grid:BaseVoltage
     rdfs:label "BaseVoltage";
     dcterms:description "CIM cim:BaseVoltage. Reusable nominal-voltage reference shared by VoltageLevel, TransformerEnd, Terminal, ACLineSegment. Used so that the same nominal voltage value can be referenced by many objects without duplication of the numeric value.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

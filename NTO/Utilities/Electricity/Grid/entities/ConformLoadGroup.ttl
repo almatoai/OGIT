@@ -13,7 +13,7 @@ ogit.Utilities.Electricity.Grid:ConformLoadGroup
     rdfs:label "ConformLoadGroup";
     dcterms:description "CIM cim:ConformLoadGroup. Grouping of ConformLoads that share a standard load curve.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

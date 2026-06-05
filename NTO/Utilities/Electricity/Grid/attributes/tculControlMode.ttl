@@ -9,7 +9,9 @@ ogit.Utilities.Electricity.Grid:tculControlMode
     a owl:DatatypeProperty;
     rdfs:subPropertyOf ogit:Attribute;
     rdfs:label "tculControlMode";
-    dcterms:description "On-load tap-changer control mode: volt, reactive, active.";
+    dcterms:description "On-load tap-changer control mode per CIM RegulatingControlModeKind: voltage, reactivePower, activePower, timeScheduled.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "voltage,reactivePower,activePower,timeScheduled";
 .

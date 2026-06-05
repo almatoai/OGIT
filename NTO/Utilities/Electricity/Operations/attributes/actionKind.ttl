@@ -9,7 +9,9 @@ ogit.Utilities.Electricity.Operations:actionKind
     a owl:DatatypeProperty;
     rdfs:subPropertyOf ogit:Attribute;
     rdfs:label "actionKind";
-    dcterms:description "Action kind: open, close, tap_up, tap_down, set_position.";
+    dcterms:description "Action kind: open, close, tap_up, tap_down, set_position, energize, de_energize.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "open,close,tap_up,tap_down,set_position,energize,de_energize";
 .

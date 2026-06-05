@@ -11,5 +11,7 @@ ogit.Utilities.Electricity.Telecontrol:commandKind
     rdfs:label "commandKind";
     dcterms:description "File-transfer ASDU kind: file_ready, section_ready, call_directory, last_section, ack_file, segment, directory.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "file_ready,section_ready,call_directory,last_section,ack_file,segment,directory";
 .

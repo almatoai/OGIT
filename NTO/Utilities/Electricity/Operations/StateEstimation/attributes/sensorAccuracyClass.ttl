@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Operations.StateEstimation:sensorAccuracyClass
     rdfs:label "sensorAccuracyClass";
     dcterms:description "Accuracy class of the sensor per IEC 61869-1 (e.g. 0.1, 0.2, 0.5, 1.0, 3.0).";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

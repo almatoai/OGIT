@@ -11,5 +11,5 @@ ogit.Utilities:startTime
     rdfs:label "startTime";
     dcterms:description "Generic start timestamp (ISO 8601, UTC). Used by Outage and Schedule subtypes. Local because the existing SGO/sgo does not ship a startTime; the NTO/Schedule and NTO/PTF analogues are scoped to other domains.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

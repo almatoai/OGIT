@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Dynamics:usesStabilizer
     rdfs:label "usesStabilizer";
     dcterms:description "Asserts that an ExcitationSystemDynamics uses the target PowerSystemStabilizerDynamics. Cardinality: many2one.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

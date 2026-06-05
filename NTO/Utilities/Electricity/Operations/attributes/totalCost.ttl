@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Operations:totalCost
     rdfs:label "totalCost";
     dcterms:description "Total cost of the work in the contract currency.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

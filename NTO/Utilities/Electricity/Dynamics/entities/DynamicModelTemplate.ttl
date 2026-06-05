@@ -12,7 +12,7 @@ ogit.Utilities.Electricity.Dynamics:DynamicModelTemplate
     rdfs:label "DynamicModelTemplate";
     dcterms:description "Collection of dynamic-model parameter sets typified by manufacturer / model. Reusable across many machines.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
     ogit:scope "NTO";
     ogit:parent ogit:Node;
     ogit:mandatory-attributes (

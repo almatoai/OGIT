@@ -11,5 +11,7 @@ ogit.Utilities.Electricity.Diagram:isPolygon
     rdfs:label "isPolygon";
     dcterms:description "Boolean. True if the diagram object outline is a closed polygon.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "true,false";
 .

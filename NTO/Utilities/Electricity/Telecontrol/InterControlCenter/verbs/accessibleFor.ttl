@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:accessibleFor
     rdfs:label "accessibleFor";
     dcterms:description "Authentication / access-control relation: a TASE.2 Account is accessible for one or more ControlCenters. Distinct from `Utilities.Electricity.Diagram:usedBy` (visualisation-context \"used by\" relation) which was previously incorrectly referenced here -- see QS Round 14 Sonnet COMP-04. Cardinality: many2many.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

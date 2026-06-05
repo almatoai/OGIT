@@ -11,5 +11,5 @@ ogit.Utilities:operatorName
     rdfs:label "operatorName";
     dcterms:description "Legal name of the network operator (e.g. 'TenneT TSO B.V.', 'E.ON SE', '50Hertz Transmission GmbH').";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

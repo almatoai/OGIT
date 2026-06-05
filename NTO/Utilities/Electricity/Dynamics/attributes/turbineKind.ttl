@@ -9,7 +9,9 @@ ogit.Utilities.Electricity.Dynamics:turbineKind
     a owl:DatatypeProperty;
     rdfs:subPropertyOf ogit:Attribute;
     rdfs:label "turbineKind";
-    dcterms:description "Hydro turbine kind: francis, kaplan, pelton, bulb, propeller.";
+    dcterms:description "Hydro turbine kind: francis, kaplan, pelton, bulb, propeller, pump_turbine (reversible Francis-class turbine for pumped-storage units, operates as both turbine and pump).";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "francis,kaplan,pelton,bulb,propeller,pump_turbine";
 .

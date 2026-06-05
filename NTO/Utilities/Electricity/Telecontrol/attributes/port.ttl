@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Telecontrol:port
     rdfs:label "port";
     dcterms:description "TCP port (default 2404 for IEC 60870-5-104).";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

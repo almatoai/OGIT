@@ -11,5 +11,5 @@ ogit.Utilities.Electricity:transitionReason
     rdfs:label "transitionReason";
     dcterms:description "Free-text reason for a membership transition (operator handover, regulatory action, area redrawing).";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

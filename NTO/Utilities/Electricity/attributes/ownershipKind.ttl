@@ -11,5 +11,5 @@ ogit.Utilities.Electricity:ownershipKind
     rdfs:label "ownershipKind";
     dcterms:description "Ownership classification: operator (operational responsibility), equity_owner (legal ownership), offtake (purchase contract), financial (financial investor).";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

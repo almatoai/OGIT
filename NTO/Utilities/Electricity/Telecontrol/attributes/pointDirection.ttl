@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Telecontrol:pointDirection
     rdfs:label "pointDirection";
     dcterms:description "Direction of the point: monitor (controlled -> controlling) or control (controlling -> controlled).";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

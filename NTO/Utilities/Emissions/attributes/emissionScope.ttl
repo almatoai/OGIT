@@ -11,5 +11,5 @@ ogit.Utilities.Emissions:emissionScope
     rdfs:label "emissionScope";
     dcterms:description "Emissions scope classification per GHG Protocol: Scope 1 (direct), Scope 2 (electricity), Scope 3 (indirect).";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

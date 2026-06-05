@@ -11,5 +11,5 @@ ogit.Utilities.Electricity.Grid:regulationBasisRef
     rdfs:label "regulationBasisRef";
     dcterms:description "Reference to the NetworkCodeReference vertex defining the regulatory basis for the limit set.";
     dcterms:valid "start=2026-05-27;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
 .

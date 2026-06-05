@@ -11,5 +11,7 @@ ogit.Utilities.Electricity.Telecontrol:iedFunction
     rdfs:label "iedFunction";
     dcterms:description "IED primary function: protection, control, measurement, recorder, combined.";
     dcterms:valid "start=2026-05-28;";
-    dcterms:creator "chris.boos@almato.com";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "protection,control,measurement,recorder,combined";
 .
