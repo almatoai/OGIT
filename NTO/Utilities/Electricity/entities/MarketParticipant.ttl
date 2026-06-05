@@ -31,11 +31,8 @@ ogit.Utilities.Electricity:MarketParticipant
         ogit.Utilities.Electricity:participantEic
     );
     ogit:allowed (
-        [ ogit:manages  ogit:Entity ]
         [ ogit:employs  ogit:Person ]
         [ ogit:locatedIn  ogit:Location ]
-        [ ogit:contains  ogit:Entity ]
-        [ ogit:supports  ogit:Entity ]
         [ ogit:owns  ogit:Asset ]
         [ ogit:hasParent  ogit:Organization ]
     );
