@@ -10,7 +10,7 @@
 
 ogit.Utilities.Electricity.Grid:EquivalentInjection
     a rdfs:Class;
-    rdfs:subClassOf ogit.Utilities.Electricity:PowerSystemResource;
+    rdfs:subClassOf ogit:Entity;
     rdfs:label "EquivalentInjection";
     dcterms:description "CIM cim:EquivalentInjection. Equivalent source/sink representing an external system at a boundary point.";
     dcterms:valid "start=2026-05-27;";

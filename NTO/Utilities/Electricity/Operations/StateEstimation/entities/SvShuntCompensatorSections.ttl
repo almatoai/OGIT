@@ -29,6 +29,6 @@ ogit.Utilities.Electricity.Operations.StateEstimation:SvShuntCompensatorSections
     );
     ogit:allowed (
         [ ogit.Utilities.Electricity.Operations.StateEstimation:at  ogit.Utilities.Electricity.Grid:ShuntCompensator ]
-        [ ogit:generates  sgo:Timeseries ]
+        [ ogit:generates  ogit:Timeseries ]
     );
 .

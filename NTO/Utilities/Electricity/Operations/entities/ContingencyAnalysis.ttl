@@ -36,6 +36,6 @@ ogit.Utilities.Electricity.Operations:ContingencyAnalysis
     ogit:allowed (
         [ ogit.Utilities.Electricity.Operations:analyzes  ogit.Utilities.Electricity.Operations:ContingencyList ]
         [ ogit.Utilities.Electricity.Operations:producedBy  ogit.Utilities:NetworkOperator ]
-        [ ogit:generates  sgo:Timeseries ]
+        [ ogit:generates  ogit:Timeseries ]
     );
 .

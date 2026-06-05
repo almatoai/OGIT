@@ -30,6 +30,6 @@ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:TaseProtectionEquipmen
     ogit:allowed (
         [ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:referencedBy  ogit.Utilities.Electricity.Telecontrol.InterControlCenter:DataSetMember ]
         [ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:mirrors  ogit.Utilities.Electricity.Grid:ProtectionEquipment ]
-        [ ogit:generates  sgo:Timeseries ]
+        [ ogit:generates  ogit:Timeseries ]
     );
 .

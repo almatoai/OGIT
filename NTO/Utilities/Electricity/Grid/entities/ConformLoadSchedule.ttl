@@ -10,7 +10,7 @@
 
 ogit.Utilities.Electricity.Grid:ConformLoadSchedule
     a rdfs:Class;
-    rdfs:subClassOf ogit.Utilities:Schedule;
+    rdfs:subClassOf ogit:Entity;
     rdfs:label "ConformLoadSchedule";
     dcterms:description "CIM cim:ConformLoadSchedule. CGMES EQ-profile time-pattern carrier for a ConformLoadGroup: the standard load curve (per-hour-of-week or per-typical-day P / Q multipliers) that all ConformLoads in the group share. Anchor + sgo:Timeseries -- the per-timestamp multipliers ride on a sgo:Timeseries attached via `ogit:generates`. Inherits scheduleId / scheduleKind / validFrom / validUntil / granularitySeconds from Utilities:Schedule.";
     dcterms:valid "start=2026-05-27;";
@@ -42,7 +42,7 @@ ogit.Utilities.Electricity.Grid:ConformLoadSchedule
     );
     ogit:allowed (
         [ ogit.Utilities:appliesTo  ogit.Utilities.Electricity.Grid:ConformLoadGroup ]
-        [ ogit:generates  sgo:Timeseries ]
+        [ ogit:generates  ogit:Timeseries ]
         [ ogit.Utilities:appliesTo  ogit.Utilities.Electricity:ControlArea ]
         [ ogit.Utilities:supersedes  ogit.Utilities:Schedule ]
     );

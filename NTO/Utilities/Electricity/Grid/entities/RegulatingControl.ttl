@@ -10,7 +10,7 @@
 
 ogit.Utilities.Electricity.Grid:RegulatingControl
     a rdfs:Class;
-    rdfs:subClassOf ogit.Utilities.Electricity:PowerSystemResource;
+    rdfs:subClassOf ogit:Entity;
     rdfs:label "RegulatingControl";
     dcterms:description "CIM cim:RegulatingControl. Generic control reference used by tap changers, shunt compensators, etc. Modelled as a PowerSystemResource subtype to match the CIM inheritance (cim:RegulatingControl extends cim:PowerSystemResource). Per QS Round 4 finding CONS-05: targetValue, targetValueUnit, targetDeadband, enabled are CGMES SSH-profile attributes (time-variant); they live exclusively on the linked sgo:Timeseries (channels RegulatingControl.targetValue, .targetDeadband, .enabled), not as vertex attributes. The vertex carries only the static control-mode discriminator plus regulation-priority metadata.";
     dcterms:valid "start=2026-05-27;";
@@ -46,7 +46,7 @@ ogit.Utilities.Electricity.Grid:RegulatingControl
         [ ogit.Utilities.Electricity.Grid:controls  ogit.Utilities.Electricity.Grid:PhaseTapChanger ]
         [ ogit.Utilities.Electricity.Grid:controls  ogit.Utilities.Electricity.Grid:ShuntCompensator ]
         [ ogit.Utilities.Electricity.Grid:controls  ogit.Utilities.Electricity.Grid:StaticVarCompensator ]
-        [ ogit:generates  sgo:Timeseries ]
+        [ ogit:generates  ogit:Timeseries ]
         [ ogit.Utilities:operatedBy  ogit.Utilities:NetworkOperator ]
         [ ogit:locatedIn  ogit:Location ]
         [ ogit:isPartOf  ogit.Utilities.Electricity:PowerPlant ]

@@ -30,6 +30,6 @@ ogit.Utilities.Electricity.Operations.StateEstimation:AnalogValue
     );
     ogit:allowed (
         [ ogit.Utilities.Electricity.Operations.StateEstimation:belongsTo  ogit.Utilities.Electricity.Operations.StateEstimation:Measurement ]
-        [ ogit:generates  sgo:Timeseries ]
+        [ ogit:generates  ogit:Timeseries ]
     );
 .

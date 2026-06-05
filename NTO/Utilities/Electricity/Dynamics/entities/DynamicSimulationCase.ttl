@@ -36,7 +36,7 @@ ogit.Utilities.Electricity.Dynamics:DynamicSimulationCase
     );
     ogit:allowed (
         [ ogit.Utilities.Electricity.Dynamics:studies  ogit.Utilities.Electricity:SynchronousArea ]
-        [ ogit.Utilities.Electricity.Operations:triggeredBy  sgo:Event ]
-        [ ogit:generates  sgo:Timeseries ]
+        [ ogit.Utilities.Electricity.Operations:triggeredBy  ogit:Event ]
+        [ ogit:generates  ogit:Timeseries ]
     );
 .

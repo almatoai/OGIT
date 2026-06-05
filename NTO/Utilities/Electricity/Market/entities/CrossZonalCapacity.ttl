@@ -35,6 +35,6 @@ ogit.Utilities.Electricity.Market:CrossZonalCapacity
     );
     ogit:allowed (
         [ ogit.Utilities.Electricity.Market:betweenZones  ogit.Utilities.Electricity:BiddingZone ]
-        [ ogit:generates  sgo:Timeseries ]
+        [ ogit:generates  ogit:Timeseries ]
     );
 .

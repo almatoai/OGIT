@@ -30,6 +30,6 @@ ogit.Utilities.Electricity.Operations.StateEstimation:SvTapStep
     ogit:allowed (
         [ ogit.Utilities.Electricity.Operations.StateEstimation:at  ogit.Utilities.Electricity.Grid:RatioTapChanger ]
         [ ogit.Utilities.Electricity.Operations.StateEstimation:at  ogit.Utilities.Electricity.Grid:PhaseTapChanger ]
-        [ ogit:generates  sgo:Timeseries ]
+        [ ogit:generates  ogit:Timeseries ]
     );
 .

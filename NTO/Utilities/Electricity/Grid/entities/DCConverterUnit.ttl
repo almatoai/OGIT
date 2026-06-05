@@ -10,7 +10,7 @@
 
 ogit.Utilities.Electricity.Grid:DCConverterUnit
     a rdfs:Class;
-    rdfs:subClassOf ogit.Utilities.Electricity.Grid:EquipmentContainer;
+    rdfs:subClassOf ogit:Entity;
     rdfs:label "DCConverterUnit";
     dcterms:description "CIM cim:DCConverterUnit. EquipmentContainer for the DC-side of an HVDC converter pole. Holds one or more CsConverter / VsConverter instances and the DC-side terminals.";
     dcterms:valid "start=2026-05-27;";

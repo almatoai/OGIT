@@ -10,7 +10,7 @@
 
 ogit.Utilities.Electricity.Market:DayAheadSchedule
     a rdfs:Class;
-    rdfs:subClassOf ogit.Utilities:Schedule;
+    rdfs:subClassOf ogit:Entity;
     rdfs:label "DayAheadSchedule";
     dcterms:description "Day-Ahead market scheduling. Granularity typically 1 hour or 15 min. Inherits all Schedule attributes; the schedule_kind attribute carries the value 'day_ahead'.";
     dcterms:valid "start=2026-05-28;";
@@ -38,7 +38,7 @@ ogit.Utilities.Electricity.Market:DayAheadSchedule
     );
     ogit:allowed (
         [ ogit.Utilities:appliesTo  ogit.Utilities.Electricity:BiddingZone ]
-        [ ogit:generates  sgo:Timeseries ]
+        [ ogit:generates  ogit:Timeseries ]
         [ ogit.Utilities:appliesTo  ogit.Utilities.Electricity:ControlArea ]
         [ ogit.Utilities:supersedes  ogit.Utilities:Schedule ]
     );

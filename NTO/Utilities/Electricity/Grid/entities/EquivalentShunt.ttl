@@ -10,7 +10,7 @@
 
 ogit.Utilities.Electricity.Grid:EquivalentShunt
     a rdfs:Class;
-    rdfs:subClassOf ogit.Utilities.Electricity:PowerSystemResource;
+    rdfs:subClassOf ogit:Entity;
     rdfs:label "EquivalentShunt";
     dcterms:description "CIM cim:EquivalentShunt. Boundary-model equivalent representing an external shunt admittance.";
     dcterms:valid "start=2026-05-27;";

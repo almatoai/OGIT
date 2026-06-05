@@ -32,6 +32,6 @@ ogit.Utilities.Electricity.Operations:FrequencyDeviation
     );
     ogit:allowed (
         [ ogit.Utilities.Electricity.Operations:derivedFrom  ogit.Utilities.Electricity.Operations:SystemFrequency ]
-        [ ogit:generates  sgo:Timeseries ]
+        [ ogit:generates  ogit:Timeseries ]
     );
 .

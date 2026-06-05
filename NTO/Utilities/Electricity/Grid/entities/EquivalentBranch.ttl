@@ -10,7 +10,7 @@
 
 ogit.Utilities.Electricity.Grid:EquivalentBranch
     a rdfs:Class;
-    rdfs:subClassOf ogit.Utilities.Electricity:PowerSystemResource;
+    rdfs:subClassOf ogit:Entity;
     rdfs:label "EquivalentBranch";
     dcterms:description "CIM cim:EquivalentBranch. Boundary-model equivalent representing an external branch impedance.";
     dcterms:valid "start=2026-05-27;";

@@ -11,7 +11,7 @@
 
 ogit.Utilities.Electricity.Operations:ForcedOutage
     a rdfs:Class;
-    rdfs:subClassOf ogit.Utilities:Outage;
+    rdfs:subClassOf ogit:Entity;
     rdfs:label "ForcedOutage";
     dcterms:description "Unplanned-outage variant from fault. Adds fault classification, location, duration, auto-reclose attempts, and the protection-action reference.";
     dcterms:valid "start=2026-05-28;";

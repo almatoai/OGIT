@@ -10,7 +10,7 @@
 
 ogit.Utilities.Electricity.Grid:PowerTransformer
     a rdfs:Class;
-    rdfs:subClassOf ogit.Utilities.Electricity:PowerSystemResource;
+    rdfs:subClassOf ogit:Entity;
     rdfs:label "PowerTransformer";
     dcterms:description "CIM cim:PowerTransformer. Multi-winding transformer (two-winding, three-winding, autotransformer).";
     dcterms:valid "start=2026-05-27;";

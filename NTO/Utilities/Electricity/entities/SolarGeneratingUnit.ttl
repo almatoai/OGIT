@@ -10,7 +10,7 @@
 
 ogit.Utilities.Electricity:SolarGeneratingUnit
     a rdfs:Class;
-    rdfs:subClassOf ogit.Utilities.Electricity:GeneratingUnit;
+    rdfs:subClassOf ogit:Entity;
     rdfs:label "SolarGeneratingUnit";
     dcterms:description "CIM cim:SolarGeneratingUnit. PV (rooftop, ground-mount, floating, agri-PV) and CSP. Adds panel technology, tracking kind, geometric orientation, DC-to-AC ratio, inverter and panel counts, plus CSP-specific storage parameters.";
     dcterms:valid "start=2026-05-27;";
@@ -69,7 +69,7 @@ ogit.Utilities.Electricity:SolarGeneratingUnit
         [ ogit:controlledBy  ogit.Utilities.Electricity:ControlArea ]
         [ ogit.Utilities:emits  ogit.Utilities.Emissions:GreenhouseGasEmission ]
         [ ogit:consumes  ogit.Utilities:EnergyCarrier ]
-        [ ogit:generates  sgo:Timeseries ]
+        [ ogit:generates  ogit:Timeseries ]
         [ ogit.Utilities:operatedBy  ogit.Utilities:NetworkOperator ]
         [ ogit:locatedIn  ogit:Location ]
         [ ogit:isPartOf  ogit.Utilities.Electricity:PowerPlant ]

@@ -10,7 +10,7 @@
 
 ogit.Utilities.Electricity.Grid:Bay
     a rdfs:Class;
-    rdfs:subClassOf ogit.Utilities.Electricity.Grid:EquipmentContainer;
+    rdfs:subClassOf ogit:Entity;
     rdfs:label "Bay";
     dcterms:description "CIM cim:Bay. Sub-container of VoltageLevel for one switching arrangement.";
     dcterms:valid "start=2026-05-27;";

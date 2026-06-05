@@ -9,7 +9,7 @@
 
 ogit.Utilities:NetworkOperator
     a rdfs:Class;
-    rdfs:subClassOf sgo:Organization;
+    rdfs:subClassOf ogit:Entity;
     rdfs:label "NetworkOperator";
     dcterms:description "An organisation that operates, owns, or balances a utility network. For electricity: TSO / DSO / ISO / BSP / BRP / market-coupling operator. Cross-domain equivalents in gas (DSO-G, TSO-G), district heat, hydrogen, water. Identified by ENTSO-E EIC (X-code) for electricity, DVGW number for gas, regulator-issued id for water/heat.";
     dcterms:valid "start=2026-05-27;";
@@ -36,13 +36,13 @@ ogit.Utilities:NetworkOperator
         ogit.Utilities:operatorName
     );
     ogit:allowed (
-        [ sgo:manages  sgo:Process ]
-        [ sgo:employs  sgo:Person ]
+        [ ogit:manages  ogit:Entity ]
+        [ ogit:employs  ogit:Person ]
         [ ogit:locatedIn  ogit:Location ]
         [ ogit:contains  ogit:Entity ]
-        [ sgo:supports  ogit:Entity ]
-        [ sgo:owns  sgo:Asset ]
-        [ sgo:hasParent  sgo:Organization ]
+        [ ogit:supports  ogit:Entity ]
+        [ ogit:owns  ogit:Asset ]
+        [ ogit:hasParent  ogit:Organization ]
         [ ogit.Utilities:operates  ogit.Utilities.Electricity:PowerPlant ]
         [ ogit.Utilities:responsibleFor  ogit.Utilities.Electricity:ControlArea ]
         [ ogit.Utilities:participates  ogit.Utilities.Electricity:SynchronousArea ]

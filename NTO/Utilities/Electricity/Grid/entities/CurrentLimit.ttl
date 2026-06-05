@@ -11,7 +11,7 @@
 
 ogit.Utilities.Electricity.Grid:CurrentLimit
     a rdfs:Class;
-    rdfs:subClassOf ogit.Utilities:OperationalLimit;
+    rdfs:subClassOf ogit:Entity;
     rdfs:label "CurrentLimit";
     dcterms:description "CIM cim:CurrentLimit. Typed limit on current flow in amperes.";
     dcterms:valid "start=2026-05-27;";

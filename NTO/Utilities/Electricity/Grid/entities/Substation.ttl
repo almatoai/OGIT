@@ -10,7 +10,7 @@
 
 ogit.Utilities.Electricity.Grid:Substation
     a rdfs:Class;
-    rdfs:subClassOf ogit.Utilities.Electricity.Grid:EquipmentContainer;
+    rdfs:subClassOf ogit:Entity;
     rdfs:label "Substation";
     dcterms:description "CIM cim:Substation. Physical installation grouping voltage levels.";
     dcterms:valid "start=2026-05-27;";

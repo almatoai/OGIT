@@ -10,7 +10,7 @@
 
 ogit.Utilities.Electricity.Grid:LoadBreakSwitch
     a rdfs:Class;
-    rdfs:subClassOf ogit.Utilities.Electricity.Grid:Switch;
+    rdfs:subClassOf ogit:Entity;
     rdfs:label "LoadBreakSwitch";
     dcterms:description "CIM cim:LoadBreakSwitch. Switch capable of load-current interruption but not fault current.";
     dcterms:valid "start=2026-05-27;";
@@ -49,7 +49,7 @@ ogit.Utilities.Electricity.Grid:LoadBreakSwitch
         [ ogit.Utilities.Electricity.Grid:hasTerminal  ogit.Utilities.Electricity.Grid:Terminal ]
         [ ogit:isPartOf  ogit.Utilities.Electricity.Grid:Bay ]
         [ ogit:isPartOf  ogit.Utilities.Electricity.Grid:Substation ]
-        [ ogit:generates  sgo:Timeseries ]
+        [ ogit:generates  ogit:Timeseries ]
         [ ogit.Utilities:operatedBy  ogit.Utilities:NetworkOperator ]
         [ ogit:locatedIn  ogit:Location ]
         [ ogit:isPartOf  ogit.Utilities.Electricity:PowerPlant ]

@@ -10,7 +10,7 @@
 
 ogit.Utilities.Electricity.Grid:BusbarSection
     a rdfs:Class;
-    rdfs:subClassOf ogit.Utilities.Electricity:PowerSystemResource;
+    rdfs:subClassOf ogit:Entity;
     rdfs:label "BusbarSection";
     dcterms:description "CIM cim:BusbarSection. Conducting equipment representing one busbar segment in a voltage level or bay. Carries the per-section short-circuit withstand and nominal voltage.";
     dcterms:valid "start=2026-05-27;";

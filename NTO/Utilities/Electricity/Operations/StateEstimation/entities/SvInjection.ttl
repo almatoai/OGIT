@@ -29,6 +29,6 @@ ogit.Utilities.Electricity.Operations.StateEstimation:SvInjection
     );
     ogit:allowed (
         [ ogit.Utilities.Electricity.Operations.StateEstimation:at  ogit.Utilities.Electricity.Grid:TopologicalNode ]
-        [ ogit:generates  sgo:Timeseries ]
+        [ ogit:generates  ogit:Timeseries ]
     );
 .

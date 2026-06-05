@@ -10,7 +10,7 @@
 
 ogit.Utilities.Electricity:NuclearGeneratingUnit
     a rdfs:Class;
-    rdfs:subClassOf ogit.Utilities.Electricity:GeneratingUnit;
+    rdfs:subClassOf ogit:Entity;
     rdfs:label "NuclearGeneratingUnit";
     dcterms:description "CIM cim:NuclearGeneratingUnit. PWR, BWR, EPR, WWER-440/1000, AGR, CANDU, RBMK. Adds reactor type, count, fuel-cycle class, cooling system, and the IAEA registry identifier.";
     dcterms:valid "start=2026-05-27;";
@@ -69,7 +69,7 @@ ogit.Utilities.Electricity:NuclearGeneratingUnit
         [ ogit:controlledBy  ogit.Utilities.Electricity:ControlArea ]
         [ ogit.Utilities:emits  ogit.Utilities.Emissions:GreenhouseGasEmission ]
         [ ogit:consumes  ogit.Utilities:EnergyCarrier ]
-        [ ogit:generates  sgo:Timeseries ]
+        [ ogit:generates  ogit:Timeseries ]
         [ ogit.Utilities:operatedBy  ogit.Utilities:NetworkOperator ]
         [ ogit:locatedIn  ogit:Location ]
         [ ogit:isPartOf  ogit.Utilities.Electricity:PowerPlant ]

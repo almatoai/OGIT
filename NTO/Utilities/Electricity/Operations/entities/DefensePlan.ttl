@@ -37,6 +37,6 @@ ogit.Utilities.Electricity.Operations:DefensePlan
         [ ogit.Utilities:appliesTo  ogit.Utilities.Electricity:SynchronousArea ]
         [ ogit.Utilities:appliesTo  ogit.Utilities.Electricity:LFCBlock ]
         [ ogit:consistsOf  ogit.Utilities.Electricity.Operations:SwitchAction ]
-        [ ogit:generates  sgo:Timeseries ]
+        [ ogit:generates  ogit:Timeseries ]
     );
 .

@@ -29,6 +29,6 @@ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:AuthenticationRecord
     );
     ogit:allowed (
         [ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:belongsTo  ogit.Utilities.Electricity.Telecontrol.InterControlCenter:Account ]
-        [ ogit:generates  sgo:Timeseries ]
+        [ ogit:generates  ogit:Timeseries ]
     );
 .

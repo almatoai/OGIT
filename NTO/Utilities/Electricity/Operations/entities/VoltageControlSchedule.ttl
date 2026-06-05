@@ -11,7 +11,7 @@
 
 ogit.Utilities.Electricity.Operations:VoltageControlSchedule
     a rdfs:Class;
-    rdfs:subClassOf ogit.Utilities:Schedule;
+    rdfs:subClassOf ogit:Entity;
     rdfs:label "VoltageControlSchedule";
     dcterms:description "CIM cim:VoltageControlZone-related. Per-zone voltage set-points across time. Anchor + sgo:Timeseries. Inherits scheduleId / scheduleKind / validFrom / validUntil / granularitySeconds from Utilities:Schedule (materialised at TTL-phase per Architecture Section 5.1c).";
     dcterms:valid "start=2026-05-28;";
@@ -44,7 +44,7 @@ ogit.Utilities.Electricity.Operations:VoltageControlSchedule
     ogit:allowed (
         [ ogit.Utilities:appliesTo  ogit.Utilities.Electricity.Grid:VoltageLevel ]
         [ ogit.Utilities:appliesTo  ogit.Utilities.Electricity.Grid:Substation ]
-        [ ogit:generates  sgo:Timeseries ]
+        [ ogit:generates  ogit:Timeseries ]
         [ ogit.Utilities:appliesTo  ogit.Utilities.Electricity:ControlArea ]
         [ ogit.Utilities:supersedes  ogit.Utilities:Schedule ]
     );

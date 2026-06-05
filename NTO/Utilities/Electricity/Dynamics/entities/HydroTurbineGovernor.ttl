@@ -9,7 +9,7 @@
 
 ogit.Utilities.Electricity.Dynamics:HydroTurbineGovernor
     a rdfs:Class;
-    rdfs:subClassOf ogit.Utilities.Electricity.Dynamics:TurbineGovernorDynamics;
+    rdfs:subClassOf ogit:Entity;
     rdfs:label "HydroTurbineGovernor";
     dcterms:description "Hydro-turbine governor dynamic model. Adds turbine_kind (francis, kaplan, pelton, bulb, propeller).";
     dcterms:valid "start=2026-05-28;";

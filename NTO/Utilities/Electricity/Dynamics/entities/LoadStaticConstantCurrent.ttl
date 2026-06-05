@@ -10,7 +10,7 @@
 
 ogit.Utilities.Electricity.Dynamics:LoadStaticConstantCurrent
     a rdfs:Class;
-    rdfs:subClassOf ogit.Utilities.Electricity.Dynamics:LoadDynamics;
+    rdfs:subClassOf ogit:Entity;
     rdfs:label "LoadStaticConstantCurrent";
     dcterms:description "Constant-current load model: P, Q scale linearly with voltage.";
     dcterms:valid "start=2026-05-28;";

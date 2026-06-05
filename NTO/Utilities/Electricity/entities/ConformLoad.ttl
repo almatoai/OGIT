@@ -9,7 +9,7 @@
 
 ogit.Utilities.Electricity:ConformLoad
     a rdfs:Class;
-    rdfs:subClassOf ogit.Utilities.Electricity:EnergyConsumer;
+    rdfs:subClassOf ogit:Entity;
     rdfs:label "ConformLoad";
     dcterms:description "CIM cim:ConformLoad. EnergyConsumer whose consumption follows a standard load curve, scaled by a per-load factor. Used in load-flow models for aggregate residential and commercial demand.";
     dcterms:valid "start=2026-05-27;";
@@ -51,7 +51,7 @@ ogit.Utilities.Electricity:ConformLoad
     ogit:allowed (
         [ ogit:consumes  ogit.Utilities:EnergyCarrier ]
         [ ogit.Utilities.Electricity:subscribesTo  ogit.Utilities:Schedule ]
-        [ ogit:generates  sgo:Timeseries ]
+        [ ogit:generates  ogit:Timeseries ]
         [ ogit.Utilities:operatedBy  ogit.Utilities:NetworkOperator ]
         [ ogit:locatedIn  ogit:Location ]
         [ ogit:isPartOf  ogit.Utilities.Electricity:PowerPlant ]

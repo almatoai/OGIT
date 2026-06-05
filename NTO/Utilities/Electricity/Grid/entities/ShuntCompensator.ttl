@@ -10,7 +10,7 @@
 
 ogit.Utilities.Electricity.Grid:ShuntCompensator
     a rdfs:Class;
-    rdfs:subClassOf ogit.Utilities.Electricity:PowerSystemResource;
+    rdfs:subClassOf ogit:Entity;
     rdfs:label "ShuntCompensator";
     dcterms:description "CIM cim:ShuntCompensator. Linear or non-linear shunt reactor / capacitor for reactive-power compensation.";
     dcterms:valid "start=2026-05-27;";
@@ -50,7 +50,7 @@ ogit.Utilities.Electricity.Grid:ShuntCompensator
     ogit:allowed (
         [ ogit:controlledBy  ogit.Utilities.Electricity.Grid:RegulatingControl ]
         [ ogit.Utilities.Electricity.Grid:hasTerminal  ogit.Utilities.Electricity.Grid:Terminal ]
-        [ ogit:generates  sgo:Timeseries ]
+        [ ogit:generates  ogit:Timeseries ]
         [ ogit.Utilities:operatedBy  ogit.Utilities:NetworkOperator ]
         [ ogit:locatedIn  ogit:Location ]
         [ ogit:isPartOf  ogit.Utilities.Electricity:PowerPlant ]

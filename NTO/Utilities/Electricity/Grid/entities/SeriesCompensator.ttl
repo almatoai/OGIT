@@ -10,7 +10,7 @@
 
 ogit.Utilities.Electricity.Grid:SeriesCompensator
     a rdfs:Class;
-    rdfs:subClassOf ogit.Utilities.Electricity:PowerSystemResource;
+    rdfs:subClassOf ogit:Entity;
     rdfs:label "SeriesCompensator";
     dcterms:description "CIM cim:SeriesCompensator. Series capacitor / reactor in a transmission line.";
     dcterms:valid "start=2026-05-27;";

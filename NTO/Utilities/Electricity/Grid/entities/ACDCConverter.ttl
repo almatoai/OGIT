@@ -10,7 +10,7 @@
 
 ogit.Utilities.Electricity.Grid:ACDCConverter
     a rdfs:Class;
-    rdfs:subClassOf ogit.Utilities.Electricity:PowerSystemResource;
+    rdfs:subClassOf ogit:Entity;
     rdfs:label "ACDCConverter";
     dcterms:description "ABSTRACT: CIM cim:ACDCConverter. Abstract parent of CsConverter (current-source / LCC) and VsConverter (voltage-source / VSC). Holds the shared HVDC-converter attributes that both converter subtypes share; concrete attribute deltas live on CsConverter and VsConverter. Added per QS Round 14 Sonnet COV-01 -- previously collapsed in the abstract chain.";
     dcterms:valid "start=2026-05-27;";

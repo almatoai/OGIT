@@ -10,7 +10,7 @@
 
 ogit.Utilities.Electricity.Grid:GroundDisconnector
     a rdfs:Class;
-    rdfs:subClassOf ogit.Utilities.Electricity.Grid:Switch;
+    rdfs:subClassOf ogit:Entity;
     rdfs:label "GroundDisconnector";
     dcterms:description "CIM cim:GroundDisconnector. Earthing switch. Verification of normal_open=true is operationally critical.";
     dcterms:valid "start=2026-05-27;";
@@ -49,7 +49,7 @@ ogit.Utilities.Electricity.Grid:GroundDisconnector
         [ ogit.Utilities.Electricity.Grid:hasTerminal  ogit.Utilities.Electricity.Grid:Terminal ]
         [ ogit:isPartOf  ogit.Utilities.Electricity.Grid:Bay ]
         [ ogit:isPartOf  ogit.Utilities.Electricity.Grid:Substation ]
-        [ ogit:generates  sgo:Timeseries ]
+        [ ogit:generates  ogit:Timeseries ]
         [ ogit.Utilities:operatedBy  ogit.Utilities:NetworkOperator ]
         [ ogit:locatedIn  ogit:Location ]
         [ ogit:isPartOf  ogit.Utilities.Electricity:PowerPlant ]

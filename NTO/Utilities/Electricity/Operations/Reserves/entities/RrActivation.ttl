@@ -31,6 +31,6 @@ ogit.Utilities.Electricity.Operations.Reserves:RrActivation
     );
     ogit:allowed (
         [ ogit.Utilities.Electricity.Operations.Reserves:deliveredBy  ogit.Utilities.Electricity.Operations.Reserves:ReserveUnit ]
-        [ ogit:generates  sgo:Timeseries ]
+        [ ogit:generates  ogit:Timeseries ]
     );
 .

@@ -9,7 +9,7 @@
 
 ogit.Utilities.Electricity.Grid:PowerTransformerEnd
     a rdfs:Class;
-    rdfs:subClassOf ogit.Utilities.Electricity.Grid:TransformerEnd;
+    rdfs:subClassOf ogit:Entity;
     rdfs:label "PowerTransformerEnd";
     dcterms:description "CIM cim:PowerTransformerEnd. Typed end of a PowerTransformer; carries per-winding electrical parameters.";
     dcterms:valid "start=2026-05-27;";

@@ -10,7 +10,7 @@
 
 ogit.Utilities.Electricity.Grid:LinearShuntCompensator
     a rdfs:Class;
-    rdfs:subClassOf ogit.Utilities.Electricity.Grid:ShuntCompensator;
+    rdfs:subClassOf ogit:Entity;
     rdfs:label "LinearShuntCompensator";
     dcterms:description "CIM cim:LinearShuntCompensator. ShuntCompensator with linear section model.";
     dcterms:valid "start=2026-05-27;";
@@ -50,7 +50,7 @@ ogit.Utilities.Electricity.Grid:LinearShuntCompensator
     ogit:allowed (
         [ ogit.Utilities.Electricity.Grid:hasTerminal  ogit.Utilities.Electricity.Grid:Terminal ]
         [ ogit:controlledBy  ogit.Utilities.Electricity.Grid:RegulatingControl ]
-        [ ogit:generates  sgo:Timeseries ]
+        [ ogit:generates  ogit:Timeseries ]
         [ ogit.Utilities:operatedBy  ogit.Utilities:NetworkOperator ]
         [ ogit:locatedIn  ogit:Location ]
         [ ogit:isPartOf  ogit.Utilities.Electricity:PowerPlant ]

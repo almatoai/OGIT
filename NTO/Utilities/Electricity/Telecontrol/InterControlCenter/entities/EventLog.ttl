@@ -30,6 +30,6 @@ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:EventLog
     );
     ogit:allowed (
         [ ogit:isPartOf  ogit.Utilities.Electricity.Telecontrol.InterControlCenter:BilateralTable ]
-        [ ogit:generates  sgo:Timeseries ]
+        [ ogit:generates  ogit:Timeseries ]
     );
 .

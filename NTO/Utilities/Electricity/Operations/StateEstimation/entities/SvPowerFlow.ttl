@@ -30,6 +30,6 @@ ogit.Utilities.Electricity.Operations.StateEstimation:SvPowerFlow
     );
     ogit:allowed (
         [ ogit.Utilities.Electricity.Operations.StateEstimation:at  ogit.Utilities.Electricity.Grid:Terminal ]
-        [ ogit:generates  sgo:Timeseries ]
+        [ ogit:generates  ogit:Timeseries ]
     );
 .

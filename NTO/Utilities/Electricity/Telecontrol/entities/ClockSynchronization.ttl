@@ -8,7 +8,7 @@
 
 ogit.Utilities.Electricity.Telecontrol:ClockSynchronization
     a rdfs:Class;
-    rdfs:subClassOf ogit.Utilities.Electricity.Telecontrol:SystemAsdu;
+    rdfs:subClassOf ogit:Entity;
     rdfs:label "ClockSynchronization";
     dcterms:description "IEC 60870-5-101/104 ASDU 103 (C_CS_NA_1). Clock-synchronisation command (CP56Time2a master-clock distribution).";
     dcterms:valid "start=2026-05-28;";
@@ -33,6 +33,6 @@ ogit.Utilities.Electricity.Telecontrol:ClockSynchronization
     );
     ogit:allowed (
         [ ogit.Utilities.Electricity.Telecontrol:addressedAt  ogit.Utilities.Electricity.Telecontrol:ProtocolEndpoint ]
-        [ ogit:generates  sgo:Timeseries ]
+        [ ogit:generates  ogit:Timeseries ]
     );
 .

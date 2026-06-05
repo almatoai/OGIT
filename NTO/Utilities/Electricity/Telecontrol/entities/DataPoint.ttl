@@ -35,6 +35,6 @@ ogit.Utilities.Electricity.Telecontrol:DataPoint
     );
     ogit:allowed (
         [ ogit.Utilities.Electricity.Telecontrol:addressedAt  ogit.Utilities.Electricity.Telecontrol:ProtocolEndpoint ]
-        [ ogit:generates  sgo:Timeseries ]
+        [ ogit:generates  ogit:Timeseries ]
     );
 .

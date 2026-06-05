@@ -10,7 +10,7 @@
 
 ogit.Utilities.Electricity.Dynamics:LoadStaticExponential
     a rdfs:Class;
-    rdfs:subClassOf ogit.Utilities.Electricity.Dynamics:LoadDynamics;
+    rdfs:subClassOf ogit:Entity;
     rdfs:label "LoadStaticExponential";
     dcterms:description "Exponential load model: P and Q vary with voltage to fitted exponents.";
     dcterms:valid "start=2026-05-28;";

@@ -11,7 +11,7 @@
 
 ogit.Utilities.Electricity.Grid:ApparentPowerLimit
     a rdfs:Class;
-    rdfs:subClassOf ogit.Utilities:OperationalLimit;
+    rdfs:subClassOf ogit:Entity;
     rdfs:label "ApparentPowerLimit";
     dcterms:description "CIM cim:ApparentPowerLimit. Typed limit on apparent power flow (MVA).";
     dcterms:valid "start=2026-05-27;";

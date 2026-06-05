@@ -37,6 +37,6 @@ ogit.Utilities.Emissions:EmissionMeasurement
     );
     ogit:allowed (
         [ ogit.Utilities.Emissions:feedsInto  ogit.Utilities.Emissions:GreenhouseGasEmission ]
-        [ ogit:generates  sgo:Timeseries ]
+        [ ogit:generates  ogit:Timeseries ]
     );
 .

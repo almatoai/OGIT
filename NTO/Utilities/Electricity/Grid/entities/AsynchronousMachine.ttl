@@ -10,7 +10,7 @@
 
 ogit.Utilities.Electricity.Grid:AsynchronousMachine
     a rdfs:Class;
-    rdfs:subClassOf ogit.Utilities.Electricity:PowerSystemResource;
+    rdfs:subClassOf ogit:Entity;
     rdfs:label "AsynchronousMachine";
     dcterms:description "CIM cim:AsynchronousMachine. Induction machine (motor or generator), e.g. wind turbines of IEC 61400 Type 1 / 2.";
     dcterms:valid "start=2026-05-27;";
@@ -55,7 +55,7 @@ ogit.Utilities.Electricity.Grid:AsynchronousMachine
     ogit:allowed (
         [ ogit:isPartOf  ogit.Utilities.Electricity:GeneratingUnit ]
         [ ogit.Utilities.Electricity.Grid:hasTerminal  ogit.Utilities.Electricity.Grid:Terminal ]
-        [ ogit:generates  sgo:Timeseries ]
+        [ ogit:generates  ogit:Timeseries ]
         [ ogit.Utilities:operatedBy  ogit.Utilities:NetworkOperator ]
         [ ogit:locatedIn  ogit:Location ]
         [ ogit:isPartOf  ogit.Utilities.Electricity:PowerPlant ]

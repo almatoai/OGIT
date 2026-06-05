@@ -41,6 +41,6 @@ ogit.Utilities.Electricity:ControlArea
         [ ogit.Utilities.Electricity:dispatches  ogit.Utilities.Electricity:GeneratingUnit ]
         [ ogit.Utilities.Electricity:dispatches  ogit.Utilities.Electricity:EnergyStorage ]
         [ ogit.Utilities.Electricity:enforces  ogit.Utilities.Electricity.Operations:NetworkCodeViolation ]
-        [ ogit:generates  sgo:Timeseries ]
+        [ ogit:generates  ogit:Timeseries ]
     );
 .

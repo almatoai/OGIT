@@ -11,7 +11,7 @@
 
 ogit.Utilities.Electricity.Telecontrol.InterControlCenter:SinglePointIndication
     a rdfs:Class;
-    rdfs:subClassOf ogit.Utilities.Electricity.Telecontrol.InterControlCenter:IndicationPoint;
+    rdfs:subClassOf ogit:Entity;
     rdfs:label "SinglePointIndication";
     dcterms:description "TASE.2 Single-Point Indication. Binary 0/1.";
     dcterms:valid "start=2026-05-28;";
@@ -34,7 +34,7 @@ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:SinglePointIndication
         ogit.Utilities.Electricity.Telecontrol.InterControlCenter:tasePointId
     );
     ogit:allowed (
-        [ ogit:generates  sgo:Timeseries ]
+        [ ogit:generates  ogit:Timeseries ]
         [ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:referencedBy  ogit.Utilities.Electricity.Telecontrol.InterControlCenter:DataSetMember ]
         [ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:mirrors  ogit.Utilities.Electricity.Telecontrol:DataPoint ]
     );

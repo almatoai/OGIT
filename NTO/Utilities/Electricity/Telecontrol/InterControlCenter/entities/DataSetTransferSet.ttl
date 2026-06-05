@@ -33,6 +33,6 @@ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:DataSetTransferSet
     );
     ogit:allowed (
         [ ogit:governs  ogit.Utilities.Electricity.Telecontrol.InterControlCenter:DataSet ]
-        [ ogit:generates  sgo:Timeseries ]
+        [ ogit:generates  ogit:Timeseries ]
     );
 .

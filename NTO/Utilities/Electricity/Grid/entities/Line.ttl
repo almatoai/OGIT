@@ -10,7 +10,7 @@
 
 ogit.Utilities.Electricity.Grid:Line
     a rdfs:Class;
-    rdfs:subClassOf ogit.Utilities.Electricity.Grid:EquipmentContainer;
+    rdfs:subClassOf ogit:Entity;
     rdfs:label "Line";
     dcterms:description "CIM cim:Line. Grouping container for one or more ACLineSegments and DCLineSegments forming one physical line corridor.";
     dcterms:valid "start=2026-05-27;";

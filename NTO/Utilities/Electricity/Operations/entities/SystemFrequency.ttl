@@ -34,6 +34,6 @@ ogit.Utilities.Electricity.Operations:SystemFrequency
     );
     ogit:allowed (
         [ ogit.Utilities:measuredFor  ogit.Utilities.Electricity:SynchronousArea ]
-        [ ogit:generates  sgo:Timeseries ]
+        [ ogit:generates  ogit:Timeseries ]
     );
 .

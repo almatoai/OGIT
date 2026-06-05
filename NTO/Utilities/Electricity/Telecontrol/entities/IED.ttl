@@ -11,7 +11,7 @@
 
 ogit.Utilities.Electricity.Telecontrol:IED
     a rdfs:Class;
-    rdfs:subClassOf ogit.Utilities.Electricity:PowerSystemResource;
+    rdfs:subClassOf ogit:Entity;
     rdfs:label "IED";
     dcterms:description "Intelligent electronic device. Distinct from RTU because IEDs additionally implement protection logic and often speak IEC 61850 / MMS as well as IEC 60870-5.";
     dcterms:valid "start=2026-05-28;";

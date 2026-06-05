@@ -11,7 +11,7 @@
 
 ogit.Utilities.Electricity.Grid:VoltageLimit
     a rdfs:Class;
-    rdfs:subClassOf ogit.Utilities:OperationalLimit;
+    rdfs:subClassOf ogit:Entity;
     rdfs:label "VoltageLimit";
     dcterms:description "CIM cim:VoltageLimit. Typed limit on terminal voltage.";
     dcterms:valid "start=2026-05-27;";

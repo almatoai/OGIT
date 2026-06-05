@@ -10,7 +10,7 @@
 
 ogit.Utilities.Electricity.Operations:PlannedOutage
     a rdfs:Class;
-    rdfs:subClassOf ogit.Utilities:Outage;
+    rdfs:subClassOf ogit:Entity;
     rdfs:label "PlannedOutage";
     dcterms:description "Planned-outage variant of Utilities:Outage. Adds work-order reference, maintenance kind, notice given, and regulatory notification reference.";
     dcterms:valid "start=2026-05-28;";

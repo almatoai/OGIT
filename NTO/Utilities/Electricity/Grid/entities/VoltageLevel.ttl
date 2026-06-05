@@ -10,7 +10,7 @@
 
 ogit.Utilities.Electricity.Grid:VoltageLevel
     a rdfs:Class;
-    rdfs:subClassOf ogit.Utilities.Electricity.Grid:EquipmentContainer;
+    rdfs:subClassOf ogit:Entity;
     rdfs:label "VoltageLevel";
     dcterms:description "CIM cim:VoltageLevel. Sub-container of Substation per base voltage.";
     dcterms:valid "start=2026-05-27;";

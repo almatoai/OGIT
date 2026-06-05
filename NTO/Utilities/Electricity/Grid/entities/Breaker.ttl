@@ -10,7 +10,7 @@
 
 ogit.Utilities.Electricity.Grid:Breaker
     a rdfs:Class;
-    rdfs:subClassOf ogit.Utilities.Electricity.Grid:Switch;
+    rdfs:subClassOf ogit:Entity;
     rdfs:label "Breaker";
     dcterms:description "CIM cim:Breaker. Subtype of Switch with fault-interruption capability.";
     dcterms:valid "start=2026-05-27;";
@@ -49,7 +49,7 @@ ogit.Utilities.Electricity.Grid:Breaker
     );
     ogit:allowed (
         [ ogit.Utilities.Electricity.Grid:hasTerminal  ogit.Utilities.Electricity.Grid:Terminal ]
-        [ ogit:generates  sgo:Timeseries ]
+        [ ogit:generates  ogit:Timeseries ]
         [ ogit:isPartOf  ogit.Utilities.Electricity.Grid:Bay ]
         [ ogit:isPartOf  ogit.Utilities.Electricity.Grid:Substation ]
         [ ogit.Utilities:operatedBy  ogit.Utilities:NetworkOperator ]

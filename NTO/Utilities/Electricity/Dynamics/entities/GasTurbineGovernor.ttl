@@ -9,7 +9,7 @@
 
 ogit.Utilities.Electricity.Dynamics:GasTurbineGovernor
     a rdfs:Class;
-    rdfs:subClassOf ogit.Utilities.Electricity.Dynamics:TurbineGovernorDynamics;
+    rdfs:subClassOf ogit:Entity;
     rdfs:label "GasTurbineGovernor";
     dcterms:description "Gas-turbine governor dynamic model. The equipment-side `cycleKind` (single-cycle vs CCGT) lives on the linked `ThermalGeneratingUnit` vertex, not here -- this class only carries governor-dynamics parameters.";
     dcterms:valid "start=2026-05-28;";

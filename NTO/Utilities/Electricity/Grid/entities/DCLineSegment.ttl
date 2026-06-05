@@ -10,7 +10,7 @@
 
 ogit.Utilities.Electricity.Grid:DCLineSegment
     a rdfs:Class;
-    rdfs:subClassOf ogit.Utilities.Electricity:PowerSystemResource;
+    rdfs:subClassOf ogit:Entity;
     rdfs:label "DCLineSegment";
     dcterms:description "CIM cim:DCLineSegment. One section of an HVDC line.";
     dcterms:valid "start=2026-05-27;";

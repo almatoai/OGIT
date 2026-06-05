@@ -33,6 +33,6 @@ ogit.Utilities.Electricity.Grid:TopologicalNode
         [ ogit:consistsOf  ogit.Utilities.Electricity.Grid:ConnectivityNode ]
         [ ogit:isPartOf  ogit.Utilities.Electricity.Grid:TopologicalIsland ]
         [ ogit.Utilities.Electricity.Grid:at  ogit.Utilities.Electricity.Grid:Substation ]
-        [ ogit:generates  sgo:Timeseries ]
+        [ ogit:generates  ogit:Timeseries ]
     );
 .

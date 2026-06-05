@@ -9,7 +9,7 @@
 
 ogit.Utilities.Electricity.Dynamics:WindTurbineGovernor
     a rdfs:Class;
-    rdfs:subClassOf ogit.Utilities.Electricity.Dynamics:TurbineGovernorDynamics;
+    rdfs:subClassOf ogit:Entity;
     rdfs:label "WindTurbineGovernor";
     dcterms:description "Wind-turbine governor dynamic model per IEC 61400-27-1.";
     dcterms:valid "start=2026-05-28;";

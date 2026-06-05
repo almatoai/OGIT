@@ -37,6 +37,6 @@ ogit.Utilities.Electricity.Operations:RestorationPlan
         [ ogit.Utilities:appliesTo  ogit.Utilities.Electricity:ControlArea ]
         [ ogit:consistsOf  ogit.Utilities.Electricity.Operations:SwitchAction ]
         [ ogit:triggers  ogit.Utilities.Electricity.Operations:BlackStartService ]
-        [ ogit:generates  sgo:Timeseries ]
+        [ ogit:generates  ogit:Timeseries ]
     );
 .

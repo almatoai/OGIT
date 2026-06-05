@@ -10,7 +10,7 @@
 
 ogit.Utilities.Electricity.Grid:ACLineSegment
     a rdfs:Class;
-    rdfs:subClassOf ogit.Utilities.Electricity:PowerSystemResource;
+    rdfs:subClassOf ogit:Entity;
     rdfs:label "ACLineSegment";
     dcterms:description "CIM cim:ACLineSegment. One section of an alternating-current overhead line or cable. Holds the per-section R/X/B/G impedance parameters plus geometry and rated current.";
     dcterms:valid "start=2026-05-27;";

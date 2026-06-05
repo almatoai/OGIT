@@ -34,6 +34,6 @@ ogit.Utilities.Electricity.Legacy:UcteSchedule
     ogit:allowed (
         [ ogit.Utilities.Electricity.Legacy:mappedTo  ogit.Utilities:Schedule ]
         [ ogit.Utilities.Electricity.Legacy:mappedTo  ogit.Utilities.Electricity:TieFlow ]
-        [ ogit:generates  sgo:Timeseries ]
+        [ ogit:generates  ogit:Timeseries ]
     );
 .

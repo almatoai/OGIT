@@ -38,6 +38,6 @@ ogit.Utilities.Electricity:OwnershipShare
         [ ogit.Utilities.Electricity:sharedOf  ogit.Utilities.Electricity:EnergyStorage ]
         [ ogit.Utilities.Electricity:sharedOf  ogit.Utilities:ConversionUnit ]
         [ ogit.Utilities.Electricity:heldBy  ogit.Utilities:NetworkOperator ]
-        [ ogit.Utilities.Electricity:heldBy  sgo:Organization ]
+        [ ogit.Utilities.Electricity:heldBy  ogit:Organization ]
     );
 .

@@ -11,7 +11,7 @@
 
 ogit.Utilities.Electricity.Operations:ReactivePowerSchedule
     a rdfs:Class;
-    rdfs:subClassOf ogit.Utilities:Schedule;
+    rdfs:subClassOf ogit:Entity;
     rdfs:label "ReactivePowerSchedule";
     dcterms:description "NC SO. Per-control-area reactive-power exchange schedules. Anchor + sgo:Timeseries. Inherits scheduleId / scheduleKind / validFrom / validUntil / granularitySeconds from Utilities:Schedule (materialised at TTL-phase per Architecture Section 5.1c).";
     dcterms:valid "start=2026-05-28;";
@@ -43,7 +43,7 @@ ogit.Utilities.Electricity.Operations:ReactivePowerSchedule
     );
     ogit:allowed (
         [ ogit.Utilities:appliesTo  ogit.Utilities.Electricity:ControlArea ]
-        [ ogit:generates  sgo:Timeseries ]
+        [ ogit:generates  ogit:Timeseries ]
         [ ogit.Utilities:appliesTo  ogit.Utilities.Electricity:ControlArea ]
         [ ogit.Utilities:supersedes  ogit.Utilities:Schedule ]
     );

@@ -30,6 +30,6 @@ ogit.Utilities.Electricity.Operations.StateEstimation:SvStatus
     ogit:allowed (
         [ ogit.Utilities.Electricity.Operations.StateEstimation:at  ogit.Utilities.Electricity.Grid:ACLineSegment ]
         [ ogit.Utilities.Electricity.Operations.StateEstimation:at  ogit.Utilities.Electricity.Grid:Switch ]
-        [ ogit:generates  sgo:Timeseries ]
+        [ ogit:generates  ogit:Timeseries ]
     );
 .

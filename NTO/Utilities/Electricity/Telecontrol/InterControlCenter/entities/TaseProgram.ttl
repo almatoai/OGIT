@@ -35,6 +35,6 @@ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:TaseProgram
     ogit:allowed (
         [ ogit:isPartOf  ogit.Utilities.Electricity.Telecontrol.InterControlCenter:BilateralTable ]
         [ ogit:runsOn  ogit.Utilities:ControlCenter ]
-        [ ogit:generates  sgo:Timeseries ]
+        [ ogit:generates  ogit:Timeseries ]
     );
 .
