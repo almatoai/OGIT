@@ -1,0 +1,16 @@
+@prefix ogit:                 <http://www.purl.org/ogit/> .
+@prefix ogit.Integration:     <http://www.purl.org/ogit/Integration/> .
+@prefix owl:                  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:              <http://purl.org/dc/terms/> .
+
+ogit.Integration:job_state
+	a owl:DatatypeProperty;
+	rdfs:subPropertyOf ogit:Attribute;
+	rdfs:label "job_state";
+	dcterms:description "MergeJob / SplitJob state machine state. SplitJob states are PROPOSED -> VALIDATED -> SPLITTING -> COMPLETED | FAILED (Identity v2 Section 7.2). MergeJob is parallel with MERGING instead of SPLITTING (Identity v2 Section 6.3 -- state machine with the same crash-recovery checkpoint discipline as SplitJob).";
+	ogit:validation-type "fixed";
+	ogit:validation-parameter "PROPOSED,VALIDATED,MERGING,SPLITTING,COMPLETED,FAILED";
+	dcterms:valid "start=2026-05-21;";
+	dcterms:creator "Almato AG";
+.

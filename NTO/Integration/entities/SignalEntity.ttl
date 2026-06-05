@@ -1,0 +1,40 @@
+@prefix ogit:                 <http://www.purl.org/ogit/> .
+@prefix ogit.Integration:     <http://www.purl.org/ogit/Integration/> .
+@prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:              <http://purl.org/dc/terms/> .
+
+ogit.Integration:SignalEntity
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "SignalEntity";
+	dcterms:description """Operator command surface for connector instances.
+	Per PLAN D26.5, signals are first-class graph entities subscribed to by
+	the SignalConsumer component of the Netting layer via the Streaming API.
+	Supported signal types: force-flush, pause, resume, re-snapshot,
+	breaker-reset, breaker-disable (with audit), priority-bump. Signals are
+	applied at flush boundaries to keep the runtime semantics
+	well-defined.""";
+	dcterms:valid "start=2026-05-21;";
+	dcterms:creator "Almato AG";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:mandatory-attributes (
+		ogit.Integration:signal_type
+		ogit.Integration:target_instance_id
+		ogit.Integration:emitted_at
+		ogit.Integration:operator_actor_id
+	);
+	ogit:optional-attributes (
+		ogit.Integration:signal_parameters_payload
+		ogit.Integration:signal_reason
+		ogit.Integration:signal_applied_at
+	);
+	ogit:indexed-attributes (
+		ogit.Integration:signal_type
+		ogit.Integration:target_instance_id
+	);
+	ogit:allowed (
+		[ ogit:targets   ogit.Integration:ConnectorInstance ]
+		[ ogit:emittedBy ogit:Actor ]
+	);
+.

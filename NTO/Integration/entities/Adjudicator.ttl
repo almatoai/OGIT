@@ -1,0 +1,36 @@
+@prefix ogit:                 <http://www.purl.org/ogit/> .
+@prefix ogit.Integration:     <http://www.purl.org/ogit/Integration/> .
+@prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:              <http://purl.org/dc/terms/> .
+
+ogit.Integration:Adjudicator
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "Adjudicator";
+	dcterms:description """Escalation authority for unresolved reviewer
+	disagreements. Carries the adjudicator identity, the rule revision the
+	adjudicator was called on, the final decision, and the signature.
+	Sibling to ReviewerOfRecord. Per Identity v2 Section 29 multi-team
+	governance.""";
+	dcterms:valid "start=2026-05-21;";
+	dcterms:creator "Almato AG";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:mandatory-attributes (
+		ogit.Integration:adjudicator_id
+		ogit.Integration:adjudicated_revision
+		ogit.Integration:adjudication_decision
+		ogit.Integration:adjudicated_at
+		ogit.Integration:adjudicator_signature
+	);
+	ogit:optional-attributes (
+		ogit.Integration:adjudication_notes
+	);
+	ogit:indexed-attributes (
+		ogit.Integration:adjudicator_id
+		ogit.Integration:adjudication_decision
+	);
+	ogit:allowed (
+		[ ogit:escalatedFrom ogit.Integration:ReviewerOfRecord ]
+	);
+.

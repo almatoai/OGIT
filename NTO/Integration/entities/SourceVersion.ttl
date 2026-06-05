@@ -1,0 +1,36 @@
+@prefix ogit:                 <http://www.purl.org/ogit/> .
+@prefix ogit.Integration:     <http://www.purl.org/ogit/Integration/> .
+@prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:              <http://purl.org/dc/terms/> .
+
+ogit.Integration:SourceVersion
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "SourceVersion";
+	dcterms:description """First-class declaration of which source-system
+	version a ConnectorInstance is connected to. Used by version-conditional
+	MappingRules (Viktor fourth-batch Comment 9): when a source upgrade
+	changes field shapes, MappingRules can switch behaviour based on the
+	declared SourceVersion. A schema-drift queue picks up source records
+	that no MappingRule version recognises. Per Identity v2 Section 25.""";
+	dcterms:valid "start=2026-05-21;";
+	dcterms:creator "Almato AG";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:mandatory-attributes (
+		ogit.Integration:source_system_id
+		ogit.Integration:version_label
+		ogit.Integration:declared_at
+	);
+	ogit:optional-attributes (
+		ogit.Integration:version_signature
+		ogit.Integration:fields_payload
+	);
+	ogit:indexed-attributes (
+		ogit.Integration:source_system_id
+		ogit.Integration:version_label
+	);
+	ogit:allowed (
+		[ ogit:appliesTo ogit.Integration:ConnectorInstance ]
+	);
+.

@@ -1,0 +1,43 @@
+@prefix ogit:                              <http://www.purl.org/ogit/> .
+@prefix ogit.Integration.Decisions:        <http://www.purl.org/ogit/Integration/Decisions/> .
+@prefix ogit.Integration:                  <http://www.purl.org/ogit/Integration/> .
+@prefix rdfs:                              <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                           <http://purl.org/dc/terms/> .
+
+ogit.Integration.Decisions:IdentityCandidate
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "IdentityCandidate";
+	dcterms:description """Pending identity resolution awaiting manual review.
+	Surfaces in the operator's review queue when a heuristic IdentityResolver
+	returns a borderline confidence (between low-reject and high-accept
+	thresholds) for a source record. Carries the source-record reference,
+	the ConnectorRun context, the list of candidate options (each an
+	IdentityCandidateOption sub-entity), and the evidence JSON the resolver
+	used. Lives under NTO/Integration/Decisions/ for PII-isolation per
+	Identity v2 Section 34 (right-to-erasure bounded target).""";
+	dcterms:valid "start=2026-05-21;";
+	dcterms:creator "Almato AG";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:mandatory-attributes (
+		ogit.Integration:candidate_status
+		ogit.Integration:source_record_id
+		ogit.Integration:resolver_id
+		ogit.Integration:created_at
+	);
+	ogit:optional-attributes (
+		ogit.Integration:assigned_reviewer_id
+		ogit.Integration:resolved_at
+		ogit.Integration:resolution_decision
+		ogit.Integration:operator_note
+	);
+	ogit:indexed-attributes (
+		ogit.Integration:candidate_status
+		ogit.Integration:resolver_id
+	);
+	ogit:allowed (
+		[ ogit:proposedBy   ogit.Integration:ConnectorRun ]
+		[ ogit:hasOption    ogit.Integration.Decisions:IdentityCandidateOption ]
+	);
+.

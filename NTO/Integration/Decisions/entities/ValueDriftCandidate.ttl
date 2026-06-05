@@ -1,0 +1,41 @@
+@prefix ogit:                              <http://www.purl.org/ogit/> .
+@prefix ogit.Integration.Decisions:        <http://www.purl.org/ogit/Integration/Decisions/> .
+@prefix ogit.Integration:                  <http://www.purl.org/ogit/Integration/> .
+@prefix rdfs:                              <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                           <http://purl.org/dc/terms/> .
+
+ogit.Integration.Decisions:ValueDriftCandidate
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "ValueDriftCandidate";
+	dcterms:description """Pending value-domain-drift detection for a
+	MappingRule that references a CanonicalValueSet. Created when the
+	chi-squared distribution of incoming values shifts beyond the drift
+	threshold over the configured window. Carries the affected MappingRule
+	reference, the observed value distribution, the canonical set
+	reference, and the test statistic. Operator reviews and decides:
+	extend the canonical set, restrict the MappingRule, or accept the
+	drift. Per Identity v2 Section 27.""";
+	dcterms:valid "start=2026-05-21;";
+	dcterms:creator "Almato AG";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:mandatory-attributes (
+		ogit.Integration:drift_status
+		ogit.Integration:detected_at
+		ogit.Integration:observed_distribution_payload
+		ogit.Integration:test_statistic
+	);
+	ogit:optional-attributes (
+		ogit.Integration:assigned_reviewer_id
+		ogit.Integration:resolved_at
+		ogit.Integration:resolution_decision
+	);
+	ogit:indexed-attributes (
+		ogit.Integration:drift_status
+	);
+	ogit:allowed (
+		[ ogit:detectedFor    ogit.Integration:MappingRule ]
+		[ ogit:comparedAgainst ogit.Integration:CanonicalValueSet ]
+	);
+.

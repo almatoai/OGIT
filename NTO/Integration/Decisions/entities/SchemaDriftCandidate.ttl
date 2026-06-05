@@ -1,0 +1,40 @@
+@prefix ogit:                              <http://www.purl.org/ogit/> .
+@prefix ogit.Integration.Decisions:        <http://www.purl.org/ogit/Integration/Decisions/> .
+@prefix ogit.Integration:                  <http://www.purl.org/ogit/Integration/> .
+@prefix rdfs:                              <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                           <http://purl.org/dc/terms/> .
+
+ogit.Integration.Decisions:SchemaDriftCandidate
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "SchemaDriftCandidate";
+	dcterms:description """Pending review for a source record that no
+	MappingRule version recognises. Created when a connector reads a
+	source field shape not covered by any version-conditional MappingRule
+	(per Identity v2 Section 25 / SourceVersion entity). Operator inspects
+	the unrecognised payload and decides: add a MappingRule for the new
+	source version, ignore the field, or escalate to source-team. Per
+	Viktor fourth-batch Comment 9 migration-resilience.""";
+	dcterms:valid "start=2026-05-21;";
+	dcterms:creator "Almato AG";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:mandatory-attributes (
+		ogit.Integration:drift_status
+		ogit.Integration:detected_at
+		ogit.Integration:unrecognised_payload
+		ogit.Integration:source_record_id
+	);
+	ogit:optional-attributes (
+		ogit.Integration:assigned_reviewer_id
+		ogit.Integration:resolved_at
+		ogit.Integration:resolution_decision
+	);
+	ogit:indexed-attributes (
+		ogit.Integration:drift_status
+	);
+	ogit:allowed (
+		[ ogit:detectedFor   ogit.Integration:ConnectorInstance ]
+		[ ogit:relatedToVersion ogit.Integration:SourceVersion ]
+	);
+.

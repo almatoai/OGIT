@@ -1,0 +1,43 @@
+@prefix ogit:                              <http://www.purl.org/ogit/> .
+@prefix ogit.Integration.Decisions:        <http://www.purl.org/ogit/Integration/Decisions/> .
+@prefix ogit.Integration:                  <http://www.purl.org/ogit/Integration/> .
+@prefix rdfs:                              <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                           <http://purl.org/dc/terms/> .
+
+ogit.Integration.Decisions:MergeJob
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "MergeJob";
+	dcterms:description """State machine for one merge operation under the
+	MergeOrchestrator (Identity v2 Section 6.3 / 6.4). Carries the
+	checkpoint state, the source vertex identity, the merge target, and the
+	atomicity-discipline guards (Rule 1 abort-on-partial-completion before
+	source-delete; Rule 2 audit persisted before source-delete commits).
+	Crash-recovery replays from the latest checkpoint without producing
+	duplicate effects. The May 2026 OSINT smoke run (LI/MT/CY/BS, 948 edges
+	lost) is the empirical anchor for the atomicity rules.""";
+	dcterms:valid "start=2026-05-21;";
+	dcterms:creator "Almato AG";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:mandatory-attributes (
+		ogit.Integration:job_state
+		ogit.Integration:source_vertex_id
+		ogit.Integration:target_vertex_id
+		ogit.Integration:checkpoint_payload
+		ogit.Integration:created_at
+	);
+	ogit:optional-attributes (
+		ogit.Integration:completed_at
+		ogit.Integration:failure_reason
+		ogit.Integration:recovery_count
+	);
+	ogit:indexed-attributes (
+		ogit.Integration:job_state
+		ogit.Integration:source_vertex_id
+	);
+	ogit:allowed (
+		[ ogit:initiatedBy  ogit.Integration:ConnectorRun ]
+		[ ogit:authorisedBy ogit.Integration:Authority ]
+	);
+.

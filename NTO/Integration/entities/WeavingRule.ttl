@@ -1,0 +1,39 @@
+@prefix ogit:                 <http://www.purl.org/ogit/> .
+@prefix ogit.Integration:     <http://www.purl.org/ogit/Integration/> .
+@prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:              <http://purl.org/dc/terms/> .
+
+ogit.Integration:WeavingRule
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "WeavingRule";
+	dcterms:description """Cross-theme edge generation rule. Runs in the
+	Weaver phase (stage 4 of the eight-stage pipeline) AFTER one or more
+	ConnectorRuns finish, against the existing graph state. Reads graph
+	state across themes and produces additional edges between entities that
+	belong together by domain rules (e.g. linking a Ticket vertex to a User
+	vertex by name + system pair). Has its own WeaverRun lifecycle
+	counterpart to ConnectorRun.""";
+	dcterms:valid "start=2026-05-21;";
+	dcterms:creator "Almato AG";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:mandatory-attributes (
+		ogit.Integration:weaver_id
+		ogit.Integration:source_vertex_pattern
+		ogit.Integration:target_vertex_pattern
+		ogit.Integration:edge_type
+	);
+	ogit:optional-attributes (
+		ogit.Integration:match_criteria
+		ogit.Integration:cel_predicate
+		ogit.Integration:schedule_cron
+	);
+	ogit:indexed-attributes (
+		ogit.Integration:weaver_id
+		ogit.Integration:edge_type
+	);
+	ogit:allowed (
+		[ ogit:declaredBy ogit.Integration:Connector ]
+	);
+.

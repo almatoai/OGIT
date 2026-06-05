@@ -1,0 +1,43 @@
+@prefix ogit:                 <http://www.purl.org/ogit/> .
+@prefix ogit.Integration:     <http://www.purl.org/ogit/Integration/> .
+@prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:              <http://purl.org/dc/terms/> .
+
+ogit.Integration:ConflictLock
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "ConflictLock";
+	dcterms:description """Operational infrastructure entity that serialises
+	concurrent writes against a single target vertex when the Knowledge Core
+	does not yet ship native If-Match optimistic concurrency control. The
+	holder claims the lock, performs the write or merge, then releases it.
+	The TTL provides a backstop reclamation path in case the holder crashes.
+	Lives outside Decisions/ because it carries no per-Subject information
+	(Identity v2 Section 5.3). DEPRECATED on F9-landing: when the Knowledge
+	Core ships native If-Match OCC via ogit/_v, this entity, the four-step
+	acquire-check-operate-release protocol, and every operational reference
+	to a ConflictLock retire. Forward-compatible: blueprint code never sees
+	the entity; it is a kernel-internal mechanism. Viktor R3 Feedback
+	2026-06-01.""";
+	dcterms:valid "start=2026-05-29;";
+	dcterms:creator "Almato AG";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:mandatory-attributes (
+		ogit.Integration:target_xid
+		ogit.Integration:holder_id
+		ogit.Integration:acquired_at
+		ogit.Integration:ttl_seconds
+	);
+	ogit:optional-attributes (
+		ogit.Integration:holder_kind
+		ogit.Integration:expected_release_at
+	);
+	ogit:indexed-attributes (
+		ogit.Integration:target_xid
+		ogit.Integration:holder_id
+	);
+	ogit:allowed (
+		[ ogit:locks  ogit:Node ]
+	);
+.

@@ -1,0 +1,39 @@
+@prefix ogit:                              <http://www.purl.org/ogit/> .
+@prefix ogit.Integration.Decisions:        <http://www.purl.org/ogit/Integration/Decisions/> .
+@prefix ogit.Integration:                  <http://www.purl.org/ogit/Integration/> .
+@prefix rdfs:                              <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                           <http://purl.org/dc/terms/> .
+
+ogit.Integration.Decisions:UserAction
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "UserAction";
+	dcterms:description """Persisted transient source-triggered event:
+	button clicks in adaptive cards, slash-commands, webhook-receives,
+	approval signals. Per PLAN D29 these are NOT a separate Action-Inbound
+	mode; they are Data-Inbound records that the engine subscribes to like
+	any other graph datum. Lives under Decisions/ for PII-isolation (user
+	identifiers, free-text payloads).""";
+	dcterms:valid "start=2026-05-21;";
+	dcterms:creator "Almato AG";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:mandatory-attributes (
+		ogit.Integration:user_action_type
+		ogit.Integration:source_system_id
+		ogit.Integration:triggered_at
+		ogit.Integration:received_at
+	);
+	ogit:optional-attributes (
+		ogit.Integration:user_identifier
+		ogit.Integration:user_action_payload
+		ogit.Integration:related_entity_ref
+	);
+	ogit:indexed-attributes (
+		ogit.Integration:user_action_type
+		ogit.Integration:source_system_id
+	);
+	ogit:allowed (
+		[ ogit:receivedVia ogit.Integration:ConnectorInstance ]
+	);
+.

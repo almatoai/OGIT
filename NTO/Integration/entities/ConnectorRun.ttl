@@ -1,0 +1,40 @@
+@prefix ogit:                 <http://www.purl.org/ogit/> .
+@prefix ogit.Integration:     <http://www.purl.org/ogit/Integration/> .
+@prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:              <http://purl.org/dc/terms/> .
+
+ogit.Integration:ConnectorRun
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "ConnectorRun";
+	dcterms:description """One time-bounded execution of one ConnectorInstance.
+	**Immutable after create** per PLAN D28: the vertex carries only identity
+	and run-invariant bindings (started_at, mode, blueprint_version). All
+	additive state (lifecycle transitions, cursor advances, statistics,
+	operator and system events) lives in four append-only TSDB streams
+	keyed by run_id (see PLAN D28 stream definitions). A typical Bardioc
+	deployment generates ~100k ConnectorRuns per year.""";
+	dcterms:valid "start=2026-05-21;";
+	dcterms:creator "Almato AG";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:mandatory-attributes (
+		ogit.Integration:started_at
+		ogit.Integration:trigger_mode
+		ogit.Integration:blueprint_version
+	);
+	ogit:optional-attributes (
+		ogit.Integration:scope_ids
+	);
+	ogit:indexed-attributes (
+		ogit.Integration:started_at
+	);
+	ogit:allowed (
+		[ ogit:ranOn         ogit.Integration:ConnectorInstance ]
+		[ ogit:ofBlueprint   ogit.Integration:Connector ]
+		[ ogit:initiatedBy   ogit:Actor ]
+		[ ogit:usesConfig    ogit.Integration:ConnectorRunConfigSnapshot ]
+		[ ogit:authorisedBy  ogit.Integration:Authority ]
+		[ ogit:processedBy   ogit.Integration:Authority ]
+	);
+.

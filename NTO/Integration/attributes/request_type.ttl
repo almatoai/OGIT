@@ -1,0 +1,16 @@
+@prefix ogit:                 <http://www.purl.org/ogit/> .
+@prefix ogit.Integration:     <http://www.purl.org/ogit/Integration/> .
+@prefix owl:                  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:              <http://purl.org/dc/terms/> .
+
+ogit.Integration:request_type
+	a owl:DatatypeProperty;
+	rdfs:subPropertyOf ogit:Attribute;
+	rdfs:label "request_type";
+	dcterms:description "subject_access_request or right_to_erasure (Identity v2 Sec 21).";
+	ogit:validation-type "fixed";
+	ogit:validation-parameter "subject_access_request,right_to_erasure";
+	dcterms:valid "start=2026-05-21;";
+	dcterms:creator "Almato AG";
+.

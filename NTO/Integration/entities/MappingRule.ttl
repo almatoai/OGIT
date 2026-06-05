@@ -1,0 +1,49 @@
+@prefix ogit:                 <http://www.purl.org/ogit/> .
+@prefix ogit.Integration:     <http://www.purl.org/ogit/Integration/> .
+@prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:              <http://purl.org/dc/terms/> .
+
+ogit.Integration:MappingRule
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "MappingRule";
+	dcterms:description """Per-attribute mapping declaration. Translates one
+	or more source-system fields into a single graph-vertex attribute, or vice
+	versa. Carries the wire-shape declarations, the bidirectional flag, the
+	identity binding hint (deterministic key vs heuristic resolver per D20),
+	the optional CEL inline transform (D16), per-attribute conflict-rule
+	reference, optional canonical-value-set reference, and source-version
+	conditionals (D27 fourth-batch).""";
+	dcterms:valid "start=2026-05-21;";
+	dcterms:creator "Almato AG";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:mandatory-attributes (
+		ogit.Integration:source_field_path
+		ogit.Integration:target_vertex_type
+		ogit.Integration:target_attribute
+		ogit.Integration:bidirectional
+	);
+	ogit:optional-attributes (
+		ogit.Integration:bind_by
+		ogit.Integration:bind_by_resolver
+		ogit.Integration:cel_transform
+		ogit.Integration:provenance_forced
+		ogit.Integration:canonical_value_set_ref
+		ogit.Integration:expected_neighbourhood
+		ogit.Integration:source_version_condition
+		ogit.Integration:art22_in_scope
+		ogit.Integration:preserve_intermediate_states
+		ogit.Integration:list_semantics_element_id_from
+		ogit.Integration:list_semantics_on_id_collision
+	);
+	ogit:indexed-attributes (
+		ogit.Integration:target_attribute
+		ogit.Integration:bidirectional
+	);
+	ogit:allowed (
+		[ ogit:declaredBy             ogit.Integration:Connector ]
+		[ ogit:bindsToConflictRule    ogit.Integration:ConflictResolutionRule ]
+		[ ogit:bindsToCanonicalValues ogit.Integration:CanonicalValueSet ]
+	);
+.

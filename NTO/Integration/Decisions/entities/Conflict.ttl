@@ -1,0 +1,44 @@
+@prefix ogit:                              <http://www.purl.org/ogit/> .
+@prefix ogit.Integration.Decisions:        <http://www.purl.org/ogit/Integration/Decisions/> .
+@prefix ogit.Integration:                  <http://www.purl.org/ogit/Integration/> .
+@prefix rdfs:                              <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                           <http://purl.org/dc/terms/> .
+
+ogit.Integration.Decisions:Conflict
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "Conflict";
+	dcterms:description """Pending conflict awaiting manual review. Created
+	when a ConflictResolutionRule resolves to 'manual' for an incoming write
+	whose target attribute already has a competing value from a different
+	source. Carries references to the affected entity vertex, the proposing
+	ConnectorRun, the incumbent ConnectorRun whose write currently holds,
+	the proposed value, and the incumbent value. Per PLAN D14 (no-silent-
+	defaults). UI is a separate Bardioc Desktop app, downstream concern.""";
+	dcterms:valid "start=2026-05-21;";
+	dcterms:creator "Almato AG";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:mandatory-attributes (
+		ogit.Integration:conflict_status
+		ogit.Integration:target_attribute
+		ogit.Integration:proposed_value_payload
+		ogit.Integration:incumbent_value_payload
+		ogit.Integration:created_at
+	);
+	ogit:optional-attributes (
+		ogit.Integration:assigned_reviewer_id
+		ogit.Integration:resolved_at
+		ogit.Integration:resolution_decision
+		ogit.Integration:becomes_rule
+	);
+	ogit:indexed-attributes (
+		ogit.Integration:conflict_status
+		ogit.Integration:target_attribute
+	);
+	ogit:allowed (
+		[ ogit:proposedBy      ogit.Integration:ConnectorRun ]
+		[ ogit:incumbentFrom   ogit.Integration:ConnectorRun ]
+		[ ogit:affectsEntity   ogit:Node ]
+	);
+.

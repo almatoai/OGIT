@@ -1,0 +1,42 @@
+@prefix ogit:                              <http://www.purl.org/ogit/> .
+@prefix ogit.Integration.Decisions:        <http://www.purl.org/ogit/Integration/Decisions/> .
+@prefix ogit.Integration:                  <http://www.purl.org/ogit/Integration/> .
+@prefix rdfs:                              <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                           <http://purl.org/dc/terms/> .
+
+ogit.Integration.Decisions:ActionInvocation
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "ActionInvocation";
+	dcterms:description """Short-lived vertex representing one Action-
+	Outbound invocation. Per PLAN D34 immutable after create; carries
+	action_id, operation_type, target, started_at, expected_closure (when
+	declared), plus edges to Authority and ConnectorRun. Exists while the
+	action is pending (closure open); after the lifecycle reaches a terminal
+	state, the vertex is retained for vertex_ttl_days (default 90 per
+	ActionPolicy) and then hard-deleted. The lifecycle stream and the
+	16-field audit stream (per PLAN D28 / D30a) outlive the vertex.""";
+	dcterms:valid "start=2026-05-21;";
+	dcterms:creator "Almato AG";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:mandatory-attributes (
+		ogit.Integration:action_id
+		ogit.Integration:operation_type
+		ogit.Integration:created_at
+	);
+	ogit:optional-attributes (
+		ogit.Integration:target_resource_ref
+		ogit.Integration:expected_closure_payload
+		ogit.Integration:invocation_attempt
+		ogit.Integration:vertex_ttl_deadline
+	);
+	ogit:indexed-attributes (
+		ogit.Integration:action_id
+		ogit.Integration:operation_type
+	);
+	ogit:allowed (
+		[ ogit:invokedBy    ogit.Integration:ConnectorRun ]
+		[ ogit:authorisedBy ogit.Integration:Authority ]
+	);
+.

@@ -1,0 +1,45 @@
+@prefix ogit:                 <http://www.purl.org/ogit/> .
+@prefix ogit.Integration:     <http://www.purl.org/ogit/Integration/> .
+@prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:              <http://purl.org/dc/terms/> .
+
+ogit.Integration:NettingPolicy
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "NettingPolicy";
+	dcterms:description """Write-side discipline declaration per
+	ConnectorInstance and direction (inbound / outbound). Carries the
+	coalescing-window parameters, the acknowledgement semantic, the
+	overflow policy, the circuit-breaker configuration (failure_threshold,
+	cooldown_seconds, self_heal), the durable-substrate selector, the
+	cursor + xid-upsert idempotency configuration. Per PLAN D26 with eight
+	sub-decisions plus D26.9 (Kafka as durable substrate).""";
+	dcterms:valid "start=2026-05-21;";
+	dcterms:creator "Almato AG";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:mandatory-attributes (
+		ogit.Integration:direction
+		ogit.Integration:coalesce_window_seconds
+		ogit.Integration:coalesce_window_events
+		ogit.Integration:ack_semantic
+		ogit.Integration:overflow_policy
+	);
+	ogit:optional-attributes (
+		ogit.Integration:overflow_buffer_bound
+		ogit.Integration:breaker_enabled
+		ogit.Integration:breaker_failure_threshold
+		ogit.Integration:breaker_cooldown_seconds
+		ogit.Integration:breaker_self_heal
+		ogit.Integration:durable_substrate
+		ogit.Integration:kafka_partitions
+		ogit.Integration:dropped_payload_retention_days
+	);
+	ogit:indexed-attributes (
+		ogit.Integration:direction
+	);
+	ogit:allowed (
+		[ ogit:declaredBy ogit.Integration:Connector ]
+		[ ogit:appliesTo  ogit.Integration:ConnectorInstance ]
+	);
+.

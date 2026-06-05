@@ -1,0 +1,15 @@
+@prefix ogit:                 <http://www.purl.org/ogit/> .
+@prefix ogit.Integration:     <http://www.purl.org/ogit/Integration/> .
+@prefix owl:                  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:              <http://purl.org/dc/terms/> .
+
+ogit:locks
+	a owl:ObjectProperty;
+	rdfs:subPropertyOf ogit:Verb;
+	rdfs:label "locks";
+	dcterms:description "A ConflictLock holds an exclusive claim on a target vertex (Identity v2 Section 5.3). Phase-B-only; retires when the Knowledge Core ships native If-Match OCC.";
+	dcterms:valid "start=2026-05-29;";
+	dcterms:creator "Almato AG";
+	ogit:cardinality "many2one";
+.

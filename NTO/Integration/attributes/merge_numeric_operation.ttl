@@ -1,0 +1,16 @@
+@prefix ogit:                 <http://www.purl.org/ogit/> .
+@prefix ogit.Integration:     <http://www.purl.org/ogit/Integration/> .
+@prefix owl:                  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:              <http://purl.org/dc/terms/> .
+
+ogit.Integration:merge_numeric_operation
+	a owl:DatatypeProperty;
+	rdfs:subPropertyOf ogit:Attribute;
+	rdfs:label "merge_numeric_operation";
+	dcterms:description "Optional sub-operator for the expert_system_driven strategy when the CEL expression declares a numeric aggregation. F30 disposition 2026-06-02 (Variante B): kept as expert-strategy sub-operator, not as a strategy in its own right.";
+	ogit:validation-type "fixed";
+	ogit:validation-parameter "sum,max,min,avg";
+	dcterms:valid "start=2026-05-21;";
+	dcterms:creator "Almato AG";
+.

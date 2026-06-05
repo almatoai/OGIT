@@ -1,0 +1,45 @@
+@prefix ogit:                              <http://www.purl.org/ogit/> .
+@prefix ogit.Integration.Decisions:        <http://www.purl.org/ogit/Integration/Decisions/> .
+@prefix ogit.Integration:                  <http://www.purl.org/ogit/Integration/> .
+@prefix rdfs:                              <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                           <http://purl.org/dc/terms/> .
+
+ogit.Integration.Decisions:SubjectRequest
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "SubjectRequest";
+	dcterms:description """Data Subject Rights request workflow record per
+	Identity v2 Section 21. State machine over the DPO segregation-of-duties
+	flow: intake (clerk) -> approver (DPO approver) -> executor (DPO
+	executor). Two workflows differentiated by request_type: Subject Access
+	Request (report generation, no deletion) and Right-to-Erasure
+	(documented purge). Carries the subject identifier, the legal-retention
+	override (with cited legal basis if applicable), and the executor
+	audit. Hard rule: structural identity-history audit fields persist
+	after RtE; only PII content is purged.""";
+	dcterms:valid "start=2026-05-21;";
+	dcterms:creator "Almato AG";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:mandatory-attributes (
+		ogit.Integration:request_type
+		ogit.Integration:request_state
+		ogit.Integration:subject_identifier
+		ogit.Integration:created_at
+		ogit.Integration:intake_actor_id
+	);
+	ogit:optional-attributes (
+		ogit.Integration:approver_actor_id
+		ogit.Integration:executor_actor_id
+		ogit.Integration:approved_at
+		ogit.Integration:executed_at
+		ogit.Integration:legal_retention_override
+		ogit.Integration:legal_basis_citation
+		ogit.Integration:request_payload
+	);
+	ogit:indexed-attributes (
+		ogit.Integration:request_state
+		ogit.Integration:request_type
+	);
+	ogit:allowed ( );
+.

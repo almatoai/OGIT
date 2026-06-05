@@ -1,0 +1,35 @@
+@prefix ogit:                 <http://www.purl.org/ogit/> .
+@prefix ogit.Integration:     <http://www.purl.org/ogit/Integration/> .
+@prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:              <http://purl.org/dc/terms/> .
+
+ogit.Integration:CanonicalValueSet
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "CanonicalValueSet";
+	dcterms:description """Declared closed value set referenced from one or
+	more MappingRules. Used for value-domain-drift detection (Viktor fourth-
+	batch Comment 11): the framework tracks the chi-squared distribution
+	of incoming values against the canonical set; statistically significant
+	deviation surfaces as a ValueDriftCandidate for review. Per Identity v2
+	Section 27.""";
+	dcterms:valid "start=2026-05-21;";
+	dcterms:creator "Almato AG";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:mandatory-attributes (
+		ogit.Integration:value_set_id
+		ogit.Integration:allowed_values_payload
+	);
+	ogit:optional-attributes (
+		ogit.Integration:value_set_description
+		ogit.Integration:drift_chi_squared_threshold
+		ogit.Integration:drift_window_days
+	);
+	ogit:indexed-attributes (
+		ogit.Integration:value_set_id
+	);
+	ogit:allowed (
+		[ ogit:referencedBy ogit.Integration:MappingRule ]
+	);
+.
