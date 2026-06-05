@@ -26,8 +26,12 @@ ogit.Integration:ConflictResolutionRule
 	);
 	ogit:optional-attributes (
 		ogit.Integration:source_priority_list
+		ogit.Integration:expert_rule_expression
 		ogit.Integration:merge_set_operation
 		ogit.Integration:merge_numeric_operation
+		ogit.Integration:time_window_seconds
+		ogit.Integration:time_window_inner_strategy
+		ogit.Integration:constraint_expression
 		ogit.Integration:conflict_score_model_ref
 	);
 	ogit:indexed-attributes (
