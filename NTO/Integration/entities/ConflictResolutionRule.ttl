@@ -39,8 +39,8 @@ ogit.Integration:ConflictResolutionRule
 		ogit.Integration:target_attribute
 	);
 	ogit:allowed (
-		[ ogit:declaredBy        ogit.Integration:Connector ]
-		[ ogit:appliesToMapping  ogit.Integration:MappingRule ]
-		[ ogit:usesScoreModel    ogit.Integration:ConflictScoreModel ]
+		[ ogit.Integration:declaredBy        ogit.Integration:Connector ]
+		[ ogit.Integration:appliesToMapping  ogit.Integration:MappingRule ]
+		[ ogit.Integration:usesScoreModel    ogit.Integration:ConflictScoreModel ]
 	);
 .

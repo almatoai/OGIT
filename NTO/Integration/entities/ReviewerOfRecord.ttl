@@ -31,7 +31,7 @@ ogit.Integration:ReviewerOfRecord
 		ogit.Integration:review_decision
 	);
 	ogit:allowed (
-		[ ogit:reviewedRule ogit.Integration:MappingRule ]
-		[ ogit:reviewedRule ogit.Integration:ConflictResolutionRule ]
+		[ ogit.Integration:reviewedRule ogit.Integration:MappingRule ]
+		[ ogit.Integration:reviewedRule ogit.Integration:ConflictResolutionRule ]
 	);
 .

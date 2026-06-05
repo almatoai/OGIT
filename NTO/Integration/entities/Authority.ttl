@@ -35,6 +35,6 @@ ogit.Integration:Authority
 		ogit.Integration:authority_scope_id
 	);
 	ogit:allowed (
-		[ ogit:delegatedFrom ogit.Integration:Authority ]
+		[ ogit.Integration:delegatedFrom ogit.Integration:Authority ]
 	);
 .

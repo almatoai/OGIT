@@ -8,7 +8,7 @@ ogit.Integration:source_record_id
 	a owl:DatatypeProperty;
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "source_record_id";
-	dcterms:description "Identifier of the source record under consideration.";
+	dcterms:description "[PII-CONDITIONAL] Identifier of the source record under consideration. Used in two contexts with different PII discipline: (a) on PII-namespace entities (IdentityCandidate) the raw source identifier is acceptable and is purged on Right-to-Erasure; (b) on Audit-namespace entities (SchemaDriftCandidate) the value MUST be pseudonymised by the connector before persistence -- audit-forever entities cannot carry raw subject identifiers per D18 + GDPR Art. 17 interaction. Schema-level enforcement is not possible in OGIT today; the constraint is checked by the framework at the persistence boundary (see concept doc Section 6.2). The [PII-CONDITIONAL] description prefix is a machine-greppable convention used by Almato tooling to gate writes on audit-forever entities.";
 	dcterms:valid "start=2026-05-21;";
 	dcterms:creator "Almato AG";
 .

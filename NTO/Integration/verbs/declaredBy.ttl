@@ -4,7 +4,7 @@
 @prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms:              <http://purl.org/dc/terms/> .
 
-ogit:declaredBy
+ogit.Integration:declaredBy
 	a owl:ObjectProperty;
 	rdfs:subPropertyOf ogit:Verb;
 	rdfs:label "declaredBy";

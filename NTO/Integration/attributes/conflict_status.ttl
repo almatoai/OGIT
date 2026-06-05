@@ -8,7 +8,7 @@ ogit.Integration:conflict_status
 	a owl:DatatypeProperty;
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "conflict_status";
-	dcterms:description "Lifecycle state of a Conflict entity. open = newly raised, not yet adjudicated; resolved = decided via ConflictResolutionRule or manual adjudication; withdrawn = retracted by proposing side before adjudication; converted_to_rule = adjudication outcome codified as a new ConflictResolutionRule via becomes_rule=true. F31 disposition 2026-06-02.";
+	dcterms:description "Lifecycle state of a Conflict entity. open = newly raised, not yet adjudicated; resolved = decided via ConflictResolutionRule or manual adjudication; withdrawn = retracted by proposing side before adjudication; converted_to_rule = adjudication outcome codified as a new ConflictResolutionRule via becomes_rule=true. The four-value enum was resolved by F31 quorum disposition on 2026-06-02 (closed; no further changes expected).";
 	ogit:validation-type "fixed";
 	ogit:validation-parameter "open,resolved,withdrawn,converted_to_rule";
 	dcterms:valid "start=2026-05-21;";

@@ -1,10 +1,10 @@
 @prefix ogit:                              <http://www.purl.org/ogit/> .
-@prefix ogit.Integration.Decisions:        <http://www.purl.org/ogit/Integration/Decisions/> .
+@prefix ogit.Integration.Decisions.PII:        <http://www.purl.org/ogit/Integration/Decisions/PII/> .
 @prefix ogit.Integration:                  <http://www.purl.org/ogit/Integration/> .
 @prefix rdfs:                              <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms:                           <http://purl.org/dc/terms/> .
 
-ogit.Integration.Decisions:SplitJob
+ogit.Integration.Decisions.PII:SplitJob
 	a rdfs:Class;
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "SplitJob";
@@ -18,7 +18,7 @@ ogit.Integration.Decisions:SplitJob
 	MergeOrchestrator (Section 6.4) applies: no commit until the inverse
 	merge audit is durable. Eight conformance tests parallel to MergeJob
 	(Section 8) gate Phase B exit.""";
-	dcterms:valid "start=2026-05-29;";
+	dcterms:valid "start=2026-05-29;revised=2026-06-05;";
 	dcterms:creator "Almato AG";
 	ogit:scope "NTO";
 	ogit:parent ogit:Node;
@@ -32,6 +32,7 @@ ogit.Integration.Decisions:SplitJob
 	ogit:optional-attributes (
 		ogit.Integration:completed_at
 		ogit.Integration:failure_reason
+		ogit.Integration:recovery_count
 		ogit.Integration:operator_note
 	);
 	ogit:indexed-attributes (
@@ -39,7 +40,7 @@ ogit.Integration.Decisions:SplitJob
 		ogit.Integration:source_vertex_id
 	);
 	ogit:allowed (
-		[ ogit:initiatedBy  ogit.Integration:ConnectorRun ]
-		[ ogit:authorisedBy ogit.Integration:Authority ]
+		[ ogit.Integration:initiatedByRun  ogit.Integration:ConnectorRun ]
+		[ ogit.Integration:authorisedBy ogit.Integration:Authority ]
 	);
 .

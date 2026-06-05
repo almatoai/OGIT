@@ -4,12 +4,12 @@
 @prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms:              <http://purl.org/dc/terms/> .
 
-ogit.Integration:receivedVia
+ogit.Integration:initiatedByRun
 	a owl:ObjectProperty;
 	rdfs:subPropertyOf ogit:Verb;
-	rdfs:label "receivedVia";
-	dcterms:description "A UserAction was received via a specific ConnectorInstance.";
-	dcterms:valid "start=2026-05-21;";
+	rdfs:label "initiatedByRun";
+	dcterms:description "A MergeJob or SplitJob was initiated within a specific ConnectorRun. Allows type-safe traversal from a Decisions-namespace job to its originating ConnectorRun.";
+	dcterms:valid "start=2026-06-05;";
 	dcterms:creator "Almato AG";
 	ogit:cardinality "many2one";
 .

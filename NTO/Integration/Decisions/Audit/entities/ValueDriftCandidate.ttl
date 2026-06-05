@@ -1,10 +1,10 @@
 @prefix ogit:                              <http://www.purl.org/ogit/> .
-@prefix ogit.Integration.Decisions:        <http://www.purl.org/ogit/Integration/Decisions/> .
+@prefix ogit.Integration.Decisions.Audit:        <http://www.purl.org/ogit/Integration/Decisions/Audit/> .
 @prefix ogit.Integration:                  <http://www.purl.org/ogit/Integration/> .
 @prefix rdfs:                              <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms:                           <http://purl.org/dc/terms/> .
 
-ogit.Integration.Decisions:ValueDriftCandidate
+ogit.Integration.Decisions.Audit:ValueDriftCandidate
 	a rdfs:Class;
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "ValueDriftCandidate";
@@ -35,7 +35,7 @@ ogit.Integration.Decisions:ValueDriftCandidate
 		ogit.Integration:drift_status
 	);
 	ogit:allowed (
-		[ ogit:detectedFor    ogit.Integration:MappingRule ]
-		[ ogit:comparedAgainst ogit.Integration:CanonicalValueSet ]
+		[ ogit.Integration:detectedFor    ogit.Integration:MappingRule ]
+		[ ogit.Integration:comparedAgainst ogit.Integration:CanonicalValueSet ]
 	);
 .

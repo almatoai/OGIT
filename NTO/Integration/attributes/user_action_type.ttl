@@ -8,7 +8,7 @@ ogit.Integration:user_action_type
 	a owl:DatatypeProperty;
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "user_action_type";
-	dcterms:description "Class of transient source event (button_click / slash_command / webhook_receive / approval_signal / ...).";
+	dcterms:description "Class of transient source event (button_click, slash_command, webhook_receive, approval_signal, etc.). Open-ended by design; no fixed validation per the README convention for descriptions ending in '... etc.'";
 	dcterms:valid "start=2026-05-21;";
 	dcterms:creator "Almato AG";
 .

@@ -8,7 +8,7 @@ ogit.Integration:request_payload
 	a owl:DatatypeProperty;
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "request_payload";
-	dcterms:description "Free-form payload of the subject request (scope, attributes affected, ...).";
+	dcterms:description "[PII-BEARING] Free-form payload of the SubjectRequest (scope, attributes affected, supporting documentation extracts). Subject Access Request payloads typically contain identifiers and contact data describing the requesting subject. Allowed only on entities under `Decisions/PII/` (the RtE target); the framework rejects writes that attach `request_payload` to an entity outside `Decisions/PII/`.";
 	dcterms:valid "start=2026-05-21;";
 	dcterms:creator "Almato AG";
 .

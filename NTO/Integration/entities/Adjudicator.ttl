@@ -31,6 +31,6 @@ ogit.Integration:Adjudicator
 		ogit.Integration:adjudication_decision
 	);
 	ogit:allowed (
-		[ ogit:escalatedFrom ogit.Integration:ReviewerOfRecord ]
+		[ ogit.Integration:escalatedFrom ogit.Integration:ReviewerOfRecord ]
 	);
 .

@@ -42,8 +42,8 @@ ogit.Integration:MappingRule
 		ogit.Integration:bidirectional
 	);
 	ogit:allowed (
-		[ ogit:declaredBy             ogit.Integration:Connector ]
-		[ ogit:bindsToConflictRule    ogit.Integration:ConflictResolutionRule ]
-		[ ogit:bindsToCanonicalValues ogit.Integration:CanonicalValueSet ]
+		[ ogit.Integration:declaredBy             ogit.Integration:Connector ]
+		[ ogit.Integration:bindsToConflictRule    ogit.Integration:ConflictResolutionRule ]
+		[ ogit.Integration:bindsToCanonicalValues ogit.Integration:CanonicalValueSet ]
 	);
 .

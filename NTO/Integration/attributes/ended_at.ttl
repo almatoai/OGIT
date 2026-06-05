@@ -4,11 +4,11 @@
 @prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms:              <http://purl.org/dc/terms/> .
 
-ogit.Integration:durable_substrate
+ogit.Integration:ended_at
 	a owl:DatatypeProperty;
 	rdfs:subPropertyOf ogit:Attribute;
-	rdfs:label "durable_substrate";
-	dcterms:description "Durable substrate selector for outbound ack per D26.9. Today kafka is the only supported value; the attribute is intentionally extensible (no fixed validation) because additional substrates (e.g. Pulsar, NATS-JetStream) may be added without a schema change.";
-	dcterms:valid "start=2026-05-21;";
+	rdfs:label "ended_at";
+	dcterms:description "Terminal-state timestamp on a ConnectorRun. Set when the run reaches a terminal state (completed / failed / aborted). Until set, the run is open. Used by the vertex-TTL sweep to compute eligibility for hard-deletion of historical runs per operator policy.";
+	dcterms:valid "start=2026-06-05;";
 	dcterms:creator "Almato AG";
 .

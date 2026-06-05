@@ -7,18 +7,21 @@ ogit.Integration:ConflictLock
 	a rdfs:Class;
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "ConflictLock";
-	dcterms:description """Operational infrastructure entity that serialises
-	concurrent writes against a single target vertex when the Knowledge Core
-	does not yet ship native If-Match optimistic concurrency control. The
-	holder claims the lock, performs the write or merge, then releases it.
-	The TTL provides a backstop reclamation path in case the holder crashes.
-	Lives outside Decisions/ because it carries no per-Subject information
-	(Identity v2 Section 5.3). DEPRECATED on F9-landing: when the Knowledge
-	Core ships native If-Match OCC via ogit/_v, this entity, the four-step
-	acquire-check-operate-release protocol, and every operational reference
-	to a ConflictLock retire. Forward-compatible: blueprint code never sees
-	the entity; it is a kernel-internal mechanism. Viktor R3 Feedback
-	2026-06-01.""";
+	dcterms:description """[DEPRECATED-ON-F9-LANDING] Operational infrastructure
+	entity that serialises concurrent writes against a single target vertex
+	when the Knowledge Core does not yet ship native If-Match optimistic
+	concurrency control. The holder claims the lock, performs the write or
+	merge, then releases it. The TTL provides a backstop reclamation path
+	in case the holder crashes. Lives outside Decisions/ because it carries
+	no per-Subject information (Identity v2 Section 5.3). When the Knowledge
+	Core ships native If-Match OCC via ogit/_v (PLAN F9), this entity, the
+	six attributes (target_xid, holder_id, acquired_at, ttl_seconds,
+	holder_kind, expected_release_at), the four-step acquire-check-operate-
+	release protocol, and the `locks` verb retire together in a follow-up
+	OGIT PR. Forward-compatible: blueprint code never sees the entity; it
+	is a kernel-internal mechanism. The [DEPRECATED-ON-F9-LANDING] prefix
+	is a machine-greppable Almato convention so tooling can suppress
+	permanent-binding generation. Viktor R3 Feedback 2026-06-01.""";
 	dcterms:valid "start=2026-05-29;";
 	dcterms:creator "Almato AG";
 	ogit:scope "NTO";
@@ -38,6 +41,6 @@ ogit.Integration:ConflictLock
 		ogit.Integration:holder_id
 	);
 	ogit:allowed (
-		[ ogit:locks  ogit:Node ]
+		[ ogit.Integration:locks  ogit:Node ]
 	);
 .

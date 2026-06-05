@@ -12,8 +12,15 @@ ogit.Integration:WeavingRule
 	ConnectorRuns finish, against the existing graph state. Reads graph
 	state across themes and produces additional edges between entities that
 	belong together by domain rules (e.g. linking a Ticket vertex to a User
-	vertex by name + system pair). Has its own WeaverRun lifecycle
-	counterpart to ConnectorRun.""";
+	vertex by name + system pair). A WeaverRun lifecycle entity (counterpart
+	to ConnectorRun for the Weaver phase) is a deferred Phase-G+ deliverable;
+	**in Phase B the audit trail for WeaverRule firings is stream-only**:
+	the Weaver writes activity into the ConnectorRun TSDB streams of the
+	owning connector instead of into a dedicated vertex. Implementers who
+	need to query which WeavingRules fired during a specific run MUST read
+	the `event:<run_id>` TSDB stream; no graph traversal path exists in
+	Phase B. The graph-level WeaverRun entity ships in Phase G+ together
+	with corresponding verbs.""";
 	dcterms:valid "start=2026-05-21;";
 	dcterms:creator "Almato AG";
 	ogit:scope "NTO";
@@ -34,6 +41,6 @@ ogit.Integration:WeavingRule
 		ogit.Integration:edge_type
 	);
 	ogit:allowed (
-		[ ogit:declaredBy ogit.Integration:Connector ]
+		[ ogit.Integration:declaredBy ogit.Integration:Connector ]
 	);
 .

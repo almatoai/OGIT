@@ -8,7 +8,7 @@ ogit.Integration:user_identifier
 	a owl:DatatypeProperty;
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "user_identifier";
-	dcterms:description "Source-system user identifier (PII; subject to DSR purge).";
+	dcterms:description "[PII-BEARING] Source-system user identifier. Subject to DSR / Right-to-Erasure purge. This attribute MUST only be used on entities under the Decisions/PII/ namespace (the RtE target). The [PII-BEARING] description prefix is a machine-greppable Almato convention: tooling rejects writes that attach this attribute to an entity outside Decisions/PII/.";
 	dcterms:valid "start=2026-05-21;";
 	dcterms:creator "Almato AG";
 .

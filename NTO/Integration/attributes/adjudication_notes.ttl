@@ -8,7 +8,7 @@ ogit.Integration:adjudication_notes
 	a owl:DatatypeProperty;
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "adjudication_notes";
-	dcterms:description "Free-form adjudicator notes.";
+	dcterms:description "[PII-FORBIDDEN] Free-form adjudicator notes attached to a rule revision. Same discipline as `review_notes`: the host entity (Adjudicator) is structural and survives Right-to-Erasure, so this field MUST NOT contain subject PII. The framework's pre-persistence transform scans for known PII patterns and rejects writes that match. The [PII-FORBIDDEN] description prefix is a machine-greppable Almato convention.";
 	dcterms:valid "start=2026-05-21;";
 	dcterms:creator "Almato AG";
 .

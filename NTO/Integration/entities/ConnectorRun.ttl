@@ -8,13 +8,27 @@ ogit.Integration:ConnectorRun
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "ConnectorRun";
 	dcterms:description """One time-bounded execution of one ConnectorInstance.
-	**Immutable after create** per PLAN D28: the vertex carries only identity
-	and run-invariant bindings (started_at, mode, blueprint_version). All
-	additive state (lifecycle transitions, cursor advances, statistics,
-	operator and system events) lives in four append-only TSDB streams
-	keyed by run_id (see PLAN D28 stream definitions). A typical Bardioc
-	deployment generates ~100k ConnectorRuns per year.""";
-	dcterms:valid "start=2026-05-21;";
+	**Immutable after create** per PLAN D28 with one allowed exception:
+	`ended_at` is the single permitted post-create mutation, written when
+	the run reaches a terminal state (completed / failed / aborted). All
+	other vertex attributes (started_at, trigger_mode, blueprint_version,
+	scope_ids) are frozen at create. **Run lifecycle state (running /
+	completed / failed / aborted) is NOT stored on the vertex** -- it is
+	derived from the `lifecycle:<run_id>` TSDB stream and confirmed by
+	the presence and value of `ended_at`. The vertex has no `run_status`
+	attribute by design (PLAN D28). All additive state (lifecycle
+	transitions, cursor advances, statistics, operator and system events)
+	lives in four append-only TSDB streams keyed by the vertex's ogit/_id
+	(which doubles as the run_id in the stream-key patterns
+	lifecycle:<run_id>, cursor:<run_id>, stats:<run_id>, event:<run_id>
+	from PLAN D28). The `ConnectorRun -> ConnectorRunConfigSnapshot`
+	edge declaration is intentionally one-sided: `usesConfig` is
+	declared only on `ConnectorRun.ogit:allowed`; the snapshot's
+	`ogit:allowed` stays empty. Whether this asymmetry is accepted
+	by the upstream OGIT validator is verified during the PR open
+	process (concept doc Section 7.1). A typical Bardioc deployment
+	generates ~100k ConnectorRuns per year.""";
+	dcterms:valid "start=2026-05-21;revised=2026-06-05;";
 	dcterms:creator "Almato AG";
 	ogit:scope "NTO";
 	ogit:parent ogit:Node;
@@ -25,16 +39,17 @@ ogit.Integration:ConnectorRun
 	);
 	ogit:optional-attributes (
 		ogit.Integration:scope_ids
+		ogit.Integration:ended_at
 	);
 	ogit:indexed-attributes (
 		ogit.Integration:started_at
 	);
 	ogit:allowed (
-		[ ogit:ranOn         ogit.Integration:ConnectorInstance ]
-		[ ogit:ofBlueprint   ogit.Integration:Connector ]
-		[ ogit:initiatedBy   ogit:Actor ]
-		[ ogit:usesConfig    ogit.Integration:ConnectorRunConfigSnapshot ]
-		[ ogit:authorisedBy  ogit.Integration:Authority ]
-		[ ogit:processedBy   ogit.Integration:Authority ]
+		[ ogit.Integration:ranOn         ogit.Integration:ConnectorInstance ]
+		[ ogit.Integration:ofBlueprint   ogit.Integration:Connector ]
+		[ ogit.Integration:initiatedByActor   ogit:Actor ]
+		[ ogit.Integration:usesConfig    ogit.Integration:ConnectorRunConfigSnapshot ]
+		[ ogit.Integration:authorisedBy  ogit.Integration:Authority ]
+		[ ogit.Integration:processedBy   ogit.Integration:Authority ]
 	);
 .

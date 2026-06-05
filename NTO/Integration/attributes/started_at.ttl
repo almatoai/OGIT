@@ -8,7 +8,7 @@ ogit.Integration:started_at
 	a owl:DatatypeProperty;
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "started_at";
-	dcterms:description "Timestamp at which a Run / Job / Invocation started.";
+	dcterms:description "Timestamp at which a ConnectorRun started. (MergeJob, SplitJob, and ActionInvocation use `created_at` instead; `started_at` is reserved for ConnectorRun.)";
 	dcterms:valid "start=2026-05-21;";
 	dcterms:creator "Almato AG";
 .

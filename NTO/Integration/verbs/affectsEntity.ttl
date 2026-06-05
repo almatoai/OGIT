@@ -4,11 +4,11 @@
 @prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms:              <http://purl.org/dc/terms/> .
 
-ogit:affectsEntity
+ogit.Integration:affectsEntity
 	a owl:ObjectProperty;
 	rdfs:subPropertyOf ogit:Verb;
 	rdfs:label "affectsEntity";
-	dcterms:description "A Conflict / IdentityCandidate affects a specific graph entity (vertex).";
+	dcterms:description "A Conflict affects a specific graph entity (vertex). Used by Conflict to point at the target vertex whose attribute write triggered the conflict.";
 	dcterms:valid "start=2026-05-21;";
 	dcterms:creator "Almato AG";
 	ogit:cardinality "many2one";

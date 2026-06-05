@@ -8,7 +8,7 @@ ogit.Integration:proposed_value_payload
 	a owl:DatatypeProperty;
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "proposed_value_payload";
-	dcterms:description "Proposed value payload from the conflicting incoming write.";
+	dcterms:description "[PII-BEARING] Proposed value payload from the conflicting incoming write. If the conflicting attribute is itself PII (name, email, identifier), this payload carries that PII verbatim. Allowed only on entities under `Decisions/PII/` (the RtE target); the framework rejects writes that attach `proposed_value_payload` to an entity outside `Decisions/PII/`.";
 	dcterms:valid "start=2026-05-21;";
 	dcterms:creator "Almato AG";
 .

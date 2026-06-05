@@ -4,11 +4,11 @@
 @prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms:              <http://purl.org/dc/terms/> .
 
-ogit:reviewedRule
+ogit.Integration:reviewedRule
 	a owl:ObjectProperty;
 	rdfs:subPropertyOf ogit:Verb;
 	rdfs:label "reviewedRule";
-	dcterms:description "A ReviewerOfRecord signed a specific MappingRule or ConflictResolutionRule revision.";
+	dcterms:description "A ReviewerOfRecord signed a specific MappingRule or ConflictResolutionRule revision. The verb has a polymorphic range covering the two rule entity types because the review-and-sign workflow is identical for both; a single audit query 'which rules did reviewer X sign in window T?' reads more naturally with one edge name. Documented and accepted as an exception to the type-safe-verbs principle.";
 	dcterms:valid "start=2026-05-21;";
 	dcterms:creator "Almato AG";
 	ogit:cardinality "many2many";

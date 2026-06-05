@@ -36,8 +36,8 @@ ogit.Integration:ConnectorInstance
 		ogit.Integration:instance_status
 	);
 	ogit:allowed (
-		[ ogit:instanceOf      ogit.Integration:Connector ]
-		[ ogit:operatesIn      ogit:DataScope ]
-		[ ogit:hasSignalEntity ogit.Integration:SignalEntity ]
+		[ ogit.Integration:instanceOf      ogit.Integration:Connector ]
+		[ ogit.Integration:operatesIn      ogit:DataScope ]
+		[ ogit.Integration:hasSignalEntity ogit.Integration:SignalEntity ]
 	);
 .

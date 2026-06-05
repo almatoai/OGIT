@@ -8,7 +8,7 @@ ogit.Integration:bidirectional
 	a owl:DatatypeProperty;
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "bidirectional";
-	dcterms:description "Boolean flag declaring whether this mapping rule is bidirectional (D6 / D22).";
+	dcterms:description "Boolean flag declaring whether this mapping rule is bidirectional. Anchored in PLAN D6 and D22.";
 	ogit:validation-type "fixed";
 	ogit:validation-parameter "true,false";
 	dcterms:valid "start=2026-05-21;";

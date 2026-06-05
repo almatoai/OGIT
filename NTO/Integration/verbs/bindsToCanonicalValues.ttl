@@ -4,11 +4,11 @@
 @prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms:              <http://purl.org/dc/terms/> .
 
-ogit:bindsToCanonicalValues
+ogit.Integration:bindsToCanonicalValues
 	a owl:ObjectProperty;
 	rdfs:subPropertyOf ogit:Verb;
 	rdfs:label "bindsToCanonicalValues";
-	dcterms:description "A MappingRule binds to a CanonicalValueSet for value-drift detection.";
+	dcterms:description "A MappingRule binds to a CanonicalValueSet for value-drift detection. Semantic inverse of `referencedBy` (CanonicalValueSet -> MappingRule); see that verb's description for the rationale of keeping both directions as named verbs.";
 	dcterms:valid "start=2026-05-21;";
 	dcterms:creator "Almato AG";
 	ogit:cardinality "many2one";

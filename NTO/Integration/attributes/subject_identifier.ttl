@@ -8,7 +8,7 @@ ogit.Integration:subject_identifier
 	a owl:DatatypeProperty;
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "subject_identifier";
-	dcterms:description "Subject identifier (high-PII; access restricted to DPO roles).";
+	dcterms:description "[PII-RESTRICTED] [RBAC-ENFORCEMENT-PENDING-KC-PR] Data-subject identifier on a SubjectRequest. High-PII: access MUST be restricted to DPO roles. OGIT today has no field-level RBAC predicate; the restriction is a platform requirement on the Knowledge Core (concept doc Section 6.2, Knowledge Core dependencies). Because OGIT's create-time access model grants read on create, the gap between this OGIT PR merging and the Knowledge Core PR landing leaves `subject_identifier` unprotected on the read path: production use of `SubjectRequest` MUST be blocked until the KC PR lands (concept doc Section 7.2 ordering). The [PII-RESTRICTED] description prefix is a machine-greppable Almato convention: tooling rejects reads from any context outside an authenticated DPO session; the [RBAC-ENFORCEMENT-PENDING-KC-PR] marker is removed once the KC PR is merged.";
 	dcterms:valid "start=2026-05-21;";
 	dcterms:creator "Almato AG";
 .

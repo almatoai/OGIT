@@ -8,7 +8,7 @@ ogit.Integration:evidence_payload
 	a owl:DatatypeProperty;
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "evidence_payload";
-	dcterms:description "Resolver-supplied evidence JSON supporting an option.";
+	dcterms:description "[PII-BEARING] Resolver-supplied evidence JSON supporting an IdentityCandidateOption. Typically includes source-record excerpts with names, identifiers, contact data. Allowed only on entities under `Decisions/PII/` (the RtE target); the framework rejects writes that attach `evidence_payload` to an entity outside `Decisions/PII/`.";
 	dcterms:valid "start=2026-05-21;";
 	dcterms:creator "Almato AG";
 .

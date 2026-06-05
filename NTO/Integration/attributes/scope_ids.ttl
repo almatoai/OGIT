@@ -8,7 +8,7 @@ ogit.Integration:scope_ids
 	a owl:DatatypeProperty;
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "scope_ids";
-	dcterms:description "Set of scopes a ConnectorRun is authorised to write into.";
+	dcterms:description "Set of scopes a ConnectorRun is authorised to write into. Serialised as a JSON array of scope-identifier strings; OGIT has no native list datatype, so the framework parses the array at the persistence boundary.";
 	dcterms:valid "start=2026-05-21;";
 	dcterms:creator "Almato AG";
 .

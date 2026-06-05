@@ -8,7 +8,7 @@ ogit.Integration:action_policy_override_ref
 	a owl:DatatypeProperty;
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "action_policy_override_ref";
-	dcterms:description "Optional per-instance override of the connector-default ActionPolicy.";
+	dcterms:description "Optional per-instance override of the connector-default ActionPolicy. When set, this attribute takes precedence over any `appliesTo` edge from the connector-default ActionPolicy to this ConnectorInstance. Same override semantics as `netting_policy_override_ref` (which see).";
 	dcterms:valid "start=2026-05-21;";
 	dcterms:creator "Almato AG";
 .

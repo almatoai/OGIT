@@ -8,7 +8,7 @@ ogit.Integration:operator_note
 	a owl:DatatypeProperty;
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "operator_note";
-	dcterms:description "Free-form operator note attached to a decision-lifecycle entity.";
+	dcterms:description "[PII-BEARING] Free-form operator note attached to a decision-lifecycle entity. May contain subject names, identifiers, or other PII typed by the operator during adjudication. This attribute is only allowed on entities under `Decisions/PII/` (the RtE target); the framework rejects writes that attach `operator_note` to an entity outside `Decisions/PII/`.";
 	dcterms:valid "start=2026-05-21;";
 	dcterms:creator "Almato AG";
 .

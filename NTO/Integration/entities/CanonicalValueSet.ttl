@@ -30,6 +30,6 @@ ogit.Integration:CanonicalValueSet
 		ogit.Integration:value_set_id
 	);
 	ogit:allowed (
-		[ ogit:referencedBy ogit.Integration:MappingRule ]
+		[ ogit.Integration:referencedBy ogit.Integration:MappingRule ]
 	);
 .

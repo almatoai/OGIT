@@ -31,6 +31,6 @@ ogit.Integration:SourceVersion
 		ogit.Integration:version_label
 	);
 	ogit:allowed (
-		[ ogit:appliesTo ogit.Integration:ConnectorInstance ]
+		[ ogit.Integration:appliesTo ogit.Integration:ConnectorInstance ]
 	);
 .

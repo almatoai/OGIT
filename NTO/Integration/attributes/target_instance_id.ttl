@@ -8,7 +8,7 @@ ogit.Integration:target_instance_id
 	a owl:DatatypeProperty;
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "target_instance_id";
-	dcterms:description "ConnectorInstance the signal targets.";
+	dcterms:description "[DENORMALISED-CACHE] ConnectorInstance identifier the signal targets. Denormalised copy of the `targets -> ConnectorInstance` edge target, kept on the SignalEntity vertex so the per-instance stream-subscription key can be matched without a graph traversal (signals fan out by `instance_id` at high frequency). The framework re-derives the attribute from the edge whenever the edge changes; the edge is source of truth on divergence.";
 	dcterms:valid "start=2026-05-21;";
 	dcterms:creator "Almato AG";
 .

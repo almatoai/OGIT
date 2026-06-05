@@ -8,9 +8,9 @@ ogit.Integration:instance_status
 	a owl:DatatypeProperty;
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "instance_status";
-	dcterms:description "Lifecycle state (deployed / running / paused / retired) of the instance.";
+	dcterms:description "Lifecycle state (registered / deployed / running / paused / retiring / retired) of the instance. See `12_netting_state_machine_spec.md` Section 5A for the formal state-machine.";
 	ogit:validation-type "fixed";
-	ogit:validation-parameter "deployed,running,paused,retired";
+	ogit:validation-parameter "registered,deployed,running,paused,retiring,retired";
 	dcterms:valid "start=2026-05-21;";
 	dcterms:creator "Almato AG";
 .

@@ -4,12 +4,12 @@
 @prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms:              <http://purl.org/dc/terms/> .
 
-ogit:initiatedBy
+ogit.Integration:initiatedByActor
 	a owl:ObjectProperty;
 	rdfs:subPropertyOf ogit:Verb;
-	rdfs:label "initiatedBy";
+	rdfs:label "initiatedByActor";
 	dcterms:description "A ConnectorRun was initiated by a specific Actor (schedule, operator, engine policy).";
-	dcterms:valid "start=2026-05-21;";
+	dcterms:valid "start=2026-06-05;";
 	dcterms:creator "Almato AG";
 	ogit:cardinality "many2one";
 .

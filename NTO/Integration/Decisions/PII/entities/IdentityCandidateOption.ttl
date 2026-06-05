@@ -1,10 +1,10 @@
 @prefix ogit:                              <http://www.purl.org/ogit/> .
-@prefix ogit.Integration.Decisions:        <http://www.purl.org/ogit/Integration/Decisions/> .
+@prefix ogit.Integration.Decisions.PII:        <http://www.purl.org/ogit/Integration/Decisions/PII/> .
 @prefix ogit.Integration:                  <http://www.purl.org/ogit/Integration/> .
 @prefix rdfs:                              <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms:                           <http://purl.org/dc/terms/> .
 
-ogit.Integration.Decisions:IdentityCandidateOption
+ogit.Integration.Decisions.PII:IdentityCandidateOption
 	a rdfs:Class;
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "IdentityCandidateOption";
@@ -30,6 +30,6 @@ ogit.Integration.Decisions:IdentityCandidateOption
 		ogit.Integration:candidate_vertex_id
 	);
 	ogit:allowed (
-		[ ogit:belongsTo ogit.Integration.Decisions:IdentityCandidate ]
+		[ ogit.Integration:belongsTo ogit.Integration.Decisions.PII:IdentityCandidate ]
 	);
 .

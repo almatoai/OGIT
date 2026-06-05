@@ -34,11 +34,11 @@ ogit.Integration:Connector
 		ogit.Integration:source_system_id
 	);
 	ogit:allowed (
-		[ ogit:declaresMappingRule    ogit.Integration:MappingRule ]
-		[ ogit:declaresNettingPolicy  ogit.Integration:NettingPolicy ]
-		[ ogit:declaresConflictRule   ogit.Integration:ConflictResolutionRule ]
-		[ ogit:declaresWeavingRule    ogit.Integration:WeavingRule ]
-		[ ogit:declaresActionPolicy   ogit.Integration:ActionPolicy ]
-		[ ogit:declaresSourceVersion  ogit.Integration:SourceVersion ]
+		[ ogit.Integration:declaresMappingRule    ogit.Integration:MappingRule ]
+		[ ogit.Integration:declaresNettingPolicy  ogit.Integration:NettingPolicy ]
+		[ ogit.Integration:declaresConflictRule   ogit.Integration:ConflictResolutionRule ]
+		[ ogit.Integration:declaresWeavingRule    ogit.Integration:WeavingRule ]
+		[ ogit.Integration:declaresActionPolicy   ogit.Integration:ActionPolicy ]
+		[ ogit.Integration:declaresSourceVersion  ogit.Integration:SourceVersion ]
 	);
 .

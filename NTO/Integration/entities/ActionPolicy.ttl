@@ -46,7 +46,7 @@ ogit.Integration:ActionPolicy
 		ogit.Integration:operation_type
 	);
 	ogit:allowed (
-		[ ogit:declaredBy ogit.Integration:Connector ]
-		[ ogit:appliesTo  ogit.Integration:ConnectorInstance ]
+		[ ogit.Integration:declaredBy ogit.Integration:Connector ]
+		[ ogit.Integration:appliesTo  ogit.Integration:ConnectorInstance ]
 	);
 .

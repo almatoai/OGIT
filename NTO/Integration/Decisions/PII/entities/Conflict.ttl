@@ -1,10 +1,10 @@
 @prefix ogit:                              <http://www.purl.org/ogit/> .
-@prefix ogit.Integration.Decisions:        <http://www.purl.org/ogit/Integration/Decisions/> .
+@prefix ogit.Integration.Decisions.PII:        <http://www.purl.org/ogit/Integration/Decisions/PII/> .
 @prefix ogit.Integration:                  <http://www.purl.org/ogit/Integration/> .
 @prefix rdfs:                              <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms:                           <http://purl.org/dc/terms/> .
 
-ogit.Integration.Decisions:Conflict
+ogit.Integration.Decisions.PII:Conflict
 	a rdfs:Class;
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "Conflict";
@@ -37,8 +37,8 @@ ogit.Integration.Decisions:Conflict
 		ogit.Integration:target_attribute
 	);
 	ogit:allowed (
-		[ ogit:proposedBy      ogit.Integration:ConnectorRun ]
-		[ ogit:incumbentFrom   ogit.Integration:ConnectorRun ]
-		[ ogit:affectsEntity   ogit:Node ]
+		[ ogit.Integration:proposedBy      ogit.Integration:ConnectorRun ]
+		[ ogit.Integration:incumbentFrom   ogit.Integration:ConnectorRun ]
+		[ ogit.Integration:affectsEntity   ogit:Node ]
 	);
 .
