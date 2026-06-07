@@ -47,7 +47,7 @@ ogit.Integration:ConnectorRun
 	ogit:allowed (
 		[ ogit.Integration:ranOn         ogit.Integration:ConnectorInstance ]
 		[ ogit.Integration:ofBlueprint   ogit.Integration:Connector ]
-		[ ogit.Integration:initiatedByActor   ogit:Actor ]
+		[ ogit.Integration:initiatedByActor   ogit:Agent ]
 		[ ogit.Integration:usesConfig    ogit.Integration:ConnectorRunConfigSnapshot ]
 		[ ogit.Integration:authorisedBy  ogit.Integration:Authority ]
 		[ ogit.Integration:processedBy   ogit.Integration:Authority ]

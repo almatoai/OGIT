@@ -1,5 +1,6 @@
 @prefix ogit:                 <http://www.purl.org/ogit/> .
 @prefix ogit.Integration:     <http://www.purl.org/ogit/Integration/> .
+@prefix ogit.Auth:            <http://www.purl.org/ogit/Auth/> .
 @prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms:              <http://purl.org/dc/terms/> .
 
@@ -37,7 +38,7 @@ ogit.Integration:ConnectorInstance
 	);
 	ogit:allowed (
 		[ ogit.Integration:instanceOf      ogit.Integration:Connector ]
-		[ ogit.Integration:operatesIn      ogit:DataScope ]
+		[ ogit.Integration:operatesIn      ogit.Auth:DataScope ]
 		[ ogit.Integration:hasSignalEntity ogit.Integration:SignalEntity ]
 	);
 .

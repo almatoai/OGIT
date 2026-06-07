@@ -35,6 +35,6 @@ ogit.Integration:SignalEntity
 	);
 	ogit:allowed (
 		[ ogit.Integration:targets   ogit.Integration:ConnectorInstance ]
-		[ ogit.Integration:emittedBy ogit:Actor ]
+		[ ogit.Integration:emittedBy ogit:Agent ]
 	);
 .
