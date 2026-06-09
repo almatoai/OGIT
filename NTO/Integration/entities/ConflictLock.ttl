@@ -41,4 +41,6 @@ ogit.Integration:ConflictLock
 		ogit.Integration:target_xid
 		ogit.Integration:holder_id
 	);
+	ogit:allowed (
+	);
 .
