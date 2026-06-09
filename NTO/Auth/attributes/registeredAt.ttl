@@ -1,0 +1,14 @@
+@prefix ogit:           <http://www.purl.org/ogit/> .
+@prefix ogit.Auth:      <http://www.purl.org/ogit/Auth/> .
+@prefix owl:            <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:           <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:        <http://purl.org/dc/terms/> .
+
+ogit.Auth:registeredAt
+    a owl:DatatypeProperty;
+    rdfs:subPropertyOf ogit:Attribute;
+    rdfs:label "registeredAt";
+    dcterms:description "ISO timestamp at which an end-user device was first registered against the platform. Explicit lifecycle property on ogit.Auth:Device, distinct from the platform-standard ogit/_created (which records vertex-creation time but is system-managed). Distinct from the SGO verb ogit:registeredAt (Person-to-Address relation) -- this is an attribute on Device in the Auth namespace.";
+    dcterms:valid "start=2026-06-01;";
+    dcterms:creator "Almato AG";
+.

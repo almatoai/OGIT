@@ -1,0 +1,14 @@
+@prefix ogit:           <http://www.purl.org/ogit/> .
+@prefix ogit.Auth:      <http://www.purl.org/ogit/Auth/> .
+@prefix owl:            <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:           <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:        <http://purl.org/dc/terms/> .
+
+ogit.Auth:fingerprint
+    a owl:DatatypeProperty;
+    rdfs:subPropertyOf ogit:Attribute;
+    rdfs:label "fingerprint";
+    dcterms:description "Cryptographic device fingerprint that uniquely identifies an end-user device across login sessions. Opaque string, set by the platform on first device registration.";
+    dcterms:valid "start=2026-06-01;";
+    dcterms:creator "Almato AG";
+.

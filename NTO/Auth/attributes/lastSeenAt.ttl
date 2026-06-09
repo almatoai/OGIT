@@ -1,14 +1,14 @@
 @prefix ogit:           <http://www.purl.org/ogit/> .
-@prefix ogit.GFS:       <http://www.purl.org/ogit/GFS/> .
+@prefix ogit.Auth:      <http://www.purl.org/ogit/Auth/> .
 @prefix owl:            <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs:           <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms:        <http://purl.org/dc/terms/> .
 
-ogit.GFS:revokedAt
+ogit.Auth:lastSeenAt
     a owl:DatatypeProperty;
     rdfs:subPropertyOf ogit:Attribute;
-    rdfs:label "revokedAt";
-    dcterms:description "Timestamp set when a ShareLink is explicitly revoked. After this point, the Public-Share-WebService denies all requests carrying the token, regardless of expiresAt.";
-    dcterms:valid "start=2026-05-21;";
+    rdfs:label "lastSeenAt";
+    dcterms:description "ISO timestamp of the most recent successful authentication from this device.";
+    dcterms:valid "start=2026-06-01;";
     dcterms:creator "Almato AG";
 .

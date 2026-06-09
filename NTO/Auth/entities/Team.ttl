@@ -26,6 +26,7 @@ ogit.Auth:Team
 	);
 	ogit:optional-attributes (
         ogit:description
+        ogit.Auth:isWorkspace
 	);
   ogit:indexed-attributes (
 

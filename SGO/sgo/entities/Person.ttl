@@ -29,6 +29,7 @@
 @prefix ogit.Compliance:        <http://www.purl.org/ogit/Compliance/> .
 @prefix ogit.Legal:             <http://www.purl.org/ogit/Legal/> .
 @prefix ogit.HR.Recruiting:     <http://www.purl.org/ogit/HR/Recruiting/> .
+@prefix ogit.Auth:              <http://www.purl.org/ogit/Auth/> .
 
 ogit:Person
 	a rdfs:Class;
@@ -319,5 +320,8 @@ ogit:Person
 			[ ogit.Compliance:procuresFor          ogit:Organization ]
 			[ ogit.Compliance:financiallySupports  ogit:Person ]
 			[ ogit.Compliance:financiallySupports  ogit:Organization ]
+
+			# Personal-Vault anchor (Bardioc GFS dependency, 2026-06-01 -- per Cy phone call: use ogit.Auth:owns rather than introducing hasVault)
+			[ ogit.Auth:owns  ogit.Auth:DataScope ]
 	);
 .

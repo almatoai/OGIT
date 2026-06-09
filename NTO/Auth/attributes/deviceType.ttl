@@ -1,0 +1,16 @@
+@prefix ogit:           <http://www.purl.org/ogit/> .
+@prefix ogit.Auth:      <http://www.purl.org/ogit/Auth/> .
+@prefix owl:            <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:           <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:        <http://purl.org/dc/terms/> .
+
+ogit.Auth:deviceType
+    a owl:DatatypeProperty;
+    rdfs:subPropertyOf ogit:Attribute;
+    rdfs:label "deviceType";
+    dcterms:description "Category of an end-user device used to access the platform. Distinct from ogit.Mobile:deviceType (free-form, mobile-domain): this attribute is fixed-set and covers the auth-relevant device categories that drive access policy.";
+    dcterms:valid "start=2026-06-01;";
+    dcterms:creator "Almato AG";
+    ogit:validation-parameter "mobile,desktop,web,hsm,hardware-wallet";
+    ogit:validation-type "fixed";
+.

@@ -36,7 +36,7 @@ ogit.GFS:ShareLink
         ogit.GFS:maxUses
         ogit.GFS:usedCount
         ogit.GFS:allowedEmails
-        ogit.GFS:revokedAt
+        ogit:revokedAt
     );
     ogit:indexed-attributes (
         ogit.GFS:token

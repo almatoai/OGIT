@@ -1,0 +1,20 @@
+@prefix ogit:           <http://www.purl.org/ogit/> .
+@prefix ogit.Auth:      <http://www.purl.org/ogit/Auth/> .
+@prefix owl:            <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:           <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:        <http://purl.org/dc/terms/> .
+
+ogit.Auth:owns
+    a owl:ObjectProperty;
+    rdfs:subPropertyOf ogit:Verb;
+    rdfs:label "owns";
+    dcterms:description "Auth-namespace ownership relation. Currently used to anchor a Vault DataScope to its owning Person (Personal Vault) -- the relation survives Account deactivation so a Person who changes employer keeps the Vault reachable through any remaining Account that belongs to the Person.";
+    dcterms:valid "start=2026-06-01;";
+    dcterms:creator "Almato AG";
+    dcterms:created "2026-06-01";
+    dcterms:modified "2026-06-01";
+    ogit:admin-contact "Almato AG";
+    ogit:tech-contact "Almato AG";
+    ogit:history (
+    );
+.

@@ -1,0 +1,48 @@
+@prefix ogit:           <http://www.purl.org/ogit/> .
+@prefix ogit.Auth:      <http://www.purl.org/ogit/Auth/> .
+@prefix owl:            <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:           <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:        <http://purl.org/dc/terms/> .
+
+# ogit.Auth:Device -- end-user device that authenticates against
+# the platform. Distinct from the SGO ogit:Device which models
+# datacenter equipment (servers, sensors, PDUs). The Auth-context
+# device is a smartphone, laptop, browser session, HSM, or
+# hardware wallet that an ogit.Auth:Account uses to access
+# platform services. Drives per-file device restrictions when
+# combined with file-side minDeviceSecurityLevel and
+# restrictToDevices attributes (see ogit.GFS:File).
+
+ogit.Auth:Device
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "Device";
+    dcterms:description "An end-user device that authenticates against the platform and uses platform services. Distinct from the SGO ogit:Device which models datacenter equipment.";
+    dcterms:valid "start=2026-06-01;";
+    dcterms:creator "Almato AG";
+    dcterms:created "2026-06-01";
+    dcterms:modified "2026-06-01";
+    ogit:admin-contact "Almato AG";
+    ogit:tech-contact "Almato AG";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:blob "false";
+    ogit:mandatory-attributes (
+        ogit:name
+        ogit.Auth:deviceType
+        ogit.Auth:securityLevel
+    );
+    ogit:optional-attributes (
+        ogit.Auth:fingerprint
+        ogit.Auth:registeredAt
+        ogit.Auth:lastSeenAt
+        ogit.Auth:revokedAt
+    );
+    ogit:indexed-attributes (
+        ogit.Auth:fingerprint
+    );
+    ogit:history (
+    );
+    ogit:allowed (
+    );
+.

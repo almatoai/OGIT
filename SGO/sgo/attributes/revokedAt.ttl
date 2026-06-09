@@ -1,0 +1,13 @@
+@prefix ogit:           <http://www.purl.org/ogit/> .
+@prefix owl:            <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:           <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:        <http://purl.org/dc/terms/> .
+
+ogit:revokedAt
+    a owl:DatatypeProperty;
+    rdfs:subPropertyOf ogit:Attribute;
+    rdfs:label "revokedAt";
+    dcterms:description "Generic top-level timestamp attribute marking the moment an entity was explicitly revoked. After this timestamp the entity is treated as inactive by the platform regardless of any other lifecycle markers. Reusable across namespaces (ShareLink, generic tokens, certificates, future use-cases).";
+    dcterms:valid "start=2026-06-01;";
+    dcterms:creator "Almato AG";
+.
