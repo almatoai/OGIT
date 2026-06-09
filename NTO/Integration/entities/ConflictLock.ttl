@@ -16,9 +16,10 @@ ogit.Integration:ConflictLock
 	no per-Subject information (Identity v2 Section 5.3). When the Knowledge
 	Core ships native If-Match OCC via ogit/_v (PLAN F9), this entity, the
 	six attributes (target_xid, holder_id, acquired_at, ttl_seconds,
-	holder_kind, expected_release_at), the four-step acquire-check-operate-
-	release protocol, and the `locks` verb retire together in a follow-up
-	OGIT PR. Forward-compatible: blueprint code never sees the entity; it
+	holder_kind, expected_release_at) and the four-step acquire-check-operate-
+	release protocol retire together in a follow-up OGIT PR. The locked vertex
+	is referenced by the target_xid attribute (a soft reference), not by an
+	edge: OGIT has no any-vertex edge target. Forward-compatible: blueprint code never sees the entity; it
 	is a kernel-internal mechanism. The [DEPRECATED-ON-F9-LANDING] prefix
 	is a machine-greppable Almato convention so tooling can suppress
 	permanent-binding generation. Viktor R3 Feedback 2026-06-01.""";
@@ -39,8 +40,5 @@ ogit.Integration:ConflictLock
 	ogit:indexed-attributes (
 		ogit.Integration:target_xid
 		ogit.Integration:holder_id
-	);
-	ogit:allowed (
-		[ ogit.Integration:locks  ogit:Node ]
 	);
 .

@@ -11,9 +11,10 @@ ogit.Integration.Decisions.PII:Conflict
 	dcterms:description """Pending conflict awaiting manual review. Created
 	when a ConflictResolutionRule resolves to 'manual' for an incoming write
 	whose target attribute already has a competing value from a different
-	source. Carries references to the affected entity vertex, the proposing
-	ConnectorRun, the incumbent ConnectorRun whose write currently holds,
-	the proposed value, and the incumbent value. Per PLAN D14 (no-silent-
+	source. Carries a soft reference to the affected entity vertex (via the
+	affected_entity_xid attribute, since OGIT has no any-vertex edge target),
+	plus edges to the proposing and incumbent ConnectorRun, and the proposed
+	and incumbent values as payload attributes. Per PLAN D14 (no-silent-
 	defaults). UI is a separate Bardioc Desktop app, downstream concern.""";
 	dcterms:valid "start=2026-05-21;";
 	dcterms:creator "Almato AG";
@@ -21,6 +22,7 @@ ogit.Integration.Decisions.PII:Conflict
 	ogit:parent ogit:Node;
 	ogit:mandatory-attributes (
 		ogit.Integration:conflict_status
+		ogit.Integration:affected_entity_xid
 		ogit.Integration:target_attribute
 		ogit.Integration:proposed_value_payload
 		ogit.Integration:incumbent_value_payload
@@ -34,11 +36,11 @@ ogit.Integration.Decisions.PII:Conflict
 	);
 	ogit:indexed-attributes (
 		ogit.Integration:conflict_status
+		ogit.Integration:affected_entity_xid
 		ogit.Integration:target_attribute
 	);
 	ogit:allowed (
 		[ ogit.Integration:proposedBy      ogit.Integration:ConnectorRun ]
 		[ ogit.Integration:incumbentFrom   ogit.Integration:ConnectorRun ]
-		[ ogit.Integration:affectsEntity   ogit:Node ]
 	);
 .

@@ -18,5 +18,5 @@ The PII-bearing decision-and-lifecycle vertices (manual-review queue entries, me
 
 - All entities, attributes and verbs use `dcterms:creator "Almato AG"` per the arago-Almato merger discipline.
 - Boolean and enum attributes carry `ogit:validation-type "fixed"` plus `ogit:validation-parameter "<csv>"`. Open-ended descriptions (ending in "... etc.") deliberately omit the fixed parameter.
-- Edge targets in `ogit:allowed` resolve to concrete vertex types where the semantic intent has a fixed range. Two verbs target the base class `ogit:Node` because their semantic intent is any-vertex: `ogit.Integration:locks` (ConflictLock can lock any vertex; Phase-B-only) and `ogit.Integration:affectsEntity` (a Conflict can be about any vertex). `ogit:Entity` is not used as a target.
+- Edge targets in `ogit:allowed` always name concrete vertex types. OGIT has no edge inheritance and no any-vertex edge target: every allowed edge must be declared explicitly between concrete types. Where the framework must reference an entity of arbitrary type -- a ConflictLock's locked vertex, a Conflict's affected vertex -- it uses a soft `*_xid` attribute reference (`target_xid`, `affected_entity_xid`) instead of an edge. Neither `ogit:Node` nor `ogit:Entity` is used as an edge target.
 - The framework adds; it never alters existing OGIT entities.
