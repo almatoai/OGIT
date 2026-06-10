@@ -26,19 +26,19 @@ ogit.Integration:WeavingRule
 	ogit:scope "NTO";
 	ogit:parent ogit:Node;
 	ogit:mandatory-attributes (
-		ogit.Integration:weaver_id
-		ogit.Integration:source_vertex_pattern
-		ogit.Integration:target_vertex_pattern
-		ogit.Integration:edge_type
+		ogit.Integration:weaverId
+		ogit.Integration:sourceVertexPattern
+		ogit.Integration:targetVertexPattern
+		ogit.Integration:edgeType
 	);
 	ogit:optional-attributes (
-		ogit.Integration:match_criteria
-		ogit.Integration:cel_predicate
-		ogit.Integration:schedule_cron
+		ogit.Integration:matchCriteria
+		ogit.Integration:celPredicate
+		ogit.Integration:scheduleCron
 	);
 	ogit:indexed-attributes (
-		ogit.Integration:weaver_id
-		ogit.Integration:edge_type
+		ogit.Integration:weaverId
+		ogit.Integration:edgeType
 	);
 	ogit:allowed (
 		[ ogit.Integration:declaredBy ogit.Integration:Connector ]

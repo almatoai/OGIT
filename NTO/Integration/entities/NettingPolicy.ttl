@@ -20,20 +20,20 @@ ogit.Integration:NettingPolicy
 	ogit:parent ogit:Node;
 	ogit:mandatory-attributes (
 		ogit.Integration:direction
-		ogit.Integration:coalesce_window_seconds
-		ogit.Integration:coalesce_window_events
-		ogit.Integration:ack_semantic
-		ogit.Integration:overflow_policy
+		ogit.Integration:coalesceWindowSeconds
+		ogit.Integration:coalesceWindowEvents
+		ogit.Integration:ackSemantic
+		ogit.Integration:overflowPolicy
 	);
 	ogit:optional-attributes (
-		ogit.Integration:overflow_buffer_bound
-		ogit.Integration:breaker_enabled
-		ogit.Integration:breaker_failure_threshold
-		ogit.Integration:breaker_cooldown_seconds
-		ogit.Integration:breaker_self_heal
-		ogit.Integration:durable_substrate
-		ogit.Integration:kafka_partitions
-		ogit.Integration:dropped_payload_retention_days
+		ogit.Integration:overflowBufferBound
+		ogit.Integration:breakerEnabled
+		ogit.Integration:breakerFailureThreshold
+		ogit.Integration:breakerCooldownSeconds
+		ogit.Integration:breakerSelfHeal
+		ogit.Integration:durableSubstrate
+		ogit.Integration:kafkaPartitions
+		ogit.Integration:droppedPayloadRetentionDays
 	);
 	ogit:indexed-attributes (
 		ogit.Integration:direction

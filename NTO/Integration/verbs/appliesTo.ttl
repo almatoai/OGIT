@@ -8,7 +8,7 @@ ogit.Integration:appliesTo
 	a owl:ObjectProperty;
 	rdfs:subPropertyOf ogit:Verb;
 	rdfs:label "appliesTo";
-	dcterms:description "A NettingPolicy / ActionPolicy / SourceVersion applies to a specific ConnectorInstance. The verb has a polymorphic domain (three policy / version entity types) but a fixed range (ConnectorInstance); the shared range makes the polymorphism low-risk and the single edge name keeps instance-centric queries ('what applies to instance X?') readable. Documented and accepted as a multi-domain-single-range exception. The ConflictResolutionRule -> ConflictScoreModel link is NOT in this set; it is owned by `usesScoreModel`.";
+	dcterms:description "A NettingPolicy / ActionPolicy / SourceVersion applies to a specific ConnectorInstance. The verb has a polymorphic domain (three policy / version entity types) but a fixed range (ConnectorInstance); the shared range makes the polymorphism low-risk and the single edge name keeps instance-centric queries ('what applies to instance X?') readable. Documented and accepted as a multi-domain-single-range exception. The ConflictResolutionRule -> ConflictScoreModel link is NOT in this set; it is owned by `uses`.";
 	dcterms:valid "start=2026-05-21;";
 	dcterms:creator "Almato AG";
 	ogit:cardinality "many2many";

@@ -20,21 +20,21 @@ ogit.Integration:ConnectorInstance
 	ogit:parent ogit:Node;
 	ogit:mandatory-attributes (
 		ogit.Integration:endpoint
-		ogit.Integration:credentials_ref
-		ogit.Integration:scope_id
-		ogit.Integration:customer_id
-		ogit.Integration:instance_status
-		ogit.Integration:trigger_mode
+		ogit.Integration:credentialsRef
+		ogit.Integration:scopeId
+		ogit.Integration:customerId
+		ogit.Integration:instanceStatus
+		ogit.Integration:triggerMode
 	);
 	ogit:optional-attributes (
-		ogit.Integration:netting_policy_override_ref
-		ogit.Integration:action_policy_override_ref
-		ogit.Integration:data_maturity_tier
+		ogit.Integration:nettingPolicyOverrideRef
+		ogit.Integration:actionPolicyOverrideRef
+		ogit.Integration:dataMaturityTier
 	);
 	ogit:indexed-attributes (
-		ogit.Integration:scope_id
-		ogit.Integration:customer_id
-		ogit.Integration:instance_status
+		ogit.Integration:scopeId
+		ogit.Integration:customerId
+		ogit.Integration:instanceStatus
 	);
 	ogit:allowed (
 		[ ogit.Integration:instanceOf      ogit.Integration:Connector ]

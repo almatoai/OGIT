@@ -12,7 +12,7 @@ ogit.Integration.Decisions.PII:Conflict
 	when a ConflictResolutionRule resolves to 'manual' for an incoming write
 	whose target attribute already has a competing value from a different
 	source. Carries a soft reference to the affected entity vertex (via the
-	affected_entity_xid attribute, since OGIT has no any-vertex edge target),
+	affectedVertexXid attribute, since OGIT has no any-vertex edge target),
 	plus edges to the proposing and incumbent ConnectorRun, and the proposed
 	and incumbent values as payload attributes. Per PLAN D14 (no-silent-
 	defaults). UI is a separate Bardioc Desktop app, downstream concern.""";
@@ -21,23 +21,23 @@ ogit.Integration.Decisions.PII:Conflict
 	ogit:scope "NTO";
 	ogit:parent ogit:Node;
 	ogit:mandatory-attributes (
-		ogit.Integration:conflict_status
-		ogit.Integration:affected_entity_xid
-		ogit.Integration:target_attribute
-		ogit.Integration:proposed_value_payload
-		ogit.Integration:incumbent_value_payload
-		ogit.Integration:created_at
+		ogit.Integration:conflictStatus
+		ogit.Integration:affectedVertexXid
+		ogit.Integration:targetAttribute
+		ogit.Integration:proposedValuePayload
+		ogit.Integration:incumbentValuePayload
+		ogit:createdAt
 	);
 	ogit:optional-attributes (
-		ogit.Integration:assigned_reviewer_id
-		ogit.Integration:resolved_at
-		ogit.Integration:resolution_decision
-		ogit.Integration:becomes_rule
+		ogit.Integration:assignedReviewerId
+		ogit.Integration:resolvedAt
+		ogit.Integration:resolutionDecision
+		ogit.Integration:becomesRule
 	);
 	ogit:indexed-attributes (
-		ogit.Integration:conflict_status
-		ogit.Integration:affected_entity_xid
-		ogit.Integration:target_attribute
+		ogit.Integration:conflictStatus
+		ogit.Integration:affectedVertexXid
+		ogit.Integration:targetAttribute
 	);
 	ogit:allowed (
 		[ ogit.Integration:proposedBy      ogit.Integration:ConnectorRun ]

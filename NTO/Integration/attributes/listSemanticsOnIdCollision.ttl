@@ -1,0 +1,16 @@
+@prefix ogit:                 <http://www.purl.org/ogit/> .
+@prefix ogit.Integration:     <http://www.purl.org/ogit/Integration/> .
+@prefix owl:                  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:              <http://purl.org/dc/terms/> .
+
+ogit.Integration:listSemanticsOnIdCollision
+	a owl:DatatypeProperty;
+	rdfs:subPropertyOf ogit:Attribute;
+	rdfs:label "listSemanticsOnIdCollision";
+	dcterms:description "Behaviour when two source elements yield the same element identifier (Mapping DSL Section 3.1, Netting v2 Section 7.7.2 -- Cy R3 cluster N4).";
+	ogit:validation-type "fixed";
+	ogit:validation-parameter "merge_metadata,reject";
+	dcterms:valid "start=2026-05-29;";
+	dcterms:creator "Almato AG";
+.

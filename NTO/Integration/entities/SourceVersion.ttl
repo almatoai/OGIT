@@ -18,17 +18,17 @@ ogit.Integration:SourceVersion
 	ogit:scope "NTO";
 	ogit:parent ogit:Node;
 	ogit:mandatory-attributes (
-		ogit.Integration:source_system_id
-		ogit.Integration:version_label
-		ogit.Integration:declared_at
+		ogit.Integration:sourceSystemId
+		ogit:version
+		ogit.Integration:declaredAt
 	);
 	ogit:optional-attributes (
-		ogit.Integration:version_signature
-		ogit.Integration:fields_payload
+		ogit.Integration:versionSignature
+		ogit.Integration:fieldsPayload
 	);
 	ogit:indexed-attributes (
-		ogit.Integration:source_system_id
-		ogit.Integration:version_label
+		ogit.Integration:sourceSystemId
+		ogit:version
 	);
 	ogit:allowed (
 		[ ogit.Integration:appliesTo ogit.Integration:ConnectorInstance ]

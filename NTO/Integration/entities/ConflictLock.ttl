@@ -15,10 +15,10 @@ ogit.Integration:ConflictLock
 	in case the holder crashes. Lives outside Decisions/ because it carries
 	no per-Subject information (Identity v2 Section 5.3). When the Knowledge
 	Core ships native If-Match OCC via ogit/_v (PLAN F9), this entity, the
-	six attributes (target_xid, holder_id, acquired_at, ttl_seconds,
-	holder_kind, expected_release_at) and the four-step acquire-check-operate-
+	six attributes (lockedVertexXid, holderId, acquiredAt, ttlSeconds,
+	holderKind, expectedReleaseAt) and the four-step acquire-check-operate-
 	release protocol retire together in a follow-up OGIT PR. The locked vertex
-	is referenced by the target_xid attribute (a soft reference), not by an
+	is referenced by the lockedVertexXid attribute (a soft reference), not by an
 	edge: OGIT has no any-vertex edge target. Forward-compatible: blueprint code never sees the entity; it
 	is a kernel-internal mechanism. The [DEPRECATED-ON-F9-LANDING] prefix
 	is a machine-greppable Almato convention so tooling can suppress
@@ -28,18 +28,18 @@ ogit.Integration:ConflictLock
 	ogit:scope "NTO";
 	ogit:parent ogit:Node;
 	ogit:mandatory-attributes (
-		ogit.Integration:target_xid
-		ogit.Integration:holder_id
-		ogit.Integration:acquired_at
-		ogit.Integration:ttl_seconds
+		ogit.Integration:lockedVertexXid
+		ogit.Integration:holderId
+		ogit.Integration:acquiredAt
+		ogit.Integration:ttlSeconds
 	);
 	ogit:optional-attributes (
-		ogit.Integration:holder_kind
-		ogit.Integration:expected_release_at
+		ogit.Integration:holderKind
+		ogit.Integration:expectedReleaseAt
 	);
 	ogit:indexed-attributes (
-		ogit.Integration:target_xid
-		ogit.Integration:holder_id
+		ogit.Integration:lockedVertexXid
+		ogit.Integration:holderId
 	);
 	ogit:allowed (
 	);

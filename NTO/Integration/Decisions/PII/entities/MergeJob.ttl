@@ -21,21 +21,21 @@ ogit.Integration.Decisions.PII:MergeJob
 	ogit:scope "NTO";
 	ogit:parent ogit:Node;
 	ogit:mandatory-attributes (
-		ogit.Integration:job_state
-		ogit.Integration:source_vertex_id
-		ogit.Integration:target_vertex_id
-		ogit.Integration:checkpoint_payload
-		ogit.Integration:created_at
+		ogit.Integration:jobState
+		ogit.Integration:sourceVertexXid
+		ogit.Integration:targetVertexXid
+		ogit.Integration:checkpointPayload
+		ogit:createdAt
 	);
 	ogit:optional-attributes (
-		ogit.Integration:completed_at
-		ogit.Integration:failure_reason
-		ogit.Integration:recovery_count
-		ogit.Integration:operator_note
+		ogit:finishedAt
+		ogit:reason
+		ogit.Integration:recoveryCount
+		ogit.Integration:operatorNote
 	);
 	ogit:indexed-attributes (
-		ogit.Integration:job_state
-		ogit.Integration:source_vertex_id
+		ogit.Integration:jobState
+		ogit.Integration:sourceVertexXid
 	);
 	ogit:allowed (
 		[ ogit.Integration:initiatedByRun  ogit.Integration:ConnectorRun ]

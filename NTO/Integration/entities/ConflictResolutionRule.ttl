@@ -22,25 +22,24 @@ ogit.Integration:ConflictResolutionRule
 	ogit:parent ogit:Node;
 	ogit:mandatory-attributes (
 		ogit.Integration:strategy
-		ogit.Integration:target_attribute
+		ogit.Integration:targetAttribute
 	);
 	ogit:optional-attributes (
-		ogit.Integration:source_priority_list
-		ogit.Integration:expert_rule_expression
-		ogit.Integration:merge_set_operation
-		ogit.Integration:merge_numeric_operation
-		ogit.Integration:time_window_seconds
-		ogit.Integration:time_window_inner_strategy
-		ogit.Integration:constraint_expression
-		ogit.Integration:conflict_score_model_ref
+		ogit.Integration:sourcePriorityList
+		ogit.Integration:expertRuleExpression
+		ogit.Integration:mergeSetOperation
+		ogit.Integration:mergeNumericOperation
+		ogit.Integration:timeWindowSeconds
+		ogit.Integration:timeWindowInnerStrategy
+		ogit.Integration:constraintExpression
 	);
 	ogit:indexed-attributes (
 		ogit.Integration:strategy
-		ogit.Integration:target_attribute
+		ogit.Integration:targetAttribute
 	);
 	ogit:allowed (
 		[ ogit.Integration:declaredBy        ogit.Integration:Connector ]
 		[ ogit.Integration:appliesToMapping  ogit.Integration:MappingRule ]
-		[ ogit.Integration:usesScoreModel    ogit.Integration:ConflictScoreModel ]
+		[ ogit:uses    ogit.Integration:ConflictScoreModel ]
 	);
 .

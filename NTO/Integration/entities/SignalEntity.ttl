@@ -19,19 +19,19 @@ ogit.Integration:SignalEntity
 	ogit:scope "NTO";
 	ogit:parent ogit:Node;
 	ogit:mandatory-attributes (
-		ogit.Integration:signal_type
-		ogit.Integration:target_instance_id
-		ogit.Integration:emitted_at
-		ogit.Integration:operator_actor_id
+		ogit.Integration:signalType
+		ogit.Integration:targetInstanceId
+		ogit.Integration:emittedAt
+		ogit.Integration:operatorActorId
 	);
 	ogit:optional-attributes (
-		ogit.Integration:signal_parameters_payload
-		ogit.Integration:signal_reason
-		ogit.Integration:signal_applied_at
+		ogit.Integration:signalParametersPayload
+		ogit:reason
+		ogit.Integration:signalAppliedAt
 	);
 	ogit:indexed-attributes (
-		ogit.Integration:signal_type
-		ogit.Integration:target_instance_id
+		ogit.Integration:signalType
+		ogit.Integration:targetInstanceId
 	);
 	ogit:allowed (
 		[ ogit.Integration:targets   ogit.Integration:ConnectorInstance ]

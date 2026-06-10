@@ -20,18 +20,18 @@ ogit.Integration:ConflictScoreModel
 	ogit:scope "NTO";
 	ogit:parent ogit:Node;
 	ogit:mandatory-attributes (
-		ogit.Integration:model_scope
-		ogit.Integration:author_seeded_priors_payload
-		ogit.Integration:beta_posteriori_payload
+		ogit.Integration:modelScope
+		ogit.Integration:authorSeededPriorsPayload
+		ogit.Integration:betaPosterioriPayload
 	);
 	ogit:optional-attributes (
-		ogit.Integration:ewma_secondary_payload
-		ogit.Integration:override_scope_id
-		ogit.Integration:last_recompute_at
+		ogit.Integration:ewmaSecondaryPayload
+		ogit.Integration:overrideScopeId
+		ogit.Integration:lastRecomputeAt
 	);
 	ogit:indexed-attributes (
-		ogit.Integration:model_scope
-		ogit.Integration:override_scope_id
+		ogit.Integration:modelScope
+		ogit.Integration:overrideScopeId
 	);
 	ogit:allowed (
 	);

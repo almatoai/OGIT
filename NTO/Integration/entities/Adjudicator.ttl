@@ -17,18 +17,18 @@ ogit.Integration:Adjudicator
 	ogit:scope "NTO";
 	ogit:parent ogit:Node;
 	ogit:mandatory-attributes (
-		ogit.Integration:adjudicator_id
-		ogit.Integration:adjudicated_revision
-		ogit.Integration:adjudication_decision
-		ogit.Integration:adjudicated_at
-		ogit.Integration:adjudicator_signature
+		ogit.Integration:adjudicatorId
+		ogit:revision
+		ogit.Integration:adjudicationDecision
+		ogit.Integration:adjudicatedAt
+		ogit.Integration:adjudicatorSignature
 	);
 	ogit:optional-attributes (
-		ogit.Integration:adjudication_notes
+		ogit.Integration:adjudicationNotes
 	);
 	ogit:indexed-attributes (
-		ogit.Integration:adjudicator_id
-		ogit.Integration:adjudication_decision
+		ogit.Integration:adjudicatorId
+		ogit.Integration:adjudicationDecision
 	);
 	ogit:allowed (
 		[ ogit.Integration:escalatedFrom ogit.Integration:ReviewerOfRecord ]

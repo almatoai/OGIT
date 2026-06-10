@@ -1,0 +1,14 @@
+@prefix ogit:                 <http://www.purl.org/ogit/> .
+@prefix ogit.Integration:     <http://www.purl.org/ogit/Integration/> .
+@prefix owl:                  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:              <http://purl.org/dc/terms/> .
+
+ogit.Integration:operatorNote
+	a owl:DatatypeProperty;
+	rdfs:subPropertyOf ogit:Attribute;
+	rdfs:label "operatorNote";
+	dcterms:description "[PII-BEARING] Free-form operator note attached to a decision-lifecycle entity. May contain subject names, identifiers, or other PII typed by the operator during adjudication. This attribute is only allowed on entities under `Decisions/PII/` (the RtE target); the framework rejects writes that attach `operatorNote` to an entity outside `Decisions/PII/`.";
+	dcterms:valid "start=2026-05-21;";
+	dcterms:creator "Almato AG";
+.

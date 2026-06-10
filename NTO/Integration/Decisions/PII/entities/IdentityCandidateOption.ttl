@@ -18,18 +18,18 @@ ogit.Integration.Decisions.PII:IdentityCandidateOption
 	ogit:scope "NTO";
 	ogit:parent ogit:Node;
 	ogit:mandatory-attributes (
-		ogit.Integration:candidate_vertex_id
-		ogit.Integration:confidence_score
-		ogit.Integration:evidence_payload
+		ogit.Integration:candidateVertexXid
+		ogit:confidence
+		ogit.Integration:evidencePayload
 	);
 	ogit:optional-attributes (
-		ogit.Integration:option_rank
-		ogit.Integration:resolver_subcomponent_id
+		ogit:rank
+		ogit.Integration:resolverSubcomponentId
 	);
 	ogit:indexed-attributes (
-		ogit.Integration:candidate_vertex_id
+		ogit.Integration:candidateVertexXid
 	);
 	ogit:allowed (
-		[ ogit.Integration:belongsTo ogit.Integration.Decisions.PII:IdentityCandidate ]
+		[ ogit:isPartOf ogit.Integration.Decisions.PII:IdentityCandidate ]
 	);
 .

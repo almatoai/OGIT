@@ -21,18 +21,18 @@ ogit.Integration.Decisions.Audit:ValueDriftCandidate
 	ogit:scope "NTO";
 	ogit:parent ogit:Node;
 	ogit:mandatory-attributes (
-		ogit.Integration:drift_status
-		ogit.Integration:detected_at
-		ogit.Integration:observed_distribution_payload
-		ogit.Integration:test_statistic
+		ogit.Integration:driftStatus
+		ogit.Integration:detectedAt
+		ogit.Integration:observedDistributionPayload
+		ogit.Integration:testStatistic
 	);
 	ogit:optional-attributes (
-		ogit.Integration:assigned_reviewer_id
-		ogit.Integration:resolved_at
-		ogit.Integration:resolution_decision
+		ogit.Integration:assignedReviewerId
+		ogit.Integration:resolvedAt
+		ogit.Integration:resolutionDecision
 	);
 	ogit:indexed-attributes (
-		ogit.Integration:drift_status
+		ogit.Integration:driftStatus
 	);
 	ogit:allowed (
 		[ ogit.Integration:detectedFor    ogit.Integration:MappingRule ]

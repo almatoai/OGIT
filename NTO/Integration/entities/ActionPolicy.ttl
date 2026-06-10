@@ -9,41 +9,41 @@ ogit.Integration:ActionPolicy
 	rdfs:label "ActionPolicy";
 	dcterms:description """Per-operation-type policy block for Action-Outbound
 	operations. Sibling to NettingPolicy. Carries idempotency configuration
-	(dedup_window_seconds, source_idempotency_header), the optional closure
-	specification (timeout, match_criteria.data_path, match_criteria.equals,
+	(dedupWindowSeconds, sourceIdempotencyHeader), the optional closure
+	specification (timeout, matchCriteria.data_path, matchCriteria.equals,
 	on_timeout policy, retry_limit), rate-limit parameters, breaker
-	configuration, and the vertex_ttl_days for ActionInvocation cleanup.
-	authority_source declares the authority-resolution logic for the
-	operation_type per D35. Per PLAN D33; detail in
+	configuration, and the vertexTtlDays for ActionInvocation cleanup.
+	authoritySource declares the authority-resolution logic for the
+	operationType per D35. Per PLAN D33; detail in
 	09_four_modes_concept.md Section 6.""";
 	dcterms:valid "start=2026-05-21;";
 	dcterms:creator "Almato AG";
 	ogit:scope "NTO";
 	ogit:parent ogit:Node;
 	ogit:mandatory-attributes (
-		ogit.Integration:operation_type
-		ogit.Integration:authority_source
-		ogit.Integration:dedup_window_seconds
+		ogit.Integration:operationType
+		ogit.Integration:authoritySource
+		ogit.Integration:dedupWindowSeconds
 	);
 	ogit:optional-attributes (
-		ogit.Integration:source_idempotency_header
-		ogit.Integration:closure_enabled
-		ogit.Integration:closure_timeout_seconds
-		ogit.Integration:closure_match_data_path
-		ogit.Integration:closure_match_equals
-		ogit.Integration:closure_on_timeout
-		ogit.Integration:closure_retry_limit
-		ogit.Integration:source_retry_on_failure
-		ogit.Integration:source_retry_limit
-		ogit.Integration:rate_limit_max_per_minute
-		ogit.Integration:rate_limit_burst
-		ogit.Integration:breaker_enabled
-		ogit.Integration:breaker_failure_threshold
-		ogit.Integration:breaker_cooldown_seconds
-		ogit.Integration:vertex_ttl_days
+		ogit.Integration:sourceIdempotencyHeader
+		ogit.Integration:closureEnabled
+		ogit.Integration:closureTimeoutSeconds
+		ogit.Integration:closureMatchDataPath
+		ogit.Integration:closureMatchEquals
+		ogit.Integration:closureOnTimeout
+		ogit.Integration:closureRetryLimit
+		ogit.Integration:sourceRetryOnFailure
+		ogit.Integration:sourceRetryLimit
+		ogit.Integration:rateLimitMaxPerMinute
+		ogit.Integration:rateLimitBurst
+		ogit.Integration:breakerEnabled
+		ogit.Integration:breakerFailureThreshold
+		ogit.Integration:breakerCooldownSeconds
+		ogit.Integration:vertexTtlDays
 	);
 	ogit:indexed-attributes (
-		ogit.Integration:operation_type
+		ogit.Integration:operationType
 	);
 	ogit:allowed (
 		[ ogit.Integration:declaredBy ogit.Integration:Connector ]

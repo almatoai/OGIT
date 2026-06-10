@@ -17,21 +17,21 @@ ogit.Integration:ReviewerOfRecord
 	ogit:scope "NTO";
 	ogit:parent ogit:Node;
 	ogit:mandatory-attributes (
-		ogit.Integration:reviewer_id
-		ogit.Integration:reviewed_revision
-		ogit.Integration:review_decision
-		ogit.Integration:reviewed_at
-		ogit.Integration:reviewer_signature
+		ogit:reviewedBy
+		ogit:revision
+		ogit.Integration:reviewDecision
+		ogit:reviewedAt
+		ogit.Integration:reviewerSignature
 	);
 	ogit:optional-attributes (
-		ogit.Integration:review_notes
+		ogit.Integration:reviewNotes
 	);
 	ogit:indexed-attributes (
-		ogit.Integration:reviewer_id
-		ogit.Integration:review_decision
+		ogit:reviewedBy
+		ogit.Integration:reviewDecision
 	);
 	ogit:allowed (
-		[ ogit.Integration:reviewedRule ogit.Integration:MappingRule ]
-		[ ogit.Integration:reviewedRule ogit.Integration:ConflictResolutionRule ]
+		[ ogit:reviews ogit.Integration:MappingRule ]
+		[ ogit:reviews ogit.Integration:ConflictResolutionRule ]
 	);
 .

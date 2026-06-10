@@ -20,22 +20,22 @@ ogit.Integration:ConnectorRunConfigSnapshot
 	ogit:scope "NTO";
 	ogit:parent ogit:Node;
 	ogit:mandatory-attributes (
-		ogit.Integration:snapshot_taken_at
-		ogit.Integration:blueprint_version
-		ogit.Integration:mapping_rules_hash
-		ogit.Integration:mapping_rules_payload
-		ogit.Integration:netting_policy_payload
-		ogit.Integration:conflict_rules_payload
+		ogit.Integration:snapshotTakenAt
+		ogit:version
+		ogit.Integration:mappingRulesHash
+		ogit.Integration:mappingRulesPayload
+		ogit.Integration:nettingPolicyPayload
+		ogit.Integration:conflictRulesPayload
 	);
 	ogit:optional-attributes (
-		ogit.Integration:identity_resolver_config_payload
-		ogit.Integration:sovereignty_manifest_payload
-		ogit.Integration:weaving_rules_payload
-		ogit.Integration:action_policy_payload
-		ogit.Integration:data_classification_payload
+		ogit.Integration:identityResolverConfigPayload
+		ogit.Integration:sovereigntyManifestPayload
+		ogit.Integration:weavingRulesPayload
+		ogit.Integration:actionPolicyPayload
+		ogit.Integration:dataClassificationPayload
 	);
 	ogit:indexed-attributes (
-		ogit.Integration:mapping_rules_hash
+		ogit.Integration:mappingRulesHash
 	);
 	ogit:allowed ( );
 .

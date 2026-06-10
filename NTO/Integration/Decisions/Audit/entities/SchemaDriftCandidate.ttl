@@ -17,7 +17,7 @@ ogit.Integration.Decisions.Audit:SchemaDriftCandidate
 	Viktor fourth-batch Comment 9 migration-resilience.
 
 	PII discipline (this entity lives in Decisions/Audit/ which survives
-	Right-to-Erasure): source_record_id and unrecognised_payload MUST
+	Right-to-Erasure): sourceId and unrecognisedPayload MUST
 	be pseudonymised at ingest -- the audit-forever guarantee covers
 	the structural record, not raw PII content. Both attributes carry
 	the [PII-CONDITIONAL] / [PII-PSEUDONYMISED-REQUIRED] description
@@ -45,18 +45,18 @@ ogit.Integration.Decisions.Audit:SchemaDriftCandidate
 	ogit:scope "NTO";
 	ogit:parent ogit:Node;
 	ogit:mandatory-attributes (
-		ogit.Integration:drift_status
-		ogit.Integration:detected_at
-		ogit.Integration:unrecognised_payload
-		ogit.Integration:source_record_id
+		ogit.Integration:driftStatus
+		ogit.Integration:detectedAt
+		ogit.Integration:unrecognisedPayload
+		ogit:sourceId
 	);
 	ogit:optional-attributes (
-		ogit.Integration:assigned_reviewer_id
-		ogit.Integration:resolved_at
-		ogit.Integration:resolution_decision
+		ogit.Integration:assignedReviewerId
+		ogit.Integration:resolvedAt
+		ogit.Integration:resolutionDecision
 	);
 	ogit:indexed-attributes (
-		ogit.Integration:drift_status
+		ogit.Integration:driftStatus
 	);
 	ogit:allowed (
 		[ ogit.Integration:detectedFor   ogit.Integration:ConnectorInstance ]

@@ -10,10 +10,10 @@ ogit.Integration.Decisions.Audit:ActionInvocation
 	rdfs:label "ActionInvocation";
 	dcterms:description """Short-lived vertex representing one Action-
 	Outbound invocation. Per PLAN D34 immutable after create; carries
-	action_id, operation_type, target, created_at, expected_closure (when
+	actionId, operationType, target, createdAt, expected_closure (when
 	declared), plus edges to Authority and ConnectorRun. Exists while the
 	action is pending (closure open); after the lifecycle reaches a terminal
-	state, the vertex is retained for vertex_ttl_days (default 90 per
+	state, the vertex is retained for vertexTtlDays (default 90 per
 	ActionPolicy) and then hard-deleted.
 
 	Audit-namespace placement note: ActionInvocation lives in Decisions/Audit/
@@ -28,19 +28,19 @@ ogit.Integration.Decisions.Audit:ActionInvocation
 	ogit:scope "NTO";
 	ogit:parent ogit:Node;
 	ogit:mandatory-attributes (
-		ogit.Integration:action_id
-		ogit.Integration:operation_type
-		ogit.Integration:created_at
+		ogit.Integration:actionId
+		ogit.Integration:operationType
+		ogit:createdAt
 	);
 	ogit:optional-attributes (
-		ogit.Integration:target_resource_ref
-		ogit.Integration:expected_closure_payload
-		ogit.Integration:invocation_attempt
-		ogit.Integration:vertex_ttl_deadline
+		ogit.Integration:targetResourceRef
+		ogit.Integration:expectedClosurePayload
+		ogit.Integration:invocationAttempt
+		ogit.Integration:vertexTtlDeadline
 	);
 	ogit:indexed-attributes (
-		ogit.Integration:action_id
-		ogit.Integration:operation_type
+		ogit.Integration:actionId
+		ogit.Integration:operationType
 	);
 	ogit:allowed (
 		[ ogit.Integration:invokedBy    ogit.Integration:ConnectorRun ]

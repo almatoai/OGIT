@@ -18,16 +18,16 @@ ogit.Integration:CanonicalValueSet
 	ogit:scope "NTO";
 	ogit:parent ogit:Node;
 	ogit:mandatory-attributes (
-		ogit.Integration:value_set_id
-		ogit.Integration:allowed_values_payload
+		ogit.Integration:valueSetId
+		ogit.Integration:allowedValuesPayload
 	);
 	ogit:optional-attributes (
-		ogit.Integration:value_set_description
-		ogit.Integration:drift_chi_squared_threshold
-		ogit.Integration:drift_window_days
+		ogit:description
+		ogit.Integration:driftChiSquaredThreshold
+		ogit.Integration:driftWindowDays
 	);
 	ogit:indexed-attributes (
-		ogit.Integration:value_set_id
+		ogit.Integration:valueSetId
 	);
 	ogit:allowed (
 		[ ogit.Integration:referencedBy ogit.Integration:MappingRule ]

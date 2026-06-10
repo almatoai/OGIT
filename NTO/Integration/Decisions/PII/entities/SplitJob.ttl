@@ -23,21 +23,21 @@ ogit.Integration.Decisions.PII:SplitJob
 	ogit:scope "NTO";
 	ogit:parent ogit:Node;
 	ogit:mandatory-attributes (
-		ogit.Integration:job_state
-		ogit.Integration:source_vertex_id
-		ogit.Integration:proposed_target_xids
-		ogit.Integration:checkpoint_payload
-		ogit.Integration:created_at
+		ogit.Integration:jobState
+		ogit.Integration:sourceVertexXid
+		ogit.Integration:proposedTargetXids
+		ogit.Integration:checkpointPayload
+		ogit:createdAt
 	);
 	ogit:optional-attributes (
-		ogit.Integration:completed_at
-		ogit.Integration:failure_reason
-		ogit.Integration:recovery_count
-		ogit.Integration:operator_note
+		ogit:finishedAt
+		ogit:reason
+		ogit.Integration:recoveryCount
+		ogit.Integration:operatorNote
 	);
 	ogit:indexed-attributes (
-		ogit.Integration:job_state
-		ogit.Integration:source_vertex_id
+		ogit.Integration:jobState
+		ogit.Integration:sourceVertexXid
 	);
 	ogit:allowed (
 		[ ogit.Integration:initiatedByRun  ogit.Integration:ConnectorRun ]

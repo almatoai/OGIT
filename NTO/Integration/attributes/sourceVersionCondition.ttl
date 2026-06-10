@@ -1,0 +1,14 @@
+@prefix ogit:                 <http://www.purl.org/ogit/> .
+@prefix ogit.Integration:     <http://www.purl.org/ogit/Integration/> .
+@prefix owl:                  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:              <http://purl.org/dc/terms/> .
+
+ogit.Integration:sourceVersionCondition
+	a owl:DatatypeProperty;
+	rdfs:subPropertyOf ogit:Attribute;
+	rdfs:label "sourceVersionCondition";
+	dcterms:description "Optional SourceVersion-conditional applicability of this MappingRule (Identity v2 Sec 25).";
+	dcterms:valid "start=2026-05-21;";
+	dcterms:creator "Almato AG";
+.

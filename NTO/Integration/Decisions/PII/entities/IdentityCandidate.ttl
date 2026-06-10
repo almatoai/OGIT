@@ -15,26 +15,26 @@ ogit.Integration.Decisions.PII:IdentityCandidate
 	the ConnectorRun context, the list of candidate options (each an
 	IdentityCandidateOption sub-entity), and the evidence JSON the resolver
 	used. Lives under NTO/Integration/Decisions/ for PII-isolation per
-	Identity v2 Section 34 (right-to-erasure bounded target).""";
+	Identity v2 Section 34 (right-to-erasure bounded target). The reused ogit:sourceId here is the raw source-record identifier -- acceptable on this PII-namespace entity (the former source_record_id [PII-CONDITIONAL] context: raw is acceptable and is purged on Right-to-Erasure together with the vertex); the generic base attribute cannot carry the marker, so the discipline is recorded on this entity.""";
 	dcterms:valid "start=2026-05-21;";
 	dcterms:creator "Almato AG";
 	ogit:scope "NTO";
 	ogit:parent ogit:Node;
 	ogit:mandatory-attributes (
-		ogit.Integration:candidate_status
-		ogit.Integration:source_record_id
-		ogit.Integration:resolver_id
-		ogit.Integration:created_at
+		ogit.Integration:candidateStatus
+		ogit:sourceId
+		ogit.Integration:resolverId
+		ogit:createdAt
 	);
 	ogit:optional-attributes (
-		ogit.Integration:assigned_reviewer_id
-		ogit.Integration:resolved_at
-		ogit.Integration:resolution_decision
-		ogit.Integration:operator_note
+		ogit.Integration:assignedReviewerId
+		ogit.Integration:resolvedAt
+		ogit.Integration:resolutionDecision
+		ogit.Integration:operatorNote
 	);
 	ogit:indexed-attributes (
-		ogit.Integration:candidate_status
-		ogit.Integration:resolver_id
+		ogit.Integration:candidateStatus
+		ogit.Integration:resolverId
 	);
 	ogit:allowed (
 		[ ogit.Integration:proposedBy   ogit.Integration:ConnectorRun ]

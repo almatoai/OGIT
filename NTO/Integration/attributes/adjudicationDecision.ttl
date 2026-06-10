@@ -1,0 +1,16 @@
+@prefix ogit:                 <http://www.purl.org/ogit/> .
+@prefix ogit.Integration:     <http://www.purl.org/ogit/Integration/> .
+@prefix owl:                  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:              <http://purl.org/dc/terms/> .
+
+ogit.Integration:adjudicationDecision
+	a owl:DatatypeProperty;
+	rdfs:subPropertyOf ogit:Attribute;
+	rdfs:label "adjudicationDecision";
+	dcterms:description "Adjudicator's final decision. approve / reject / abstain are parallel to reviewDecision and cover first-instance adjudication without a prior reviewer pass; uphold_reviewer and overrule_reviewer cover the reviewer-escalation path and make the adjudication-versus-reviewer relationship explicit. The five-value enum was resolved by F32 quorum disposition on 2026-06-02 (closed; no further changes expected).";
+	ogit:validation-type "fixed";
+	ogit:validation-parameter "approve,reject,abstain,uphold_reviewer,overrule_reviewer";
+	dcterms:valid "start=2026-05-21;";
+	dcterms:creator "Almato AG";
+.

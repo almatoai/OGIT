@@ -20,19 +20,19 @@ ogit.Integration:Authority
 	ogit:scope "NTO";
 	ogit:parent ogit:Node;
 	ogit:mandatory-attributes (
-		ogit.Integration:authority_label
-		ogit.Integration:authority_type
+		ogit.Integration:authorityLabel
+		ogit.Integration:authorityType
 	);
 	ogit:optional-attributes (
-		ogit.Integration:legal_basis
-		ogit.Integration:authority_scope_id
-		ogit.Integration:authority_external_ref
-		ogit.Integration:authority_valid_from
-		ogit.Integration:authority_valid_until
+		ogit.Integration:legalBasis
+		ogit.Integration:authorityScopeId
+		ogit.Integration:authorityExternalRef
+		ogit:validFrom
+		ogit:validTo
 	);
 	ogit:indexed-attributes (
-		ogit.Integration:authority_type
-		ogit.Integration:authority_scope_id
+		ogit.Integration:authorityType
+		ogit.Integration:authorityScopeId
 	);
 	ogit:allowed (
 		[ ogit.Integration:delegatedFrom ogit.Integration:Authority ]

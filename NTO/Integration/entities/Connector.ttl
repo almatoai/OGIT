@@ -19,19 +19,19 @@ ogit.Integration:Connector
 	ogit:scope "NTO";
 	ogit:parent ogit:Node;
 	ogit:mandatory-attributes (
-		ogit.Integration:blueprint_version
-		ogit.Integration:framework_min
-		ogit.Integration:framework_max
+		ogit:version
+		ogit.Integration:frameworkMin
+		ogit.Integration:frameworkMax
 	);
 	ogit:optional-attributes (
-		ogit.Integration:source_system_id
-		ogit.Integration:author_handle
-		ogit.Integration:signing_certificate_ref
-		ogit.Integration:deprecation_phase
+		ogit.Integration:sourceSystemId
+		ogit:author
+		ogit.Integration:signingCertificateRef
+		ogit.Integration:deprecationPhase
 	);
 	ogit:indexed-attributes (
-		ogit.Integration:blueprint_version
-		ogit.Integration:source_system_id
+		ogit:version
+		ogit.Integration:sourceSystemId
 	);
 	ogit:allowed (
 		[ ogit.Integration:declaresMappingRule    ogit.Integration:MappingRule ]
