@@ -19,8 +19,8 @@ jobs:
 
     - name: prepare single ttl file
       run: |
-        sh validate.sh
-        sh singleTTL.sh
+        bash validate.sh
+        bash singleTTL.sh
 
     - name: Publish Asset
       uses: softprops/action-gh-release@v2
