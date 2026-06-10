@@ -1,0 +1,44 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix ogit.Utilities.Electricity.Grid:           <http://www.purl.org/ogit/Utilities/Electricity/Grid/> .
+@prefix ogit.Utilities.Electricity.Operations:     <http://www.purl.org/ogit/Utilities/Electricity/Operations/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity.Operations:SwitchAction
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "SwitchAction";
+    dcterms:description "Reified relation (concept Section 8). One discrete switching step inside a SwitchingPlan, RestorationPlan, or DefensePlan. Mono-parentage decision: a single SwitchAction belongs to exactly one parent plan; the partOf verb is many2one.";
+    dcterms:valid "start=2026-05-28;";
+    dcterms:creator "Almato AG";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity.Operations:actionId
+        ogit.Utilities.Electricity.Operations:parentPlanRef
+        ogit.Utilities.Electricity.Operations:targetRef
+        ogit.Utilities.Electricity.Operations:actionKind
+        ogit.Utilities.Electricity.Operations:scheduledTime
+        ogit.Utilities.Electricity:sequenceNumber
+    );
+    ogit:optional-attributes (
+        ogit.Utilities.Electricity.Operations:executedTime
+        ogit.Utilities.Electricity.Operations:executedByRef
+        ogit:status
+        ogit.Utilities.Electricity.Operations:switchNotes
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity.Operations:actionId
+    );
+    ogit:allowed (
+        [ ogit:isPartOf  ogit.Utilities.Electricity.Operations:SwitchingPlan ]
+        [ ogit:isPartOf  ogit.Utilities.Electricity.Operations:RestorationPlan ]
+        [ ogit:isPartOf  ogit.Utilities.Electricity.Operations:DefensePlan ]
+        [ ogit.Utilities.Electricity.Operations:actsOn  ogit.Utilities.Electricity.Grid:Switch ]
+        [ ogit.Utilities.Electricity.Operations:actsOn  ogit.Utilities.Electricity.Grid:PowerTransformer ]
+    );
+.

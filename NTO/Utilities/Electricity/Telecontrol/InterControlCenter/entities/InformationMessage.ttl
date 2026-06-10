@@ -1,0 +1,41 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
+@prefix ogit.Utilities.Electricity.Operations:     <http://www.purl.org/ogit/Utilities/Electricity/Operations/> .
+@prefix ogit.Utilities.Electricity.Telecontrol.InterControlCenter: <http://www.purl.org/ogit/Utilities/Electricity/Telecontrol/InterControlCenter/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity.Telecontrol.InterControlCenter:InformationMessage
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "InformationMessage";
+    dcterms:description "TASE.2 Block 4 Information Message Service. Free-text information message exchanged between control centers.";
+    dcterms:valid "start=2026-05-28;";
+    dcterms:creator "Almato AG";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:messageId
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:parentTableRef
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:infoReference
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:localReference
+        ogit.Utilities.Electricity.Operations:messageText
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:sentAt
+    );
+    ogit:optional-attributes (
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:acknowledgedAt
+        ogit:priority
+        ogit:category
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:messageId
+    );
+    ogit:allowed (
+        [ ogit:isPartOf  ogit.Utilities.Electricity.Telecontrol.InterControlCenter:BilateralTable ]
+        [ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:sentBy  ogit.Utilities:ControlCenter ]
+        [ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:acknowledgedBy  ogit.Utilities:ControlCenter ]
+    );
+.

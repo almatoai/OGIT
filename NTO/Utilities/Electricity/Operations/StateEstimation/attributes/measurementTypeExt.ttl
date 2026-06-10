@@ -1,0 +1,15 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities.Electricity.Operations.StateEstimation: <http://www.purl.org/ogit/Utilities/Electricity/Operations/StateEstimation/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+ogit.Utilities.Electricity.Operations.StateEstimation:measurementTypeExt
+    a owl:DatatypeProperty;
+    rdfs:subPropertyOf ogit:Attribute;
+    rdfs:label "measurementTypeExt";
+    dcterms:description "Vendor-specific or revision-newer measurement-type extension that is not in the stable CIM-16 core enumerated on `measurementType`. Open string; the MappingRule DSL provides the union view (`measurementType` if non-empty, else `measurementTypeExt`). Section 11.1a Regel 8 fixed-core / open-extension split.";
+    dcterms:valid "start=2026-05-28;";
+    dcterms:creator "Almato AG";
+.

@@ -1,0 +1,52 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix ogit.Utilities.Electricity.Grid:           <http://www.purl.org/ogit/Utilities/Electricity/Grid/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity.Grid:Terminal
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "Terminal";
+    dcterms:description "CIM cim:Terminal. Reified connection of ConductingEquipment to ConnectivityNode / TopologicalNode. Carries phases, sequence, measurement attachment point.";
+    dcterms:valid "start=2026-05-27;";
+    dcterms:creator "Almato AG";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity:mrid
+        ogit.Utilities.Electricity:sequenceNumber
+    );
+    ogit:optional-attributes (
+        ogit.Utilities.Electricity.Grid:connected
+        ogit.Utilities.Electricity.Grid:phases
+        ogit:name
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity:mrid
+    );
+    ogit:allowed (
+        [ ogit.Utilities.Electricity.Grid:terminalOf  ogit.Utilities.Electricity.Grid:ACLineSegment ]
+        [ ogit.Utilities.Electricity.Grid:terminalOf  ogit.Utilities.Electricity.Grid:DCLineSegment ]
+        [ ogit.Utilities.Electricity.Grid:terminalOf  ogit.Utilities.Electricity.Grid:Switch ]
+        [ ogit.Utilities.Electricity.Grid:terminalOf  ogit.Utilities.Electricity.Grid:PowerTransformerEnd ]
+        [ ogit.Utilities.Electricity.Grid:terminalOf  ogit.Utilities.Electricity.Grid:BusbarSection ]
+        [ ogit.Utilities.Electricity.Grid:terminalOf  ogit.Utilities.Electricity.Grid:ShuntCompensator ]
+        [ ogit.Utilities.Electricity.Grid:terminalOf  ogit.Utilities.Electricity.Grid:SeriesCompensator ]
+        [ ogit.Utilities.Electricity.Grid:terminalOf  ogit.Utilities.Electricity.Grid:StaticVarCompensator ]
+        [ ogit.Utilities.Electricity.Grid:terminalOf  ogit.Utilities.Electricity.Grid:CsConverter ]
+        [ ogit.Utilities.Electricity.Grid:terminalOf  ogit.Utilities.Electricity.Grid:VsConverter ]
+        [ ogit.Utilities.Electricity.Grid:terminalOf  ogit.Utilities.Electricity.Grid:EquivalentInjection ]
+        [ ogit.Utilities.Electricity.Grid:terminalOf  ogit.Utilities.Electricity.Grid:EquivalentBranch ]
+        [ ogit.Utilities.Electricity.Grid:terminalOf  ogit.Utilities.Electricity.Grid:EquivalentShunt ]
+        [ ogit.Utilities.Electricity.Grid:terminalOf  ogit.Utilities.Electricity.Grid:FaultIndicator ]
+        [ ogit.Utilities.Electricity.Grid:terminalOf  ogit.Utilities.Electricity.Grid:SynchronousMachine ]
+        [ ogit.Utilities.Electricity.Grid:terminalOf  ogit.Utilities.Electricity.Grid:AsynchronousMachine ]
+        [ ogit.Utilities.Electricity.Grid:connectsAt  ogit.Utilities.Electricity.Grid:ConnectivityNode ]
+        [ ogit.Utilities.Electricity.Grid:connectsAt  ogit.Utilities.Electricity.Grid:TopologicalNode ]
+        [ ogit.Utilities.Electricity.Grid:tieFlowAt  ogit.Utilities.Electricity:TieFlow ]
+    );
+.

@@ -1,0 +1,78 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix ogit.Utilities.Emissions:                  <http://www.purl.org/ogit/Utilities/Emissions/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity:ThermalGeneratingUnit
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "ThermalGeneratingUnit";
+    dcterms:description "CIM cim:ThermalGeneratingUnit. Coal, lignite, gas (CCGT / OCGT), oil, biomass, geothermal, oil-shale. Adds fuel and thermodynamic-cycle parameters plus start-time and ramp-rate characteristics.";
+    dcterms:valid "start=2026-05-27;";
+    dcterms:creator "Almato AG";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity:mrid
+        ogit:name
+        ogit.Utilities.Electricity:ratedPMw
+        ogit.Utilities.Electricity:minOperatingPMw
+        ogit.Utilities.Electricity:maxOperatingPMw
+        ogit.Utilities.Electricity:fuelType
+    );
+    ogit:optional-attributes (
+        ogit.Utilities.Electricity:thermalEfficiency
+        ogit.Utilities.Electricity:cycleKind
+        ogit.Utilities.Electricity:chpCapable
+        ogit.Utilities.Electricity:boilerCount
+        ogit.Utilities.Electricity:turbineCount
+        ogit.Utilities.Electricity:cogenerationThermalCapacityMw
+        ogit.Utilities.Electricity:minRampUpRateMwMin
+        ogit.Utilities.Electricity:minRampDownRateMwMin
+        ogit.Utilities.Electricity:coldStartTimeMin
+        ogit.Utilities.Electricity:warmStartTimeMin
+        ogit.Utilities.Electricity:hotStartTimeMin
+        ogit.Utilities.Electricity:nominalPMw
+        ogit.Utilities.Electricity:ratedVoltageKv
+        ogit.Utilities.Electricity:inertiaConstantHS
+        ogit.Utilities.Electricity:governorPMwPerHz
+        ogit.Utilities.Electricity:controlResponseKind
+        ogit.Utilities.Electricity:rfgConnectionType
+        ogit.Utilities:commissioningYear
+        ogit.Utilities.Electricity:decommissioningYear
+        ogit.Utilities.Electricity:lifecycleStatusSnapshot
+        ogit.Utilities.Electricity:fuelEfficiency
+        ogit.Utilities.Electricity:minRunTimeH
+        ogit.Utilities.Electricity:minDownTimeH
+        ogit.Utilities.Electricity:startupCost
+        ogit.Utilities.Electricity:variableCostPerMwh
+        ogit.Utilities.Electricity:descriptionText
+        ogit.Utilities.Electricity:aliasName
+        ogit.Utilities.Electricity:categoryRef
+        ogit.Utilities:commissioningDate
+        ogit.Utilities:decommissioningDate
+        ogit.Utilities.Electricity:psrType
+        ogit.Utilities.Electricity:externalRefs
+        ogit:status
+        ogit:source
+        ogit:sourceId
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity:mrid
+        ogit:name
+    );
+    ogit:allowed (
+        [ ogit:isPartOf  ogit.Utilities.Electricity:PowerPlant ]
+        [ ogit.Utilities:emits  ogit.Utilities.Emissions:GreenhouseGasEmission ]
+        [ ogit:generates  ogit:Timeseries ]
+        [ ogit:controlledBy  ogit.Utilities.Electricity:ControlArea ]
+        [ ogit:consumes  ogit.Utilities:EnergyCarrier ]
+        [ ogit.Utilities:operatedBy  ogit.Utilities:NetworkOperator ]
+        [ ogit:locatedIn  ogit:Location ]
+    );
+.

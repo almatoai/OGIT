@@ -1,0 +1,36 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities:ControlCenter
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "ControlCenter";
+    dcterms:description "Physical or virtual control centre that supervises one or more ControlArea instances. ENTSO-E NCC (National Control Center), RSC (Regional Security Coordinator), and equivalent dispatch centres in gas / heat / water all instantiate this. Operator and location are expressed as graph edges (`operatedBy -> NetworkOperator`, `ogit:locatedIn -> ogit:Location`); no parallel *Ref-attribute is declared (per QS Round 13 Sonnet COMP-04: verb is the canonical form for graph relations, redundant Ref-attributes removed).";
+    dcterms:valid "start=2026-05-27;";
+    dcterms:creator "Almato AG";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities:centerName
+    );
+    ogit:optional-attributes (
+        ogit.Utilities:isoFunction
+        ogit.Utilities:backupCenterRef
+        ogit.Utilities:redundancyClass
+        ogit:status
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities:centerName
+    );
+    ogit:allowed (
+        [ ogit:supervises  ogit.Utilities.Electricity:ControlArea ]
+        [ ogit.Utilities:operatedBy  ogit.Utilities:NetworkOperator ]
+        [ ogit:locatedIn  ogit:Location ]
+    );
+.

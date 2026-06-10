@@ -1,0 +1,40 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix ogit.Utilities.Electricity.Operations:     <http://www.purl.org/ogit/Utilities/Electricity/Operations/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity.Operations:OperationalState
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "OperationalState";
+    dcterms:description "UCTE OH P1 / NC SO Article 18. Five named states of a synchronous area or control area: normal, alert, emergency, restoration, blackout. State transitions are timestamped and triggered by Contingencies or Outages.";
+    dcterms:valid "start=2026-05-28;";
+    dcterms:creator "Almato AG";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity.Operations:stateKind
+        ogit.Utilities:subjectRef
+        ogit.Utilities.Electricity.Operations:enteredAt
+    );
+    ogit:optional-attributes (
+        ogit.Utilities.Electricity.Operations:triggeringEventRef
+        ogit.Utilities.Electricity.Operations:declaredBy
+        ogit.Utilities.Electricity.Operations:exitedAt
+        ogit.Utilities.Electricity.Operations:defensePlanActivatedRef
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity.Operations:stateKind
+    );
+    ogit:allowed (
+        [ ogit.Utilities:appliesTo  ogit.Utilities.Electricity:SynchronousArea ]
+        [ ogit.Utilities:appliesTo  ogit.Utilities.Electricity:ControlArea ]
+        [ ogit.Utilities.Electricity.Operations:triggeredBy  ogit.Utilities.Electricity.Operations:Contingency ]
+        [ ogit.Utilities.Electricity.Operations:triggeredBy  ogit.Utilities:Outage ]
+    );
+.

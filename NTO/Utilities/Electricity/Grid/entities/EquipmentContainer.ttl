@@ -1,0 +1,46 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix ogit.Utilities.Electricity.Grid:           <http://www.purl.org/ogit/Utilities/Electricity/Grid/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity.Grid:EquipmentContainer
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "EquipmentContainer";
+    dcterms:description "ABSTRACT: CIM cim:EquipmentContainer. Abstract container for Equipment instances. Parent of Substation, VoltageLevel, Bay, Line, DCConverterUnit. Carries no class-specific delta beyond PSR; the materialised TTL inherits PSR's `mrid`, `ogit:name`, `descriptionText`, `aliasName`, `commissioningDate`, etc. per Architecture Section 5.1c. Listed here only for the inheritance chain.";
+    dcterms:valid "start=2026-05-27;";
+    dcterms:creator "Almato AG";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity:mrid
+        ogit:name
+    );
+    ogit:optional-attributes (
+        ogit.Utilities.Electricity:descriptionText
+        ogit.Utilities.Electricity:aliasName
+        ogit.Utilities.Electricity:categoryRef
+        ogit.Utilities:commissioningDate
+        ogit.Utilities:decommissioningDate
+        ogit.Utilities.Electricity:psrType
+        ogit.Utilities.Electricity:externalRefs
+        ogit:status
+        ogit:source
+        ogit:sourceId
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity:mrid
+        ogit.Utilities.Electricity:mrid
+        ogit:name
+    );
+    ogit:allowed (
+        [ ogit.Utilities:operatedBy  ogit.Utilities:NetworkOperator ]
+        [ ogit:locatedIn  ogit:Location ]
+        [ ogit:isPartOf  ogit.Utilities.Electricity:PowerPlant ]
+    );
+.

@@ -1,0 +1,15 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+ogit.Utilities.Electricity:memberSubject
+    a owl:ObjectProperty;
+    rdfs:subPropertyOf ogit:Verb;
+    rdfs:label "memberSubject";
+    dcterms:description "Reifies the subject side of a membership relation: a *Membership anchor points to the subject (GeneratingUnit, EnergyStorage, EnergyConsumer, ControlArea, BiddingZone). Cardinality: many2one.";
+    dcterms:valid "start=2026-05-27;";
+    dcterms:creator "Almato AG";
+.

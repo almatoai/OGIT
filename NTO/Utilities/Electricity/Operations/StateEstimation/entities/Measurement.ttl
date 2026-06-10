@@ -1,0 +1,43 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix ogit.Utilities.Electricity.Grid:           <http://www.purl.org/ogit/Utilities/Electricity/Grid/> .
+@prefix ogit.Utilities.Electricity.Operations.StateEstimation: <http://www.purl.org/ogit/Utilities/Electricity/Operations/StateEstimation/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity.Operations.StateEstimation:Measurement
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "Measurement";
+    dcterms:description "ABSTRACT: CIM cim:Measurement. Abstract parent of all measurements (analog, discrete, accumulator, string). In CIM, Measurement is a subtype of IdentifiedObject, not of PowerSystemResource. The NTO follows the CIM inheritance and attaches Measurement directly under ogit:Entity.";
+    dcterms:valid "start=2026-05-28;";
+    dcterms:creator "Almato AG";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity:mrid
+        ogit:name
+        ogit.Utilities.Electricity.Operations.StateEstimation:measurementKind
+        ogit.Utilities.Electricity.Operations.StateEstimation:measurementType
+        ogit.Utilities.Electricity.Operations.StateEstimation:unitSymbol
+        ogit.Utilities.Electricity.Operations.StateEstimation:unitMultiplier
+        ogit.Utilities.Electricity.Grid:phases
+    );
+    ogit:optional-attributes (
+        ogit.Utilities.Electricity:terminalRef
+        ogit.Utilities.Electricity.Operations.StateEstimation:powerSystemResourceRef
+        ogit.Utilities.Electricity:descriptionText
+        ogit.Utilities.Electricity.Operations.StateEstimation:measurementTypeExt
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity:mrid
+    );
+    ogit:allowed (
+        [ ogit.Utilities.Electricity.Operations.StateEstimation:measures  ogit.Utilities.Electricity.Grid:Terminal ]
+        [ ogit.Utilities.Electricity.Operations.StateEstimation:measures  ogit.Utilities.Electricity.Grid:TopologicalNode ]
+        [ ogit:generates  ogit:Timeseries ]
+    );
+.

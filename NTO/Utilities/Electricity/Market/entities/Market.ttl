@@ -1,0 +1,38 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix ogit.Utilities.Electricity.Market:         <http://www.purl.org/ogit/Utilities/Electricity/Market/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity.Market:Market
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "Market";
+    dcterms:description "ENTSO-E market construct: SDAC, SIDC, TERRE, MARI, PICASSO. The vertex represents the market as a service operated by a market-coupling operator over one or more BiddingZones.";
+    dcterms:valid "start=2026-05-28;";
+    dcterms:creator "Almato AG";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity.Market:marketId
+        ogit:name
+        ogit.Utilities.Electricity.Market:marketKind
+    );
+    ogit:optional-attributes (
+        ogit.Utilities.Electricity.Market:couplingMethod
+        ogit.Utilities.Electricity.Market:gateClosureTimeZone
+        ogit.Utilities.Electricity.Market:participantsCount
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity.Market:marketId
+    );
+    ogit:allowed (
+        [ ogit.Utilities:operatedBy  ogit.Utilities:NetworkOperator ]
+        [ ogit:covers  ogit.Utilities.Electricity:BiddingZone ]
+        [ ogit.Utilities.Electricity.Market:trades  ogit.Utilities.Electricity.Market:EnergyProduct ]
+    );
+.

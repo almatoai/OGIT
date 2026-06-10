@@ -1,0 +1,46 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix ogit.Utilities.Electricity.Operations:     <http://www.purl.org/ogit/Utilities/Electricity/Operations/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity:ControlArea
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "ControlArea";
+    dcterms:description "CIM cim:ControlArea. The operational scope of one TSO or control centre for frequency and balancing purposes. In this NTO ControlArea inherits directly from ogit:Entity, not from PowerSystemResource: it is an operational grouping concept without physical existence. Net interchange target and ACE target are time-variant and live only on sgo:Timeseries channels, not as vertex attributes.";
+    dcterms:valid "start=2026-05-27;";
+    dcterms:creator "Almato AG";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity:areaName
+        ogit.Utilities.Electricity:areaEic
+        ogit.Utilities:countryIso2
+    );
+    ogit:optional-attributes (
+        ogit.Utilities.Electricity:synchronousAreaRef
+        ogit.Utilities.Electricity:lfcBlockRef
+        ogit.Utilities.Electricity:totalInterchangeArea
+        ogit:timeZone
+        ogit.Utilities.Electricity:regulatoryAuthorityRef
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity:areaEic
+        ogit.Utilities.Electricity:areaName
+    );
+    ogit:allowed (
+        [ ogit.Utilities:operatedBy  ogit.Utilities:NetworkOperator ]
+        [ ogit:isPartOf  ogit.Utilities.Electricity:SynchronousArea ]
+        [ ogit:isPartOf  ogit.Utilities.Electricity:LFCBlock ]
+        [ ogit.Utilities.Electricity:connectedVia  ogit.Utilities.Electricity:Interconnector ]
+        [ ogit.Utilities.Electricity:dispatches  ogit.Utilities.Electricity:GeneratingUnit ]
+        [ ogit.Utilities.Electricity:dispatches  ogit.Utilities.Electricity:EnergyStorage ]
+        [ ogit.Utilities.Electricity:enforces  ogit.Utilities.Electricity.Operations:NetworkCodeViolation ]
+        [ ogit:generates  ogit:Timeseries ]
+    );
+.

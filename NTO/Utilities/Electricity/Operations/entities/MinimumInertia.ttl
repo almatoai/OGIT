@@ -1,0 +1,38 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix ogit.Utilities.Electricity.Operations:     <http://www.purl.org/ogit/Utilities/Electricity/Operations/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity.Operations:MinimumInertia
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "MinimumInertia";
+    dcterms:description "NC SO Article 39. Required minimum system inertia. The required_value_mw_s is expressed in MW.s (energy per Hz).";
+    dcterms:valid "start=2026-05-28;";
+    dcterms:creator "Almato AG";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity.Operations:minimumInertiaId
+        ogit.Utilities.Electricity:synchronousAreaRef
+        ogit.Utilities.Electricity.Operations:requiredValueMwS
+        ogit:validFrom
+    );
+    ogit:optional-attributes (
+        ogit.Utilities:validUntil
+        ogit.Utilities.Electricity.Operations:derivationBasis
+        ogit.Utilities.Electricity.Operations:complianceStatus
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity.Operations:minimumInertiaId
+    );
+    ogit:allowed (
+        [ ogit.Utilities:appliesTo  ogit.Utilities.Electricity:SynchronousArea ]
+        [ ogit.Utilities.Electricity.Operations:derivedFrom  ogit.Utilities.Electricity.Operations:ContingencyAnalysis ]
+    );
+.

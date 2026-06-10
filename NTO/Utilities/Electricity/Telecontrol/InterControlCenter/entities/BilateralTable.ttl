@@ -1,0 +1,41 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
+@prefix ogit.Utilities.Electricity.Telecontrol.InterControlCenter: <http://www.purl.org/ogit/Utilities/Electricity/Telecontrol/InterControlCenter/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity.Telecontrol.InterControlCenter:BilateralTable
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "BilateralTable";
+    dcterms:description "TASE.2 Bilateral Agreement. The contract between two control centers identifying which data sets, which points, and under which conformance blocks are exchanged.";
+    dcterms:valid "start=2026-05-28;";
+    dcterms:creator "Almato AG";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:tableId
+        ogit:name
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:localPartyRef
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:remotePartyRef
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:signedAt
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:effectiveFrom
+    );
+    ogit:optional-attributes (
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:effectiveUntil
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:taseVersion
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:signatoriesPayload
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:conformanceBlocks
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:tableId
+    );
+    ogit:allowed (
+        [ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:negotiatedBy  ogit.Utilities:ControlCenter ]
+        [ ogit:governs  ogit.Utilities.Electricity.Telecontrol.InterControlCenter:DataSet ]
+        [ ogit:consistsOf  ogit.Utilities.Electricity.Telecontrol.InterControlCenter:ConformanceBlock ]
+    );
+.

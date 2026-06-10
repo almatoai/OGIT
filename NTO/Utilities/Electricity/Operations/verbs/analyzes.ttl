@@ -1,0 +1,15 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities.Electricity.Operations:     <http://www.purl.org/ogit/Utilities/Electricity/Operations/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+ogit.Utilities.Electricity.Operations:analyzes
+    a owl:ObjectProperty;
+    rdfs:subPropertyOf ogit:Verb;
+    rdfs:label "analyzes";
+    dcterms:description "Asserts that a ContingencyAnalysis analyzes the target ContingencyList. Reverse-traversal of this edge covers the ContingencyList-to-Analysis direction and, via ContingencyList consistsOf Contingency, the Contingency-to-Analysis direction; no separate analyzedBy / analyzedIn verbs are declared (retired per QS Round 4 Sonnet CONS-02). Cardinality: many2one.";
+    dcterms:valid "start=2026-05-28;";
+    dcterms:creator "Almato AG";
+.

@@ -1,0 +1,39 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix ogit.Utilities.Electricity.Grid:           <http://www.purl.org/ogit/Utilities/Electricity/Grid/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity:ControlAreaMembership
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "ControlAreaMembership";
+    dcterms:description "Reified membership of a GeneratingUnit / EnergyStorage / EnergyConsumer / Substation in a ControlArea over a validity window. Reified because membership changes over time (operator handovers, area redrawings), the change has its own provenance, and merging across multiple sources requires conflict resolution. Concept Section 8.2.";
+    dcterms:valid "start=2026-05-27;";
+    dcterms:creator "Almato AG";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity:membershipId
+        ogit:validFrom
+    );
+    ogit:optional-attributes (
+        ogit.Utilities:validUntil
+        ogit.Utilities.Electricity:transitionReason
+        ogit.Utilities.Electricity:regulatoryActionRef
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity:membershipId
+    );
+    ogit:allowed (
+        [ ogit.Utilities.Electricity:memberOf  ogit.Utilities.Electricity:ControlArea ]
+        [ ogit.Utilities.Electricity:memberSubject  ogit.Utilities.Electricity:GeneratingUnit ]
+        [ ogit.Utilities.Electricity:memberSubject  ogit.Utilities.Electricity:EnergyStorage ]
+        [ ogit.Utilities.Electricity:memberSubject  ogit.Utilities.Electricity:EnergyConsumer ]
+        [ ogit.Utilities.Electricity:memberSubject  ogit.Utilities.Electricity.Grid:Substation ]
+    );
+.

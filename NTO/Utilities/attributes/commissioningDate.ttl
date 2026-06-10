@@ -1,0 +1,15 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+ogit.Utilities:commissioningDate
+    a owl:DatatypeProperty;
+    rdfs:subPropertyOf ogit:Attribute;
+    rdfs:label "commissioningDate";
+    dcterms:description "Date the resource entered commercial operation (ISO 8601 date). **Canonical commissioning attribute** on PowerSystemResource and used by EmissionMeasurement (CEMS device). Use this whenever the calendar day is known. The companion `Utilities:commissioningYear` (integer) is a legacy fallback for source systems that only report the year. Lives in Utilities (not Utilities.Electricity) so cross-domain consumers (Emissions, future Gas / Heat) can reference it without crossing namespace scoping.";
+    dcterms:valid "start=2026-05-27;";
+    dcterms:creator "Almato AG";
+.

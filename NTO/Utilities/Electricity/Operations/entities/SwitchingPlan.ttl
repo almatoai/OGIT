@@ -1,0 +1,40 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
+@prefix ogit.Utilities.Electricity.Grid:           <http://www.purl.org/ogit/Utilities/Electricity/Grid/> .
+@prefix ogit.Utilities.Electricity.Operations:     <http://www.purl.org/ogit/Utilities/Electricity/Operations/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity.Operations:SwitchingPlan
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "SwitchingPlan";
+    dcterms:description "CIM cim:SwitchingPlan. A pre-defined sequence of switch actions for a scheduled task (maintenance, restoration, reconfiguration, test, isolation).";
+    dcterms:valid "start=2026-05-28;";
+    dcterms:creator "Almato AG";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity.Operations:planId
+        ogit:name
+        ogit.Utilities.Electricity.Operations:purposeKind
+        ogit.Utilities.Electricity.Operations:scheduledStart
+    );
+    ogit:optional-attributes (
+        ogit.Utilities.Electricity.Operations:scheduledEnd
+        ogit.Utilities.Electricity.Operations:responsiblePersonRef
+        ogit.Utilities.Electricity.Operations:approvedByRef
+        ogit:status
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity.Operations:planId
+    );
+    ogit:allowed (
+        [ ogit:consistsOf  ogit.Utilities.Electricity.Operations:SwitchAction ]
+        [ ogit.Utilities:appliesTo  ogit.Utilities.Electricity.Grid:Substation ]
+        [ ogit.Utilities:appliesTo  ogit.Utilities.Electricity.Grid:VoltageLevel ]
+    );
+.

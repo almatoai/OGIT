@@ -1,0 +1,43 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities.Electricity.Grid:           <http://www.purl.org/ogit/Utilities/Electricity/Grid/> .
+@prefix ogit.Utilities.Electricity.Legacy:         <http://www.purl.org/ogit/Utilities/Electricity/Legacy/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity.Legacy:UcteTwoWindingTransformer
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "UcteTwoWindingTransformer";
+    dcterms:description "UCTE-DEF T record. Two-winding transformer between two UcteNodes. Maps forward to a CGMES PowerTransformer with two PowerTransformerEnds.";
+    dcterms:valid "start=2026-05-28;";
+    dcterms:creator "Almato AG";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity.Legacy:recordId
+        ogit.Utilities.Electricity.Legacy:nodeARef
+        ogit.Utilities.Electricity.Legacy:nodeBRef
+        ogit.Utilities.Electricity.Legacy:orderCode
+        ogit.Utilities.Electricity.Legacy:statusCode
+    );
+    ogit:optional-attributes (
+        ogit.Utilities.Electricity.Legacy:nominalUAKv
+        ogit.Utilities.Electricity.Legacy:nominalUBKv
+        ogit.Utilities.Electricity.Legacy:nominalPowerMva
+        ogit.Utilities.Electricity.Grid:rOhm
+        ogit.Utilities.Electricity.Grid:xOhm
+        ogit.Utilities.Electricity.Legacy:bMicrosiemens
+        ogit.Utilities.Electricity.Legacy:gMicrosiemens
+        ogit.Utilities.Electricity.Grid:phaseAngleClock
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity.Legacy:recordId
+    );
+    ogit:allowed (
+        [ ogit.Utilities.Electricity.Legacy:mappedTo  ogit.Utilities.Electricity.Grid:PowerTransformer ]
+        [ ogit:connects  ogit.Utilities.Electricity.Legacy:UcteNode ]
+    );
+.

@@ -1,0 +1,36 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities.Electricity.Telecontrol.InterControlCenter: <http://www.purl.org/ogit/Utilities/Electricity/Telecontrol/InterControlCenter/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity.Telecontrol.InterControlCenter:DataSet
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "DataSet";
+    dcterms:description "TASE.2 DataSet. A named, typed collection of indication points exchanged as a unit.";
+    dcterms:valid "start=2026-05-28;";
+    dcterms:creator "Almato AG";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:datasetId
+        ogit:name
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:owningTableRef
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:taseMemberCount
+    );
+    ogit:optional-attributes (
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:datasetCreationTime
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:datasetLastModified
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:datasetId
+    );
+    ogit:allowed (
+        [ ogit:isPartOf  ogit.Utilities.Electricity.Telecontrol.InterControlCenter:BilateralTable ]
+        [ ogit:consistsOf  ogit.Utilities.Electricity.Telecontrol.InterControlCenter:DataSetMember ]
+        [ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:transferredVia  ogit.Utilities.Electricity.Telecontrol.InterControlCenter:DataSetTransferSet ]
+    );
+.

@@ -1,0 +1,55 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix ogit.Utilities.Electricity.Grid:           <http://www.purl.org/ogit/Utilities/Electricity/Grid/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity.Grid:EnergySource
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "EnergySource";
+    dcterms:description "CIM cim:EnergySource. Slack-bus / reference-bus equivalent: an infinite-bus source used as voltage / angle reference in radial distribution feeders and in standalone power-flow models. Distinct from EquivalentInjection (which is the boundary-injection equivalent used at TSO-TSO boundaries). Added per QS Round 14 Sonnet COV-02.";
+    dcterms:valid "start=2026-05-27;";
+    dcterms:creator "Almato AG";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity:mrid
+        ogit:name
+        ogit.Utilities.Electricity.Grid:nominalVoltageKv
+    );
+    ogit:optional-attributes (
+        ogit.Utilities.Electricity.Grid:voltageAngleDegrees
+        ogit.Utilities.Electricity.Grid:voltageMagnitudePu
+        ogit.Utilities.Electricity.Grid:rOhm
+        ogit.Utilities.Electricity.Grid:xOhm
+        ogit.Utilities.Electricity.Grid:r0Ohm
+        ogit.Utilities.Electricity.Grid:x0Ohm
+        ogit.Utilities.Electricity:descriptionText
+        ogit.Utilities.Electricity:aliasName
+        ogit.Utilities.Electricity:categoryRef
+        ogit.Utilities:commissioningDate
+        ogit.Utilities:decommissioningDate
+        ogit.Utilities.Electricity:psrType
+        ogit.Utilities.Electricity:externalRefs
+        ogit:status
+        ogit:source
+        ogit:sourceId
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity:mrid
+        ogit.Utilities.Electricity:mrid
+        ogit:name
+    );
+    ogit:allowed (
+        [ ogit.Utilities.Electricity.Grid:hasTerminal  ogit.Utilities.Electricity.Grid:Terminal ]
+        [ ogit:generates  ogit:Timeseries ]
+        [ ogit.Utilities:operatedBy  ogit.Utilities:NetworkOperator ]
+        [ ogit:locatedIn  ogit:Location ]
+        [ ogit:isPartOf  ogit.Utilities.Electricity:PowerPlant ]
+    );
+.

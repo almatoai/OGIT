@@ -1,0 +1,39 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
+@prefix ogit.Utilities.Electricity.Grid:           <http://www.purl.org/ogit/Utilities/Electricity/Grid/> .
+@prefix ogit.Utilities.Electricity.Market:         <http://www.purl.org/ogit/Utilities/Electricity/Market/> .
+@prefix ogit.Utilities.Emissions:                  <http://www.purl.org/ogit/Utilities/Emissions/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity.Market:FlowGate
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "FlowGate";
+    dcterms:description "NC CACM Article 7 critical network element flowgate used in flow-based capacity calculation.";
+    dcterms:valid "start=2026-05-28;";
+    dcterms:creator "Almato AG";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity.Market:flowgateId
+        ogit:name
+        ogit.Utilities.Electricity.Market:subjectBranchRef
+        ogit.Utilities.Electricity.Market:direction
+    );
+    ogit:optional-attributes (
+        ogit.Utilities.Electricity.Market:criticalOutageRef
+        ogit.Utilities.Emissions:methodology
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity.Market:flowgateId
+    );
+    ogit:allowed (
+        [ ogit.Utilities:appliesTo  ogit.Utilities.Electricity.Grid:ACLineSegment ]
+        [ ogit.Utilities:appliesTo  ogit.Utilities.Electricity.Grid:DCLineSegment ]
+        [ ogit:isPartOf  ogit.Utilities.Electricity.Market:CrossZonalCapacity ]
+    );
+.

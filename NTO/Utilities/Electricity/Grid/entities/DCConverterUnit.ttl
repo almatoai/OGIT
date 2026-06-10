@@ -1,0 +1,52 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix ogit.Utilities.Electricity.Grid:           <http://www.purl.org/ogit/Utilities/Electricity/Grid/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity.Grid:DCConverterUnit
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "DCConverterUnit";
+    dcterms:description "CIM cim:DCConverterUnit. EquipmentContainer for the DC-side of an HVDC converter pole. Holds one or more CsConverter / VsConverter instances and the DC-side terminals.";
+    dcterms:valid "start=2026-05-27;";
+    dcterms:creator "Almato AG";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity:mrid
+        ogit:name
+        ogit.Utilities.Electricity.Grid:parentSubstationRef
+    );
+    ogit:optional-attributes (
+        ogit.Utilities.Electricity.Grid:operationMode
+        ogit.Utilities.Electricity:descriptionText
+        ogit.Utilities.Electricity:aliasName
+        ogit.Utilities.Electricity:categoryRef
+        ogit.Utilities:commissioningDate
+        ogit.Utilities:decommissioningDate
+        ogit.Utilities.Electricity:psrType
+        ogit.Utilities.Electricity:externalRefs
+        ogit:status
+        ogit:source
+        ogit:sourceId
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity:mrid
+        ogit.Utilities.Electricity:mrid
+        ogit:name
+    );
+    ogit:allowed (
+        [ ogit:isPartOf  ogit.Utilities.Electricity.Grid:Substation ]
+        [ ogit:consistsOf  ogit.Utilities.Electricity.Grid:CsConverter ]
+        [ ogit:consistsOf  ogit.Utilities.Electricity.Grid:VsConverter ]
+        [ ogit:consistsOf  ogit.Utilities.Electricity.Grid:DCTerminal ]
+        [ ogit.Utilities:operatedBy  ogit.Utilities:NetworkOperator ]
+        [ ogit:locatedIn  ogit:Location ]
+        [ ogit:isPartOf  ogit.Utilities.Electricity:PowerPlant ]
+    );
+.

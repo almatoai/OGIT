@@ -1,0 +1,43 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
+@prefix ogit.Utilities.Electricity.Market:         <http://www.purl.org/ogit/Utilities/Electricity/Market/> .
+@prefix ogit.Utilities.Electricity.Operations:     <http://www.purl.org/ogit/Utilities/Electricity/Operations/> .
+@prefix ogit.Utilities.Electricity.Operations.Reserves: <http://www.purl.org/ogit/Utilities/Electricity/Operations/Reserves/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity.Operations.Reserves:BalancingCapacityBid
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "BalancingCapacityBid";
+    dcterms:description "NC EB Article 21. Per-period capacity offer (separate from energy).";
+    dcterms:valid "start=2026-05-28;";
+    dcterms:creator "Almato AG";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity.Operations.Reserves:bidId
+        ogit.Utilities.Electricity.Operations.Reserves:bspRef
+        ogit.Utilities:periodStart
+        ogit.Utilities:periodEnd
+        ogit.Utilities.Electricity.Market:direction
+        ogit.Utilities.Electricity.Operations:volumeMw
+        ogit.Utilities.Electricity.Operations.Reserves:capacityPriceEurPerMw
+        ogit.Utilities.Electricity.Operations.Reserves:bcapProductKind
+    );
+    ogit:optional-attributes (
+        ogit.Utilities.Electricity.Operations.Reserves:divisible
+        ogit.Utilities.Electricity.Operations.Reserves:linkedBidRefs
+        ogit:status
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity.Operations.Reserves:bidId
+    );
+    ogit:allowed (
+        [ ogit.Utilities.Electricity.Operations.Reserves:submittedBy  ogit.Utilities.Electricity.Operations.Reserves:BalancingServiceProvider ]
+        [ ogit.Utilities.Electricity.Operations.Reserves:clearedIn  ogit.Utilities.Electricity.Market:Market ]
+    );
+.

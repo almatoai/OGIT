@@ -1,0 +1,39 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix ogit.Utilities.Electricity.Grid:           <http://www.purl.org/ogit/Utilities/Electricity/Grid/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity.Grid:TransformerEnd
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "TransformerEnd";
+    dcterms:description "ABSTRACT: CIM cim:TransformerEnd. Abstract parent for typed transformer ends (PowerTransformerEnd today; TransformerTankEnd in distribution, deferred). In CIM, TransformerEnd is a subtype of IdentifiedObject, not of ConductingEquipment or PowerSystemResource. The NTO follows the CIM inheritance and attaches TransformerEnd directly under ogit:Entity.";
+    dcterms:valid "start=2026-05-27;";
+    dcterms:creator "Almato AG";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity:mrid
+        ogit.Utilities.Electricity.Grid:endNumber
+    );
+    ogit:optional-attributes (
+        ogit.Utilities.Electricity.Grid:grounded
+        ogit.Utilities.Electricity.Grid:rGroundOhm
+        ogit.Utilities.Electricity.Grid:xGroundOhm
+        ogit.Utilities.Electricity.Grid:bmagsatSiemens
+        ogit.Utilities.Electricity.Grid:magnetizingBranchPresent
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity:mrid
+    );
+    ogit:allowed (
+        [ ogit.Utilities.Electricity.Grid:connectedAt  ogit.Utilities.Electricity.Grid:Terminal ]
+        [ ogit.Utilities.Electricity.Grid:hasBaseVoltage  ogit.Utilities.Electricity.Grid:BaseVoltage ]
+        [ ogit.Utilities.Electricity.Grid:hasTapChanger  ogit.Utilities.Electricity.Grid:RatioTapChanger ]
+        [ ogit.Utilities.Electricity.Grid:hasTapChanger  ogit.Utilities.Electricity.Grid:PhaseTapChanger ]
+    );
+.

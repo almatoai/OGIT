@@ -1,0 +1,63 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix ogit.Utilities.Electricity.Grid:           <http://www.purl.org/ogit/Utilities/Electricity/Grid/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity.Grid:AsynchronousMachine
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "AsynchronousMachine";
+    dcterms:description "CIM cim:AsynchronousMachine. Induction machine (motor or generator), e.g. wind turbines of IEC 61400 Type 1 / 2.";
+    dcterms:valid "start=2026-05-27;";
+    dcterms:creator "Almato AG";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity:mrid
+        ogit:name
+        ogit.Utilities.Electricity.Grid:ratedSMva
+        ogit.Utilities.Electricity.Grid:ratedUKv
+        ogit.Utilities.Electricity.Grid:asynchronousMachineKind
+    );
+    ogit:optional-attributes (
+        ogit.Utilities.Electricity.Grid:rAPu
+        ogit.Utilities.Electricity.Grid:xAPu
+        ogit.Utilities.Electricity.Grid:rBPu
+        ogit.Utilities.Electricity.Grid:xBPu
+        ogit.Utilities.Electricity.Grid:xmPu
+        ogit.Utilities.Electricity.Grid:rsPu
+        ogit.Utilities.Electricity.Grid:xsPu
+        ogit.Utilities.Electricity.Grid:efficiency
+        ogit.Utilities.Electricity.Grid:polarPairCount
+        ogit.Utilities.Electricity.Grid:ratedSpeedRpm
+        ogit.Utilities.Electricity.Grid:memberOfGeneratingUnitRef
+        ogit.Utilities.Electricity:descriptionText
+        ogit.Utilities.Electricity:aliasName
+        ogit.Utilities.Electricity:categoryRef
+        ogit.Utilities:commissioningDate
+        ogit.Utilities:decommissioningDate
+        ogit.Utilities.Electricity:psrType
+        ogit.Utilities.Electricity:externalRefs
+        ogit:status
+        ogit:source
+        ogit:sourceId
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity:mrid
+        ogit.Utilities.Electricity:mrid
+        ogit:name
+    );
+    ogit:allowed (
+        [ ogit:isPartOf  ogit.Utilities.Electricity:GeneratingUnit ]
+        [ ogit.Utilities.Electricity.Grid:hasTerminal  ogit.Utilities.Electricity.Grid:Terminal ]
+        [ ogit:generates  ogit:Timeseries ]
+        [ ogit.Utilities:operatedBy  ogit.Utilities:NetworkOperator ]
+        [ ogit:locatedIn  ogit:Location ]
+        [ ogit:isPartOf  ogit.Utilities.Electricity:PowerPlant ]
+    );
+.

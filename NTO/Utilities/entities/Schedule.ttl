@@ -1,0 +1,42 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities:Schedule
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "Schedule";
+    dcterms:description "ABSTRACT: Generic top-level schedule. CIM has many Schedule-like classes (BasicIntervalSchedule, RegularIntervalSchedule, MarketSchedule, OutageSchedule); they all share the same meta-data shape (kind, validity window, granularity) plus an attached sgo:Timeseries carrying the actual sequence of timestamped values. Concrete schedule subtypes live in Electricity.Operations and Electricity.Markets.";
+    dcterms:valid "start=2026-05-27;";
+    dcterms:creator "Almato AG";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities:scheduleId
+        ogit.Utilities:scheduleKind
+        ogit:validFrom
+        ogit.Utilities:validUntil
+        ogit.Utilities:granularitySeconds
+    );
+    ogit:optional-attributes (
+        ogit:timeZone
+        ogit:currency
+        ogit.Utilities:unitOfQuantity
+        ogit.Utilities:revisionNumber
+        ogit.Utilities:publishedBy
+        ogit.Utilities:acceptedBy
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities:scheduleId
+    );
+    ogit:allowed (
+        [ ogit.Utilities:appliesTo  ogit.Utilities.Electricity:ControlArea ]
+        [ ogit.Utilities:supersedes  ogit.Utilities:Schedule ]
+        [ ogit:generates  ogit:Timeseries ]
+    );
+.

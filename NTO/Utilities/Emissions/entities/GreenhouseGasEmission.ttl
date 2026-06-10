@@ -1,0 +1,48 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix ogit.Utilities.Emissions:                  <http://www.purl.org/ogit/Utilities/Emissions/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Emissions:GreenhouseGasEmission
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "GreenhouseGasEmission";
+    dcterms:description "One emission record linking an emitter (Equipment / Plant / Vehicle) to a quantity of greenhouse gas over a reporting period. Reported under IPCC Tier 1/2/3, GHG Protocol, EU ETS, or a regional standard.";
+    dcterms:valid "start=2026-05-27;";
+    dcterms:creator "Almato AG";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Emissions:emissionId
+        ogit.Utilities.Emissions:emissionSubstance
+        ogit.Utilities.Emissions:emissionQuantityKg
+        ogit.Utilities:periodStart
+        ogit.Utilities:periodEnd
+        ogit.Utilities:domain
+    );
+    ogit:optional-attributes (
+        ogit.Utilities.Emissions:emissionScope
+        ogit.Utilities.Emissions:reportingMethodology
+        ogit.Utilities.Emissions:measurementMethod
+        ogit.Utilities.Emissions:confidenceClass
+        ogit.Utilities.Emissions:verifiedBy
+        ogit.Utilities.Emissions:reportingObligationRef
+        ogit:source
+        ogit:sourceId
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Emissions:emissionId
+    );
+    ogit:allowed (
+        [ ogit.Utilities.Emissions:emittedBy  ogit.Utilities.Electricity:GeneratingUnit ]
+        [ ogit.Utilities.Emissions:emittedBy  ogit.Utilities.Electricity:PowerPlant ]
+        [ ogit.Utilities.Emissions:emittedBy  ogit.Utilities:ConversionUnit ]
+        [ ogit.Utilities.Emissions:reportedTo  ogit.Utilities:NetworkOperator ]
+        [ ogit.Utilities.Emissions:bookedAgainst  ogit.Utilities.Emissions:EmissionInventory ]
+    );
+.

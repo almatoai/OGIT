@@ -1,0 +1,41 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix ogit.Utilities.Electricity.Grid:           <http://www.purl.org/ogit/Utilities/Electricity/Grid/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity.Grid:MutualCoupling
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "MutualCoupling";
+    dcterms:description "CIM cim:MutualCoupling. Mutual coupling between two parallel or co-located ACLineSegments (zero-sequence / earth-fault modelling).";
+    dcterms:valid "start=2026-05-27;";
+    dcterms:creator "Almato AG";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity:mrid
+        ogit:name
+        ogit.Utilities.Electricity.Grid:r0Ohm
+        ogit.Utilities.Electricity.Grid:x0Ohm
+        ogit.Utilities.Electricity.Grid:firstLineSegmentRef
+        ogit.Utilities.Electricity.Grid:secondLineSegmentRef
+    );
+    ogit:optional-attributes (
+        ogit.Utilities.Electricity.Grid:b0Siemens
+        ogit.Utilities.Electricity.Grid:g0Siemens
+        ogit.Utilities.Electricity.Grid:distance11M
+        ogit.Utilities.Electricity.Grid:distance12M
+        ogit.Utilities.Electricity.Grid:distance21M
+        ogit.Utilities.Electricity.Grid:distance22M
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity:mrid
+    );
+    ogit:allowed (
+        [ ogit.Utilities.Electricity.Grid:couples  ogit.Utilities.Electricity.Grid:ACLineSegment ]
+    );
+.

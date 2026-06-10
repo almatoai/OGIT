@@ -1,0 +1,40 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix ogit.Utilities.Electricity.Telecontrol:    <http://www.purl.org/ogit/Utilities/Electricity/Telecontrol/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity.Telecontrol:DataPoint
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "DataPoint";
+    dcterms:description "Parent of the typed monitor / control / parameter / protection points. Carries the protocol-level addressing (Common Address, IOA, ASDU type, scaling, unit, quality-flag template). The actual sample stream (values + per-sample quality flags + CP56Time2a) lives in TSDB on a sgo:Timeseries vertex attached via generates. Normally a connector instantiates one of the typed subtypes (SinglePointInformation, MeasuredValueShortFloat, ...). For ASDU types in the reserved range 22-29 -- which IEC 60870-5-101 Ed.2 does not standardise and which national profiles use for vendor extensions -- the connector instantiates `DataPoint` directly with `asduTypeId` set to the reserved-range integer, preserving round-trip fidelity without inventing a synthetic typed subtype.";
+    dcterms:valid "start=2026-05-28;";
+    dcterms:creator "Almato AG";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity.Telecontrol:pointId
+        ogit.Utilities.Electricity.Telecontrol:endpointRef
+        ogit.Utilities.Electricity.Telecontrol:commonAddress
+        ogit.Utilities.Electricity.Telecontrol:informationObjectAddress
+        ogit.Utilities.Electricity.Telecontrol:asduTypeId
+        ogit.Utilities.Electricity.Telecontrol:pointDirection
+    );
+    ogit:optional-attributes (
+        ogit.Utilities:subjectRef
+        ogit.Utilities.Electricity:descriptionText
+        ogit.Utilities.Electricity.Telecontrol:qualityDescriptorTemplate
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity.Telecontrol:pointId
+    );
+    ogit:allowed (
+        [ ogit.Utilities.Electricity.Telecontrol:addressedAt  ogit.Utilities.Electricity.Telecontrol:ProtocolEndpoint ]
+        [ ogit:generates  ogit:Timeseries ]
+    );
+.

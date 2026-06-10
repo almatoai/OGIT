@@ -1,0 +1,15 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+ogit.Utilities:startTime
+    a owl:DatatypeProperty;
+    rdfs:subPropertyOf ogit:Attribute;
+    rdfs:label "startTime";
+    dcterms:description "Generic start timestamp (ISO 8601, UTC). Used by Outage and Schedule subtypes. Local because the existing SGO/sgo does not ship a startTime; the NTO/Schedule and NTO/PTF analogues are scoped to other domains.";
+    dcterms:valid "start=2026-05-27;";
+    dcterms:creator "Almato AG";
+.

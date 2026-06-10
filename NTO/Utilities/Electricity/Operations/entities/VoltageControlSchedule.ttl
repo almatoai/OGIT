@@ -1,0 +1,51 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix ogit.Utilities.Electricity.Grid:           <http://www.purl.org/ogit/Utilities/Electricity/Grid/> .
+@prefix ogit.Utilities.Electricity.Operations:     <http://www.purl.org/ogit/Utilities/Electricity/Operations/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity.Operations:VoltageControlSchedule
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "VoltageControlSchedule";
+    dcterms:description "CIM cim:VoltageControlZone-related. Per-zone voltage set-points across time. Anchor + sgo:Timeseries. Inherits scheduleId / scheduleKind / validFrom / validUntil / granularitySeconds from Utilities:Schedule (materialised at TTL-phase per Architecture Section 5.1c).";
+    dcterms:valid "start=2026-05-28;";
+    dcterms:creator "Almato AG";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities:scheduleId
+        ogit.Utilities.Electricity.Operations:zoneRef
+        ogit.Utilities.Electricity.Operations:voltageUnit
+        ogit.Utilities:granularitySeconds
+        ogit.Utilities:scheduleKind
+        ogit:validFrom
+        ogit.Utilities:validUntil
+    );
+    ogit:optional-attributes (
+        ogit.Utilities.Electricity.Operations:toleranceKv
+        ogit:priority
+        ogit:timeZone
+        ogit:currency
+        ogit.Utilities:unitOfQuantity
+        ogit.Utilities:revisionNumber
+        ogit.Utilities:publishedBy
+        ogit.Utilities:acceptedBy
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities:scheduleId
+        ogit.Utilities:scheduleId
+    );
+    ogit:allowed (
+        [ ogit.Utilities:appliesTo  ogit.Utilities.Electricity.Grid:VoltageLevel ]
+        [ ogit.Utilities:appliesTo  ogit.Utilities.Electricity.Grid:Substation ]
+        [ ogit:generates  ogit:Timeseries ]
+        [ ogit.Utilities:appliesTo  ogit.Utilities.Electricity:ControlArea ]
+        [ ogit.Utilities:supersedes  ogit.Utilities:Schedule ]
+    );
+.

@@ -1,0 +1,56 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix ogit.Utilities.Electricity.Grid:           <http://www.purl.org/ogit/Utilities/Electricity/Grid/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity.Grid:PhaseTapChanger
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "PhaseTapChanger";
+    dcterms:description "CIM cim:PhaseTapChanger. Phase-shifting transformer control.";
+    dcterms:valid "start=2026-05-27;";
+    dcterms:creator "Almato AG";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity:mrid
+        ogit.Utilities.Electricity.Grid:lowStep
+        ogit.Utilities.Electricity.Grid:highStep
+        ogit.Utilities.Electricity.Grid:neutralStep
+        ogit.Utilities.Electricity.Grid:phaseTapChangerKind
+        ogit:name
+    );
+    ogit:optional-attributes (
+        ogit.Utilities.Electricity.Grid:normalStep
+        ogit.Utilities.Electricity.Grid:voltageStepIncrement
+        ogit.Utilities.Electricity.Grid:phaseAngleIncrementDegrees
+        ogit.Utilities.Electricity.Grid:windingConnectionAngle
+        ogit.Utilities.Electricity:descriptionText
+        ogit.Utilities.Electricity:aliasName
+        ogit.Utilities.Electricity:categoryRef
+        ogit.Utilities:commissioningDate
+        ogit.Utilities:decommissioningDate
+        ogit.Utilities.Electricity:psrType
+        ogit.Utilities.Electricity:externalRefs
+        ogit:status
+        ogit:source
+        ogit:sourceId
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity:mrid
+        ogit.Utilities.Electricity:mrid
+        ogit:name
+    );
+    ogit:allowed (
+        [ ogit.Utilities.Electricity.Grid:controls  ogit.Utilities.Electricity.Grid:PowerTransformerEnd ]
+        [ ogit:generates  ogit:Timeseries ]
+        [ ogit.Utilities:operatedBy  ogit.Utilities:NetworkOperator ]
+        [ ogit:locatedIn  ogit:Location ]
+        [ ogit:isPartOf  ogit.Utilities.Electricity:PowerPlant ]
+    );
+.

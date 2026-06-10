@@ -1,0 +1,33 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities.Electricity.Telecontrol.InterControlCenter: <http://www.purl.org/ogit/Utilities/Electricity/Telecontrol/InterControlCenter/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity.Telecontrol.InterControlCenter:ConformanceBlock
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "ConformanceBlock";
+    dcterms:description "TASE.2 / IEC 60870-6-503 Conformance Block 1 through 9. Each block defines a subset of TASE.2 services and primitives.";
+    dcterms:valid "start=2026-05-28;";
+    dcterms:creator "Almato AG";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:blockId
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:blockNumber
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:servicesPayload
+    );
+    ogit:optional-attributes (
+
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:blockId
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:blockNumber
+    );
+    ogit:allowed (
+        [ ogit:isPartOf  ogit.Utilities.Electricity.Telecontrol.InterControlCenter:BilateralTable ]
+    );
+.

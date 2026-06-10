@@ -1,0 +1,39 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix ogit.Utilities.Electricity.Legacy:         <http://www.purl.org/ogit/Utilities/Electricity/Legacy/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity.Legacy:UcteSchedule
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "UcteSchedule";
+    dcterms:description "UCTE-DEF E record. Cross-border exchange schedule. The actual hourly values ride on a sgo:Timeseries attached via generates.";
+    dcterms:valid "start=2026-05-28;";
+    dcterms:creator "Almato AG";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity.Legacy:recordId
+        ogit.Utilities.Electricity.Legacy:countryA
+        ogit.Utilities.Electricity.Legacy:countryB
+        ogit.Utilities:scheduleKind
+        ogit.Utilities:granularitySeconds
+        ogit.Utilities.Electricity.Legacy:ucteUnit
+    );
+    ogit:optional-attributes (
+
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity.Legacy:recordId
+    );
+    ogit:allowed (
+        [ ogit.Utilities.Electricity.Legacy:mappedTo  ogit.Utilities:Schedule ]
+        [ ogit.Utilities.Electricity.Legacy:mappedTo  ogit.Utilities.Electricity:TieFlow ]
+        [ ogit:generates  ogit:Timeseries ]
+    );
+.

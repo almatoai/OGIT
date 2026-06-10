@@ -1,0 +1,15 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+ogit.Utilities.Electricity:inertiaConstantHS
+    a owl:DatatypeProperty;
+    rdfs:subPropertyOf ogit:Attribute;
+    rdfs:label "inertiaConstantHS";
+    dcterms:description "Kundur inertia constant H in seconds, as used in standard power-system dynamics textbooks. Defined as the ratio of stored kinetic energy at synchronous speed to the rated apparent power of the machine.";
+    dcterms:valid "start=2026-05-27;";
+    dcterms:creator "Almato AG";
+.

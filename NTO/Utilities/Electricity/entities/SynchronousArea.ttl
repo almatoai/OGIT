@@ -1,0 +1,36 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity:SynchronousArea
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "SynchronousArea";
+    dcterms:description "CIM cim:SynchronousArea (TP profile). The largest unit of synchronous AC operation: Continental Europe, Nordic, Baltic, GB, Ireland, Cyprus, Iceland. Holds the nominal frequency, the member-country list, the desynchronisation-event reference (e.g. Baltic 2025-02-09 from IPS/UPS), and the minimum-inertia floor.";
+    dcterms:valid "start=2026-05-27;";
+    dcterms:creator "Almato AG";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity:areaName
+        ogit.Utilities.Electricity:areaEic
+        ogit.Utilities.Electricity:nominalFrequencyHz
+    );
+    ogit:optional-attributes (
+        ogit.Utilities.Electricity:memberCountryIso2List
+        ogit.Utilities.Electricity:desynchronizationEventRef
+        ogit.Utilities.Electricity:minimumInertiaMws
+        ogit.Utilities.Electricity:referenceOrganizationRef
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity:areaEic
+    );
+    ogit:allowed (
+        [ ogit:consistsOf  ogit.Utilities.Electricity:ControlArea ]
+        [ ogit.Utilities.Electricity:interconnectsTo  ogit.Utilities.Electricity:SynchronousArea ]
+    );
+.

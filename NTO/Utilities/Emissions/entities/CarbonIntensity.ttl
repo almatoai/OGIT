@@ -1,0 +1,40 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix ogit.Utilities.Emissions:                  <http://www.purl.org/ogit/Utilities/Emissions/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Emissions:CarbonIntensity
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "CarbonIntensity";
+    dcterms:description "Time-varying intensity of an energy supply, attached to a ControlArea, BiddingZone, NetworkOperator, or Portfolio. Anchor-vertex plus sgo:Timeseries: the CarbonIntensity vertex carries metadata only; the timestamped values ride on the attached sgo:Timeseries. Concept Section 7a.";
+    dcterms:valid "start=2026-05-27;";
+    dcterms:creator "Almato AG";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Emissions:intensityId
+        ogit.Utilities:subjectRef
+        ogit.Utilities.Emissions:ciUnit
+        ogit.Utilities:granularitySeconds
+    );
+    ogit:optional-attributes (
+        ogit.Utilities.Emissions:methodology
+        ogit.Utilities.Emissions:lifecycleScope
+        ogit.Utilities.Emissions:mixBreakdownMethodologyRef
+        ogit.Utilities.Emissions:calculationBasis
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Emissions:intensityId
+    );
+    ogit:allowed (
+        [ ogit.Utilities:measuredFor  ogit.Utilities.Electricity:ControlArea ]
+        [ ogit.Utilities:measuredFor  ogit.Utilities.Electricity:BiddingZone ]
+        [ ogit:generates  ogit:Timeseries ]
+    );
+.

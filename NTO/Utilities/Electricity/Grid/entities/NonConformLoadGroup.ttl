@@ -1,0 +1,34 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix ogit.Utilities.Electricity.Grid:           <http://www.purl.org/ogit/Utilities/Electricity/Grid/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity.Grid:NonConformLoadGroup
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "NonConformLoadGroup";
+    dcterms:description "CIM cim:NonConformLoadGroup. Grouping of NonConformLoads sharing an aggregated profile.";
+    dcterms:valid "start=2026-05-27;";
+    dcterms:creator "Almato AG";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity:mrid
+        ogit:name
+    );
+    ogit:optional-attributes (
+        ogit.Utilities.Electricity.Grid:subLoadAreaRef
+        ogit.Utilities.Electricity:nominalPMw
+        ogit.Utilities.Electricity:nominalQMvar
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity:mrid
+    );
+    ogit:allowed (
+        [ ogit.Utilities.Electricity.Grid:groups  ogit.Utilities.Electricity:NonConformLoad ]
+    );
+.

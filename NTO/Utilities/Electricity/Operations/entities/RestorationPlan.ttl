@@ -1,0 +1,42 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix ogit.Utilities.Electricity.Operations:     <http://www.purl.org/ogit/Utilities/Electricity/Operations/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity.Operations:RestorationPlan
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "RestorationPlan";
+    dcterms:description "NC ER Title 3. Pre-defined recovery procedure for re-energising a control area after a blackout or partial loss. Composed of stepwise SwitchActions in a SwitchingPlan-like structure.";
+    dcterms:valid "start=2026-05-28;";
+    dcterms:creator "Almato AG";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity.Operations:planId
+        ogit:name
+        ogit.Utilities.Electricity:synchronousAreaRef
+        ogit:validFrom
+    );
+    ogit:optional-attributes (
+        ogit.Utilities:validUntil
+        ogit.Utilities.Electricity.Operations:lastDrillDate
+        ogit.Utilities.Electricity.Operations:nextDrillDate
+        ogit.Utilities.Electricity.Operations:responsiblePartyRef
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity.Operations:planId
+    );
+    ogit:allowed (
+        [ ogit.Utilities:appliesTo  ogit.Utilities.Electricity:SynchronousArea ]
+        [ ogit.Utilities:appliesTo  ogit.Utilities.Electricity:ControlArea ]
+        [ ogit:consistsOf  ogit.Utilities.Electricity.Operations:SwitchAction ]
+        [ ogit:triggers  ogit.Utilities.Electricity.Operations:BlackStartService ]
+        [ ogit:generates  ogit:Timeseries ]
+    );
+.

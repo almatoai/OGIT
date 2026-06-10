@@ -1,0 +1,17 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities.Electricity.Grid:           <http://www.purl.org/ogit/Utilities/Electricity/Grid/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+ogit.Utilities.Electricity.Grid:arcExtinguishingKind
+    a owl:DatatypeProperty;
+    rdfs:subPropertyOf ogit:Attribute;
+    rdfs:label "arcExtinguishingKind";
+    dcterms:description "Arc extinguishing technology: oil (oil-immersed), SF6 (SF6 gas), vacuum, air_blast, gas (clean-air / fluoronitrile / other non-SF6 gas mixtures), solid_state (semiconductor-based), minimum_oil, CO2 (CO2 as SF6 alternative). SF6 and CO2 follow the industrial-acronym casing per Section 11.1a Regel 5.";
+    dcterms:valid "start=2026-05-27;";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "oil,SF6,vacuum,air_blast,gas,solid_state,minimum_oil,CO2";
+.

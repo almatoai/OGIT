@@ -1,0 +1,42 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
+@prefix ogit.Utilities.Emissions:                  <http://www.purl.org/ogit/Utilities/Emissions/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Emissions:EmissionMeasurement
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "EmissionMeasurement";
+    dcterms:description "Continuous-emission-monitoring-system (CEMS) measurement series on a chimney, or vehicle / mobile-source measurement series. Anchor-vertex plus sgo:Timeseries: the EmissionMeasurement vertex represents one measurement point with its metadata (subject, substance, unit, granularity, device, calibration reference). The timestamped quantity values live on the attached sgo:Timeseries. Per-sample quality flags ride with the TSDB entries, not as vertex attributes.";
+    dcterms:valid "start=2026-05-27;";
+    dcterms:creator "Almato AG";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Emissions:measurementId
+        ogit.Utilities:subjectRef
+        ogit.Utilities.Emissions:substance
+        ogit.Utilities.Emissions:cemsUnit
+        ogit.Utilities:granularitySeconds
+        ogit.Utilities.Emissions:measurementDeviceRef
+    );
+    ogit:optional-attributes (
+        ogit.Utilities.Emissions:calibrationRecordRef
+        ogit.Utilities.Emissions:nominalUncertainty
+        ogit.Utilities.Emissions:aggregationMethod
+        ogit.Utilities:commissioningDate
+        ogit.Utilities:decommissioningDate
+        ogit.Utilities.Emissions:regulatoryCertificationRef
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Emissions:measurementId
+    );
+    ogit:allowed (
+        [ ogit.Utilities.Emissions:feedsInto  ogit.Utilities.Emissions:GreenhouseGasEmission ]
+        [ ogit:generates  ogit:Timeseries ]
+    );
+.

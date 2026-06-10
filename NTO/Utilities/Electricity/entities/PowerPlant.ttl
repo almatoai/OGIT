@@ -1,0 +1,45 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix ogit.Utilities.Emissions:                  <http://www.purl.org/ogit/Utilities/Emissions/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity:PowerPlant
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "PowerPlant";
+    dcterms:description "Pragmatic aggregate above GeneratingUnit. Not a first-class CIM class but ubiquitous in asset-register and plant-inventory sources, which aggregate at plant level rather than at the unit level CIM defines. Holds plant identity, the plant operator, the primary energy carrier and the aggregate capacity rollups.";
+    dcterms:valid "start=2026-05-27;";
+    dcterms:creator "Almato AG";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity:plantName
+        ogit.Utilities.Electricity:plantId
+    );
+    ogit:optional-attributes (
+        ogit.Utilities:countryIso2
+        ogit.Utilities.Electricity:totalRatedPMw
+        ogit.Utilities.Electricity:totalStorageMwh
+        ogit.Utilities.Electricity:primaryCarrierRef
+        ogit.Utilities:commissioningYear
+        ogit.Utilities.Electricity:decommissioningYear
+        ogit.Utilities.Electricity:replacesPlantRef
+        ogit:status
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity:plantId
+        ogit.Utilities.Electricity:plantName
+    );
+    ogit:allowed (
+        [ ogit:consistsOf  ogit.Utilities.Electricity:GeneratingUnit ]
+        [ ogit:consistsOf  ogit.Utilities:ConversionUnit ]
+        [ ogit.Utilities:operatedBy  ogit.Utilities:NetworkOperator ]
+        [ ogit:locatedIn  ogit:Location ]
+        [ ogit.Utilities:emits  ogit.Utilities.Emissions:GreenhouseGasEmission ]
+    );
+.

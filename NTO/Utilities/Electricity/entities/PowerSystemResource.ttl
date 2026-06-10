@@ -1,0 +1,44 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity:PowerSystemResource
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "PowerSystemResource";
+    dcterms:description "ABSTRACT: CIM cim:PowerSystemResource -- the root of every CIM electrical resource. Most concrete classes in this sub-namespace and the Grid sub-namespace derive from it. Holds the cross-resource attributes mrid, name, commissioning dates, operator reference, and the verbs locatedIn / operatedBy / ownedBy / partOf. **Materialised inheritance**: per Architecture Section 5.1c the TTL-phase generator copies the PSR-level mandatory and optional attributes plus the PSR-level allowed verbs into every concrete subtype TTL file. The per-subtype block in this Reference shows only the subtype-specific delta; the parent block (PSR or higher) is also present in the emitted TTL file. Authors writing TTL by hand must do the same materialisation: for any concrete PSR subtype, declare `Utilities:operatedBy -> Utilities:NetworkOperator` and `ogit:isPartOf -> PowerPlant` in the subtype TTL even if not shown explicitly in this Reference block.";
+    dcterms:valid "start=2026-05-27;";
+    dcterms:creator "Almato AG";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity:mrid
+        ogit:name
+    );
+    ogit:optional-attributes (
+        ogit.Utilities.Electricity:descriptionText
+        ogit.Utilities.Electricity:aliasName
+        ogit.Utilities.Electricity:categoryRef
+        ogit.Utilities:commissioningDate
+        ogit.Utilities:decommissioningDate
+        ogit.Utilities.Electricity:psrType
+        ogit.Utilities.Electricity:externalRefs
+        ogit:status
+        ogit:source
+        ogit:sourceId
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity:mrid
+        ogit:name
+    );
+    ogit:allowed (
+        [ ogit.Utilities:operatedBy  ogit.Utilities:NetworkOperator ]
+        [ ogit:locatedIn  ogit:Location ]
+        [ ogit:isPartOf  ogit.Utilities.Electricity:PowerPlant ]
+    );
+.

@@ -1,0 +1,15 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities.Electricity.Legacy:         <http://www.purl.org/ogit/Utilities/Electricity/Legacy/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+ogit.Utilities.Electricity.Legacy:nominalUCKv
+    a owl:DatatypeProperty;
+    rdfs:subPropertyOf ogit:Attribute;
+    rdfs:label "nominalUCKv";
+    dcterms:description "Nominal voltage in kV at side C of the three-winding transformer.";
+    dcterms:valid "start=2026-05-28;";
+    dcterms:creator "Almato AG";
+.

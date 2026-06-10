@@ -1,0 +1,39 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix ogit.Utilities.Electricity.Market:         <http://www.purl.org/ogit/Utilities/Electricity/Market/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity.Market:RegisteredResource
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "RegisteredResource";
+    dcterms:description "NC EB / NC CACM Article 4 RegisteredResource. Registered for participation in markets, distinct from the physical equipment. The physical_subject_ref points back to the underlying GeneratingUnit / EnergyStorage / EnergyConsumer.";
+    dcterms:valid "start=2026-05-28;";
+    dcterms:creator "Almato AG";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity.Market:resourceId
+        ogit:name
+        ogit.Utilities.Electricity.Market:participantRef
+        ogit.Utilities.Electricity.Market:physicalSubjectRef
+        ogit.Utilities.Electricity.Market:qualificationStatus
+    );
+    ogit:optional-attributes (
+        ogit.Utilities.Electricity.Market:registeredInBiddingZoneRefs
+        ogit.Utilities.Electricity.Market:registeredCapacityMw
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity.Market:resourceId
+    );
+    ogit:allowed (
+        [ ogit:controlledBy  ogit.Utilities.Electricity:MarketParticipant ]
+        [ ogit:represents  ogit.Utilities.Electricity:GeneratingUnit ]
+        [ ogit:represents  ogit.Utilities.Electricity:EnergyStorage ]
+        [ ogit:represents  ogit.Utilities.Electricity:EnergyConsumer ]
+    );
+.

@@ -1,0 +1,37 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix ogit.Utilities.Electricity.Grid:           <http://www.purl.org/ogit/Utilities/Electricity/Grid/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity.Grid:OperationalLimitSet
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "OperationalLimitSet";
+    dcterms:description "CIM cim:OperationalLimitSet. Grouping container for one or more OperationalLimit instances applied to one terminal, conducting-equipment, or generating-unit.";
+    dcterms:valid "start=2026-05-27;";
+    dcterms:creator "Almato AG";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity:mrid
+        ogit:name
+        ogit.Utilities:subjectRef
+    );
+    ogit:optional-attributes (
+        ogit.Utilities.Electricity.Grid:regulationBasisRef
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity:mrid
+    );
+    ogit:allowed (
+        [ ogit.Utilities:appliesTo  ogit.Utilities.Electricity.Grid:ACLineSegment ]
+        [ ogit.Utilities:appliesTo  ogit.Utilities.Electricity.Grid:Terminal ]
+        [ ogit.Utilities:appliesTo  ogit.Utilities.Electricity:GeneratingUnit ]
+        [ ogit.Utilities.Electricity.Grid:groups  ogit.Utilities:OperationalLimit ]
+    );
+.

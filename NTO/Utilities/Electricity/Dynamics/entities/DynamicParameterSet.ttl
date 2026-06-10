@@ -1,0 +1,39 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
+@prefix ogit.Utilities.Electricity.Dynamics:       <http://www.purl.org/ogit/Utilities/Electricity/Dynamics/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity.Dynamics:DynamicParameterSet
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "DynamicParameterSet";
+    dcterms:description "Parameter-set version snapshot used for change-tracking on a dynamic model.";
+    dcterms:valid "start=2026-05-28;";
+    dcterms:creator "Almato AG";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity.Dynamics:parameterSetId
+        ogit:name
+        ogit.Utilities.Electricity.Dynamics:targetModelRef
+        ogit:validFrom
+    );
+    ogit:optional-attributes (
+        ogit.Utilities:validUntil
+        ogit.Utilities.Electricity.Dynamics:parameterPayload
+        ogit.Utilities:sourcePublication
+        ogit.Utilities.Electricity.Dynamics:verifiedAgainstTestRef
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity.Dynamics:parameterSetId
+    );
+    ogit:allowed (
+        [ ogit.Utilities:appliesTo  ogit.Utilities.Electricity.Dynamics:SynchronousMachineDynamics ]
+        [ ogit.Utilities:appliesTo  ogit.Utilities.Electricity.Dynamics:ExcitationSystemDynamics ]
+        [ ogit.Utilities:appliesTo  ogit.Utilities.Electricity.Dynamics:TurbineGovernorDynamics ]
+    );
+.

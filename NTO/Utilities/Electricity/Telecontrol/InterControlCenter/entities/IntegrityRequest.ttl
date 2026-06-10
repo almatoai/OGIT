@@ -1,0 +1,35 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities.Electricity.Telecontrol.InterControlCenter: <http://www.purl.org/ogit/Utilities/Electricity/Telecontrol/InterControlCenter/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity.Telecontrol.InterControlCenter:IntegrityRequest
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "IntegrityRequest";
+    dcterms:description "TASE.2 Block 2 client-side service primitive (IntegritySetRequest). One-shot integrity-pull request distinct from the standing periodic DataSetTransferSet -- the client asks the server to send the complete data-set content immediately, regardless of the periodic transfer cycle. Added per QS Round 14 Sonnet COV-03 -- previously this Block-2 service was attempted to be folded into eventCodeRequested on DataSetTransferSet, but it is a separate client-initiated service primitive.";
+    dcterms:valid "start=2026-05-28;";
+    dcterms:creator "Almato AG";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:requestId
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:requestedDataSetRef
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:requestTime
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:requestingPartyRef
+    );
+    ogit:optional-attributes (
+        ogit:priority
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:replyTransferSetRef
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity.Telecontrol.InterControlCenter:requestId
+    );
+    ogit:allowed (
+        [ ogit.Utilities.Electricity.Telecontrol.InterControlCenter:belongsTo  ogit.Utilities.Electricity.Telecontrol.InterControlCenter:BilateralTable ]
+        [ ogit:references  ogit.Utilities.Electricity.Telecontrol.InterControlCenter:DataSet ]
+    );
+.

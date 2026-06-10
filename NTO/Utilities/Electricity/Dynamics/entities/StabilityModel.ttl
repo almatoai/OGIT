@@ -1,0 +1,38 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities.Electricity.Dynamics:       <http://www.purl.org/ogit/Utilities/Electricity/Dynamics/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity.Dynamics:StabilityModel
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "StabilityModel";
+    dcterms:description "Full system-stability model bundle.";
+    dcterms:valid "start=2026-05-28;";
+    dcterms:creator "Almato AG";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity.Dynamics:modelId
+        ogit:name
+        ogit.Utilities.Electricity.Dynamics:targetSynchronousAreaRef
+        ogit.Utilities.Electricity.Dynamics:stabilityVersion
+    );
+    ogit:optional-attributes (
+        ogit.Utilities.Electricity.Dynamics:toolSpecificFormat
+        ogit:validFrom
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity.Dynamics:modelId
+    );
+    ogit:allowed (
+        [ ogit:consistsOf  ogit.Utilities.Electricity.Dynamics:SynchronousMachineDynamics ]
+        [ ogit:consistsOf  ogit.Utilities.Electricity.Dynamics:ExcitationSystemDynamics ]
+        [ ogit:consistsOf  ogit.Utilities.Electricity.Dynamics:TurbineGovernorDynamics ]
+        [ ogit:consistsOf  ogit.Utilities.Electricity.Dynamics:LoadDynamics ]
+        [ ogit:consistsOf  ogit.Utilities.Electricity.Dynamics:HvdcDynamics ]
+    );
+.

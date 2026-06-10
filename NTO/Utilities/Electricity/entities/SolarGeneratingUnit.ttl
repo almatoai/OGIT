@@ -1,0 +1,77 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix ogit.Utilities.Emissions:                  <http://www.purl.org/ogit/Utilities/Emissions/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity:SolarGeneratingUnit
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "SolarGeneratingUnit";
+    dcterms:description "CIM cim:SolarGeneratingUnit. PV (rooftop, ground-mount, floating, agri-PV) and CSP. Adds panel technology, tracking kind, geometric orientation, DC-to-AC ratio, inverter and panel counts, plus CSP-specific storage parameters.";
+    dcterms:valid "start=2026-05-27;";
+    dcterms:creator "Almato AG";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity:mrid
+        ogit:name
+        ogit.Utilities.Electricity:ratedPMw
+        ogit.Utilities.Electricity:minOperatingPMw
+        ogit.Utilities.Electricity:maxOperatingPMw
+        ogit.Utilities.Electricity:pvKind
+    );
+    ogit:optional-attributes (
+        ogit.Utilities.Electricity:panelTechnology
+        ogit.Utilities.Electricity:trackingKind
+        ogit.Utilities.Electricity:tiltAngleDeg
+        ogit.Utilities.Electricity:azimuthDeg
+        ogit.Utilities.Electricity:dcToAcRatio
+        ogit.Utilities.Electricity:inverterCount
+        ogit.Utilities.Electricity:panelCount
+        ogit.Utilities.Electricity:cspTechnology
+        ogit.Utilities.Electricity:cspStorageH
+        ogit.Utilities.Electricity:nominalPMw
+        ogit.Utilities.Electricity:ratedVoltageKv
+        ogit.Utilities.Electricity:inertiaConstantHS
+        ogit.Utilities.Electricity:governorPMwPerHz
+        ogit.Utilities.Electricity:controlResponseKind
+        ogit.Utilities.Electricity:rfgConnectionType
+        ogit.Utilities:commissioningYear
+        ogit.Utilities.Electricity:decommissioningYear
+        ogit.Utilities.Electricity:lifecycleStatusSnapshot
+        ogit.Utilities.Electricity:fuelEfficiency
+        ogit.Utilities.Electricity:minRunTimeH
+        ogit.Utilities.Electricity:minDownTimeH
+        ogit.Utilities.Electricity:startupCost
+        ogit.Utilities.Electricity:variableCostPerMwh
+        ogit.Utilities.Electricity:descriptionText
+        ogit.Utilities.Electricity:aliasName
+        ogit.Utilities.Electricity:categoryRef
+        ogit.Utilities:commissioningDate
+        ogit.Utilities:decommissioningDate
+        ogit.Utilities.Electricity:psrType
+        ogit.Utilities.Electricity:externalRefs
+        ogit:status
+        ogit:source
+        ogit:sourceId
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity:mrid
+        ogit:name
+    );
+    ogit:allowed (
+        [ ogit:isPartOf  ogit.Utilities.Electricity:PowerPlant ]
+        [ ogit:controlledBy  ogit.Utilities.Electricity:ControlArea ]
+        [ ogit.Utilities:emits  ogit.Utilities.Emissions:GreenhouseGasEmission ]
+        [ ogit:consumes  ogit.Utilities:EnergyCarrier ]
+        [ ogit:generates  ogit:Timeseries ]
+        [ ogit.Utilities:operatedBy  ogit.Utilities:NetworkOperator ]
+        [ ogit:locatedIn  ogit:Location ]
+        [ ogit:isPartOf  ogit.Utilities.Electricity:PowerPlant ]
+    );
+.

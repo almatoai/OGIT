@@ -1,0 +1,15 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+ogit.Utilities:sourcePublication
+    a owl:DatatypeProperty;
+    rdfs:subPropertyOf ogit:Attribute;
+    rdfs:label "sourcePublication";
+    dcterms:description "Citation of the publication the data was taken from (IPCC AR6, JRC report, country-specific inventory, IEEE / CIGRE paper, manufacturer datasheet). Used by Emissions:EmissionFactor and Dynamics:DynamicParameterSet; lives in Utilities as the lowest common ancestor.";
+    dcterms:valid "start=2026-05-27;";
+    dcterms:creator "Almato AG";
+.

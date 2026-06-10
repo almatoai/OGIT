@@ -1,0 +1,17 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities.Electricity.Grid:           <http://www.purl.org/ogit/Utilities/Electricity/Grid/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+ogit.Utilities.Electricity.Grid:conductorMaterial
+    a owl:DatatypeProperty;
+    rdfs:subPropertyOf ogit:Attribute;
+    rdfs:label "conductorMaterial";
+    dcterms:description "Conductor material: aluminium, copper, ACSR (Aluminium Conductor Steel Reinforced), ACCC (Aluminium Conductor Composite Core), AAAC (All Aluminium Alloy Conductor), ACAR (Aluminium Conductor Alloy Reinforced), AACSR (Aluminium Alloy Conductor Steel Reinforced), aluminium_alloy, OPGW (Optical Ground Wire per CGMES Annex F), steel (steel earth wires). Industry acronyms ACSR / ACCC / AAAC / ACAR / AACSR / OPGW use uppercase per Section 11.1a Regel 5.";
+    dcterms:valid "start=2026-05-27;";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "aluminium,copper,ACSR,ACCC,AAAC,ACAR,AACSR,aluminium_alloy,OPGW,steel";
+.

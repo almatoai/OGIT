@@ -1,0 +1,17 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities.Electricity.Legacy:         <http://www.purl.org/ogit/Utilities/Electricity/Legacy/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+ogit.Utilities.Electricity.Legacy:variantRecordKind
+    a owl:DatatypeProperty;
+    rdfs:subPropertyOf ogit:Attribute;
+    rdfs:label "variantRecordKind";
+    dcterms:description "Discriminator on UcteComment for variant records that are not in the canonical UCTE-DEF specification. Enum: `comment` (default; genuine C record), `s_record` (Switched-line status, PSS/E-style variant), `c_t_record` (transformer-coupling extension). The operator decides per case whether to upgrade variants to CGMES topology constructs.";
+    dcterms:valid "start=2026-05-28;";
+    dcterms:creator "Almato AG";
+    ogit:validation-type "fixed";
+    ogit:validation-parameter "comment,s_record,c_t_record";
+.

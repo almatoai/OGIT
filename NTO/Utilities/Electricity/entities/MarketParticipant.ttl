@@ -1,0 +1,39 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity:MarketParticipant
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "MarketParticipant";
+    dcterms:description "ENTSO-E market participant identified by EIC X-code or Y-code. Represents a legal entity active in electricity wholesale markets: producer, supplier, trader, balancing-responsible party, retailer, aggregator, market operator.";
+    dcterms:valid "start=2026-05-27;";
+    dcterms:creator "Almato AG";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity:participantName
+        ogit.Utilities.Electricity:participantEic
+        ogit.Utilities.Electricity:roleKind
+    );
+    ogit:optional-attributes (
+        ogit.Utilities:countryIso2
+        ogit.Utilities:parentOrganizationRef
+        ogit.Utilities.Electricity:accreditedIn
+        ogit.Utilities.Electricity:accreditationStatus
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity:participantEic
+    );
+    ogit:allowed (
+        [ ogit:employs  ogit:Person ]
+        [ ogit:locatedIn  ogit:Location ]
+        [ ogit:owns  ogit:Asset ]
+        [ ogit:hasParent  ogit:Organization ]
+    );
+.

@@ -1,0 +1,39 @@
+@prefix dcterms:                                   <http://purl.org/dc/terms/> .
+@prefix ogit:                                      <http://www.purl.org/ogit/> .
+@prefix ogit.Utilities:                            <http://www.purl.org/ogit/Utilities/> .
+@prefix ogit.Utilities.Electricity:                <http://www.purl.org/ogit/Utilities/Electricity/> .
+@prefix ogit.Utilities.Electricity.Grid:           <http://www.purl.org/ogit/Utilities/Electricity/Grid/> .
+@prefix owl:                                       <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                                      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sgo:                                       <http://www.purl.org/ogit/SGO/sgo/> .
+
+
+ogit.Utilities.Electricity.Grid:ReactiveCapabilityCurve
+    a rdfs:Class;
+    rdfs:subClassOf ogit:Entity;
+    rdfs:label "ReactiveCapabilityCurve";
+    dcterms:description "CIM cim:ReactiveCapabilityCurve. P-Q capability curve of a SynchronousMachine. A specialised Curve with semantics bound to active-and-reactive-power capability limits.";
+    dcterms:valid "start=2026-05-27;";
+    dcterms:creator "Almato AG";
+    ogit:scope "NTO";
+    ogit:parent ogit:Node;
+    ogit:mandatory-attributes (
+        ogit.Utilities.Electricity:mrid
+        ogit:name
+        ogit.Utilities.Electricity.Grid:curveStyle
+        ogit.Utilities.Electricity.Grid:xUnit
+        ogit.Utilities.Electricity.Grid:y1Unit
+    );
+    ogit:optional-attributes (
+        ogit.Utilities.Electricity.Grid:couplingVoltageKv
+        ogit.Utilities.Electricity.Grid:y2Unit
+        ogit.Utilities.Electricity.Grid:y3Unit
+    );
+    ogit:indexed-attributes (
+        ogit.Utilities.Electricity:mrid
+    );
+    ogit:allowed (
+        [ ogit.Utilities:appliesTo  ogit.Utilities.Electricity.Grid:SynchronousMachine ]
+        [ ogit:consistsOf  ogit.Utilities.Electricity.Grid:CurveData ]
+    );
+.
