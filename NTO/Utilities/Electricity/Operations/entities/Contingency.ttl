@@ -33,7 +33,6 @@ ogit.Utilities.Electricity.Operations:Contingency
     ogit:allowed (
         [ ogit:affects  ogit.Utilities.Electricity:GeneratingUnit ]
         [ ogit:affects  ogit.Utilities.Electricity.Grid:ACLineSegment ]
-        [ ogit.Utilities.Electricity.Operations:analyzedIn  ogit.Utilities.Electricity.Operations:ContingencyAnalysis ]
         [ ogit:isPartOf  ogit.Utilities.Electricity.Operations:ContingencyList ]
     );
 .

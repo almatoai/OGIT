@@ -9,7 +9,7 @@ ogit.Utilities.Electricity.Operations:analyzes
     a owl:ObjectProperty;
     rdfs:subPropertyOf ogit:Verb;
     rdfs:label "analyzes";
-    dcterms:description "Asserts that a ContingencyAnalysis analyzes the target ContingencyList. Cardinality: many2one.";
+    dcterms:description "Asserts that a ContingencyAnalysis analyzes the target ContingencyList. Reverse-traversal of this edge covers the ContingencyList-to-Analysis direction and, via ContingencyList consistsOf Contingency, the Contingency-to-Analysis direction; no separate analyzedBy / analyzedIn verbs are declared (retired per QS Round 4 Sonnet CONS-02). Cardinality: many2one.";
     dcterms:valid "start=2026-05-28;";
     dcterms:creator "Almato AG";
 .

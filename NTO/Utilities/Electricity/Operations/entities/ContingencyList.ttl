@@ -33,6 +33,5 @@ ogit.Utilities.Electricity.Operations:ContingencyList
     );
     ogit:allowed (
         [ ogit:consistsOf  ogit.Utilities.Electricity.Operations:Contingency ]
-        [ ogit.Utilities.Electricity.Operations:analyzedBy  ogit.Utilities.Electricity.Operations:ContingencyAnalysis ]
     );
 .
