@@ -1,0 +1,16 @@
+@prefix ogit:                 <http://www.purl.org/ogit/> .
+@prefix ogit.Integration:     <http://www.purl.org/ogit/Integration/> .
+@prefix owl:                  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:              <http://purl.org/dc/terms/> .
+
+ogit.Integration:instanceStatus
+	a owl:DatatypeProperty;
+	rdfs:subPropertyOf ogit:Attribute;
+	rdfs:label "instanceStatus";
+	dcterms:description "Lifecycle state (registered / deployed / running / paused / retiring / retired) of the instance. See `12_netting_state_machine_spec.md` Section 5A for the formal state-machine.";
+	ogit:validation-type "fixed";
+	ogit:validation-parameter "registered,deployed,running,paused,retiring,retired";
+	dcterms:valid "start=2026-05-21;";
+	dcterms:creator "Almato AG";
+.

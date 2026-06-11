@@ -1,0 +1,14 @@
+@prefix ogit:                 <http://www.purl.org/ogit/> .
+@prefix ogit.Integration:     <http://www.purl.org/ogit/Integration/> .
+@prefix owl:                  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:              <http://purl.org/dc/terms/> .
+
+ogit.Integration:affectedVertexXid
+	a owl:DatatypeProperty;
+	rdfs:subPropertyOf ogit:Attribute;
+	rdfs:label "affectedVertexXid";
+	dcterms:description "External identifier (xid) of the entity vertex this Conflict is about. Modelled as a soft attribute reference rather than an edge: OGIT has no edge inheritance and no any-vertex edge target, and a Conflict can concern any vertex type a connector writes (PLAN D14; Identity v2 Section 6).";
+	dcterms:valid "start=2026-06-09;";
+	dcterms:creator "Almato AG";
+.

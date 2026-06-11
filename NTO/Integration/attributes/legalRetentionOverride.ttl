@@ -1,0 +1,16 @@
+@prefix ogit:                 <http://www.purl.org/ogit/> .
+@prefix ogit.Integration:     <http://www.purl.org/ogit/Integration/> .
+@prefix owl:                  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:              <http://purl.org/dc/terms/> .
+
+ogit.Integration:legalRetentionOverride
+	a owl:DatatypeProperty;
+	rdfs:subPropertyOf ogit:Attribute;
+	rdfs:label "legalRetentionOverride";
+	dcterms:description "Flag that legal retention overrides the requested erasure.";
+	ogit:validation-type "fixed";
+	ogit:validation-parameter "true,false";
+	dcterms:valid "start=2026-05-21;";
+	dcterms:creator "Almato AG";
+.

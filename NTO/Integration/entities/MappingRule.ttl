@@ -1,0 +1,48 @@
+@prefix ogit:                 <http://www.purl.org/ogit/> .
+@prefix ogit.Integration:     <http://www.purl.org/ogit/Integration/> .
+@prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:              <http://purl.org/dc/terms/> .
+
+ogit.Integration:MappingRule
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "MappingRule";
+	dcterms:description """Per-attribute mapping declaration. Translates one
+	or more source-system fields into a single graph-vertex attribute, or vice
+	versa. Carries the wire-shape declarations, the bidirectional flag, the
+	identity binding hint (deterministic key vs heuristic resolver per D20),
+	the optional CEL inline transform (D16), per-attribute conflict-rule
+	reference, optional canonical-value-set reference, and source-version
+	conditionals (D27 fourth-batch).""";
+	dcterms:valid "start=2026-05-21;";
+	dcterms:creator "Almato AG";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:mandatory-attributes (
+		ogit.Integration:sourceFieldPath
+		ogit.Integration:targetVertexType
+		ogit.Integration:targetAttribute
+		ogit.Integration:bidirectional
+	);
+	ogit:optional-attributes (
+		ogit.Integration:bindBy
+		ogit.Integration:bindByResolver
+		ogit.Integration:celTransform
+		ogit.Integration:provenanceForced
+		ogit.Integration:expectedNeighbourhood
+		ogit.Integration:sourceVersionCondition
+		ogit.Integration:art22InScope
+		ogit.Integration:preserveIntermediateStates
+		ogit.Integration:listSemanticsElementIdFrom
+		ogit.Integration:listSemanticsOnIdCollision
+	);
+	ogit:indexed-attributes (
+		ogit.Integration:targetAttribute
+		ogit.Integration:bidirectional
+	);
+	ogit:allowed (
+		[ ogit.Integration:declaredBy             ogit.Integration:Connector ]
+		[ ogit.Integration:bindsToConflictRule    ogit.Integration:ConflictResolutionRule ]
+		[ ogit.Integration:bindsToCanonicalValues ogit.Integration:CanonicalValueSet ]
+	);
+.

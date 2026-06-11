@@ -1,0 +1,46 @@
+@prefix ogit:                              <http://www.purl.org/ogit/> .
+@prefix ogit.Integration.Decisions.PII:        <http://www.purl.org/ogit/Integration/Decisions/PII/> .
+@prefix ogit.Integration:                  <http://www.purl.org/ogit/Integration/> .
+@prefix rdfs:                              <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                           <http://purl.org/dc/terms/> .
+
+ogit.Integration.Decisions.PII:SplitJob
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "SplitJob";
+	dcterms:description """State machine for one split operation that corrects
+	a prior over-binding: two source records were auto-bound to a single
+	vertex but later evidence shows them to be different real-world entities
+	(Identity v2 Section 7.2). The job rebinds the contributions to two
+	target vertices. State transitions: PROPOSED -> VALIDATED -> SPLITTING
+	-> COMPLETED | FAILED. Crash-recovery replays from the latest
+	checkpoint. The Rule-1 and Rule-2 atomicity discipline of the
+	MergeOrchestrator (Section 6.4) applies: no commit until the inverse
+	merge audit is durable. Eight conformance tests parallel to MergeJob
+	(Section 8) gate Phase B exit.""";
+	dcterms:valid "start=2026-05-29;revised=2026-06-05;";
+	dcterms:creator "Almato AG";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:mandatory-attributes (
+		ogit.Integration:jobState
+		ogit.Integration:sourceVertexXid
+		ogit.Integration:proposedTargetXids
+		ogit.Integration:checkpointPayload
+		ogit:createdAt
+	);
+	ogit:optional-attributes (
+		ogit:finishedAt
+		ogit:reason
+		ogit.Integration:recoveryCount
+		ogit.Integration:operatorNote
+	);
+	ogit:indexed-attributes (
+		ogit.Integration:jobState
+		ogit.Integration:sourceVertexXid
+	);
+	ogit:allowed (
+		[ ogit.Integration:initiatedByRun  ogit.Integration:ConnectorRun ]
+		[ ogit.Integration:authorisedBy ogit.Integration:Authority ]
+	);
+.
