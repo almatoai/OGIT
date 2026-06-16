@@ -30,8 +30,8 @@ ogit.Auth:Application
 	ogit:optional-attributes (
 	    ogit.Auth:allowedTypes
 	    ogit.Auth.Application:type
-		ogit.Auth.Application:category
-		ogit.Auth.Application:tags
+		ogit:category
+		ogit:tags
 	    ogit.Auth.Application:status
 	    ogit.Auth.Application:parent
 	    ogit.Auth.Application:urls
