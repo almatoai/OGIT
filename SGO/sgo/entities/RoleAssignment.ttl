@@ -26,5 +26,6 @@ ogit:RoleAssignment
 			[ ogit:assignedTo  ogit:Person ]
 			[ ogit:assignedTo  ogit:Role ]
 			[ ogit:assignedTo  ogit:Organization ]
+			[ ogit:assignedTo  ogit.ServiceManagement:Service ]
 	);
 .
