@@ -9,7 +9,7 @@ ogit.Meteorology:WeatherStation
     a rdfs:Class;
     rdfs:subClassOf     ogit:Entity;
     rdfs:label          "WeatherStation";
-    dcterms:description "Represents a physical weather observation site.";
+    dcterms:description "[Deprecated] Represents a physical weather observation site.";
     dcterms:valid       "start=2025-10-15;";
     dcterms:creator     "Markus Noack";
     ogit:scope          "NTO";
