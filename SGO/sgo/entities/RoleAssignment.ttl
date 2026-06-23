@@ -2,12 +2,13 @@
 @prefix ogit:                   <http://www.purl.org/ogit/> .
 @prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms:                <http://purl.org/dc/terms/> .
+@prefix ogit.ServiceManagement: <http://www.purl.org/ogit/ServiceManagement/> .
 
 ogit:RoleAssignment
 	a rdfs:Class;
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "RoleAssignment";
-	dcterms:description "A role assignment defines which role a person has in an organization for a specific time period.";
+	dcterms:description "A role assignment defines which role a person has in an organization and/or for a specific service during a defined period of time.";
 	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2025-04-09;";
 	dcterms:creator "Jens Bartsch";
@@ -26,5 +27,6 @@ ogit:RoleAssignment
 			[ ogit:assignedTo  ogit:Person ]
 			[ ogit:assignedTo  ogit:Role ]
 			[ ogit:assignedTo  ogit:Organization ]
+			[ ogit:assignedTo  ogit.ServiceManagement:Service ]
 	);
 .
