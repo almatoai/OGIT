@@ -14,6 +14,33 @@ The OGIT project is not only a hosting place for a specification. It also
 provides a platform for domain experts to contribute to the ontology.
 One of the basic principles is: _evolution over standardization_.
 
+## Conventions for contributed namespaces
+
+These apply to every namespace contributed to OGIT, not to any one contributor:
+
+- **Creator.** Objects contributed by an organisation carry `dcterms:creator`
+  set to that organisation (e.g. `"Almato AG"`), never an individual's name or
+  email.
+- **Fixed value sets.** Boolean and closed-enum attributes carry
+  `ogit:validation-type "fixed"` plus `ogit:validation-parameter "<csv>"` (for
+  booleans, `"true,false"`). Attributes whose description is open-ended
+  ("... etc.") omit the fixed parameter.
+- **Edge targets are concrete.** `ogit:allowed` always names concrete vertex
+  types. OGIT has no edge inheritance and no any-vertex edge target --
+  `ogit:Node` and `ogit:Entity` are never edge targets. To reference an entity
+  of arbitrary type, use a soft `*VertexXid` attribute (e.g. `lockedVertexXid`)
+  instead of an edge.
+- **Additive only.** A contributed namespace adds entities, attributes and
+  verbs; it does not alter existing OGIT objects.
+
+### Namespace README discipline
+
+- A short `README.md` in every new namespace subdirectory: what the namespace
+  is and any namespace-specific rule, developer-focused, no marketing prose.
+- Do not reference documents outside this repository (internal concept or phase
+  docs, PR backtraces). If more detail is needed it belongs in the published
+  OGIT documentation, not in a backtrace a repo user cannot follow.
+
 ## OGIT Documentation
 
 Find out more about OGIT using the following links.
