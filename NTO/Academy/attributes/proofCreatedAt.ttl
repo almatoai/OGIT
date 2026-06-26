@@ -1,0 +1,14 @@
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+@prefix ogit.Academy:           <http://www.purl.org/ogit/Academy/> .
+
+ogit.Academy:proofCreatedAt
+	a owl:DatatypeProperty;
+	rdfs:subPropertyOf ogit:Attribute;
+	rdfs:label "proofCreatedAt";
+	dcterms:description "EMBEDDED (DataIntegrityProof) credentials only: VC 2.0 proof.created (proof generation timestamp). ISO 8601 date-time.";
+	dcterms:valid "start=2026-06-25;";
+	dcterms:creator "Almato AG";
+.

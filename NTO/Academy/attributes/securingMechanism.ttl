@@ -1,0 +1,16 @@
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+@prefix ogit.Academy:           <http://www.purl.org/ogit/Academy/> .
+
+ogit.Academy:securingMechanism
+	a owl:DatatypeProperty;
+	rdfs:subPropertyOf ogit:Attribute;
+	rdfs:label "securingMechanism";
+	dcterms:description "Local discriminator for how the credential is secured -- NOT a single VC field. For an embedded proof the value 'DataIntegrityProof' equals the VC 2.0 proof.type; for an enveloping proof (JOSE/SD-JWT/COSE) there is no proof object at all and the value names the envelope family (signed token in the Attachment). The other proof* / proofCryptosuite / joseAlgorithm attributes apply ONLY for the matching mechanism (see README).";
+	dcterms:valid "start=2026-06-25;";
+	dcterms:creator "Almato AG";
+	ogit:validation-type "fixed";
+	ogit:validation-parameter "DataIntegrityProof,JOSE,SD-JWT,COSE";
+.

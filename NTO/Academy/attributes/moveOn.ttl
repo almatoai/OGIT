@@ -1,0 +1,16 @@
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+@prefix ogit.Academy:           <http://www.purl.org/ogit/Academy/> .
+
+ogit.Academy:moveOn
+	a owl:DatatypeProperty;
+	rdfs:subPropertyOf ogit:Attribute;
+	rdfs:label "moveOn";
+	dcterms:description "cmi5 moveOn criterion defining when the learner has satisfied this course (assignable unit).";
+	dcterms:valid "start=2026-06-25;";
+	dcterms:creator "Almato AG";
+	ogit:validation-type "fixed";
+	ogit:validation-parameter "Passed,Completed,CompletedAndPassed,CompletedOrPassed,NotApplicable";
+.

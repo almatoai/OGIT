@@ -1,0 +1,14 @@
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+@prefix ogit.Academy:           <http://www.purl.org/ogit/Academy/> .
+
+ogit.Academy:courseCode
+	a owl:DatatypeProperty;
+	rdfs:subPropertyOf ogit:Attribute;
+	rdfs:label "courseCode";
+	dcterms:description "The external course code / identifier; carries the Area9 (LMS) course identifier. Aligns with schema.org courseCode. The stable xAPI Activity IRI is ogit.Academy:activityId, not this field.";
+	dcterms:valid "start=2026-06-25;";
+	dcterms:creator "Almato AG";
+.

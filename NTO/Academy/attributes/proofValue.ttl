@@ -1,0 +1,14 @@
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+@prefix ogit.Academy:           <http://www.purl.org/ogit/Academy/> .
+
+ogit.Academy:proofValue
+	a owl:DatatypeProperty;
+	rdfs:subPropertyOf ogit:Attribute;
+	rdfs:label "proofValue";
+	dcterms:description "EMBEDDED (DataIntegrityProof) credentials only: the VC 2.0 proof.proofValue (multibase-encoded signature). Not populated for enveloping mechanisms (JOSE/SD-JWT/COSE), whose signed token is the credential itself and lives only in the Certificate's Attachment.";
+	dcterms:valid "start=2026-06-25;";
+	dcterms:creator "Almato AG";
+.

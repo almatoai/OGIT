@@ -1,0 +1,14 @@
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+@prefix ogit.Academy:           <http://www.purl.org/ogit/Academy/> .
+
+ogit.Academy:criteria
+	a owl:DatatypeProperty;
+	rdfs:subPropertyOf ogit:Attribute;
+	rdfs:label "criteria";
+	dcterms:description "The Open Badges 3.0 Achievement.criteria.narrative: a human-readable statement of what the learner must do to earn the achievement. The optional Criteria.id IRI is stored separately in ogit.Academy:criteriaId, so the OB 3.0 Criteria object {id, narrative} round-trips losslessly. OB 3.0 requires a Criteria; because ogit:Course is a shared SGO type the slot is optional and enforced at the application layer (see README deviation table).";
+	dcterms:valid "start=2026-06-25;";
+	dcterms:creator "Almato AG";
+.

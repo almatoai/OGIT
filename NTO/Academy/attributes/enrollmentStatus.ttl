@@ -1,0 +1,16 @@
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+@prefix ogit.Academy:           <http://www.purl.org/ogit/Academy/> .
+
+ogit.Academy:enrollmentStatus
+	a owl:DatatypeProperty;
+	rdfs:subPropertyOf ogit:Attribute;
+	rdfs:label "enrollmentStatus";
+	dcterms:description "Lifecycle/outcome status of the learner's engagement with the course. NotStarted and InProgress are OGIT aggregations; Completed/Passed/Failed/Abandoned/Waived/Satisfied are cmi5 outcome verbs. The transient/session-level cmi5 verbs Launched, Initialized and Terminated are intentionally NOT lifecycle states (Terminated marks an AU session end, not a course outcome); when they occur they are captured in lastVerb only.";
+	dcterms:valid "start=2026-06-25;";
+	dcterms:creator "Almato AG";
+	ogit:validation-type "fixed";
+	ogit:validation-parameter "NotStarted,InProgress,Completed,Passed,Failed,Abandoned,Waived,Satisfied";
+.

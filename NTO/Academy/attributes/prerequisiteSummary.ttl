@@ -1,0 +1,14 @@
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+@prefix ogit.Academy:           <http://www.purl.org/ogit/Academy/> .
+
+ogit.Academy:prerequisiteSummary
+	a owl:DatatypeProperty;
+	rdfs:subPropertyOf ogit:Attribute;
+	rdfs:label "prerequisiteSummary";
+	dcterms:description "Human-readable summary of recommended prior knowledge. Structured prerequisites are modelled as ogit:requires edges to other Courses or to ogit.HR.Recruiting:Skill.";
+	dcterms:valid "start=2026-06-25;";
+	dcterms:creator "Almato AG";
+.

@@ -1,0 +1,14 @@
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+@prefix ogit.Academy:           <http://www.purl.org/ogit/Academy/> .
+
+ogit.Academy:lastVerb
+	a owl:DatatypeProperty;
+	rdfs:subPropertyOf ogit:Attribute;
+	rdfs:label "lastVerb";
+	dcterms:description "The xAPI/cmi5 verb IRI describing the most recent state transition (e.g. https://w3id.org/xapi/adl/verbs/completed, or the cmi5 Launched/Initialized IRIs). Stored so a conformant xAPI statement can be reconstructed; preserves verbs Area9 may emit outside the enrollmentStatus enum.";
+	dcterms:valid "start=2026-06-25;";
+	dcterms:creator "Almato AG";
+.
