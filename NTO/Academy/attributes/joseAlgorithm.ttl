@@ -1,0 +1,14 @@
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+@prefix ogit.Academy:           <http://www.purl.org/ogit/Academy/> .
+
+ogit.Academy:joseAlgorithm
+	a owl:DatatypeProperty;
+	rdfs:subPropertyOf ogit:Attribute;
+	rdfs:label "joseAlgorithm";
+	dcterms:description "ENVELOPING (JOSE/COSE) credentials only: the IANA JOSE/COSE algorithm identifier (the JWS/COSE 'alg' header, e.g. ES256, EdDSA). Distinct value namespace from proofCryptosuite.";
+	dcterms:valid "start=2026-06-25;";
+	dcterms:creator "Almato AG";
+.

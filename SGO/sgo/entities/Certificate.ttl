@@ -16,6 +16,8 @@
 @prefix ogit:                   <http://www.purl.org/ogit/> .
 @prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms:                <http://purl.org/dc/terms/> .
+@prefix ogit.Academy:           <http://www.purl.org/ogit/Academy/> .
+@prefix ogit.Documents:         <http://www.purl.org/ogit/Documents/> .
 
 ogit:Certificate
 	a rdfs:Class;
@@ -34,6 +36,19 @@ ogit:Certificate
 		ogit:subject
 		ogit:validFrom
 		ogit:validTo
+		ogit:name
+		ogit.Academy:credentialId
+		ogit.Academy:credentialType
+		ogit.Academy:credentialContext
+		ogit.Academy:proofValue
+		ogit.Academy:securingMechanism
+		ogit.Academy:proofCryptosuite
+		ogit.Academy:joseAlgorithm
+		ogit.Academy:proofVerificationMethod
+		ogit.Academy:proofPurpose
+		ogit.Academy:proofCreatedAt
+		ogit.Academy:credentialStatus
+		ogit.Academy:verificationUrl
 	);
 	ogit:indexed-attributes (
 		
@@ -41,5 +56,8 @@ ogit:Certificate
 	ogit:allowed (
 			[ ogit:relates  ogit:Installation ]
 			[ ogit:belongs  ogit:Organization ]
+			[ ogit.Academy:certifies  ogit:Course ]
+			[ ogit:has  ogit:Attachment ]
+			[ ogit:has  ogit.Documents:Document ]
 	);
 .

@@ -1,0 +1,14 @@
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+@prefix ogit.Academy:           <http://www.purl.org/ogit/Academy/> .
+
+ogit.Academy:proofCryptosuite
+	a owl:DatatypeProperty;
+	rdfs:subPropertyOf ogit:Attribute;
+	rdfs:label "proofCryptosuite";
+	dcterms:description "EMBEDDED (DataIntegrityProof) credentials only: the VC 2.0 proof.cryptosuite (a W3C cryptosuite-registry identifier, e.g. eddsa-rdfc-2022).";
+	dcterms:valid "start=2026-06-25;";
+	dcterms:creator "Almato AG";
+.

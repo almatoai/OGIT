@@ -1,0 +1,14 @@
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+@prefix ogit.Academy:           <http://www.purl.org/ogit/Academy/> .
+
+ogit.Academy:passingScore
+	a owl:DatatypeProperty;
+	rdfs:subPropertyOf ogit:Attribute;
+	rdfs:label "passingScore";
+	dcterms:description "The mastery threshold a learner must reach to pass, as a scaled value between 0 and 1 (e.g. 0.8 = 80%). Maps to the cmi5 masteryScore (the cmi5 term); named passingScore here for readability. Range enforced at the application layer.";
+	dcterms:valid "start=2026-06-25;";
+	dcterms:creator "Almato AG";
+.

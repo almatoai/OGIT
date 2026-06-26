@@ -1,0 +1,14 @@
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+@prefix ogit.Academy:           <http://www.purl.org/ogit/Academy/> .
+
+ogit.Academy:criteriaId
+	a owl:DatatypeProperty;
+	rdfs:subPropertyOf ogit:Attribute;
+	rdfs:label "criteriaId";
+	dcterms:description "The Open Badges 3.0 Achievement.criteria.id (an IRI), when the Criteria object carries one. Stored separately from the narrative (ogit.Academy:criteria) so the Criteria object round-trips losslessly.";
+	dcterms:valid "start=2026-06-25;";
+	dcterms:creator "Almato AG";
+.

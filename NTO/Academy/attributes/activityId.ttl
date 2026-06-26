@@ -1,0 +1,14 @@
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+@prefix ogit.Academy:           <http://www.purl.org/ogit/Academy/> .
+
+ogit.Academy:activityId
+	a owl:DatatypeProperty;
+	rdfs:subPropertyOf ogit:Attribute;
+	rdfs:label "activityId";
+	dcterms:description "The stable xAPI/cmi5 Activity IRI for the course (the object.id of an xAPI statement; also the cmi5 context.contextActivities.grouping IRI). A persistent HTTP IRI, distinct from launchUrl (dynamic) and courseCode. Presence enforced at the application layer (see README deviation table).";
+	dcterms:valid "start=2026-06-25;";
+	dcterms:creator "Almato AG";
+.

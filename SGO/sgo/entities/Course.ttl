@@ -1,6 +1,10 @@
 @prefix ogit:                   <http://www.purl.org/ogit/> .
 @prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms:                <http://purl.org/dc/terms/> .
+@prefix ogit.Academy:           <http://www.purl.org/ogit/Academy/> .
+@prefix ogit.HR.Recruiting:     <http://www.purl.org/ogit/HR/Recruiting/> .
+@prefix ogit.ClassificationStandard:  <http://www.purl.org/ogit/ClassificationStandard/> .
+@prefix ogit.Documents:         <http://www.purl.org/ogit/Documents/> .
 
 ogit:Course
 	a rdfs:Class;
@@ -20,10 +24,37 @@ ogit:Course
 		ogit:description
 		ogit:status
 		ogit:creator
+		ogit:version
+		ogit:tags
+		ogit:category
+		ogit:lastUpdatedAt
+		ogit:url
+		ogit:language
+		ogit.Academy:achievementId
+		ogit.Academy:activityId
+		ogit.Academy:criteria
+		ogit.Academy:criteriaId
+		ogit.Academy:courseMode
+		ogit.Academy:passingScore
+		ogit.Academy:educationalLevel
+		ogit.Academy:timeRequired
+		ogit.Academy:courseCode
+		ogit.Academy:moveOn
+		ogit.Academy:launchUrl
+		ogit.Academy:promoted
+		ogit.Academy:prerequisiteSummary
 	);
 	ogit:indexed-attributes (
 		
 	);
 	ogit:allowed (
+			[ ogit:requires  ogit:Course ]
+			[ ogit:precedes  ogit:Course ]
+			[ ogit:contains  ogit:Course ]
+			[ ogit.Academy:supersedes  ogit:Course ]
+			[ ogit:requires  ogit.HR.Recruiting:Skill ]
+			[ ogit:has  ogit:Attachment ]
+			[ ogit:has  ogit.Documents:Document ]
+			[ ogit.ClassificationStandard:classifiedUnder  ogit.ClassificationStandard:ClassificationStandardTreeBranch ]
 	);
 .

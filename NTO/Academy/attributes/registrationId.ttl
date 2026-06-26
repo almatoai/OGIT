@@ -1,0 +1,14 @@
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+@prefix ogit.Academy:           <http://www.purl.org/ogit/Academy/> .
+
+ogit.Academy:registrationId
+	a owl:DatatypeProperty;
+	rdfs:subPropertyOf ogit:Attribute;
+	rdfs:label "registrationId";
+	dcterms:description "The cmi5 context.registration UUID for the learner's registration on this course. Created by the LMS at launch; required for a cmi5-conformant statement export. Optional on the node (a NotStarted enrollment has no registration yet); presence required once the enrollment has been launched, enforced at the application layer (see README deviation table).";
+	dcterms:valid "start=2026-06-25;";
+	dcterms:creator "Almato AG";
+.

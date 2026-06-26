@@ -1,0 +1,14 @@
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+@prefix ogit.Academy:           <http://www.purl.org/ogit/Academy/> .
+
+ogit.Academy:launchUrl
+	a owl:DatatypeProperty;
+	rdfs:subPropertyOf ogit:Attribute;
+	rdfs:label "launchUrl";
+	dcterms:description "The stable course-level launch base URL / deep-link template on the LMS. The LMS appends session-specific parameters at launch time; this stored value is itself stable (it is NOT the per-session URL, and is distinct from the stable identifier ogit.Academy:activityId). Per-learner in-course resume position is Enrollment.resumeLocation.";
+	dcterms:valid "start=2026-06-25;";
+	dcterms:creator "Almato AG";
+.

@@ -32,5 +32,6 @@ ogit:Rating
 			[ ogit:rates  ogit.Auth:Application ]
 			[ ogit:rates  ogit.ServiceManagement:Service ]
 			[ ogit:rates  ogit.Forms:Form]
+			[ ogit:rates  ogit:Course ]
 	);
 .

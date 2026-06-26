@@ -1,0 +1,17 @@
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+@prefix ogit.Academy:           <http://www.purl.org/ogit/Academy/> .
+
+ogit.Academy:resultedIn
+	a owl:ObjectProperty;
+	rdfs:subPropertyOf ogit:Verb;
+	rdfs:label "resultedIn";
+	dcterms:description "Indicates the certificate that an enrollment's completion produced. The learner-side canonical edge remains ogit.Auth:Account -receives-> Certificate; the issuance service creates both edges atomically.";
+	dcterms:valid "start=2026-06-25;";
+	dcterms:creator "Almato AG";
+	dcterms:created "2026-06-25";
+	ogit:admin-contact "Almato AG";
+	ogit:tech-contact "Almato AG";
+.

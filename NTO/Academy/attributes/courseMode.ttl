@@ -1,0 +1,16 @@
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+@prefix ogit.Academy:           <http://www.purl.org/ogit/Academy/> .
+
+ogit.Academy:courseMode
+	a owl:DatatypeProperty;
+	rdfs:subPropertyOf ogit:Attribute;
+	rdfs:label "courseMode";
+	dcterms:description "The mode of course delivery. Aligns with schema.org courseMode (lowercase to match the schema.org / Google structured-data examples; an intentional fixed subset of the schema.org free-text field).";
+	dcterms:valid "start=2026-06-25;";
+	dcterms:creator "Almato AG";
+	ogit:validation-type "fixed";
+	ogit:validation-parameter "online,blended,onsite";
+.

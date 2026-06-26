@@ -23,6 +23,7 @@
 @prefix ogit:                   <http://www.purl.org/ogit/> .
 @prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms:                <http://purl.org/dc/terms/> .
+@prefix ogit.Academy:           <http://www.purl.org/ogit/Academy/> .
 
 ogit.Auth:Account
 	a rdfs:Class;
@@ -50,6 +51,8 @@ ogit.Auth:Account
           ogit.Auth.Account:acceptedProjectTerms
           ogit.Auth.Account:allowCookies
           ogit.Auth.Account:statusReason	
+          ogit.Academy:lmsActivatedAt
+          ogit.Academy:lmsActiveUntil
 	);
   ogit:indexed-attributes (
 
@@ -79,5 +82,8 @@ ogit.Auth:Account
 			[ ogit:supports  ogit.Project:Project ]
                         [ ogit:defines  ogit.UserMeta:Filter ]
 			[ ogit:repliedWith  ogit.Survey:Reply ]
+			[ ogit:has  ogit.Academy:Enrollment ]
+			[ ogit:receives  ogit:Certificate ]
+			[ ogit:receives   ogit.Forum:Award ]
 	);
 .

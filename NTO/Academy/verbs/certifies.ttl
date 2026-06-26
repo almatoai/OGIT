@@ -1,0 +1,17 @@
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+@prefix ogit.Academy:           <http://www.purl.org/ogit/Academy/> .
+
+ogit.Academy:certifies
+	a owl:ObjectProperty;
+	rdfs:subPropertyOf ogit:Verb;
+	rdfs:label "certifies";
+	dcterms:description "Indicates that a certificate (credential) certifies the achievement defined by a course. Disambiguates the Certificate->Course link from the generic ogit:relates.";
+	dcterms:valid "start=2026-06-25;";
+	dcterms:creator "Almato AG";
+	dcterms:created "2026-06-25";
+	ogit:admin-contact "Almato AG";
+	ogit:tech-contact "Almato AG";
+.

@@ -1,0 +1,48 @@
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+@prefix ogit.Academy:           <http://www.purl.org/ogit/Academy/> .
+
+ogit.Academy:Enrollment
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "Enrollment";
+	dcterms:description "A reified relationship between a learner and a course. CANONICAL learner edge: ogit.Auth:Account -has-> Enrollment (the SSO identity); reached from the Account via the incoming ogit:has edge (no outgoing Enrollment->learner edge). Carries xAPI Result and cmi5 lifecycle data plus the per-course LMS licence window. ogit:id listed conventionally.";
+	dcterms:valid "start=2026-06-25;";
+	dcterms:creator "Almato AG";
+	dcterms:created "2026-06-25";
+	ogit:admin-contact "Almato AG";
+	ogit:tech-contact "Almato AG";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:mandatory-attributes (
+		ogit.Academy:enrollmentStatus
+	);
+	ogit:optional-attributes (
+		ogit:id
+		ogit.Academy:lastVerb
+		ogit.Academy:registrationId
+		ogit.Academy:progress
+		ogit.Academy:completion
+		ogit.Academy:success
+		ogit.Academy:scoreScaled
+		ogit.Academy:scoreRaw
+		ogit.Academy:scoreMin
+		ogit.Academy:scoreMax
+		ogit.Academy:sessionDuration
+		ogit.Academy:resumeLocation
+		ogit.Academy:enrolledAt
+		ogit.Academy:startedAt
+		ogit.Academy:completedAt
+		ogit.Academy:lastActivityAt
+		ogit.Academy:licenseIssuedAt
+		ogit.Academy:licenseExpiresAt
+	);
+	ogit:indexed-attributes (
+		ogit.Academy:enrollmentStatus
+	);
+	ogit:allowed (
+		[ ogit.Academy:enrolledIn   ogit:Course ]
+		[ ogit.Academy:resultedIn   ogit:Certificate ]
+	);
+.
