@@ -1,0 +1,40 @@
+@prefix ogit:                 <http://www.purl.org/ogit/> .
+@prefix ogit.Integration:     <http://www.purl.org/ogit/Integration/> .
+@prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:              <http://purl.org/dc/terms/> .
+
+ogit.Integration:Authority
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "Authority";
+	dcterms:description """First-class authority record per PLAN D24. Carries
+	the legal or organisational authority on whose behalf a write or action
+	was performed. Forms the queryable authority chain: an external auditor
+	traverses authorisedBy / processedBy edges to answer 'who authorised
+	this data write' or 'on whose authority was this side effect caused'.
+	D35 makes the authority_id mandatory for every ActionInvoker call;
+	calls without it are rejected with 403 missing_authority before reaching
+	the source system.""";
+	dcterms:valid "start=2026-05-21;";
+	dcterms:creator "Almato AG";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:mandatory-attributes (
+		ogit.Integration:authorityLabel
+		ogit.Integration:authorityType
+	);
+	ogit:optional-attributes (
+		ogit.Integration:legalBasis
+		ogit.Integration:authorityScopeId
+		ogit.Integration:authorityExternalRef
+		ogit:validFrom
+		ogit:validTo
+	);
+	ogit:indexed-attributes (
+		ogit.Integration:authorityType
+		ogit.Integration:authorityScopeId
+	);
+	ogit:allowed (
+		[ ogit.Integration:delegatedFrom ogit.Integration:Authority ]
+	);
+.

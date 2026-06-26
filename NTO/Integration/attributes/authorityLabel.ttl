@@ -1,0 +1,14 @@
+@prefix ogit:                 <http://www.purl.org/ogit/> .
+@prefix ogit.Integration:     <http://www.purl.org/ogit/Integration/> .
+@prefix owl:                  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:              <http://purl.org/dc/terms/> .
+
+ogit.Integration:authorityLabel
+	a owl:DatatypeProperty;
+	rdfs:subPropertyOf ogit:Attribute;
+	rdfs:label "authorityLabel";
+	dcterms:description "Human-readable authority name. MUST be unique per Authority vertex (the framework enforces uniqueness at create-time; duplicate label rejects the create). Together with the OGIT vertex ogit/_id this attribute serves as the stable, queryable handle for an Authority. PLAN D35 requires a non-null authority reference on any framework call; the framework treats `authorityLabel` as that reference for human-readable logging while the immutable ogit/_id is the wire-level handle.";
+	dcterms:valid "start=2026-05-21;";
+	dcterms:creator "Almato AG";
+.

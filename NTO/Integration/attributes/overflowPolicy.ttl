@@ -1,0 +1,16 @@
+@prefix ogit:                 <http://www.purl.org/ogit/> .
+@prefix ogit.Integration:     <http://www.purl.org/ogit/Integration/> .
+@prefix owl:                  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:              <http://purl.org/dc/terms/> .
+
+ogit.Integration:overflowPolicy
+	a owl:DatatypeProperty;
+	rdfs:subPropertyOf ogit:Attribute;
+	rdfs:label "overflowPolicy";
+	dcterms:description "Outbound overflow policy per D26.3 (buffer_drop_oldest / fail_loud).";
+	ogit:validation-type "fixed";
+	ogit:validation-parameter "buffer_drop_oldest,fail_loud";
+	dcterms:valid "start=2026-05-21;";
+	dcterms:creator "Almato AG";
+.

@@ -1,0 +1,43 @@
+@prefix ogit:                              <http://www.purl.org/ogit/> .
+@prefix ogit.Integration.Decisions.PII:        <http://www.purl.org/ogit/Integration/Decisions/PII/> .
+@prefix ogit.Integration:                  <http://www.purl.org/ogit/Integration/> .
+@prefix rdfs:                              <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                           <http://purl.org/dc/terms/> .
+
+ogit.Integration.Decisions.PII:IdentityCandidate
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "IdentityCandidate";
+	dcterms:description """Pending identity resolution awaiting manual review.
+	Surfaces in the operator's review queue when a heuristic IdentityResolver
+	returns a borderline confidence (between low-reject and high-accept
+	thresholds) for a source record. Carries the source-record reference,
+	the ConnectorRun context, the list of candidate options (each an
+	IdentityCandidateOption sub-entity), and the evidence JSON the resolver
+	used. Lives under NTO/Integration/Decisions/ for PII-isolation per
+	Identity v2 Section 34 (right-to-erasure bounded target). The reused ogit:sourceId here is the raw source-record identifier -- acceptable on this PII-namespace entity (the former source_record_id [PII-CONDITIONAL] context: raw is acceptable and is purged on Right-to-Erasure together with the vertex); the generic base attribute cannot carry the marker, so the discipline is recorded on this entity.""";
+	dcterms:valid "start=2026-05-21;";
+	dcterms:creator "Almato AG";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:mandatory-attributes (
+		ogit.Integration:candidateStatus
+		ogit:sourceId
+		ogit.Integration:resolverId
+		ogit:createdAt
+	);
+	ogit:optional-attributes (
+		ogit.Integration:assignedReviewerId
+		ogit.Integration:resolvedAt
+		ogit.Integration:resolutionDecision
+		ogit.Integration:operatorNote
+	);
+	ogit:indexed-attributes (
+		ogit.Integration:candidateStatus
+		ogit.Integration:resolverId
+	);
+	ogit:allowed (
+		[ ogit.Integration:proposedBy   ogit.Integration:ConnectorRun ]
+		[ ogit.Integration:hasOption    ogit.Integration.Decisions.PII:IdentityCandidateOption ]
+	);
+.

@@ -1,0 +1,35 @@
+@prefix ogit:                              <http://www.purl.org/ogit/> .
+@prefix ogit.Integration.Decisions.PII:        <http://www.purl.org/ogit/Integration/Decisions/PII/> .
+@prefix ogit.Integration:                  <http://www.purl.org/ogit/Integration/> .
+@prefix rdfs:                              <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                           <http://purl.org/dc/terms/> .
+
+ogit.Integration.Decisions.PII:IdentityCandidateOption
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "IdentityCandidateOption";
+	dcterms:description """Sub-entity of IdentityCandidate. One candidate
+	vertex that the resolver returned as a possible identity match for the
+	source record, with its confidence score and the resolver's evidence
+	payload. An IdentityCandidate typically carries multiple options for
+	the reviewer to choose from.""";
+	dcterms:valid "start=2026-05-21;";
+	dcterms:creator "Almato AG";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:mandatory-attributes (
+		ogit.Integration:candidateVertexXid
+		ogit:confidence
+		ogit.Integration:evidencePayload
+	);
+	ogit:optional-attributes (
+		ogit:rank
+		ogit.Integration:resolverSubcomponentId
+	);
+	ogit:indexed-attributes (
+		ogit.Integration:candidateVertexXid
+	);
+	ogit:allowed (
+		[ ogit:isPartOf ogit.Integration.Decisions.PII:IdentityCandidate ]
+	);
+.

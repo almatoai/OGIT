@@ -1,0 +1,14 @@
+@prefix ogit:                 <http://www.purl.org/ogit/> .
+@prefix ogit.Integration:     <http://www.purl.org/ogit/Integration/> .
+@prefix owl:                  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:              <http://purl.org/dc/terms/> .
+
+ogit.Integration:durableSubstrate
+	a owl:DatatypeProperty;
+	rdfs:subPropertyOf ogit:Attribute;
+	rdfs:label "durableSubstrate";
+	dcterms:description "Durable substrate selector for outbound ack per D26.9. Today kafka is the only supported value; the attribute is intentionally extensible (no fixed validation) because additional substrates (e.g. Pulsar, NATS-JetStream) may be added without a schema change.";
+	dcterms:valid "start=2026-05-21;";
+	dcterms:creator "Almato AG";
+.

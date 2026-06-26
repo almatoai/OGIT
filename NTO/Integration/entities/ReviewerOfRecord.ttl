@@ -1,0 +1,37 @@
+@prefix ogit:                 <http://www.purl.org/ogit/> .
+@prefix ogit.Integration:     <http://www.purl.org/ogit/Integration/> .
+@prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:              <http://purl.org/dc/terms/> .
+
+ogit.Integration:ReviewerOfRecord
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "ReviewerOfRecord";
+	dcterms:description """Signed reviewer attestation for a Mapping- or
+	Conflict-Rule revision. Carries the reviewer identity, the version of
+	the rule under review, the review decision, and the signature payload.
+	Per Viktor fourth-batch Comment 13 multi-team governance (Identity v2
+	Section 29). Phase F deliverable for the certification gate.""";
+	dcterms:valid "start=2026-05-21;";
+	dcterms:creator "Almato AG";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:mandatory-attributes (
+		ogit:reviewedBy
+		ogit:revision
+		ogit.Integration:reviewDecision
+		ogit:reviewedAt
+		ogit.Integration:reviewerSignature
+	);
+	ogit:optional-attributes (
+		ogit.Integration:reviewNotes
+	);
+	ogit:indexed-attributes (
+		ogit:reviewedBy
+		ogit.Integration:reviewDecision
+	);
+	ogit:allowed (
+		[ ogit:reviews ogit.Integration:MappingRule ]
+		[ ogit:reviews ogit.Integration:ConflictResolutionRule ]
+	);
+.

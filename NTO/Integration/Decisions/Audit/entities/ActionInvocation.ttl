@@ -1,0 +1,49 @@
+@prefix ogit:                              <http://www.purl.org/ogit/> .
+@prefix ogit.Integration.Decisions.Audit:        <http://www.purl.org/ogit/Integration/Decisions/Audit/> .
+@prefix ogit.Integration:                  <http://www.purl.org/ogit/Integration/> .
+@prefix rdfs:                              <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                           <http://purl.org/dc/terms/> .
+
+ogit.Integration.Decisions.Audit:ActionInvocation
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "ActionInvocation";
+	dcterms:description """Short-lived vertex representing one Action-
+	Outbound invocation. Per PLAN D34 immutable after create; carries
+	actionId, operationType, target, createdAt, expected_closure (when
+	declared), plus edges to Authority and ConnectorRun. Exists while the
+	action is pending (closure open); after the lifecycle reaches a terminal
+	state, the vertex is retained for vertexTtlDays (default 90 per
+	ActionPolicy) and then hard-deleted.
+
+	Audit-namespace placement note: ActionInvocation lives in Decisions/Audit/
+	because the **audit-forever invariant applies to the TSDB streams**
+	(lifecycle + 16-field audit per PLAN D28 / D30a), not to the vertex
+	itself. The vertex is ephemeral by design (vertex-TTL after closure);
+	the audit content survives in the streams. Right-to-Erasure must NOT
+	touch the streams; the vertex hard-delete is operational housekeeping,
+	not an RtE event.""";
+	dcterms:valid "start=2026-05-21;";
+	dcterms:creator "Almato AG";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:mandatory-attributes (
+		ogit.Integration:actionId
+		ogit.Integration:operationType
+		ogit:createdAt
+	);
+	ogit:optional-attributes (
+		ogit.Integration:targetResourceRef
+		ogit.Integration:expectedClosurePayload
+		ogit.Integration:invocationAttempt
+		ogit.Integration:vertexTtlDeadline
+	);
+	ogit:indexed-attributes (
+		ogit.Integration:actionId
+		ogit.Integration:operationType
+	);
+	ogit:allowed (
+		[ ogit.Integration:invokedBy    ogit.Integration:ConnectorRun ]
+		[ ogit.Integration:authorisedBy ogit.Integration:Authority ]
+	);
+.

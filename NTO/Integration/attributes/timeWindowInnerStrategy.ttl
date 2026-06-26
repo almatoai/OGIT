@@ -1,0 +1,16 @@
+@prefix ogit:                 <http://www.purl.org/ogit/> .
+@prefix ogit.Integration:     <http://www.purl.org/ogit/Integration/> .
+@prefix owl:                  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:              <http://purl.org/dc/terms/> .
+
+ogit.Integration:timeWindowInnerStrategy
+	a owl:DatatypeProperty;
+	rdfs:subPropertyOf ogit:Attribute;
+	rdfs:label "timeWindowInnerStrategy";
+	dcterms:description "Sub-strategy applied within the timeWindowSeconds window for the time_window_bounded strategy. Any STRATEGY-NAME except time_window_bounded itself.";
+	ogit:validation-type "fixed";
+	ogit:validation-parameter "last_write_wins,source_priority,manual_review,expert_system_driven,constraint_derived,never_overwrite,service_managed";
+	dcterms:valid "start=2026-05-21;";
+	dcterms:creator "Almato AG";
+.

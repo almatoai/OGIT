@@ -1,0 +1,41 @@
+@prefix ogit:                 <http://www.purl.org/ogit/> .
+@prefix ogit.Integration:     <http://www.purl.org/ogit/Integration/> .
+@prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:              <http://purl.org/dc/terms/> .
+
+ogit.Integration:ConnectorRunConfigSnapshot
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "ConnectorRunConfigSnapshot";
+	dcterms:description """Immutable per-Run vertex created at ConnectorRun
+	start. Captures the exact rule set the Run executes against -- mapping
+	rules, netting policy, identity-resolver configuration, conflict-
+	resolution rules, sovereignty manifest, weaving rules, action policy,
+	data-classification assignments -- as immutable JSON payloads or
+	hash-plus-payload pairs. Locks the Viktor-R2 invariant that rules and
+	configuration do not change during a Run; rule changes take effect on
+	the next Run. Per PLAN D28.""";
+	dcterms:valid "start=2026-05-21;";
+	dcterms:creator "Almato AG";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:mandatory-attributes (
+		ogit.Integration:snapshotTakenAt
+		ogit:version
+		ogit.Integration:mappingRulesHash
+		ogit.Integration:mappingRulesPayload
+		ogit.Integration:nettingPolicyPayload
+		ogit.Integration:conflictRulesPayload
+	);
+	ogit:optional-attributes (
+		ogit.Integration:identityResolverConfigPayload
+		ogit.Integration:sovereigntyManifestPayload
+		ogit.Integration:weavingRulesPayload
+		ogit.Integration:actionPolicyPayload
+		ogit.Integration:dataClassificationPayload
+	);
+	ogit:indexed-attributes (
+		ogit.Integration:mappingRulesHash
+	);
+	ogit:allowed ( );
+.

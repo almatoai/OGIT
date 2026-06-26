@@ -1,0 +1,16 @@
+@prefix ogit:                 <http://www.purl.org/ogit/> .
+@prefix ogit.Integration:     <http://www.purl.org/ogit/Integration/> .
+@prefix owl:                  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:              <http://purl.org/dc/terms/> .
+
+ogit.Integration:preserveIntermediateStates
+	a owl:DatatypeProperty;
+	rdfs:subPropertyOf ogit:Attribute;
+	rdfs:label "preserveIntermediateStates";
+	dcterms:description "Per-MappingRule toggle: when true, the Coalescer lets every observed value through to the Hot-tier (TSDB-Provenance retains all values regardless). When false, intermediate states may be collapsed (Netting v2 Section 7.7.1 -- Cy R3 cluster N1).";
+	ogit:validation-type "fixed";
+	ogit:validation-parameter "true,false";
+	dcterms:valid "start=2026-05-29;";
+	dcterms:creator "Almato AG";
+.

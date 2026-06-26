@@ -1,0 +1,46 @@
+@prefix ogit:                 <http://www.purl.org/ogit/> .
+@prefix ogit.Integration:     <http://www.purl.org/ogit/Integration/> .
+@prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:              <http://purl.org/dc/terms/> .
+
+ogit.Integration:ConflictLock
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "ConflictLock";
+	dcterms:description """[DEPRECATED-ON-F9-LANDING] Operational infrastructure
+	entity that serialises concurrent writes against a single target vertex
+	when the Knowledge Core does not yet ship native If-Match optimistic
+	concurrency control. The holder claims the lock, performs the write or
+	merge, then releases it. The TTL provides a backstop reclamation path
+	in case the holder crashes. Lives outside Decisions/ because it carries
+	no per-Subject information (Identity v2 Section 5.3). When the Knowledge
+	Core ships native If-Match OCC via ogit/_v (PLAN F9), this entity, the
+	six attributes (lockedVertexXid, holderId, acquiredAt, ttlSeconds,
+	holderKind, expectedReleaseAt) and the four-step acquire-check-operate-
+	release protocol retire together in a follow-up OGIT PR. The concrete retirement mechanism is now on the table: the generic batch-operation facility's `preconditions` field with `expected_version` as the server-side If-Match (F6a follow-up; AO quorum question 2026-06-11, batch-occ-ifmatch). The locked vertex
+	is referenced by the lockedVertexXid attribute (a soft reference), not by an
+	edge: OGIT has no any-vertex edge target. Forward-compatible: blueprint code never sees the entity; it
+	is a kernel-internal mechanism. The [DEPRECATED-ON-F9-LANDING] prefix
+	is a machine-greppable Almato convention so tooling can suppress
+	permanent-binding generation. Viktor R3 Feedback 2026-06-01.""";
+	dcterms:valid "start=2026-05-29;";
+	dcterms:creator "Almato AG";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:mandatory-attributes (
+		ogit.Integration:lockedVertexXid
+		ogit.Integration:holderId
+		ogit.Integration:acquiredAt
+		ogit.Integration:ttlSeconds
+	);
+	ogit:optional-attributes (
+		ogit.Integration:holderKind
+		ogit.Integration:expectedReleaseAt
+	);
+	ogit:indexed-attributes (
+		ogit.Integration:lockedVertexXid
+		ogit.Integration:holderId
+	);
+	ogit:allowed (
+	);
+.

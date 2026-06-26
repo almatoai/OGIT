@@ -1,0 +1,14 @@
+@prefix ogit:                 <http://www.purl.org/ogit/> .
+@prefix ogit.Integration:     <http://www.purl.org/ogit/Integration/> .
+@prefix owl:                  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:              <http://purl.org/dc/terms/> .
+
+ogit.Integration:proposedTargetXids
+	a owl:DatatypeProperty;
+	rdfs:subPropertyOf ogit:Attribute;
+	rdfs:label "proposedTargetXids";
+	dcterms:description "List of at least two target-vertex identifiers the split job will create from one source vertex (Identity v2 Section 7.2). Serialised as a JSON array of vertex-id strings; OGIT has no native list datatype, so the framework parses the array at the persistence boundary and rejects arrays with fewer than two elements.";
+	dcterms:valid "start=2026-05-29;";
+	dcterms:creator "Almato AG";
+.

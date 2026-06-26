@@ -1,0 +1,45 @@
+@prefix ogit:                 <http://www.purl.org/ogit/> .
+@prefix ogit.Integration:     <http://www.purl.org/ogit/Integration/> .
+@prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:              <http://purl.org/dc/terms/> .
+
+ogit.Integration:ConflictResolutionRule
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "ConflictResolutionRule";
+	dcterms:description """Per-attribute conflict resolution choice. Selects
+	one of the seven D14 closed-set strategies (last_write_wins,
+	source_priority, manual_review, expert_system_driven,
+	time_window_bounded, constraint_derived, never_overwrite;
+	canonical names per Identity v2 Section 6.1) OR the D23
+	service_managed strategy (framework-owned scoring with author-
+	seeded Beta-Posteriori updates). No bidirectional MappingRule may
+	exist without a corresponding ConflictResolutionRule -- framework
+	refuses Run start otherwise (D14 no-silent-defaults).""";
+	dcterms:valid "start=2026-05-21;";
+	dcterms:creator "Almato AG";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:mandatory-attributes (
+		ogit.Integration:strategy
+		ogit.Integration:targetAttribute
+	);
+	ogit:optional-attributes (
+		ogit.Integration:sourcePriorityList
+		ogit.Integration:expertRuleExpression
+		ogit.Integration:mergeSetOperation
+		ogit.Integration:mergeNumericOperation
+		ogit.Integration:timeWindowSeconds
+		ogit.Integration:timeWindowInnerStrategy
+		ogit.Integration:constraintExpression
+	);
+	ogit:indexed-attributes (
+		ogit.Integration:strategy
+		ogit.Integration:targetAttribute
+	);
+	ogit:allowed (
+		[ ogit.Integration:declaredBy        ogit.Integration:Connector ]
+		[ ogit.Integration:appliesToMapping  ogit.Integration:MappingRule ]
+		[ ogit:uses    ogit.Integration:ConflictScoreModel ]
+	);
+.

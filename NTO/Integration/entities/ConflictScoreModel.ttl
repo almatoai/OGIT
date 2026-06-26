@@ -1,0 +1,38 @@
+@prefix ogit:                 <http://www.purl.org/ogit/> .
+@prefix ogit.Integration:     <http://www.purl.org/ogit/Integration/> .
+@prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:              <http://purl.org/dc/terms/> .
+
+ogit.Integration:ConflictScoreModel
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "ConflictScoreModel";
+	dcterms:description """Service-managed conflict resolution scoring per
+	D23. Holds per-source trust priors (author-seeded), accumulated
+	posterior updates from operator-supplied feedback, and the
+	Exponentially-Weighted-Moving-Average secondary tracking for retrospective
+	dual-algorithm comparison. Two-level granularity: a global model plus
+	per-scope override. The 'stable value being overwritten by a high-trust
+	source' signal is treated as HIGH-signal (Chris D23 inversion). The
+	model is framework-owned, not a per-connector implementation.""";
+	dcterms:valid "start=2026-05-21;";
+	dcterms:creator "Almato AG";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:mandatory-attributes (
+		ogit.Integration:modelScope
+		ogit.Integration:authorSeededPriorsPayload
+		ogit.Integration:betaPosterioriPayload
+	);
+	ogit:optional-attributes (
+		ogit.Integration:ewmaSecondaryPayload
+		ogit.Integration:overrideScopeId
+		ogit.Integration:lastRecomputeAt
+	);
+	ogit:indexed-attributes (
+		ogit.Integration:modelScope
+		ogit.Integration:overrideScopeId
+	);
+	ogit:allowed (
+	);
+.
