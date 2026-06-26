@@ -1,0 +1,65 @@
+@prefix ogit:                              <http://www.purl.org/ogit/> .
+@prefix ogit.Integration.Decisions.Audit:        <http://www.purl.org/ogit/Integration/Decisions/Audit/> .
+@prefix ogit.Integration:                  <http://www.purl.org/ogit/Integration/> .
+@prefix rdfs:                              <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                           <http://purl.org/dc/terms/> .
+
+ogit.Integration.Decisions.Audit:SchemaDriftCandidate
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "SchemaDriftCandidate";
+	dcterms:description """Pending review for a source record that no
+	MappingRule version recognises. Created when a connector reads a
+	source field shape not covered by any version-conditional MappingRule
+	(per Identity v2 Section 25 / SourceVersion entity). Operator inspects
+	the unrecognised payload and decides: add a MappingRule for the new
+	source version, ignore the field, or escalate to source-team. Per
+	Viktor fourth-batch Comment 9 migration-resilience.
+
+	PII discipline (this entity lives in Decisions/Audit/ which survives
+	Right-to-Erasure): sourceId and unrecognisedPayload MUST
+	be pseudonymised at ingest -- the audit-forever guarantee covers
+	the structural record, not raw PII content. Both attributes carry
+	the [PII-CONDITIONAL] / [PII-PSEUDONYMISED-REQUIRED] description
+	prefix; the framework's pre-persistence transform (concept doc
+	Section 6.2) enforces the scrubbing rule before any
+	SchemaDriftCandidate vertex is created. Schema-level enforcement
+	is not possible in OGIT today; the constraint is a framework-
+	boundary contract.
+
+	**Residual-risk acknowledgment (concept doc Section 6.2):** the
+	mandatory cardinality of both attributes plus the audit-forever
+	namespace placement means that if the pre-persistence transform
+	is bypassed (direct graph API call, migration script, framework
+	bug) raw PII can land in `Decisions/Audit/` permanently with no
+	RtE recovery path. The schema has no fallback. Mitigations:
+	(a) every create path MUST go through the framework's
+	`SchemaDriftCandidateService`; (b) the framework rejects creates
+	where the values fail a sentinel-prefix check on the pseudonym
+	format; (c) periodic forensic scans on `Decisions/Audit/` detect
+	policy violations. The schema-level alternative -- making both
+	attributes optional -- was rejected because a null source-record
+	identifier destroys the audit value.""";
+	dcterms:valid "start=2026-05-21;";
+	dcterms:creator "Almato AG";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:mandatory-attributes (
+		ogit.Integration:driftStatus
+		ogit.Integration:detectedAt
+		ogit.Integration:unrecognisedPayload
+		ogit:sourceId
+	);
+	ogit:optional-attributes (
+		ogit.Integration:assignedReviewerId
+		ogit.Integration:resolvedAt
+		ogit.Integration:resolutionDecision
+	);
+	ogit:indexed-attributes (
+		ogit.Integration:driftStatus
+	);
+	ogit:allowed (
+		[ ogit.Integration:detectedFor   ogit.Integration:ConnectorInstance ]
+		[ ogit.Integration:relatedToVersion ogit.Integration:SourceVersion ]
+	);
+.

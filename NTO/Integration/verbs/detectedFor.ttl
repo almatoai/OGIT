@@ -1,0 +1,15 @@
+@prefix ogit:                 <http://www.purl.org/ogit/> .
+@prefix ogit.Integration:     <http://www.purl.org/ogit/Integration/> .
+@prefix owl:                  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:              <http://purl.org/dc/terms/> .
+
+ogit.Integration:detectedFor
+	a owl:ObjectProperty;
+	rdfs:subPropertyOf ogit:Verb;
+	rdfs:label "detectedFor";
+	dcterms:description "A ValueDriftCandidate was detected for a specific MappingRule; a SchemaDriftCandidate was detected for a specific ConnectorInstance. The verb has a polymorphic range (MappingRule from ValueDriftCandidate, ConnectorInstance from SchemaDriftCandidate); the source-entity type unambiguously determines the target type, so the polymorphism is documented and accepted. Splitting into `detectedForMapping` / `detectedForInstance` was considered and rejected because the two candidate types share the audit shape and a single edge name reads more naturally in drift-history queries.";
+	dcterms:valid "start=2026-05-21;";
+	dcterms:creator "Almato AG";
+	ogit:cardinality "many2one";
+.

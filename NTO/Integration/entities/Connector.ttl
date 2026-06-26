@@ -1,0 +1,44 @@
+@prefix ogit:                 <http://www.purl.org/ogit/> .
+@prefix ogit.Integration:     <http://www.purl.org/ogit/Integration/> .
+@prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:              <http://purl.org/dc/terms/> .
+
+ogit.Integration:Connector
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "Connector";
+	dcterms:description """A published, versioned blueprint that defines a
+	connection between Bardioc and a single source system. Carries the
+	connector's mapping rules, netting policy default, conflict resolution
+	rules, weaving rules, action policy, optional identity-resolver
+	configuration, and code-surface handler references. A Connector is
+	instantiated at deploy time as one or more ConnectorInstances.
+	Per PLAN D6 (eight stages, three trigger modes) and D11 (NTO/Integration).""";
+	dcterms:valid "start=2026-05-21;";
+	dcterms:creator "Almato AG";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:mandatory-attributes (
+		ogit:version
+		ogit.Integration:frameworkMin
+		ogit.Integration:frameworkMax
+	);
+	ogit:optional-attributes (
+		ogit.Integration:sourceSystemId
+		ogit:author
+		ogit.Integration:signingCertificateRef
+		ogit.Integration:deprecationPhase
+	);
+	ogit:indexed-attributes (
+		ogit:version
+		ogit.Integration:sourceSystemId
+	);
+	ogit:allowed (
+		[ ogit.Integration:declaresMappingRule    ogit.Integration:MappingRule ]
+		[ ogit.Integration:declaresNettingPolicy  ogit.Integration:NettingPolicy ]
+		[ ogit.Integration:declaresConflictRule   ogit.Integration:ConflictResolutionRule ]
+		[ ogit.Integration:declaresWeavingRule    ogit.Integration:WeavingRule ]
+		[ ogit.Integration:declaresActionPolicy   ogit.Integration:ActionPolicy ]
+		[ ogit.Integration:declaresSourceVersion  ogit.Integration:SourceVersion ]
+	);
+.

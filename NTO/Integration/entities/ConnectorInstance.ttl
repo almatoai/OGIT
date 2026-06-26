@@ -1,0 +1,44 @@
+@prefix ogit:                 <http://www.purl.org/ogit/> .
+@prefix ogit.Integration:     <http://www.purl.org/ogit/Integration/> .
+@prefix ogit.Auth:            <http://www.purl.org/ogit/Auth/> .
+@prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:              <http://purl.org/dc/terms/> .
+
+ogit.Integration:ConnectorInstance
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "ConnectorInstance";
+	dcterms:description """One live deployment of a Connector against a
+	specific external system. A typical Bardioc deployment carries ~100-1000
+	ConnectorInstances; a DATAGROUP-scale customer operates roughly 200 per
+	tenant. Each Instance has its own endpoint configuration, its own
+	credentials reference, its own per-instance NettingPolicy override (if
+	any), and its own metrics. Per PLAN D6, D11.""";
+	dcterms:valid "start=2026-05-21;";
+	dcterms:creator "Almato AG";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:mandatory-attributes (
+		ogit.Integration:endpoint
+		ogit.Integration:credentialsRef
+		ogit.Integration:scopeId
+		ogit.Integration:customerId
+		ogit.Integration:instanceStatus
+		ogit.Integration:triggerMode
+	);
+	ogit:optional-attributes (
+		ogit.Integration:nettingPolicyOverrideRef
+		ogit.Integration:actionPolicyOverrideRef
+		ogit.Integration:dataMaturityTier
+	);
+	ogit:indexed-attributes (
+		ogit.Integration:scopeId
+		ogit.Integration:customerId
+		ogit.Integration:instanceStatus
+	);
+	ogit:allowed (
+		[ ogit.Integration:instanceOf      ogit.Integration:Connector ]
+		[ ogit.Integration:operatesIn      ogit.Auth:DataScope ]
+		[ ogit.Integration:hasSignalEntity ogit.Integration:SignalEntity ]
+	);
+.

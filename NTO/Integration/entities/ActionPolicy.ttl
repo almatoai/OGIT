@@ -1,0 +1,52 @@
+@prefix ogit:                 <http://www.purl.org/ogit/> .
+@prefix ogit.Integration:     <http://www.purl.org/ogit/Integration/> .
+@prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:              <http://purl.org/dc/terms/> .
+
+ogit.Integration:ActionPolicy
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "ActionPolicy";
+	dcterms:description """Per-operation-type policy block for Action-Outbound
+	operations. Sibling to NettingPolicy. Carries idempotency configuration
+	(dedupWindowSeconds, sourceIdempotencyHeader), the optional closure
+	specification (timeout, matchCriteria.data_path, matchCriteria.equals,
+	on_timeout policy, retry_limit), rate-limit parameters, breaker
+	configuration, and the vertexTtlDays for ActionInvocation cleanup.
+	authoritySource declares the authority-resolution logic for the
+	operationType per D35. Per PLAN D33; detail in
+	09_four_modes_concept.md Section 6.""";
+	dcterms:valid "start=2026-05-21;";
+	dcterms:creator "Almato AG";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:mandatory-attributes (
+		ogit.Integration:operationType
+		ogit.Integration:authoritySource
+		ogit.Integration:dedupWindowSeconds
+	);
+	ogit:optional-attributes (
+		ogit.Integration:sourceIdempotencyHeader
+		ogit.Integration:closureEnabled
+		ogit.Integration:closureTimeoutSeconds
+		ogit.Integration:closureMatchDataPath
+		ogit.Integration:closureMatchEquals
+		ogit.Integration:closureOnTimeout
+		ogit.Integration:closureRetryLimit
+		ogit.Integration:sourceRetryOnFailure
+		ogit.Integration:sourceRetryLimit
+		ogit.Integration:rateLimitMaxPerMinute
+		ogit.Integration:rateLimitBurst
+		ogit.Integration:breakerEnabled
+		ogit.Integration:breakerFailureThreshold
+		ogit.Integration:breakerCooldownSeconds
+		ogit.Integration:vertexTtlDays
+	);
+	ogit:indexed-attributes (
+		ogit.Integration:operationType
+	);
+	ogit:allowed (
+		[ ogit.Integration:declaredBy ogit.Integration:Connector ]
+		[ ogit.Integration:appliesTo  ogit.Integration:ConnectorInstance ]
+	);
+.
