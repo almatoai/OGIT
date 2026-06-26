@@ -13,6 +13,7 @@
 @prefix ogit.Network:           <http://www.purl.org/ogit/Network/> .
 @prefix ogit.Project:           <http://www.purl.org/ogit/Project/> .
 @prefix ogit.Factory:   <http://www.purl.org/ogit/Factory/> .
+@prefix ogit.FinancialMarket: <http://www.purl.org/ogit/FinancialMarket/> .
 @prefix ogit.ServiceManagement: <http://www.purl.org/ogit/ServiceManagement/> .
 @prefix ogit.CustomerSupport: <http://www.purl.org/ogit/CustomerSupport/> .
 @prefix ogit.Mobile: <http://www.purl.org/ogit/Mobile/> .
@@ -147,6 +148,7 @@ ogit:Person
 			[ ogit:consumes  ogit.Project:Project ]
 			[ ogit:resolves  ogit.ServiceManagement:Ticket ]
 			[ ogit:represents  ogit:Organization ]
+			[ ogit:has  ogit.FinancialMarket:OwnershipRelation ]
 			[ ogit:represents  ogit:Person ]
 			[ ogit:follows  ogit:Person ]
 			[ ogit:rejects  ogit:Alert ]
