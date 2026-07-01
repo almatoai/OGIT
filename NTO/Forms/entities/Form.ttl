@@ -40,5 +40,6 @@ ogit.Forms:Form
 		[ ogit:complies  ogit.Legal:LegalClause ]
 		[ ogit:complies  ogit.Legal:LegalNorm ]
 		[ ogit:has       ogit:Attachment ]
+		[ ogit:precedes  ogit.Forms:Form]
 	);
 .
