@@ -178,7 +178,7 @@ The ogit/function attribute should be used to tell what kind of grouping an enti
 			[ ogit:locatedIn ogit.Location:Address ]
 			[ ogit:leads ogit.Religion:BeliefSystem ]
 			[ ogit:follows ogit.Religion:BeliefSystem ]
-			[ ogit:manages ogit.Forms:Form]
+			[ ogit:provides ogit.Forms:Form]
 
 			# --- OSINT Security Extension additions (2026-05-02) ---
 			# Reuse existing verbs (extending allowed-target lists)
