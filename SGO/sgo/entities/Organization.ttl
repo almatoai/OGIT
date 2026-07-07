@@ -60,6 +60,7 @@ The ogit/function attribute should be used to tell what kind of grouping an enti
 		ogit:function
 		ogit:status
 		ogit:email
+		ogit:fax
 		ogit:streetAddress
 		ogit:city
 		ogit:country
@@ -69,6 +70,7 @@ The ogit/function attribute should be used to tell what kind of grouping an enti
 		ogit:tenantId
 		ogit:sourceId
 		ogit:phone
+		ogit:mobilePhone
 		ogit:alias
 		ogit:externalId
 		ogit:sharedWith
