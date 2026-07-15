@@ -1,0 +1,13 @@
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+
+ogit:followers
+	a owl:DatatypeProperty;
+	rdfs:subPropertyOf ogit:Attribute;
+	rdfs:label "followers";
+	dcterms:description "References to followers interested in this entity, provided as comma-separated values (email addresses, IDs, references, etc.).";
+	dcterms:valid "start=2026-07-15;";
+	dcterms:creator "Federico Gutt";
+.
