@@ -30,6 +30,7 @@ ogit.Forms:Form
 		ogit:tenantId
 		ogit:favorite
 		ogit:email
+		ogit:followers
 	);
 	ogit:indexed-attributes (
 	);
