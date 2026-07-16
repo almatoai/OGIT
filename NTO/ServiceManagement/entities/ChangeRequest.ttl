@@ -36,6 +36,8 @@ ogit.ServiceManagement:ChangeRequest
 		ogit:id
 	);
 	ogit:optional-attributes (
+		ogit:name
+		ogit:url
 		ogit:risk
 		ogit:justification
 		ogit:category
