@@ -1,0 +1,35 @@
+@prefix ogit.Compliance:        <http://www.purl.org/ogit/Compliance/> .
+@prefix ogit.ServiceManagement: <http://www.purl.org/ogit/ServiceManagement/> .
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+
+ogit.Compliance:PrivacyDeclaration
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "PrivacyDeclaration";
+	dcterms:description "A declaration containing information about the processing of personal data, such as data privacy document, a protection policy, or processing information sheet, to meet privacy laws such as GDPR.";
+	dcterms:valid "start=2026-07-16;";
+	dcterms:creator "Federico Gutt";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:blob "true";
+	ogit:mandatory-attributes (
+	);
+	ogit:optional-attributes (
+		ogit.Compliance:processingPurpose
+		ogit.Compliance:legalBasis
+		ogit.Compliance:dataCategories
+		ogit:recipients
+		ogit.Compliance:thirdCountryTransfer
+		ogit:duration
+		ogit.Compliance:provisionRequirement
+		ogit.Compliance:automatedDecisionMaking
+		ogit:source
+	);
+	ogit:indexed-attributes (
+	);
+	ogit:allowed (
+		[ ogit:references ogit.ServiceManagement:ChangeRequest ]
+	);
+.
