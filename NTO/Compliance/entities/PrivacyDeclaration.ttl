@@ -17,6 +17,7 @@ ogit.Compliance:PrivacyDeclaration
 	ogit:mandatory-attributes (
 	);
 	ogit:optional-attributes (
+		ogit:type
 		ogit.Compliance:processingPurpose
 		ogit.Compliance:legalBasis
 		ogit.Compliance:dataCategories
