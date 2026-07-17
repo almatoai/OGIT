@@ -1,0 +1,14 @@
+@prefix ogit.Compliance:     <http://www.purl.org/ogit/Compliance/> .
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+
+ogit.Compliance:processingPurpose
+	a owl:DatatypeProperty;
+	rdfs:subPropertyOf ogit:Attribute;
+	rdfs:label "processingPurpose";
+	dcterms:description "The purpose for which personal data are processed, as required by GDPR Article 6.";
+	dcterms:valid "start=2026-07-16;";
+	dcterms:creator "Federico Gutt";
+.
