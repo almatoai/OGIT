@@ -29,16 +29,22 @@ ogit.Datacenter:Rack
 		
 	);
 	ogit:optional-attributes (
+		ogit:name
 		ogit:id
+		ogit:description
+		ogit:status
 		ogit:capacity
 		ogit:brand
 		ogit:model
+		ogit:serialNumber
+		ogit:assetTag
 		ogit:purchaseDate
 		ogit.Datacenter:moveProductionDate
 		ogit:endOfWarranty
 		ogit.Datacenter:roomId
 		ogit:weight
 		ogit:powerConsumption
+		ogit:lastUpdatedAt
 	);
 	ogit:indexed-attributes (
 		
@@ -47,5 +53,6 @@ ogit.Datacenter:Rack
 			[ ogit:contains  ogit.Datacenter:Sensor ]
 			[ ogit:contains  ogit.Datacenter:PowerDistributionUnit ]
 			[ ogit:contains  ogit:Device ]
+			[ ogit:has  ogit:Tag ]
 	);
 .

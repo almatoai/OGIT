@@ -17,7 +17,11 @@ ogit.Datacenter.Virtual:Cluster
 		ogit:name
 	);
 	ogit:optional-attributes (
-
+		ogit:id
+		ogit:type
+		ogit:description
+		ogit:status
+		ogit:lastUpdatedAt
 	);
 	ogit:indexed-attributes (
 		
@@ -25,5 +29,7 @@ ogit.Datacenter.Virtual:Cluster
 	ogit:allowed (
 			[ ogit:runsOn  ogit.Datacenter.Virtual:PhysicalHost ]
 			[ ogit:belongs  ogit.Datacenter.Virtual:Datacenter ]
+			[ ogit:runsOn  ogit:Device ]
+			[ ogit:has  ogit:Tag ]
 	);
 .

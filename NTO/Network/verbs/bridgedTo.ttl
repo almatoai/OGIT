@@ -1,0 +1,14 @@
+@prefix ogit.Network:           <http://www.purl.org/ogit/Network/> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+
+ogit.Network:bridgedTo
+	a owl:ObjectProperty;
+	rdfs:subPropertyOf ogit:Verb;
+	rdfs:label "bridgedTo";
+	dcterms:description "Asserts that a network interface is bridged to another one, forwarding frames between them at layer 2 while neither contains the other. Distinct from ogit:connects, which asserts a physical or virtual link, and from ogit:contains, which nests a logical interface in the one it runs on. Cardinality: many2one.";
+	dcterms:valid "start=2026-08-31;";
+	dcterms:creator "Erik Wilfling";
+.

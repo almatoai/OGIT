@@ -21,6 +21,7 @@ ogit:Region
 	);
 	ogit:optional-attributes (
 		ogit:name
+		ogit:id
 		ogit:description
 		ogit:type
 		ogit:area
@@ -54,5 +55,6 @@ ogit:Region
 		[ ogit:isMemberOf  ogit:Organization ]
 		[ ogit:generates  ogit:Timeseries ]
 		[ ogit:has ogit:Attachment ]
+		[ ogit:has ogit:Tag ]
 	);
 .

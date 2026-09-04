@@ -1,17 +1,16 @@
 @prefix ogit.Network:           <http://www.purl.org/ogit/Network/> .
-@prefix ogit.Location:           <http://www.purl.org/ogit/Location/> .
-@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix ogit.MRP:               <http://www.purl.org/ogit/MRP/> .
 @prefix ogit:                   <http://www.purl.org/ogit/> .
 @prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms:                <http://purl.org/dc/terms/> .
 
-ogit.Network:Site
+ogit.Network:DeviceType
 	a rdfs:Class;
 	rdfs:subClassOf ogit:Entity;
-	rdfs:label "Site";
-	dcterms:description "A site located in on place, which contains a  geographically concentrated computer network.";
-	dcterms:valid "start=2020-09-04;";
-	dcterms:creator "Marek Meyer";
+	rdfs:label "DeviceType";
+	dcterms:description "A model of hardware device as offered by a manufacturer. All devices of the same type share its physical characteristics, such as the space it occupies in a rack and its weight.";
+	dcterms:valid "start=2026-08-31;";
+	dcterms:creator "Erik Wilfling";
 	ogit:scope "NTO";
 	ogit:parent ogit:Node;
 	ogit:mandatory-attributes (
@@ -19,20 +18,17 @@ ogit.Network:Site
 	);
 	ogit:optional-attributes (
 		ogit:id
-		ogit:name
+		ogit:model
 		ogit:description
-		ogit:status
-		ogit:timeZone
-		ogit:latitude
-		ogit:longitude
+		ogit:capacity
+		ogit:weight
+		ogit.MRP:partNumber
 		ogit:lastUpdatedAt
 	);
 	ogit:indexed-attributes (
 		
 	);
 	ogit:allowed (
-			[ ogit:locatedIn ogit.Location:NUTSLevel3 ]
-			[ ogit:locatedIn ogit:Region ]
 			[ ogit:has ogit:Tag ]
 	);
 .

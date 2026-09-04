@@ -42,5 +42,7 @@ ogit.CustomerSupport:Group
 		[ ogit:isResponsibleFor ogit.ServiceManagement:Ticket ]
 		[ ogit:isResponsibleFor ogit:ConfigurationItem ]
 		[ ogit:isResponsibleFor ogit:Comment ]
+		[ ogit:isPartOf ogit.CustomerSupport:Group ]
+		[ ogit:has ogit:Tag ]
 	);
 .

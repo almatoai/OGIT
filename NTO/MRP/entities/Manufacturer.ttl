@@ -32,11 +32,17 @@ ogit.MRP:Manufacturer
 	ogit:mandatory-attributes (
 	);
 	ogit:optional-attributes (
+		ogit:name
+		ogit:id
+		ogit:description
+		ogit:lastUpdatedAt
 	);
     ogit:indexed-attributes (
     );
 	ogit:allowed (
 			[ ogit:relates  ogit:Organization ]
 			[ ogit.MRP:manufacture  ogit.MRP:Part ]
+			[ ogit.MRP:manufacture  ogit.Network:DeviceType ]
+			[ ogit:has  ogit:Tag ]
 	);
 .
