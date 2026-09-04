@@ -1,0 +1,14 @@
+@prefix ogit:                 <http://www.purl.org/ogit/> .
+@prefix ogit.HR:              <http://www.purl.org/ogit/HR/> .
+@prefix owl:                  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:              <http://purl.org/dc/terms/> .
+
+ogit.HR:headcountFte
+	a owl:DatatypeProperty;
+	rdfs:subPropertyOf ogit:Attribute;
+	rdfs:label "headcountFte";
+	dcterms:description "Number of subordinate staff, counted in full-time equivalents.";
+	dcterms:valid "start=2026-08-16;";
+	dcterms:creator "Almato AG";
+.

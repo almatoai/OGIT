@@ -8,11 +8,15 @@ ogit.Integration:Connector
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "Connector";
 	dcterms:description """A published, versioned blueprint that defines a
-	connection between Bardioc and a single source system. Carries the
-	connector's mapping rules, netting policy default, conflict resolution
-	rules, weaving rules, action policy, optional identity-resolver
-	configuration, and code-surface handler references. A Connector is
-	instantiated at deploy time as one or more ConnectorInstances.
+	connection between Bardioc and a single source system. The blueprint is a
+	signed document and the Connector CARRIES it, in ogit:content, with
+	ogit:mimeType naming the serialisation. The document embeds its own
+	integrity hash under its "signature" key, so no separate hash attribute
+	exists: that value has one owner. The rules inside it -- field mappings,
+	transforms, netting, conflict resolution -- are parts of that document and
+	are deliberately not modelled as vertices. Weaving rules are the exception
+	and are declared as vertices, because a framework runtime builds them. A
+	Connector is instantiated at deploy time as one or more ConnectorInstances.
 	Per PLAN D6 (eight stages, three trigger modes) and D11 (NTO/Integration).""";
 	dcterms:valid "start=2026-05-21;";
 	dcterms:creator "Almato AG";
@@ -28,17 +32,14 @@ ogit.Integration:Connector
 		ogit:author
 		ogit.Integration:signingCertificateRef
 		ogit.Integration:deprecationPhase
+		ogit:content
+		ogit:mimeType
 	);
 	ogit:indexed-attributes (
 		ogit:version
 		ogit.Integration:sourceSystemId
 	);
 	ogit:allowed (
-		[ ogit.Integration:declaresMappingRule    ogit.Integration:MappingRule ]
-		[ ogit.Integration:declaresNettingPolicy  ogit.Integration:NettingPolicy ]
-		[ ogit.Integration:declaresConflictRule   ogit.Integration:ConflictResolutionRule ]
-		[ ogit.Integration:declaresWeavingRule    ogit.Integration:WeavingRule ]
-		[ ogit.Integration:declaresActionPolicy   ogit.Integration:ActionPolicy ]
-		[ ogit.Integration:declaresSourceVersion  ogit.Integration:SourceVersion ]
+		[ ogit:contains ogit.Integration:WeavingRule ]
 	);
 .

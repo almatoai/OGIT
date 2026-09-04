@@ -1,0 +1,14 @@
+@prefix ogit:                 <http://www.purl.org/ogit/> .
+@prefix ogit.HR:              <http://www.purl.org/ogit/HR/> .
+@prefix owl:                  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:              <http://purl.org/dc/terms/> .
+
+ogit.HR:timeShare
+	a owl:DatatypeProperty;
+	rdfs:subPropertyOf ogit:Attribute;
+	rdfs:label "timeShare";
+	dcterms:description "Percentage of the total working time that a single work unit (Arbeitsvorgang) accounts for within a job description. The shares of all work units of one job description are expected to total 100.";
+	dcterms:valid "start=2026-08-16;";
+	dcterms:creator "Almato AG";
+.

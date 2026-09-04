@@ -9,7 +9,8 @@ ogit.Integration.Decisions.PII:Conflict
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "Conflict";
 	dcterms:description """Pending conflict awaiting manual review. Created
-	when a ConflictResolutionRule resolves to 'manual' for an incoming write
+	when the blueprint's conflict-resolution rules resolve to 'manual' for an
+	incoming write
 	whose target attribute already has a competing value from a different
 	source. Carries a soft reference to the affected entity vertex (via the
 	affectedVertexXid attribute, since OGIT has no any-vertex edge target),
@@ -40,7 +41,7 @@ ogit.Integration.Decisions.PII:Conflict
 		ogit.Integration:targetAttribute
 	);
 	ogit:allowed (
-		[ ogit.Integration:proposedBy      ogit.Integration:ConnectorRun ]
-		[ ogit.Integration:incumbentFrom   ogit.Integration:ConnectorRun ]
+		[ ogit:generatedFrom ogit.Integration:ConnectorRun ]
+		[ ogit:derivesFrom   ogit.Integration:ConnectorRun ]
 	);
 .

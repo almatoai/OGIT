@@ -1,0 +1,14 @@
+@prefix ogit:                 <http://www.purl.org/ogit/> .
+@prefix ogit.HR:              <http://www.purl.org/ogit/HR/> .
+@prefix owl:                  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:              <http://purl.org/dc/terms/> .
+
+ogit.HR:occupationCode
+	a owl:DatatypeProperty;
+	rdfs:subPropertyOf ogit:Attribute;
+	rdfs:label "occupationCode";
+	dcterms:description "Identifier of an occupation in a public occupational register, for example a national classification of occupations. Lets a register entry be matched to its node in the corresponding classification tree.";
+	dcterms:valid "start=2026-08-17;";
+	dcterms:creator "Almato AG";
+.

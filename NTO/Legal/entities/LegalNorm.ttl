@@ -38,6 +38,7 @@ ogit.Legal:LegalNorm
 		ogit:url
 	);
 	ogit:indexed-attributes (
+		ogit:name
 	);
 	ogit:allowed (
 		[ ogit:contains  ogit.Legal:LegalClause ]

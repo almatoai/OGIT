@@ -1,0 +1,46 @@
+@prefix ogit:                            <http://www.purl.org/ogit/> .
+@prefix ogit.HR:                         <http://www.purl.org/ogit/HR/> .
+@prefix ogit.Legal:                      <http://www.purl.org/ogit/Legal/> .
+@prefix ogit.ClassificationStandard:     <http://www.purl.org/ogit/ClassificationStandard/> .
+@prefix rdfs:                            <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                         <http://purl.org/dc/terms/> .
+
+ogit.HR:Occupation
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "Occupation";
+	dcterms:description """A recognised occupation as it exists in a public
+	register: a vocational training occupation, an advanced further-training
+	occupation, or a course of study. It is a named entry with its own legal
+	basis, its own curriculum and a nominal duration -- not merely a level and a
+	subject area. Where a position requires such an occupation, the requirement
+	should point at this entry rather than restate its properties, so that what
+	the training actually covers stays available to evaluation.""";
+	dcterms:valid "start=2026-08-17;";
+	dcterms:creator "Almato AG";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:mandatory-attributes (
+		ogit:name
+	);
+	ogit:optional-attributes (
+		ogit.HR:occupationCode
+		ogit.HR:occupationKind
+		ogit.HR:trainingDuration
+		ogit:description
+		ogit:content
+		ogit:url
+		ogit:validFrom
+		ogit:validTo
+	);
+	ogit:indexed-attributes (
+		ogit:name
+		ogit:description
+		ogit.HR:occupationCode
+	);
+	ogit:allowed (
+		[ ogit.ClassificationStandard:classifiedUnder  ogit.ClassificationStandard:ClassificationStandardTreeBranch ]
+		[ ogit:references  ogit.Legal:LegalNorm ]
+		[ ogit:relates     ogit.HR:Occupation ]
+	);
+.

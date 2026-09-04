@@ -3,6 +3,7 @@
 @prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms:                <http://purl.org/dc/terms/> .
 @prefix ogit.ServiceManagement: <http://www.purl.org/ogit/ServiceManagement/> .
+@prefix ogit.HR:                <http://www.purl.org/ogit/HR/> .
 
 ogit:RoleAssignment
 	a rdfs:Class;
@@ -28,5 +29,6 @@ ogit:RoleAssignment
 			[ ogit:assignedTo  ogit:Role ]
 			[ ogit:assignedTo  ogit:Organization ]
 			[ ogit:assignedTo  ogit.ServiceManagement:Service ]
+			[ ogit:assignedTo  ogit.HR:Position ]
 	);
 .

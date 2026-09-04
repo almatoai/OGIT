@@ -1,0 +1,16 @@
+@prefix ogit:                 <http://www.purl.org/ogit/> .
+@prefix ogit.HR:              <http://www.purl.org/ogit/HR/> .
+@prefix owl:                  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:              <http://purl.org/dc/terms/> .
+
+ogit.HR:degreeLevel
+	a owl:DatatypeProperty;
+	rdfs:subPropertyOf ogit:Attribute;
+	rdfs:label "degreeLevel";
+	dcterms:description "Level of the educational degree a position requires, from primary school up to a doctorate.";
+	ogit:validation-type "fixed";
+	ogit:validation-parameter "primary,lowerSecondary,upperSecondary,vocational,bachelor,master,diploma,stateExam,doctorate,other";
+	dcterms:valid "start=2026-08-16;";
+	dcterms:creator "Almato AG";
+.

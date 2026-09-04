@@ -1,0 +1,54 @@
+@prefix ogit:                            <http://www.purl.org/ogit/> .
+@prefix ogit.HR:                         <http://www.purl.org/ogit/HR/> .
+@prefix ogit.HR.Recruiting:              <http://www.purl.org/ogit/HR/Recruiting/> .
+@prefix ogit.ClassificationStandard:     <http://www.purl.org/ogit/ClassificationStandard/> .
+@prefix rdfs:                            <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                         <http://purl.org/dc/terms/> .
+
+ogit.HR:QualificationRequirement
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "QualificationRequirement";
+	dcterms:description """A qualification a position requires of whoever holds
+	it -- a degree, a further training, professional knowledge, professional
+	experience, or a licence. This is the requirement of the POST, not the profile
+	of the incumbent: the question it answers is what an ideal candidate would
+	have to bring. The candidate-side counterpart is the HR.Recruiting namespace.
+	Each requirement is a separate node because different kinds of requirement are
+	weighed against different characteristics of a pay-scale standard, so they
+	must remain individually addressable and individually classifiable.
+	A requirement may be expressed in either of two ways, and both are supported.
+	Where it names a recognised occupation, it relates to that Occupation entry
+	instead of restating its properties. Where it is stated more broadly -- a
+	degree level, an institution type and a subject area -- the descriptive
+	attributes carry it. Relating one requirement to another expresses that they
+	are alternatives, which is how an equivalent qualification held in place of
+	the formally demanded one is represented.""";
+	dcterms:valid "start=2026-08-16;";
+	dcterms:creator "Almato AG";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:mandatory-attributes (
+		ogit.HR:qualificationKind
+	);
+	ogit:optional-attributes (
+		ogit:name
+		ogit:description
+		ogit.HR:degreeLevel
+		ogit.HR:institutionType
+		ogit.HR:subjectArea
+		ogit.HR:minimumExperience
+	);
+	ogit:indexed-attributes (
+		ogit:name
+		ogit:description
+		ogit.HR:subjectArea
+	);
+	ogit:allowed (
+		[ ogit.ClassificationStandard:classifiedUnder  ogit.ClassificationStandard:ClassificationStandardTreeBranch ]
+		[ ogit:relates  ogit.HR:Occupation ]
+		[ ogit:relates  ogit.HR:QualificationRequirement ]
+		[ ogit:relates  ogit.HR.Recruiting:Skill ]
+		[ ogit:relates  ogit.HR.Recruiting:Education ]
+	);
+.

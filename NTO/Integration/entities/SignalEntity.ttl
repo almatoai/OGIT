@@ -21,20 +21,20 @@ ogit.Integration:SignalEntity
 	ogit:mandatory-attributes (
 		ogit.Integration:signalType
 		ogit.Integration:targetInstanceId
-		ogit.Integration:emittedAt
+		ogit:createdAt
 		ogit.Integration:operatorActorId
 	);
 	ogit:optional-attributes (
-		ogit.Integration:signalParametersPayload
+		ogit:content
 		ogit:reason
-		ogit.Integration:signalAppliedAt
+		ogit.Integration:appliedAt
 	);
 	ogit:indexed-attributes (
 		ogit.Integration:signalType
 		ogit.Integration:targetInstanceId
 	);
 	ogit:allowed (
-		[ ogit.Integration:targets   ogit.Integration:ConnectorInstance ]
-		[ ogit.Integration:emittedBy ogit:Agent ]
+		[ ogit:affects       ogit.Integration:ConnectorInstance ]
+		[ ogit:generatedFrom ogit:Agent ]
 	);
 .

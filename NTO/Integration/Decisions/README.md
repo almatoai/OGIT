@@ -10,8 +10,8 @@ operation, split into two sub-children with disjoint Right-to-Erasure semantics:
   manual-review entries (IdentityCandidate, IdentityCandidateOption), merge and
   split workflows (MergeJob, SplitJob), conflict awaiters (Conflict), transient
   source events (UserAction), Data-Subject-Rights workflows (SubjectRequest).
-- `Decisions/Audit/` (three entities) -- audit records that MUST survive
-  Right-to-Erasure: ValueDriftCandidate, SchemaDriftCandidate, ActionInvocation.
+- `Decisions/Audit/` (one entity) -- audit records that MUST survive
+  Right-to-Erasure: ActionInvocation.
 
 **Right-to-Erasure rule.** RtE sweeps target `Decisions/PII/` only; an executor
 traversing `Decisions/` indiscriminately would erase audit records.

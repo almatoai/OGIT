@@ -1,0 +1,14 @@
+@prefix ogit:                 <http://www.purl.org/ogit/> .
+@prefix ogit.HR:              <http://www.purl.org/ogit/HR/> .
+@prefix owl:                  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:              <http://purl.org/dc/terms/> .
+
+ogit.HR:employmentFraction
+	a owl:DatatypeProperty;
+	rdfs:subPropertyOf ogit:Attribute;
+	rdfs:label "employmentFraction";
+	dcterms:description "Contractual extent of a position expressed as a fraction of a full-time equivalent, e.g. 1.0 for full time, 0.5 for half time.";
+	dcterms:valid "start=2026-08-16;";
+	dcterms:creator "Almato AG";
+.

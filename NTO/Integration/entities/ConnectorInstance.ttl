@@ -12,14 +12,13 @@ ogit.Integration:ConnectorInstance
 	specific external system. A typical Bardioc deployment carries ~100-1000
 	ConnectorInstances; a DATAGROUP-scale customer operates roughly 200 per
 	tenant. Each Instance has its own endpoint configuration, its own
-	credentials reference, its own per-instance NettingPolicy override (if
-	any), and its own metrics. Per PLAN D6, D11.""";
+	credentials reference, and its own metrics. Per PLAN D6, D11.""";
 	dcterms:valid "start=2026-05-21;";
 	dcterms:creator "Almato AG";
 	ogit:scope "NTO";
 	ogit:parent ogit:Node;
 	ogit:mandatory-attributes (
-		ogit.Integration:endpoint
+		ogit:uri
 		ogit.Integration:credentialsRef
 		ogit.Integration:scopeId
 		ogit.Integration:customerId
@@ -27,8 +26,6 @@ ogit.Integration:ConnectorInstance
 		ogit.Integration:triggerMode
 	);
 	ogit:optional-attributes (
-		ogit.Integration:nettingPolicyOverrideRef
-		ogit.Integration:actionPolicyOverrideRef
 		ogit.Integration:dataMaturityTier
 	);
 	ogit:indexed-attributes (
@@ -37,8 +34,7 @@ ogit.Integration:ConnectorInstance
 		ogit.Integration:instanceStatus
 	);
 	ogit:allowed (
-		[ ogit.Integration:instanceOf      ogit.Integration:Connector ]
-		[ ogit.Integration:operatesIn      ogit.Auth:DataScope ]
-		[ ogit.Integration:hasSignalEntity ogit.Integration:SignalEntity ]
+		[ ogit:implements  ogit.Integration:Connector ]
+		[ ogit:availableIn ogit.Auth:DataScope ]
 	);
 .

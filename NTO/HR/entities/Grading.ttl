@@ -1,0 +1,44 @@
+@prefix ogit:                            <http://www.purl.org/ogit/> .
+@prefix ogit.HR:                         <http://www.purl.org/ogit/HR/> .
+@prefix ogit.Legal:                      <http://www.purl.org/ogit/Legal/> .
+@prefix ogit.ClassificationStandard:     <http://www.purl.org/ogit/ClassificationStandard/> .
+@prefix rdfs:                            <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                         <http://purl.org/dc/terms/> .
+
+ogit.HR:Grading
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "Grading";
+	dcterms:description """The evaluation result for a job description: the pay
+	grade arrived at, the reasoning that leads to it, and the evidence it rests
+	on. A Grading is a first-class, durable node rather than an attribute of the
+	job description, because the decision must remain auditable and reproducible
+	independently of later changes to the description, and because a description
+	may be re-graded over time. The reasoning is carried in ogit:reason and has
+	to be written so that the decision can be audited and reproduced years
+	later.""";
+	dcterms:valid "start=2026-08-16;";
+	dcterms:creator "Almato AG";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:mandatory-attributes (
+		ogit.HR:assignedGrade
+	);
+	ogit:optional-attributes (
+		ogit:name
+		ogit:reason
+		ogit.HR:securingMode
+		ogit:confidence
+		ogit:validFrom
+		ogit:validTo
+	);
+	ogit:indexed-attributes (
+		ogit:name
+		ogit:reason
+	);
+	ogit:allowed (
+		[ ogit.ClassificationStandard:classifiedUnder  ogit.ClassificationStandard:ClassificationStandardTreeBranch ]
+		[ ogit:references  ogit.Legal:LegalNorm ]
+		[ ogit:references  ogit.Legal:LegalClause ]
+	);
+.
