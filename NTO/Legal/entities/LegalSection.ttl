@@ -22,6 +22,7 @@ ogit.Legal:LegalSection
 	ogit:optional-attributes (
 		ogit:id
 		ogit:name
+		ogit.Legal:footnote
 		ogit:createdAt
 		ogit:lastUpdatedAt
 		ogit:startedAt
@@ -36,6 +37,9 @@ ogit.Legal:LegalSection
 	ogit:allowed (
 			[ ogit:contains ogit.Legal:LegalIntendation	]
 			[ ogit:causes  ogit.ServiceManagement:Service ]
+			[ ogit:references  ogit:Attachment ]
+			[ ogit:causes  ogit.ServiceManagement:Service ]
+			[ ogit:causes  ogit:Catalog ]
 
 	);
 .
