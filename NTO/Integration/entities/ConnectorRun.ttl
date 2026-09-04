@@ -46,10 +46,9 @@ ogit.Integration:ConnectorRun
 	);
 	ogit:allowed (
 		[ ogit:runsOn         ogit.Integration:ConnectorInstance ]
-		[ ogit.Integration:ofBlueprint   ogit.Integration:Connector ]
-		[ ogit.Integration:initiatedByActor   ogit:Agent ]
+		[ ogit:conformsTo     ogit.Integration:Connector ]
+		[ ogit:generatedFrom  ogit:Agent ]
 		[ ogit:uses    ogit.Integration:ConnectorRunConfigSnapshot ]
-		[ ogit.Integration:authorisedBy  ogit.Integration:Authority ]
-		[ ogit.Integration:processedBy   ogit.Integration:Authority ]
+		[ ogit:actsOnBehalfOf ogit.Integration:Authority ]
 	);
 .

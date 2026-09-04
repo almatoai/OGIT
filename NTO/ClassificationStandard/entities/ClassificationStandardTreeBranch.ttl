@@ -3,6 +3,7 @@
 @prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms:                <http://purl.org/dc/terms/> .
 @prefix ogit.ClassificationStandard:              <http://www.purl.org/ogit/ClassificationStandard/> .
+@prefix ogit.Utilities:         <http://www.purl.org/ogit/Utilities/> .
 
 ogit.ClassificationStandard:ClassificationStandardTreeBranch
 	a rdfs:Class;
@@ -21,9 +22,12 @@ ogit.ClassificationStandard:ClassificationStandardTreeBranch
 		ogit.ClassificationStandard:categoryIdentifierChunk
 		ogit:description
         ogit.ClassificationStandard:leaf
+		ogit.Utilities:sourcePublication
 	);
 	ogit:indexed-attributes (
-		
+		ogit:name
+		ogit.ClassificationStandard:categoryIdentifier
+		ogit:description
 	);
 	ogit:allowed (
 			[ ogit.ClassificationStandard:childNodeOf  ogit.ClassificationStandard:ClassificationStandardTreeRoot ]

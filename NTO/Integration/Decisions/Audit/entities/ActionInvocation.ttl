@@ -13,8 +13,8 @@ ogit.Integration.Decisions.Audit:ActionInvocation
 	actionId, operationType, target, createdAt, expected_closure (when
 	declared), plus edges to Authority and ConnectorRun. Exists while the
 	action is pending (closure open); after the lifecycle reaches a terminal
-	state, the vertex is retained for vertexTtlDays (default 90 per
-	ActionPolicy) and then hard-deleted.
+	state, the vertex is retained until vertexTtlDeadline (default 90 days per
+	the blueprint's action policy) and then hard-deleted.
 
 	Audit-namespace placement note: ActionInvocation lives in Decisions/Audit/
 	because the **audit-forever invariant applies to the TSDB streams**
@@ -29,7 +29,7 @@ ogit.Integration.Decisions.Audit:ActionInvocation
 	ogit:parent ogit:Node;
 	ogit:mandatory-attributes (
 		ogit.Integration:actionId
-		ogit.Integration:operationType
+		ogit:operation
 		ogit:createdAt
 	);
 	ogit:optional-attributes (
@@ -40,10 +40,9 @@ ogit.Integration.Decisions.Audit:ActionInvocation
 	);
 	ogit:indexed-attributes (
 		ogit.Integration:actionId
-		ogit.Integration:operationType
+		ogit:operation
 	);
 	ogit:allowed (
-		[ ogit.Integration:invokedBy    ogit.Integration:ConnectorRun ]
-		[ ogit.Integration:authorisedBy ogit.Integration:Authority ]
+		[ ogit:derivesFrom ogit.Integration:ConnectorRun ]
 	);
 .

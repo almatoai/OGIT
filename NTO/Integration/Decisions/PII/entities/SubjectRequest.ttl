@@ -34,7 +34,7 @@ ogit.Integration.Decisions.PII:SubjectRequest
 		ogit.Integration:approvedAt
 		ogit.Integration:executedAt
 		ogit.Integration:legalRetentionOverride
-		ogit.Integration:legalBasisCitation
+		ogit.Integration:legalBasis
 		ogit.Integration:requestPayload
 	);
 	ogit:indexed-attributes (

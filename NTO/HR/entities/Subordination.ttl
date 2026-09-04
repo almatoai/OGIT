@@ -1,0 +1,40 @@
+@prefix ogit:                            <http://www.purl.org/ogit/> .
+@prefix ogit.HR:                         <http://www.purl.org/ogit/HR/> .
+@prefix ogit.ClassificationStandard:     <http://www.purl.org/ogit/ClassificationStandard/> .
+@prefix rdfs:                            <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                         <http://purl.org/dc/terms/> .
+
+ogit.HR:Subordination
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "Subordination";
+	dcterms:description """A group of staff reporting directly to a position,
+	qualified by how they report (functionally, disciplinarily or both), how many
+	of them there are in full-time equivalents, and at which grade they sit.
+	A qualified node rather than a plain reporting edge, because it is precisely
+	those qualifiers -- number, grade and directness -- that carry weight when a
+	leadership position is evaluated. Directness means no intervening hierarchy
+	level; permanence is expressed through the validity period.""";
+	dcterms:valid "start=2026-08-16;";
+	dcterms:creator "Almato AG";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:mandatory-attributes (
+		ogit.HR:subordinationKind
+	);
+	ogit:optional-attributes (
+		ogit:name
+		ogit:description
+		ogit.HR:headcountFte
+		ogit:validFrom
+		ogit:validTo
+	);
+	ogit:indexed-attributes (
+		ogit:name
+		ogit:description
+	);
+	ogit:allowed (
+		[ ogit.ClassificationStandard:classifiedUnder  ogit.ClassificationStandard:ClassificationStandardTreeBranch ]
+		[ ogit:relates  ogit.HR:Position ]
+	);
+.

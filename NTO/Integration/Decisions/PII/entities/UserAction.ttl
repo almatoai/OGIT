@@ -19,7 +19,7 @@ ogit.Integration.Decisions.PII:UserAction
 	ogit:scope "NTO";
 	ogit:parent ogit:Node;
 	ogit:mandatory-attributes (
-		ogit.Integration:userActionType
+		ogit:type
 		ogit.Integration:sourceSystemId
 		ogit.Integration:triggeredAt
 		ogit.Integration:receivedAt
@@ -30,10 +30,10 @@ ogit.Integration.Decisions.PII:UserAction
 		ogit.Integration:relatedEntityRef
 	);
 	ogit:indexed-attributes (
-		ogit.Integration:userActionType
+		ogit:type
 		ogit.Integration:sourceSystemId
 	);
 	ogit:allowed (
-		[ ogit.Integration:receivedVia ogit.Integration:ConnectorInstance ]
+		[ ogit:receivesFrom ogit.Integration:ConnectorInstance ]
 	);
 .

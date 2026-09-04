@@ -1,0 +1,41 @@
+@prefix ogit:                            <http://www.purl.org/ogit/> .
+@prefix ogit.HR:                         <http://www.purl.org/ogit/HR/> .
+@prefix ogit.ClassificationStandard:     <http://www.purl.org/ogit/ClassificationStandard/> .
+@prefix rdfs:                            <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                         <http://purl.org/dc/terms/> .
+
+ogit.HR:WorkUnit
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "WorkUnit";
+	dcterms:description """A work unit (Arbeitsvorgang): a body of work within a
+	job description that leads to a single delimitable work result, together with
+	the lower-valued activities inseparably connected to it. The work unit, not
+	the individual activity and not the descriptive text, is the unit that carries
+	a classification characteristic and a share of working time -- which is what
+	makes proportion-based grading rules computable. The numbered sub-items the
+	unit comprises are carried in ogit:values, one entry per line; they are read
+	as a whole and carry no time share, characteristic or classification of their
+	own, which is why they are not separate vertices.""";
+	dcterms:valid "start=2026-08-16;";
+	dcterms:creator "Almato AG";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:mandatory-attributes (
+		ogit:name
+	);
+	ogit:optional-attributes (
+		ogit.HR:timeShare
+		ogit.HR:characteristicCode
+		ogit:description
+		ogit:values
+	);
+	ogit:indexed-attributes (
+		ogit:name
+		ogit:description
+		ogit:values
+	);
+	ogit:allowed (
+		[ ogit.ClassificationStandard:classifiedUnder  ogit.ClassificationStandard:ClassificationStandardTreeBranch ]
+	);
+.

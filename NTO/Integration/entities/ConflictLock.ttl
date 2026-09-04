@@ -30,7 +30,7 @@ ogit.Integration:ConflictLock
 	ogit:mandatory-attributes (
 		ogit.Integration:lockedVertexXid
 		ogit.Integration:holderId
-		ogit.Integration:acquiredAt
+		ogit:createdAt
 		ogit.Integration:ttlSeconds
 	);
 	ogit:optional-attributes (

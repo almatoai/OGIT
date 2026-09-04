@@ -1,0 +1,14 @@
+@prefix ogit:                 <http://www.purl.org/ogit/> .
+@prefix ogit.HR:              <http://www.purl.org/ogit/HR/> .
+@prefix owl:                  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:              <http://purl.org/dc/terms/> .
+
+ogit.HR:characteristicCode
+	a owl:DatatypeProperty;
+	rdfs:subPropertyOf ogit:Attribute;
+	rdfs:label "characteristicCode";
+	dcterms:description "Code of the evaluation characteristic (Taetigkeitsmerkmal) that a work unit exhibits. Resolves against ClassificationStandard:categoryIdentifier, so a work unit can be attached to its node in the classification tree by matching on the shared value.";
+	dcterms:valid "start=2026-08-16;";
+	dcterms:creator "Almato AG";
+.

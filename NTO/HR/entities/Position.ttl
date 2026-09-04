@@ -1,0 +1,38 @@
+@prefix ogit:                 <http://www.purl.org/ogit/> .
+@prefix ogit.HR:              <http://www.purl.org/ogit/HR/> .
+@prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:              <http://purl.org/dc/terms/> .
+
+ogit.HR:Position
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "Position";
+	dcterms:description """A position (Stelle) in an organization's establishment
+	plan: an organizational placeholder for work to be done, independent of the
+	person who currently holds it. A position is described by one or more
+	JobDescriptions and is occupied through a RoleAssignment. Distinguishing the
+	position from its holder is what allows a job to be described and evaluated
+	before it is filled.""";
+	dcterms:valid "start=2026-08-16;";
+	dcterms:creator "Almato AG";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:mandatory-attributes (
+		ogit:name
+	);
+	ogit:optional-attributes (
+		ogit.HR:postNumber
+		ogit.HR:employmentFraction
+		ogit:description
+		ogit:status
+		ogit:validFrom
+		ogit:validTo
+	);
+	ogit:indexed-attributes (
+		ogit:name
+		ogit.HR:postNumber
+	);
+	ogit:allowed (
+		[ ogit:belongs     ogit:Organization ]
+	);
+.

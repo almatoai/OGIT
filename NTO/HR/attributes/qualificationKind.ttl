@@ -1,0 +1,16 @@
+@prefix ogit:                 <http://www.purl.org/ogit/> .
+@prefix ogit.HR:              <http://www.purl.org/ogit/HR/> .
+@prefix owl:                  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:              <http://purl.org/dc/terms/> .
+
+ogit.HR:qualificationKind
+	a owl:DatatypeProperty;
+	rdfs:subPropertyOf ogit:Attribute;
+	rdfs:label "qualificationKind";
+	dcterms:description "Which kind of requirement a qualification requirement expresses. Separate kinds are evaluated against different characteristics of a pay-scale standard, so they are kept individually addressable rather than merged into one text. A licence covers a permit or certificate of competence that a post requires without it being an educational attainment.";
+	ogit:validation-type "fixed";
+	ogit:validation-parameter "degree,furtherTraining,professionalKnowledge,professionalExperience,licence";
+	dcterms:valid "start=2026-08-16;";
+	dcterms:creator "Almato AG";
+.

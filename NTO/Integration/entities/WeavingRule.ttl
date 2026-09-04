@@ -41,6 +41,5 @@ ogit.Integration:WeavingRule
 		ogit.Integration:edgeType
 	);
 	ogit:allowed (
-		[ ogit.Integration:declaredBy ogit.Integration:Connector ]
 	);
 .

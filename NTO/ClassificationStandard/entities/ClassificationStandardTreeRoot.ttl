@@ -13,6 +13,7 @@ ogit.ClassificationStandard:ClassificationStandardTreeRoot
 	dcterms:creator "Moritz Vannahme";
 	ogit:scope "SGO";
 	ogit:parent ogit:Node;
+	ogit:blob "true";
 	ogit:mandatory-attributes (
 		ogit.ClassificationStandard:fullName
         ogit:version
@@ -23,9 +24,12 @@ ogit.ClassificationStandard:ClassificationStandardTreeRoot
 		ogit:description
         ogit:source
         ogit:author
+		ogit:type
+		ogit:modificationTime
 	);
 	ogit:indexed-attributes (
-		
+		ogit:name
+		ogit.ClassificationStandard:fullName
 	);
 	ogit:allowed (
 	);

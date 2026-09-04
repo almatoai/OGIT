@@ -37,7 +37,7 @@ ogit.Integration.Decisions.PII:IdentityCandidate
 		ogit.Integration:resolverId
 	);
 	ogit:allowed (
-		[ ogit.Integration:proposedBy   ogit.Integration:ConnectorRun ]
-		[ ogit.Integration:hasOption    ogit.Integration.Decisions.PII:IdentityCandidateOption ]
+		[ ogit:generatedFrom ogit.Integration:ConnectorRun ]
+		[ ogit:contains      ogit.Integration.Decisions.PII:IdentityCandidateOption ]
 	);
 .

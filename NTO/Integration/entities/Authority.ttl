@@ -1,5 +1,7 @@
 @prefix ogit:                 <http://www.purl.org/ogit/> .
 @prefix ogit.Integration:     <http://www.purl.org/ogit/Integration/> .
+@prefix ogit.Integration.Decisions.PII:   <http://www.purl.org/ogit/Integration/Decisions/PII/> .
+@prefix ogit.Integration.Decisions.Audit: <http://www.purl.org/ogit/Integration/Decisions/Audit/> .
 @prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms:              <http://purl.org/dc/terms/> .
 
@@ -10,7 +12,7 @@ ogit.Integration:Authority
 	dcterms:description """First-class authority record per PLAN D24. Carries
 	the legal or organisational authority on whose behalf a write or action
 	was performed. Forms the queryable authority chain: an external auditor
-	traverses authorisedBy / processedBy edges to answer 'who authorised
+	traverses the approves and actsOnBehalfOf edges to answer 'who authorised
 	this data write' or 'on whose authority was this side effect caused'.
 	D35 makes the authority_id mandatory for every ActionInvoker call;
 	calls without it are rejected with 403 missing_authority before reaching
@@ -20,21 +22,25 @@ ogit.Integration:Authority
 	ogit:scope "NTO";
 	ogit:parent ogit:Node;
 	ogit:mandatory-attributes (
-		ogit.Integration:authorityLabel
+		ogit:name
 		ogit.Integration:authorityType
 	);
 	ogit:optional-attributes (
 		ogit.Integration:legalBasis
-		ogit.Integration:authorityScopeId
-		ogit.Integration:authorityExternalRef
+		ogit.Integration:scopeId
+		ogit:externalId
 		ogit:validFrom
 		ogit:validTo
 	);
 	ogit:indexed-attributes (
 		ogit.Integration:authorityType
-		ogit.Integration:authorityScopeId
+		ogit.Integration:scopeId
 	);
 	ogit:allowed (
-		[ ogit.Integration:delegatedFrom ogit.Integration:Authority ]
+		[ ogit:actsOnBehalfOf ogit.Integration:Authority ]
+		[ ogit:approves ogit.Integration:ConnectorRun ]
+		[ ogit:approves ogit.Integration.Decisions.PII:MergeJob ]
+		[ ogit:approves ogit.Integration.Decisions.PII:SplitJob ]
+		[ ogit:approves ogit.Integration.Decisions.Audit:ActionInvocation ]
 	);
 .

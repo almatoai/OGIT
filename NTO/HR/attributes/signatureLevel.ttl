@@ -1,0 +1,16 @@
+@prefix ogit:                 <http://www.purl.org/ogit/> .
+@prefix ogit.HR:              <http://www.purl.org/ogit/HR/> .
+@prefix owl:                  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:              <http://purl.org/dc/terms/> .
+
+ogit.HR:signatureLevel
+	a owl:DatatypeProperty;
+	rdfs:subPropertyOf ogit:Attribute;
+	rdfs:label "signatureLevel";
+	dcterms:description "Level at which a signature authority may be exercised, following the German conventions i. A. (by order) and i. V. (per procuration).";
+	ogit:validation-type "fixed";
+	ogit:validation-parameter "byOrder,perProcuration";
+	dcterms:valid "start=2026-08-16;";
+	dcterms:creator "Almato AG";
+.

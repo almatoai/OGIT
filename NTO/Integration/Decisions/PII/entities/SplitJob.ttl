@@ -40,7 +40,6 @@ ogit.Integration.Decisions.PII:SplitJob
 		ogit.Integration:sourceVertexXid
 	);
 	ogit:allowed (
-		[ ogit.Integration:initiatedByRun  ogit.Integration:ConnectorRun ]
-		[ ogit.Integration:authorisedBy ogit.Integration:Authority ]
+		[ ogit:derivesFrom ogit.Integration:ConnectorRun ]
 	);
 .

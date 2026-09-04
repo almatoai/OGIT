@@ -1,0 +1,39 @@
+@prefix ogit:                            <http://www.purl.org/ogit/> .
+@prefix ogit.HR:                         <http://www.purl.org/ogit/HR/> .
+@prefix ogit.ClassificationStandard:     <http://www.purl.org/ogit/ClassificationStandard/> .
+@prefix rdfs:                            <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                         <http://purl.org/dc/terms/> .
+
+ogit.HR:Authority
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "Authority";
+	dcterms:description """A power delegated to the holder of a position:
+	authority to sign or to certify correctness, to decide within a margin of
+	discretion, to give instructions to other staff, or to represent the
+	organization on a committee. Only authorities that are specific to the post
+	are recorded -- those already conferred by general regulation are not.
+	Modelled as a node rather than as text because the kind of authority, its
+	reach and any ceiling on it are weighed individually during evaluation.""";
+	dcterms:valid "start=2026-08-16;";
+	dcterms:creator "Almato AG";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:mandatory-attributes (
+		ogit.HR:authorityKind
+	);
+	ogit:optional-attributes (
+		ogit:name
+		ogit:description
+		ogit.HR:authorityScope
+		ogit.HR:authorityLimit
+		ogit.HR:signatureLevel
+	);
+	ogit:indexed-attributes (
+		ogit:name
+		ogit:description
+	);
+	ogit:allowed (
+		[ ogit.ClassificationStandard:classifiedUnder  ogit.ClassificationStandard:ClassificationStandardTreeBranch ]
+	);
+.
