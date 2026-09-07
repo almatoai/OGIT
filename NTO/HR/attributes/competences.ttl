@@ -4,13 +4,11 @@
 @prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms:              <http://purl.org/dc/terms/> .
 
-ogit.HR:occupationKind
+ogit.HR:competences
 	a owl:DatatypeProperty;
 	rdfs:subPropertyOf ogit:Attribute;
-	rdfs:label "occupationKind";
-	dcterms:description "Which kind of register entry an occupation is: one of three kinds of education, or the occupation as it is practised.";
-	ogit:validation-type "fixed";
-	ogit:validation-parameter "vocationalTraining,furtherTraining,courseOfStudy,practisedOccupation";
-	dcterms:valid "start=2026-08-17;";
+	rdfs:label "competences";
+	dcterms:description "The competences a register states for an occupation, one per line, each the ogit:_xid of a Skill. A soft reference rather than edges: they describe the occupation as a whole and are not weighed one by one. Where a single competence carries a judgement, that judgement points at the Skill by edge.";
+	dcterms:valid "start=2026-09-03;";
 	dcterms:creator "Almato AG";
 .

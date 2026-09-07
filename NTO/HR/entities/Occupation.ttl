@@ -9,13 +9,20 @@ ogit.HR:Occupation
 	a rdfs:Class;
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "Occupation";
-	dcterms:description """A recognised occupation as it exists in a public
-	register: a vocational training occupation, an advanced further-training
-	occupation, or a course of study. It is a named entry with its own legal
-	basis, its own curriculum and a nominal duration -- not merely a level and a
-	subject area. Where a position requires such an occupation, the requirement
-	should point at this entry rather than restate its properties, so that what
-	the training actually covers stays available to evaluation.""";
+	dcterms:description """A recognised occupation as a public register states
+	it. The register describes one occupation from two sides that say different
+	things -- the education (curriculum, nominal duration, legal basis) and the
+	occupation as practised (activities, competences) -- and occupationKind says
+	which side an entry is; they reference each other rather than being merged.
+	A requirement that names such an occupation should point at the entry rather
+	than restate it, so what the training covers stays available to evaluation.
+	Activities are carried in ogit:values, one per line, as a WorkUnit carries
+	its sub-items. Both ogit:values and the curriculum in ogit:content are
+	indexed, because the comparison this entry serves is content against
+	content and has to reach the wording, not only the entry.
+	ogit:source names the register and edition, so a later edition is a visible
+	replacement rather than an invisible drift; it is not indexed, since every
+	entry of one load repeats it.""";
 	dcterms:valid "start=2026-08-17;";
 	dcterms:creator "Almato AG";
 	ogit:scope "NTO";
@@ -27,15 +34,21 @@ ogit.HR:Occupation
 		ogit.HR:occupationCode
 		ogit.HR:occupationKind
 		ogit.HR:trainingDuration
+		ogit.HR:competences
+		ogit:values
 		ogit:description
 		ogit:content
 		ogit:url
+		ogit:source
 		ogit:validFrom
 		ogit:validTo
 	);
 	ogit:indexed-attributes (
 		ogit:name
 		ogit:description
+		ogit:values
+		ogit:content
+		ogit.HR:competences
 		ogit.HR:occupationCode
 	);
 	ogit:allowed (
