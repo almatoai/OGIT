@@ -1,0 +1,18 @@
+@prefix ogit.Auth.Application:  <http://www.purl.org/ogit/Auth/Application/> .
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ogit.Auth:              <http://www.purl.org/ogit/Auth/> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+
+ogit.Auth.Application:whitelist
+	a owl:DatatypeProperty;
+	rdfs:subPropertyOf ogit:Attribute;
+	rdfs:label "whitelist";
+	dcterms:description "The desktop applications a backend component accepts, as a string. Set on the backend component, so that what it admits is readable from the component itself. The counterpart is ogit/Auth/Application/route, which the requiring application sets. It is a declaration and no authorization decision is taken from it.";
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
+	dcterms:valid "start=2026-09-08;";
+	dcterms:creator "Andreas Schmid";
+	dcterms:created "2026-09-08";
+	dcterms:modified "2026-09-08";
+.

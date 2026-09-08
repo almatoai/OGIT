@@ -1,0 +1,17 @@
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+
+ogit:latestVersion
+	a owl:DatatypeProperty;
+	rdfs:subPropertyOf ogit:Attribute;
+	rdfs:label "latestVersion";
+	dcterms:description """The most recent published version of an entity that has versions, as a string.
+It repeats the ogit/version of that version and exists so that the most recent one can be read without traversing them. Whoever publishes a version owns the value.""";
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
+	dcterms:valid "start=2026-09-08;";
+	dcterms:creator "Andreas Schmid";
+	dcterms:created "2026-09-08";
+	dcterms:modified "2026-09-08";
+.
