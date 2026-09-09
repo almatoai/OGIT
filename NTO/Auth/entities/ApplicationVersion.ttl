@@ -1,0 +1,33 @@
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix ogit.Auth:              <http://www.purl.org/ogit/Auth/> .
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+
+ogit.Auth:ApplicationVersion
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "ApplicationVersion";
+	dcterms:description "One version of an ogit/Auth/Application. It is the object that is published, that contains the content of that release and that a principal is bound to. The application is the identity that survives every version, the version is the thing that has one.";
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
+	dcterms:valid "start=2026-09-08;";
+	dcterms:creator "Viktor Voss";
+	dcterms:created "2026-09-08";
+	dcterms:modified "2026-09-08";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:mandatory-attributes (
+	    ogit:version
+	    ogit:status
+	);
+	ogit:optional-attributes (
+	    ogit:description
+	    ogit.Auth:sourceVersion
+	);
+	ogit:indexed-attributes (
+	    ogit:version
+	);
+	ogit:allowed (
+			[ ogit:contains  ogit.Auth:ApplicationContent ]
+	);
+.

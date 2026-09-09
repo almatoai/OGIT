@@ -1,0 +1,17 @@
+@prefix ogit.Auth:              <http://www.purl.org/ogit/Auth/> .
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+
+ogit.Auth:sourceVersion
+	a owl:DatatypeProperty;
+	rdfs:subPropertyOf ogit:Attribute;
+	rdfs:label "sourceVersion";
+	dcterms:description "The version of the store entry this version was installed from. It is the version the install resolved to and never the word that selected it, so an installation that asked for the latest version records the concrete one. Set on the version an organization creates when it installs a store entry, and never on the store entry's own version.";
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
+	dcterms:valid "start=2026-09-08;";
+	dcterms:creator "Viktor Voss";
+	dcterms:created "2026-09-08";
+	dcterms:modified "2026-09-08";
+.

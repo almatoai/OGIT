@@ -16,7 +16,7 @@ ogit.Auth:Application
 	dcterms:valid "start=2018-01-01;";
 	dcterms:creator "arago GmbH";
 	dcterms:created "2018-01-01";
-	dcterms:modified "2018-01-01";
+	dcterms:modified "2026-09-08";
 	ogit:admin-contact "arago GmbH";
 	ogit:tech-contact "arago GmbH";
 	ogit:scope "NTO";
@@ -33,8 +33,13 @@ ogit.Auth:Application
 		ogit:category
 		ogit:tags
 	    ogit.Auth.Application:status
+	    ogit.Auth.Application:statusReason
 	    ogit.Auth.Application:parent
 	    ogit.Auth.Application:urls
+	    ogit.Auth:sourceApplication
+	    ogit.Auth.Application:route
+	    ogit.Auth.Application:whitelist
+	    ogit:latestVersion
 	);
 	ogit:indexed-attributes (
 	    ogit:name
@@ -47,5 +52,6 @@ ogit.Auth:Application
 			[ ogit:versions  ogit.Auth:Application ]
 			[ ogit:has ogit.Auth:Configuration ]
 			[ ogit:has ogit.Auth:ApplicationContent ]
+			[ ogit:has ogit.Auth:ApplicationVersion ]
 	);
 .

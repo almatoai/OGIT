@@ -1,0 +1,17 @@
+@prefix ogit.Auth:              <http://www.purl.org/ogit/Auth/> .
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+
+ogit.Auth:sourceApplication
+	a owl:DatatypeProperty;
+	rdfs:subPropertyOf ogit:Attribute;
+	rdfs:label "sourceApplication";
+	dcterms:description "The id of the application in the app store this application was installed from. Set on the application an organization creates when it installs a store entry, and never on the store entry itself. It is a reference by value and creates no relation across the organization boundary.";
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
+	dcterms:valid "start=2026-09-08;";
+	dcterms:creator "Viktor Voss";
+	dcterms:created "2026-09-08";
+	dcterms:modified "2026-09-08";
+.
