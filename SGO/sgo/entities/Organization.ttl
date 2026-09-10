@@ -36,6 +36,7 @@
 @prefix ogit.Compliance:        <http://www.purl.org/ogit/Compliance/> .
 @prefix ogit.HR.Recruiting:     <http://www.purl.org/ogit/HR/Recruiting/> .
 @prefix ogit.Forms: <http://www.purl.org/ogit/Forms/> .
+@prefix ogit.Project: <http://www.purl.org/ogit/Project/> .
 
 ogit:Organization
 	a rdfs:Class;
@@ -181,6 +182,7 @@ The ogit/function attribute should be used to tell what kind of grouping an enti
 			[ ogit:leads ogit.Religion:BeliefSystem ]
 			[ ogit:follows ogit.Religion:BeliefSystem ]
 			[ ogit:provides ogit.Forms:Form]
+			[ ogit:contributes ogit.Project:Project ]
 
 			# --- OSINT Security Extension additions (2026-05-02) ---
 			# Reuse existing verbs (extending allowed-target lists)

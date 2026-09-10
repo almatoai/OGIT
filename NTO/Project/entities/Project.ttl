@@ -36,6 +36,5 @@ ogit.Project:Project
 	ogit:allowed (
 		[ ogit:contains ogit:Offer ]
 		[ ogit:contains ogit.ServiceManagement:Service ]
-		[ ogit:contributes ogit:Organization ]
 	);
 .
