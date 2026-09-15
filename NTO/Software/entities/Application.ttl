@@ -39,6 +39,8 @@ ogit.Software:Application
 		ogit:url
 		ogit:description
 		ogit:version
+		ogit:type
+		ogit:vendor
 	);
 	ogit:indexed-attributes (
 		
@@ -50,5 +52,6 @@ ogit.Software:Application
 			[ ogit:contains  ogit.Software:SoftwareComponent ]
 			[ ogit:sends  ogit:Notification ]
 			[ ogit:complies  ogit.ServiceManagement:SLA ]
+			[ ogit:uses  ogit:Catalog ]
 	);
 .
