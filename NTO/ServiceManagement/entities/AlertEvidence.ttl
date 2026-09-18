@@ -1,0 +1,36 @@
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+@prefix ogit.ServiceManagement: <http://www.purl.org/ogit/ServiceManagement/> .
+
+ogit.ServiceManagement:AlertEvidence
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "AlertEvidence";
+	dcterms:description "An individual element observed in the context of a SecurityAlert, together with the assessment reached about it, e.g. a device, an account, an address, a URL, a file, a process, a mailbox, a message etc. Describes the observation and not the observed object, so an element observed in two alerts is two AlertEvidence entities.";
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
+	dcterms:valid "start=2026-09-07;";
+	dcterms:creator "Erik Wilfling";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:mandatory-attributes (
+
+	);
+	ogit:optional-attributes (
+		ogit:id
+		ogit:name
+		ogit:type
+		ogit:source
+		ogit:createdAt
+		ogit:status
+		ogit:classification
+		ogit:tags
+	);
+	ogit:indexed-attributes (
+
+	);
+	ogit:allowed (
+		[ ogit:belongs  ogit.ServiceManagement:SecurityAlert ]
+	);
+.
