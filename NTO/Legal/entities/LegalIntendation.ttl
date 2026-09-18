@@ -6,7 +6,7 @@
 @prefix ogit.ServiceManagement: <http://www.purl.org/ogit/ServiceManagement/> .
 
 
-ogit.Legal:LegalIndentation LegalIdentation
+ogit.Legal:LegalIndentation
 	a rdfs:Class;
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "LegalIndentation";
