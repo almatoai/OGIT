@@ -42,6 +42,7 @@ ogit:Catalog
 		ogit:priority
 	);
 	ogit:indexed-attributes (
+		ogit:name
 		
 	);
 	ogit:allowed (
