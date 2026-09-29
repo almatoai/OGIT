@@ -1,6 +1,7 @@
 @prefix owl:                    <http://www.w3.org/2002/07/owl#> .
 @prefix ogit.Project:           <http://www.purl.org/ogit/Project/> .
 @prefix ogit.Forms:             <http://www.purl.org/ogit/Forms/> .
+@prefix ogit.Documents:        	<http://www.purl.org/ogit/Documents/> .
 @prefix ogit:                   <http://www.purl.org/ogit/> .
 @prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms:                <http://purl.org/dc/terms/> .
@@ -38,5 +39,6 @@ ogit:Task
 		[ ogit:generates	ogit.Forms:Form ]
 		[ ogit:creates		ogit:Notification ]
 		[ ogit:belongs		ogit.Project:Project ]
+		[ ogit:references 	ogit.Documents:Document ]
 	);
 .

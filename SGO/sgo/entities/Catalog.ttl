@@ -42,6 +42,7 @@ ogit:Catalog
 		ogit:priority
 	);
 	ogit:indexed-attributes (
+		ogit:name
 		
 	);
 	ogit:allowed (
@@ -54,5 +55,6 @@ ogit:Catalog
 			[ ogit:contains	 ogit.ServiceManagement:Service ]
 			[ ogit:belongs   ogit:Category ]
 			[ ogit:contains  ogit:Course ]
+			[ ogit:uses 	 ogit.Software:Application]
 	);
 .

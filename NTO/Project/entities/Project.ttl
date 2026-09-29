@@ -2,12 +2,13 @@
 @prefix ogit:                   <http://www.purl.org/ogit/> .
 @prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms:                <http://purl.org/dc/terms/> .
+@prefix ogit.ServiceManagement: <http://www.purl.org/ogit/ServiceManagement/> .
 
 ogit.Project:Project
 	a rdfs:Class;
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "Project";
-	dcterms:description """An identity that represents a grouping of Person, Milestone objects.""";
+	dcterms:description """An identity that represents a grouping of Person, Milestone or Service objects.""";
 	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2016-08-08;";
 	dcterms:creator "Arthur Shoba";
@@ -26,11 +27,14 @@ ogit.Project:Project
 		ogit:plannedFinishDate
 		ogit:startedAt
 		ogit:finishedAt
+		ogit:lastUpdatedAt
+		ogit:description
 	);
 	ogit:indexed-attributes (
 		ogit:title
 	);
 	ogit:allowed (
 		[ ogit:contains ogit:Offer ]
+		[ ogit:contains ogit.ServiceManagement:Service ]
 	);
 .
