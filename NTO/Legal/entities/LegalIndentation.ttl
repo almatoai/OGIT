@@ -1,0 +1,44 @@
+@prefix rdfs:    	<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     	<http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: 	<http://purl.org/dc/terms/> .
+@prefix ogit:    	<http://www.purl.org/ogit/> .
+@prefix ogit.Legal: <http://www.purl.org/ogit/Legal/> .
+@prefix ogit.ServiceManagement: <http://www.purl.org/ogit/ServiceManagement/> .
+
+
+ogit.Legal:LegalIndentation
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "LegalIndentation";
+	dcterms:description """A distinct element within a legal code or document. Takes the form of numbers, letters or 
+	points within a Section. Indentations are the second to last structural level of a legal section.""";
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
+	dcterms:valid "start=2026-08-14;";
+	dcterms:creator "Frauke Andersen";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:mandatory-attributes (
+		ogit:content
+	);
+	ogit:optional-attributes (
+		ogit:id
+		ogit:name
+		ogit.Legal:footnote
+		ogit:createdAt
+		ogit:lastUpdatedAt
+		ogit:startedAt
+		ogit:endedAt
+		ogit:type
+		ogit:subType
+		ogit:sharedWith
+		ogit:cleanContent
+	);
+	ogit:indexed-attributes (
+	);
+	ogit:allowed (
+			[ ogit:contains ogit.Legal:LegalIndentation	]
+			[ ogit:causes  ogit.ServiceManagement:Service ]			
+			[ ogit:references  ogit:Attachment ]
+			[ ogit:causes  ogit:Catalog ]
+	);
+.
