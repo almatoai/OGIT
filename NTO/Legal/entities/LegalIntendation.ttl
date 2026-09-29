@@ -6,12 +6,12 @@
 @prefix ogit.ServiceManagement: <http://www.purl.org/ogit/ServiceManagement/> .
 
 
-ogit.Legal:LegalIndentation
+ogit.Legal:LegalIntendation
 	a rdfs:Class;
 	rdfs:subClassOf ogit:Entity;
-	rdfs:label "LegalIndentation";
+	rdfs:label "LegalIntendation";
 	dcterms:description """A distinct element within a legal code or document. Takes the form of numbers, letters or 
-	points within a Section. Indentations are the second to last structural level of a legal section.""";
+	points within a Section. Intendations are the second to last structural level of a legal section.""";
 	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2026-08-14;";
 	dcterms:creator "Frauke Andersen";
@@ -36,7 +36,7 @@ ogit.Legal:LegalIndentation
 	ogit:indexed-attributes (
 	);
 	ogit:allowed (
-			[ ogit:contains ogit.Legal:LegalIndentation	]
+			[ ogit:contains ogit.Legal:LegalIntendation	]
 			[ ogit:causes  ogit.ServiceManagement:Service ]			
 			[ ogit:references  ogit:Attachment ]
 			[ ogit:causes  ogit:Catalog ]
