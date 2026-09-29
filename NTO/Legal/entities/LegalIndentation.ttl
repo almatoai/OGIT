@@ -10,7 +10,7 @@ ogit.Legal:LegalIndentation
 	a rdfs:Class;
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "LegalIndentation";
-	dcterms:description """[Deprecated] A distinct element within a legal code or document. Takes the form of numbers, letters or 
+	dcterms:description """A distinct element within a legal code or document. Takes the form of numbers, letters or 
 	points within a Section. Indentations are the second to last structural level of a legal section.""";
 	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2026-08-14;";

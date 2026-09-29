@@ -36,6 +36,7 @@ ogit.Legal:LegalSection
 	);
 	ogit:allowed (
 			[ ogit:contains ogit.Legal:LegalIntendation	]
+			[ ogit:contains ogit.Legal:LegalIndentation	]
 			[ ogit:causes  ogit.ServiceManagement:Service ]
 			[ ogit:references  ogit:Attachment ]
 			[ ogit:causes  ogit:Catalog ]
