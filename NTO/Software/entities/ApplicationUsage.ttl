@@ -1,0 +1,29 @@
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix ogit.Software:          <http://www.purl.org/ogit/Software/> .
+@prefix ogit.ServiceManagement: <http://www.purl.org/ogit/ServiceManagement/> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+
+ogit.Software:ApplicationUsage
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "ApplicationUsage";
+	dcterms:description "Records that an organization uses a specific application for a specific purpose. This is a reified relation between the three entities, since no pair of them carries the fact on its own.";
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
+	dcterms:valid "start=2026-09-15;";
+	dcterms:creator "Federico Gutt";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:mandatory-attributes (
+	);
+	ogit:optional-attributes (
+		ogit:type
+	);
+	ogit:indexed-attributes (
+	);
+	ogit:allowed (
+			[ ogit:references  ogit.Software:Application ]
+			[ ogit:assignedTo  ogit:Organization ]
+			[ ogit:covers      ogit.ServiceManagement:Service ]
+	);
+.
