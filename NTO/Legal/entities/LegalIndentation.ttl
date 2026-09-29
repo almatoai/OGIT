@@ -13,7 +13,7 @@ ogit.Legal:LegalIndentation
 	dcterms:description """A distinct element within a legal code or document. Takes the form of numbers, letters or 
 	points within a Section. Indentations are the second to last structural level of a legal section.""";
 	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
-	dcterms:valid "start=2026-08-14;";
+	dcterms:valid "start=2026-09-29;";
 	dcterms:creator "Frauke Andersen";
 	ogit:scope "NTO";
 	ogit:parent ogit:Node;
