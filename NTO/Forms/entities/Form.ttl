@@ -5,6 +5,7 @@
 @prefix ogit.Legal: <http://www.purl.org/ogit/Legal/> .
 @prefix ogit.Forms: <http://www.purl.org/ogit/Forms/> .
 @prefix ogit.Documents: <http://www.purl.org/ogit/Documents/> .
+@prefix ogit.ServiceManagement: <http://www.purl.org/ogit/ServiceManagement/> .
 
 ogit.Forms:Form
 	a rdfs:Class;
@@ -51,5 +52,6 @@ ogit.Forms:Form
 		[ ogit:generatedFrom  ogit.Documents:Document ]
 		[ ogit:generatedFrom  ogit.Forms:Form ]
 		[ ogit:generatedFrom  ogit.Legal:LegalClause ]
+		[ ogit:generatedFrom  ogit.ServiceManagement:Service ]
 	);
 .
