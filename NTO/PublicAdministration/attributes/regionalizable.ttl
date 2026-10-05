@@ -4,10 +4,10 @@
 @prefix dcterms: 	<http://purl.org/dc/terms/> .
 @prefix ogit.PublicAdministration: <http://www.purl.org/ogit/PublicAdministration/> .
 
-ogit.PublicAdministration:regionalisable
+ogit.PublicAdministration:regionalizable
 	a owl:DatatypeProperty;
 	rdfs:subPropertyOf ogit:Attribute;
-	rdfs:label "regionalisable";
+	rdfs:label "regionalizable";
 	dcterms:description "Indicates whether the service may be specialised regionally.";
 	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2026-10-05;";

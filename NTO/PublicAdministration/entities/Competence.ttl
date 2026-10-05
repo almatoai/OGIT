@@ -35,7 +35,7 @@ ogit.PublicAdministration:Competence
 		[ ogit:generatedFrom  ogit.PublicAdministration:TextualInformation ]
 		[ ogit:validFor  ogit:Region ]
 		[ ogit:validFor  ogit.PublicAdministration:CharacteristicValue ]
-		[ ogit:assignedTo  ogit.PublicAdministration:PublicOrganisation ]
+		[ ogit:assignedTo  ogit.PublicAdministration:PublicOrganization ]
 		[ ogit:provides  ogit.PublicAdministration:CitizenForm ]
 	);
 .

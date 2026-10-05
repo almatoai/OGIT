@@ -4,10 +4,10 @@
 @prefix dcterms: 	<http://purl.org/dc/terms/> .
 @prefix ogit.PublicAdministration: <http://www.purl.org/ogit/PublicAdministration/> .
 
-ogit.PublicAdministration:PublicOrganisation
+ogit.PublicAdministration:PublicOrganization
 	a rdfs:Class;
 	rdfs:subClassOf ogit:Entity;
-	rdfs:label "PublicOrganisation";
+	rdfs:label "PublicOrganization";
 	dcterms:description """An authority or organisational unit of the public administration.""";
 	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2026-10-05;";
@@ -35,7 +35,7 @@ ogit.PublicAdministration:PublicOrganisation
 	ogit:indexed-attributes (
 	);
 	ogit:allowed (
-		[ ogit:isMemberOf  ogit.PublicAdministration:PublicOrganisation ]
+		[ ogit:isMemberOf  ogit.PublicAdministration:PublicOrganization ]
 		[ ogit:governs  ogit:Region ]
 		[ ogit:utilizes  ogit.PublicAdministration:PublicService ]
 		[ ogit:manages  ogit.PublicAdministration:PublicService ]
