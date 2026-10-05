@@ -2,13 +2,12 @@
 @prefix rdfs:    	<http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl:     	<http://www.w3.org/2002/07/owl#> .
 @prefix dcterms: 	<http://purl.org/dc/terms/> .
-@prefix ogit.PublicAdministration: <http://www.purl.org/ogit/PublicAdministration/> .
 
-ogit.PublicAdministration:recommends
+ogit:recommends
 	a owl:ObjectProperty;
 	rdfs:subPropertyOf ogit:Verb;
 	rdfs:label "recommends";
-	dcterms:description "To highlight an entity as a recommended member of a category.";
+	dcterms:description "To highlight an entity as recommended for another entity.";
 	dcterms:valid "start=2026-10-05;";
 	dcterms:creator "Daniel Brommer";
 .

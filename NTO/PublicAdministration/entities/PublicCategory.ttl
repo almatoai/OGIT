@@ -28,6 +28,6 @@ ogit.PublicAdministration:PublicCategory
 	);
 	ogit:allowed (
 		[ ogit:isPartOf  ogit.PublicAdministration:PublicCategory ]
-		[ ogit.PublicAdministration:recommends  ogit.PublicAdministration:PublicService ]
+		[ ogit:recommends  ogit.PublicAdministration:PublicService ]
 	);
 .

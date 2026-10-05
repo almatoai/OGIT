@@ -24,7 +24,7 @@ ogit.PublicAdministration:Register
 		ogit:alternativeName
 		ogit:description
 		ogit:type
-		ogit.PublicAdministration:accessType
+		ogit:status
 		ogit.PublicAdministration:openData
 		ogit:url
 		ogit:source

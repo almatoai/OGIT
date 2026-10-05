@@ -30,7 +30,7 @@ ogit.PublicAdministration:PublicRequirement
 	);
 	ogit:allowed (
 		[ ogit:describes  ogit.PublicAdministration:PublicService ]
-		[ ogit.PublicAdministration:overrides  ogit.PublicAdministration:PublicRequirement ]
+		[ ogit:overrides  ogit.PublicAdministration:PublicRequirement ]
 		[ ogit:extends  ogit.PublicAdministration:PublicRequirement ]
 		[ ogit:contains  ogit.PublicAdministration:PublicRequirement ]
 		[ ogit:generatedFrom  ogit.PublicAdministration:TextualInformation ]

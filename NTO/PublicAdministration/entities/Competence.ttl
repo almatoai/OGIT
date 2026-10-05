@@ -17,7 +17,7 @@ ogit.PublicAdministration:Competence
 	ogit:mandatory-attributes (
 	);
 	ogit:optional-attributes (
-		ogit.PublicAdministration:role
+		ogit:function
 		ogit:name
 		ogit:type
 		ogit:validFrom
@@ -29,7 +29,7 @@ ogit.PublicAdministration:Competence
 	);
 	ogit:allowed (
 		[ ogit:describes  ogit.PublicAdministration:PublicService ]
-		[ ogit.PublicAdministration:overrides  ogit.PublicAdministration:Competence ]
+		[ ogit:overrides  ogit.PublicAdministration:Competence ]
 		[ ogit:extends  ogit.PublicAdministration:Competence ]
 		[ ogit:contains  ogit.PublicAdministration:Competence ]
 		[ ogit:generatedFrom  ogit.PublicAdministration:TextualInformation ]

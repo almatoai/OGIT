@@ -39,7 +39,7 @@ ogit.PublicAdministration:Cost
 	);
 	ogit:allowed (
 		[ ogit:describes  ogit.PublicAdministration:PublicService ]
-		[ ogit.PublicAdministration:overrides  ogit.PublicAdministration:Cost ]
+		[ ogit:overrides  ogit.PublicAdministration:Cost ]
 		[ ogit:extends  ogit.PublicAdministration:Cost ]
 		[ ogit:contains  ogit.PublicAdministration:Cost ]
 		[ ogit:generatedFrom  ogit.PublicAdministration:TextualInformation ]

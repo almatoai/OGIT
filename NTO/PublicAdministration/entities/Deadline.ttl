@@ -34,7 +34,7 @@ ogit.PublicAdministration:Deadline
 	);
 	ogit:allowed (
 		[ ogit:describes  ogit.PublicAdministration:PublicService ]
-		[ ogit.PublicAdministration:overrides  ogit.PublicAdministration:Deadline ]
+		[ ogit:overrides  ogit.PublicAdministration:Deadline ]
 		[ ogit:extends  ogit.PublicAdministration:Deadline ]
 		[ ogit:contains  ogit.PublicAdministration:Deadline ]
 		[ ogit:generatedFrom  ogit.PublicAdministration:TextualInformation ]

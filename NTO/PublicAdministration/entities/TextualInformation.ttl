@@ -34,7 +34,7 @@ ogit.PublicAdministration:TextualInformation
 	);
 	ogit:allowed (
 		[ ogit:describes  ogit.PublicAdministration:PublicService ]
-		[ ogit.PublicAdministration:overrides  ogit.PublicAdministration:TextualInformation ]
+		[ ogit:overrides  ogit.PublicAdministration:TextualInformation ]
 		[ ogit:extends  ogit.PublicAdministration:TextualInformation ]
 		[ ogit:contains  ogit.PublicAdministration:TextualInformation ]
 		[ ogit:generatedFrom  ogit.PublicAdministration:TextualInformation ]

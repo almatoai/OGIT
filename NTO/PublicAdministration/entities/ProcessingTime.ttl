@@ -30,7 +30,7 @@ ogit.PublicAdministration:ProcessingTime
 	);
 	ogit:allowed (
 		[ ogit:describes  ogit.PublicAdministration:PublicService ]
-		[ ogit.PublicAdministration:overrides  ogit.PublicAdministration:ProcessingTime ]
+		[ ogit:overrides  ogit.PublicAdministration:ProcessingTime ]
 		[ ogit:extends  ogit.PublicAdministration:ProcessingTime ]
 		[ ogit:contains  ogit.PublicAdministration:ProcessingTime ]
 		[ ogit:generatedFrom  ogit.PublicAdministration:TextualInformation ]

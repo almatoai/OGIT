@@ -32,7 +32,7 @@ ogit.PublicAdministration:Evidence
 	);
 	ogit:allowed (
 		[ ogit:describes  ogit.PublicAdministration:PublicService ]
-		[ ogit.PublicAdministration:overrides  ogit.PublicAdministration:Evidence ]
+		[ ogit:overrides  ogit.PublicAdministration:Evidence ]
 		[ ogit:extends  ogit.PublicAdministration:Evidence ]
 		[ ogit:contains  ogit.PublicAdministration:Evidence ]
 		[ ogit:proves  ogit.PublicAdministration:PublicRequirement ]
