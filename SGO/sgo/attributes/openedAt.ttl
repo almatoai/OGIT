@@ -7,9 +7,7 @@ ogit:openedAt
 	a owl:DatatypeProperty;
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "openedAt";
-	dcterms:description """Time when a ticket or task was created/opened.
-The values could combine date and time with time zone designator according to ISO 8601 for service management tickets.
-For most tickets there is no real difference between creation and opened time. In case such a distinction is relevant the \"createdAt\" attribute can be used.""";
+	dcterms:description """Point in time at which something opens or becomes available, e.g. the opening of a ticket or the start of business hours.""";
 	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-05-21;";
 	dcterms:creator "Peter Larem";

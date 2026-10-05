@@ -1,0 +1,33 @@
+@prefix ogit:    	<http://www.purl.org/ogit/> .
+@prefix rdfs:    	<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     	<http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: 	<http://purl.org/dc/terms/> .
+@prefix ogit.PublicAdministration: <http://www.purl.org/ogit/PublicAdministration/> .
+
+ogit.PublicAdministration:PublicCategory
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "PublicCategory";
+	dcterms:description """A thematic classification of public services, organisations, registers and forms.""";
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
+	dcterms:valid "start=2026-10-05;";
+	dcterms:creator "Daniel Brommer";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:mandatory-attributes (
+	);
+	ogit:optional-attributes (
+		ogit:type
+		ogit:name
+		ogit:id
+		ogit:description
+		ogit:source
+		ogit:lastUpdatedAt
+	);
+	ogit:indexed-attributes (
+	);
+	ogit:allowed (
+		[ ogit:isPartOf  ogit.PublicAdministration:PublicCategory ]
+		[ ogit.PublicAdministration:recommends  ogit.PublicAdministration:PublicService ]
+	);
+.

@@ -1,0 +1,49 @@
+@prefix ogit:    	<http://www.purl.org/ogit/> .
+@prefix rdfs:    	<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     	<http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: 	<http://purl.org/dc/terms/> .
+@prefix ogit.Legal: <http://www.purl.org/ogit/Legal/> .
+@prefix ogit.PublicAdministration: <http://www.purl.org/ogit/PublicAdministration/> .
+
+ogit.PublicAdministration:Cost
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "Cost";
+	dcterms:description """A single cost item of a public service.""";
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
+	dcterms:valid "start=2026-10-05;";
+	dcterms:creator "Daniel Brommer";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:mandatory-attributes (
+	);
+	ogit:optional-attributes (
+		ogit.PublicAdministration:costModel
+		ogit:name
+		ogit:description
+		ogit:type
+		ogit:amount
+		ogit:lowerLimit
+		ogit:upperLimit
+		ogit:currency
+		ogit.PublicAdministration:variabilityNote
+		ogit.PublicAdministration:freeOfChargeNote
+		ogit.PublicAdministration:prepayment
+		ogit:url
+		ogit:validFrom
+		ogit:validTo
+		ogit:reviewedAt
+		ogit:source
+	);
+	ogit:indexed-attributes (
+	);
+	ogit:allowed (
+		[ ogit:describes  ogit.PublicAdministration:PublicService ]
+		[ ogit.PublicAdministration:overrides  ogit.PublicAdministration:Cost ]
+		[ ogit:extends  ogit.PublicAdministration:Cost ]
+		[ ogit:contains  ogit.PublicAdministration:Cost ]
+		[ ogit:generatedFrom  ogit.PublicAdministration:TextualInformation ]
+		[ ogit:validFor  ogit:Region ]
+		[ ogit:validFor  ogit.PublicAdministration:CharacteristicValue ]
+	);
+.

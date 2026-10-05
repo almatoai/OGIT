@@ -1,0 +1,49 @@
+@prefix ogit:    	<http://www.purl.org/ogit/> .
+@prefix rdfs:    	<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     	<http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: 	<http://purl.org/dc/terms/> .
+@prefix ogit.Forms: <http://www.purl.org/ogit/Forms/> .
+@prefix ogit.Legal: <http://www.purl.org/ogit/Legal/> .
+@prefix ogit.PublicAdministration: <http://www.purl.org/ogit/PublicAdministration/> .
+
+ogit.PublicAdministration:AdministrativeForm
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "AdministrativeForm";
+	dcterms:description """The form with which an authority collects and processes the data of a public service.""";
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
+	dcterms:valid "start=2026-10-05;";
+	dcterms:creator "Daniel Brommer";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:blob "true";
+	ogit:mandatory-attributes (
+	);
+	ogit:optional-attributes (
+		ogit:id
+		ogit:name
+		ogit:description
+		ogit:type
+		ogit:version
+		ogit:status
+		ogit:content
+		ogit:publishedAt
+		ogit:validFrom
+		ogit:validTo
+		ogit:source
+		ogit:lastUpdatedAt
+	);
+	ogit:indexed-attributes (
+	);
+	ogit:allowed (
+		[ ogit:validFor  ogit:Region ]
+		[ ogit:uses  ogit.Forms:Form ]
+		[ ogit:uses  ogit.Forms:FormFieldGroup ]
+		[ ogit:uses  ogit.Forms:FormField ]
+		[ ogit:generatedFrom  ogit.PublicAdministration:AdministrativeForm ]
+		[ ogit:complies  ogit.Legal:LegalClause ]
+		[ ogit:complies  ogit.Legal:LegalNorm ]
+		[ ogit:complies  ogit.Legal:LegalSection ]
+		[ ogit:complies  ogit.Legal:LegalIndentation ]
+	);
+.

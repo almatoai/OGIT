@@ -1,0 +1,41 @@
+@prefix ogit:    	<http://www.purl.org/ogit/> .
+@prefix rdfs:    	<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     	<http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: 	<http://purl.org/dc/terms/> .
+@prefix ogit.PublicAdministration: <http://www.purl.org/ogit/PublicAdministration/> .
+
+ogit.PublicAdministration:Competence
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "Competence";
+	dcterms:description """The responsibility of an organisation or form for a public service within a territory.""";
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
+	dcterms:valid "start=2026-10-05;";
+	dcterms:creator "Daniel Brommer";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:mandatory-attributes (
+	);
+	ogit:optional-attributes (
+		ogit.PublicAdministration:role
+		ogit:name
+		ogit:type
+		ogit:validFrom
+		ogit:validTo
+		ogit:reviewedAt
+		ogit:source
+	);
+	ogit:indexed-attributes (
+	);
+	ogit:allowed (
+		[ ogit:describes  ogit.PublicAdministration:PublicService ]
+		[ ogit.PublicAdministration:overrides  ogit.PublicAdministration:Competence ]
+		[ ogit:extends  ogit.PublicAdministration:Competence ]
+		[ ogit:contains  ogit.PublicAdministration:Competence ]
+		[ ogit:generatedFrom  ogit.PublicAdministration:TextualInformation ]
+		[ ogit:validFor  ogit:Region ]
+		[ ogit:validFor  ogit.PublicAdministration:CharacteristicValue ]
+		[ ogit:assignedTo  ogit.PublicAdministration:PublicOrganisation ]
+		[ ogit:provides  ogit.PublicAdministration:CitizenForm ]
+	);
+.

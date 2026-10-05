@@ -1,0 +1,50 @@
+@prefix ogit:    	<http://www.purl.org/ogit/> .
+@prefix rdfs:    	<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     	<http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: 	<http://purl.org/dc/terms/> .
+@prefix ogit.ClassificationStandard: <http://www.purl.org/ogit/ClassificationStandard/> .
+@prefix ogit.Legal: <http://www.purl.org/ogit/Legal/> .
+@prefix ogit.PublicAdministration: <http://www.purl.org/ogit/PublicAdministration/> .
+
+ogit.PublicAdministration:PublicService
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "PublicService";
+	dcterms:description """A service provided by a public authority. The node carries identity and classification only; descriptive content is attached as separate information nodes.""";
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
+	dcterms:valid "start=2026-10-05;";
+	dcterms:creator "Daniel Brommer";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:mandatory-attributes (
+		ogit:name
+	);
+	ogit:optional-attributes (
+		ogit:id
+		ogit:alternativeName
+		ogit.PublicAdministration:serviceStructure
+		ogit:type
+		ogit.PublicAdministration:targetGroup
+		ogit.PublicAdministration:singlePointOfContact
+		ogit.PublicAdministration:regionalisable
+		ogit:reviewedAt
+		ogit:publishedAt
+		ogit:lastUpdatedAt
+		ogit:source
+		ogit:status
+		ogit:version
+	);
+	ogit:indexed-attributes (
+	);
+	ogit:allowed (
+		[ ogit:relates  ogit.PublicAdministration:PublicService ]
+		[ ogit:consistsOf  ogit.ClassificationStandard:ClassificationStandardTreeBranch ]
+		[ ogit:belongs  ogit.PublicAdministration:PublicCategory ]
+		[ ogit:complies  ogit.Legal:LegalNorm ]
+		[ ogit:complies  ogit.Legal:LegalClause ]
+		[ ogit:complies  ogit.Legal:LegalSection ]
+		[ ogit:complies  ogit.Legal:LegalIndentation ]
+		[ ogit:follows  ogit.PublicAdministration:PublicProcessClass ]
+		[ ogit:relates  ogit:Keyword ]
+	);
+.

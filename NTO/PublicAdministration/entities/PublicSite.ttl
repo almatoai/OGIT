@@ -1,0 +1,39 @@
+@prefix ogit:    	<http://www.purl.org/ogit/> .
+@prefix rdfs:    	<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     	<http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: 	<http://purl.org/dc/terms/> .
+@prefix ogit.Location: <http://www.purl.org/ogit/Location/> .
+@prefix ogit.PublicAdministration: <http://www.purl.org/ogit/PublicAdministration/> .
+
+ogit.PublicAdministration:PublicSite
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "PublicSite";
+	dcterms:description """A physical site of a public organisation.""";
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
+	dcterms:valid "start=2026-10-05;";
+	dcterms:creator "Daniel Brommer";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:mandatory-attributes (
+	);
+	ogit:optional-attributes (
+		ogit:type
+		ogit:name
+		ogit.PublicAdministration:accessibility
+		ogit.PublicAdministration:directions
+		ogit.PublicAdministration:publicTransport
+		ogit.PublicAdministration:parking
+		ogit:description
+		ogit:validFrom
+		ogit:validTo
+		ogit:source
+	);
+	ogit:indexed-attributes (
+	);
+	ogit:allowed (
+		[ ogit:has  ogit.PublicAdministration:ContactPoint ]
+		[ ogit:has  ogit.PublicAdministration:OpeningHours ]
+		[ ogit:locatedIn  ogit.Location:Address ]
+	);
+.

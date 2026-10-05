@@ -1,0 +1,50 @@
+@prefix ogit:    	<http://www.purl.org/ogit/> .
+@prefix rdfs:    	<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     	<http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: 	<http://purl.org/dc/terms/> .
+@prefix ogit.Compliance: <http://www.purl.org/ogit/Compliance/> .
+@prefix ogit.PublicAdministration: <http://www.purl.org/ogit/PublicAdministration/> .
+
+ogit.PublicAdministration:CitizenForm
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "CitizenForm";
+	dcterms:description """A form filled in by the recipient of a public service.""";
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
+	dcterms:valid "start=2026-10-05;";
+	dcterms:creator "Daniel Brommer";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:blob "true";
+	ogit:mandatory-attributes (
+	);
+	ogit:optional-attributes (
+		ogit:id
+		ogit:name
+		ogit:externalId
+		ogit:alternativeName
+		ogit:description
+		ogit:type
+		ogit:url
+		ogit.PublicAdministration:processKey
+		ogit:version
+		ogit:status
+		ogit.PublicAdministration:trustLevel
+		ogit.PublicAdministration:identification
+		ogit.PublicAdministration:payment
+		ogit:language
+		ogit:content
+		ogit:source
+		ogit:publishedAt
+		ogit:lastUpdatedAt
+	);
+	ogit:indexed-attributes (
+	);
+	ogit:allowed (
+		[ ogit:validFor  ogit:Region ]
+		[ ogit:generatedFrom  ogit.PublicAdministration:PublicProcess ]
+		[ ogit:generatedFrom  ogit.PublicAdministration:AdministrativeForm ]
+		[ ogit:generatedFrom  ogit.PublicAdministration:CitizenForm ]
+		[ ogit:has  ogit.PublicAdministration:ContactPoint ]
+	);
+.

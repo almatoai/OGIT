@@ -1,0 +1,40 @@
+@prefix ogit:    	<http://www.purl.org/ogit/> .
+@prefix rdfs:    	<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     	<http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: 	<http://purl.org/dc/terms/> .
+@prefix ogit.PublicAdministration: <http://www.purl.org/ogit/PublicAdministration/> .
+
+ogit.PublicAdministration:ProcessingTime
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "ProcessingTime";
+	dcterms:description """The time needed to process a public service, given as a duration or a range.""";
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
+	dcterms:valid "start=2026-10-05;";
+	dcterms:creator "Daniel Brommer";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:mandatory-attributes (
+	);
+	ogit:optional-attributes (
+		ogit:duration
+		ogit:durationUnit
+		ogit:upperLimit
+		ogit:description
+		ogit:validFrom
+		ogit:validTo
+		ogit:reviewedAt
+		ogit:source
+	);
+	ogit:indexed-attributes (
+	);
+	ogit:allowed (
+		[ ogit:describes  ogit.PublicAdministration:PublicService ]
+		[ ogit.PublicAdministration:overrides  ogit.PublicAdministration:ProcessingTime ]
+		[ ogit:extends  ogit.PublicAdministration:ProcessingTime ]
+		[ ogit:contains  ogit.PublicAdministration:ProcessingTime ]
+		[ ogit:generatedFrom  ogit.PublicAdministration:TextualInformation ]
+		[ ogit:validFor  ogit:Region ]
+		[ ogit:validFor  ogit.PublicAdministration:CharacteristicValue ]
+	);
+.

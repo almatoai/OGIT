@@ -1,0 +1,54 @@
+@prefix ogit:    	<http://www.purl.org/ogit/> .
+@prefix rdfs:    	<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     	<http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: 	<http://purl.org/dc/terms/> .
+@prefix ogit.PublicAdministration: <http://www.purl.org/ogit/PublicAdministration/> .
+
+ogit.PublicAdministration:PublicOrganisation
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "PublicOrganisation";
+	dcterms:description """An authority or organisational unit of the public administration.""";
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
+	dcterms:valid "start=2026-10-05;";
+	dcterms:creator "Daniel Brommer";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:mandatory-attributes (
+	);
+	ogit:optional-attributes (
+		ogit:id
+		ogit:name
+		ogit:type
+		ogit:alternativeName
+		ogit:description
+		ogit.PublicAdministration:preamble
+		ogit:subType
+		ogit:url
+		ogit.PublicAdministration:note
+		ogit:status
+		ogit:validFrom
+		ogit:validTo
+		ogit:source
+		ogit:lastUpdatedAt
+	);
+	ogit:indexed-attributes (
+	);
+	ogit:allowed (
+		[ ogit:isMemberOf  ogit.PublicAdministration:PublicOrganisation ]
+		[ ogit:governs  ogit:Region ]
+		[ ogit:utilizes  ogit.PublicAdministration:PublicService ]
+		[ ogit:manages  ogit.PublicAdministration:PublicService ]
+		[ ogit:approves  ogit.PublicAdministration:PublicService ]
+		[ ogit:approves  ogit.PublicAdministration:PublicProcess ]
+		[ ogit:approves  ogit.PublicAdministration:PublicProcessClass ]
+		[ ogit:has  ogit.PublicAdministration:ContactPoint ]
+		[ ogit:has  ogit.PublicAdministration:OpeningHours ]
+		[ ogit:has  ogit.PublicAdministration:PublicSite ]
+		[ ogit:has  ogit.PublicAdministration:BankAccount ]
+		[ ogit:employs  ogit:Person ]
+		[ ogit:provides  ogit.PublicAdministration:CitizenForm ]
+		[ ogit:provides  ogit.PublicAdministration:AdministrativeForm ]
+		[ ogit:belongs  ogit.PublicAdministration:PublicCategory ]
+	);
+.
