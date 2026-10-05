@@ -28,5 +28,6 @@ ogit:Product
 		
 	);
 	ogit:allowed (
+		[ ogit:reports ogit:Timeseries ]
 	);
 .
