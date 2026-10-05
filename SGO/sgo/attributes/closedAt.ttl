@@ -7,8 +7,7 @@ ogit:closedAt
 	a owl:DatatypeProperty;
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "closedAt";
-	dcterms:description """Will defined the time when a ticket was closed.
-The values must be combined date and time with time zone designator according to ISO 8601""";
+	dcterms:description """Point in time at which something closes or ceases to be available, e.g. the closing of a ticket or the end of business hours.""";
 	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
 	dcterms:valid "start=2015-05-21;";
 	dcterms:creator "Peter Larem";

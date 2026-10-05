@@ -1,0 +1,46 @@
+@prefix ogit:    	<http://www.purl.org/ogit/> .
+@prefix rdfs:    	<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     	<http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: 	<http://purl.org/dc/terms/> .
+@prefix ogit.Legal: <http://www.purl.org/ogit/Legal/> .
+@prefix ogit.PublicAdministration: <http://www.purl.org/ogit/PublicAdministration/> .
+@prefix ogit.Software: <http://www.purl.org/ogit/Software/> .
+
+ogit.PublicAdministration:Register
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "Register";
+	dcterms:description """An official data set maintained by a public authority for one specific administrative area.""";
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
+	dcterms:valid "start=2026-10-05;";
+	dcterms:creator "Daniel Brommer";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:mandatory-attributes (
+	);
+	ogit:optional-attributes (
+		ogit:id
+		ogit:name
+		ogit:alternativeName
+		ogit:description
+		ogit:type
+		ogit:status
+		ogit.PublicAdministration:openData
+		ogit:url
+		ogit:source
+		ogit:lastUpdatedAt
+	);
+	ogit:indexed-attributes (
+	);
+	ogit:allowed (
+		[ ogit:contains  ogit.PublicAdministration:Register ]
+		[ ogit:contains  ogit.PublicAdministration:RegisterItem ]
+		[ ogit:dependsOn  ogit.Software:Application ]
+		[ ogit:belongs  ogit.PublicAdministration:PublicCategory ]
+		[ ogit:complies  ogit.Legal:LegalNorm ]
+		[ ogit:complies  ogit.Legal:LegalClause ]
+		[ ogit:complies  ogit.Legal:LegalSection ]
+		[ ogit:complies  ogit.Legal:LegalIndentation ]
+		[ ogit:relates  ogit:Keyword ]
+	);
+.

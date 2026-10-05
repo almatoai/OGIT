@@ -1,0 +1,15 @@
+@prefix ogit:    	<http://www.purl.org/ogit/> .
+@prefix rdfs:    	<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     	<http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: 	<http://purl.org/dc/terms/> .
+@prefix ogit.PublicAdministration: <http://www.purl.org/ogit/PublicAdministration/> .
+
+ogit.PublicAdministration:processKey
+	a owl:DatatypeProperty;
+	rdfs:subPropertyOf ogit:Attribute;
+	rdfs:label "processKey";
+	dcterms:description "Key of the process in the source system.";
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
+	dcterms:valid "start=2026-10-05;";
+	dcterms:creator "Daniel Brommer";
+.

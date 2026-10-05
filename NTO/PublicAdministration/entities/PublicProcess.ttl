@@ -1,0 +1,49 @@
+@prefix ogit:    	<http://www.purl.org/ogit/> .
+@prefix rdfs:    	<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     	<http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: 	<http://purl.org/dc/terms/> .
+@prefix ogit.Forms: <http://www.purl.org/ogit/Forms/> .
+@prefix ogit.Legal: <http://www.purl.org/ogit/Legal/> .
+@prefix ogit.PublicAdministration: <http://www.purl.org/ogit/PublicAdministration/> .
+@prefix ogit.Software: <http://www.purl.org/ogit/Software/> .
+
+ogit.PublicAdministration:PublicProcess
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "PublicProcess";
+	dcterms:description """A process by which a public service is delivered. Describes how the service is carried out.""";
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
+	dcterms:valid "start=2026-10-05;";
+	dcterms:creator "Daniel Brommer";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:blob "true";
+	ogit:mandatory-attributes (
+	);
+	ogit:optional-attributes (
+		ogit:id
+		ogit:name
+		ogit:description
+		ogit:type
+		ogit:version
+		ogit:status
+		ogit:reviewedAt
+		ogit:url
+		ogit:source
+		ogit:lastUpdatedAt
+	);
+	ogit:indexed-attributes (
+	);
+	ogit:allowed (
+		[ ogit:validFor  ogit:Region ]
+		[ ogit:generatedFrom  ogit.PublicAdministration:AdministrativeForm ]
+		[ ogit:uses  ogit.Forms:Form ]
+		[ ogit:references  ogit.PublicAdministration:Register ]
+		[ ogit:complies  ogit.Legal:LegalNorm ]
+		[ ogit:complies  ogit.Legal:LegalClause ]
+		[ ogit:complies  ogit.Legal:LegalSection ]
+		[ ogit:complies  ogit.Legal:LegalIndentation ]
+		[ ogit:generatedFrom  ogit.PublicAdministration:PublicProcess ]
+		[ ogit:uses  ogit.Software:Application ]
+	);
+.

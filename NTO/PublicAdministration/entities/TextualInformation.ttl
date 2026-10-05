@@ -1,0 +1,52 @@
+@prefix ogit:    	<http://www.purl.org/ogit/> .
+@prefix rdfs:    	<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     	<http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: 	<http://purl.org/dc/terms/> .
+@prefix ogit.PublicAdministration: <http://www.purl.org/ogit/PublicAdministration/> .
+
+ogit.PublicAdministration:TextualInformation
+	a rdfs:Class;
+	rdfs:subClassOf ogit:Entity;
+	rdfs:label "TextualInformation";
+	dcterms:description """A text block describing a component of a public service.""";
+	# For ranges, see https://www.dublincore.org/specifications/dublin-core/dcmi-period/
+	dcterms:valid "start=2026-10-05;";
+	dcterms:creator "Daniel Brommer";
+	ogit:scope "NTO";
+	ogit:parent ogit:Node;
+	ogit:mandatory-attributes (
+		ogit:content
+	);
+	ogit:optional-attributes (
+		ogit:type
+		ogit:name
+		ogit.PublicAdministration:targetGroup
+		ogit:validFrom
+		ogit:validTo
+		ogit:url
+		ogit:source
+		ogit.PublicAdministration:sourceSection
+		ogit:reviewedAt
+		ogit:lastUpdatedAt
+		ogit:language
+	);
+	ogit:indexed-attributes (
+	);
+	ogit:allowed (
+		[ ogit:describes  ogit.PublicAdministration:PublicService ]
+		[ ogit:overrides  ogit.PublicAdministration:TextualInformation ]
+		[ ogit:extends  ogit.PublicAdministration:TextualInformation ]
+		[ ogit:contains  ogit.PublicAdministration:TextualInformation ]
+		[ ogit:generatedFrom  ogit.PublicAdministration:TextualInformation ]
+		[ ogit:precedes  ogit.PublicAdministration:TextualInformation ]
+		[ ogit:describes  ogit.PublicAdministration:TextualInformation ]
+		[ ogit:describes  ogit.PublicAdministration:Cost ]
+		[ ogit:describes  ogit.PublicAdministration:Deadline ]
+		[ ogit:describes  ogit.PublicAdministration:ProcessingTime ]
+		[ ogit:describes  ogit.PublicAdministration:Evidence ]
+		[ ogit:describes  ogit.PublicAdministration:PublicRequirement ]
+		[ ogit:describes  ogit.PublicAdministration:Competence ]
+		[ ogit:validFor  ogit:Region ]
+		[ ogit:validFor  ogit.PublicAdministration:CharacteristicValue ]
+	);
+.
