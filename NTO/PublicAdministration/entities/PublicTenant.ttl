@@ -29,7 +29,7 @@ ogit.PublicAdministration:PublicTenant
 	ogit:indexed-attributes (
 	);
 	ogit:allowed (
-		[ ogit:belongs  ogit.PublicAdministration:PublicOrganisation ]
+		[ ogit:belongs  ogit.PublicAdministration:PublicOrganization ]
 		[ ogit:isResponsibleFor  ogit.PublicAdministration:TextualInformation ]
 		[ ogit:isResponsibleFor  ogit.PublicAdministration:Cost ]
 		[ ogit:isResponsibleFor  ogit.PublicAdministration:Deadline ]
@@ -38,6 +38,6 @@ ogit.PublicAdministration:PublicTenant
 		[ ogit:isResponsibleFor  ogit.PublicAdministration:PublicRequirement ]
 		[ ogit:isResponsibleFor  ogit.PublicAdministration:Competence ]
 		[ ogit:isResponsibleFor  ogit.PublicAdministration:CitizenForm ]
-		[ ogit:isResponsibleFor  ogit.PublicAdministration:PublicOrganisation ]
+		[ ogit:isResponsibleFor  ogit.PublicAdministration:PublicOrganization ]
 	);
 .
