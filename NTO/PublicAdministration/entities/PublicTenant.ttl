@@ -30,6 +30,7 @@ ogit.PublicAdministration:PublicTenant
 	);
 	ogit:allowed (
 		[ ogit:belongs  ogit.PublicAdministration:PublicOrganization ]
+		[ ogit:isResponsibleFor  ogit.PublicAdministration:PublicService ]
 		[ ogit:isResponsibleFor  ogit.PublicAdministration:TextualInformation ]
 		[ ogit:isResponsibleFor  ogit.PublicAdministration:Cost ]
 		[ ogit:isResponsibleFor  ogit.PublicAdministration:Deadline ]
