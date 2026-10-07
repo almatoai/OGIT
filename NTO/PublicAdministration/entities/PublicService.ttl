@@ -21,6 +21,7 @@ ogit.PublicAdministration:PublicService
 	);
 	ogit:optional-attributes (
 		ogit:id
+		ogit:externalId
 		ogit:alternativeName
 		ogit.PublicAdministration:serviceStructure
 		ogit:type
@@ -29,6 +30,7 @@ ogit.PublicAdministration:PublicService
 		ogit.PublicAdministration:regionalizable
 		ogit:reviewedAt
 		ogit:publishedAt
+		ogit:createdAt
 		ogit:lastUpdatedAt
 		ogit:source
 		ogit:status
