@@ -23,6 +23,7 @@ ogit.PublicAdministration:CharacteristicValue
 		ogit:source
 	);
 	ogit:indexed-attributes (
+		ogit:name
 	);
 	ogit:allowed (
 		[ ogit:belongs  ogit.PublicAdministration:CharacteristicType ]

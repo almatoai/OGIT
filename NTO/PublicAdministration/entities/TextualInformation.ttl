@@ -31,6 +31,8 @@ ogit.PublicAdministration:TextualInformation
 		ogit:language
 	);
 	ogit:indexed-attributes (
+		ogit:name
+		ogit:type
 	);
 	ogit:allowed (
 		[ ogit:describes  ogit.PublicAdministration:PublicService ]
@@ -47,6 +49,7 @@ ogit.PublicAdministration:TextualInformation
 		[ ogit:describes  ogit.PublicAdministration:PublicRequirement ]
 		[ ogit:describes  ogit.PublicAdministration:Competence ]
 		[ ogit:validFor  ogit:Region ]
+		[ ogit:validFor  ogit:Organization ]
 		[ ogit:validFor  ogit.PublicAdministration:CharacteristicValue ]
 	);
 .

@@ -37,6 +37,8 @@ ogit.PublicAdministration:PublicService
 		ogit:version
 	);
 	ogit:indexed-attributes (
+		ogit:id
+		ogit:name
 	);
 	ogit:allowed (
 		[ ogit:relates  ogit.PublicAdministration:PublicService ]

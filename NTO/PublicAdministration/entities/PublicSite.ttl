@@ -30,6 +30,7 @@ ogit.PublicAdministration:PublicSite
 		ogit:source
 	);
 	ogit:indexed-attributes (
+		ogit:name
 	);
 	ogit:allowed (
 		[ ogit:has  ogit.PublicAdministration:ContactPoint ]

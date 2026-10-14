@@ -24,6 +24,7 @@ ogit.PublicAdministration:CharacteristicType
 		ogit:source
 	);
 	ogit:indexed-attributes (
+		ogit:name
 	);
 	ogit:allowed (
 	);
