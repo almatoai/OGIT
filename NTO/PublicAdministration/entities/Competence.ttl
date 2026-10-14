@@ -26,6 +26,7 @@ ogit.PublicAdministration:Competence
 		ogit:source
 	);
 	ogit:indexed-attributes (
+		ogit:name
 	);
 	ogit:allowed (
 		[ ogit:describes  ogit.PublicAdministration:PublicService ]
@@ -34,6 +35,7 @@ ogit.PublicAdministration:Competence
 		[ ogit:contains  ogit.PublicAdministration:Competence ]
 		[ ogit:generatedFrom  ogit.PublicAdministration:TextualInformation ]
 		[ ogit:validFor  ogit:Region ]
+		[ ogit:validFor  ogit:Organization ]
 		[ ogit:validFor  ogit.PublicAdministration:CharacteristicValue ]
 		[ ogit:assignedTo  ogit.PublicAdministration:PublicOrganization ]
 		[ ogit:provides  ogit.PublicAdministration:CitizenForm ]

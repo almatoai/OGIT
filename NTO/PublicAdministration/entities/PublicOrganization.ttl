@@ -33,6 +33,8 @@ ogit.PublicAdministration:PublicOrganization
 		ogit:lastUpdatedAt
 	);
 	ogit:indexed-attributes (
+		ogit:id
+		ogit:name
 	);
 	ogit:allowed (
 		[ ogit:isMemberOf  ogit.PublicAdministration:PublicOrganization ]

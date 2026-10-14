@@ -27,6 +27,7 @@ ogit.PublicAdministration:OpeningHours
 		ogit:source
 	);
 	ogit:indexed-attributes (
+		ogit:dayOfWeek
 	);
 	ogit:allowed (
 	);

@@ -27,6 +27,7 @@ ogit.PublicAdministration:BankAccount
 		ogit:source
 	);
 	ogit:indexed-attributes (
+		ogit:name
 	);
 	ogit:allowed (
 	);

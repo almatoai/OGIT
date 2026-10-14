@@ -27,6 +27,7 @@ ogit.PublicAdministration:ProcessingTime
 		ogit:source
 	);
 	ogit:indexed-attributes (
+		ogit:duration
 	);
 	ogit:allowed (
 		[ ogit:describes  ogit.PublicAdministration:PublicService ]
@@ -35,6 +36,7 @@ ogit.PublicAdministration:ProcessingTime
 		[ ogit:contains  ogit.PublicAdministration:ProcessingTime ]
 		[ ogit:generatedFrom  ogit.PublicAdministration:TextualInformation ]
 		[ ogit:validFor  ogit:Region ]
+		[ ogit:validFor  ogit:Organization ]
 		[ ogit:validFor  ogit.PublicAdministration:CharacteristicValue ]
 	);
 .

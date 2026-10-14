@@ -25,6 +25,8 @@ ogit.PublicAdministration:PublicCategory
 		ogit:lastUpdatedAt
 	);
 	ogit:indexed-attributes (
+		ogit:id
+		ogit:name
 	);
 	ogit:allowed (
 		[ ogit:isPartOf  ogit.PublicAdministration:PublicCategory ]
