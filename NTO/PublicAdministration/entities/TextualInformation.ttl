@@ -2,6 +2,7 @@
 @prefix rdfs:    	<http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl:     	<http://www.w3.org/2002/07/owl#> .
 @prefix dcterms: 	<http://purl.org/dc/terms/> .
+@prefix ogit.Legal: <http://www.purl.org/ogit/Legal/> .
 @prefix ogit.PublicAdministration: <http://www.purl.org/ogit/PublicAdministration/> .
 
 ogit.PublicAdministration:TextualInformation
@@ -25,6 +26,8 @@ ogit.PublicAdministration:TextualInformation
 		ogit:validTo
 		ogit:url
 		ogit:source
+		ogit:id
+		ogit:reviewedBy
 		ogit.PublicAdministration:sourceSection
 		ogit:reviewedAt
 		ogit:lastUpdatedAt
@@ -51,5 +54,9 @@ ogit.PublicAdministration:TextualInformation
 		[ ogit:validFor  ogit:Region ]
 		[ ogit:validFor  ogit:Organization ]
 		[ ogit:validFor  ogit.PublicAdministration:CharacteristicValue ]
+		[ ogit:complies  ogit.Legal:LegalNorm ]
+		[ ogit:complies  ogit.Legal:LegalClause ]
+		[ ogit:complies  ogit.Legal:LegalSection ]
+		[ ogit:complies  ogit.Legal:LegalIndentation ]
 	);
 .

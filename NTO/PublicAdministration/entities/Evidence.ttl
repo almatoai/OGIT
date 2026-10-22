@@ -27,6 +27,8 @@ ogit.PublicAdministration:Evidence
 		ogit:validTo
 		ogit:reviewedAt
 		ogit:source
+		ogit:id
+		ogit:externalId
 	);
 	ogit:indexed-attributes (
 		ogit:name
