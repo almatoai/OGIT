@@ -28,6 +28,7 @@ ogit.PublicAdministration:Evidence
 		ogit:reviewedAt
 		ogit:source
 		ogit:id
+		ogit:externalId
 	);
 	ogit:indexed-attributes (
 		ogit:name
