@@ -24,6 +24,7 @@ ogit.PublicAdministration:Competence
 		ogit:validTo
 		ogit:reviewedAt
 		ogit:source
+		ogit:id
 		ogit:description
 	);
 	ogit:indexed-attributes (
