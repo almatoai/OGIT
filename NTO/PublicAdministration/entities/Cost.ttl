@@ -22,6 +22,7 @@ ogit.PublicAdministration:Cost
 		ogit:name
 		ogit:description
 		ogit:type
+		ogit:subType
 		ogit:amount
 		ogit:lowerLimit
 		ogit:upperLimit

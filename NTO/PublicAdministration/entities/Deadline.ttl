@@ -19,6 +19,7 @@ ogit.PublicAdministration:Deadline
 	);
 	ogit:optional-attributes (
 		ogit:type
+		ogit:subType
 		ogit:duration
 		ogit:durationUnit
 		ogit:upperLimit

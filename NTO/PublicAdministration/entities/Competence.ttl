@@ -20,6 +20,7 @@ ogit.PublicAdministration:Competence
 		ogit:function
 		ogit:name
 		ogit:type
+		ogit:subType
 		ogit:validFrom
 		ogit:validTo
 		ogit:reviewedAt
