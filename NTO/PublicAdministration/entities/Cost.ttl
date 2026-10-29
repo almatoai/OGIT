@@ -46,6 +46,7 @@ ogit.PublicAdministration:Cost
 		[ ogit:extends  ogit.PublicAdministration:Cost ]
 		[ ogit:contains  ogit.PublicAdministration:Cost ]
 		[ ogit:generatedFrom  ogit.PublicAdministration:TextualInformation ]
+		[ ogit:generatedFrom  ogit.PublicAdministration:Cost ]
 		[ ogit:validFor  ogit:Region ]
 		[ ogit:validFor  ogit:Organization ]
 		[ ogit:validFor  ogit.PublicAdministration:CharacteristicValue ]

@@ -40,6 +40,7 @@ ogit.PublicAdministration:Evidence
 		[ ogit:contains  ogit.PublicAdministration:Evidence ]
 		[ ogit:proves  ogit.PublicAdministration:PublicRequirement ]
 		[ ogit:generatedFrom  ogit.PublicAdministration:TextualInformation ]
+		[ ogit:generatedFrom  ogit.PublicAdministration:Evidence ]
 		[ ogit:validFor  ogit:Region ]
 		[ ogit:validFor  ogit:Organization ]
 		[ ogit:validFor  ogit.PublicAdministration:CharacteristicValue ]

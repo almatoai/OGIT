@@ -36,6 +36,7 @@ ogit.PublicAdministration:Competence
 		[ ogit:extends  ogit.PublicAdministration:Competence ]
 		[ ogit:contains  ogit.PublicAdministration:Competence ]
 		[ ogit:generatedFrom  ogit.PublicAdministration:TextualInformation ]
+		[ ogit:generatedFrom  ogit.PublicAdministration:Competence ]
 		[ ogit:validFor  ogit:Region ]
 		[ ogit:validFor  ogit:Organization ]
 		[ ogit:validFor  ogit.PublicAdministration:CharacteristicValue ]
