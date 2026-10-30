@@ -49,5 +49,6 @@ ogit:Alert
 			[ ogit:triggers  ogit:Event ]
 			[ ogit:affects  ogit.MARS:Machine ]
 			[ ogit:affects  ogit.MARS:Software ]
+			[ ogit:triggers ogit.ServiceManagement:Ticket ]
 	);
 .
