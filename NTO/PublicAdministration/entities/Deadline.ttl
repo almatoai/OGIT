@@ -19,6 +19,7 @@ ogit.PublicAdministration:Deadline
 	);
 	ogit:optional-attributes (
 		ogit:type
+		ogit:subType
 		ogit:duration
 		ogit:durationUnit
 		ogit:upperLimit
@@ -40,6 +41,7 @@ ogit.PublicAdministration:Deadline
 		[ ogit:extends  ogit.PublicAdministration:Deadline ]
 		[ ogit:contains  ogit.PublicAdministration:Deadline ]
 		[ ogit:generatedFrom  ogit.PublicAdministration:TextualInformation ]
+		[ ogit:generatedFrom  ogit.PublicAdministration:Deadline ]
 		[ ogit:validFor  ogit:Region ]
 		[ ogit:validFor  ogit:Organization ]
 		[ ogit:validFor  ogit.PublicAdministration:CharacteristicValue ]

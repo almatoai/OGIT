@@ -20,6 +20,7 @@ ogit.PublicAdministration:TextualInformation
 	);
 	ogit:optional-attributes (
 		ogit:type
+		ogit:subType
 		ogit:name
 		ogit.PublicAdministration:targetGroup
 		ogit:validFrom
