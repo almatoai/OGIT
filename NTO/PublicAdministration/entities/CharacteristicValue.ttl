@@ -21,9 +21,7 @@ ogit.PublicAdministration:CharacteristicValue
 		ogit:name
 		ogit:type
 		ogit:subType
-		ogit:lowerLimit
-		ogit:upperLimit
-		ogit:category
+		ogit:range
 		ogit:description
 		ogit:source
 	);
