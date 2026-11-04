@@ -18,6 +18,7 @@ ogit.PublicAdministration:Deadline
 	ogit:mandatory-attributes (
 	);
 	ogit:optional-attributes (
+		ogit:name
 		ogit:type
 		ogit:subType
 		ogit:duration

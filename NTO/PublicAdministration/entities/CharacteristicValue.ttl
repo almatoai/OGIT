@@ -19,6 +19,11 @@ ogit.PublicAdministration:CharacteristicValue
 	ogit:optional-attributes (
 		ogit:id
 		ogit:name
+		ogit:type
+		ogit:subType
+		ogit:lowerLimit
+		ogit:upperLimit
+		ogit:category
 		ogit:description
 		ogit:source
 	);

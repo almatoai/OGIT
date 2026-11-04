@@ -17,6 +17,7 @@ ogit.PublicAdministration:ProcessingTime
 	ogit:mandatory-attributes (
 	);
 	ogit:optional-attributes (
+		ogit:name
 		ogit:duration
 		ogit:durationUnit
 		ogit:upperLimit
