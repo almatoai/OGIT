@@ -19,6 +19,9 @@ ogit.PublicAdministration:CharacteristicType
 	ogit:optional-attributes (
 		ogit:id
 		ogit:name
+		ogit:type
+		ogit:subType
+		ogit:unit
 		ogit:description
 		ogit:status
 		ogit:source
@@ -27,5 +30,7 @@ ogit.PublicAdministration:CharacteristicType
 		ogit:name
 	);
 	ogit:allowed (
+		[ ogit:references  ogit.PublicAdministration:CharacteristicType ]
+		[ ogit:references  ogit.PublicAdministration:CharacteristicValue ]
 	);
 .

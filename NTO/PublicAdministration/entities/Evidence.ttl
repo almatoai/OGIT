@@ -21,6 +21,7 @@ ogit.PublicAdministration:Evidence
 		ogit:name
 		ogit:description
 		ogit:type
+		ogit:subType
 		ogit.PublicAdministration:signatureRequirement
 		ogit.PublicAdministration:issuedBy
 		ogit:validFrom
@@ -40,6 +41,7 @@ ogit.PublicAdministration:Evidence
 		[ ogit:contains  ogit.PublicAdministration:Evidence ]
 		[ ogit:proves  ogit.PublicAdministration:PublicRequirement ]
 		[ ogit:generatedFrom  ogit.PublicAdministration:TextualInformation ]
+		[ ogit:generatedFrom  ogit.PublicAdministration:Evidence ]
 		[ ogit:validFor  ogit:Region ]
 		[ ogit:validFor  ogit:Organization ]
 		[ ogit:validFor  ogit.PublicAdministration:CharacteristicValue ]

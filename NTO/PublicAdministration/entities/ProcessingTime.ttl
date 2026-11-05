@@ -17,6 +17,7 @@ ogit.PublicAdministration:ProcessingTime
 	ogit:mandatory-attributes (
 	);
 	ogit:optional-attributes (
+		ogit:name
 		ogit:duration
 		ogit:durationUnit
 		ogit:upperLimit
@@ -26,6 +27,8 @@ ogit.PublicAdministration:ProcessingTime
 		ogit:reviewedAt
 		ogit:source
 		ogit:id
+		ogit:type
+		ogit:subType
 	);
 	ogit:indexed-attributes (
 		ogit:duration
@@ -36,6 +39,7 @@ ogit.PublicAdministration:ProcessingTime
 		[ ogit:extends  ogit.PublicAdministration:ProcessingTime ]
 		[ ogit:contains  ogit.PublicAdministration:ProcessingTime ]
 		[ ogit:generatedFrom  ogit.PublicAdministration:TextualInformation ]
+		[ ogit:generatedFrom  ogit.PublicAdministration:ProcessingTime ]
 		[ ogit:validFor  ogit:Region ]
 		[ ogit:validFor  ogit:Organization ]
 		[ ogit:validFor  ogit.PublicAdministration:CharacteristicValue ]
