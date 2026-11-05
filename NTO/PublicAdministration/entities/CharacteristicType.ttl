@@ -30,5 +30,7 @@ ogit.PublicAdministration:CharacteristicType
 		ogit:name
 	);
 	ogit:allowed (
+		[ ogit:references  ogit.PublicAdministration:CharacteristicType ]
+		[ ogit:references  ogit.PublicAdministration:CharacteristicValue ]
 	);
 .
