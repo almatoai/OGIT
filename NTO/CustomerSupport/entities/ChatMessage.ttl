@@ -13,6 +13,7 @@ ogit.CustomerSupport:ChatMessage
     dcterms:valid             "start=2024-04-30;" ;
     dcterms:creator           "Leonie Glanzer" ;
     ogit:scope                "NTO" ;
+	ogit:blob 				  "true";
     ogit:parent               ogit:Node ;
     ogit:mandatory-attributes (
 		ogit:message
@@ -28,9 +29,11 @@ ogit.CustomerSupport:ChatMessage
 		ogit:expiresAt  # timestamp of message expiration (deletedAt?)
 		ogit:subject    # ?
 		ogit:summary    # ?
+		ogit:message
 	) ;
     ogit:indexed-attributes   ( ) ;
     ogit:allowed              (
 		[ ogit:belongs ogit.CustomerSupport:ChatSession ]
+		[ ogit:has ogit:Error ]
     ) ;
 .

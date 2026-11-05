@@ -34,6 +34,7 @@
 @prefix ogit.Auth:              <http://www.purl.org/ogit/Auth/> .
 @prefix ogit.Forum:             <http://www.purl.org/ogit/Forum/> .
 @prefix ogit.Forms:             <http://www.purl.org/ogit/Forms/> .
+@prefix ogit.CustomerSupport: 	<http://www.purl.org/ogit/ogit.CustomerSupport/> .
 
 ogit:Person
 	a rdfs:Class;
@@ -339,5 +340,9 @@ ogit:Person
 			[ ogit:receives  ogit:Certificate ]
 			[ ogit:receives  ogit.Forum:Award ]
 			[ ogit:provides  ogit:Rating ]
+
+			# Chat Messages
+			[ ogit:owns  ogit.CustomerSupport:ChatSession]
+			[ ogit:creates ogit.CustomerSupport:ChatMessage]
 	);
 .
