@@ -29,7 +29,8 @@ ogit.CustomerSupport:ChatMessage
 		ogit:expiresAt  # timestamp of message expiration (deletedAt?)
 		ogit:subject    # ?
 		ogit:summary    # ?
-		ogit:message
+		ogit:duration
+		ogit:durationUnit
 	) ;
     ogit:indexed-attributes   ( ) ;
     ogit:allowed              (

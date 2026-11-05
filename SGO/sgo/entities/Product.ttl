@@ -1,7 +1,7 @@
 @prefix ogit:                   <http://www.purl.org/ogit/> .
 @prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms:                <http://purl.org/dc/terms/> .
-@prefix ogit.CustomerSupport: 	<http://www.purl.org/ogit/ogit.CustomerSupport/> .
+@prefix ogit.CustomerSupport:   <http://www.purl.org/ogit/CustomerSupport/> .
 
 ogit:Product
 	a rdfs:Class;
