@@ -342,6 +342,5 @@ ogit:Person
 
 			# Chat Messages
 			[ ogit:owns  ogit.CustomerSupport:ChatSession]
-			[ ogit:generates ogit.CustomerSupport:ChatMessage]
 	);
 .

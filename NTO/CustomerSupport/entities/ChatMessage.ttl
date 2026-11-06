@@ -35,6 +35,5 @@ ogit.CustomerSupport:ChatMessage
     ogit:indexed-attributes   ( ) ;
     ogit:allowed              (
 		[ ogit:belongs ogit.CustomerSupport:ChatSession ]
-		[ ogit:has ogit:Error ]
     ) ;
 .
