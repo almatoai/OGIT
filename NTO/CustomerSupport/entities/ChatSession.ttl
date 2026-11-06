@@ -25,6 +25,8 @@ ogit.CustomerSupport:ChatSession
 		ogit:sourceId   # ID of the source system
 		ogit:externalId # ID of the session in the source system
 		ogit:createdAt  # timestamp of the chat creation
+    ogit:title
+    ogit:lastUpdatedAt
     ) ;
     ogit:indexed-attributes   ( ) ;
     ogit:allowed              (
@@ -35,5 +37,6 @@ ogit.CustomerSupport:ChatSession
     [ ogit:belongs ogit.ServiceManagement:ChangeRequest ]
     [ ogit:belongs ogit.ServiceManagement:ServiceRequest ]
     [ ogit:belongs ogit:Organization ]
+    [ ogit:uses  ogit:Product]
     ) ;
 .

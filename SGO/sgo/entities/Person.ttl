@@ -339,5 +339,9 @@ ogit:Person
 			[ ogit:receives  ogit:Certificate ]
 			[ ogit:receives  ogit.Forum:Award ]
 			[ ogit:provides  ogit:Rating ]
+
+			# Chat Messages
+			[ ogit:owns  ogit.CustomerSupport:ChatSession]
+			[ ogit:generates ogit.CustomerSupport:ChatMessage]
 	);
 .
