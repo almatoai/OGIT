@@ -51,12 +51,14 @@ ogit.Auth:Account
           ogit.Auth.Account:acceptedProjectTerms
           ogit.Auth.Account:allowCookies
           ogit.Auth.Account:statusReason	
+          ogit.Auth:managedBy
+          ogit.Auth:managedAttributes
           ogit.Academy:lmsActivatedAt
           ogit.Academy:lmsActiveUntil
 	);
-  ogit:indexed-attributes (
+        ogit:indexed-attributes (
 
-  );
+        );
 	ogit:history (
 	);
 	ogit:allowed (

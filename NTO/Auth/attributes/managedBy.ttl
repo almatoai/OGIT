@@ -1,0 +1,14 @@
+@prefix ogit:           <http://www.purl.org/ogit/> .
+@prefix ogit.Auth:      <http://www.purl.org/ogit/Auth/> .
+@prefix owl:            <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:           <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:        <http://purl.org/dc/terms/> .
+
+ogit.Auth:managedBy
+    a owl:DatatypeProperty;
+    rdfs:subPropertyOf ogit:Attribute;
+    rdfs:label "managedBy";
+    dcterms:description "This attribute indicates that an auth entity is created or managed by an external system or federated IDP";
+    dcterms:valid "start=2026-11-09;";
+    dcterms:creator "Almato AG";
+.
