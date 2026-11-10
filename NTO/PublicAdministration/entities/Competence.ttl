@@ -42,6 +42,7 @@ ogit.PublicAdministration:Competence
 		[ ogit:validFor  ogit:Organization ]
 		[ ogit:validFor  ogit.PublicAdministration:CharacteristicValue ]
 		[ ogit:assignedTo  ogit.PublicAdministration:PublicOrganization ]
+		[ ogit:assignedTo  ogit:Person ]
 		[ ogit:provides  ogit.PublicAdministration:CitizenForm ]
 	);
 .

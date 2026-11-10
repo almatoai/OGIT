@@ -24,6 +24,7 @@ ogit.Location:Address
     ogit.Location:zipCode
     ogit.Location:country
     ogit.Location:state
+    ogit.Location:postOfficeBox
   );
   ogit:indexed-attributes (
   );
