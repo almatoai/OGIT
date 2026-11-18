@@ -27,15 +27,16 @@ ogit.Auth:AccountProfile
           ogit.Auth.Account:acceptedEmails
           ogit.Auth.Account:defaultScope
           ogit.Auth.Account:defaultTeam
+          ogit.Auth:managedBy
+          ogit.Auth:managedAttributes
           ogit:firstName
           ogit:lastName
 	);
-  ogit:indexed-attributes (
-
-  );
+        ogit:indexed-attributes (
+        );
 	ogit:history (
 	);
 	ogit:allowed (
- [ ogit.Auth:belongs  ogit.Auth:Account ]
+          [ ogit.Auth:belongs  ogit.Auth:Account ]
 	);
 .

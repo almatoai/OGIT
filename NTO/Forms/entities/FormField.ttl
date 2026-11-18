@@ -34,5 +34,7 @@ ogit.Forms:FormField
 		[ ogit:references  ogit.Forms:FormField ]
 		[ ogit:complies  ogit.Legal:LegalClause ]
 		[ ogit:complies  ogit.Legal:LegalNorm ]
+		[ ogit:complies  ogit.Legal:LegalSection ]
+		[ ogit:complies  ogit.Legal:LegalIndentation ]
 	);
 .

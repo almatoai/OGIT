@@ -1,0 +1,14 @@
+@prefix ogit.Location:     <http://www.purl.org/ogit/Location/> .
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+
+ogit.Location:postOfficeBox
+        a owl:DatatypeProperty;
+        rdfs:subPropertyOf ogit:Attribute;
+        rdfs:label "postOfficeBox";
+        dcterms:description "The post office box of an address.";
+        dcterms:valid "start=2026-11-10;";
+        dcterms:creator "Daniel Brommer";
+.

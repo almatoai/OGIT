@@ -76,5 +76,6 @@ ogit.ServiceManagement:Service
 			[ ogit:describes  ogit.ServiceManagement:Service ]
 			[ ogit:references  ogit:Catalog ]
 			[ ogit:consistsOf  ogit.ClassificationStandard:ClassificationStandardTreeBranch ]
+			[ ogit:references  ogit:Category ]
 	);
 .

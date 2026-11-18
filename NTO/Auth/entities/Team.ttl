@@ -22,23 +22,24 @@ ogit.Auth:Team
 	ogit:scope "NTO";
 	ogit:parent ogit:Node;
 	ogit:mandatory-attributes (
-        ogit:name
+          ogit:name
 	);
 	ogit:optional-attributes (
-        ogit:description
-        ogit.Auth:isWorkspace
+          ogit:description
+          ogit.Auth:isWorkspace
+          ogit.Auth:managedBy
+          ogit.Auth:managedAttributes
 	);
-  ogit:indexed-attributes (
-
-  );
+        ogit:indexed-attributes (
+        );
 	ogit:history (
 	);
 	ogit:allowed (
- [ ogit.Auth:belongs  ogit.Auth:Team ]
- [ ogit.Auth:belongs  ogit.Auth:Organization ]
- [ ogit:approves  ogit.Knowledge:AcquisitionSession ]
- [ ogit:approves  ogit.Automation:KnowledgeItem ]
- [ ogit:rejects  ogit.Knowledge:AcquisitionSession ]
- [ ogit:rejects  ogit.Automation:KnowledgeItem ]
+          [ ogit.Auth:belongs  ogit.Auth:Team ]
+          [ ogit.Auth:belongs  ogit.Auth:Organization ]
+          [ ogit:approves  ogit.Knowledge:AcquisitionSession ]
+          [ ogit:approves  ogit.Automation:KnowledgeItem ]
+          [ ogit:rejects  ogit.Knowledge:AcquisitionSession ]
+          [ ogit:rejects  ogit.Automation:KnowledgeItem ]
 	);
 .

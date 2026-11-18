@@ -16,9 +16,11 @@ ogit:Requirements
 	ogit:mandatory-attributes (
 	);
 	ogit:optional-attributes (
-    ogit:id
-    ogit:name
+    	ogit:id
+    	ogit:name
 		ogit:description
+		ogit:tenantId
+		ogit:status
 	);
 	ogit:indexed-attributes (
 		

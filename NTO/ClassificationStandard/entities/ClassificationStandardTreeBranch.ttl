@@ -23,6 +23,9 @@ ogit.ClassificationStandard:ClassificationStandardTreeBranch
 		ogit:description
         ogit.ClassificationStandard:leaf
 		ogit.Utilities:sourcePublication
+		ogit:type
+		ogit:status
+		ogit:validTo
 	);
 	ogit:indexed-attributes (
 		ogit:name

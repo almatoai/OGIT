@@ -26,5 +26,7 @@ ogit.Automation:Intent
   ogit:allowed (
 		[ ogit:has  ogit:Attachment ]
 		[ ogit:utilizes  ogit.Automation:Variable ]
+		[ ogit:has  ogit:Requirements ]
+
   );
 .
