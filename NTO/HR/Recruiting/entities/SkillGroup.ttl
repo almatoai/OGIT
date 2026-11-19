@@ -8,10 +8,11 @@ ogit.HR.Recruiting:SkillGroup
   rdfs:subClassOf ogit:Entity;
   rdfs:label "SkillGroup";
   dcterms:description """A group of skills. Where the skills are taken from a
-  published catalogue, the group can be that catalogue or one edition of it
-  (e.g. a training regulation): identifierCode and codeType name it, url
-  points at the source, version names the edition and validFrom/validTo
-  its period of validity.""";
+  published source, the group is one edition of that source (e.g. one
+  training regulation): identifierCode and codeType name it, url points at
+  the source, version names the edition and validFrom/validTo its period of
+  validity. codeType is the kind of source, e.g. RAHMENPLAN for the
+  framework plan of a German vocational training regulation.""";
   dcterms:valid "start=2019-03-21;";
   dcterms:creator "Florian Fluegel";
   ogit:scope "NTO";
