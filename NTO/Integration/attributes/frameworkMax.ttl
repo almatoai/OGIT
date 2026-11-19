@@ -8,7 +8,7 @@ ogit.Integration:frameworkMax
 	a owl:DatatypeProperty;
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "frameworkMax";
-	dcterms:description "Maximum kernel version the blueprint is compatible with.";
+	dcterms:description "Highest connector-framework version recorded for the blueprint version. Deprecated: no reader evaluates it.";
 	dcterms:valid "start=2026-05-21;";
 	dcterms:creator "Almato AG";
 .

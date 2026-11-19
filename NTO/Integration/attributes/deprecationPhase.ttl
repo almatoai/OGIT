@@ -8,7 +8,7 @@ ogit.Integration:deprecationPhase
 	a owl:DatatypeProperty;
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "deprecationPhase";
-	dcterms:description "Deprecation lifecycle phase (announcement / soft / hard / removed) per Identity v2 Section 14.";
+	dcterms:description "Phase of withdrawing a connector version: announcement, soft, hard or removed. Deprecated: the connector framework does not write or read this attribute.";
 	ogit:validation-type "fixed";
 	ogit:validation-parameter "announcement,soft,hard,removed";
 	dcterms:valid "start=2026-05-21;";

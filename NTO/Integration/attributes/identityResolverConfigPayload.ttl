@@ -8,7 +8,7 @@ ogit.Integration:identityResolverConfigPayload
 	a owl:DatatypeProperty;
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "identityResolverConfigPayload";
-	dcterms:description "Immutable JSON payload of the identity-resolver configuration captured for a Run.";
+	dcterms:description "JSON (RFC 8259, https://www.rfc-editor.org/rfc/rfc8259) of an identity-resolver configuration for a run. Deprecated: blueprints declare no identity resolver; the connector framework does not read this attribute.";
 	dcterms:valid "start=2026-05-21;";
 	dcterms:creator "Almato AG";
 .

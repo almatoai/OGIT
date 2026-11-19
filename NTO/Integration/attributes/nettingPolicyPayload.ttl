@@ -8,7 +8,7 @@ ogit.Integration:nettingPolicyPayload
 	a owl:DatatypeProperty;
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "nettingPolicyPayload";
-	dcterms:description "Immutable JSON payload of the netting policy captured for a Run.";
+	dcterms:description "JSON (RFC 8259, https://www.rfc-editor.org/rfc/rfc8259) of the blueprint's netting policy for a run. Netting is how the connector framework combines and throttles writes before they reach the graph: coalescing of repeated changes, batching and backpressure. The value is recorded with the run; the connector framework does not apply it.";
 	dcterms:valid "start=2026-05-21;";
 	dcterms:creator "Almato AG";
 .

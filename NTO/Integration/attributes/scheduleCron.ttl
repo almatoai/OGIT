@@ -8,7 +8,7 @@ ogit.Integration:scheduleCron
 	a owl:DatatypeProperty;
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "scheduleCron";
-	dcterms:description "Cron expression for the weaver execution schedule.";
+	dcterms:description "Cron expression (crontab format, IEEE Std 1003.1, utility crontab) that scheduled a weaving rule. Deprecated: a weaving rule runs after each run of the connector that declares it; the connector framework does not write or read this attribute.";
 	dcterms:valid "start=2026-05-21;";
 	dcterms:creator "Almato AG";
 .

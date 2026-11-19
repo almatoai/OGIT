@@ -1,0 +1,24 @@
+@prefix ogit:                   <http://www.purl.org/ogit/> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+
+ogit:contentDigest
+	a owl:DatatypeProperty;
+	rdfs:subPropertyOf ogit:Attribute;
+	rdfs:label "contentDigest";
+	dcterms:description """Digest of the content an entity carries or stands for, written in the
+	syntax of the Content-Digest field of RFC 9530 (Digest Fields,
+	https://www.rfc-editor.org/rfc/rfc9530): one or more entries
+	"<algorithm>=:<digest>:", separated by commas, where <algorithm> is a key of
+	the IANA registry "Hash Algorithms for HTTP Digest Fields"
+	(https://www.iana.org/assignments/http-digest-hash-alg/) and <digest> is the
+	base64-encoded digest, e.g. sha-256=:X48E9qOokqqrvdts8nOJRJN3OWDUoyWxBf7kbu9DBPE=: for the
+	bytes {"hello": "world"}.
+	Use an algorithm the registry marks as active (sha-256, sha-512). Which bytes
+	are digested -- e.g. the bytes as stored, or a canonical serialisation -- is
+	stated by the entity that uses this attribute. A digest detects changed
+	content; it does not prove who produced it.""";
+	dcterms:valid "start=2026-11-19;";
+	dcterms:creator "Almato AG";
+.

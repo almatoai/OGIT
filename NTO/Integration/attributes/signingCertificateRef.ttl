@@ -8,7 +8,7 @@ ogit.Integration:signingCertificateRef
 	a owl:DatatypeProperty;
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "signingCertificateRef";
-	dcterms:description "Reference to the certificate used to sign the blueprint (Phase F).";
+	dcterms:description "Reference to the certificate whose key signed the blueprint version. Deprecated: the connector framework does not write or read this attribute; a signature of an application version belongs to ogit/Auth/ApplicationVersion.";
 	dcterms:valid "start=2026-05-21;";
 	dcterms:creator "Almato AG";
 .

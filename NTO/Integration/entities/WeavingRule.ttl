@@ -7,20 +7,14 @@ ogit.Integration:WeavingRule
 	a rdfs:Class;
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "WeavingRule";
-	dcterms:description """Cross-theme edge generation rule. Runs in the
-	Weaver phase (stage 4 of the eight-stage pipeline) AFTER one or more
-	ConnectorRuns finish, against the existing graph state. Reads graph
-	state across themes and produces additional edges between entities that
-	belong together by domain rules (e.g. linking a Ticket vertex to a User
-	vertex by name + system pair). A WeaverRun lifecycle entity (counterpart
-	to ConnectorRun for the Weaver phase) is a deferred Phase-G+ deliverable;
-	**in Phase B the audit trail for WeaverRule firings is stream-only**:
-	the Weaver writes activity into the ConnectorRun TSDB streams of the
-	owning connector instead of into a dedicated vertex. Implementers who
-	need to query which WeavingRules fired during a specific run MUST read
-	the `event:<run_id>` TSDB stream; no graph traversal path exists in
-	Phase B. The graph-level WeaverRun entity ships in Phase G+ together
-	with corresponding verbs.""";
+	dcterms:description """A rule of a blueprint (see Connector) that draws edges between vertices
+	already in the graph. After each run of the connector that declares it, every
+	vertex matching sourceVertexPattern is connected by an edge of edgeType to
+	every vertex matching targetVertexPattern whose attributes equal its own as
+	listed in matchCriteria. An edge that exists is not written again, and an edge
+	whose match no longer holds is not removed. The full rule is carried as JSON in
+	ogit:content. One vertex per rule and blueprint version, contained by its
+	Connector; blueprintId names the blueprint and weaverId the rule within it.""";
 	dcterms:valid "start=2026-05-21;";
 	dcterms:creator "Almato AG";
 	ogit:scope "NTO";
@@ -32,6 +26,7 @@ ogit.Integration:WeavingRule
 		ogit.Integration:edgeType
 	);
 	ogit:optional-attributes (
+		ogit.Integration:blueprintId
 		ogit.Integration:matchCriteria
 		ogit.Integration:celPredicate
 		ogit.Integration:scheduleCron
@@ -41,6 +36,7 @@ ogit.Integration:WeavingRule
 	ogit:indexed-attributes (
 		ogit.Integration:weaverId
 		ogit.Integration:edgeType
+		ogit.Integration:blueprintId
 	);
 	ogit:allowed (
 	);
