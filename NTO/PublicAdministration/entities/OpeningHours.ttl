@@ -30,5 +30,6 @@ ogit.PublicAdministration:OpeningHours
 		ogit:dayOfWeek
 	);
 	ogit:allowed (
+		[ ogit:assignedTo  ogit:Person ]
 	);
 .

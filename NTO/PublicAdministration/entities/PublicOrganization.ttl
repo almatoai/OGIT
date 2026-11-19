@@ -39,6 +39,7 @@ ogit.PublicAdministration:PublicOrganization
 	ogit:allowed (
 		[ ogit:isMemberOf  ogit.PublicAdministration:PublicOrganization ]
 		[ ogit:governs  ogit:Region ]
+		[ ogit:governs  ogit:Organization ]
 		[ ogit:utilizes  ogit.PublicAdministration:PublicService ]
 		[ ogit:manages  ogit.PublicAdministration:PublicService ]
 		[ ogit:approves  ogit.PublicAdministration:PublicService ]
@@ -52,5 +53,6 @@ ogit.PublicAdministration:PublicOrganization
 		[ ogit:provides  ogit.PublicAdministration:CitizenForm ]
 		[ ogit:provides  ogit.PublicAdministration:AdministrativeForm ]
 		[ ogit:belongs  ogit.PublicAdministration:PublicCategory ]
+		[ ogit:relates  ogit:Keyword ]
 	);
 .
