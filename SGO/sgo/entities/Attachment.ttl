@@ -48,6 +48,7 @@ stored directly in the graph itself or be referenced by an external url link."""
 		ogit:accessControl
 		ogit:tenantId
 		ogit:status
+		ogit:version
 	);
 	ogit:indexed-attributes (
 		ogit:name
