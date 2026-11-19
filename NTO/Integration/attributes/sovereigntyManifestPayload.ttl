@@ -8,7 +8,7 @@ ogit.Integration:sovereigntyManifestPayload
 	a owl:DatatypeProperty;
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "sovereigntyManifestPayload";
-	dcterms:description "Immutable JSON payload of the sovereignty manifest captured for a Run.";
+	dcterms:description "JSON (RFC 8259, https://www.rfc-editor.org/rfc/rfc8259) of a data-sovereignty manifest for a run. Deprecated: blueprints declare no sovereignty manifest; the connector framework does not write or read this attribute.";
 	dcterms:valid "start=2026-05-21;";
 	dcterms:creator "Almato AG";
 .

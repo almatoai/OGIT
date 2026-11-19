@@ -1,0 +1,16 @@
+@prefix ogit:                 <http://www.purl.org/ogit/> .
+@prefix ogit.Integration:     <http://www.purl.org/ogit/Integration/> .
+@prefix owl:                  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:              <http://purl.org/dc/terms/> .
+
+ogit.Integration:endReason
+	a owl:DatatypeProperty;
+	rdfs:subPropertyOf ogit:Attribute;
+	rdfs:label "endReason";
+	dcterms:description "Why a run ended: closed (the connector closed it), abandoned (the connector abandoned it), heartbeatTimeout (its heartbeat stayed silent), connectionDropped (its connection ended without closing it), needsReSnapshot (the connector framework lost the run's state; the connector must read its source again) or unresolvedReference (a record named a reference that did not resolve and the run was set to fail on it).";
+	ogit:validation-type "fixed";
+	ogit:validation-parameter "closed,abandoned,heartbeatTimeout,connectionDropped,needsReSnapshot,unresolvedReference";
+	dcterms:valid "start=2026-11-19;";
+	dcterms:creator "Almato AG";
+.

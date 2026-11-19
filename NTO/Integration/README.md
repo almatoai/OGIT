@@ -2,22 +2,19 @@
 
 ## Overview
 
-The schema additions the Bardioc Connector Framework needs to operate as a
-platform layer: connector blueprints and their deployment-time instances, the
-immutable run history, the mapping / netting / conflict / weaving / action rule
-entities, the authority chain, and the multi-team governance signatures.
+The records a connector framework keeps in the graph about the connectors it runs. A connector
+is a program that reads a source system and sends its records into the graph; a blueprint is
+the JSON document that declares how those records become vertices and edges.
 
-Although developed for the Bardioc Connector Framework 2.0, these entities are
-modelled to stand on their own: a general semantic vocabulary for data
-integration -- the path from a source, through mapping, netting and conflict
-resolution, to a governed, provenance-tracked write. The intent is a shared OGIT
-understanding of data-integration paths, not only the backing schema for one
-framework's implementation.
+* `Connector` -- one blueprint version deployed in one organization, carrying the blueprint.
+* `WeavingRule` -- one rule of a blueprint that draws edges between vertices already in the
+  graph, contained by its `Connector`.
+* `ConnectorRunConfigSnapshot` -- the rules one run of a connector executes, frozen when the
+  run opens. Internal bookkeeping of the connector framework.
 
-The PII-bearing decision-and-lifecycle vertices (manual-review entries, merge
-and split jobs, conflicts, transient user actions, DSR requests, drift
-candidates, action invocations) live in `Decisions/`. This namespace itself is
-structural and PII-free; Right-to-Erasure targets `Decisions/PII/` alone.
+All three are written by the connector framework. The application a connector belongs to, its
+versions and their lifecycle are modelled in `ogit/Auth` (`Application`, `ApplicationVersion`),
+not here.
 
 Conventions common to every OGIT namespace (creator, fixed value sets, edge
 targets, additive-only) are in the repository root README.

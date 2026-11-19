@@ -8,7 +8,7 @@ ogit.Integration:snapshotTakenAt
 	a owl:DatatypeProperty;
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "snapshotTakenAt";
-	dcterms:description "Timestamp at which the config snapshot was frozen for a Run.";
+	dcterms:description "Time at which a run's rules were frozen, as an RFC 3339 timestamp in UTC (https://www.rfc-editor.org/rfc/rfc3339).";
 	dcterms:valid "start=2026-05-21;";
 	dcterms:creator "Almato AG";
 .
