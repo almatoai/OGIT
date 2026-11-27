@@ -7,28 +7,34 @@ ogit.Integration:Connector
 	a rdfs:Class;
 	rdfs:subClassOf ogit:Entity;
 	rdfs:label "Connector";
-	dcterms:description """A published, versioned blueprint that defines a
-	connection between Bardioc and a single source system. The blueprint is a
-	signed document and the Connector CARRIES it, in ogit:content, with
-	ogit:mimeType naming the serialisation. The document embeds its own
-	integrity hash under its "signature" key, so no separate hash attribute
-	exists: that value has one owner. The rules inside it -- field mappings,
-	transforms, netting, conflict resolution -- are parts of that document and
-	are deliberately not modelled as vertices. Weaving rules are the exception
-	and are declared as vertices, because a framework runtime builds them. A
-	Connector is instantiated at deploy time as one or more ConnectorInstances.
-	Per PLAN D6 (eight stages, three trigger modes) and D11 (NTO/Integration).""";
+	dcterms:description """The connector framework's record of one blueprint version deployed in one
+	organization. The connector framework is the platform service that runs
+	connectors: programs that read a source system and send its records into the
+	graph. A blueprint is a JSON document (RFC 8259,
+	https://www.rfc-editor.org/rfc/rfc8259) that declares how the records of one
+	source system become vertices and edges. The vertex carries the blueprint in
+	ogit:content, with ogit:mimeType naming its serialisation, in blueprintId the
+	blueprint, and in ogit:version the blueprint's version, a version per
+	Semantic Versioning 2.0.0 (https://semver.org/spec/v2.0.0.html), equal to the
+	version of the application version the blueprint belongs to; records written
+	before the connector framework required this may carry other forms.
+	ogit:author is the account that deployed the version. A deployed version is
+	not changed: deploying the same version with different content is refused.
+	The blueprint's weaving rules are contained as WeavingRule vertices. The
+	application a connector belongs to, its versions and their lifecycle are
+	modelled by ogit/Auth/Application and ogit/Auth/ApplicationVersion.""";
 	dcterms:valid "start=2026-05-21;";
 	dcterms:creator "Almato AG";
 	ogit:scope "NTO";
 	ogit:parent ogit:Node;
 	ogit:mandatory-attributes (
 		ogit:version
-		ogit.Integration:frameworkMin
-		ogit.Integration:frameworkMax
+		ogit.Integration:sourceSystemId
 	);
 	ogit:optional-attributes (
-		ogit.Integration:sourceSystemId
+		ogit.Integration:frameworkMax
+		ogit.Integration:frameworkMin
+		ogit.Integration:blueprintId
 		ogit:author
 		ogit.Integration:signingCertificateRef
 		ogit.Integration:deprecationPhase
@@ -38,6 +44,7 @@ ogit.Integration:Connector
 	ogit:indexed-attributes (
 		ogit:version
 		ogit.Integration:sourceSystemId
+		ogit.Integration:blueprintId
 	);
 	ogit:allowed (
 		[ ogit:contains ogit.Integration:WeavingRule ]

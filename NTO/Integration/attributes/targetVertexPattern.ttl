@@ -8,7 +8,7 @@ ogit.Integration:targetVertexPattern
 	a owl:DatatypeProperty;
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "targetVertexPattern";
-	dcterms:description "Pattern matching candidate target-side vertices.";
+	dcterms:description "Vertices a weaving rule connects to: an OGIT entity type, optionally followed by attribute filters in brackets, e.g. ogit/Region[ogit/type=\"country\"].";
 	dcterms:valid "start=2026-05-21;";
 	dcterms:creator "Almato AG";
 .

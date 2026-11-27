@@ -1,0 +1,14 @@
+@prefix ogit:                 <http://www.purl.org/ogit/> .
+@prefix ogit.Integration:     <http://www.purl.org/ogit/Integration/> .
+@prefix owl:                  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:              <http://purl.org/dc/terms/> .
+
+ogit.Integration:feedId
+	a owl:DatatypeProperty;
+	rdfs:subPropertyOf ogit:Attribute;
+	rdfs:label "feedId";
+	dcterms:description "Name a connector gives one of its feeds. A feed is a recurring flow of records from one source system into one data scope, carried out as a series of runs. The connector chooses the name and keeps it the same for every run of the feed; it is not unique across connectors.";
+	dcterms:valid "start=2026-11-19;";
+	dcterms:creator "Almato AG";
+.

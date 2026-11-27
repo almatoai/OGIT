@@ -8,7 +8,7 @@ ogit.Integration:sourceSystemId
 	a owl:DatatypeProperty;
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "sourceSystemId";
-	dcterms:description "Stable identifier of the external source system the connector connects to.";
+	dcterms:description "Name the blueprint gives the source system it reads from, e.g. jira_issue_v1. Chosen by the blueprint's author and not checked against any register.";
 	dcterms:valid "start=2026-05-21;";
 	dcterms:creator "Almato AG";
 .

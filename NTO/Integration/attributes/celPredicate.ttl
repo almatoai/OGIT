@@ -8,7 +8,7 @@ ogit.Integration:celPredicate
 	a owl:DatatypeProperty;
 	rdfs:subPropertyOf ogit:Attribute;
 	rdfs:label "celPredicate";
-	dcterms:description "Optional CEL predicate for fine-grained match (D16).";
+	dcterms:description "Expression in the Common Expression Language (CEL, https://github.com/google/cel-spec) that a pair of vertices had to satisfy to be connected by a weaving rule. Deprecated: a weaving rule matches by attribute equality only (matchCriteria); the connector framework does not write or read this attribute.";
 	dcterms:valid "start=2026-05-21;";
 	dcterms:creator "Almato AG";
 .

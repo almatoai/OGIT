@@ -1,0 +1,16 @@
+@prefix ogit:                 <http://www.purl.org/ogit/> .
+@prefix ogit.Integration:     <http://www.purl.org/ogit/Integration/> .
+@prefix owl:                  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:                 <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:              <http://purl.org/dc/terms/> .
+
+ogit.Integration:discardCause
+	a owl:DatatypeProperty;
+	rdfs:subPropertyOf ogit:Attribute;
+	rdfs:label "discardCause";
+	dcterms:description "Why the records of a run that were accepted but not yet written will not be written: abandoned (the run was abandoned), retentionExpired (they aged out of retention) or unresolvedReference (a record named a reference that did not resolve). The source must deliver them again.";
+	ogit:validation-type "fixed";
+	ogit:validation-parameter "abandoned,retentionExpired,unresolvedReference";
+	dcterms:valid "start=2026-11-19;";
+	dcterms:creator "Almato AG";
+.
